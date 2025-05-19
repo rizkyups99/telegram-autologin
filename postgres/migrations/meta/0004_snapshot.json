@@ -1,0 +1,14 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "id": "e9c9c9c9-9c9c-9c9c-9c9c-9c9c9c9c9c9c",
+  "prevId": "0003_snapshot",
+  "tables": {},
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
