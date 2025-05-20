@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       
-  <body><DevtoolsProvider>{children}</DevtoolsProvider></body>
+  <body><DevtoolsProvider hideBranding={true}>{children}</DevtoolsProvider></body>
 
     </html>
   );
