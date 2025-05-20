@@ -40,6 +40,13 @@ export default function TelegramSetup() {
       setWebhookUrl(`${domain}/api/telegram/webhook`);
     }
   }, []);
+  
+  // Predefined webhook URLs
+  const webhookUrlOptions = [
+    "https://langit-digital-telelogin.vercel.app/api/telegram/webhook",
+    "https://telegram-autologin.getcreatr.dev/api/telegram/webhook",
+    "https://www.ikhtiarjalurlangit.my.id/api/telegram/webhook"
+  ];
 
   // Load message format
   useEffect(() => {
@@ -240,6 +247,48 @@ export default function TelegramSetup() {
               </>
             ) : "Atur Webhook"}
           </Button>
+          
+          <div className="mt-6 border-t pt-6">
+            <h3 className="text-lg font-medium mb-4">Pilihan Domain Tambahan</h3>
+            <div className="space-y-4">
+              {webhookUrlOptions.map((url, index) => (
+                <div key={index} className="flex flex-col gap-2">
+                  <div className="flex gap-2">
+                    <Input
+                      type="text"
+                      value={url}
+                      readOnly
+                      className="text-sm font-mono"
+                    />
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => copyToClipboard(url)}
+                      title="Salin ke clipboard"
+                    >
+                      <Copy className="h-4 w-4" />
+                    </Button>
+                  </div>
+                  <Button 
+                    onClick={() => {
+                      setWebhookUrl(url);
+                      handleSetWebhook();
+                    }} 
+                    disabled={isSettingWebhook}
+                    className="w-full"
+                    size="sm"
+                  >
+                    {isSettingWebhook ? (
+                      <>
+                        <span className="animate-spin mr-2">⏳</span>
+                        Mengatur Webhook...
+                      </>
+                    ) : "Atur Webhook untuk Domain Ini"}
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </div>
 
           {setupStatus === "success" && (
             <div className="bg-green-50 text-green-800 p-3 rounded-md flex items-center">
