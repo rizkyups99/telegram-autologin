@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import { Play } from 'lucide-react';
 import { getYoutubeEmbedInfo } from './videoHooks';
-
 interface YouTubePlayerProps {
   videoUrl: string;
   onPlay: () => void;
@@ -18,7 +17,6 @@ interface YouTubePlayerProps {
   isPlaying: boolean;
   setIsPlaying?: (playing: boolean) => void;
 }
-
 export function YouTubePlayer({
   videoUrl,
   onPlay,
@@ -32,8 +30,10 @@ export function YouTubePlayer({
   togglePlay,
   isPlaying
 }: YouTubePlayerProps) {
-  const { videoId } = getYoutubeEmbedInfo(videoUrl);
-  
+  const {
+    videoId
+  } = getYoutubeEmbedInfo(videoUrl);
+
   // Handle fullscreen changes for mobile landscape mode
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -47,7 +47,6 @@ export function YouTubePlayer({
         }
       }
     };
-    
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
@@ -69,29 +68,31 @@ export function YouTubePlayer({
         }
       });
     }
-    
+
     // Set up message listener for YouTube iframe API messages
     const handleMessage = (event: MessageEvent) => {
       // Only handle messages from YouTube
       if (event.origin !== 'https://www.youtube.com') return;
-      
       try {
         const data = JSON.parse(event.data);
-        
         if (data.event === 'onStateChange') {
           switch (data.info) {
-            case 1: // playing
+            case 1:
+              // playing
               onPlay();
               onBufferEnd();
               if (data.duration) onDuration(data.duration);
               break;
-            case 2: // paused
+            case 2:
+              // paused
               onPause();
               break;
-            case 3: // buffering
+            case 3:
+              // buffering
               onBuffer();
               break;
-            case 0: // ended
+            case 0:
+              // ended
               onEnded();
               break;
           }
@@ -100,11 +101,10 @@ export function YouTubePlayer({
         // Not a YouTube API message
       }
     };
-    
     window.addEventListener('message', handleMessage);
     return () => window.removeEventListener('message', handleMessage);
   }, [videoUrl, onPlay, onPause, onBuffer, onBufferEnd, onDuration, onEnded]);
-  
+
   // Initialize YouTube player with API
   useEffect(() => {
     // Load YouTube API if not already loaded
@@ -113,12 +113,10 @@ export function YouTubePlayer({
       tag.src = "https://www.youtube.com/iframe_api";
       const firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      
       window.onYouTubeIframeAPIReady = initializeYouTubePlayer;
     } else {
       initializeYouTubePlayer();
     }
-    
     return () => {
       // Cleanup YouTube player instance
       if (youtubePlayerRef.current) {
@@ -126,11 +124,10 @@ export function YouTubePlayer({
       }
     };
   }, [videoId]);
-  
+
   // Start tracking progress when playing
   useEffect(() => {
     let progressInterval: ReturnType<typeof setTimeout>;
-    
     if (isPlaying && videoId) {
       progressInterval = setInterval(() => {
         if (youtubePlayerRef.current) {
@@ -143,24 +140,22 @@ export function YouTubePlayer({
         }
       }, 1000);
     }
-    
     return () => {
       if (progressInterval) {
         clearInterval(progressInterval);
       }
     };
   }, [isPlaying, videoId, onProgress]);
-  
   const initializeYouTubePlayer = () => {
     if (!videoId) return;
-    
+
     // For client-side only execution
     if (typeof window === 'undefined') return;
 
     // Get the iframe element
     const iframe = document.getElementById('youtube-player-iframe');
     if (!iframe) return;
-    
+
     // Initialize the player
     if (typeof window !== 'undefined') {
       // Extract references safely within the window check
@@ -169,11 +164,11 @@ export function YouTubePlayer({
         youtubePlayerRef.current = new YT.Player('youtube-player-iframe', {
           videoId: videoId,
           events: {
-            'onReady': (event) => {
+            'onReady': event => {
               // Get video duration when player is ready
               const duration = event.target.getDuration();
               onDuration(duration);
-              
+
               // Set up event listeners for status changes
               event.target.addEventListener('onStateChange', (e: any) => {
                 // YouTube states: -1 (unstarted), 0 (ended), 1 (playing), 2 (paused), 3 (buffering)
@@ -195,27 +190,13 @@ export function YouTubePlayer({
       }
     }
   };
-
-  return (
-    <div className="w-full aspect-video relative">
-      <iframe 
-        id="youtube-player-iframe"
-        src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&controls=0&disablekb=1&rel=0&modestbranding=1&playsinline=1&origin=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin : '')}`}
-        className="w-full h-full"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+  return <div className="w-full aspect-video relative" data-unique-id="53f97d25-07e3-4472-986a-ba62895e050c" data-file-name="components/video/YouTubePlayer.tsx">
+      <iframe id="youtube-player-iframe" src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&controls=0&disablekb=1&rel=0&modestbranding=1&playsinline=1&origin=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin : '')}`} className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-unique-id="f02e7c69-3343-4ffb-a1ed-662058862c01" data-file-name="components/video/YouTubePlayer.tsx"></iframe>
       
-      <div 
-        className="absolute inset-0 flex items-center justify-center cursor-pointer"
-        onClick={togglePlay}
-      >
-        {!isPlaying && (
-          <div className="w-16 h-16 bg-black bg-opacity-60 rounded-full flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={togglePlay} data-unique-id="e497e640-fc93-4300-8c21-dbf97dd52182" data-file-name="components/video/YouTubePlayer.tsx" data-dynamic-text="true">
+        {!isPlaying && <div className="w-16 h-16 bg-black bg-opacity-60 rounded-full flex items-center justify-center" data-unique-id="5dcfd20e-3bcc-4376-ba76-7bf10cf0c135" data-file-name="components/video/YouTubePlayer.tsx">
             <Play className="h-8 w-8 text-white" />
-          </div>
-        )}
+          </div>}
       </div>
-    </div>
-  );
+    </div>;
 }

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { users, admins } from "@/db/schema";
+import { users, admins, categories, userAudioAccess, userPdfAccess, userVideoAccess } from "@/db/schema";
 import { sql } from "drizzle-orm";
 
 export async function GET(request: Request) {
@@ -11,12 +11,12 @@ export async function GET(request: Request) {
     
     // Query actual user data from the database
     const monthlyData = await getMonthlyUserCounts(year);
-    const dailyRegistrations = await getDailyRegistrationsPerAdmin(year, month);
+    const categorySummary = await getCategoryStatistics(year, month);
     const availableMonths = await getAvailableMonths();
 
     return NextResponse.json({
       monthlyData,
-      dailyRegistrations,
+      categorySummary,
       availableMonths,
     });
   } catch (error) {
@@ -75,78 +75,101 @@ async function getMonthlyUserCounts(year: number) {
 }
 
 /**
- * Get daily registrations per admin for a specific month
+ * Get category statistics (which categories are most popular)
+ * Combines data from audio, pdf, and video access tables
  */
-async function getDailyRegistrationsPerAdmin(year: number, month: number) {
+async function getCategoryStatistics(year: number, month: number) {
   try {
-    // Get list of admins
-    const adminsList = await db.select({
-      id: admins.id,
-      email: admins.email
-    }).from(admins);
+    // Get all categories first
+    const categoriesList = await db.select().from(categories);
     
-    // Special case for superadmin who might not be in the database
-    const hasSuperAdmin = adminsList.some(admin => admin.email === 'superadmin@admin.com');
-    if (!hasSuperAdmin) {
-      adminsList.push({ id: 0, email: 'superadmin@admin.com' });
-    }
+    // Create a map to store category counts
+    const categoryCountMap: Record<number, { name: string; count: number }> = {};
     
-    // Get the number of days in the selected month
-    const daysInMonth = new Date(year, month, 0).getDate();
-    
-    // Get user registrations for the month grouped by day and adminId
-    const registrations = await db.execute(sql`
-      SELECT 
-        EXTRACT(DAY FROM "created_at") as day,
-        COALESCE(admin_id, 0) as admin_id,
-        COUNT(*) as count
-      FROM 
-        users
-      WHERE 
-        EXTRACT(YEAR FROM "created_at") = ${year}
-        AND EXTRACT(MONTH FROM "created_at") = ${month}
-      GROUP BY 
-        EXTRACT(DAY FROM "created_at"),
-        admin_id
-      ORDER BY 
-        day
-    `);
-    
-    // Process the results into the required format
-    const adminRegistrations = adminsList.map(admin => {
-      // Initialize admin registration object with zeroes for all days
-      const adminReg: Record<string | number, any> = {
-        admin: admin.email.split('@')[0], // Just use the part before @ as the display name
-        total: 0
+    // Initialize counts for all categories
+    categoriesList.forEach(category => {
+      categoryCountMap[category.id] = {
+        name: category.name,
+        count: 0
       };
-      
-      // Initialize all days with 0
-      for (let day = 1; day <= daysInMonth; day++) {
-        adminReg[day] = 0;
-      }
-      
-      // Fill in the actual registration counts
-      registrations.forEach(row => {
-        if (row && typeof row === 'object' && 
-            'day' in row && 
-            'admin_id' in row && 
-            'count' in row && 
-            parseInt(String(row.admin_id)) === admin.id) {
-          
-          const day = parseInt(String(row.day));
-          const count = parseInt(String(row.count));
-          adminReg[day] = count;
-          adminReg.total += count;
-        }
-      });
-      
-      return adminReg;
     });
     
-    // Filter out admins with no registrations
-    return adminRegistrations.filter(admin => admin.total > 0);
+    // Function to safely execute a query and process results
+    const getCategoryCounts = async (query: string) => {
+      try {
+        const results = await db.execute(sql.raw(query));
+        results.forEach((row: any) => {
+          if (row && typeof row === 'object' && 'category_id' in row && 'count' in row) {
+            const categoryId = parseInt(String(row.category_id));
+            const count = parseInt(String(row.count));
+            
+            // Only add counts for categories that exist in our map
+            if (categoryCountMap[categoryId]) {
+              categoryCountMap[categoryId].count += count;
+            }
+          }
+        });
+      } catch (error) {
+        console.error("Error executing category count query:", error);
+      }
+    };
+    
+    // Get audio category registrations for the month
+    await getCategoryCounts(`
+      SELECT 
+        uaa.category_id, 
+        COUNT(DISTINCT uaa.user_id) as count
+      FROM 
+        user_audio_access uaa
+      JOIN 
+        users u ON uaa.user_id = u.id
+      WHERE 
+        EXTRACT(YEAR FROM u.created_at) = ${year} 
+        AND EXTRACT(MONTH FROM u.created_at) = ${month}
+      GROUP BY 
+        uaa.category_id
+    `);
+    
+    // Get PDF category registrations for the month
+    await getCategoryCounts(`
+      SELECT 
+        upa.category_id, 
+        COUNT(DISTINCT upa.user_id) as count
+      FROM 
+        user_pdf_access upa
+      JOIN 
+        users u ON upa.user_id = u.id
+      WHERE 
+        EXTRACT(YEAR FROM u.created_at) = ${year} 
+        AND EXTRACT(MONTH FROM u.created_at) = ${month}
+      GROUP BY 
+        upa.category_id
+    `);
+    
+    // Get video category registrations for the month
+    await getCategoryCounts(`
+      SELECT 
+        uva.category_id, 
+        COUNT(DISTINCT uva.user_id) as count
+      FROM 
+        user_video_access uva
+      JOIN 
+        users u ON uva.user_id = u.id
+      WHERE 
+        EXTRACT(YEAR FROM u.created_at) = ${year} 
+        AND EXTRACT(MONTH FROM u.created_at) = ${month}
+      GROUP BY 
+        uva.category_id
+    `);
+    
+    // Convert the map to an array and filter out categories with 0 count
+    const categoryStats = Object.values(categoryCountMap)
+      .filter(category => category.count > 0)
+      .sort((a, b) => b.count - a.count); // Sort by count in descending order
+    
+    return categoryStats;
   } catch (error) {
-    console.error("Error getting daily registrations per admin:", error);
+    console.error("Error getting category statistics:", error);
     // Return empty array in case of error
     return [];
   }

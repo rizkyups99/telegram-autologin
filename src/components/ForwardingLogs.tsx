@@ -1,18 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { 
-  Table, 
-  TableBody, 
-  TableCell, 
-  TableHead, 
-  TableHeader, 
-  TableRow 
-} from "./ui/table";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table";
 import { Button } from "./ui/button";
 import { formatDistanceToNow } from "date-fns";
 import { ChevronDown, ChevronUp, CheckCircle, XCircle } from "lucide-react";
-
 interface Log {
   id: string;
   timestamp: string;
@@ -22,99 +14,72 @@ interface Log {
   keyword: string | null;
   error?: string;
 }
-
 interface ForwardingLogsProps {
   logs: Log[];
 }
-
-export default function ForwardingLogs({ logs }: ForwardingLogsProps) {
+export default function ForwardingLogs({
+  logs
+}: ForwardingLogsProps) {
   const [expandedLogs, setExpandedLogs] = useState<Record<string, boolean>>({});
-
   const toggleExpand = (id: string) => {
     setExpandedLogs(prev => ({
       ...prev,
       [id]: !prev[id]
     }));
   };
-
-  return (
-    <div className="overflow-x-auto">
-      <Table>
+  return <div className="overflow-x-auto" data-unique-id="206232ed-7138-4622-8d15-43bb242546e8" data-file-name="components/ForwardingLogs.tsx">
+      <Table data-unique-id="662b1d43-6f68-4459-9d90-fc3c65368ea7" data-file-name="components/ForwardingLogs.tsx">
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[180px]">Waktu</TableHead>
-            <TableHead>Pesan</TableHead>
-            <TableHead>Kata Kunci</TableHead>
-            <TableHead className="w-[100px]">Status</TableHead>
-            <TableHead className="w-[80px]">Detail</TableHead>
+            <TableHead className="w-[180px]"><span className="editable-text" data-unique-id="f184d2de-c338-4fea-8e22-1e53323f375c" data-file-name="components/ForwardingLogs.tsx">Waktu</span></TableHead>
+            <TableHead><span className="editable-text" data-unique-id="ba4b7d73-4310-4305-bbd6-2820e99fefdb" data-file-name="components/ForwardingLogs.tsx">Pesan</span></TableHead>
+            <TableHead><span className="editable-text" data-unique-id="9b98be31-16e0-432a-a09e-64382948cc65" data-file-name="components/ForwardingLogs.tsx">Kata Kunci</span></TableHead>
+            <TableHead className="w-[100px]"><span className="editable-text" data-unique-id="34575c7a-7de1-478c-af5c-bf387b307d9d" data-file-name="components/ForwardingLogs.tsx">Status</span></TableHead>
+            <TableHead className="w-[80px]"><span className="editable-text" data-unique-id="39beeb4f-8a3c-46b5-8056-d03f5b092d59" data-file-name="components/ForwardingLogs.tsx">Detail</span></TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {!logs || logs.length === 0 ? (
-            <TableRow>
-              <TableCell colSpan={5} className="text-center py-8">
+          {!logs || logs.length === 0 ? <TableRow>
+              <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="bb9fefaa-dae4-4211-940e-fcd47bda314b" data-file-name="components/ForwardingLogs.tsx">
                 Belum ada log aktivitas. Log akan muncul saat pesan diterima dan diteruskan.
-              </TableCell>
-            </TableRow>
-          ) : (
-            Array.isArray(logs) ? logs.map((log) => (
-              <>
+              </span></TableCell>
+            </TableRow> : Array.isArray(logs) ? logs.map(log => <>
                 <TableRow key={log.id}>
                   <TableCell className="font-medium">
-                    {formatDistanceToNow(new Date(log.timestamp), { addSuffix: true })}
+                    {formatDistanceToNow(new Date(log.timestamp), {
+                addSuffix: true
+              })}
                   </TableCell>
                   <TableCell>
-                    {expandedLogs[log.id] 
-                      ? log.content 
-                      : `${log.content.substring(0, 50)}${log.content.length > 50 ? '...' : ''}`}
+                    {expandedLogs[log.id] ? log.content : `${log.content.substring(0, 50)}${log.content.length > 50 ? '...' : ''}`}
                   </TableCell>
                   <TableCell>{log.keyword || "—"}</TableCell>
                   <TableCell>
-                    {log.forwarded ? (
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                        <CheckCircle className="h-3 w-3 mr-1" />
+                    {log.forwarded ? <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800" data-is-mapped="true" data-unique-id="11d5da57-0511-431b-ae41-38ba316ba8ca" data-file-name="components/ForwardingLogs.tsx">
+                        <CheckCircle className="h-3 w-3 mr-1" /><span className="editable-text" data-unique-id="1cdbdb74-e87a-4b53-97bd-a9ccec3f23a2" data-file-name="components/ForwardingLogs.tsx">
                         Diteruskan
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
-                        <XCircle className="h-3 w-3 mr-1" />
+                      </span></span> : <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800" data-is-mapped="true" data-unique-id="6ed3fa65-aed4-4f97-8832-f73fbfdb8c3e" data-file-name="components/ForwardingLogs.tsx">
+                        <XCircle className="h-3 w-3 mr-1" /><span className="editable-text" data-unique-id="e3e49b1e-2795-4a0c-a6fc-1469c095051a" data-file-name="components/ForwardingLogs.tsx">
                         Difilter
-                      </span>
-                    )}
+                      </span></span>}
                   </TableCell>
                   <TableCell>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => toggleExpand(log.id)}
-                      className="p-0 h-8 w-8"
-                    >
-                      {expandedLogs[log.id] ? (
-                        <ChevronUp className="h-4 w-4" />
-                      ) : (
-                        <ChevronDown className="h-4 w-4" />
-                      )}
+                    <Button variant="ghost" size="sm" onClick={() => toggleExpand(log.id)} className="p-0 h-8 w-8" data-is-mapped="true" data-unique-id="31762c26-2c16-41a5-b450-c198b53d7fa3" data-file-name="components/ForwardingLogs.tsx" data-dynamic-text="true">
+                      {expandedLogs[log.id] ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                     </Button>
                   </TableCell>
                 </TableRow>
-                {expandedLogs[log.id] && log.error && (
-                  <TableRow>
+                {expandedLogs[log.id] && log.error && <TableRow>
                     <TableCell colSpan={5} className="bg-red-50 text-red-800 p-2">
-                      <strong>Error:</strong> {log.error}
+                      <strong data-is-mapped="true" data-unique-id="b8e5253a-6350-4296-b61d-3a2ba319b815" data-file-name="components/ForwardingLogs.tsx"><span className="editable-text" data-unique-id="5bfa9ce9-bfa8-4df9-bc26-7cc527817f36" data-file-name="components/ForwardingLogs.tsx">Error:</span></strong> {log.error}
                     </TableCell>
-                  </TableRow>
-                )}
-              </>
-            )) : (
-              <TableRow>
-                <TableCell colSpan={5} className="text-center py-8">
+                  </TableRow>}
+              </>) : <TableRow>
+                <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="b4377879-af8e-47ee-becf-49a37cef1552" data-file-name="components/ForwardingLogs.tsx">
                   Error: Received invalid log data. Please refresh the page.
-                </TableCell>
-              </TableRow>
-            )
-          )}
+                </span></TableCell>
+              </TableRow>}
         </TableBody>
       </Table>
-    </div>
-  );
+    </div>;
 }

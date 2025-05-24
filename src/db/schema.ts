@@ -19,6 +19,39 @@ export const admins = pgTable('admins', {
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
+// Audio Cloud Files table
+export const audioCloudFiles = pgTable('audio_cloud_files', {
+  id: serial('id').primaryKey(),
+  title: text('title').notNull(),
+  fileUrl: text('file_url').notNull(),
+  categoryId: integer('category_id').notNull().references(() => categories.id),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+// PDF Cloud Files table
+export const pdfCloudFiles = pgTable('pdf_cloud_files', {
+  id: serial('id').primaryKey(),
+  title: text('title').notNull(),
+  coverUrl: text('cover_url').notNull(),
+  fileUrl: text('file_url').notNull(),
+  categoryId: integer('category_id').notNull().references(() => categories.id),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+// Generic Cloud Files table (for Excel, Word, PPT, etc.)
+export const fileCloudFiles = pgTable('file_cloud_files', {
+  id: serial('id').primaryKey(),
+  title: text('title').notNull(),
+  coverUrl: text('cover_url').notNull(),
+  fileUrl: text('file_url').notNull(),
+  fileType: text('file_type'),
+  categoryId: integer('category_id').notNull().references(() => categories.id),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
 // Users table
 export const users = pgTable('users', {
   id: serial('id').primaryKey(),
@@ -157,31 +190,25 @@ export const userAudioAccess = pgTable('user_audio_access', {
   id: serial('id').primaryKey(),
   userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   categoryId: integer('category_id').notNull().references(() => categories.id),
-}, (table) => {
-  return {
-    userCatIdx: uniqueIndex('user_audio_cat_idx').on(table.userId, table.categoryId)
-  };
-});
+}, (table) => [
+  uniqueIndex('user_audio_cat_idx').on(table.userId, table.categoryId)
+]);
 
 export const userPdfAccess = pgTable('user_pdf_access', {
   id: serial('id').primaryKey(),
   userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   categoryId: integer('category_id').notNull().references(() => categories.id),
-}, (table) => {
-  return {
-    userCatIdx: uniqueIndex('user_pdf_cat_idx').on(table.userId, table.categoryId) 
-  };
-});
+}, (table) => [
+  uniqueIndex('user_pdf_cat_idx').on(table.userId, table.categoryId)
+]);
 
 export const userVideoAccess = pgTable('user_video_access', {
   id: serial('id').primaryKey(),
   userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   categoryId: integer('category_id').notNull().references(() => categories.id),
-}, (table) => {
-  return {
-    userCatIdx: uniqueIndex('user_video_cat_idx').on(table.userId, table.categoryId)
-  };
-});
+}, (table) => [
+  uniqueIndex('user_video_cat_idx').on(table.userId, table.categoryId)
+]);
 
 // Define types for user access
 export type UserAudioAccess = InferSelectModel<typeof userAudioAccess>;
@@ -193,3 +220,35 @@ export type NewUserVideoAccess = InferInsertModel<typeof userVideoAccess>;
 
 export type Video = InferSelectModel<typeof videos>;
 export type NewVideo = InferInsertModel<typeof videos>;
+
+// Define types for cloud files
+export type AudioCloudFile = InferSelectModel<typeof audioCloudFiles>;
+export type NewAudioCloudFile = InferInsertModel<typeof audioCloudFiles>;
+
+export type PDFCloudFile = InferSelectModel<typeof pdfCloudFiles>;
+export type NewPDFCloudFile = InferInsertModel<typeof pdfCloudFiles>;
+
+export type FileCloudFile = InferSelectModel<typeof fileCloudFiles>;
+export type NewFileCloudFile = InferInsertModel<typeof fileCloudFiles>;
+
+// Cloud files relations
+export const audioCloudFilesRelations = relations(audioCloudFiles, ({ one }) => ({
+  category: one(categories, {
+    fields: [audioCloudFiles.categoryId],
+    references: [categories.id],
+  }),
+}));
+
+export const pdfCloudFilesRelations = relations(pdfCloudFiles, ({ one }) => ({
+  category: one(categories, {
+    fields: [pdfCloudFiles.categoryId],
+    references: [categories.id],
+  }),
+}));
+
+export const fileCloudFilesRelations = relations(fileCloudFiles, ({ one }) => ({
+  category: one(categories, {
+    fields: [fileCloudFiles.categoryId],
+    references: [categories.id],
+  }),
+}));

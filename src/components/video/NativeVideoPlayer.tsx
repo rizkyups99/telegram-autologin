@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-
 interface NativeVideoPlayerProps {
   videoUrl: string;
   videoRef: React.RefObject<HTMLVideoElement>;
@@ -14,7 +13,6 @@ interface NativeVideoPlayerProps {
   onBufferEnd: () => void;
   onEnded: () => void;
 }
-
 export function NativeVideoPlayer({
   videoUrl,
   videoRef,
@@ -27,39 +25,30 @@ export function NativeVideoPlayer({
   onBufferEnd,
   onEnded
 }: NativeVideoPlayerProps) {
-  
   useEffect(() => {
     if (videoRef.current) {
       const video = videoRef.current;
-      
       const handleTimeUpdate = () => {
         onProgress(video.currentTime);
       };
-      
       const handleLoadedMetadata = () => {
         onDuration(video.duration);
       };
-      
       const handleEnded = () => {
         onEnded();
       };
-      
       const handlePlay = () => {
         onPlay();
       };
-      
       const handlePause = () => {
         onPause();
       };
-      
       const handleWaiting = () => {
         onBuffer();
       };
-      
       const handlePlaying = () => {
         onBufferEnd();
       };
-      
       video.addEventListener('timeupdate', handleTimeUpdate);
       video.addEventListener('loadedmetadata', handleLoadedMetadata);
       video.addEventListener('ended', handleEnded);
@@ -67,7 +56,6 @@ export function NativeVideoPlayer({
       video.addEventListener('pause', handlePause);
       video.addEventListener('waiting', handleWaiting);
       video.addEventListener('playing', handlePlaying);
-      
       return () => {
         video.removeEventListener('timeupdate', handleTimeUpdate);
         video.removeEventListener('loadedmetadata', handleLoadedMetadata);
@@ -79,13 +67,5 @@ export function NativeVideoPlayer({
       };
     }
   }, [videoRef, onProgress, onDuration, onPlay, onPause, onBuffer, onBufferEnd, onEnded]);
-
-  return (
-    <video
-      ref={videoRef}
-      src={videoUrl}
-      className="w-full aspect-video"
-      onClick={togglePlay}
-    />
-  );
+  return <video ref={videoRef} src={videoUrl} className="w-full aspect-video" onClick={togglePlay} data-unique-id="ced04a3c-87a0-46fa-8ae7-87e0d0d8495f" data-file-name="components/video/NativeVideoPlayer.tsx" />;
 }
