@@ -26,8 +26,8 @@ export const viewport = {
 };
 export const metadata: Metadata = {
   title: {
-    default: "Creatr",
-    template: "%s | Creatr"
+    default: "Langit Digital",
+    template: "%s | Langit Digital"
   },
   description: "A modern web application built with Next.js and TypeScript",
   applicationName: "Creatr",
