@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Langit Digital"
   },
   description: "A modern web application built with Next.js and TypeScript",
-  applicationName: "Creatr",
+  applicationName: "LD",
   keywords: ["next.js", "react", "typescript", "web application"],
   authors: [{
     name: "Creatr Team"
