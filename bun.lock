@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "creatr",
+      "name": "langit digital",
       "dependencies": {
         "@jest/globals": "^29.7.0",
         "@neondatabase/serverless": "^1.0.0",
