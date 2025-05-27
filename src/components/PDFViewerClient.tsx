@@ -9,7 +9,7 @@ import dynamic from 'next/dynamic';
 // Dynamically import the PDFViewer component with ssr: false
 const PDFViewer = dynamic(() => import('@/components/PDFViewer'), {
   ssr: false,
-  loading: () => <div className="flex justify-center p-6" data-unique-id="8528d17b-80a2-481f-ad29-7a5aacfd98a2" data-file-name="components/PDFViewerClient.tsx">
+  loading: () => <div className="flex justify-center p-6" data-unique-id="09f6219b-d5dd-458b-bc4c-daf9b5e27862" data-file-name="components/PDFViewerClient.tsx">
       <Loader className="h-8 w-8 animate-spin text-primary" />
     </div>
 });
@@ -62,24 +62,24 @@ export default function PDFViewerClient() {
     fetchPdfTitle();
   }, [pdfId]);
   if (isLoading) {
-    return <div className="container mx-auto px-4 py-8 flex justify-center" data-unique-id="ba207002-cedd-46d9-b964-2f5706702907" data-file-name="components/PDFViewerClient.tsx">
+    return <div className="container mx-auto px-4 py-8 flex justify-center" data-unique-id="d148e9aa-c66c-4c85-8279-6f5f96b94da2" data-file-name="components/PDFViewerClient.tsx">
         <Loader className="h-8 w-8 animate-spin" />
       </div>;
   }
   if (!pdfId && !pdfUrl) {
-    return <div className="container mx-auto px-4 py-8" data-unique-id="889a4ad8-108d-48ba-9f8b-c9624ddbd99d" data-file-name="components/PDFViewerClient.tsx">
-        <Card data-unique-id="610f242e-0d07-4079-953b-d139ec1ffbd3" data-file-name="components/PDFViewerClient.tsx">
-          <CardHeader data-unique-id="b25dcf77-1e2d-4157-a92d-896f76f801cb" data-file-name="components/PDFViewerClient.tsx">
-            <CardTitle data-unique-id="74c8d8d8-c725-48ca-87b0-31c784787f5a" data-file-name="components/PDFViewerClient.tsx"><span className="editable-text" data-unique-id="2abfa7e1-e305-4b0e-a480-1981dccda842" data-file-name="components/PDFViewerClient.tsx">PDF Viewer</span></CardTitle>
-            <CardDescription><span className="editable-text" data-unique-id="87a6d4b9-7f46-48a5-8e9c-628815e42d5c" data-file-name="components/PDFViewerClient.tsx">No PDF specified. Please provide a PDF ID or URL.</span></CardDescription>
+    return <div className="container mx-auto px-4 py-8" data-unique-id="145c251c-ba3a-42a4-b7a2-763bd729ccaf" data-file-name="components/PDFViewerClient.tsx">
+        <Card data-unique-id="bdcdec0b-89c3-41fd-86ac-902b635b7dc0" data-file-name="components/PDFViewerClient.tsx">
+          <CardHeader data-unique-id="84b4ec00-b119-4388-82bc-4a0facdec0b0" data-file-name="components/PDFViewerClient.tsx">
+            <CardTitle data-unique-id="1f21ec8c-6c93-4132-baba-cab5de0f46fa" data-file-name="components/PDFViewerClient.tsx"><span className="editable-text" data-unique-id="e97a63ff-2557-4f10-b0dc-8a51366e9584" data-file-name="components/PDFViewerClient.tsx">PDF Viewer</span></CardTitle>
+            <CardDescription><span className="editable-text" data-unique-id="54a5d7b0-22ec-4bba-b80a-14e62059089a" data-file-name="components/PDFViewerClient.tsx">No PDF specified. Please provide a PDF ID or URL.</span></CardDescription>
           </CardHeader>
         </Card>
       </div>;
   }
-  return <div data-unique-id="03ee24c2-4cd4-4c09-8e2f-cba180daf3e2" data-file-name="components/PDFViewerClient.tsx">
-      <Card className="mb-6" data-unique-id="87cba593-087d-43ac-838e-68108fbe335e" data-file-name="components/PDFViewerClient.tsx">
-        <CardHeader data-unique-id="503ea651-3e16-4052-b980-f86ae6efce6f" data-file-name="components/PDFViewerClient.tsx">
-          <CardTitle data-unique-id="bd8eac86-c891-443d-92ec-9cd1b1308fa0" data-file-name="components/PDFViewerClient.tsx" data-dynamic-text="true">{title || 'PDF Viewer'}</CardTitle>
+  return <div data-unique-id="093f25de-9260-4992-b633-5f9de96e2729" data-file-name="components/PDFViewerClient.tsx">
+      <Card className="mb-6" data-unique-id="098345ab-b795-474e-b305-e7680d1c68a1" data-file-name="components/PDFViewerClient.tsx">
+        <CardHeader data-unique-id="678fbf1e-a0c8-4619-9627-88e0681b714f" data-file-name="components/PDFViewerClient.tsx">
+          <CardTitle data-unique-id="0eeacfd0-bb2d-415a-b1d2-b3971174c7ad" data-file-name="components/PDFViewerClient.tsx" data-dynamic-text="true">{title || 'PDF Viewer'}</CardTitle>
           <CardDescription>
             {pdfId ? `Viewing PDF ID: ${pdfId}` : 'Viewing PDF from URL'}
           </CardDescription>

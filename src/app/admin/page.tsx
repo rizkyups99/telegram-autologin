@@ -80,30 +80,30 @@ export default function AdminPage() {
     router.push('/');
   };
   if (loading) {
-    return <div className="flex justify-center items-center min-h-screen" data-unique-id="5c825baa-d2fd-46cf-95d0-cc95f0f1b2c7" data-file-name="app/admin/page.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="a1ed07f0-0f50-4ccb-b850-1d3fcd262911" data-file-name="app/admin/page.tsx"></div>
+    return <div className="flex justify-center items-center min-h-screen" data-unique-id="46c6ec01-9351-484e-86d9-808a94bd2fcd" data-file-name="app/admin/page.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="081fd515-b8a2-453b-9502-2849a712f8c8" data-file-name="app/admin/page.tsx"></div>
       </div>;
   }
 
   // Show login form if not logged in
   if (!admin) {
-    return <div className="min-h-screen bg-background" data-unique-id="cbd3995b-a112-4ebe-ade5-b080cf857a69" data-file-name="app/admin/page.tsx">
-        <header className="border-b border-border" data-unique-id="66c4d4e3-2e51-4cfd-bf7d-a364c23ad797" data-file-name="app/admin/page.tsx">
-          <div className="container mx-auto px-4 py-4 sm:py-6 text-center" data-unique-id="0b1e03e3-3969-418d-99b5-9f34d62378c5" data-file-name="app/admin/page.tsx">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold" data-unique-id="b9e049ea-f9f9-48ac-8aaf-a018b709e90c" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="bd6f8eb3-01a2-43aa-a02f-3f01f19ebd47" data-file-name="app/admin/page.tsx">LANGIT DIGITAL</span></h1>
-            <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl mx-auto" data-unique-id="22d4b3ba-f39a-42bf-84d6-5027522ed081" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="2efb5727-e4c0-43e4-8eb9-44f75bbdd72a" data-file-name="app/admin/page.tsx">Admin Panel</span></p>
+    return <div className="min-h-screen bg-background" data-unique-id="1ad38f42-2f96-4faf-a7a6-1283dad827ff" data-file-name="app/admin/page.tsx">
+        <header className="border-b border-border" data-unique-id="b1369c64-90c9-4a93-99fa-f94760af8fc5" data-file-name="app/admin/page.tsx">
+          <div className="container mx-auto px-4 py-4 sm:py-6 text-center" data-unique-id="4fc8bbe2-ec7d-4430-86a8-9d8ecf64e739" data-file-name="app/admin/page.tsx">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold" data-unique-id="e7c9f4d1-9b60-43c2-81d3-c4efa6215a64" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="bb874a32-4fe7-4a75-8c9a-d38bded176cb" data-file-name="app/admin/page.tsx">LANGIT DIGITAL</span></h1>
+            <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl mx-auto" data-unique-id="d5dc70bf-8ac3-4bf8-92cf-bec3bff6aef4" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="1e3ae84f-192d-47e1-9f64-f687ae8ee326" data-file-name="app/admin/page.tsx">Admin Panel</span></p>
           </div>
         </header>
         
-        <main className="container mx-auto px-4 py-8" data-unique-id="2fbf1a07-6bae-474b-8f08-9d2f72415a9e" data-file-name="app/admin/page.tsx">
+        <main className="container mx-auto px-4 py-8" data-unique-id="3a8b0bd0-8dc3-453e-b77a-bfd7670f43f3" data-file-name="app/admin/page.tsx">
           <AdminLoginForm />
         </main>
         
-        <footer className="border-t border-border py-6 mt-auto" data-unique-id="bbcc89a9-9ded-439e-a72a-143250995925" data-file-name="app/admin/page.tsx">
-          <div className="container mx-auto px-4 text-center text-sm text-muted-foreground" data-unique-id="f733a521-6276-43ec-9df3-e523ebc3588f" data-file-name="app/admin/page.tsx">
-            <p data-unique-id="6d52e115-9d7b-4415-92d6-f1e5dda83099" data-file-name="app/admin/page.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="06a0bb3e-417b-4d68-b42e-f5801fcef979" data-file-name="app/admin/page.tsx">© </span>{new Date().getFullYear()}<span className="editable-text" data-unique-id="f99ae0c3-5b67-4934-bc6e-4c9651f2b217" data-file-name="app/admin/page.tsx"> Langit Digital. All rights reserved.</span></p>
-            <p className="mt-2" data-unique-id="92184168-01d5-4037-ab1d-beadf427d0d7" data-file-name="app/admin/page.tsx">
-              <Link href="/" className="hover:underline" data-unique-id="fb742f03-6ac5-4233-a69a-1422b9c7f07b" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="f5286013-f10c-4edb-98d1-b501d5c59985" data-file-name="app/admin/page.tsx">
+        <footer className="border-t border-border py-6 mt-auto" data-unique-id="7f01dfa0-82fb-47c7-93cc-463b5b2f2984" data-file-name="app/admin/page.tsx">
+          <div className="container mx-auto px-4 text-center text-sm text-muted-foreground" data-unique-id="a99f0edb-e90c-4d7e-9622-c81b2881e119" data-file-name="app/admin/page.tsx">
+            <p data-unique-id="5a9fa837-9566-4973-b4ac-969b2cbb4bb7" data-file-name="app/admin/page.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="e803c85d-692d-426e-b006-f05db8607b19" data-file-name="app/admin/page.tsx">© </span>{new Date().getFullYear()}<span className="editable-text" data-unique-id="a82ce7d0-454f-459c-9e6a-10b8495d1a45" data-file-name="app/admin/page.tsx"> Langit Digital. All rights reserved.</span></p>
+            <p className="mt-2" data-unique-id="2fe32122-64c3-413a-a8db-fdadb2f9c30d" data-file-name="app/admin/page.tsx">
+              <Link href="/" className="hover:underline" data-unique-id="32a6fa2c-404b-41fe-ab1e-206cc707f9cc" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="c32db7e5-9320-4461-90eb-f3056224a7c3" data-file-name="app/admin/page.tsx">
                 ke beranda
               </span></Link>
             </p>
@@ -111,23 +111,23 @@ export default function AdminPage() {
         </footer>
       </div>;
   }
-  return admin ? <AdminDashboard admin={admin} users={users} error={error} handleLogout={handleLogout} /> : <div className="min-h-screen bg-background" data-unique-id="10f354e4-5bad-42e7-98e2-3f2fcb599d8b" data-file-name="app/admin/page.tsx">
-        <header className="border-b border-border" data-unique-id="470d3693-bb93-4cca-9d1d-15ea1f02198a" data-file-name="app/admin/page.tsx">
-          <div className="container mx-auto px-4 py-4 sm:py-6 text-center" data-unique-id="525f62a2-a933-44f8-a520-8204c08746b0" data-file-name="app/admin/page.tsx">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold" data-unique-id="8ad62a4d-f0d8-4cc8-82ed-f3d4af8f860c" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="82203bc9-2d19-4e0b-8fb0-740815c61681" data-file-name="app/admin/page.tsx">JALUR LANGIT DIGITAL</span></h1>
-            <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl mx-auto" data-unique-id="43ec715e-83a6-41da-91ba-0738513065f6" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="2d8e9a26-cb4d-46e4-8ba1-035adce995e8" data-file-name="app/admin/page.tsx">Admin Panel</span></p>
+  return admin ? <AdminDashboard admin={admin} users={users} error={error} handleLogout={handleLogout} /> : <div className="min-h-screen bg-background" data-unique-id="5f405c25-06ec-4100-810a-b4767ed37786" data-file-name="app/admin/page.tsx">
+        <header className="border-b border-border" data-unique-id="12e1f28c-2116-4be1-a171-5dd3e924ffb7" data-file-name="app/admin/page.tsx">
+          <div className="container mx-auto px-4 py-4 sm:py-6 text-center" data-unique-id="83d09d0d-cc23-4fce-b44c-321cc9d970a4" data-file-name="app/admin/page.tsx">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold" data-unique-id="4a165ff9-a5be-40e8-aa1e-d21e2056c2dc" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="119f0277-8038-4228-93b2-15f888b38c13" data-file-name="app/admin/page.tsx">JALUR LANGIT DIGITAL</span></h1>
+            <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl mx-auto" data-unique-id="ca0914bd-cdda-4599-acaa-5bdbc0fd12c7" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="a1a996f2-3b42-4b85-bc8b-9a62cebf335b" data-file-name="app/admin/page.tsx">Admin Panel</span></p>
           </div>
         </header>
         
-        <main className="container mx-auto px-4 py-8" data-unique-id="f69e1223-a03b-4395-a962-3c80632959be" data-file-name="app/admin/page.tsx">
+        <main className="container mx-auto px-4 py-8" data-unique-id="62579b23-96b7-497f-8031-9815c114b7ab" data-file-name="app/admin/page.tsx">
           <AdminLoginForm />
         </main>
         
-        <footer className="border-t border-border py-6 mt-auto" data-unique-id="2fb0f736-ba50-480d-888f-8196845c8976" data-file-name="app/admin/page.tsx">
-          <div className="container mx-auto px-4 text-center text-sm text-muted-foreground" data-unique-id="7bb50142-159a-4104-84d6-f028c50c2e8a" data-file-name="app/admin/page.tsx">
-            <p data-unique-id="4c7cd807-864e-45dd-803c-063cae3180bf" data-file-name="app/admin/page.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="6879a681-c13b-47ea-ab75-3685188311c9" data-file-name="app/admin/page.tsx">© </span>{new Date().getFullYear()}<span className="editable-text" data-unique-id="d1da6c8c-a469-4766-850c-308de3b7af82" data-file-name="app/admin/page.tsx"> Jalur Langit Digital. All rights reserved.</span></p>
-            <p className="mt-2" data-unique-id="d0f50823-eb0c-4e0f-b594-13a9e11f3330" data-file-name="app/admin/page.tsx">
-              <Link href="/" className="hover:underline" data-unique-id="121d4706-ad83-4ce3-b529-b66c8f835b9c" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="a8de2495-2f10-4d46-8d33-01846be1dc9a" data-file-name="app/admin/page.tsx">
+        <footer className="border-t border-border py-6 mt-auto" data-unique-id="537bb2d7-6c62-406e-8182-ac97f585a533" data-file-name="app/admin/page.tsx">
+          <div className="container mx-auto px-4 text-center text-sm text-muted-foreground" data-unique-id="3b3193c9-8911-48a9-96ee-e45bf193061a" data-file-name="app/admin/page.tsx">
+            <p data-unique-id="9ee732b1-68c5-4351-a664-68608380a275" data-file-name="app/admin/page.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="effaa724-04a6-4bdb-8e81-5feeb8d33e15" data-file-name="app/admin/page.tsx">© </span>{new Date().getFullYear()}<span className="editable-text" data-unique-id="bd4590d2-be56-4e48-960b-a81c132cb291" data-file-name="app/admin/page.tsx"> Jalur Langit Digital. All rights reserved.</span></p>
+            <p className="mt-2" data-unique-id="7e78ca20-8439-408e-b369-d60b8e87d225" data-file-name="app/admin/page.tsx">
+              <Link href="/" className="hover:underline" data-unique-id="f2108d59-f4eb-44c0-8cff-cf65c24c401a" data-file-name="app/admin/page.tsx"><span className="editable-text" data-unique-id="1bbe768c-0e5c-45b4-b825-338f02cb0722" data-file-name="app/admin/page.tsx">
                 Kembali ke Beranda
               </span></Link>
             </p>

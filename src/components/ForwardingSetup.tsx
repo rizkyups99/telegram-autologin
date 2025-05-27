@@ -93,94 +93,94 @@ export default function ForwardingSetup() {
       window.open("https://t.me/BotFather", "_blank");
     }
   };
-  return <div className="space-y-6" data-unique-id="e0d55468-da8e-421c-82f0-837646a9d180" data-file-name="components/ForwardingSetup.tsx">
-      <Card data-unique-id="32272c32-a553-4e51-9a9e-2dbc0ad02770" data-file-name="components/ForwardingSetup.tsx">
-        <CardHeader data-unique-id="ea8c6323-af56-4a93-a5eb-8887b67ece88" data-file-name="components/ForwardingSetup.tsx">
-          <div className="flex items-center justify-between" data-unique-id="90e1a608-8c4a-4797-b665-2ef011712f7b" data-file-name="components/ForwardingSetup.tsx">
-            <CardTitle data-unique-id="47a2637a-d8a3-4794-ba1e-9445e247b029" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="583b2452-c05d-4d64-8b89-0ea6e31cda87" data-file-name="components/ForwardingSetup.tsx">Pengaturan Penerusan Pesan</span></CardTitle>
-            <Button variant="ghost" size="sm" onClick={() => setShowGuide(!showGuide)} className="flex items-center gap-1" data-unique-id="68c53b18-5b32-4474-951b-6504e1ab0b22" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
+  return <div className="space-y-6" data-unique-id="bb04da8e-0a70-46a7-a77a-49bd62682c05" data-file-name="components/ForwardingSetup.tsx">
+      <Card data-unique-id="f2bd4c2a-5791-416d-b557-c4ae6682d88f" data-file-name="components/ForwardingSetup.tsx">
+        <CardHeader data-unique-id="45ddc197-b1d5-45f9-bdb1-bc9b4a8a9d81" data-file-name="components/ForwardingSetup.tsx">
+          <div className="flex items-center justify-between" data-unique-id="07a41e81-88f2-4c58-a527-3c0330f195fe" data-file-name="components/ForwardingSetup.tsx">
+            <CardTitle data-unique-id="0d4ebac8-2d82-4d87-9a0a-64cae2ad8ac9" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="5baa73ef-dd65-40cf-8f88-ffcfc711cbef" data-file-name="components/ForwardingSetup.tsx">Pengaturan Penerusan Pesan</span></CardTitle>
+            <Button variant="ghost" size="sm" onClick={() => setShowGuide(!showGuide)} className="flex items-center gap-1" data-unique-id="393a627d-2f80-42d2-9112-0d5643e5c6ed" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
               <HelpCircle className="h-4 w-4" />
               {showGuide ? "Sembunyikan Panduan" : "Lihat Panduan"}
             </Button>
           </div>
-          <CardDescription><span className="editable-text" data-unique-id="7903bc66-6737-4fc6-a2cb-b9b1b8bc3d68" data-file-name="components/ForwardingSetup.tsx">
+          <CardDescription><span className="editable-text" data-unique-id="d85fd134-db50-4128-97bd-b0686c188b7f" data-file-name="components/ForwardingSetup.tsx">
             Konfigurasikan penerusan pesan dari @scalevid_bot ke bot Telegram pribadi Anda
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="c999eeb0-847e-4f36-82a4-6c54da724e4c" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
-          {showGuide && <div className="bg-muted p-4 rounded-md mb-4 space-y-3" data-unique-id="33e14f91-a5c4-4d17-8779-fc23ce03c411" data-file-name="components/ForwardingSetup.tsx">
-              <h3 className="font-medium text-lg" data-unique-id="d28588b8-3f39-4864-bd2e-6687f8a49493" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="def4ce78-34e0-4d17-ae61-4a0209d5bbdd" data-file-name="components/ForwardingSetup.tsx">Panduan Penerusan Pesan</span></h3>
-              <ol className="list-decimal pl-5 space-y-2" data-unique-id="3a70c2a1-b91d-4cbd-a686-c7807f157730" data-file-name="components/ForwardingSetup.tsx">
-                <li data-unique-id="848771ab-dbbc-4bd8-8bcb-755dbb9ca280" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="f5627e38-f27b-4a41-adf6-ec4c9aeb65d2" data-file-name="components/ForwardingSetup.tsx">Pastikan Anda telah membuat bot Telegram menggunakan </span><strong data-unique-id="772d637b-ae19-4288-8fee-dd61950c0cd8" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="49464ab0-bc2b-4edd-b9a6-7ad78a13011f" data-file-name="components/ForwardingSetup.tsx">@BotFather</span></strong></li>
-                <li data-unique-id="e6790edb-646e-4dd4-8cca-166f6e010657" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="2bd113d3-1f19-4268-93e7-6c3ede36bf4d" data-file-name="components/ForwardingSetup.tsx">Salin token bot Anda dan masukkan di kolom "Bot Token" di bawah</span></li>
-                <li data-unique-id="ae126232-4c8f-4b89-a547-3edfb596eec5" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="95196b68-34a8-46bd-88bd-6afcd3276d97" data-file-name="components/ForwardingSetup.tsx">Klik "Atur Webhook" untuk menghubungkan bot Anda dengan aplikasi ini</span></li>
-                <li data-unique-id="561d4283-f370-4df4-90e2-46c6f29d302e" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="3d74aec4-0929-4526-93e9-3f705c69ecba" data-file-name="components/ForwardingSetup.tsx">Aktifkan penerusan pesan dengan mengklik tombol "Aktifkan Penerusan"</span></li>
-                <li data-unique-id="88cd66ae-f8dd-4cef-8c8f-13edce3d1e4c" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="b65a385f-6b7c-4ff1-9cfc-15068e5ef107" data-file-name="components/ForwardingSetup.tsx">Pesan dari Scalev Notification Bot yang mengandung kata kunci "pembayaran" akan diteruskan ke bot Anda</span></li>
+        <CardContent className="space-y-6" data-unique-id="863093f8-7f7c-4fd9-822f-d3189acb6f0c" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
+          {showGuide && <div className="bg-muted p-4 rounded-md mb-4 space-y-3" data-unique-id="e7eac83a-751c-49a2-8725-e2068a4fbfae" data-file-name="components/ForwardingSetup.tsx">
+              <h3 className="font-medium text-lg" data-unique-id="53087a59-8d6a-4e17-8270-90f4f33569b9" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="233915aa-345e-4fe0-8eeb-c70b589607e7" data-file-name="components/ForwardingSetup.tsx">Panduan Penerusan Pesan</span></h3>
+              <ol className="list-decimal pl-5 space-y-2" data-unique-id="7b37fedf-9cf3-4107-bcf0-6affcd524f27" data-file-name="components/ForwardingSetup.tsx">
+                <li data-unique-id="94577005-a24e-4069-9b27-6785a1ceb258" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="471546d6-f0a8-4e60-9570-95c2cd385129" data-file-name="components/ForwardingSetup.tsx">Pastikan Anda telah membuat bot Telegram menggunakan </span><strong data-unique-id="6fc8cbab-7189-4a23-bafb-648bc9eb1cbb" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="a64fa862-6d8b-4be7-a6b6-41cff740e744" data-file-name="components/ForwardingSetup.tsx">@BotFather</span></strong></li>
+                <li data-unique-id="68cc8f3d-072a-423c-9e2a-be44305991eb" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="542e44b4-9207-4b1f-8e73-d18ec407ad05" data-file-name="components/ForwardingSetup.tsx">Salin token bot Anda dan masukkan di kolom "Bot Token" di bawah</span></li>
+                <li data-unique-id="1eb0576f-a883-41f9-b3ab-c074a0ea16c8" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="977a852f-70ac-42cd-9e90-4f18ab82a066" data-file-name="components/ForwardingSetup.tsx">Klik "Atur Webhook" untuk menghubungkan bot Anda dengan aplikasi ini</span></li>
+                <li data-unique-id="5dea84ef-4e09-4194-bba3-94518cfc4bab" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="63bb697c-5a81-41e6-8cf0-b39f10a1ab6c" data-file-name="components/ForwardingSetup.tsx">Aktifkan penerusan pesan dengan mengklik tombol "Aktifkan Penerusan"</span></li>
+                <li data-unique-id="3d991b15-2138-4921-b63c-614cbddd41d7" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="98ac2bb2-7c2b-4b41-abe9-771e2ce48245" data-file-name="components/ForwardingSetup.tsx">Pesan dari Scalev Notification Bot yang mengandung kata kunci "pembayaran" akan diteruskan ke bot Anda</span></li>
               </ol>
-              <Button variant="outline" size="sm" onClick={openTelegramBotFather} className="flex items-center gap-1 mt-2" data-unique-id="605a5c1f-b2fb-48be-ade3-b775f2466b04" data-file-name="components/ForwardingSetup.tsx">
-                <ExternalLink className="h-4 w-4" /><span className="editable-text" data-unique-id="9a80b6b3-d015-4fa8-b552-1f47fa5dfcf3" data-file-name="components/ForwardingSetup.tsx">
+              <Button variant="outline" size="sm" onClick={openTelegramBotFather} className="flex items-center gap-1 mt-2" data-unique-id="40b87e81-150d-4a46-b67a-f8eb9e86a540" data-file-name="components/ForwardingSetup.tsx">
+                <ExternalLink className="h-4 w-4" /><span className="editable-text" data-unique-id="f5f33554-2141-468d-bd24-7a437b6bf5cc" data-file-name="components/ForwardingSetup.tsx">
                 Buka BotFather di Telegram
               </span></Button>
             </div>}
 
-          <div className="space-y-2" data-unique-id="15ffebfc-499b-4b01-bf00-8363c6cedb87" data-file-name="components/ForwardingSetup.tsx">
-            <Label htmlFor="source-bot" data-unique-id="4b6a48c6-187f-4a91-9c55-4833b7f008a0" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="5ae40131-8095-4740-a33d-ca0477813bc7" data-file-name="components/ForwardingSetup.tsx">Bot Sumber</span></Label>
-            <Input id="source-bot" type="text" value={sourceBot} onChange={e => setSourceBot(e.target.value)} disabled data-unique-id="2b9bddb0-bc9e-4807-a5ff-4907066ebb97" data-file-name="components/ForwardingSetup.tsx" />
-            <p className="text-sm text-muted-foreground" data-unique-id="c0c13666-8f87-4c01-8d0a-047e1aa11676" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="4dc56f25-3ec2-4d3b-8d3a-d5f2846ee8ff" data-file-name="components/ForwardingSetup.tsx">
+          <div className="space-y-2" data-unique-id="968ef240-4d1b-4165-8111-e0c92d3db59f" data-file-name="components/ForwardingSetup.tsx">
+            <Label htmlFor="source-bot" data-unique-id="4a659ed7-de31-453f-9a97-e64cf4c1d1c9" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="6815f02f-c20a-458a-a5d2-e07f8bb46fe9" data-file-name="components/ForwardingSetup.tsx">Bot Sumber</span></Label>
+            <Input id="source-bot" type="text" value={sourceBot} onChange={e => setSourceBot(e.target.value)} disabled data-unique-id="1c370820-6721-4d0e-b33b-ed346cb5756b" data-file-name="components/ForwardingSetup.tsx" />
+            <p className="text-sm text-muted-foreground" data-unique-id="b7fc58cf-412f-4e27-ad75-f0b7c5a91c4f" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="2287d22d-c993-4af0-bfce-e24a24162bc6" data-file-name="components/ForwardingSetup.tsx">
               Bot yang mengirimkan pesan yang ingin diteruskan
             </span></p>
           </div>
 
-          <div className="space-y-2" data-unique-id="784c4ca2-b534-4e87-9067-517738868806" data-file-name="components/ForwardingSetup.tsx">
-            <Label htmlFor="target-bot" data-unique-id="93d31856-605f-42fc-a880-30647a9418b6" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="a5dcf3cc-ba19-4ba6-9d26-33a25890b03d" data-file-name="components/ForwardingSetup.tsx">Bot Tujuan</span></Label>
-            <Input id="target-bot" type="text" value={targetBot} onChange={e => setTargetBot(e.target.value)} disabled data-unique-id="9ae1adbe-44f9-40b5-8484-2c58c2e6eaa9" data-file-name="components/ForwardingSetup.tsx" />
-            <p className="text-sm text-muted-foreground" data-unique-id="b7e4bd5b-df5f-4804-9913-0e429228a99c" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="8c05ac79-64b2-4289-b43d-6c45ff0096ea" data-file-name="components/ForwardingSetup.tsx">
+          <div className="space-y-2" data-unique-id="34b39eb4-e156-4b0c-bb3c-9426715adc7e" data-file-name="components/ForwardingSetup.tsx">
+            <Label htmlFor="target-bot" data-unique-id="5a6d3b1e-9bc7-49d6-9d7f-85870f5c021e" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="c0146ff5-2ba0-44fe-b96a-29a474196467" data-file-name="components/ForwardingSetup.tsx">Bot Tujuan</span></Label>
+            <Input id="target-bot" type="text" value={targetBot} onChange={e => setTargetBot(e.target.value)} disabled data-unique-id="86f1a125-b243-4f61-8c36-fedc6cb816b0" data-file-name="components/ForwardingSetup.tsx" />
+            <p className="text-sm text-muted-foreground" data-unique-id="63cbb50f-39b3-4596-81b2-f44711b3df1b" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="96c84550-45f2-4454-ba88-5bcfd50ce1e0" data-file-name="components/ForwardingSetup.tsx">
               Bot Telegram pribadi Anda yang akan menerima pesan yang diteruskan
             </span></p>
           </div>
 
-          <div className="space-y-2" data-unique-id="973e8204-eeb1-4ccc-9136-64dfc614f9ad" data-file-name="components/ForwardingSetup.tsx">
-            <Label htmlFor="bot-token" data-unique-id="1a348b1f-ea5a-4799-8cba-732c0b2fb182" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="b774aa67-bdeb-4577-8add-d24e7212424d" data-file-name="components/ForwardingSetup.tsx">Bot Token</span></Label>
-            <Input id="bot-token" type="text" placeholder="8175916366:AAE4D1L_phr3HyadQ1QgLWJsX_cpkBgsYOo" value={targetBotToken} onChange={e => setTargetBotToken(e.target.value)} data-unique-id="ee7913e9-aa5e-4e06-b749-5d6ac8c1f6be" data-file-name="components/ForwardingSetup.tsx" />
-            <p className="text-sm text-muted-foreground" data-unique-id="532d2114-a26d-4ac3-a0c8-8f27fba6c1e7" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="67d75d14-b2ae-4136-b890-4a4f08e1bae9" data-file-name="components/ForwardingSetup.tsx">
+          <div className="space-y-2" data-unique-id="c9ccbe45-3171-4fe1-9197-4b33ac0a0cea" data-file-name="components/ForwardingSetup.tsx">
+            <Label htmlFor="bot-token" data-unique-id="e522b718-8224-49a8-a7c6-b60f1932308a" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="5aaa9c9d-ffbc-42bd-8ede-f428f97ad761" data-file-name="components/ForwardingSetup.tsx">Bot Token</span></Label>
+            <Input id="bot-token" type="text" placeholder="8175916366:AAE4D1L_phr3HyadQ1QgLWJsX_cpkBgsYOo" value={targetBotToken} onChange={e => setTargetBotToken(e.target.value)} data-unique-id="023e482d-27c2-4560-b105-bc72b800b68a" data-file-name="components/ForwardingSetup.tsx" />
+            <p className="text-sm text-muted-foreground" data-unique-id="21b3593c-38e7-477a-8b1f-578c13eac6f3" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="6c518a5d-4cfe-4a36-8864-c50c9793e15e" data-file-name="components/ForwardingSetup.tsx">
               Token bot Telegram pribadi Anda (@iky2025bot)
             </span></p>
           </div>
 
-          <div className="space-y-2" data-unique-id="885c7a5e-b115-4b28-997a-35a7ade2136a" data-file-name="components/ForwardingSetup.tsx">
-            <Label htmlFor="webhook-url" data-unique-id="18ccba7d-a7e4-406c-908a-be394e917741" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="1d01ced7-ca5f-4c42-86bb-eaf6006f1714" data-file-name="components/ForwardingSetup.tsx">Webhook URL</span></Label>
-            <div className="flex gap-2" data-unique-id="c740e1c8-83c6-4a4f-81ed-0b9b4e97bd16" data-file-name="components/ForwardingSetup.tsx">
-              <Input id="webhook-url" type="text" placeholder="https://your-domain.com/api/telegram/webhook" value={webhookUrl} onChange={e => setWebhookUrl(e.target.value)} data-unique-id="88881b9b-14b5-4277-867c-69f38ab97bd8" data-file-name="components/ForwardingSetup.tsx" />
-              <Button variant="outline" size="icon" onClick={() => copyToClipboard(webhookUrl)} title="Salin ke clipboard" data-unique-id="66c6231c-f9f3-40d1-b144-335c5c17bc88" data-file-name="components/ForwardingSetup.tsx">
+          <div className="space-y-2" data-unique-id="dac13658-c463-4044-942a-ecff62fc7943" data-file-name="components/ForwardingSetup.tsx">
+            <Label htmlFor="webhook-url" data-unique-id="d39b5e0a-5904-4e9f-997a-a4708e539289" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="b80c8995-1f3a-4557-a656-d1704ce0f4cf" data-file-name="components/ForwardingSetup.tsx">Webhook URL</span></Label>
+            <div className="flex gap-2" data-unique-id="b9f383c8-e9b4-45e6-be56-9677b0dc0c76" data-file-name="components/ForwardingSetup.tsx">
+              <Input id="webhook-url" type="text" placeholder="https://your-domain.com/api/telegram/webhook" value={webhookUrl} onChange={e => setWebhookUrl(e.target.value)} data-unique-id="8cbe068f-f77b-40f1-9cc7-dbb2f55ec50b" data-file-name="components/ForwardingSetup.tsx" />
+              <Button variant="outline" size="icon" onClick={() => copyToClipboard(webhookUrl)} title="Salin ke clipboard" data-unique-id="02b38ba7-f82e-40cb-bc7a-8904585eea42" data-file-name="components/ForwardingSetup.tsx">
                 <Copy className="h-4 w-4" />
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground" data-unique-id="fa19ba7c-b60e-4486-855c-c8a6c4cc2fd5" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="81249726-b5d8-49a6-aece-65e79e84f081" data-file-name="components/ForwardingSetup.tsx">
+            <p className="text-sm text-muted-foreground" data-unique-id="61a9e59f-6f46-4cb3-9cc5-b85fe8324331" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="fe7b134b-40a7-418a-8c81-86104b9e738d" data-file-name="components/ForwardingSetup.tsx">
               URL tempat Telegram akan mengirimkan notifikasi
             </span></p>
           </div>
 
-          <div className="flex flex-col gap-4" data-unique-id="cad0fb70-2893-446b-8438-e538bac0d6a3" data-file-name="components/ForwardingSetup.tsx">
-            <Button onClick={handleSetWebhook} disabled={isSettingWebhook} className="w-full" data-unique-id="1fee7d28-11fa-4a6d-9310-2782c9de1fb1" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
+          <div className="flex flex-col gap-4" data-unique-id="1b80374c-2d2a-48d8-ae1d-9a78a36f247e" data-file-name="components/ForwardingSetup.tsx">
+            <Button onClick={handleSetWebhook} disabled={isSettingWebhook} className="w-full" data-unique-id="0fdea472-1532-4e9d-9f20-f0f6dd44b2ea" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
               {isSettingWebhook ? <>
-                  <span className="animate-spin mr-2" data-unique-id="059383dc-e7cc-41d9-8d23-9e957d70e086" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="365d70f5-965e-42ed-8a7f-3cd5ebdd0f72" data-file-name="components/ForwardingSetup.tsx">⏳</span></span>
+                  <span className="animate-spin mr-2" data-unique-id="fc8dde58-ebe3-4e61-90e2-2aba9d01f292" data-file-name="components/ForwardingSetup.tsx"><span className="editable-text" data-unique-id="ec2aa95a-9faf-4e25-8d2e-dbfcaaafd007" data-file-name="components/ForwardingSetup.tsx">⏳</span></span>
                   Mengatur Webhook...
                 </> : "Atur Webhook"}
             </Button>
 
-            <Button onClick={toggleForwarding} variant={isForwardingActive ? "destructive" : "default"} className="w-full" data-unique-id="f93e04ba-2549-4017-88c8-3611e8829085" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
+            <Button onClick={toggleForwarding} variant={isForwardingActive ? "destructive" : "default"} className="w-full" data-unique-id="f1dd4e8f-a419-44b8-bba0-6734eafab5e1" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">
               {isForwardingActive ? "Nonaktifkan Penerusan" : "Aktifkan Penerusan"}
             </Button>
           </div>
 
-          {setupStatus === "success" && <div className="bg-green-50 text-green-800 p-3 rounded-md flex items-center" data-unique-id="466b1649-a163-4b45-aca2-fce361044244" data-file-name="components/ForwardingSetup.tsx">
+          {setupStatus === "success" && <div className="bg-green-50 text-green-800 p-3 rounded-md flex items-center" data-unique-id="af6f292e-1e6f-4018-81a0-21555c0e58a0" data-file-name="components/ForwardingSetup.tsx">
               <CheckCircle2 className="h-5 w-5 mr-2" />
-              <span data-unique-id="5fdd82f3-8340-4f3d-8628-2fa5d74c893e" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">{statusMessage}</span>
+              <span data-unique-id="602d42fc-c10c-4e86-86b7-fda381dc16b4" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">{statusMessage}</span>
             </div>}
 
-          {setupStatus === "error" && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="6d3d8d15-6184-4002-b35f-a6e2124edc86" data-file-name="components/ForwardingSetup.tsx">
+          {setupStatus === "error" && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="84e6ea6b-5c5c-4402-abcb-26bdfa7cd00d" data-file-name="components/ForwardingSetup.tsx">
               <AlertCircle className="h-5 w-5 mr-2" />
-              <span data-unique-id="7a3a3407-65f9-45b1-9206-b2dfac33776e" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">{statusMessage}</span>
+              <span data-unique-id="d1edea92-2e41-4319-92e2-03621d7202ca" data-file-name="components/ForwardingSetup.tsx" data-dynamic-text="true">{statusMessage}</span>
             </div>}
         </CardContent>
       </Card>

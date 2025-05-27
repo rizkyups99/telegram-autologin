@@ -96,33 +96,33 @@ export default function AdminLoginForm() {
       setIsLoading(false);
     }
   };
-  return <Card className="w-full max-w-md mx-auto" data-unique-id="5312cd25-f9b5-46d0-bb3c-6ca1f90197ff" data-file-name="components/AdminLoginForm.tsx">
-      <CardHeader data-unique-id="e50c3211-ecdc-4f87-b5e2-d2ab9c2da734" data-file-name="components/AdminLoginForm.tsx">
-        <CardTitle className="text-xl sm:text-2xl text-center" data-unique-id="6e9ce4e5-b4b2-4ddd-8e89-87b538a0c823" data-file-name="components/AdminLoginForm.tsx"><span className="editable-text" data-unique-id="5893a41d-f69c-482f-9d0e-d70ffb8a86e1" data-file-name="components/AdminLoginForm.tsx">Login Sebagai Admin</span></CardTitle>
-        <CardDescription className="text-sm sm:text-base text-center"><span className="editable-text" data-unique-id="fd07521c-fec2-4082-93df-493d2b17c05d" data-file-name="components/AdminLoginForm.tsx">
+  return <Card className="w-full max-w-md mx-auto" data-unique-id="669377d5-2f22-4fec-9024-807caf80e4da" data-file-name="components/AdminLoginForm.tsx">
+      <CardHeader data-unique-id="1949c12d-f9ac-4fb5-9899-fc29342e5ca2" data-file-name="components/AdminLoginForm.tsx">
+        <CardTitle className="text-xl sm:text-2xl text-center" data-unique-id="ebd52e91-a087-48b5-97f0-6b940f2ded0d" data-file-name="components/AdminLoginForm.tsx"><span className="editable-text" data-unique-id="af969aa1-2987-446b-acd6-d44baaf1bfb8" data-file-name="components/AdminLoginForm.tsx">Login Sebagai Admin</span></CardTitle>
+        <CardDescription className="text-sm sm:text-base text-center"><span className="editable-text" data-unique-id="e121fdec-1bf5-4a38-a2e0-eb807a294fc9" data-file-name="components/AdminLoginForm.tsx">
           Masukkan email dan kode akses admin Anda
         </span></CardDescription>
       </CardHeader>
-      <CardContent data-unique-id="3db4d437-15f9-463f-883b-4aed90d4428a" data-file-name="components/AdminLoginForm.tsx">
-        <form onSubmit={handleLogin} className="space-y-4" data-unique-id="f6612d75-a82d-4830-afdb-a75afeb2be36" data-file-name="components/AdminLoginForm.tsx" data-dynamic-text="true">
-          <div className="space-y-2" data-unique-id="6fbba4c1-592b-4541-bf03-5b32fd7a3c60" data-file-name="components/AdminLoginForm.tsx">
-            <Label htmlFor="email" data-unique-id="f1d4ad23-af7f-489c-886e-413a2dd65e48" data-file-name="components/AdminLoginForm.tsx"><span className="editable-text" data-unique-id="f2865774-41d0-4183-bd54-21e4eb6468e0" data-file-name="components/AdminLoginForm.tsx">Email</span></Label>
-            <Input id="email" type="email" placeholder="Masukkan email admin" value={email} onChange={e => setEmail(e.target.value)} disabled={isLoading} data-unique-id="a9d92d4b-5324-4891-8ccb-e0018da25c8e" data-file-name="components/AdminLoginForm.tsx" />
+      <CardContent data-unique-id="49ea1019-2832-415a-ad2d-0e7a4fabdfe4" data-file-name="components/AdminLoginForm.tsx">
+        <form onSubmit={handleLogin} className="space-y-4" data-unique-id="d42948a5-e461-4617-9433-e5943f5e99a1" data-file-name="components/AdminLoginForm.tsx" data-dynamic-text="true">
+          <div className="space-y-2" data-unique-id="ed219fbf-6cbc-48e6-8e33-e698925863c9" data-file-name="components/AdminLoginForm.tsx">
+            <Label htmlFor="email" data-unique-id="9bdd21ec-94b5-4689-b668-986d64011d9a" data-file-name="components/AdminLoginForm.tsx"><span className="editable-text" data-unique-id="ff606fb7-ed72-46a9-8f33-809451550355" data-file-name="components/AdminLoginForm.tsx">Email</span></Label>
+            <Input id="email" type="email" placeholder="Masukkan email admin" value={email} onChange={e => setEmail(e.target.value)} disabled={isLoading} data-unique-id="1f871a77-92fc-4284-8677-77f8255bef2d" data-file-name="components/AdminLoginForm.tsx" />
           </div>
           
-          <div className="space-y-2" data-unique-id="2b89d71c-1c07-438e-ace5-4385064fd322" data-file-name="components/AdminLoginForm.tsx">
-            <Label htmlFor="access-code" data-unique-id="64e815f6-848b-4e6b-b04b-73e1cef4b7f5" data-file-name="components/AdminLoginForm.tsx"><span className="editable-text" data-unique-id="e6f77e80-65d9-4da7-9b45-73149a5a56ba" data-file-name="components/AdminLoginForm.tsx">Kode Akses</span></Label>
-            <Input id="access-code" type="password" placeholder="Masukkan kode akses" value={accessCode} onChange={e => setAccessCode(e.target.value)} disabled={isLoading} data-unique-id="354719e9-4d52-44a7-98f2-0158423b26de" data-file-name="components/AdminLoginForm.tsx" />
+          <div className="space-y-2" data-unique-id="aabcf46a-abcf-47d8-a6af-f8e07b96f087" data-file-name="components/AdminLoginForm.tsx">
+            <Label htmlFor="access-code" data-unique-id="9f5be20f-0511-4c94-8c83-6c9bacaff7a5" data-file-name="components/AdminLoginForm.tsx"><span className="editable-text" data-unique-id="082294ad-875c-48c9-88ed-9b87aa509f18" data-file-name="components/AdminLoginForm.tsx">Kode Akses</span></Label>
+            <Input id="access-code" type="password" placeholder="Masukkan kode akses" value={accessCode} onChange={e => setAccessCode(e.target.value)} disabled={isLoading} data-unique-id="6e280dcc-b2c7-4717-b28c-c0cf54b30721" data-file-name="components/AdminLoginForm.tsx" />
           </div>
           
-          {error && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="9b67bc3d-ca1a-4868-8bab-27cee8c4743c" data-file-name="components/AdminLoginForm.tsx">
+          {error && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="b70ba836-8da7-4b01-9958-4e8e460838c5" data-file-name="components/AdminLoginForm.tsx">
               <AlertCircle className="h-5 w-5 mr-2" />
-              <span data-unique-id="e7685209-9adb-4d56-9cdf-386251aa6b57" data-file-name="components/AdminLoginForm.tsx" data-dynamic-text="true">{error}</span>
+              <span data-unique-id="3d4658ef-44f6-4843-83e2-2a21a4a2edcb" data-file-name="components/AdminLoginForm.tsx" data-dynamic-text="true">{error}</span>
             </div>}
           
           <Button type="submit" className="w-full bg-green-200 hover:bg-green-300 text-green-800" disabled={isLoading} onClick={() => {
           console.log("Login button clicked");
-        }} data-unique-id="d3263a33-b4a0-4f48-9798-5e8cfed89e01" data-file-name="components/AdminLoginForm.tsx" data-dynamic-text="true">
+        }} data-unique-id="180cf46f-3ada-4fa0-a936-536c7adfa620" data-file-name="components/AdminLoginForm.tsx" data-dynamic-text="true">
             {isLoading ? <>
                 <Loader2 className="h-4 w-4 mr-2 animate-spin" />
                 Memproses...

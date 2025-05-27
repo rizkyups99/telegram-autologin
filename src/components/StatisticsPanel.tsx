@@ -155,30 +155,30 @@ export default function StatisticsPanel() {
       cumulative: cumulative
     };
   });
-  return <div className="space-y-6" data-unique-id="aed61ab9-20e7-4046-abdd-fee802e1ce53" data-file-name="components/StatisticsPanel.tsx">
-      <Card data-unique-id="0f67c118-dadb-4670-96d9-9dbfde447601" data-file-name="components/StatisticsPanel.tsx">
-        <CardHeader className="flex flex-row items-center justify-between" data-unique-id="71496f56-b294-4a80-8d85-4d6b6eb77d7e" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
-          <CardTitle data-unique-id="31b8b1d8-1591-4d51-809e-1e32e8f7258d" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="02ea2dc2-0ac1-4cc9-bd84-32821f7bb119" data-file-name="components/StatisticsPanel.tsx">Total User Perbulan</span></CardTitle>
-          {trends && <div className={`flex items-center px-3 py-1 rounded-full text-sm ${trends.isPositive ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`} data-unique-id="012ad0e7-2545-4c1f-a525-ec0ab6604a4b" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+  return <div className="space-y-6" data-unique-id="6be8cea0-4204-475f-a316-0682430dbbc3" data-file-name="components/StatisticsPanel.tsx">
+      <Card data-unique-id="cb766220-b597-4232-a813-849298a83a1f" data-file-name="components/StatisticsPanel.tsx">
+        <CardHeader className="flex flex-row items-center justify-between" data-unique-id="cd83c69e-4058-4c4e-8a52-b805702d6c80" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+          <CardTitle data-unique-id="02b697a6-37aa-43d0-8aad-4552fce991b7" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="1e79fa94-1c91-4af7-b91c-8a10b793fab8" data-file-name="components/StatisticsPanel.tsx">Total User Perbulan</span></CardTitle>
+          {trends && <div className={`flex items-center px-3 py-1 rounded-full text-sm ${trends.isPositive ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`} data-unique-id="56fec1b4-b0a6-4b86-b012-aca2d412c7a4" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
               {trends.isPositive ? <TrendingUp className="h-4 w-4 mr-1" /> : <TrendingDown className="h-4 w-4 mr-1" />}
-              <span data-unique-id="b42962cb-2a39-4c08-86d5-e2d34ec0755e" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{trends.isPositive ? '+' : ''}{trends.change}<span className="editable-text" data-unique-id="1306c178-e27d-4f91-80ff-53411a0aa848" data-file-name="components/StatisticsPanel.tsx"> (</span>{trends.percentChange.toFixed(1)}<span className="editable-text" data-unique-id="79e3e562-fafd-4a7f-9c28-5f215c9e96e6" data-file-name="components/StatisticsPanel.tsx">%)</span></span>
+              <span data-unique-id="d14d8ff1-c8a1-4e0c-8b45-df85b3d7d88b" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{trends.isPositive ? '+' : ''}{trends.change}<span className="editable-text" data-unique-id="f92e4bbb-bdb0-404d-9037-e1c87cd4df13" data-file-name="components/StatisticsPanel.tsx"> (</span>{trends.percentChange.toFixed(1)}<span className="editable-text" data-unique-id="d5bf0445-9347-46ec-8f93-baf04dce656b" data-file-name="components/StatisticsPanel.tsx">%)</span></span>
             </div>}
         </CardHeader>
-        <CardContent data-unique-id="a231ca07-e0c8-48ae-8219-39e8e6a31537" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
-          {isLoading ? <div className="flex justify-center py-12" data-unique-id="4b1a134c-2eb4-4222-a997-54ca2480a4e7" data-file-name="components/StatisticsPanel.tsx">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="25954127-2651-479f-990e-5c57bb664cbe" data-file-name="components/StatisticsPanel.tsx"></div>
+        <CardContent data-unique-id="ee319147-7995-43a2-9f58-146990f699d0" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+          {isLoading ? <div className="flex justify-center py-12" data-unique-id="8f64a6d6-a7db-4af2-82e2-c75ef1f981b5" data-file-name="components/StatisticsPanel.tsx">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="a9b7384e-5a89-42fe-81d5-2029a6232441" data-file-name="components/StatisticsPanel.tsx"></div>
             </div> : <>
-              <div className="overflow-x-auto" data-unique-id="2803109c-1784-4d26-859b-7dfe9a8bba46" data-file-name="components/StatisticsPanel.tsx">
-                <Table data-unique-id="bd8c42bd-9e94-4a0d-b518-1c7784c85f27" data-file-name="components/StatisticsPanel.tsx">
+              <div className="overflow-x-auto" data-unique-id="6901d8c3-e883-4894-bc8b-91098248817d" data-file-name="components/StatisticsPanel.tsx">
+                <Table data-unique-id="7987373a-7dd2-4977-86c1-e6a3ae20add3" data-file-name="components/StatisticsPanel.tsx">
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="w-[150px]"><span className="editable-text" data-unique-id="409a049e-942a-47b1-b186-11b2f18f696c" data-file-name="components/StatisticsPanel.tsx">Tahun/Bulan</span></TableHead>
+                      <TableHead className="w-[150px]"><span className="editable-text" data-unique-id="ed5ea4e0-c081-4d59-8473-e078fd86fdf6" data-file-name="components/StatisticsPanel.tsx">Tahun/Bulan</span></TableHead>
                       {monthsInYear.map(month => <TableHead key={month}>{month}</TableHead>)}
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell className="font-medium"><span className="editable-text" data-unique-id="7895727e-70b4-47bb-bacd-3584fb5a591a" data-file-name="components/StatisticsPanel.tsx">2025</span></TableCell>
+                      <TableCell className="font-medium"><span className="editable-text" data-unique-id="e797e5ba-350e-43da-a002-f320f581dd12" data-file-name="components/StatisticsPanel.tsx">2025</span></TableCell>
                       {monthsInYear.map(month => {
                     const dataItem = monthlyData.find(item => item.month === month);
                     return <TableCell key={month} className={dataItem && dataItem.count > 0 ? 'font-medium' : ''}>{dataItem ? dataItem.count : 0}</TableCell>;
@@ -188,21 +188,21 @@ export default function StatisticsPanel() {
                 </Table>
               </div>
 
-              <div className="h-[400px] mt-6" data-unique-id="6f6025a8-e854-41df-b4ca-198c02dc40fc" data-file-name="components/StatisticsPanel.tsx">
-                <Tabs defaultValue="bar" onValueChange={v => setChartView(v as 'bar' | 'line')} data-unique-id="07feb651-bf62-4717-b268-2a2e216fae52" data-file-name="components/StatisticsPanel.tsx">
-                  <div className="flex justify-between items-center mb-4" data-unique-id="54a6d985-32a0-47fa-a4b6-221fbce1ac8c" data-file-name="components/StatisticsPanel.tsx">
-                    <div className="text-sm text-muted-foreground flex items-center" data-unique-id="a59b9666-ce4f-4cdd-a083-6126a0bebd97" data-file-name="components/StatisticsPanel.tsx">
+              <div className="h-[400px] mt-6" data-unique-id="c803cf03-ca06-409e-814d-0f8b1c1d0f52" data-file-name="components/StatisticsPanel.tsx">
+                <Tabs defaultValue="bar" onValueChange={v => setChartView(v as 'bar' | 'line')} data-unique-id="02112606-bd27-44c0-b253-6ca896a23914" data-file-name="components/StatisticsPanel.tsx">
+                  <div className="flex justify-between items-center mb-4" data-unique-id="2112adbf-6a8d-4216-a26e-4d640563845b" data-file-name="components/StatisticsPanel.tsx">
+                    <div className="text-sm text-muted-foreground flex items-center" data-unique-id="2d6c4b40-8853-4afd-a98f-a8adc05d64cc" data-file-name="components/StatisticsPanel.tsx">
                       <HelpCircle className="h-4 w-4 mr-1" />
-                      <span className="editable-text" data-unique-id="15ff8a38-9beb-41df-a6f4-7320336c1356" data-file-name="components/StatisticsPanel.tsx">Bandingkan jumlah pendaftaran user per bulan</span>
+                      <span className="editable-text" data-unique-id="abb3a1f9-751f-494a-b69f-3bb4d8ecf864" data-file-name="components/StatisticsPanel.tsx">Bandingkan jumlah pendaftaran user per bulan</span>
                     </div>
                     <TabsList>
                       <TabsTrigger value="bar" className="flex items-center gap-1">
                         <BarChart2 className="h-4 w-4" /> 
-                        <span className="editable-text" data-unique-id="62187e54-5b3a-49da-894e-ea2627420bc4" data-file-name="components/StatisticsPanel.tsx">Grafik Batang</span>
+                        <span className="editable-text" data-unique-id="cb6af695-569f-46e2-b39f-645a3b6deabe" data-file-name="components/StatisticsPanel.tsx">Grafik Batang</span>
                       </TabsTrigger>
                       <TabsTrigger value="line" className="flex items-center gap-1">
                         <LineChartIcon className="h-4 w-4" /> 
-                        <span className="editable-text" data-unique-id="5383994a-8484-4d19-8988-42a64470a57a" data-file-name="components/StatisticsPanel.tsx">Grafik Garis</span>
+                        <span className="editable-text" data-unique-id="86a58185-69ae-427b-9563-9c1c040fda03" data-file-name="components/StatisticsPanel.tsx">Grafik Garis</span>
                       </TabsTrigger>
                     </TabsList>
                   </div>
@@ -282,10 +282,10 @@ export default function StatisticsPanel() {
                 </Tabs>
               </div>
 
-              <div className="h-[200px] mt-8 border-t pt-6" data-unique-id="31b02e4f-55a5-4045-8527-a303f74b1df8" data-file-name="components/StatisticsPanel.tsx">
-                <div className="text-sm text-muted-foreground mb-4 flex items-center" data-unique-id="70af7024-6754-4da3-bb6b-d315b94111dd" data-file-name="components/StatisticsPanel.tsx">
+              <div className="h-[200px] mt-8 border-t pt-6" data-unique-id="16498eef-e0be-4c6f-be37-2eb9ce33b466" data-file-name="components/StatisticsPanel.tsx">
+                <div className="text-sm text-muted-foreground mb-4 flex items-center" data-unique-id="4eeaf0a4-12da-47a8-b379-5330fa44adb4" data-file-name="components/StatisticsPanel.tsx">
                   <HelpCircle className="h-4 w-4 mr-1" />
-                  <span className="editable-text" data-unique-id="17514aa1-74b9-4e45-b416-9cbde88bd7d6" data-file-name="components/StatisticsPanel.tsx">Pertumbuhan total user secara kumulatif</span>
+                  <span className="editable-text" data-unique-id="c31fd705-291b-4343-974a-7265c8e0ea89" data-file-name="components/StatisticsPanel.tsx">Pertumbuhan total user secara kumulatif</span>
                 </div>
                 <ResponsiveContainer width="100%" height="100%">
                   <AreaChart data={cumulativeData} margin={{
@@ -310,33 +310,33 @@ export default function StatisticsPanel() {
         </CardContent>
       </Card>
 
-      <Card data-unique-id="402cf41c-856d-4363-8c17-0e8f992f7501" data-file-name="components/StatisticsPanel.tsx">
-        <CardHeader className="flex flex-row items-center justify-between" data-unique-id="d14e2e1c-793b-4937-8a97-20c9ecd17f9c" data-file-name="components/StatisticsPanel.tsx">
-          <CardTitle data-unique-id="21d23544-47f4-4bd7-9135-7c24e1bb300b" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="a6cbba7d-a6a0-43aa-875a-48ef12b64cc5" data-file-name="components/StatisticsPanel.tsx">Statistik Kategori Pilihan User</span></CardTitle>
-          <select className="p-2 border rounded-md bg-background" value={selectedMonth} onChange={e => setSelectedMonth(e.target.value)} data-unique-id="40bf52a9-0b1b-4e2f-a6a5-e07c964a70e7" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
-            {months.map(month => <option key={month} value={month} data-is-mapped="true" data-unique-id="82d1e5da-2264-4878-b654-f865f546e39f" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{month}</option>)}
+      <Card data-unique-id="b55c1f24-7d85-459e-bf7e-ed93cda66fd9" data-file-name="components/StatisticsPanel.tsx">
+        <CardHeader className="flex flex-row items-center justify-between" data-unique-id="3af413c0-c24e-497d-9157-273952407248" data-file-name="components/StatisticsPanel.tsx">
+          <CardTitle data-unique-id="551f2b5c-f2b3-452c-81bf-5adff5a9a704" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="5ba6c2df-066a-4b13-a350-d23ec1181af5" data-file-name="components/StatisticsPanel.tsx">Statistik Kategori Pilihan User</span></CardTitle>
+          <select className="p-2 border rounded-md bg-background" value={selectedMonth} onChange={e => setSelectedMonth(e.target.value)} data-unique-id="ae2c978c-df88-4c8b-9615-78d976699c47" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+            {months.map(month => <option key={month} value={month} data-is-mapped="true" data-unique-id="f42987fc-9f5e-4e22-b77e-4a25608e95e5" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{month}</option>)}
           </select>
         </CardHeader>
-        <CardContent data-unique-id="2528ec55-60b9-405a-aed0-f311ac8d48f2" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
-          {isLoading ? <div className="flex justify-center py-12" data-unique-id="062af68a-d4d6-4481-ae77-85ae57526429" data-file-name="components/StatisticsPanel.tsx">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="9d1caf77-73cf-48f8-9596-5e88b5e9b0f2" data-file-name="components/StatisticsPanel.tsx"></div>
+        <CardContent data-unique-id="8ad0af10-e694-482e-a605-b0d944110dd6" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+          {isLoading ? <div className="flex justify-center py-12" data-unique-id="a83ab126-7f50-4109-9577-b2ec467b45ad" data-file-name="components/StatisticsPanel.tsx">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="6d5f2dd6-3799-4db4-8eaa-31126297ee1c" data-file-name="components/StatisticsPanel.tsx"></div>
             </div> : <>
-              <div className="space-y-8" data-unique-id="6f8d9137-ce89-4c9a-9d5e-219d4f1f0d0f" data-file-name="components/StatisticsPanel.tsx">
-                <div data-unique-id="ef4ba7b0-4cee-405b-a54e-dc7f58c837d3" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
-                  <h3 className="text-lg font-medium mb-4" data-unique-id="dfc4161e-5fea-4365-82ea-a092ebffd5e8" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="4c80bd79-886f-4b45-80a3-e1a88a38abc5" data-file-name="components/StatisticsPanel.tsx">Kategori Terpopuler Bulan Ini</span></h3>
-                  {categorySummary && categorySummary.length > 0 ? <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-unique-id="e2ce35f0-b21e-4567-9afd-f62d604d3e59" data-file-name="components/StatisticsPanel.tsx">
-                      <div className="h-80" data-unique-id="370c2aed-a00e-4a06-91e6-510c36a75c70" data-file-name="components/StatisticsPanel.tsx">
+              <div className="space-y-8" data-unique-id="1008c827-45c9-485b-8823-a09a0d73908f" data-file-name="components/StatisticsPanel.tsx">
+                <div data-unique-id="0d9ff80d-1bee-4be0-a898-145cbffeb269" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+                  <h3 className="text-lg font-medium mb-4" data-unique-id="d2208727-6f27-4d19-94c7-bdfc1411869e" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="c77052d9-86e5-4762-9374-2ca5e59de6ca" data-file-name="components/StatisticsPanel.tsx">Kategori Terpopuler Bulan Ini</span></h3>
+                  {categorySummary && categorySummary.length > 0 ? <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-unique-id="a33c9243-078c-4309-a84c-70c6fedf4d99" data-file-name="components/StatisticsPanel.tsx">
+                      <div className="h-80" data-unique-id="0f9991f8-e00c-427f-86c7-5f8aaa40c4e9" data-file-name="components/StatisticsPanel.tsx">
                         <ResponsiveContainer width="100%" height="100%">
                           <PieChart>
                             <Pie data={categorySummary} dataKey="count" nameKey="name" cx="50%" cy="50%" outerRadius={80} fill="#8884d8" label={entry => entry.name}>
-                              {categorySummary.map((entry, index) => <Cell key={`cell-${index}`} fill={getChartColors()[index % getChartColors().length]} data-unique-id="509b201f-fb75-44ff-9557-d31abac81c10" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true" />)}
+                              {categorySummary.map((entry, index) => <Cell key={`cell-${index}`} fill={getChartColors()[index % getChartColors().length]} data-unique-id="7cb72e2c-f4cb-4ac7-9250-0d9eeb2d2f5d" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true" />)}
                             </Pie>
                             <Legend />
                             <Tooltip formatter={(value, name) => [`${value} pendaftar`, name]} />
                           </PieChart>
                         </ResponsiveContainer>
                       </div>
-                      <div className="h-80" data-unique-id="d9309d24-329e-4792-9fc3-7319467d5525" data-file-name="components/StatisticsPanel.tsx">
+                      <div className="h-80" data-unique-id="999e7ddc-a9cf-4e8c-9574-ad8d536af0bb" data-file-name="components/StatisticsPanel.tsx">
                         <ResponsiveContainer width="100%" height="100%">
                           <BarChart data={categorySummary} margin={{
                       top: 20,
@@ -349,34 +349,34 @@ export default function StatisticsPanel() {
                             <YAxis />
                             <Tooltip formatter={value => [`${value} pendaftar`, 'Jumlah']} />
                             <Bar dataKey="count" name="Jumlah Pendaftar" fill="#8884d8">
-                              {categorySummary.map((entry, index) => <Cell key={`cell-${index}`} fill={getChartColors()[index % getChartColors().length]} data-unique-id="f0face37-1ca0-4065-9920-e26ead440162" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true" />)}
+                              {categorySummary.map((entry, index) => <Cell key={`cell-${index}`} fill={getChartColors()[index % getChartColors().length]} data-unique-id="3632902f-6ad0-4661-8a82-f5cb0cbd1ae8" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true" />)}
                             </Bar>
                           </BarChart>
                         </ResponsiveContainer>
                       </div>
-                    </div> : <div className="h-80 flex items-center justify-center text-muted-foreground" data-unique-id="f432f7e1-c6d8-40ed-92d3-b473ec170cad" data-file-name="components/StatisticsPanel.tsx">
-                      <p data-unique-id="52e7b658-a1bd-4183-ad49-03ed15ae8945" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="b9fb8697-0c9c-4ef7-9a37-25a1457bab41" data-file-name="components/StatisticsPanel.tsx">Tidak ada data kategori untuk bulan ini</span></p>
+                    </div> : <div className="h-80 flex items-center justify-center text-muted-foreground" data-unique-id="e53db53f-7be0-4370-b5ba-7a753e5389da" data-file-name="components/StatisticsPanel.tsx">
+                      <p data-unique-id="a20d52d1-8f26-480e-982f-bbd413b221fe" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="f3028c02-0936-4fe9-a0a4-8e39016067c6" data-file-name="components/StatisticsPanel.tsx">Tidak ada data kategori untuk bulan ini</span></p>
                     </div>}
                 </div>
                 
-                <div className="overflow-x-auto" data-unique-id="d17bc74e-ae15-483e-a24e-99cdd10f940a" data-file-name="components/StatisticsPanel.tsx">
-                  <h3 className="text-lg font-medium mb-4" data-unique-id="c09c2e6d-683f-48af-8ff4-ed1f5b540e90" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="668097df-d9c6-44d3-abf7-d3005c8d6db2" data-file-name="components/StatisticsPanel.tsx">Detail Kategori per Bulan</span></h3>
-                  <Table data-unique-id="4c924cdd-1a21-4787-9c8b-8876bd92aba9" data-file-name="components/StatisticsPanel.tsx">
+                <div className="overflow-x-auto" data-unique-id="8986ea0d-eff9-4dbc-a1bb-59c845fa0adb" data-file-name="components/StatisticsPanel.tsx">
+                  <h3 className="text-lg font-medium mb-4" data-unique-id="c5687069-c48e-49c0-9d39-9a9428ac7b62" data-file-name="components/StatisticsPanel.tsx"><span className="editable-text" data-unique-id="9aa620f6-2dec-4b16-a727-7eda46c4e9fb" data-file-name="components/StatisticsPanel.tsx">Detail Kategori per Bulan</span></h3>
+                  <Table data-unique-id="93e870f3-82a2-4366-8939-9e84240b53cc" data-file-name="components/StatisticsPanel.tsx">
                     <TableHeader>
                       <TableRow>
-                        <TableHead className="w-[150px]"><span className="editable-text" data-unique-id="33464985-7563-4f38-b7fd-20081a164b99" data-file-name="components/StatisticsPanel.tsx">Kategori</span></TableHead>
-                        <TableHead className="px-4 py-2 text-center"><span className="editable-text" data-unique-id="a9a6ce88-9c77-4859-8a16-2d2cbb819c45" data-file-name="components/StatisticsPanel.tsx">Jumlah Pendaftar</span></TableHead>
-                        <TableHead className="px-4 py-2 text-center"><span className="editable-text" data-unique-id="bf911f62-130e-4ac6-85ce-f3e070ac3383" data-file-name="components/StatisticsPanel.tsx">Persentase</span></TableHead>
+                        <TableHead className="w-[150px]"><span className="editable-text" data-unique-id="22a78709-5006-4e32-aa04-066a606b672e" data-file-name="components/StatisticsPanel.tsx">Kategori</span></TableHead>
+                        <TableHead className="px-4 py-2 text-center"><span className="editable-text" data-unique-id="6f642d09-28f4-4422-ae8d-1f3803893a39" data-file-name="components/StatisticsPanel.tsx">Jumlah Pendaftar</span></TableHead>
+                        <TableHead className="px-4 py-2 text-center"><span className="editable-text" data-unique-id="0c477cc3-f74b-45b0-9fe9-ccb5206e506b" data-file-name="components/StatisticsPanel.tsx">Persentase</span></TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       {categorySummary && categorySummary.map((category, index) => {
                     const totalCount = categorySummary.reduce((sum, cat) => sum + cat.count, 0);
                     const percentage = totalCount > 0 ? (category.count / totalCount * 100).toFixed(1) : '0';
-                    return <TableRow key={index} data-unique-id="cea97a4e-6437-4253-9222-c5af650353a2" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
-                            <TableCell className="font-medium" data-unique-id="0292eee6-58ea-40b7-915c-cbb45ba04e94" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{category.name}</TableCell>
-                            <TableCell className="text-center" data-unique-id="52e4a916-acc4-43df-a6a4-c63ccbe1e6c0" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{category.count}</TableCell>
-                            <TableCell className="text-center" data-unique-id="c5a7cb99-64b9-4d10-a641-1216351601a2" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{percentage}<span className="editable-text" data-unique-id="0973f779-a237-476b-8669-a953dd8b138b" data-file-name="components/StatisticsPanel.tsx">%</span></TableCell>
+                    return <TableRow key={index} data-unique-id="feee5710-506c-4006-9b0c-f14b180b88fe" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+                            <TableCell className="font-medium" data-unique-id="2b574da0-d49f-4209-b2f5-e40ded488212" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{category.name}</TableCell>
+                            <TableCell className="text-center" data-unique-id="805ec65c-821a-4767-b7ab-cf90e9edf058" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{category.count}</TableCell>
+                            <TableCell className="text-center" data-unique-id="d46d5559-22e9-4528-8d73-95d53766ab8e" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{percentage}<span className="editable-text" data-unique-id="a39734be-1c54-4002-b825-d11bffe69dcf" data-file-name="components/StatisticsPanel.tsx">%</span></TableCell>
                           </TableRow>;
                   })}
                     </TableBody>

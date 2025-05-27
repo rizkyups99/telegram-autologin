@@ -137,8 +137,42 @@ export async function POST(request: Request) {
         title,
         fileUrl,
         categoryId: parseInt(categoryId),
-        updatedAt: new Date(),
       };
+      
+      // Check if audioCloudFiles table exists in the database
+      try {
+        const tableExists = await db.execute(sql`SELECT to_regclass('public.audio_cloud_files')`);
+        console.log("Table check result:", tableExists);
+        
+        // Check if the table exists using the first result
+        const result = tableExists[0] as { to_regclass: string | null };
+        if (!result?.to_regclass) {
+          // If table doesn't exist, try to create it
+          try {
+            console.log("Audio cloud files table not found, attempting to create it");
+            await db.execute(sql`
+              CREATE TABLE IF NOT EXISTS "audio_cloud_files" (
+                "id" SERIAL PRIMARY KEY,
+                "title" TEXT NOT NULL,
+                "file_url" TEXT NOT NULL,
+                "category_id" INTEGER NOT NULL REFERENCES "categories"("id"),
+                "created_at" TIMESTAMP DEFAULT NOW() NOT NULL,
+                "updated_at" TIMESTAMP DEFAULT NOW() NOT NULL
+              );
+            `);
+            console.log("Audio cloud files table created successfully");
+          } catch (createError) {
+            console.error("Error creating audio_cloud_files table:", createError);
+            return NextResponse.json(
+              { error: "Audio cloud files table does not exist and automatic creation failed. Please run migrations." },
+              { status: 500 }
+            );
+          }
+        }
+      } catch (tableCheckError) {
+        console.error("Error checking if table exists:", tableCheckError);
+        // Continue anyway as the error might just be that the table already exists
+      }
       
       const insertedFile = await db.insert(audioCloudFiles).values(newFile).returning();
       
