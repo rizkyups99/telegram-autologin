@@ -26,11 +26,11 @@ export const viewport = {
 };
 export const metadata: Metadata = {
   title: {
-    default: "Creatr",
-    template: "%s | Creatr"
+    default: "Langit Digital",
+    template: "%s | langit digital"
   },
-  description: "A modern web application built with Next.js and TypeScript",
-  applicationName: "Creatr",
+  description: "copyright langit digital teknologi",
+  applicationName: "Langit Digital",
   keywords: ["next.js", "react", "typescript", "web application"],
   authors: [{
     name: "Creatr Team"
