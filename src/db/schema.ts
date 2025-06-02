@@ -134,6 +134,14 @@ export const telegramSettings = pgTable('telegram_settings', {
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
+export const whatsappSettings = pgTable('whatsapp_settings', {
+  id: serial('id').primaryKey(),
+  key: text('key').notNull().unique(),
+  value: text('value'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
 // Define relations
 export const usersRelations = relations(users, ({ many }) => ({
   pdfs: many(pdfs),
@@ -183,6 +191,9 @@ export type NewTelegramLog = InferInsertModel<typeof telegramLogs>;
 
 export type TelegramSetting = InferSelectModel<typeof telegramSettings>;
 export type NewTelegramSetting = InferInsertModel<typeof telegramSettings>;
+
+export type WhatsappSetting = InferSelectModel<typeof whatsappSettings>;
+export type NewWhatsappSetting = InferInsertModel<typeof whatsappSettings>;
 
 // User access tables for category filtering
 // User access tables for category filtering - use 'if not exists' approach via direct SQL for these

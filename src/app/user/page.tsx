@@ -24,6 +24,7 @@ export default function UserPage() {
   const [pdfCategoryIds, setPdfCategoryIds] = useState<number[]>([]);
   const [videoCategoryIds, setVideoCategoryIds] = useState<number[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [whatsappPhone, setWhatsappPhone] = useState('6285716665995'); // Default fallback
   const router = useRouter();
   useEffect(() => {
     // Check if user is logged in
@@ -40,6 +41,9 @@ export default function UserPage() {
       if (parsedUser.id) {
         fetchUserAccess(parsedUser.id);
       }
+
+      // Fetch WhatsApp phone number
+      fetchWhatsappPhone();
     } catch (error) {
       console.error('Error parsing user data:', error);
       localStorage.removeItem('user');
@@ -76,65 +80,79 @@ export default function UserPage() {
       setIsLoading(false);
     }
   };
+  const fetchWhatsappPhone = async () => {
+    try {
+      const response = await fetch('/api/whatsapp-settings');
+      if (response.ok) {
+        const data = await response.json();
+        if (data.phoneNumber) {
+          setWhatsappPhone(data.phoneNumber);
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching WhatsApp phone:', error);
+      // Keep the default phone number if fetch fails
+    }
+  };
   const handleLogout = () => {
     localStorage.removeItem('user');
     router.push('/');
   };
   if (!user || isLoading) {
-    return <div className="flex justify-center items-center min-h-screen" data-unique-id="52ab5136-97a3-4f1a-b05a-97fcfbb82616" data-file-name="app/user/page.tsx">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" data-unique-id="727d573e-ecbd-4e4c-b5ee-ffe8b9770419" data-file-name="app/user/page.tsx"></div>
+    return <div className="flex justify-center items-center min-h-screen" data-unique-id="d1d45fa3-fa14-49c4-a36d-3e6420dceac7" data-file-name="app/user/page.tsx">
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary" data-unique-id="ece33530-f980-4bfe-bc76-5581ae9a0fed" data-file-name="app/user/page.tsx"></div>
       </div>;
   }
-  return <div className="min-h-screen bg-background flex flex-col" data-unique-id="6b493867-6207-4024-a2de-d3fb58e1f273" data-file-name="app/user/page.tsx">
-      <header className="border-b border-border" data-unique-id="d8db6031-918f-4e1e-97b0-93d97a511fc9" data-file-name="app/user/page.tsx">
-        <div className="container mx-auto px-3 py-3 sm:px-4 sm:py-5 flex flex-row justify-between items-center gap-2" data-unique-id="043c9361-7da6-4f6b-9d79-6020b06736f4" data-file-name="app/user/page.tsx">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold" data-unique-id="185e434b-1488-4104-95e4-307c42a2c085" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="b6035160-7763-4bca-aaa6-20da2552845e" data-file-name="app/user/page.tsx">User Panel</span></h1>
-          <Button variant="destructive" onClick={handleLogout} className="flex items-center gap-2 text-white text-sm" size="sm" data-unique-id="7dd35086-7757-4f50-94d4-b69c1d4e8961" data-file-name="app/user/page.tsx">
+  return <div className="min-h-screen bg-background flex flex-col" data-unique-id="07bb4993-33ae-44c7-b6cc-278985ecf6b4" data-file-name="app/user/page.tsx">
+      <header className="border-b border-border" data-unique-id="125e2673-150a-41eb-896f-783526ac615e" data-file-name="app/user/page.tsx">
+        <div className="container mx-auto px-3 py-3 sm:px-4 sm:py-5 flex flex-row justify-between items-center gap-2" data-unique-id="3a863b52-fdc4-4d3f-914a-ff3ae88d9a46" data-file-name="app/user/page.tsx">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold" data-unique-id="2df7c2e1-7c4d-4822-9453-4f2d0c37c274" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="76c3cbd2-0f5c-49f6-88ca-fb56603b2324" data-file-name="app/user/page.tsx">User Panel</span></h1>
+          <Button variant="destructive" onClick={handleLogout} className="flex items-center gap-2 text-white text-sm" size="sm" data-unique-id="f594d73c-fd33-4cec-9a49-43b18b60b9ee" data-file-name="app/user/page.tsx">
             <LogOut className="h-3 w-3 sm:h-4 sm:w-4" />
-            <span className="text-sm" data-unique-id="7db036fd-30d3-44e3-8677-0cab4daef2fe" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="912149f2-8604-48aa-b1b2-198b69449f5c" data-file-name="app/user/page.tsx">Logout</span></span>
+            <span className="text-sm" data-unique-id="c71ba46a-f9c2-4ca2-8921-731370188c67" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="4fecf58b-783a-4919-a86f-0ec659a2bb8e" data-file-name="app/user/page.tsx">Logout</span></span>
           </Button>
         </div>
       </header>
       
-      <main className="container mx-auto px-3 py-4 sm:px-4 sm:py-6 flex-grow" data-unique-id="774172b4-32cb-47aa-b3d6-ffa685efae1d" data-file-name="app/user/page.tsx">
-        <Card className="mb-4 sm:mb-6" data-unique-id="22835e41-021f-404e-b2f5-b1e0de395c81" data-file-name="app/user/page.tsx">
-          <CardHeader className="p-3 sm:p-4" data-unique-id="aed9bbb2-b77b-4ef0-b044-4294b9cc2d1e" data-file-name="app/user/page.tsx">
-            <CardTitle className="text-lg sm:text-xl md:text-2xl" data-unique-id="4b62ba4b-a71a-4cc2-8e4c-938145a0da00" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="b0a39a97-75cd-40d6-a00d-6dd72abc91ba" data-file-name="app/user/page.tsx">Selamat datang, </span><span className="font-semibold" data-unique-id="e4c4c9f3-3342-453c-9547-8c67a75a527f" data-file-name="app/user/page.tsx" data-dynamic-text="true">{user.name || user.username}</span></CardTitle>
+      <main className="container mx-auto px-3 py-4 sm:px-4 sm:py-6 flex-grow" data-unique-id="5227e10b-2816-43b4-a25e-0d08c89dd446" data-file-name="app/user/page.tsx">
+        <Card className="mb-4 sm:mb-6" data-unique-id="fb8e5e8d-d47f-4b81-9990-81f9e69cb791" data-file-name="app/user/page.tsx">
+          <CardHeader className="p-3 sm:p-4" data-unique-id="1954f963-99fa-4a36-86a0-5094c3460952" data-file-name="app/user/page.tsx">
+            <CardTitle className="text-lg sm:text-xl md:text-2xl" data-unique-id="d6b620e6-f6f1-4a0d-8cdd-0e70fd5cffbf" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="45b3b377-e8dd-450d-adea-0efa30a3e246" data-file-name="app/user/page.tsx">Selamat datang, </span><span className="font-semibold" data-unique-id="8b8ef85c-3b13-4871-876a-eb0a1700ab60" data-file-name="app/user/page.tsx" data-dynamic-text="true">{user.name || user.username}</span></CardTitle>
           </CardHeader>
-          <CardContent className="p-3 sm:p-4 pt-0 sm:pt-0" data-unique-id="17815f5d-4964-486b-af98-cfc3eec40fc1" data-file-name="app/user/page.tsx">
-            <p className="text-sm sm:text-base" data-unique-id="be4368e7-8614-4ba3-bcbd-92dd862151e4" data-file-name="app/user/page.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="a7e64e87-e9e1-4803-800f-23319993f5e7" data-file-name="app/user/page.tsx">
-              Anda Telah Membeli Akses : Audio (</span>{accessCounts.audio}<span className="editable-text" data-unique-id="e0a89d1e-fea8-4792-a19d-719e4e03d1ff" data-file-name="app/user/page.tsx">), PDF (</span>{accessCounts.pdf}<span className="editable-text" data-unique-id="cc46c0aa-2427-4a30-a3fe-23ec46f835b0" data-file-name="app/user/page.tsx">), Video (</span>{accessCounts.video}<span className="editable-text" data-unique-id="8483065b-ff86-4f72-8d6a-b8e4b7b24507" data-file-name="app/user/page.tsx">)
+          <CardContent className="p-3 sm:p-4 pt-0 sm:pt-0" data-unique-id="cc29bb74-449b-4d4e-839b-f9b280151814" data-file-name="app/user/page.tsx">
+            <p className="text-sm sm:text-base" data-unique-id="89b12166-4b8c-4e90-bc6e-1b5794ee529e" data-file-name="app/user/page.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="b498aff5-8713-4fb1-adbd-772219c2d844" data-file-name="app/user/page.tsx">
+              Anda Telah Membeli Akses : Audio (</span>{accessCounts.audio}<span className="editable-text" data-unique-id="014b5975-1a5e-498c-a341-ba4747b72cb2" data-file-name="app/user/page.tsx">), PDF (</span>{accessCounts.pdf}<span className="editable-text" data-unique-id="5611390f-ab65-49c8-ad15-0861aab647f3" data-file-name="app/user/page.tsx">), Video (</span>{accessCounts.video}<span className="editable-text" data-unique-id="31b1a04a-bacb-446c-974c-eb21b01fc8ea" data-file-name="app/user/page.tsx">)
             </span></p>
           </CardContent>
         </Card>
-        
-        <Tabs defaultValue="audio" className="w-full" data-unique-id="d7da2fec-a11e-4ab3-b035-7e0ddef91811" data-file-name="app/user/page.tsx">
+
+        <Tabs defaultValue="audio" className="w-full" data-unique-id="ab065040-cfbb-4a44-9235-1a5f37934c74" data-file-name="app/user/page.tsx">
           <TabsList className="mb-3 sm:mb-5 w-full flex">
-            <TabsTrigger value="audio" className="flex-1 text-sm sm:text-base py-1.5 px-2"><span className="editable-text" data-unique-id="3f8f3532-3db5-40d6-8808-95f07fac607a" data-file-name="app/user/page.tsx">Audio</span></TabsTrigger>
-            <TabsTrigger value="pdf" className="flex-1 text-sm sm:text-base py-1.5 px-2"><span className="editable-text" data-unique-id="14751a22-201b-452a-aed9-441ace5f99ce" data-file-name="app/user/page.tsx">PDF</span></TabsTrigger>
-            <TabsTrigger value="video" className="flex-1 text-sm sm:text-base py-1.5 px-2"><span className="editable-text" data-unique-id="1c32ac34-916b-4533-aa57-ce86d5bfcead" data-file-name="app/user/page.tsx">Video</span></TabsTrigger>
+            <TabsTrigger value="audio" className="flex-1 text-sm sm:text-base py-1.5 px-2"><span className="editable-text" data-unique-id="8874a483-e221-402f-8400-f05976f0f3a2" data-file-name="app/user/page.tsx">Audio</span></TabsTrigger>
+            <TabsTrigger value="pdf" className="flex-1 text-sm sm:text-base py-1.5 px-2"><span className="editable-text" data-unique-id="99b05186-db2b-4636-8ddf-ed0e0d2fdd23" data-file-name="app/user/page.tsx">PDF</span></TabsTrigger>
+            <TabsTrigger value="video" className="flex-1 text-sm sm:text-base py-1.5 px-2"><span className="editable-text" data-unique-id="48bfb866-0b59-41f2-9155-860c3ef60221" data-file-name="app/user/page.tsx">Video</span></TabsTrigger>
           </TabsList>
           
           <TabsContent value="audio">
-            {accessCounts.audio > 0 ? <AudioPreview filterCategoryIds={audioCategoryIds} /> : <Card data-unique-id="b7f462d1-6fea-487e-95ab-df313e92020b" data-file-name="app/user/page.tsx">
-                <CardContent className="py-6 text-center text-muted-foreground" data-unique-id="d09480e1-7685-4e42-b208-4f8f190b4ba4" data-file-name="app/user/page.tsx">
-                  <p className="text-sm sm:text-base" data-unique-id="3a14a8c0-453e-4fcc-8f49-97f0350e74e7" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="646753b6-b471-4c07-8bd3-0a8346d09669" data-file-name="app/user/page.tsx">Anda belum memiliki akses ke konten Audio</span></p>
+            {accessCounts.audio > 0 ? <AudioPreview filterCategoryIds={audioCategoryIds} /> : <Card data-unique-id="0520e106-43f2-4a77-be03-313861b229d7" data-file-name="app/user/page.tsx">
+                <CardContent className="py-6 text-center text-muted-foreground" data-unique-id="73d1868f-71ae-4e6a-a812-4b8b6007ce83" data-file-name="app/user/page.tsx">
+                  <p className="text-sm sm:text-base" data-unique-id="b48f3ff5-66dc-4719-baab-d1366f46350d" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="4723d15b-6dca-4c5b-9778-cc83a70eee1c" data-file-name="app/user/page.tsx">Anda belum memiliki akses ke konten Audio</span></p>
                 </CardContent>
               </Card>}
           </TabsContent>
           
           <TabsContent value="pdf">
-            {accessCounts.pdf > 0 ? <PDFPreview filterCategoryIds={pdfCategoryIds} /> : <Card data-unique-id="ef749d79-e0cd-4510-8387-df097595ebe1" data-file-name="app/user/page.tsx">
-                <CardContent className="py-6 text-center text-muted-foreground" data-unique-id="2736c91f-653c-41bc-ab3c-dc343bb23bd2" data-file-name="app/user/page.tsx">
-                  <p className="text-sm sm:text-base" data-unique-id="1e32c03e-dcb8-4f98-a48f-4ae16d423b2e" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="327e5cfd-cbd5-4267-9f0e-7a355aa79a32" data-file-name="app/user/page.tsx">Anda belum memiliki akses ke konten PDF</span></p>
+            {accessCounts.pdf > 0 ? <PDFPreview filterCategoryIds={pdfCategoryIds} /> : <Card data-unique-id="d7ba58dd-9a61-496f-b45e-7a49def86269" data-file-name="app/user/page.tsx">
+                <CardContent className="py-6 text-center text-muted-foreground" data-unique-id="1b69acca-fdd6-4c6d-a40b-bdf80356d60e" data-file-name="app/user/page.tsx">
+                  <p className="text-sm sm:text-base" data-unique-id="0695842d-067b-48b4-a84c-6c7f8e4d3620" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="a9cf14e3-c158-4b8c-b9ee-bd884ed803d4" data-file-name="app/user/page.tsx">Anda belum memiliki akses ke konten PDF</span></p>
                 </CardContent>
               </Card>}
           </TabsContent>
           
           <TabsContent value="video">
-            {accessCounts.video > 0 ? <VideoPreview filterCategoryIds={videoCategoryIds} /> : <Card data-unique-id="420a137c-68fa-4bee-9650-df836db729de" data-file-name="app/user/page.tsx">
-                <CardContent className="py-6 text-center text-muted-foreground" data-unique-id="80af551f-8761-4aaf-963c-aac2bb7279c8" data-file-name="app/user/page.tsx">
-                  <p className="text-sm sm:text-base" data-unique-id="c6f803ad-8911-4209-9e40-f520a8997f5c" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="ab8e7390-f730-4ec6-8795-98ccbdb7206e" data-file-name="app/user/page.tsx">Anda belum memiliki akses ke konten Video</span></p>
+            {accessCounts.video > 0 ? <VideoPreview filterCategoryIds={videoCategoryIds} /> : <Card data-unique-id="6172ccf2-ee44-4f41-bd3b-56c6c58c7959" data-file-name="app/user/page.tsx">
+                <CardContent className="py-6 text-center text-muted-foreground" data-unique-id="bb9dfa6e-a970-44b8-992d-93284482cfc8" data-file-name="app/user/page.tsx">
+                  <p className="text-sm sm:text-base" data-unique-id="78578519-e7d4-42f7-9f18-bb713bbd4404" data-file-name="app/user/page.tsx"><span className="editable-text" data-unique-id="d165cd59-8444-4243-b531-54fb44ca1256" data-file-name="app/user/page.tsx">Anda belum memiliki akses ke konten Video</span></p>
                 </CardContent>
               </Card>}
           </TabsContent>

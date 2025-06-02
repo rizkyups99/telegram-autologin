@@ -7,8 +7,8 @@ import dynamic from 'next/dynamic';
 // Dynamically import PDFViewer component to avoid SSR issues
 const PDFViewerComponent = dynamic(() => import('@/components/PDFViewer'), {
   ssr: false,
-  loading: () => <div className="flex justify-center p-6" data-unique-id="ee21f62f-0996-497c-a288-b885ce133598" data-file-name="components/preview/pdf/PDFViewer.tsx">
-      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="5a1e07c5-7360-4f35-bed7-12b988c1db8b" data-file-name="components/preview/pdf/PDFViewer.tsx"></div>
+  loading: () => <div className="flex justify-center p-6" data-unique-id="c55bc08a-ae92-4440-894c-fcdcceedd853" data-file-name="components/preview/pdf/PDFViewer.tsx">
+      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="56d8b0b9-0e76-4431-b9fd-ca715b049671" data-file-name="components/preview/pdf/PDFViewer.tsx"></div>
     </div>
 });
 interface PDF {
@@ -29,19 +29,19 @@ export function PDFViewerPane({
   onDownloadPDF,
   categoryName
 }: PDFViewerProps) {
-  return <div data-unique-id="6886eca4-a293-4b02-a4f3-e862de212f71" data-file-name="components/preview/pdf/PDFViewer.tsx">
-      <div className="mb-4" data-unique-id="80a5de63-ab90-435b-863a-56db28f28587" data-file-name="components/preview/pdf/PDFViewer.tsx">
-        <h2 className="text-2xl font-semibold" data-unique-id="9b4f13c7-7197-479b-92c6-bdcf8e30a608" data-file-name="components/preview/pdf/PDFViewer.tsx" data-dynamic-text="true">{selectedPDF.title}</h2>
-        <p className="text-muted-foreground" data-unique-id="34031627-1e13-4894-a0ab-b2bde74ab98c" data-file-name="components/preview/pdf/PDFViewer.tsx" data-dynamic-text="true">{categoryName}</p>
+  return <div data-unique-id="478c6bc6-b520-4cf2-8e80-576547196dee" data-file-name="components/preview/pdf/PDFViewer.tsx">
+      <div className="mb-4" data-unique-id="2cd61ba9-5343-4d61-86c4-38d53bc26d76" data-file-name="components/preview/pdf/PDFViewer.tsx">
+        <h2 className="text-2xl font-semibold" data-unique-id="75bb0969-b9dd-452d-a5b7-5bff2129c612" data-file-name="components/preview/pdf/PDFViewer.tsx" data-dynamic-text="true">{selectedPDF.title}</h2>
+        <p className="text-muted-foreground" data-unique-id="db0bca72-57d8-4641-9483-b977eeeaf255" data-file-name="components/preview/pdf/PDFViewer.tsx" data-dynamic-text="true">{categoryName}</p>
       </div>
       
-      <div className="h-[70vh] border rounded-lg overflow-hidden" data-unique-id="52f67773-4625-478d-92df-bf71667ec481" data-file-name="components/preview/pdf/PDFViewer.tsx">
+      <div className="h-[70vh] border rounded-lg overflow-hidden" data-unique-id="2a19bb6d-c26c-416e-b8b6-9d6119f22607" data-file-name="components/preview/pdf/PDFViewer.tsx">
         <PDFViewerComponent pdfUrl={selectedPDF.fileUrl} title={selectedPDF.title} />
       </div>
       
-      <div className="mt-4 flex justify-end" data-unique-id="808da055-3b2f-42d8-b232-5286b0da8d30" data-file-name="components/preview/pdf/PDFViewer.tsx">
-        <Button onClick={() => onDownloadPDF(selectedPDF)} variant="outline" className="flex items-center gap-1" data-unique-id="ca5407fd-f84e-4bc7-a712-57f014e1f36e" data-file-name="components/preview/pdf/PDFViewer.tsx">
-          <Download className="h-4 w-4" /><span className="editable-text" data-unique-id="76bacb58-62f5-4352-89e7-87b03d4f9f07" data-file-name="components/preview/pdf/PDFViewer.tsx">
+      <div className="mt-4 flex justify-end" data-unique-id="8f94eeb0-3dd0-4649-b532-580658aeba29" data-file-name="components/preview/pdf/PDFViewer.tsx">
+        <Button onClick={() => onDownloadPDF(selectedPDF)} variant="outline" className="flex items-center gap-1" data-unique-id="d5f23bce-ff9c-4c56-a756-8f1a152027e7" data-file-name="components/preview/pdf/PDFViewer.tsx">
+          <Download className="h-4 w-4" /><span className="editable-text" data-unique-id="3dadf3ff-2da2-4d36-9a2c-d0957b65e919" data-file-name="components/preview/pdf/PDFViewer.tsx">
           Download PDF
         </span></Button>
       </div>
