@@ -3,17 +3,17 @@ import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/ca
 import { Loader } from 'lucide-react';
 import { PDFViewerClientWrapper } from '@/components/ClientWrappers';
 export default function PDFViewerPage() {
-  return <div className="container mx-auto px-4 py-8" data-unique-id="ebbedb74-fb09-4128-a014-8ea5780c07f4" data-file-name="app/pdf-viewer/page.tsx">
-      <Card className="mb-6" data-unique-id="cecfd730-a83d-43b2-a33f-df41ecb3d99c" data-file-name="app/pdf-viewer/page.tsx">
-        <CardHeader data-unique-id="aa689e44-c640-468d-b7b2-3da6b9f4c9a4" data-file-name="app/pdf-viewer/page.tsx">
-          <CardTitle data-unique-id="51a58d02-b667-41ad-8022-c66d312c378b" data-file-name="app/pdf-viewer/page.tsx"><span className="editable-text" data-unique-id="07b86060-32e2-4d29-a8c2-842e418cc67d" data-file-name="app/pdf-viewer/page.tsx">PDF Viewer</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="3f1a8e8f-f02d-48f7-a96c-2a904c2073ac" data-file-name="app/pdf-viewer/page.tsx">
+  return <div className="container mx-auto px-4 py-8" data-unique-id="0d8804eb-cd3d-40aa-a3e3-2506e6eab7f3" data-file-name="app/pdf-viewer/page.tsx">
+      <Card className="mb-6" data-unique-id="c4d27ff6-b1ff-418f-903d-f368aa81b1ec" data-file-name="app/pdf-viewer/page.tsx">
+        <CardHeader data-unique-id="f3b74b08-8276-46bc-890f-0c84a47de26b" data-file-name="app/pdf-viewer/page.tsx">
+          <CardTitle data-unique-id="ff892174-397f-4061-8fa8-ecf9ec4f2217" data-file-name="app/pdf-viewer/page.tsx"><span className="editable-text" data-unique-id="9d4f2a18-0552-4e60-944e-bdc0a6b3341d" data-file-name="app/pdf-viewer/page.tsx">PDF Viewer</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="e482c86d-51be-4c41-b7a7-15dcf799d565" data-file-name="app/pdf-viewer/page.tsx">
             Loading PDF viewer...
           </span></CardDescription>
         </CardHeader>
       </Card>
 
-      <Suspense fallback={<div className="flex justify-center p-6" data-unique-id="7e4d8e1c-c39d-446f-84e9-f505b938f2fe" data-file-name="app/pdf-viewer/page.tsx">
+      <Suspense fallback={<div className="flex justify-center p-6" data-unique-id="7c16d57d-50c0-4538-bc41-c4250ba41448" data-file-name="app/pdf-viewer/page.tsx">
           <Loader className="h-8 w-8 animate-spin text-primary" />
         </div>}>
         <PDFViewerClientWrapper />

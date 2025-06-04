@@ -30,18 +30,18 @@ export default function UserRegistration() {
       setIsLoading(false);
     }
   };
-  return <div className="space-y-6" data-unique-id="e9b9c66a-f968-4315-9f7f-94d25d76a650" data-file-name="components/UserRegistration.tsx">
-      <Card data-unique-id="81cb2050-117a-4ea5-8252-828e393d4aba" data-file-name="components/UserRegistration.tsx">
-        <CardHeader data-unique-id="3ce3d172-d954-4c68-aa18-4e56d89f3e09" data-file-name="components/UserRegistration.tsx">
-          <CardTitle data-unique-id="0d8c25f1-0c8a-49fd-aa6e-34bb40406e41" data-file-name="components/UserRegistration.tsx"><span className="editable-text" data-unique-id="e3ff86fe-98fe-4a57-832a-59d693d4681c" data-file-name="components/UserRegistration.tsx">Manajemen User</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="5bdf73db-9178-40cd-ac1d-9de4db99fe7d" data-file-name="components/UserRegistration.tsx">
+  return <div className="space-y-6" data-unique-id="afd6ca29-d43d-4d6e-b410-875d37480c2a" data-file-name="components/UserRegistration.tsx">
+      <Card data-unique-id="cf738a67-ff64-427f-bc62-e68d09dbcdd0" data-file-name="components/UserRegistration.tsx">
+        <CardHeader data-unique-id="448741d2-021b-48f3-a816-a1d6b5a08565" data-file-name="components/UserRegistration.tsx">
+          <CardTitle data-unique-id="bcfdee6e-ab8d-4724-af1a-8b000279dac6" data-file-name="components/UserRegistration.tsx"><span className="editable-text" data-unique-id="77a1031c-b48a-4f3e-9e6a-a2155607555b" data-file-name="components/UserRegistration.tsx">Manajemen User</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="18383a2c-9ac5-4254-8deb-1a954413045c" data-file-name="components/UserRegistration.tsx">
             Tambah, edit, dan kelola akun pengguna dengan akses ke kategori konten
           </span></CardDescription>
         </CardHeader>
-        <CardContent data-unique-id="a811aa90-e8ad-4bc3-932c-5c11140ec0e5" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
-          {isLoading && users.length === 0 ? <div className="flex justify-center py-8" data-unique-id="60c91777-8834-47f1-89f9-c63ed3a4128b" data-file-name="components/UserRegistration.tsx">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="2d6881bb-6242-4319-95af-2747847d7c93" data-file-name="components/UserRegistration.tsx"></div>
-            </div> : error ? <div className="bg-red-50 text-red-800 p-4 rounded-md" data-unique-id="014ebef9-fcf6-47a3-8eb3-6b6072edfd5f" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
+        <CardContent data-unique-id="77dbab1d-8083-4459-b114-282318a243ea" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
+          {isLoading && users.length === 0 ? <div className="flex justify-center py-8" data-unique-id="a31ed258-6cc0-43ce-b9c0-c1b6b09288dc" data-file-name="components/UserRegistration.tsx">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="8aa166c3-7921-4907-84ff-1d45eba5e07f" data-file-name="components/UserRegistration.tsx"></div>
+            </div> : error ? <div className="bg-red-50 text-red-800 p-4 rounded-md" data-unique-id="e7447600-b58c-4e2d-bf65-b7d2626fb68e" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
               {error}
             </div> : <UserTable users={users} />}
         </CardContent>

@@ -111,9 +111,10 @@ export default function AudioPreview({
         }
       });
       audioElement.addEventListener('loadedmetadata', () => {
-        if (playingAudioId === audioId) {
-          setDuration(audioElement.duration);
-        }
+        setDuration(audioElement.duration);
+      });
+      audioElement.addEventListener('durationchange', () => {
+        setDuration(audioElement.duration);
       });
       audioRefs.current[audioId] = audioElement;
     }
@@ -146,16 +147,31 @@ export default function AudioPreview({
     if (audioElement) {
       audioElement.volume = isMuted ? 0 : volume;
       audioElement.playbackRate = playbackRate;
+
+      // Force load metadata if not already loaded
+      if (audioElement.duration === 0 || isNaN(audioElement.duration)) {
+        audioElement.load();
+        audioElement.addEventListener('loadedmetadata', () => {
+          setDuration(audioElement.duration);
+        }, {
+          once: true
+        });
+      } else {
+        setDuration(audioElement.duration);
+      }
       audioElement.play();
 
-      // Set duration and current time for the new audio
-      setDuration(audioElement.duration || 0);
+      // Set current time for the new audio
       setCurrentTime(0);
 
       // Set up interval to update currentTime frequently for smooth slider movement
       intervalRef.current = window.setInterval(() => {
         if (audioElement) {
           setCurrentTime(audioElement.currentTime);
+          // Update duration if it wasn't set before
+          if (duration === 0 && audioElement.duration > 0) {
+            setDuration(audioElement.duration);
+          }
         }
       }, 100); // Update every 100ms for smoother slider movement
     }
@@ -235,15 +251,15 @@ export default function AudioPreview({
     }));
   };
   if (isLoading) {
-    return <div className="flex justify-center py-8" data-unique-id="d8222bd0-1f91-4387-a2e3-f38273484736" data-file-name="components/preview/audio/AudioPreview.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="92bf5abd-7799-4263-89c5-db0b3d88b184" data-file-name="components/preview/audio/AudioPreview.tsx"></div>
+    return <div className="flex justify-center py-8" data-unique-id="01b8dd18-8611-4485-8f8c-7084a1da971e" data-file-name="components/preview/audio/AudioPreview.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="6746b428-219e-4eb0-a61f-03c436155e6c" data-file-name="components/preview/audio/AudioPreview.tsx"></div>
       </div>;
   }
   if (audiosByCategory.length === 0) {
-    return <p className="text-center py-8 text-muted-foreground" data-unique-id="c6a95a11-8da8-4203-857a-d3e89690065c" data-file-name="components/preview/audio/AudioPreview.tsx"><span className="editable-text" data-unique-id="94be4f98-2a56-4343-941e-004df735556c" data-file-name="components/preview/audio/AudioPreview.tsx">Tidak ada audio yang tersedia.</span></p>;
+    return <p className="text-center py-8 text-muted-foreground" data-unique-id="93dae1c0-5202-43f9-9704-9f2af7e3cf97" data-file-name="components/preview/audio/AudioPreview.tsx"><span className="editable-text" data-unique-id="e476736a-2580-4dc0-a971-c00ae107fdfb" data-file-name="components/preview/audio/AudioPreview.tsx">Tidak ada audio yang tersedia.</span></p>;
   }
-  return <div className="border rounded-lg p-6" data-unique-id="9deb47eb-89af-4573-ad8e-e2c0631daa27" data-file-name="components/preview/audio/AudioPreview.tsx">
-      <div className="space-y-8" data-unique-id="6c9c75f9-e0be-4120-893d-e81e909b6549" data-file-name="components/preview/audio/AudioPreview.tsx" data-dynamic-text="true">
+  return <div className="border rounded-lg p-6" data-unique-id="001ec5fb-f521-4437-bf1e-5345e933d9f5" data-file-name="components/preview/audio/AudioPreview.tsx">
+      <div className="space-y-8" data-unique-id="6d8514a2-ee7d-4b3e-bc5c-034e0825aecb" data-file-name="components/preview/audio/AudioPreview.tsx" data-dynamic-text="true">
         {audiosByCategory.map(category => <AudioCategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} toggleCategory={toggleCategory} playingAudioId={playingAudioId} expandedAudioId={expandedAudioId} handlePlayAudio={handlePlayAudio} handleDownload={handleDownload} formatTime={formatTime} currentTime={currentTime} duration={duration} handleSeek={handleSeek} toggleMute={toggleMute} isMuted={isMuted} volume={volume} handleVolumeChange={handleVolumeChange} changePlaybackRate={changePlaybackRate} playbackRate={playbackRate} downloading={downloading} downloadSuccess={downloadSuccess} />)}
       </div>
     </div>;

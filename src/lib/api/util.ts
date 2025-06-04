@@ -44,10 +44,12 @@ const CONFIG: {
     availableProviders: {
   "text": [
     "gemini-2.0-flash-exp",
+    "gemini-1.5-pro",
     "claude-bedrock"
   ],
   "visionEnabled": [
     "gemini-2.0-flash-exp",
+    "gemini-1.5-pro",
     "claude-bedrock"
   ]
 }
@@ -591,6 +593,22 @@ textProviderImplementations["gemini-2.0-flash-exp"] = {
   },
   async generateWithImagesStream(prompt: string, imageUrls: string[], onChunk: (text: string) => void): Promise<TextGenerationResult> {
     return proxyGenerateWithImagesStream(prompt, imageUrls, onChunk, "67cb01f1011bc1895c03318b", "gemini-2.0-flash-exp");
+  }
+};
+
+// Vision-enabled text provider: gemini-1.5-pro
+textProviderImplementations["gemini-1.5-pro"] = {
+  async generate(prompt: string): Promise<TextGenerationResult> {
+    return proxyGenerate(prompt, "67cc4c69d1324052dd7fc47c", "gemini-1.5-pro");
+  },
+  async generateStream(prompt: string, onChunk: (text: string) => void): Promise<TextGenerationResult> {
+    return proxyGenerateStream(prompt, onChunk, "67cc4c69d1324052dd7fc47c", "gemini-1.5-pro");
+  },
+  async generateWithImages(prompt: string, imageUrls: string[]): Promise<TextGenerationResult> {
+    return proxyGenerateWithImages(prompt, imageUrls, "67cc4c69d1324052dd7fc47c", "gemini-1.5-pro");
+  },
+  async generateWithImagesStream(prompt: string, imageUrls: string[], onChunk: (text: string) => void): Promise<TextGenerationResult> {
+    return proxyGenerateWithImagesStream(prompt, imageUrls, onChunk, "67cc4c69d1324052dd7fc47c", "gemini-1.5-pro");
   }
 };
 

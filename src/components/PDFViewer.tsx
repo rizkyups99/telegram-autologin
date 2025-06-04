@@ -184,66 +184,66 @@ export default function PDFViewer({
       console.error('Error downloading PDF:', error);
     }
   };
-  return <Card className="w-full" data-unique-id="0ca0ae8d-7f46-4e93-b497-63d2bad1da26" data-file-name="components/PDFViewer.tsx">
-      <CardContent className="p-0" data-unique-id="4863e491-9960-4cb3-9ba5-b84308fb581b" data-file-name="components/PDFViewer.tsx">
-        <div className="flex flex-col" ref={viewerRef} data-unique-id="602c4655-0a47-4295-9db4-93d065a2ac8d" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
+  return <Card className="w-full" data-unique-id="30b6cb25-7827-4ff7-9c32-24ed48268528" data-file-name="components/PDFViewer.tsx">
+      <CardContent className="p-0" data-unique-id="56d6cca8-35db-40b9-a046-77166012ffc8" data-file-name="components/PDFViewer.tsx">
+        <div className="flex flex-col" ref={viewerRef} data-unique-id="d2c1bb5e-2afa-4c68-a346-cc847e390c6b" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
           {/* PDF Viewer Controls */}
-          <div className="flex items-center justify-between p-4 border-b" data-unique-id="7364b109-5e66-4bc4-a781-3f74f420fc78" data-file-name="components/PDFViewer.tsx">
-            <div className="flex items-center space-x-2" data-unique-id="0886d1eb-15b8-4e41-b371-486c49322372" data-file-name="components/PDFViewer.tsx">
-              <Button variant="outline" size="sm" onClick={goToPrevPage} disabled={pageNumber <= 1 || isLoading} title="Previous Page" data-unique-id="8bdcf48a-ec0a-45c0-bfe3-4d45d1c0a7ee" data-file-name="components/PDFViewer.tsx">
+          <div className="flex items-center justify-between p-4 border-b" data-unique-id="02833778-3099-4821-8571-959ee74448bd" data-file-name="components/PDFViewer.tsx">
+            <div className="flex items-center space-x-2" data-unique-id="6fa3fbca-e3dc-458e-9667-b393d10568da" data-file-name="components/PDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={goToPrevPage} disabled={pageNumber <= 1 || isLoading} title="Previous Page" data-unique-id="79a29091-5058-479e-8923-bc56900fc5d1" data-file-name="components/PDFViewer.tsx">
                 <ChevronLeft className="h-4 w-4" />
               </Button>
               
-              <span className="text-sm" data-unique-id="bf591878-1bb5-4cb4-bdc6-9429d8ced7c1" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
+              <span className="text-sm" data-unique-id="5a820789-03f6-4b2e-906c-b28c4d3cb0fa" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
                 {isLoading ? 'Loading...' : `Page ${pageNumber} of ${numPages || '?'}`}
               </span>
               
-              <Button variant="outline" size="sm" onClick={goToNextPage} disabled={pageNumber >= (numPages || 1) || isLoading} title="Next Page" data-unique-id="23c2d957-33d7-47e7-8d6c-b080f294681c" data-file-name="components/PDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={goToNextPage} disabled={pageNumber >= (numPages || 1) || isLoading} title="Next Page" data-unique-id="9d695276-95c6-40ce-b4d0-d31acf810ffd" data-file-name="components/PDFViewer.tsx">
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </div>
             
-            <div className="flex items-center space-x-2" data-unique-id="a1795cad-f661-42ab-827f-ecfdc5185f75" data-file-name="components/PDFViewer.tsx">
-              <Button variant="outline" size="sm" onClick={zoomOut} disabled={scale <= 0.5 || isLoading} title="Zoom Out" data-unique-id="6f15722c-aad8-4ddc-bfec-06ecdf004b95" data-file-name="components/PDFViewer.tsx">
+            <div className="flex items-center space-x-2" data-unique-id="22e1a893-6eae-4554-bd6b-698b105d12c8" data-file-name="components/PDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={zoomOut} disabled={scale <= 0.5 || isLoading} title="Zoom Out" data-unique-id="73fe8184-7c9d-4187-b561-1389528de2af" data-file-name="components/PDFViewer.tsx">
                 <ZoomOut className="h-4 w-4" />
               </Button>
               
-              <span className="text-sm w-16 text-center" data-unique-id="d7304073-1e92-4d12-9c01-bd1ccff2804c" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
-                {Math.round(scale * 100)}<span className="editable-text" data-unique-id="9e4fda84-142c-4553-b093-7755e143f691" data-file-name="components/PDFViewer.tsx">%
+              <span className="text-sm w-16 text-center" data-unique-id="b52700d9-015f-4553-bedd-444e40d7e847" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
+                {Math.round(scale * 100)}<span className="editable-text" data-unique-id="205be937-4c41-47e6-9fc4-2b426e2eaf68" data-file-name="components/PDFViewer.tsx">%
               </span></span>
               
-              <Button variant="outline" size="sm" onClick={zoomIn} disabled={scale >= 3 || isLoading} title="Zoom In" data-unique-id="ae0626dc-6de3-4b99-b459-a2b556de88d7" data-file-name="components/PDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={zoomIn} disabled={scale >= 3 || isLoading} title="Zoom In" data-unique-id="333d42df-9d88-4dae-b465-b32d1bb7b0df" data-file-name="components/PDFViewer.tsx">
                 <ZoomIn className="h-4 w-4" />
               </Button>
               
-              <Button variant="outline" size="sm" onClick={rotate} disabled={isLoading} title="Rotate" data-unique-id="1c005241-a64c-4f13-a4f0-fb2acd30ae16" data-file-name="components/PDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={rotate} disabled={isLoading} title="Rotate" data-unique-id="eba98c0f-bd81-4501-87be-0c2db52670a5" data-file-name="components/PDFViewer.tsx">
                 <RotateCw className="h-4 w-4" />
               </Button>
               
-              <Button variant="outline" size="sm" onClick={toggleFullscreen} disabled={isLoading} title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"} data-unique-id="862514d1-af8b-40dc-8c98-a3995ec2242f" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
+              <Button variant="outline" size="sm" onClick={toggleFullscreen} disabled={isLoading} title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"} data-unique-id="a70711a9-f32d-48a7-98bc-6043c545fdca" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
                 {isFullscreen ? <Minimize className="h-4 w-4" /> : <Maximize className="h-4 w-4" />}
               </Button>
               
-              <Button variant="outline" size="sm" onClick={downloadPdf} disabled={!pdfUrl || isLoading} title="Download PDF" data-unique-id="800446f1-36ae-4cbc-afb0-ff4fe56a9aac" data-file-name="components/PDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={downloadPdf} disabled={!pdfUrl || isLoading} title="Download PDF" data-unique-id="cbc7869e-257b-47bd-aa08-1a305c5bb64a" data-file-name="components/PDFViewer.tsx">
                 <Download className="h-4 w-4" />
               </Button>
             </div>
           </div>
           
           {/* PDF Viewer */}
-          <div className={`flex justify-center p-4 bg-muted min-h-[500px] ${isFullscreen ? 'h-screen' : ''}`} data-unique-id="cc1a1bfe-f3c0-4717-835d-19f3713f280c" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
-            {isLoading && <div className="flex flex-col items-center justify-center h-full" data-unique-id="6d2f3e3c-92a6-4e29-8028-30bf1e55a6b0" data-file-name="components/PDFViewer.tsx">
+          <div className={`flex justify-center p-4 bg-muted min-h-[500px] ${isFullscreen ? 'h-screen' : ''}`} data-unique-id="a17d65e8-3bcc-4156-aada-e2947efd0027" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">
+            {isLoading && <div className="flex flex-col items-center justify-center h-full" data-unique-id="bd7a2d3a-7a33-407f-96d0-778d37e5254b" data-file-name="components/PDFViewer.tsx">
                 <Loader className="h-8 w-8 animate-spin text-primary" />
-                <p className="mt-2 text-sm text-muted-foreground" data-unique-id="63738e50-13c5-4b32-8e90-ee253b8541fe" data-file-name="components/PDFViewer.tsx"><span className="editable-text" data-unique-id="577ea98a-8dce-4c29-9fa3-8f0cc932137d" data-file-name="components/PDFViewer.tsx">Loading PDF...</span></p>
+                <p className="mt-2 text-sm text-muted-foreground" data-unique-id="4ff8b62d-0f22-433a-87e9-1fb127b25861" data-file-name="components/PDFViewer.tsx"><span className="editable-text" data-unique-id="64a3b78d-7974-4fad-bf25-245bef17a255" data-file-name="components/PDFViewer.tsx">Loading PDF...</span></p>
               </div>}
             
-            {error && <div className="flex flex-col items-center justify-center h-full text-red-500" data-unique-id="0284d397-37c6-4136-acd1-94e8a77ebb81" data-file-name="components/PDFViewer.tsx">
-                <p data-unique-id="c7f481cd-fda4-40c9-a949-562de631dddb" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">{error}</p>
+            {error && <div className="flex flex-col items-center justify-center h-full text-red-500" data-unique-id="477d5e9d-5cf6-4d4e-97d7-c66c69b8259e" data-file-name="components/PDFViewer.tsx">
+                <p data-unique-id="8a2d2f52-a3ce-4a79-bf34-a07ffcca8162" data-file-name="components/PDFViewer.tsx" data-dynamic-text="true">{error}</p>
               </div>}
             
-            {pdfUrl && !error && <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError} loading={<div className="flex flex-col items-center justify-center h-full" data-unique-id="cd73fcd4-f697-46ee-8c88-c9bd5e52c5b9" data-file-name="components/PDFViewer.tsx">
+            {pdfUrl && !error && <Document file={pdfUrl} onLoadSuccess={onDocumentLoadSuccess} onLoadError={onDocumentLoadError} loading={<div className="flex flex-col items-center justify-center h-full" data-unique-id="deef197e-d7c0-4320-8ce3-6811d46a5d9a" data-file-name="components/PDFViewer.tsx">
                     <Loader className="h-8 w-8 animate-spin text-primary" />
-                    <p className="mt-2 text-sm text-muted-foreground" data-unique-id="7e3c50a7-3a28-4507-a253-2b371cc48cde" data-file-name="components/PDFViewer.tsx"><span className="editable-text" data-unique-id="6f7662ea-e3c1-4f01-9465-12647e0f7c2f" data-file-name="components/PDFViewer.tsx">Loading PDF...</span></p>
+                    <p className="mt-2 text-sm text-muted-foreground" data-unique-id="500855a0-f4b1-40f9-83c9-be6833686f56" data-file-name="components/PDFViewer.tsx"><span className="editable-text" data-unique-id="241231e9-5983-4697-b10b-2a86189aa980" data-file-name="components/PDFViewer.tsx">Loading PDF...</span></p>
                   </div>} options={{
             cMapUrl: 'https://unpkg.com/pdfjs-dist@3.4.120/cmaps/',
             cMapPacked: true,

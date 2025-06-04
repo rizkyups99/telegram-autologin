@@ -191,51 +191,51 @@ export default function CategoryManager() {
       setIsLoading(false);
     }
   };
-  return <div className="space-y-6" data-unique-id="b234cfdc-dc70-46bf-af7e-71bdfa347397" data-file-name="components/CategoryManager.tsx">
-      <Card data-unique-id="4897b85f-3b8c-4326-81a5-fd27f0c5ecf4" data-file-name="components/CategoryManager.tsx">
-        <CardHeader data-unique-id="8bec1439-042d-4ab8-9745-6249dcde171c" data-file-name="components/CategoryManager.tsx">
-          <CardTitle data-unique-id="2f7146d2-9700-4cd9-a385-949ecc64c50c" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="a28d8aaa-a788-4f06-8a96-bc7d913b1f81" data-file-name="components/CategoryManager.tsx">Manajemen Kategori</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="881b76f3-0a0a-483b-a6e3-12a5f700124e" data-file-name="components/CategoryManager.tsx">
+  return <div className="space-y-6" data-unique-id="cab0b484-3b49-4710-9c90-69d1be0a2481" data-file-name="components/CategoryManager.tsx">
+      <Card data-unique-id="a8c10bd4-3ccb-4666-9ce7-ab8b5b819dae" data-file-name="components/CategoryManager.tsx">
+        <CardHeader data-unique-id="876a6d9e-f503-4eba-8d4b-4b65066c25e3" data-file-name="components/CategoryManager.tsx">
+          <CardTitle data-unique-id="eb5d79b0-3c5d-4453-a454-afaea5ff8d14" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="dec4c9ea-36d1-4d8f-8ac5-af3bfe337ab3" data-file-name="components/CategoryManager.tsx">Manajemen Kategori</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="0a06b5c4-3190-4128-bb45-f0e2343a9d9e" data-file-name="components/CategoryManager.tsx">
             Tambah, edit, dan hapus kategori untuk konten
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="8f696c85-c982-4e59-8c34-4be57790f14b" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="a1b57425-3efa-4a39-abaf-566cd92d9f0c" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
           {/* Form for creating/editing categories */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="9412b714-d432-4b43-89b3-cb7b1b998e0d" data-file-name="components/CategoryManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="af233a5e-b223-4438-8025-496c130f1ab7" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="1de00e77-25c1-4913-92e7-af9eb1cd22a3" data-file-name="components/CategoryManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="1a4cf58e-96df-4bba-9bc2-1d16855e9257" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
               {isCreating ? "Tambah Kategori Baru" : "Tambah Kategori"}
             </h3>
-            <div className="space-y-4" data-unique-id="990ceda0-8029-4328-b3b6-1510d799f808" data-file-name="components/CategoryManager.tsx">
-              <div data-unique-id="89fbad38-6841-4b62-8c13-80cd299192d3" data-file-name="components/CategoryManager.tsx">
-                <Label htmlFor="name" className="block text-sm font-medium mb-1" data-unique-id="9a5ef2fb-b497-43b6-88ae-2afa0ca5e59d" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="3f399dcd-116c-4c2f-bf21-37a49c1a5835" data-file-name="components/CategoryManager.tsx">Nama Kategori</span></Label>
-                <Input id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder="Masukkan nama kategori" className="w-full" data-unique-id="6e8d9557-650c-47eb-8989-2404360711f7" data-file-name="components/CategoryManager.tsx" />
+            <div className="space-y-4" data-unique-id="b12f60da-57cd-4ab2-a089-3cce5c71057d" data-file-name="components/CategoryManager.tsx">
+              <div data-unique-id="3d12ca55-2f90-48df-ab72-d6515239c7f7" data-file-name="components/CategoryManager.tsx">
+                <Label htmlFor="name" className="block text-sm font-medium mb-1" data-unique-id="3a4aeab6-e9f8-4204-837a-89a14c43aae8" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="a7e6ec1d-c746-4215-9bae-abe74da847b4" data-file-name="components/CategoryManager.tsx">Nama Kategori</span></Label>
+                <Input id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder="Masukkan nama kategori" className="w-full" data-unique-id="36e770ca-a3ff-43d9-b73a-2f39ce7f394c" data-file-name="components/CategoryManager.tsx" />
               </div>
-              <div data-unique-id="c887cba5-ad8b-46f6-8c3c-669ccbb53601" data-file-name="components/CategoryManager.tsx">
-                <Label htmlFor="description" className="block text-sm font-medium mb-1" data-unique-id="34eee7a1-6e45-4249-8cf5-41191eb02ddc" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="135e0408-7e84-4af4-8ad2-df2a1f16604e" data-file-name="components/CategoryManager.tsx">Deskripsi Kategori</span></Label>
-                <textarea id="description" name="description" value={formData.description} onChange={handleInputChange} placeholder="Masukkan deskripsi kategori" className="w-full min-h-[100px] p-2 border rounded-md bg-background" rows={4} data-unique-id="4e176ed2-9fe6-4ebe-ac3e-7387795cfc21" data-file-name="components/CategoryManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="230f8588-2f55-4bbd-b150-95c1f93183e6" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="21d02da4-55b4-41d1-9433-98498884a5db" data-file-name="components/CategoryManager.tsx">
+              <div data-unique-id="078fb3a5-f5d9-4c39-ae4a-69eb1fefe139" data-file-name="components/CategoryManager.tsx">
+                <Label htmlFor="description" className="block text-sm font-medium mb-1" data-unique-id="a895c4fe-2ee9-4d3b-8eec-8812aa73db05" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="59f1f2bc-7c80-4eee-abb1-67b7a4e7fa14" data-file-name="components/CategoryManager.tsx">Deskripsi Kategori</span></Label>
+                <textarea id="description" name="description" value={formData.description} onChange={handleInputChange} placeholder="Masukkan deskripsi kategori" className="w-full min-h-[100px] p-2 border rounded-md bg-background" rows={4} data-unique-id="ea19b74a-0c70-4960-a048-2d7c0caa2ac3" data-file-name="components/CategoryManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="e4b2f2af-13cc-430f-9c02-50f27a8508a0" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="9f8aebc4-a8f9-4196-b024-7b671228a601" data-file-name="components/CategoryManager.tsx">
                   Deskripsi kategori (paragraf panjang untuk menjelaskan tentang kategori)
                 </span></p>
               </div>
-              <div className="flex justify-end space-x-2" data-unique-id="2d61c784-89d4-455b-80d3-fd4c3440ad3d" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
-                {editingCategory !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="7c106fe9-d1f1-4ef2-8e05-6d4314206271" data-file-name="components/CategoryManager.tsx">
+              <div className="flex justify-end space-x-2" data-unique-id="4860ac42-7a4a-4c26-91f4-72d2aa46447c" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+                {editingCategory !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="9b21b4bc-b5ca-4e5e-bdc9-96c993769d5c" data-file-name="components/CategoryManager.tsx">
                     <X className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="1c5576e8-d540-4acb-bda2-81f99c3bc31c" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="e90f07a0-6f84-4431-8fa8-9c00a039c359" data-file-name="components/CategoryManager.tsx">Batal</span></span>
+                    <span className="hidden sm:inline" data-unique-id="149495a8-d241-4288-a9dd-e4ba6ceb3444" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="52403132-503b-44e1-bf88-f26cdbbb87d9" data-file-name="components/CategoryManager.tsx">Batal</span></span>
                   </Button>}
-                <Button onClick={editingCategory !== null ? () => updateCategory(editingCategory) : createCategory} disabled={isLoading || !formData.name.trim()} className="flex items-center gap-1" data-unique-id="849fd0bd-67fa-4e86-bcf7-e6698201e60c" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
-                  {isLoading ? <span className="flex items-center" data-unique-id="b07c6332-a130-4a74-95fb-73eda63d62b0" data-file-name="components/CategoryManager.tsx">
-                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="32bc90be-1318-444e-ad2d-4657e44b3ea8" data-file-name="components/CategoryManager.tsx">
+                <Button onClick={editingCategory !== null ? () => updateCategory(editingCategory) : createCategory} disabled={isLoading || !formData.name.trim()} className="flex items-center gap-1" data-unique-id="35233114-2679-49a0-b4d6-833479cdfb02" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+                  {isLoading ? <span className="flex items-center" data-unique-id="589053eb-f4db-4c13-97ea-3f28a5b5c580" data-file-name="components/CategoryManager.tsx">
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="699d3969-9c2e-4a20-bc3b-b3cf342b3698" data-file-name="components/CategoryManager.tsx">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span className="hidden sm:inline" data-unique-id="a69feb4d-0bdb-4113-aa1b-e5d4f01510f8" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="0aa01cb6-7f02-47bd-a017-f9f3e303d51b" data-file-name="components/CategoryManager.tsx">Menyimpan...</span></span>
+                      <span className="hidden sm:inline" data-unique-id="0eb8e0ba-6753-47e9-b038-1728ad20326d" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="a9b1001c-8c3c-40ea-bc04-6e50fe03ae7f" data-file-name="components/CategoryManager.tsx">Menyimpan...</span></span>
                     </span> : <>
                       {editingCategory !== null ? <>
                           <Save className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="03510309-5d75-4a4e-9141-ba1465d9262b" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="397a5b86-18ad-42bf-83d5-446c1c795d75" data-file-name="components/CategoryManager.tsx">Perbarui</span></span>
+                          <span className="hidden sm:inline" data-unique-id="f1019a35-1469-4e8c-9159-afaf3f3002a3" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="d34f379d-2e10-4ecb-9d84-127db45ab66d" data-file-name="components/CategoryManager.tsx">Perbarui</span></span>
                         </> : <>
                           <Plus className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="5fde1da5-8164-4be1-b7f7-d95d05653595" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="9897eed7-8760-431c-8b8d-6bdebf7b070f" data-file-name="components/CategoryManager.tsx">Tambah Kategori</span></span>
+                          <span className="hidden sm:inline" data-unique-id="ae310495-0c71-4629-9e30-3d438c73b43b" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="65fcd10b-18ff-4864-a083-5df6c45a9aad" data-file-name="components/CategoryManager.tsx">Tambah Kategori</span></span>
                         </>}
                     </>}
                 </Button>
@@ -244,31 +244,31 @@ export default function CategoryManager() {
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="b88ceacf-901e-44a8-a1ab-239b6597846a" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="f225eb72-02d5-46a7-9926-c85ab0751634" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="075fc480-d59a-426d-aff7-a5774ff57b3a" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="6c4515c2-456b-46f2-9a87-20d46fc343ab" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
           {/* Categories list */}
-          <div data-unique-id="8a733629-d536-4e98-9fed-3913eea74143" data-file-name="components/CategoryManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="850a6e85-b22e-4ade-b095-a0072cc7a1f0" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="7c665f8f-c740-4279-bd41-57335d28e2f7" data-file-name="components/CategoryManager.tsx">Daftar Kategori</span></h3>
-            <div className="overflow-x-auto" data-unique-id="509dd797-01bf-4713-8ab1-7bcb63d83759" data-file-name="components/CategoryManager.tsx">
-              <Table data-unique-id="f3185a29-26fd-4f65-9777-4f2887566d77" data-file-name="components/CategoryManager.tsx">
+          <div data-unique-id="61a34a61-6f06-4c08-b585-186411517a9e" data-file-name="components/CategoryManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="cf18d725-4c38-4fbc-acd1-40fa09468cd5" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="b6620512-8ddc-4bc1-9784-27455b066521" data-file-name="components/CategoryManager.tsx">Daftar Kategori</span></h3>
+            <div className="overflow-x-auto" data-unique-id="9316bfc8-a6e3-43ea-8cd2-7592066e6f37" data-file-name="components/CategoryManager.tsx">
+              <Table data-unique-id="794c5e5d-965b-4389-9927-3f4803896e4c" data-file-name="components/CategoryManager.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="11a217b4-be26-443e-8c3f-4e740ed768e8" data-file-name="components/CategoryManager.tsx">No.</span></TableHead>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="728ece31-c4d5-4613-b249-ea5fa140f9d8" data-file-name="components/CategoryManager.tsx">ID</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="8a95b0ac-2848-468a-b0eb-e19ac0f2524a" data-file-name="components/CategoryManager.tsx">Nama Kategori</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="16141c5a-3448-4e37-b2d0-63e4e9df6562" data-file-name="components/CategoryManager.tsx">Deskripsi</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="b1510200-96cd-4cce-9c65-c44539e779f9" data-file-name="components/CategoryManager.tsx">Tanggal Dibuat</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="9d121702-9ed2-45d3-8402-1b2f4eebf9c7" data-file-name="components/CategoryManager.tsx">Aksi</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="e136591b-995e-4606-be03-e45d23234974" data-file-name="components/CategoryManager.tsx">No.</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="44c7fee9-017f-4f3b-9768-01dbdf02c584" data-file-name="components/CategoryManager.tsx">ID</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="fd9c9deb-2530-4038-a4e7-d0ac820202c9" data-file-name="components/CategoryManager.tsx">Nama Kategori</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="b2d40fc0-cc62-4140-973c-a3cf5fb49a9e" data-file-name="components/CategoryManager.tsx">Deskripsi</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="bb5462b1-8724-44ff-bb13-7cb1f9668f19" data-file-name="components/CategoryManager.tsx">Tanggal Dibuat</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="9bdeadbd-bcaa-4098-a9df-e2d3bf49b716" data-file-name="components/CategoryManager.tsx">Aksi</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={6} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="2800e7bd-ce38-42bc-aa58-013f10521ef1" data-file-name="components/CategoryManager.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="876e1aeb-9bca-41c9-ace5-fb1ec7402526" data-file-name="components/CategoryManager.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="ff0775c6-5a1a-41a7-9936-6da1d970cad5" data-file-name="components/CategoryManager.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="7b5477a6-6f9f-4203-af1d-f956284ab8ef" data-file-name="components/CategoryManager.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -276,30 +276,30 @@ export default function CategoryManager() {
                         {error}
                       </TableCell>
                     </TableRow> : categories.length === 0 ? <TableRow>
-                      <TableCell colSpan={6} className="text-center py-8"><span className="editable-text" data-unique-id="2598a4fd-2238-4ded-aafd-435cdbbf00b7" data-file-name="components/CategoryManager.tsx">
+                      <TableCell colSpan={6} className="text-center py-8"><span className="editable-text" data-unique-id="2474accf-f9fa-473c-9779-79cfea5a3111" data-file-name="components/CategoryManager.tsx">
                         Belum ada kategori. Silakan tambahkan kategori baru.
                       </span></TableCell>
-                    </TableRow> : Array.isArray(categories) && categories.map((category, index) => <TableRow key={category.id} data-unique-id="de90c600-30ed-4c16-bbbf-8c98b780262b" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="9bb14b8a-6dfc-49f4-8005-31f79566b6dd" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{index + 1}</TableCell>
-                        <TableCell data-unique-id="5d257b8d-eb95-4b48-827f-0440defc38a1" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{category.id}</TableCell>
-                        <TableCell className="font-medium" data-unique-id="a1c60b98-b673-4d03-be1d-cd1773ce8176" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{category.name}</TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="1ac533f9-b613-44b4-ad0b-f51a197f6c41" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+                    </TableRow> : Array.isArray(categories) && categories.map((category, index) => <TableRow key={category.id} data-unique-id="3ed04dcf-e439-45db-85a1-2dcd896cb5ae" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="8ecef11a-0a5a-4fc3-b834-656045dd46c3" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{index + 1}</TableCell>
+                        <TableCell data-unique-id="191bbe7b-7c16-456b-b56e-e3603f79c788" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{category.id}</TableCell>
+                        <TableCell className="font-medium" data-unique-id="52142e1b-ef95-4145-8316-3d10feb1fd18" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">{category.name}</TableCell>
+                        <TableCell className="hidden md:table-cell" data-unique-id="0a7d62f2-c565-43a9-8134-91ab7c06f59b" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
                           {category.description ? category.description.length > 50 ? `${category.description.substring(0, 50)}...` : category.description : "-"}
                         </TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="ab56a74a-38dc-4337-bc28-ab0d48c09589" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+                        <TableCell className="hidden md:table-cell" data-unique-id="93b6b31e-e064-4b76-8779-337ecf3d01eb" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
                           {category.createdAt ? formatDistanceToNow(new Date(category.createdAt), {
                       addSuffix: true
                     }) : "-"}
                         </TableCell>
-                        <TableCell className="text-right" data-unique-id="e7931443-8e21-4f26-9da0-a67c1dca4924" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="0264d092-0aad-4f09-8cd4-fc18a685a1a5" data-file-name="components/CategoryManager.tsx">
-                            <Button variant="outline" size="sm" onClick={() => startEditing(category)} disabled={editingCategory !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="654396ad-9f97-4da0-bd12-af3b9c7db37a" data-file-name="components/CategoryManager.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="b09f0ca6-82ec-485a-8f82-cdad79d63577" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="595f877b-107a-426d-b157-9b5571e8d6ec" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="af76b1cc-921d-4428-80f5-436d659585bc" data-file-name="components/CategoryManager.tsx">Edit</span></span>
+                        <TableCell className="text-right" data-unique-id="f4ddc814-9725-444e-b2a8-5408ee760d98" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="da9ba32f-92a4-48e2-8291-7c97f0157c6f" data-file-name="components/CategoryManager.tsx">
+                            <Button variant="outline" size="sm" onClick={() => startEditing(category)} disabled={editingCategory !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="2b98f6e6-bed2-4452-8b24-3e486d0041d7" data-file-name="components/CategoryManager.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="c155d953-0fb2-4860-9199-8dd341af0e20" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="dbbe6c58-cb88-47f5-8d20-de667acf248b" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="12c2f924-d7a7-4483-a705-e9b941f74463" data-file-name="components/CategoryManager.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deleteCategory(category.id)} disabled={editingCategory !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="e308d979-8349-4177-88c5-5805020b06e4" data-file-name="components/CategoryManager.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="3d5770c2-ef01-47b1-a1f9-cb4f7aea8816" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="2d5df922-2917-470e-9e5b-02c59f1a2203" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="cd9a345e-7737-4da0-8538-0b080c6b4dc5" data-file-name="components/CategoryManager.tsx">Hapus</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deleteCategory(category.id)} disabled={editingCategory !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="8fc70219-d953-4f77-9d63-b87cb962b14d" data-file-name="components/CategoryManager.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="ec9d3a2a-4ce8-497c-a6ab-1d69f01eb1af" data-file-name="components/CategoryManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="1f367fab-76dc-46f3-ae5e-73bb9329fd49" data-file-name="components/CategoryManager.tsx"><span className="editable-text" data-unique-id="5ef6a8bc-2157-4485-81a4-1452da7167c7" data-file-name="components/CategoryManager.tsx">Hapus</span></span>
                             </Button>
                           </div>
                         </TableCell>

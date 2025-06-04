@@ -9,15 +9,19 @@ export async function GET(request: Request) {
     const year = searchParams.get('year') ? parseInt(searchParams.get('year') as string) : new Date().getFullYear();
     const month = searchParams.get('month') ? parseInt(searchParams.get('month') as string) : new Date().getMonth() + 1;
     
+    console.log(`Statistics request for year: ${year}, month: ${month}`);
+    
     // Query actual user data from the database
     const monthlyData = await getMonthlyUserCounts(year);
     const categorySummary = await getCategoryStatistics(year, month);
     const availableMonths = await getAvailableMonths();
+    const categoryDistribution = await getUserCategoryDistribution(year, month);
 
     return NextResponse.json({
       monthlyData,
       categorySummary,
       availableMonths,
+      categoryDistribution,
     });
   } catch (error) {
     console.error("Error fetching statistics:", error);
@@ -80,98 +84,122 @@ async function getMonthlyUserCounts(year: number) {
  */
 async function getCategoryStatistics(year: number, month: number) {
   try {
-    // Get all categories first
-    const categoriesList = await db.select().from(categories);
-    
-    // Create a map to store category counts
-    const categoryCountMap: Record<number, { name: string; count: number }> = {};
-    
-    // Initialize counts for all categories
-    categoriesList.forEach(category => {
-      categoryCountMap[category.id] = {
-        name: category.name,
-        count: 0
-      };
-    });
-    
-    // Function to safely execute a query and process results
-    const getCategoryCounts = async (query: string) => {
-      try {
-        const results = await db.execute(sql.raw(query));
-        results.forEach((row: any) => {
-          if (row && typeof row === 'object' && 'category_id' in row && 'count' in row) {
-            const categoryId = parseInt(String(row.category_id));
-            const count = parseInt(String(row.count));
-            
-            // Only add counts for categories that exist in our map
-            if (categoryCountMap[categoryId]) {
-              categoryCountMap[categoryId].count += count;
-            }
-          }
-        });
-      } catch (error) {
-        console.error("Error executing category count query:", error);
-      }
-    };
-    
-    // Get audio category registrations for the month
-    await getCategoryCounts(`
-      SELECT 
-        uaa.category_id, 
-        COUNT(DISTINCT uaa.user_id) as count
-      FROM 
-        user_audio_access uaa
-      JOIN 
-        users u ON uaa.user_id = u.id
-      WHERE 
-        EXTRACT(YEAR FROM u.created_at) = ${year} 
+    // Get category statistics using a more efficient single query
+    const categoryStats = await db.execute(sql`
+      WITH user_categories AS (
+        SELECT DISTINCT 
+          u.id as user_id,
+          c.id as category_id,
+          c.name as category_name
+        FROM users u
+        LEFT JOIN user_audio_access uaa ON u.id = uaa.user_id
+        LEFT JOIN user_pdf_access upa ON u.id = upa.user_id  
+        LEFT JOIN user_video_access uva ON u.id = uva.user_id
+        LEFT JOIN categories c ON (c.id = uaa.category_id OR c.id = upa.category_id OR c.id = uva.category_id)
+        WHERE c.id IS NOT NULL
+        AND EXTRACT(YEAR FROM u.created_at) = ${year}
         AND EXTRACT(MONTH FROM u.created_at) = ${month}
-      GROUP BY 
-        uaa.category_id
+      )
+      SELECT 
+        category_name as name,
+        COUNT(DISTINCT user_id) as count
+      FROM user_categories
+      GROUP BY category_id, category_name
+      ORDER BY count DESC
+      LIMIT 10
     `);
     
-    // Get PDF category registrations for the month
-    await getCategoryCounts(`
-      SELECT 
-        upa.category_id, 
-        COUNT(DISTINCT upa.user_id) as count
-      FROM 
-        user_pdf_access upa
-      JOIN 
-        users u ON upa.user_id = u.id
-      WHERE 
-        EXTRACT(YEAR FROM u.created_at) = ${year} 
-        AND EXTRACT(MONTH FROM u.created_at) = ${month}
-      GROUP BY 
-        upa.category_id
-    `);
-    
-    // Get video category registrations for the month
-    await getCategoryCounts(`
-      SELECT 
-        uva.category_id, 
-        COUNT(DISTINCT uva.user_id) as count
-      FROM 
-        user_video_access uva
-      JOIN 
-        users u ON uva.user_id = u.id
-      WHERE 
-        EXTRACT(YEAR FROM u.created_at) = ${year} 
-        AND EXTRACT(MONTH FROM u.created_at) = ${month}
-      GROUP BY 
-        uva.category_id
-    `);
-    
-    // Convert the map to an array and filter out categories with 0 count
-    const categoryStats = Object.values(categoryCountMap)
-      .filter(category => category.count > 0)
-      .sort((a, b) => b.count - a.count); // Sort by count in descending order
-    
-    return categoryStats;
+    // Transform the results
+    return categoryStats.map((row: any) => ({
+      name: row.name,
+      count: parseInt(String(row.count))
+    }));
   } catch (error) {
     console.error("Error getting category statistics:", error);
     // Return empty array in case of error
     return [];
+  }
+}
+
+/**
+ * Get user category distribution statistics
+ * Shows how many users have 1, 2, 3+ categories
+ */
+async function getUserCategoryDistribution(year: number, month: number) {
+  try {
+    console.log(`Getting category distribution for ${year}-${month}`);
+    
+    // Get all users from the specified year for complete analysis
+    const allUsers = await db.execute(sql`
+      SELECT id FROM users 
+      WHERE EXTRACT(YEAR FROM created_at) = ${year}
+    `);
+    
+    console.log(`Found ${allUsers.length} users for year ${year}`);
+    
+    if (!allUsers.length) {
+      return [{ categories: 0, users: 0 }];
+    }
+    
+    const userIds = allUsers.map((row: any) => row.id);
+    
+    // Initialize user category count map
+    const userCategoryCount: Record<number, Set<number>> = {};
+    userIds.forEach(userId => {
+      userCategoryCount[userId] = new Set();
+    });
+    
+    // Function to safely get category access
+    const getCategoryAccess = async (tableName: string) => {
+      try {
+        const result = await db.execute(sql.raw(`
+          SELECT user_id, category_id FROM ${tableName} 
+          WHERE user_id = ANY(ARRAY[${userIds.join(',')}])
+        `));
+        
+        result.forEach((row: any) => {
+          const userId = parseInt(String(row.user_id));
+          const categoryId = parseInt(String(row.category_id));
+          if (userCategoryCount[userId]) {
+            userCategoryCount[userId].add(categoryId);
+          }
+        });
+        
+        console.log(`${tableName}: Found ${result.length} access records`);
+      } catch (error) {
+        console.warn(`Error getting ${tableName}:`, error);
+      }
+    };
+    
+    // Get access from all tables
+    await getCategoryAccess('user_audio_access');
+    await getCategoryAccess('user_pdf_access');  
+    await getCategoryAccess('user_video_access');
+    
+    // Count distribution of categories per user
+    const distributionCount: Record<number, number> = {};
+    
+    Object.values(userCategoryCount).forEach(categorySet => {
+      const count = categorySet.size;
+      distributionCount[count] = (distributionCount[count] || 0) + 1;
+    });
+    
+    console.log('Distribution count:', distributionCount);
+    
+    // Format for display
+    const distribution = Object.entries(distributionCount)
+      .map(([categoryCount, userCount]) => ({
+        categories: parseInt(categoryCount),
+        users: userCount
+      }))
+      .sort((a, b) => a.categories - b.categories);
+    
+    console.log('Final distribution:', distribution);
+    
+    return distribution.length > 0 ? distribution : [{ categories: 0, users: userIds.length }];
+  } catch (error) {
+    console.error("Error getting user category distribution:", error);
+    return [{ categories: 0, users: 0 }];
   }
 }
 

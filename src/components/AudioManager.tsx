@@ -386,79 +386,79 @@ export default function AudioManager() {
       setIsLoading(false);
     }
   };
-  return <div className="space-y-6" data-unique-id="16c24375-9605-4fc0-8489-32488d1ac3fc" data-file-name="components/AudioManager.tsx">
-      <Card data-unique-id="71ffecc1-c463-483b-a30c-72fbcd0d8b01" data-file-name="components/AudioManager.tsx">
-        <CardHeader data-unique-id="73fa7893-7c2f-4d56-a85f-a1dfae19f85e" data-file-name="components/AudioManager.tsx">
-          <CardTitle data-unique-id="229f6fb4-9a3a-436e-8a31-430722ab56b2" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="98f38de0-ec92-4728-b6e3-bb8eb9accfcc" data-file-name="components/AudioManager.tsx">Manajemen Audio</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="3a49a5d7-075b-4c2a-8455-c2def76ed671" data-file-name="components/AudioManager.tsx">
+  return <div className="space-y-6" data-unique-id="5e35e9bc-33c9-49c9-8a4a-ec7aba44d2d3" data-file-name="components/AudioManager.tsx">
+      <Card data-unique-id="eec75ccb-b2e5-477d-b6b8-ce1f8c8f5576" data-file-name="components/AudioManager.tsx">
+        <CardHeader data-unique-id="dc1d3856-2074-4a7f-854d-d313c9380565" data-file-name="components/AudioManager.tsx">
+          <CardTitle data-unique-id="dbc63d0c-a68f-4c34-b984-69df2a69bbe7" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="9d84e95a-1cd4-44b8-8ad5-33f83a432b1c" data-file-name="components/AudioManager.tsx">Manajemen Audio</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="6216754e-4275-4f72-8e09-2516e2a0812a" data-file-name="components/AudioManager.tsx">
             Upload dan kelola file audio untuk pengguna
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="053831ba-f076-429b-8e97-5499bd4cad88" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="f705cc31-62ba-437f-bd89-f6e2b161b229" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
           {/* Audio Recovery Tool */}
           <AudioRecoveryTool />
           
           {/* Form for creating/editing audio files */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="df925c85-17d8-40b1-9a03-9d16cd510b20" data-file-name="components/AudioManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="6ae1ded9-34dc-42f2-8fa1-2a2cc72ac816" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="e0c5a9f8-d083-48ca-94dd-46baca20b9c2" data-file-name="components/AudioManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="8b3f5a60-ebb6-44b6-bd8d-c7d6718a71b2" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
               {isCreating ? "Upload Audio Baru" : "Upload Audio"}
             </h3>
-            <div className="space-y-4" data-unique-id="d27ce684-7add-477f-95f4-77f3edb52fd2" data-file-name="components/AudioManager.tsx">
-              <div data-unique-id="8bbbb8ca-d057-4ab9-817b-2910feda228d" data-file-name="components/AudioManager.tsx">
-                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="faf94ad4-4d87-4996-b9f9-c5c18de49e8f" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="ff74cbde-3008-4766-96e7-4da029ae12cd" data-file-name="components/AudioManager.tsx">Judul Audio</span></Label>
-                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Masukkan judul audio" className="w-full" data-unique-id="25f0a9e7-1ff1-4d01-b6dd-fbd801db84f3" data-file-name="components/AudioManager.tsx" />
+            <div className="space-y-4" data-unique-id="8130a609-afb7-4031-8852-28a5dd459109" data-file-name="components/AudioManager.tsx">
+              <div data-unique-id="f981a194-7c2a-485e-922e-849c6b6cf7c2" data-file-name="components/AudioManager.tsx">
+                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="5132672a-b390-4ee8-bab1-f1ac1a3d856d" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="ac9aced0-794e-4b66-91f5-22ffce50f394" data-file-name="components/AudioManager.tsx">Judul Audio</span></Label>
+                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Masukkan judul audio" className="w-full" data-unique-id="350c712c-ce78-4b85-a5ce-0be349219e61" data-file-name="components/AudioManager.tsx" />
               </div>
               
-              <div data-unique-id="04b92af4-ee3c-478c-bc3d-a7fd1e81da4d" data-file-name="components/AudioManager.tsx">
-                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="f952d624-c4d8-49e4-adf3-eea9678cc3dc" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="bd624723-01ea-49bd-a9d7-70daf42bbf30" data-file-name="components/AudioManager.tsx">Kategori</span></Label>
-                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="de48d103-eb31-4418-9633-adbe906ac458" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="8eb5bcbe-84db-46e9-84a3-8d1735351c3f" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="56067cb5-d7a2-4fa1-83c2-8df403db8532" data-file-name="components/AudioManager.tsx">Pilih Kategori</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="0bafa928-dcce-4826-b96c-fc1ef33fa84d" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="ac109375-751c-4232-b23f-9dbd7ccad049" data-file-name="components/AudioManager.tsx">
+                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="0e849368-9823-4bc9-8bdc-738bf2e2cc0e" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="ecc69155-3d72-42dd-b856-f05fd947eb13" data-file-name="components/AudioManager.tsx">Kategori</span></Label>
+                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="e7b28c1e-5f65-4ebd-8a40-150462876dc6" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="26add7a4-cea9-4150-92f6-ff69fdfe55ee" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="33851dbc-dddb-4387-a829-40a236eab0f5" data-file-name="components/AudioManager.tsx">Pilih Kategori</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="d9c633a2-27d5-432c-bd4b-211242d051df" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
               
-              <div data-unique-id="4ace1be7-f4c6-48b9-b242-c384b78211f9" data-file-name="components/AudioManager.tsx">
-                <Label htmlFor="audioFile" className="block text-sm font-medium mb-1" data-unique-id="0acaf140-d557-49ce-b6eb-7e10b0ffffe0" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="4025d6e8-8528-4859-9ea2-a1d9447ea1b9" data-file-name="components/AudioManager.tsx">File Audio</span></Label>
-                <div className="flex items-center space-x-2" data-unique-id="c7a68ddc-1d3b-4ced-ae9e-1d51e08d3e00" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                  <Button type="button" variant="outline" onClick={() => audioInputRef.current?.click()} className="flex items-center" data-unique-id="ecb815ba-0112-4895-9310-15d4885effe8" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="a1a55899-3678-4a70-a45a-4cf7a84e1a5a" data-file-name="components/AudioManager.tsx">
+                <Label htmlFor="audioFile" className="block text-sm font-medium mb-1" data-unique-id="8c7efcb4-da99-4ff7-a86a-5f39e33ce70f" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="8cb4b497-31fa-4079-ac20-d5054ce8d8fe" data-file-name="components/AudioManager.tsx">File Audio</span></Label>
+                <div className="flex items-center space-x-2" data-unique-id="0a6f7de6-f226-4bc7-b8ac-8b0acd77b511" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  <Button type="button" variant="outline" onClick={() => audioInputRef.current?.click()} className="flex items-center" data-unique-id="ca7cf361-e6d8-4e82-a232-f761faab630c" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                     <Music className="h-4 w-4 mr-2" />
                     {formData.audioFile ? 'Ganti Audio' : 'Pilih Audio'}
                   </Button>
-                  {formData.audioFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="68860346-7252-42fe-b5bd-c60a162c4b27" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  {formData.audioFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="1175caa4-c8ee-479c-8d3e-d51cd52cd692" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                       {formData.audioFile.name}
-                      <span className="text-xs ml-1 text-green-600" data-unique-id="250286bd-1b6c-4838-8bdd-e5df82f040ed" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="4a38673d-8d82-45ae-b036-aa89f2175a5e" data-file-name="components/AudioManager.tsx">(Akan diupload dengan nama unik)</span></span>
+                      <span className="text-xs ml-1 text-green-600" data-unique-id="531c716d-1b34-4e90-8e70-7d66c29a0222" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="3bd6a530-1280-4444-8729-83d7e53c8a25" data-file-name="components/AudioManager.tsx">(Akan diupload dengan nama unik)</span></span>
                     </span>}
-                  {!formData.audioFile && formData.fileUrl && <span className="text-sm text-muted-foreground" data-unique-id="c23e00f8-1c2f-4f9a-b694-7ce1ce833a27" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="b455852d-9a70-4ed0-87b0-31dcf2e7eec6" data-file-name="components/AudioManager.tsx">
+                  {!formData.audioFile && formData.fileUrl && <span className="text-sm text-muted-foreground" data-unique-id="2bed71af-605c-425d-859c-825e0d4cb4a5" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="6c177fbb-e9fc-4fe1-b575-21a00062d3a4" data-file-name="components/AudioManager.tsx">
                       File audio sudah ada
                     </span></span>}
                 </div>
-                <input ref={audioInputRef} id="audioFile" name="audioFile" type="file" accept="audio/mp3,audio/mpeg" onChange={handleFileChange} className="hidden" data-unique-id="4d26e64f-6b9c-420e-a935-a2427b8249f1" data-file-name="components/AudioManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="51daba57-1491-4508-9827-23ef8007af66" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="ea929da3-af32-42af-a3e6-e280d096b675" data-file-name="components/AudioManager.tsx">
+                <input ref={audioInputRef} id="audioFile" name="audioFile" type="file" accept="audio/mp3,audio/mpeg" onChange={handleFileChange} className="hidden" data-unique-id="07ec0587-dae6-4e9c-968b-370dbd75bac0" data-file-name="components/AudioManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="7d9ca8f2-c3bb-41d4-9bc9-bc6684baf6e4" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="6ddcd68d-b19c-458c-8194-0306c5c2b661" data-file-name="components/AudioManager.tsx">
                   Format file: MP3
                 </span></p>
               </div>
               
-              <div className="flex justify-end space-x-2" data-unique-id="d31fd808-27ba-4ecd-9437-98ae8d35fc5a" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                {editingAudio !== null && <Button variant="outline" onClick={cancelEditing} disabled={isUploading} className="flex items-center gap-1" data-unique-id="68091a05-66f0-40f1-a971-4f8a04b60d7e" data-file-name="components/AudioManager.tsx">
+              <div className="flex justify-end space-x-2" data-unique-id="e3f705a4-efab-41ac-848c-d583c81c5a64" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                {editingAudio !== null && <Button variant="outline" onClick={cancelEditing} disabled={isUploading} className="flex items-center gap-1" data-unique-id="27ae71cc-8f1e-4e03-8902-87ce7faa0f6c" data-file-name="components/AudioManager.tsx">
                     <X className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="f66590b8-3f78-4895-9218-9f397e5ad824" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="84d61b38-32e2-408a-a04b-830a7f17fc8a" data-file-name="components/AudioManager.tsx">Batal</span></span>
+                    <span className="hidden sm:inline" data-unique-id="0310248c-d0a1-49ac-87c4-e04d31d0f79d" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="0fa0cb58-1ef0-4e7f-b0df-c3716081a436" data-file-name="components/AudioManager.tsx">Batal</span></span>
                   </Button>}
-                <Button onClick={editingAudio !== null ? () => updateAudio(editingAudio) : createAudio} disabled={isUploading || !formData.title || !formData.categoryId} className="flex items-center gap-1" data-unique-id="ae9fdc50-e620-49f1-851e-a36e8a4df7c1" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                  {isUploading ? <span className="flex items-center space-x-2" data-unique-id="70bc4801-f032-4e26-9d69-6d6adaed99ff" data-file-name="components/AudioManager.tsx">
-                      <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="6a35a327-ba96-47b4-a298-515f2f5d94ff" data-file-name="components/AudioManager.tsx">
+                <Button onClick={editingAudio !== null ? () => updateAudio(editingAudio) : createAudio} disabled={isUploading || !formData.title || !formData.categoryId} className="flex items-center gap-1" data-unique-id="5371418c-19bf-4482-a6eb-818fa7cdc66c" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  {isUploading ? <span className="flex items-center space-x-2" data-unique-id="47c094c1-b7ff-4977-adf8-630e908671b8" data-file-name="components/AudioManager.tsx">
+                      <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="6c35ebb9-e62a-42c9-a756-dc333e910222" data-file-name="components/AudioManager.tsx">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span className="hidden sm:inline" data-unique-id="da627c75-498d-40f2-91c0-18229b0bbc7a" data-file-name="components/AudioManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="ea0f21aa-e15b-45fb-bb25-002cda923822" data-file-name="components/AudioManager.tsx">Mengupload... </span>{uploadProgress}<span className="editable-text" data-unique-id="f3f6cb60-1201-4254-b447-6c5736c6378a" data-file-name="components/AudioManager.tsx">%</span></span>
+                      <span className="hidden sm:inline" data-unique-id="9cf8f107-caac-4698-a1d6-4b47046498e7" data-file-name="components/AudioManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="bd764187-277d-4266-a900-f5c6ffceb8c8" data-file-name="components/AudioManager.tsx">Mengupload... </span>{uploadProgress}<span className="editable-text" data-unique-id="6cb69a56-27fe-4ad8-9bfd-349790b5f19d" data-file-name="components/AudioManager.tsx">%</span></span>
                     </span> : <>
                       {editingAudio !== null ? <>
                           <Save className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="b65896e2-1f03-4960-aacd-3544cfb75012" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="cf691f0d-def1-450b-86cb-e7398c35e248" data-file-name="components/AudioManager.tsx">Perbarui Audio</span></span>
+                          <span className="hidden sm:inline" data-unique-id="ebb35da2-b059-4d60-a7ea-b408260fb9d5" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="5199e7ad-cd9f-49c6-bb33-c131c451bdd9" data-file-name="components/AudioManager.tsx">Perbarui Audio</span></span>
                         </> : <>
                           <Upload className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="46ef7497-9157-4206-863c-0189603c2cf8" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="fa7e2767-40bf-4600-bbc5-6df2f1b85233" data-file-name="components/AudioManager.tsx">Upload Audio</span></span>
+                          <span className="hidden sm:inline" data-unique-id="0b55aeb6-19e8-4a16-a0e0-252acc722a1f" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="f09b53ef-caab-4d53-8721-e8f5449f0912" data-file-name="components/AudioManager.tsx">Upload Audio</span></span>
                         </>}
                     </>}
                 </Button>
@@ -467,45 +467,45 @@ export default function AudioManager() {
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md`} data-unique-id="aea1dcc0-91ae-4a16-8858-61278666d881" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-              <div className="flex items-center" data-unique-id="b82cb406-763f-4e29-b3e1-d484ba6e8dc2" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md`} data-unique-id="0179522b-a1f2-4969-ab67-677e5650f288" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+              <div className="flex items-center" data-unique-id="a368fa0b-d144-4e48-91ea-37b1eb00d03c" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                 {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-                <span data-unique-id="f97e526e-3975-42bb-861d-94d223e68c12" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+                <span data-unique-id="fa03a415-067b-448d-bc5c-71e9c907a42d" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
               </div>
               
               {/* Progress bar for audio uploads */}
-              {isUploading && uploadProgress > 0 && uploadProgress < 100 && <div className="mt-2" data-unique-id="915e639f-1526-4089-8f17-506e664ce07e" data-file-name="components/AudioManager.tsx">
-                  <div className="w-full bg-gray-200 rounded-full h-2.5 mt-1" data-unique-id="c616716d-ce9e-4551-826d-9869ab864c9f" data-file-name="components/AudioManager.tsx">
+              {isUploading && uploadProgress > 0 && uploadProgress < 100 && <div className="mt-2" data-unique-id="ca9cb2c9-f430-4222-8351-7f4899f2f124" data-file-name="components/AudioManager.tsx">
+                  <div className="w-full bg-gray-200 rounded-full h-2.5 mt-1" data-unique-id="60e8d77f-3ec7-421a-aecb-6008f92e628c" data-file-name="components/AudioManager.tsx">
                     <div className="bg-green-600 h-2.5 rounded-full" style={{
                 width: `${uploadProgress}%`
-              }} data-unique-id="fa2c5b34-acd9-492a-a56f-63dabdd67f74" data-file-name="components/AudioManager.tsx" />
+              }} data-unique-id="a6b35dfe-7f15-4144-b428-ad148c2b47bf" data-file-name="components/AudioManager.tsx" />
                   </div>
-                  <div className="text-xs text-right mt-1" data-unique-id="6b2f74df-72fc-4136-8a0a-ac8c4810506e" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{uploadProgress}<span className="editable-text" data-unique-id="eb4edfcc-8077-4e57-bbae-df3a9f73f404" data-file-name="components/AudioManager.tsx">% selesai</span></div>
+                  <div className="text-xs text-right mt-1" data-unique-id="c9f37eff-bda9-4881-a29b-a6eb66f91c40" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{uploadProgress}<span className="editable-text" data-unique-id="2d238629-af9d-41ed-ab3a-9f2e6bbea531" data-file-name="components/AudioManager.tsx">% selesai</span></div>
                 </div>}
             </div>}
 
           {/* Search filters */}
-          <div className="bg-muted p-4 rounded-md" data-unique-id="2062c481-f067-45cb-9beb-c2dffe68a5f0" data-file-name="components/AudioManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="21eadf11-b5b7-4997-ad43-049cd1b11f5c" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="f89401ab-65be-44c9-aa9a-da45b9510518" data-file-name="components/AudioManager.tsx">Filter Pencarian</span></h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="369b4444-0053-4f95-87cc-97f1f165663e" data-file-name="components/AudioManager.tsx">
-              <div data-unique-id="776f4237-495c-4c6b-84f9-4792d607e706" data-file-name="components/AudioManager.tsx">
-                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="591b8fcc-72bb-4bce-b55e-e01c5bc6c495" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="a92894ec-f212-447d-be6c-329215780d54" data-file-name="components/AudioManager.tsx">Judul Audio</span></Label>
-                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Cari berdasarkan judul" data-unique-id="270d905d-24f2-47c6-91f2-3e1cd8b20330" data-file-name="components/AudioManager.tsx" />
+          <div className="bg-muted p-4 rounded-md" data-unique-id="e49446c7-732a-4f6e-9d09-c92c06d72a93" data-file-name="components/AudioManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="a2402e13-90e8-4a74-9c95-32610bd0a5fd" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="6051fe2b-f1f3-4d3a-ac3a-d9b67da8554a" data-file-name="components/AudioManager.tsx">Filter Pencarian</span></h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="c4f932dd-7ceb-42d7-9d5b-7b44af28bb16" data-file-name="components/AudioManager.tsx">
+              <div data-unique-id="205e397a-2c18-40c2-ba05-d78c1a37102e" data-file-name="components/AudioManager.tsx">
+                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="478f1935-ba9d-4c28-b9f6-9b68e4e0c68c" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="7763c010-6978-4520-ac66-ee13ea3b9d22" data-file-name="components/AudioManager.tsx">Judul Audio</span></Label>
+                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Cari berdasarkan judul" data-unique-id="162c29d4-b6fb-43d7-8c6e-509df80c09a9" data-file-name="components/AudioManager.tsx" />
               </div>
-              <div data-unique-id="cd5af648-a879-4c44-9924-6ea9e8450ad8" data-file-name="components/AudioManager.tsx">
-                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="c471a0c9-e413-453c-a9ef-0c6b7d5c49dd" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="b480fd61-96e4-42ea-aef6-99ae6aac4ac4" data-file-name="components/AudioManager.tsx">Kategori</span></Label>
-                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="8db5fb3e-9ddd-4ea5-aae3-bc9f3aedba6f" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="f0979ba6-5454-4d43-9d41-3a783deca085" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="d643979b-dfe3-427a-9338-57a197ac82b8" data-file-name="components/AudioManager.tsx">Semua Kategori</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="1b235a2a-a47f-465f-974f-c46cfea08942" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="28f5f0b6-493d-454c-8498-53997a7f195c" data-file-name="components/AudioManager.tsx">
+                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="ad181d9a-890d-4944-9fa7-9a70bc462ea7" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="6d0e34a9-41cd-4ae7-8aeb-632557107360" data-file-name="components/AudioManager.tsx">Kategori</span></Label>
+                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="d18f4a5a-69af-498b-8d7b-ffd780764df1" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="b291b265-6578-4669-9896-f67bc15f3f31" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="36caf9e5-525e-4c86-b323-939b2fdc3040" data-file-name="components/AudioManager.tsx">Semua Kategori</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="bb5be1f7-5946-476a-976b-5852a7722e3b" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
-              <div className="flex items-end space-x-2" data-unique-id="f327bca4-2798-4f17-a554-1b0168373182" data-file-name="components/AudioManager.tsx">
-                <Button onClick={handleSearch} className="flex-1" data-unique-id="f3b8ed80-437e-4ea8-a1b5-84b809cbebf1" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="cda616ea-8f68-45a2-be4a-fc50ac73e962" data-file-name="components/AudioManager.tsx">
+              <div className="flex items-end space-x-2" data-unique-id="c5dc6283-3dd6-4de2-aa23-69da1580c3a4" data-file-name="components/AudioManager.tsx">
+                <Button onClick={handleSearch} className="flex-1" data-unique-id="e95fa743-abdc-4fef-a901-94b738f49317" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="ba652dd4-7506-49bb-bae7-6c978dd208da" data-file-name="components/AudioManager.tsx">
                   Cari
                 </span></Button>
-                <Button variant="outline" onClick={resetSearch} data-unique-id="6b277ce3-2d01-4898-b74f-2c538bc541b5" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="98c52373-8eae-4909-a190-6a11703ea2c1" data-file-name="components/AudioManager.tsx">
+                <Button variant="outline" onClick={resetSearch} data-unique-id="7cc6c8ed-1c0f-4f91-8981-37f676316d63" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="6eb18fae-c208-4a09-bdc2-3cbf57b9d63c" data-file-name="components/AudioManager.tsx">
                   Reset
                 </span></Button>
               </div>
@@ -513,40 +513,40 @@ export default function AudioManager() {
           </div>
 
           {/* Audio list */}
-          <div data-unique-id="f3d1df2d-1254-4ae6-8aa3-1746a4772609" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-            <div className="flex items-center justify-between mb-4" data-unique-id="36e1e1e4-26a1-4bf9-ad37-bc33ce6a1eb6" data-file-name="components/AudioManager.tsx">
-              <h3 className="text-lg font-medium" data-unique-id="99e9cfd7-a0d3-4c0f-a9a8-aa9b62075d66" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="3e5a9aca-d3f5-45c1-8a22-70274fcfbeab" data-file-name="components/AudioManager.tsx">
+          <div data-unique-id="4f2944bc-d090-4420-8ec1-2c9cea492369" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+            <div className="flex items-center justify-between mb-4" data-unique-id="05f01b02-02fd-4e31-9745-55e02a3b7c69" data-file-name="components/AudioManager.tsx">
+              <h3 className="text-lg font-medium" data-unique-id="d0c9453a-2bb3-4a97-91c5-2134262534be" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="b904577c-e029-4e97-bfb6-c3fc02b127b6" data-file-name="components/AudioManager.tsx">
                 Daftar Audio 
-                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="4b32cfc0-2f80-4651-bc66-c9b548d0fd11" data-file-name="components/AudioManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="47c4c44e-082d-4e63-9824-2a9df48d55c1" data-file-name="components/AudioManager.tsx">
-                  (</span>{totalItems}<span className="editable-text" data-unique-id="96ac3b9d-5bc6-4556-9f5d-47e68b724f77" data-file-name="components/AudioManager.tsx"> file)
+                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="b77f0ad8-08e9-4aac-8fa7-dbe41359b089" data-file-name="components/AudioManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="25086fc7-7bb0-4839-84a2-de4d94301679" data-file-name="components/AudioManager.tsx">
+                  (</span>{totalItems}<span className="editable-text" data-unique-id="2dcf35ca-7b9b-441c-ba13-6d779c3c6654" data-file-name="components/AudioManager.tsx"> file)
                 </span></span>
               </h3>
-              <div className="flex items-center gap-2" data-unique-id="cadbc861-ed93-4537-95ca-ed43bdf2b7d6" data-file-name="components/AudioManager.tsx">
-                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="ec0ce889-0e63-4c10-9d1b-3aa62d5a27b0" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="c6c0df98-cf29-4f1e-ae7c-2c9050be952b" data-file-name="components/AudioManager.tsx">Tampilkan:</span></Label>
-                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="90525659-32d4-46b2-9894-94ec45bbda33" data-file-name="components/AudioManager.tsx">
-                  <option value={10} data-unique-id="517bc42c-0e0d-45d6-84c1-3e8639410d9b" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="286c534e-1bb8-4618-86c8-b9496f19a9da" data-file-name="components/AudioManager.tsx">10</span></option>
-                  <option value={50} data-unique-id="14a80b53-cf06-49c6-a458-8407188a85ab" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="44c3b9ad-68ae-4622-b55e-a02d52606699" data-file-name="components/AudioManager.tsx">50</span></option>
-                  <option value={100} data-unique-id="2e574bfc-fb6c-4358-9de8-4ffef7d58a02" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="7a56981c-0c6a-4af6-b272-11b832552782" data-file-name="components/AudioManager.tsx">100</span></option>
+              <div className="flex items-center gap-2" data-unique-id="4d28ef85-45cb-4c05-8706-283e4b9e664c" data-file-name="components/AudioManager.tsx">
+                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="40747657-69c4-4b68-a4f2-586cb85b236e" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="4e6b58e5-6349-46e7-a801-3a08140ffab7" data-file-name="components/AudioManager.tsx">Tampilkan:</span></Label>
+                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="daa6a20a-8935-4706-84c7-28da159c68a9" data-file-name="components/AudioManager.tsx">
+                  <option value={10} data-unique-id="80250077-8f44-4846-9e17-1b6d2591acbf" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="8e3caa8d-78af-4cc4-a9c7-f07730ac7d24" data-file-name="components/AudioManager.tsx">10</span></option>
+                  <option value={50} data-unique-id="f362096c-945d-4d6b-9451-ea995bf3126a" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="fd1ec53f-27f6-495a-aff5-8f7fa736b369" data-file-name="components/AudioManager.tsx">50</span></option>
+                  <option value={100} data-unique-id="73bba576-90b5-4b92-92e0-21be18c8555b" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="3f43eaf3-ac9a-4e32-b0ec-1a130e42395d" data-file-name="components/AudioManager.tsx">100</span></option>
                 </select>
               </div>
             </div>
-            <div className="overflow-x-auto" data-unique-id="4251fc8b-3b20-4d55-a98a-e137b385b944" data-file-name="components/AudioManager.tsx">
-              <Table data-unique-id="00b2acfd-8f5d-462a-8f78-7f5b0881a92e" data-file-name="components/AudioManager.tsx">
+            <div className="overflow-x-auto" data-unique-id="199221e1-f0a9-489e-9b26-f28be22de932" data-file-name="components/AudioManager.tsx">
+              <Table data-unique-id="2b2db0e8-8318-4ae6-96e0-41e02a1d33f2" data-file-name="components/AudioManager.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="d8e75702-7ac4-4b31-a6c9-abeab35bb2a6" data-file-name="components/AudioManager.tsx">No.</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="fabe7256-8e8f-4ba2-a650-67c172071aa6" data-file-name="components/AudioManager.tsx">Judul Audio</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="97cf4a54-2964-40b9-ad9c-b71cbc04ef35" data-file-name="components/AudioManager.tsx">Audio</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="9195dfd2-a4fe-4d4b-96a8-a45d1bbb3ac6" data-file-name="components/AudioManager.tsx">URL File</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="c140edb5-bbc6-44f9-bfed-741fc36155b5" data-file-name="components/AudioManager.tsx">Kategori</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="b58e6078-c921-443c-8473-d6868899c0d7" data-file-name="components/AudioManager.tsx">Aksi</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="565e49c9-2b55-4d52-9292-7fcd8a275534" data-file-name="components/AudioManager.tsx">No.</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="fd3cdec3-df19-49ad-a20a-8baef1074ab0" data-file-name="components/AudioManager.tsx">Judul Audio</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="b17882c9-57af-4bec-ae55-3bcfa98dc6b4" data-file-name="components/AudioManager.tsx">Audio</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="7b6c9de1-8772-478c-b609-e51ff903a7eb" data-file-name="components/AudioManager.tsx">URL File</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="c98dd9a2-0d18-43e9-bdf4-8f60ba85fd5b" data-file-name="components/AudioManager.tsx">Kategori</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="6dd316a9-77fe-4ce2-bbfd-20072a540ff4" data-file-name="components/AudioManager.tsx">Aksi</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={6} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="6bea6205-c964-4171-a7d1-2b244c93a8d3" data-file-name="components/AudioManager.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="6bfbc150-e7b3-4798-83d6-e70982ff3209" data-file-name="components/AudioManager.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="e5e19b1e-8d14-4fea-8be6-4f0fd76e6f75" data-file-name="components/AudioManager.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="6097856b-cb4d-47bd-8d14-f42f99546948" data-file-name="components/AudioManager.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -554,33 +554,33 @@ export default function AudioManager() {
                         {error}
                       </TableCell>
                     </TableRow> : !audios || audios.length === 0 ? <TableRow>
-                      <TableCell colSpan={6} className="text-center py-8"><span className="editable-text" data-unique-id="8b608f9c-fa1a-437f-ad97-3cbe4c3ffdeb" data-file-name="components/AudioManager.tsx">
+                      <TableCell colSpan={6} className="text-center py-8"><span className="editable-text" data-unique-id="cd7641ae-5779-4b85-89c5-c5cd5bba8b29" data-file-name="components/AudioManager.tsx">
                         Belum ada audio. Silakan tambahkan audio baru.
                       </span></TableCell>
-                    </TableRow> : audios.map((audio, index) => <TableRow key={audio.id} data-unique-id="fb59e2e7-b0ba-490c-9f08-f1beea22f49e" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="9a999726-1dc3-4afc-b7ec-5b1a1d9ea3d9" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{index + 1}</TableCell>
-                        <TableCell className="font-medium" data-unique-id="570de033-4c74-429e-8f4f-b25227ceed4c" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{audio.title}</TableCell>
-                        <TableCell data-unique-id="136e0882-e056-4537-84ad-92eef5eb5b66" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                          <audio controls className="w-full max-w-[200px]" data-is-mapped="true" data-unique-id="1815da65-aa9f-42eb-ad1c-5bb24ddab36c" data-file-name="components/AudioManager.tsx">
-                            <source src={audio.fileUrl} type="audio/mpeg" data-is-mapped="true" data-unique-id="e7349826-82d8-455b-ac19-0ab5bf6a76f2" data-file-name="components/AudioManager.tsx" /><span className="editable-text" data-unique-id="2cb5a8d5-fd95-4be8-afe9-819489f9793a" data-file-name="components/AudioManager.tsx">
+                    </TableRow> : audios.map((audio, index) => <TableRow key={audio.id} data-unique-id="77fc0a83-2d5e-49db-9442-1ac1ea830509" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="7d82a52e-dd51-4bf0-a6b5-f74bfe6bceee" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{index + 1}</TableCell>
+                        <TableCell className="font-medium" data-unique-id="5ff61568-c5b1-4012-8760-4c880fc3e802" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{audio.title}</TableCell>
+                        <TableCell data-unique-id="20a5ac75-1a57-4d78-b855-7992f67118f3" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                          <audio controls className="w-full max-w-[200px]" data-is-mapped="true" data-unique-id="3f8c631f-00d8-4fa7-9279-e7a2ff29a157" data-file-name="components/AudioManager.tsx">
+                            <source src={audio.fileUrl} type="audio/mpeg" data-is-mapped="true" data-unique-id="c8301fa5-109d-4857-8661-7b1ddc88fbc4" data-file-name="components/AudioManager.tsx" /><span className="editable-text" data-unique-id="1560bbd0-06af-4e4c-a390-00d3a7a3b5fd" data-file-name="components/AudioManager.tsx">
                             Your browser does not support the audio element.
                           </span></audio>
                         </TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="68d63832-539a-49e9-b6a7-dd4dd45e36ea" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                          <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="906d9584-e420-46b7-a500-3b24d58c2fac" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                        <TableCell className="hidden md:table-cell" data-unique-id="be5fd7fa-37d2-48e8-95d6-0f67784fc141" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                          <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="516de60c-7941-4b74-8d9f-3c34958dc41b" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                             {audio.fileUrl}
                           </div>
                         </TableCell>
-                        <TableCell data-unique-id="0a3e3347-d39b-4d76-a322-fc9b098c665b" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{audio.categoryName}</TableCell>
-                        <TableCell className="text-right" data-unique-id="624d3a7c-faba-460e-a8a0-3708f7767bca" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="5022069c-410b-4d38-b616-2f66683a460f" data-file-name="components/AudioManager.tsx">
-                            <Button variant="outline" size="sm" onClick={() => startEditing(audio)} disabled={editingAudio !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="ef86fa19-f1aa-49ae-8184-da1184926d4f" data-file-name="components/AudioManager.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="9ea3f2a8-1860-40b0-8feb-3a299e7d7dde" data-file-name="components/AudioManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="9feb779a-d9bf-48dc-b528-dc129bb807ec" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="c5c357f7-834e-47a0-8368-76ccf98eb93a" data-file-name="components/AudioManager.tsx">Edit</span></span>
+                        <TableCell data-unique-id="7215542f-48a8-47c5-8d1c-257d752f448f" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">{audio.categoryName}</TableCell>
+                        <TableCell className="text-right" data-unique-id="290f5298-ab08-4a34-b0f6-db57d0fb5e22" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="9a4fed33-5589-4809-b33c-3fcda0bd9d75" data-file-name="components/AudioManager.tsx">
+                            <Button variant="outline" size="sm" onClick={() => startEditing(audio)} disabled={editingAudio !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="b752cc57-2ec8-4a5a-a752-789f99fb181d" data-file-name="components/AudioManager.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="e98044bd-16b7-4e0a-a65a-0dc4d05bccfd" data-file-name="components/AudioManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="b4f0b855-3fce-43d0-900c-713591df0841" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="c26a8fb1-0576-4638-9908-e881a12c0a72" data-file-name="components/AudioManager.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deleteAudio(audio.id)} disabled={editingAudio !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="094cb317-af7e-47f9-9014-e3fa53385d2f" data-file-name="components/AudioManager.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="f90c0bcf-d2ac-4232-b372-09403e88e4a7" data-file-name="components/AudioManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="ad624a47-546a-41b6-b25a-17fe7684a774" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="796a7285-5ba9-4166-9551-838876de60dd" data-file-name="components/AudioManager.tsx">Hapus</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deleteAudio(audio.id)} disabled={editingAudio !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="81dd6b24-4f90-405d-826e-9b457c8ad25f" data-file-name="components/AudioManager.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="e6d4b689-8492-4449-b58b-d5f8468f7e00" data-file-name="components/AudioManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="5bc49628-ca78-411e-a6de-e62039c8d155" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="e42ec30c-1fd1-490c-98f4-2fce0f216b02" data-file-name="components/AudioManager.tsx">Hapus</span></span>
                             </Button>
                           </div>
                         </TableCell>
@@ -590,19 +590,19 @@ export default function AudioManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="2c0fd215-f5d2-4792-b64b-8535916bed16" data-file-name="components/AudioManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="90030825-b2ac-49a0-a940-e19fde828253" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="e568f738-b6c8-4e49-b06f-1266dafa9888" data-file-name="components/AudioManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="c429ce0d-0c0a-4fe4-9c9b-1e3faa50c703" data-file-name="components/AudioManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="8798eea3-e3b9-4f22-be4d-9a2cef31a1dc" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="769515df-05b5-492c-8e0f-f4fa632600d5" data-file-name="components/AudioManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="2cabe94c-4329-4ef7-a26a-695bc3f439b2" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="c37319a3-a7ce-4bd4-9ced-810d4c2a64ad" data-file-name="components/AudioManager.tsx">Previous</span></span>
+                    <span data-unique-id="9b142156-a5f5-445e-a1e2-4dc2833dd17c" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="a2ec41fc-8e91-4efa-870a-226675bfd844" data-file-name="components/AudioManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="9dcdfab6-013d-491a-917d-4a94a8c6d2c1" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="a537f3e0-3740-492a-9632-297e233e4aac" data-file-name="components/AudioManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="66437948-4e00-46f2-bfd6-a0164f5d9e95" data-file-name="components/AudioManager.tsx">
-                    <span data-unique-id="dd568e51-010f-49fc-b4d5-ef5b30dfd073" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="28e44fdc-cf68-41b8-87b5-a2244be04da3" data-file-name="components/AudioManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="d5ab6647-6836-4b77-9ac0-7df024f50f83" data-file-name="components/AudioManager.tsx">
+                    <span data-unique-id="50c68cf4-31e4-4e68-bce7-e82f7b80d4aa" data-file-name="components/AudioManager.tsx"><span className="editable-text" data-unique-id="7e9ebb0f-fc71-4901-8f26-04ea9bffcab1" data-file-name="components/AudioManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>
