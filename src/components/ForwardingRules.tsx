@@ -135,69 +135,69 @@ export default function ForwardingRules() {
       setStatusMessage(error instanceof Error ? error.message : "Gagal menyimpan kata kunci");
     }
   };
-  return <Card data-unique-id="1381230e-999a-4634-a78c-ff4a738c61fb" data-file-name="components/ForwardingRules.tsx">
-      <CardHeader data-unique-id="6b31687d-cb16-479c-9f5e-f6daa3f46ab9" data-file-name="components/ForwardingRules.tsx">
-        <CardTitle data-unique-id="f7e088d8-2d21-40ee-85cb-64b381c525c4" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="a0564ff4-6b87-4df5-83aa-70e1c5f4e499" data-file-name="components/ForwardingRules.tsx">Aturan Filter</span></CardTitle>
-        <CardDescription><span className="editable-text" data-unique-id="819b995e-3670-4fbb-b1dd-aba4e01bb552" data-file-name="components/ForwardingRules.tsx">
+  return <Card data-unique-id="eaa4b83f-cfdf-4b0d-988c-e36a97edc924" data-file-name="components/ForwardingRules.tsx">
+      <CardHeader data-unique-id="1d4dac9b-1e9a-4dbc-bc5d-29ad28e73f4b" data-file-name="components/ForwardingRules.tsx">
+        <CardTitle data-unique-id="95f8adf9-e0ad-4b09-a98b-2b6bd6446920" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="f69f245b-8d16-49e8-9d56-f8926fd582fc" data-file-name="components/ForwardingRules.tsx">Aturan Filter</span></CardTitle>
+        <CardDescription><span className="editable-text" data-unique-id="908d2346-20e4-4781-b699-c92220f052e7" data-file-name="components/ForwardingRules.tsx">
           Tentukan kata kunci untuk memfilter pesan yang akan diteruskan
         </span></CardDescription>
       </CardHeader>
-      <CardContent className="space-y-6" data-unique-id="6b11e759-4f96-4fff-801d-700406406525" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
-        <div className="space-y-2" data-unique-id="027e7249-1cea-433b-b25e-e67d66b5f394" data-file-name="components/ForwardingRules.tsx">
-          <Label htmlFor="new-keyword" data-unique-id="3262f7dc-467d-40b0-82c5-64e23d91158b" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="b94ba1a7-c221-42ef-baa9-0bf9047a5b45" data-file-name="components/ForwardingRules.tsx">Tambah Kata Kunci</span></Label>
-          <div className="flex gap-2" data-unique-id="4777f413-a3fc-4a75-afea-545e172ebe4b" data-file-name="components/ForwardingRules.tsx">
+      <CardContent className="space-y-6" data-unique-id="b941ed84-40f7-4f02-b575-72583b87092e" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
+        <div className="space-y-2" data-unique-id="789b4dd6-62f3-4b4c-b7a5-b811e39dad40" data-file-name="components/ForwardingRules.tsx">
+          <Label htmlFor="new-keyword" data-unique-id="eb7500fb-7f8b-47b5-92de-1339c7c7a16a" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="1c311960-8d5f-42c0-b1a1-c57810fa7ce3" data-file-name="components/ForwardingRules.tsx">Tambah Kata Kunci</span></Label>
+          <div className="flex gap-2" data-unique-id="89ecff86-aca1-4443-81c9-e4ee118155fc" data-file-name="components/ForwardingRules.tsx">
             <Input id="new-keyword" type="text" placeholder="Masukkan kata kunci baru" value={newKeyword} onChange={e => setNewKeyword(e.target.value)} onKeyDown={e => {
             if (e.key === 'Enter') {
               handleAddKeyword();
             }
-          }} data-unique-id="03363318-9a02-4753-9203-3efe576264ec" data-file-name="components/ForwardingRules.tsx" />
-            <Button onClick={handleAddKeyword} variant="outline" size="icon" title="Tambah kata kunci" data-unique-id="6723db35-efe9-40db-8d60-2dc6586431db" data-file-name="components/ForwardingRules.tsx">
+          }} data-unique-id="2b29a6f5-455e-4935-9f26-30ea9cfee4f4" data-file-name="components/ForwardingRules.tsx" />
+            <Button onClick={handleAddKeyword} variant="outline" size="icon" title="Tambah kata kunci" data-unique-id="a284482a-7ad9-49ab-9032-4b235c712009" data-file-name="components/ForwardingRules.tsx">
               <Plus className="h-4 w-4" />
             </Button>
           </div>
-          <p className="text-sm text-muted-foreground" data-unique-id="3ab276e5-41dc-4694-8e5b-38ff4459d284" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="847d4b5e-978d-4724-acff-c790cf4e5ee6" data-file-name="components/ForwardingRules.tsx">
+          <p className="text-sm text-muted-foreground" data-unique-id="941fc222-3e71-40aa-bce0-6a53e7dacda5" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="3f5d2a4c-3965-4cad-9bc2-087b17e9e2d3" data-file-name="components/ForwardingRules.tsx">
             Pesan yang mengandung kata kunci ini akan diteruskan ke bot Telegram Anda
           </span></p>
         </div>
 
-        <div className="space-y-2" data-unique-id="d6b126ff-2034-4738-9b52-de1f9fc67112" data-file-name="components/ForwardingRules.tsx">
-          <Label data-unique-id="5f5f3fc3-1760-4d8d-a2af-3714de3d5b6d" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="cb954b40-989c-4c61-92a1-4a05fa54f186" data-file-name="components/ForwardingRules.tsx">Kata Kunci Aktif</span></Label>
-          <div className="flex flex-wrap gap-2" data-unique-id="9b64da43-1e4a-4c27-9055-631e4da77828" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
-            {keywords.length === 0 ? <p className="text-sm text-muted-foreground italic" data-unique-id="6fbeee7a-fe90-4469-ac31-553b13f603bc" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="04b8b932-9ad5-4d23-8283-6497a6129ad1" data-file-name="components/ForwardingRules.tsx">Belum ada kata kunci yang ditambahkan</span></p> : keywords.map((keyword, index) => <div key={index} className="flex items-center gap-1 bg-muted px-3 py-1 rounded-full" data-is-mapped="true" data-unique-id="58469285-29c8-4d8b-b691-8bc877d684bf" data-file-name="components/ForwardingRules.tsx">
-                  <span data-is-mapped="true" data-unique-id="567c2d84-c2a9-41aa-9efe-14538ecaadd8" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{keyword}</span>
-                  <button onClick={() => handleRemoveKeyword(keyword)} className="text-muted-foreground hover:text-destructive focus:outline-none" title="Hapus kata kunci" data-is-mapped="true" data-unique-id="e60cd5b8-9e2e-46e9-87cc-bac2dd2ca6d6" data-file-name="components/ForwardingRules.tsx">
-                    <X className="h-4 w-4" data-unique-id="b4ac118f-bc89-4fa9-becf-9fc08bc5b588" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true" />
+        <div className="space-y-2" data-unique-id="0dcacfee-cf7b-4f5c-a8e1-44f20eac9a86" data-file-name="components/ForwardingRules.tsx">
+          <Label data-unique-id="4ec50207-c0dd-4dff-b7b0-6a2ae26e2e30" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="2e76f8e1-6561-4f11-a301-32b19e35f733" data-file-name="components/ForwardingRules.tsx">Kata Kunci Aktif</span></Label>
+          <div className="flex flex-wrap gap-2" data-unique-id="22b57c00-9026-4791-a0c8-efba6f36a0cd" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
+            {keywords.length === 0 ? <p className="text-sm text-muted-foreground italic" data-unique-id="3717f640-9e32-4080-9bdb-3d8f0c400908" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="5055b46e-5ea0-4d9c-b7f1-f71816f5a59a" data-file-name="components/ForwardingRules.tsx">Belum ada kata kunci yang ditambahkan</span></p> : keywords.map((keyword, index) => <div key={index} className="flex items-center gap-1 bg-muted px-3 py-1 rounded-full" data-is-mapped="true" data-unique-id="4c1202fd-a2e7-4922-bb65-82668781823d" data-file-name="components/ForwardingRules.tsx">
+                  <span data-is-mapped="true" data-unique-id="f1644af2-0f73-4772-91c4-55de7c18cd17" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{keyword}</span>
+                  <button onClick={() => handleRemoveKeyword(keyword)} className="text-muted-foreground hover:text-destructive focus:outline-none" title="Hapus kata kunci" data-is-mapped="true" data-unique-id="17362ac5-bcd1-4dde-99e8-49c1b0df2788" data-file-name="components/ForwardingRules.tsx">
+                    <X className="h-4 w-4" data-unique-id="f8736a68-c9b0-43e4-ada4-53e0add014b6" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true" />
                   </button>
                 </div>)}
           </div>
         </div>
 
-        {saveStatus === "success" && <div className="bg-green-50 text-green-800 p-3 rounded-md flex items-center" data-unique-id="08999aa8-0a7f-49dd-944a-8318b1909188" data-file-name="components/ForwardingRules.tsx">
+        {saveStatus === "success" && <div className="bg-green-50 text-green-800 p-3 rounded-md flex items-center" data-unique-id="2f3cfb62-f171-4d12-84dc-274004395186" data-file-name="components/ForwardingRules.tsx">
             <CheckCircle2 className="h-5 w-5 mr-2" />
-            <span data-unique-id="34bbde3b-8387-4f38-92f0-f55ae53a61b9" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{statusMessage}</span>
+            <span data-unique-id="0858ae8b-e4ab-431a-9cfb-62fdb581f2dd" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{statusMessage}</span>
           </div>}
 
-        {saveStatus === "error" && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="dff0bfe4-b7bb-4987-a05f-b57e12995dc2" data-file-name="components/ForwardingRules.tsx">
+        {saveStatus === "error" && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="50ce3067-ce42-4e64-b191-4d19212f1f00" data-file-name="components/ForwardingRules.tsx">
             <AlertCircle className="h-5 w-5 mr-2" />
-            <span data-unique-id="cd880cf1-9184-4b44-a654-d937bd0a747a" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{statusMessage}</span>
+            <span data-unique-id="c529b42f-3a98-400d-af85-d023445b6420" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{statusMessage}</span>
           </div>}
 
-        <div className="pt-4" data-unique-id="cb878ef6-81ba-4d18-9aeb-0ab4a77b6f98" data-file-name="components/ForwardingRules.tsx">
-          <Card className="bg-muted" data-unique-id="ace28c9d-446e-42d6-b8c4-b59c5d0631f9" data-file-name="components/ForwardingRules.tsx">
-            <CardContent className="p-4" data-unique-id="9ab42da3-2c54-4fc3-a1b6-56465ef8ea60" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
-              <div className="flex justify-between items-center mb-3" data-unique-id="44a0d620-af40-477c-982c-5740089fd06f" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
-                <h3 className="font-medium" data-unique-id="0e23880b-7c8e-4d6b-8845-68e772a43ed0" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="80d1dbe0-1642-4f71-921f-550bb56a6215" data-file-name="components/ForwardingRules.tsx">Contoh Pesan yang Akan Diteruskan</span></h3>
-                {!isEditingExample ? <Button onClick={() => setIsEditingExample(true)} variant="outline" size="sm" className="flex items-center gap-1" data-unique-id="fac5935d-c77e-421c-8770-1b1ce132e814" data-file-name="components/ForwardingRules.tsx">
-                    <Edit className="h-4 w-4" /><span className="editable-text" data-unique-id="e0f0018e-d2b4-4d65-aad0-7b14baa0013a" data-file-name="components/ForwardingRules.tsx">
+        <div className="pt-4" data-unique-id="930cf2b2-05cd-48b7-bbba-914da065629a" data-file-name="components/ForwardingRules.tsx">
+          <Card className="bg-muted" data-unique-id="1db05f03-2184-4796-ad2b-a5b38ec52ba6" data-file-name="components/ForwardingRules.tsx">
+            <CardContent className="p-4" data-unique-id="59bba387-a9f1-4d5f-bebc-81c8d878800d" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
+              <div className="flex justify-between items-center mb-3" data-unique-id="1b07bbda-2fbf-4cfc-9936-f3a82ad0d6ba" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
+                <h3 className="font-medium" data-unique-id="3c4f87ad-0941-47fe-b1bc-1adc6bb52d48" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="30f57744-f264-4538-a018-4f11be28f58f" data-file-name="components/ForwardingRules.tsx">Contoh Pesan yang Akan Diteruskan</span></h3>
+                {!isEditingExample ? <Button onClick={() => setIsEditingExample(true)} variant="outline" size="sm" className="flex items-center gap-1" data-unique-id="22ac72e1-b4f5-4e7e-ab60-3a86f354e73d" data-file-name="components/ForwardingRules.tsx">
+                    <Edit className="h-4 w-4" /><span className="editable-text" data-unique-id="f28aad7e-4de7-41fd-ae0a-d5b962a62cae" data-file-name="components/ForwardingRules.tsx">
                     Edit
-                  </span></Button> : <div className="flex gap-2" data-unique-id="f9de9728-a9f0-4e8a-9526-429546fee8aa" data-file-name="components/ForwardingRules.tsx">
-                    <Button onClick={() => setIsEditingExample(false)} variant="outline" size="sm" className="flex items-center gap-1" data-unique-id="ed7b33f4-2289-40e6-80f8-9d7903db4984" data-file-name="components/ForwardingRules.tsx">
-                      <X className="h-4 w-4" /><span className="editable-text" data-unique-id="672dbd5e-3b07-48e7-9d4b-6e7139cb1d95" data-file-name="components/ForwardingRules.tsx">
+                  </span></Button> : <div className="flex gap-2" data-unique-id="2cf34abb-f522-4d72-a240-784b8036a979" data-file-name="components/ForwardingRules.tsx">
+                    <Button onClick={() => setIsEditingExample(false)} variant="outline" size="sm" className="flex items-center gap-1" data-unique-id="1d2b57b8-6019-49fc-818a-33c2915f4493" data-file-name="components/ForwardingRules.tsx">
+                      <X className="h-4 w-4" /><span className="editable-text" data-unique-id="e50a90c0-c9de-44c3-9092-18921724a5e8" data-file-name="components/ForwardingRules.tsx">
                       Batal
                     </span></Button>
-                    <Button onClick={saveExampleMessage} variant="default" size="sm" disabled={isSavingExample} className="flex items-center gap-1" data-unique-id="b7185038-a17b-4d36-a6bd-9a1d2d84012f" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
+                    <Button onClick={saveExampleMessage} variant="default" size="sm" disabled={isSavingExample} className="flex items-center gap-1" data-unique-id="d9517f22-dfad-42cc-b8a9-3969e9a0ca02" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
                       {isSavingExample ? <>
-                          <span className="animate-spin mr-2" data-unique-id="fd0cc111-4647-44a0-b6f9-5472e90a1376" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="373211a6-5ca6-42d5-be4b-94c477d95948" data-file-name="components/ForwardingRules.tsx">⏳</span></span>
+                          <span className="animate-spin mr-2" data-unique-id="d18b1693-2da7-4f9d-8a4d-9a7df1a81f21" data-file-name="components/ForwardingRules.tsx"><span className="editable-text" data-unique-id="2479ba83-b736-4973-829d-98c23ba0cb38" data-file-name="components/ForwardingRules.tsx">⏳</span></span>
                           Menyimpan...
                         </> : <>
                           <Save className="h-4 w-4" />
@@ -207,17 +207,17 @@ export default function ForwardingRules() {
                   </div>}
               </div>
               
-              {exampleStatus === "success" && <div className="mb-4 bg-green-50 text-green-800 p-3 rounded-md flex items-center" data-unique-id="32b45191-bf6a-40ff-92e9-3c1aebe89b3a" data-file-name="components/ForwardingRules.tsx">
+              {exampleStatus === "success" && <div className="mb-4 bg-green-50 text-green-800 p-3 rounded-md flex items-center" data-unique-id="d468eb03-16fe-4f02-9582-6224884d8005" data-file-name="components/ForwardingRules.tsx">
                   <CheckCircle2 className="h-5 w-5 mr-2" />
-                  <span data-unique-id="8696b282-ebf3-457e-8875-8d72af155455" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{exampleStatusMessage}</span>
+                  <span data-unique-id="ccc6295c-7c95-45f1-a33b-f7ae86389099" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{exampleStatusMessage}</span>
                 </div>}
               
-              {exampleStatus === "error" && <div className="mb-4 bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="24f4c2ec-1e05-4570-a5ac-18143e327c47" data-file-name="components/ForwardingRules.tsx">
+              {exampleStatus === "error" && <div className="mb-4 bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="e6e2c943-f24d-4dff-88e8-5f40942d4f49" data-file-name="components/ForwardingRules.tsx">
                   <AlertCircle className="h-5 w-5 mr-2" />
-                  <span data-unique-id="be85cca7-28b5-4e66-aff9-99611b4d0352" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{exampleStatusMessage}</span>
+                  <span data-unique-id="bd1626d3-bc69-421c-b863-2a127d876793" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">{exampleStatusMessage}</span>
                 </div>}
               
-              {isEditingExample ? <textarea value={exampleMessage} onChange={e => setExampleMessage(e.target.value)} className="w-full h-64 p-3 font-mono text-sm bg-background rounded-md border border-input resize-none" data-unique-id="afe3f29d-581c-4b81-b50a-d61be953fcb0" data-file-name="components/ForwardingRules.tsx" /> : <div className="bg-background p-3 rounded-md font-mono text-sm whitespace-pre-wrap" data-unique-id="f6df8c7a-c584-4aa7-9406-670a60e5e7b1" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
+              {isEditingExample ? <textarea value={exampleMessage} onChange={e => setExampleMessage(e.target.value)} className="w-full h-64 p-3 font-mono text-sm bg-background rounded-md border border-input resize-none" data-unique-id="f0f0f2fc-7a31-486a-93e5-a41d2b980592" data-file-name="components/ForwardingRules.tsx" /> : <div className="bg-background p-3 rounded-md font-mono text-sm whitespace-pre-wrap" data-unique-id="504dd21f-8e93-42a2-b801-07473be523ab" data-file-name="components/ForwardingRules.tsx" data-dynamic-text="true">
                   {exampleMessage}
                 </div>}
             </CardContent>

@@ -299,139 +299,139 @@ export default function UserTable({
     setItemsPerPage(Number(e.target.value));
     setCurrentPage(1); // Reset to first page when changing items per page
   };
-  return <div className="space-y-4" data-unique-id="af0c0692-a3d1-47f6-b9d6-75b475701a90" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+  return <div className="space-y-4" data-unique-id="81ab3797-8b1a-4e32-a853-3f6ce24dfe6f" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
       {/* Items per page and count */}
-      <div className="flex justify-between items-center" data-unique-id="76d8cca0-3ac3-4426-80c8-8cb8c92975ae" data-file-name="components/UserTable.tsx">
-        <p className="text-sm text-muted-foreground" data-unique-id="0efcef6b-aaa2-45c2-a965-bb0127adc0dd" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="05641ae8-49b5-418c-83d3-43e1d603b9bc" data-file-name="components/UserTable.tsx">
-          Showing </span>{indexOfFirstItem + 1}<span className="editable-text" data-unique-id="30541ed3-9aad-4d10-a256-9ea0d82c8a06" data-file-name="components/UserTable.tsx"> to </span>{Math.min(indexOfLastItem, totalItems)}<span className="editable-text" data-unique-id="8a1b094f-1292-4fa7-98fe-fb31f2f64749" data-file-name="components/UserTable.tsx"> of </span>{totalItems}<span className="editable-text" data-unique-id="a5ce6469-77ef-47ac-b087-f9ccfb46cb17" data-file-name="components/UserTable.tsx"> users
+      <div className="flex justify-between items-center" data-unique-id="a6dfa4fa-fd1d-4b4d-8d35-7a61780687f2" data-file-name="components/UserTable.tsx">
+        <p className="text-sm text-muted-foreground" data-unique-id="32a4dec8-357f-4e34-957c-2696097c1977" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="27822158-4ff0-4ead-ba6a-3371b610ea72" data-file-name="components/UserTable.tsx">
+          Showing </span>{indexOfFirstItem + 1}<span className="editable-text" data-unique-id="58f91dfe-17bf-40c6-b2a8-2880aeb8ea17" data-file-name="components/UserTable.tsx"> to </span>{Math.min(indexOfLastItem, totalItems)}<span className="editable-text" data-unique-id="b8b404c6-7010-466a-b13d-deb7bc575cb3" data-file-name="components/UserTable.tsx"> of </span>{totalItems}<span className="editable-text" data-unique-id="56b8d6c4-fa3c-4830-949e-d308ad2a5006" data-file-name="components/UserTable.tsx"> users
         </span></p>
-        <div className="flex items-center gap-2" data-unique-id="0cb8a88e-d20e-4839-9f1d-2c716a0716bc" data-file-name="components/UserTable.tsx">
-          <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="1d6e0b9f-6527-4730-9bb5-dc2a4f5b63a7" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="e21522bd-d8af-46dd-86d6-dfa08fd2d067" data-file-name="components/UserTable.tsx">Tampilkan:</span></Label>
-          <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="f181ea32-3687-4779-89ec-de081ea023cd" data-file-name="components/UserTable.tsx">
-            <option value={10} data-unique-id="241acdcc-fc9f-4cec-a988-35324f40dea7" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="dc1ea7c8-122a-41e1-a974-8a59246429dd" data-file-name="components/UserTable.tsx">10</span></option>
-            <option value={50} data-unique-id="ba6ae981-c58b-4eaa-9e11-fa3570e3f3e4" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="0b760f26-80c4-4e7a-b73a-7ec25220a6cc" data-file-name="components/UserTable.tsx">50</span></option>
-            <option value={100} data-unique-id="ef24862b-5bc2-4393-b481-46af8f8ecaa0" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="eb929c89-7e23-43b1-90a5-3c029e2b35b9" data-file-name="components/UserTable.tsx">100</span></option>
+        <div className="flex items-center gap-2" data-unique-id="591c6ca8-05f3-4ae0-9201-c181d7c83b43" data-file-name="components/UserTable.tsx">
+          <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="c4b897d3-31d2-4026-b566-d16cea4e9c5c" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="f4de476b-5d53-4864-b07d-517989974dc3" data-file-name="components/UserTable.tsx">Tampilkan:</span></Label>
+          <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="13631921-6e38-4dad-a51d-a622cb03d509" data-file-name="components/UserTable.tsx">
+            <option value={10} data-unique-id="c6067bc7-4a0a-4b57-9ce6-be12c51ef45c" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="3cbe6f88-f943-46ba-96c0-33c8d32951d3" data-file-name="components/UserTable.tsx">10</span></option>
+            <option value={50} data-unique-id="cb9f025e-ef52-4d0d-aeab-569b6466eaf6" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="016d44fd-e14d-4200-9f17-5e3cbd11e196" data-file-name="components/UserTable.tsx">50</span></option>
+            <option value={100} data-unique-id="7fc2d4df-28bc-4a53-ae3d-c93d47621bcc" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="5faf3951-ae63-41b5-9994-5f57ddab27cb" data-file-name="components/UserTable.tsx">100</span></option>
           </select>
         </div>
       </div>
       
       {/* Search and filters */}
-      <div className="flex flex-col sm:flex-row gap-4" data-unique-id="e58bad0c-517a-4deb-ba0d-006d4f9f6b76" data-file-name="components/UserTable.tsx">
-        <div className="flex-grow" data-unique-id="b5535c03-ef67-41c3-b26f-414211e5c519" data-file-name="components/UserTable.tsx">
-          <Input placeholder="Cari username atau nama..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} className="w-full" data-unique-id="c289d951-b031-4aac-ab35-e6b7d9cd7098" data-file-name="components/UserTable.tsx" />
+      <div className="flex flex-col sm:flex-row gap-4" data-unique-id="f976ec0f-8b38-4b23-8d03-986bcad4e350" data-file-name="components/UserTable.tsx">
+        <div className="flex-grow" data-unique-id="c484b24e-12d1-4f6e-8c7c-85d30fa36308" data-file-name="components/UserTable.tsx">
+          <Input placeholder="Cari username atau nama..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} className="w-full" data-unique-id="86e39341-5941-4893-8d56-f988d6e80c0f" data-file-name="components/UserTable.tsx" />
         </div>
-        <div className="flex gap-2" data-unique-id="c841dd08-b1f9-4210-bea5-d9ee2191106a" data-file-name="components/UserTable.tsx">
-          <Button variant={filterActive === true ? "default" : "outline"} onClick={() => setFilterActive(filterActive === true ? null : true)} className="flex-1 sm:flex-none" data-unique-id="c9cfc7bf-f7a7-4d93-a069-d84286d4a7c8" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="39fe3ebf-25b4-471e-bb1f-b0583721c53a" data-file-name="components/UserTable.tsx">
+        <div className="flex gap-2" data-unique-id="af3a3216-4558-4593-8ad4-01557e6150ec" data-file-name="components/UserTable.tsx">
+          <Button variant={filterActive === true ? "default" : "outline"} onClick={() => setFilterActive(filterActive === true ? null : true)} className="flex-1 sm:flex-none" data-unique-id="4030ec51-9d7f-430e-bc89-3fab6c1d3659" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="5c5e9dba-5b6a-4a2f-9651-10016af1b079" data-file-name="components/UserTable.tsx">
             Aktif
           </span></Button>
-          <Button variant={filterActive === false ? "default" : "outline"} onClick={() => setFilterActive(filterActive === false ? null : false)} className="flex-1 sm:flex-none" data-unique-id="ddcfd7d2-0a7d-4b19-b46a-e6ea39fbf7c6" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="aa64ae05-ee1d-4e6a-a0a8-7c74707279e7" data-file-name="components/UserTable.tsx">
+          <Button variant={filterActive === false ? "default" : "outline"} onClick={() => setFilterActive(filterActive === false ? null : false)} className="flex-1 sm:flex-none" data-unique-id="5ca9110a-3705-4f04-bb4b-e8d1ceac0c6b" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="ea5bf698-f11d-4d7c-abb4-3fb144b9d9b8" data-file-name="components/UserTable.tsx">
             Non-aktif
           </span></Button>
-          <Button onClick={() => setIsCreating(true)} className="flex items-center gap-2 flex-1 sm:flex-none" disabled={isCreating} data-unique-id="de628778-cf63-422b-98ee-cc3f84f10101" data-file-name="components/UserTable.tsx">
+          <Button onClick={() => setIsCreating(true)} className="flex items-center gap-2 flex-1 sm:flex-none" disabled={isCreating} data-unique-id="9269a13e-2491-4e7c-b9ee-29677b769d58" data-file-name="components/UserTable.tsx">
             <Plus className="h-4 w-4" />
-            <span className="hidden sm:inline" data-unique-id="1c089df1-7327-49f4-aecc-55581b61f943" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="a7eb2b13-8100-4d42-8e92-8b85ec0c8825" data-file-name="components/UserTable.tsx">Tambah Pengguna</span></span>
+            <span className="hidden sm:inline" data-unique-id="ced01169-9ffe-4da0-a1dc-6df51579decc" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="10f7c3fb-139b-450e-92df-f0a362c3b9ca" data-file-name="components/UserTable.tsx">Tambah Pengguna</span></span>
           </Button>
         </div>
       </div>
       
       {/* Status messages */}
-      {statusMessage && <div className={`p-3 rounded-md flex items-center ${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`} data-unique-id="1784bd4c-aba4-4cd4-be0b-fc495eae2b24" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+      {statusMessage && <div className={`p-3 rounded-md flex items-center ${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`} data-unique-id="9eecb622-4cce-43c6-a45a-67a5aa7d144c" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
           {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-          <span data-unique-id="ad547577-74ed-42e6-8ed6-b729f3e7f211" data-file-name="components/UserTable.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+          <span data-unique-id="835fe5a1-af6e-448b-8225-4fffbf44d6e4" data-file-name="components/UserTable.tsx" data-dynamic-text="true">{statusMessage.message}</span>
         </div>}
       
-      {isCreating && <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="0ebd8915-0fae-449c-a3c5-7763b184f4b5" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-          <h3 className="text-lg font-medium mb-4" data-unique-id="e26eed64-5ef5-482e-8a58-ffde96fb7036" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="c989901c-d8dc-428b-905a-91ad0767ab62" data-file-name="components/UserTable.tsx">Tambah Pengguna Baru</span></h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" data-unique-id="b111b444-68dd-48cb-a587-32c62b54b00e" data-file-name="components/UserTable.tsx">
-            <div data-unique-id="2244157f-ac2b-4c33-b7cd-e04a36f737dc" data-file-name="components/UserTable.tsx">
-              <label className="block text-sm font-medium mb-1" data-unique-id="89ea07cc-0c53-49f9-bb75-a5a48466abce" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="4d1eb881-6976-4168-9913-fe970975160f" data-file-name="components/UserTable.tsx">Username</span></label>
-              <Input name="username" value={formData.username} onChange={handleInputChange} placeholder="Masukkan username" data-unique-id="bf8ccc05-d290-4edd-996d-9fbebbd250b4" data-file-name="components/UserTable.tsx" />
+      {isCreating && <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="d0a4221b-7b4e-4897-a66a-835ef8e1aa46" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+          <h3 className="text-lg font-medium mb-4" data-unique-id="c7a303fa-915a-467f-8e18-880689793866" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="48b875d7-fa85-4942-a3e9-8819542c487e" data-file-name="components/UserTable.tsx">Tambah Pengguna Baru</span></h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" data-unique-id="585cb4ee-ed13-4f69-bc3b-3722c3bdfeb8" data-file-name="components/UserTable.tsx">
+            <div data-unique-id="45f5e979-ab02-4da6-baca-85c51b8aedc4" data-file-name="components/UserTable.tsx">
+              <label className="block text-sm font-medium mb-1" data-unique-id="739909d6-8d8a-41c6-baad-511cfe5179a4" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="b651f899-096c-4359-bf06-6ec617d8b900" data-file-name="components/UserTable.tsx">Username</span></label>
+              <Input name="username" value={formData.username} onChange={handleInputChange} placeholder="Masukkan username" data-unique-id="d386b208-faef-4dc1-899a-640514fba8a8" data-file-name="components/UserTable.tsx" />
             </div>
-            <div data-unique-id="1497a89e-6295-4a30-9c09-90de584f4ead" data-file-name="components/UserTable.tsx">
-              <label className="block text-sm font-medium mb-1" data-unique-id="097e3d99-3176-4081-9428-e0225589b334" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="76036e12-fbcc-4d13-8e47-4f3aeebf5f96" data-file-name="components/UserTable.tsx">Nama</span></label>
-              <Input name="name" value={formData.name} onChange={handleInputChange} placeholder="Masukkan nama" data-unique-id="f16443b1-0dc7-4ddb-af0e-9e2ffeae1b51" data-file-name="components/UserTable.tsx" />
+            <div data-unique-id="464bacc9-ba57-4133-b6a5-698ac9929cc5" data-file-name="components/UserTable.tsx">
+              <label className="block text-sm font-medium mb-1" data-unique-id="91936fae-69b2-498e-b59a-d3be1bf16008" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="502c4194-06b9-44ad-a3a0-9c0b1b3aa955" data-file-name="components/UserTable.tsx">Nama</span></label>
+              <Input name="name" value={formData.name} onChange={handleInputChange} placeholder="Masukkan nama" data-unique-id="0fddf7bf-2dfd-4ed2-aa2b-3978dd2834f2" data-file-name="components/UserTable.tsx" />
             </div>
-            <div data-unique-id="23b17feb-49be-46cf-ab5b-1757f266741c" data-file-name="components/UserTable.tsx">
-              <label className="block text-sm font-medium mb-1" data-unique-id="a4815a75-c26a-4c07-a9bb-1451589dad3e" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="584fa78a-f79d-486d-ab58-48c866f940b6" data-file-name="components/UserTable.tsx">Kode Akses</span></label>
-              <div className="flex gap-2" data-unique-id="f0481667-0d5d-4ab4-9997-9b8555406d0d" data-file-name="components/UserTable.tsx">
-                <Input name="accessCode" value={formData.accessCode} onChange={handleInputChange} placeholder="Masukkan kode akses" data-unique-id="a0995ce1-7fb7-406c-9941-0d75b669cb50" data-file-name="components/UserTable.tsx" />
-                <Button type="button" variant="outline" onClick={generateRandomAccessCode} data-unique-id="0c23fb2d-12ac-40c4-a7e7-c1e84a4b466d" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="ccc728cc-0f17-4d1a-884b-6cea3cc644a5" data-file-name="components/UserTable.tsx">
+            <div data-unique-id="c7e5b853-e4fe-4f9d-901a-5f8b39165afa" data-file-name="components/UserTable.tsx">
+              <label className="block text-sm font-medium mb-1" data-unique-id="74d08335-8d6c-43dc-bd0d-fcde3676d543" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="f7ddb522-cb68-4ba8-b579-1f4a0f4566e7" data-file-name="components/UserTable.tsx">Kode Akses</span></label>
+              <div className="flex gap-2" data-unique-id="436c3b9b-5c3e-4afd-ab23-54116cdf269c" data-file-name="components/UserTable.tsx">
+                <Input name="accessCode" value={formData.accessCode} onChange={handleInputChange} placeholder="Masukkan kode akses" data-unique-id="d6a9cd9c-b474-40a2-8bd4-cf68dd9232d8" data-file-name="components/UserTable.tsx" />
+                <Button type="button" variant="outline" onClick={generateRandomAccessCode} data-unique-id="5bfb852a-e7fd-4c09-8f53-3b57f9a9a334" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="42b714f5-33bc-410a-8a90-1fe76b46a5fe" data-file-name="components/UserTable.tsx">
                   Generate
                 </span></Button>
               </div>
-              <p className="text-xs text-muted-foreground mt-1" data-unique-id="ba41fc8a-7ebc-4aac-8550-ba4dff0ce5a6" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="b239d28b-bf60-47f9-8c9f-86e67e4246d8" data-file-name="components/UserTable.tsx">
+              <p className="text-xs text-muted-foreground mt-1" data-unique-id="4cfa3ec0-102f-4128-b064-3059fab5a7e2" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="0e60de80-21ac-4c8e-8532-7c19caa544e0" data-file-name="components/UserTable.tsx">
                 Jika kosong, akan menggunakan username sebagai kode akses
               </span></p>
             </div>
-            <div className="flex items-center" data-unique-id="5239bd25-3926-4c0a-887f-7c4820d7b263" data-file-name="components/UserTable.tsx">
-              <label className="flex items-center space-x-2 cursor-pointer" data-unique-id="24c16bd6-5cb1-4098-9f72-971c10201697" data-file-name="components/UserTable.tsx">
-                <input type="checkbox" name="isActive" checked={formData.isActive} onChange={handleInputChange} className="rounded border-gray-300 text-primary focus:ring-primary" data-unique-id="f3d40708-e4c9-42fc-9caa-beb0ce71c154" data-file-name="components/UserTable.tsx" />
-                <span data-unique-id="7630c151-5315-4ec5-b96a-8de3ef3d61ed" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="112c736a-127a-4ca1-a86a-3ca47a8a8941" data-file-name="components/UserTable.tsx">Aktif</span></span>
+            <div className="flex items-center" data-unique-id="a1f448e2-51c8-4fa2-89ca-e96521696429" data-file-name="components/UserTable.tsx">
+              <label className="flex items-center space-x-2 cursor-pointer" data-unique-id="415494c3-63a6-4e44-944d-9077331ec64a" data-file-name="components/UserTable.tsx">
+                <input type="checkbox" name="isActive" checked={formData.isActive} onChange={handleInputChange} className="rounded border-gray-300 text-primary focus:ring-primary" data-unique-id="b1f7d98d-ec3d-420d-bcc7-dafb7481a43b" data-file-name="components/UserTable.tsx" />
+                <span data-unique-id="68df5358-9536-4aba-9709-4112c04b9bc3" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="89b5ed09-846d-4989-a959-ccd0c84defc4" data-file-name="components/UserTable.tsx">Aktif</span></span>
               </label>
             </div>
           </div>
           
           {/* Category Access Selection - New Section */}
-          <div className="mb-4" data-unique-id="2afac009-0a33-4a04-a657-de2931b264a7" data-file-name="components/UserTable.tsx">
-            <h4 className="font-medium text-sm mb-2" data-unique-id="c92054bc-a6fa-48e8-ba72-3bc5d026d203" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="20322670-1433-4404-b184-fd0a79a75f4b" data-file-name="components/UserTable.tsx">Filter Kategori</span></h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-unique-id="bb1d369c-37b2-4bbf-9d05-92c5d279bd2b" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+          <div className="mb-4" data-unique-id="1bd6d264-6279-4354-b868-18b4d1fee46c" data-file-name="components/UserTable.tsx">
+            <h4 className="font-medium text-sm mb-2" data-unique-id="c3407e65-bff7-47db-a386-f43327c305a7" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="f029dec8-ee6a-49f1-ab9d-81305583cb1d" data-file-name="components/UserTable.tsx">Filter Kategori</span></h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-unique-id="5241ec6a-b672-4d62-9a6f-34be47781332" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
               {/* Audio Categories */}
-              <div className="border rounded-md p-3" data-unique-id="1976f1d7-5eae-4fa9-bbff-33066dc4707b" data-file-name="components/UserTable.tsx">
-                <h5 className="font-medium mb-2 text-sm" data-unique-id="15282ee2-4018-469f-8fa6-be83f66acdc3" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="58348107-dae3-4c00-9ad5-4005f627a5e2" data-file-name="components/UserTable.tsx">Audio</span></h5>
-                <div className="space-y-2 max-h-48 overflow-y-auto" data-unique-id="c27eb22e-5c54-4418-b3b4-68f13b4528d7" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                  {categories.filter(category => category.name.toUpperCase().startsWith('AUDIO')).map(category => <div key={`audio-${category.id}`} className="flex items-center" data-is-mapped="true" data-unique-id="89c369a2-fba1-4d87-b9f7-d712cca90f01" data-file-name="components/UserTable.tsx">
-                        <input type="checkbox" id={`audio-cat-${category.id}`} checked={formData.audioCategoryIds.includes(category.id)} onChange={e => handleCategoryChange('audio', category.id, e.target.checked)} className="rounded border-gray-300 text-primary focus:ring-primary mr-2" data-is-mapped="true" data-unique-id="af0ac198-9bb0-44d0-bd4e-efe74dfcc001" data-file-name="components/UserTable.tsx" />
-                        <label htmlFor={`audio-cat-${category.id}`} className="text-sm" data-is-mapped="true" data-unique-id="684bba2b-390a-4ea0-bd02-287ea288b414" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+              <div className="border rounded-md p-3" data-unique-id="b91bdabd-83d0-4c6c-9f22-3d18dfc5a424" data-file-name="components/UserTable.tsx">
+                <h5 className="font-medium mb-2 text-sm" data-unique-id="c81b7942-7cce-4923-8945-9505e835758a" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="a60cbaee-405d-4720-9f81-e7d23c204505" data-file-name="components/UserTable.tsx">Audio</span></h5>
+                <div className="space-y-2 max-h-48 overflow-y-auto" data-unique-id="f83db2ef-176b-482f-afef-42670e3efca0" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                  {categories.filter(category => category.name.toUpperCase().startsWith('AUDIO')).map(category => <div key={`audio-${category.id}`} className="flex items-center" data-is-mapped="true" data-unique-id="3b146f51-19db-4e52-834e-6c2f8d959db6" data-file-name="components/UserTable.tsx">
+                        <input type="checkbox" id={`audio-cat-${category.id}`} checked={formData.audioCategoryIds.includes(category.id)} onChange={e => handleCategoryChange('audio', category.id, e.target.checked)} className="rounded border-gray-300 text-primary focus:ring-primary mr-2" data-is-mapped="true" data-unique-id="682ee8ab-a362-4dd1-9f77-d8d3ef1c55f5" data-file-name="components/UserTable.tsx" />
+                        <label htmlFor={`audio-cat-${category.id}`} className="text-sm" data-is-mapped="true" data-unique-id="0611a500-37bc-4bb9-8412-49453f1e05e4" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                  {categories.length === 0 && <p className="text-sm text-muted-foreground" data-unique-id="7e756e70-9b91-4a18-a1d4-3fc807bdcaf3" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="a3b619a6-c162-41fb-ae1e-162f986f01d9" data-file-name="components/UserTable.tsx">Tidak ada kategori</span></p>}
+                  {categories.length === 0 && <p className="text-sm text-muted-foreground" data-unique-id="ffa0b107-f401-414d-b24f-2624d2371429" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="c5bff300-be33-47e5-b190-b2bdfe0b6ba8" data-file-name="components/UserTable.tsx">Tidak ada kategori</span></p>}
                 </div>
               </div>
               
               {/* PDF Categories */}
-              <div className="border rounded-md p-3" data-unique-id="734b6327-d88b-408a-9a25-e8b64fbf00ef" data-file-name="components/UserTable.tsx">
-                <h5 className="font-medium mb-2 text-sm" data-unique-id="f4e7811e-1f81-453b-b0a7-eece186c4282" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="b72f7edf-4cfa-4f06-9a9b-057545df8f15" data-file-name="components/UserTable.tsx">PDF</span></h5>
-                <div className="space-y-2 max-h-48 overflow-y-auto" data-unique-id="78720d25-e72c-4f56-8510-c8662db717ae" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+              <div className="border rounded-md p-3" data-unique-id="4f4955c1-a8cd-4081-b2d8-73c0a599cc46" data-file-name="components/UserTable.tsx">
+                <h5 className="font-medium mb-2 text-sm" data-unique-id="d8513250-87cc-4444-b39d-abdb05c7c1c0" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="403c5bfb-9596-43a0-8613-97ddfb84fe30" data-file-name="components/UserTable.tsx">PDF</span></h5>
+                <div className="space-y-2 max-h-48 overflow-y-auto" data-unique-id="5c46a8aa-a058-49ba-b197-ea89369bcac7" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                   {categories.filter(category => {
                 const upperName = category.name.toUpperCase();
                 return upperName.startsWith('EBOOK') || upperName.startsWith('PDF');
-              }).map(category => <div key={`pdf-${category.id}`} className="flex items-center" data-is-mapped="true" data-unique-id="f41e66f8-e52b-4de8-872e-f72d257eecd0" data-file-name="components/UserTable.tsx">
-                        <input type="checkbox" id={`pdf-cat-${category.id}`} checked={formData.pdfCategoryIds.includes(category.id)} onChange={e => handleCategoryChange('pdf', category.id, e.target.checked)} className="rounded border-gray-300 text-primary focus:ring-primary mr-2" data-is-mapped="true" data-unique-id="718ebf3f-ea52-430e-8c17-477053342b2b" data-file-name="components/UserTable.tsx" />
-                        <label htmlFor={`pdf-cat-${category.id}`} className="text-sm" data-is-mapped="true" data-unique-id="13e9ee9c-5523-4421-8b10-86a223d8601b" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+              }).map(category => <div key={`pdf-${category.id}`} className="flex items-center" data-is-mapped="true" data-unique-id="e7271e5e-f90f-44d0-8bf8-e68cca5c7c32" data-file-name="components/UserTable.tsx">
+                        <input type="checkbox" id={`pdf-cat-${category.id}`} checked={formData.pdfCategoryIds.includes(category.id)} onChange={e => handleCategoryChange('pdf', category.id, e.target.checked)} className="rounded border-gray-300 text-primary focus:ring-primary mr-2" data-is-mapped="true" data-unique-id="bd68df7d-0b4d-46b4-8b5e-465e14d3abad" data-file-name="components/UserTable.tsx" />
+                        <label htmlFor={`pdf-cat-${category.id}`} className="text-sm" data-is-mapped="true" data-unique-id="79e1eb7a-13b7-495d-9b7f-1f4a1cf184cb" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                  {categories.length === 0 && <p className="text-sm text-muted-foreground" data-unique-id="c6e21665-cbe7-46a6-b4a2-05fdff9be586" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="f9b52a17-f2a1-4e14-9e64-8885c0378341" data-file-name="components/UserTable.tsx">Tidak ada kategori</span></p>}
+                  {categories.length === 0 && <p className="text-sm text-muted-foreground" data-unique-id="4ad924b8-9a2a-4bae-9728-7149bb811324" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="1925e4f8-4a5e-47ea-8dd5-a05e56a863ef" data-file-name="components/UserTable.tsx">Tidak ada kategori</span></p>}
                 </div>
               </div>
               
               {/* Video Categories */}
-              <div className="border rounded-md p-3" data-unique-id="d2ece552-d725-4afd-9b57-20d4d8c4394e" data-file-name="components/UserTable.tsx">
-                <h5 className="font-medium mb-2 text-sm" data-unique-id="bb1e8cd1-3fab-4b19-9b41-e79143be4ae9" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="b7f12d73-d3e9-4d7f-83f0-8215a901e060" data-file-name="components/UserTable.tsx">Video</span></h5>
-                <div className="space-y-2 max-h-48 overflow-y-auto" data-unique-id="a5b08920-232a-4498-94fb-a135a42eef2f" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                  {categories.filter(category => category.name.toUpperCase().startsWith('VIDEO')).map(category => <div key={`video-${category.id}`} className="flex items-center" data-is-mapped="true" data-unique-id="6609c207-bd62-4701-b589-5468425c16a5" data-file-name="components/UserTable.tsx">
-                        <input type="checkbox" id={`video-cat-${category.id}`} checked={formData.videoCategoryIds.includes(category.id)} onChange={e => handleCategoryChange('video', category.id, e.target.checked)} className="rounded border-gray-300 text-primary focus:ring-primary mr-2" data-is-mapped="true" data-unique-id="078a6cd7-64e9-4cd7-951d-13e30e8d9694" data-file-name="components/UserTable.tsx" />
-                        <label htmlFor={`video-cat-${category.id}`} className="text-sm" data-is-mapped="true" data-unique-id="5489c9d1-9522-44e7-9fe4-d38a56db2be2" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+              <div className="border rounded-md p-3" data-unique-id="b4a23dd1-1af3-46ea-a95e-fc10ba17b71c" data-file-name="components/UserTable.tsx">
+                <h5 className="font-medium mb-2 text-sm" data-unique-id="39c7827b-7599-42ac-ba66-9c7091880b13" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="efa73913-30fc-451c-ac57-97f6c5001ae7" data-file-name="components/UserTable.tsx">Video</span></h5>
+                <div className="space-y-2 max-h-48 overflow-y-auto" data-unique-id="f30c3b50-0f9c-48e7-8ce6-38165dd1a51c" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                  {categories.filter(category => category.name.toUpperCase().startsWith('VIDEO')).map(category => <div key={`video-${category.id}`} className="flex items-center" data-is-mapped="true" data-unique-id="10b26446-2b52-4781-b20a-fcae39814c38" data-file-name="components/UserTable.tsx">
+                        <input type="checkbox" id={`video-cat-${category.id}`} checked={formData.videoCategoryIds.includes(category.id)} onChange={e => handleCategoryChange('video', category.id, e.target.checked)} className="rounded border-gray-300 text-primary focus:ring-primary mr-2" data-is-mapped="true" data-unique-id="63686f1d-effc-42cf-9721-f35efbc057d4" data-file-name="components/UserTable.tsx" />
+                        <label htmlFor={`video-cat-${category.id}`} className="text-sm" data-is-mapped="true" data-unique-id="bb5600f1-1446-4e22-a2c3-9e5ef5832ad2" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                  {categories.length === 0 && <p className="text-sm text-muted-foreground" data-unique-id="dcf9f851-0205-41d1-a4a1-418e2f55a584" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="49b061f1-2170-4f8d-b2e8-0b940da26468" data-file-name="components/UserTable.tsx">Tidak ada kategori</span></p>}
+                  {categories.length === 0 && <p className="text-sm text-muted-foreground" data-unique-id="3135c5a7-589f-4810-b6f1-1498bb516229" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="52d3a8be-54af-4ff4-9c83-3ca5e891d22e" data-file-name="components/UserTable.tsx">Tidak ada kategori</span></p>}
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex justify-end space-x-2" data-unique-id="32c297d9-cfa3-4fdd-85ca-e3593d1ced0b" data-file-name="components/UserTable.tsx">
-            <Button variant="outline" onClick={cancelEditing} disabled={isLoading} data-unique-id="2afbb4b3-4c1f-4e25-91cd-cfaa423594c2" data-file-name="components/UserTable.tsx">
-              <X className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="bfe03c47-90f5-41ff-a12d-746befcb5dc9" data-file-name="components/UserTable.tsx">
+          <div className="flex justify-end space-x-2" data-unique-id="ee36c728-d5f1-40ab-820d-20b79fcd93e9" data-file-name="components/UserTable.tsx">
+            <Button variant="outline" onClick={cancelEditing} disabled={isLoading} data-unique-id="7c71690e-609b-4caa-8d79-6d718c04d8e8" data-file-name="components/UserTable.tsx">
+              <X className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="43b98945-135c-4f19-8c8c-b65b1df3adcd" data-file-name="components/UserTable.tsx">
               Batal
             </span></Button>
-            <Button onClick={createUser} disabled={!formData.username || isLoading} data-unique-id="f5b3cf9e-83c8-40b6-8406-11e4554acfe5" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-              {isLoading ? <span className="flex items-center" data-unique-id="e89cc085-9a3b-4ff3-9ed5-2b8e0b5b9b0e" data-file-name="components/UserTable.tsx">
-                  <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="1b9a6a65-3f7c-48b4-a2f0-e793093c8a94" data-file-name="components/UserTable.tsx">
+            <Button onClick={createUser} disabled={!formData.username || isLoading} data-unique-id="e7a74798-2330-4b84-af96-6289e12c11fe" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+              {isLoading ? <span className="flex items-center" data-unique-id="28b02051-3529-44da-81f3-b5868102e932" data-file-name="components/UserTable.tsx">
+                  <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="52174769-a1a0-41b2-a2ce-93831b8bf99d" data-file-name="components/UserTable.tsx">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg><span className="editable-text" data-unique-id="fde18aca-2194-40dc-be9a-1c075d1d5e73" data-file-name="components/UserTable.tsx">
+                  </svg><span className="editable-text" data-unique-id="e17e2e40-6c66-4387-9e26-aa15fdc5659d" data-file-name="components/UserTable.tsx">
                   Menyimpan...
                 </span></span> : <>
                   <Save className="h-4 w-4 mr-2" />
@@ -441,16 +441,16 @@ export default function UserTable({
           </div>
         </div>}
       
-      <div className="overflow-x-auto" data-unique-id="8ea56cf3-1e29-43fc-81f9-c33f1d40720a" data-file-name="components/UserTable.tsx">
-        <Table data-unique-id="2c7c8c5f-939f-40ec-9764-0263dd56d56e" data-file-name="components/UserTable.tsx">
+      <div className="overflow-x-auto" data-unique-id="18502f23-8ff9-4267-88a2-fea47a80d709" data-file-name="components/UserTable.tsx">
+        <Table data-unique-id="5fa8d78d-f2b4-4dfe-bcd9-73c1c3795234" data-file-name="components/UserTable.tsx">
           <TableHeader>
             <TableRow>
-              <TableHead><span className="editable-text" data-unique-id="64e2babe-a364-40a6-b843-bb2aef6bf66a" data-file-name="components/UserTable.tsx">Username</span></TableHead>
-              <TableHead><span className="editable-text" data-unique-id="f1fb3106-fed9-49dd-a2c9-645d5b0ff9ae" data-file-name="components/UserTable.tsx">Kode Akses</span></TableHead>
-              <TableHead><span className="editable-text" data-unique-id="b40fb8b6-f483-46bb-8000-cf1cfb963319" data-file-name="components/UserTable.tsx">Nama</span></TableHead>
-              <TableHead><span className="editable-text" data-unique-id="5cf5527c-7a6d-46be-a8e4-21438ec7f54e" data-file-name="components/UserTable.tsx">Filter Kategori</span></TableHead>
-              <TableHead><span className="editable-text" data-unique-id="1d137c77-5659-4abd-8651-9e73a1be3f91" data-file-name="components/UserTable.tsx">Status</span></TableHead>
-              <TableHead className="text-right"><span className="editable-text" data-unique-id="aa40b91f-02e1-44e1-b411-1cb262bcbff1" data-file-name="components/UserTable.tsx">Aksi</span></TableHead>
+              <TableHead><span className="editable-text" data-unique-id="d25a4d98-58bb-4039-b500-5d118f0440d5" data-file-name="components/UserTable.tsx">Username</span></TableHead>
+              <TableHead><span className="editable-text" data-unique-id="761592c6-2e0a-426c-911f-7c38221af2d8" data-file-name="components/UserTable.tsx">Kode Akses</span></TableHead>
+              <TableHead><span className="editable-text" data-unique-id="feed8f68-7aab-430c-9922-512e043e312b" data-file-name="components/UserTable.tsx">Nama</span></TableHead>
+              <TableHead><span className="editable-text" data-unique-id="8e24c2b0-25cd-4b58-9522-027479a65d78" data-file-name="components/UserTable.tsx">Filter Kategori</span></TableHead>
+              <TableHead><span className="editable-text" data-unique-id="4a2f20bb-791e-4311-9ab1-401c7cc47d1d" data-file-name="components/UserTable.tsx">Status</span></TableHead>
+              <TableHead className="text-right"><span className="editable-text" data-unique-id="3ca743aa-35f0-46eb-8514-56dcd481c980" data-file-name="components/UserTable.tsx">Aksi</span></TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -461,13 +461,13 @@ export default function UserTable({
               </TableRow> : Array.isArray(currentItems) && currentItems.map(user => <TableRow key={user.id}>
                   {editingUser === user.id ? <>
                       <TableCell>
-                        <Input name="username" value={formData.username} onChange={handleInputChange} className="w-full" data-is-mapped="true" data-unique-id="311af4da-2d60-4e62-aebb-da67285be5d2" data-file-name="components/UserTable.tsx" />
+                        <Input name="username" value={formData.username} onChange={handleInputChange} className="w-full" data-is-mapped="true" data-unique-id="f9f856fb-b503-4c94-b689-f2c11c8f4333" data-file-name="components/UserTable.tsx" />
                       </TableCell>
                       <TableCell>
-                        <div className="flex gap-2" data-is-mapped="true" data-unique-id="1d3ade41-f163-453e-8d84-d6edf2aeb4eb" data-file-name="components/UserTable.tsx">
-                          <Input name="accessCode" value={formData.accessCode} onChange={handleInputChange} className="w-full" data-is-mapped="true" data-unique-id="c2f78dce-3c2f-4801-9a2b-21cd2c40f70c" data-file-name="components/UserTable.tsx" />
-                          <Button type="button" variant="outline" size="sm" onClick={generateRandomAccessCode} title="Generate random code" data-is-mapped="true" data-unique-id="31d24601-6f62-42d5-b4e5-812c314b9663" data-file-name="components/UserTable.tsx">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-is-mapped="true" data-unique-id="8851e1f0-b31c-4c72-bc20-4ebadfb70ad6" data-file-name="components/UserTable.tsx">
+                        <div className="flex gap-2" data-is-mapped="true" data-unique-id="cab91037-b7c1-4be7-b876-f88f5be3385e" data-file-name="components/UserTable.tsx">
+                          <Input name="accessCode" value={formData.accessCode} onChange={handleInputChange} className="w-full" data-is-mapped="true" data-unique-id="2c1941bf-61d7-46b6-a630-7ec381e82066" data-file-name="components/UserTable.tsx" />
+                          <Button type="button" variant="outline" size="sm" onClick={generateRandomAccessCode} title="Generate random code" data-is-mapped="true" data-unique-id="bddc27d4-144b-48a6-a6cd-5ddba3d0fcef" data-file-name="components/UserTable.tsx">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-is-mapped="true" data-unique-id="eb63f595-2d01-4284-bdee-d0302687d97a" data-file-name="components/UserTable.tsx">
                               <path d="M16 16v-4a4 4 0 0 0-8 0v4"></path>
                               <path d="M12 12v4"></path>
                               <path d="M8 16h8"></path>
@@ -476,54 +476,54 @@ export default function UserTable({
                         </div>
                       </TableCell>
                       <TableCell>
-                        <Input name="name" value={formData.name} onChange={handleInputChange} className="w-full" data-is-mapped="true" data-unique-id="ddf205fa-2b9f-4f36-bf36-8f8b6dd18102" data-file-name="components/UserTable.tsx" />
+                        <Input name="name" value={formData.name} onChange={handleInputChange} className="w-full" data-is-mapped="true" data-unique-id="aaad56f6-52fe-4017-9c63-e40397bf96b2" data-file-name="components/UserTable.tsx" />
                       </TableCell>
                       <TableCell>
-                        <div className="flex flex-col gap-1" data-is-mapped="true" data-unique-id="a296109f-9d36-4f8c-bf46-7210d1f697da" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                          {user.audioCategoryIds && user.audioCategoryIds.length > 0 && <div data-unique-id="410da87b-bd9f-4b9d-9a35-5011747a19c2" data-file-name="components/UserTable.tsx">
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-1" data-is-mapped="true" data-unique-id="70cae190-bf4f-4efd-9fe1-1890a7a2716a" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {user.audioCategoryIds.length}<span className="editable-text" data-unique-id="a8a6d16c-6356-4f04-b6ef-c7e58281b5fd" data-file-name="components/UserTable.tsx"> Audio</span>
+                        <div className="flex flex-col gap-1" data-is-mapped="true" data-unique-id="0820ae75-5c69-4b28-8108-6e78321a87ff" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                          {user.audioCategoryIds && user.audioCategoryIds.length > 0 && <div data-unique-id="5395b364-d1bf-4033-a1cf-9aae9e5c9372" data-file-name="components/UserTable.tsx">
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-1" data-is-mapped="true" data-unique-id="baa683cc-d324-4d6b-a372-7c464d0d24e7" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {user.audioCategoryIds.length}<span className="editable-text" data-unique-id="e4deb6e7-5796-4f39-a407-846d7e2180cd" data-file-name="components/UserTable.tsx"> Audio</span>
                               </span>
-                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="b1434550-1248-4160-b5d9-011442248aa1" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="d25f5c52-dcdc-4e52-86b1-70468403d42f" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                                 {user.audioCategoryIds.map(catId => {
                         const category = categories.find(c => c.id === catId);
-                        return category ? <div key={`audio-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="4e1e2064-bb34-4c4c-a60d-a278eac10ab0" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="ffd3b3bc-91d9-494f-b4eb-ef2ca8af5605" data-file-name="components/UserTable.tsx">
+                        return category ? <div key={`audio-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="c7e6f62e-0f37-4597-8059-3f712cb866e7" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="b228ad2a-de5c-4ee7-a4ff-65dd5376865e" data-file-name="components/UserTable.tsx">
                                       • </span>{category.name}
                                     </div> : null;
                       })}
                               </div>
                             </div>}
                           
-                          {user.pdfCategoryIds && user.pdfCategoryIds.length > 0 && <div data-unique-id="eb983359-2292-4d32-a53f-41601ce47935" data-file-name="components/UserTable.tsx">
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mb-1" data-is-mapped="true" data-unique-id="972aae03-f79c-4cb7-9763-e1376f8ae015" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {user.pdfCategoryIds.length}<span className="editable-text" data-unique-id="381095e6-2657-4a9f-bc1d-882b39adc2d8" data-file-name="components/UserTable.tsx"> PDF</span>
+                          {user.pdfCategoryIds && user.pdfCategoryIds.length > 0 && <div data-unique-id="4611768c-289f-48c0-8d66-414033afd02f" data-file-name="components/UserTable.tsx">
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mb-1" data-is-mapped="true" data-unique-id="0732e752-b0b9-40c0-ad93-c23d27e56171" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {user.pdfCategoryIds.length}<span className="editable-text" data-unique-id="768cf105-19f7-497e-a1b8-64854b55b72b" data-file-name="components/UserTable.tsx"> PDF</span>
                               </span>
-                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="5082440c-24f9-42d8-8ce7-b3d32497ec7e" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="ddb8fa34-5fbc-4731-9727-777a3648c718" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                                 {user.pdfCategoryIds.map(catId => {
                         const category = categories.find(c => c.id === catId);
-                        return category ? <div key={`pdf-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="f04b7c4e-d96b-4acb-b219-c0e5c53e9ef7" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="4fe685e0-c5cc-4fd9-9059-7233547fab14" data-file-name="components/UserTable.tsx">
+                        return category ? <div key={`pdf-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="ad4e4cd9-bc3b-48f4-b656-fa6cbf69421c" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="0f1f90f3-de67-427a-9631-61f0faca2455" data-file-name="components/UserTable.tsx">
                                       • </span>{category.name}
                                     </div> : null;
                       })}
                               </div>
                             </div>}
                           
-                          {user.videoCategoryIds && user.videoCategoryIds.length > 0 && <div data-unique-id="8077c971-b245-4398-81d5-534e1d3be64b" data-file-name="components/UserTable.tsx">
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mb-1" data-is-mapped="true" data-unique-id="507a6a9d-4a86-4df2-b746-524a4d7e39ed" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {user.videoCategoryIds.length}<span className="editable-text" data-unique-id="147fd048-e1d9-4266-b890-79dc3f476936" data-file-name="components/UserTable.tsx"> Video</span>
+                          {user.videoCategoryIds && user.videoCategoryIds.length > 0 && <div data-unique-id="625ba355-867c-4d0d-be19-7910b8e72e80" data-file-name="components/UserTable.tsx">
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mb-1" data-is-mapped="true" data-unique-id="5e78b2c6-1589-4051-b9a0-9ad1cbb6c922" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {user.videoCategoryIds.length}<span className="editable-text" data-unique-id="e6398684-7b72-4c12-b6e6-fe75dee7c85d" data-file-name="components/UserTable.tsx"> Video</span>
                               </span>
-                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="29ed7180-4825-4781-b20d-80de9c6178dc" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="74f80828-d857-44a9-a805-a03b56a618cd" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                                 {user.videoCategoryIds.map(catId => {
                         const category = categories.find(c => c.id === catId);
-                        return category ? <div key={`video-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="84188d1f-7f29-4454-b955-5b92d5901f19" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="e306943c-04cd-487f-aa29-ea6b562cf9e1" data-file-name="components/UserTable.tsx">
+                        return category ? <div key={`video-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="634b9abb-d2a9-43fa-bf1f-87e054ebc396" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="9391edf7-8727-46c6-a31e-c48dadb9d29b" data-file-name="components/UserTable.tsx">
                                       • </span>{category.name}
                                     </div> : null;
                       })}
                               </div>
                             </div>}
                           
-                          {(!user.audioCategoryIds || user.audioCategoryIds.length === 0) && (!user.pdfCategoryIds || user.pdfCategoryIds.length === 0) && (!user.videoCategoryIds || user.videoCategoryIds.length === 0) && <span className="text-sm text-muted-foreground" data-is-mapped="true" data-unique-id="56e4211c-8c4e-4d95-8b7c-e5ef1c631ec8" data-file-name="components/UserTable.tsx">
-                             <span className="editable-text" data-unique-id="5b3866e2-f806-4289-9051-701b4aae78c8" data-file-name="components/UserTable.tsx">—</span>
+                          {(!user.audioCategoryIds || user.audioCategoryIds.length === 0) && (!user.pdfCategoryIds || user.pdfCategoryIds.length === 0) && (!user.videoCategoryIds || user.videoCategoryIds.length === 0) && <span className="text-sm text-muted-foreground" data-is-mapped="true" data-unique-id="3a01f6dd-d216-47ca-b75d-128863de427a" data-file-name="components/UserTable.tsx">
+                             <span className="editable-text" data-unique-id="0075dcb2-5817-48c8-8b44-dfa8b171e060" data-file-name="components/UserTable.tsx">—</span>
                            </span>}
                         </div>
                       </TableCell>
@@ -533,18 +533,18 @@ export default function UserTable({
                 }) : "—"}
                       </TableCell>
                       <TableCell className="hidden sm:table-cell">
-                        <label className="flex items-center space-x-2 cursor-pointer" data-is-mapped="true" data-unique-id="15f128bc-eeb5-48a0-8e36-647b582f7d8d" data-file-name="components/UserTable.tsx">
-                          <input type="checkbox" name="isActive" checked={formData.isActive} onChange={handleInputChange} className="rounded border-gray-300 text-primary focus:ring-primary" data-is-mapped="true" data-unique-id="6aca993b-a3da-4b3b-82ab-6105f71e08bc" data-file-name="components/UserTable.tsx" />
-                          <span data-is-mapped="true" data-unique-id="8d68f28a-4dcf-4c0c-9b11-794b1bf8ba31" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="af50350f-4c50-412d-8e9c-719b3d4a2211" data-file-name="components/UserTable.tsx">Aktif</span></span>
+                        <label className="flex items-center space-x-2 cursor-pointer" data-is-mapped="true" data-unique-id="90a5426d-4bea-43c9-857c-72fda0949930" data-file-name="components/UserTable.tsx">
+                          <input type="checkbox" name="isActive" checked={formData.isActive} onChange={handleInputChange} className="rounded border-gray-300 text-primary focus:ring-primary" data-is-mapped="true" data-unique-id="eabe60d5-ea99-477a-85fd-0c27d7f6fd34" data-file-name="components/UserTable.tsx" />
+                          <span data-is-mapped="true" data-unique-id="12de6c73-6ee1-4beb-a7e2-85049d992514" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="ccf9a01a-37b4-4867-a64f-8633ad8044e0" data-file-name="components/UserTable.tsx">Aktif</span></span>
                         </label>
                       </TableCell>
                       <TableCell className="text-right">
-                        <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="5af3e749-4721-43d8-80f5-0885281c9e0f" data-file-name="components/UserTable.tsx">
-                          <Button variant="outline" size="sm" onClick={() => setEditingUser(null)} disabled={isLoading} data-is-mapped="true" data-unique-id="f0ea48f6-ce9d-40a0-93a4-3e706f70e669" data-file-name="components/UserTable.tsx">
+                        <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="819219ff-29b3-4801-b4ce-4dc59a6384f0" data-file-name="components/UserTable.tsx">
+                          <Button variant="outline" size="sm" onClick={() => setEditingUser(null)} disabled={isLoading} data-is-mapped="true" data-unique-id="aae6e3f3-a895-4657-bd68-5ade074c6159" data-file-name="components/UserTable.tsx">
                             <X className="h-4 w-4" />
                           </Button>
-                          <Button size="sm" onClick={() => updateUser(user.id)} disabled={isLoading} data-is-mapped="true" data-unique-id="94d9ce62-44db-4bf1-95be-f95d57ecd045" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                            {isLoading ? <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-is-mapped="true" data-unique-id="fe3a1c8f-3538-4887-8f30-bfa5a06a7dc4" data-file-name="components/UserTable.tsx">
+                          <Button size="sm" onClick={() => updateUser(user.id)} disabled={isLoading} data-is-mapped="true" data-unique-id="4229309e-ccb4-4991-9642-66568f6b3ce3" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                            {isLoading ? <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-is-mapped="true" data-unique-id="88c3cde3-f6f9-45e7-8f0f-9d34e6e7111c" data-file-name="components/UserTable.tsx">
                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                               </svg> : <Save className="h-4 w-4" />}
@@ -554,86 +554,86 @@ export default function UserTable({
                     </> : <>
                       <TableCell className="font-medium">{user.username}</TableCell>
                       <TableCell>
-                        <div className="flex items-center space-x-2" data-is-mapped="true" data-unique-id="70805a53-89dd-47d6-8c76-bcab21925e7e" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                          <span className="font-mono bg-muted px-2 py-1 rounded text-sm" data-is-mapped="true" data-unique-id="9436ddd2-d535-4e33-8f49-37f571d51f33" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                        <div className="flex items-center space-x-2" data-is-mapped="true" data-unique-id="7f004581-a4c3-44d8-b013-bda3137a33e1" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                          <span className="font-mono bg-muted px-2 py-1 rounded text-sm" data-is-mapped="true" data-unique-id="acb2fdbb-a913-471f-a2de-c282029622b0" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                             {user.accessCode || "—"}
                           </span>
-                          {user.accessCode && <button onClick={() => copyAccessCode(user.id, user.accessCode)} className="text-muted-foreground hover:text-foreground focus:outline-none" title="Copy access code" data-is-mapped="true" data-unique-id="d6fc93ea-6de5-4149-8d71-09edd50a757a" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                          {user.accessCode && <button onClick={() => copyAccessCode(user.id, user.accessCode)} className="text-muted-foreground hover:text-foreground focus:outline-none" title="Copy access code" data-is-mapped="true" data-unique-id="22097d63-8d15-4b18-ac64-42feef0034b7" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                               {copiedCodes[user.id] ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
                             </button>}
                         </div>
                       </TableCell>
                       <TableCell>{user.name || "—"}</TableCell>
                       <TableCell>
-                        <div className="flex flex-col gap-1" data-is-mapped="true" data-unique-id="1f90c77e-11cf-4aed-a06c-2f1632e9b171" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                          {user.audioCategoryIds && user.audioCategoryIds.length > 0 && <div data-unique-id="ab3ba5fe-6dd5-4ba0-97ef-c77beae0650d" data-file-name="components/UserTable.tsx">
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-1" data-is-mapped="true" data-unique-id="9583f5bf-2f21-47cb-b99a-6821f008ea0a" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {user.audioCategoryIds.length}<span className="editable-text" data-unique-id="79425121-3d44-4f0f-9c43-da7ad455e2ed" data-file-name="components/UserTable.tsx"> Audio</span>
+                        <div className="flex flex-col gap-1" data-is-mapped="true" data-unique-id="7f4b7f15-7e71-4c5f-a808-9c191a14cb90" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                          {user.audioCategoryIds && user.audioCategoryIds.length > 0 && <div data-unique-id="09a0daf3-bcb0-4a62-9466-61fcbba70492" data-file-name="components/UserTable.tsx">
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-1" data-is-mapped="true" data-unique-id="f4b82cf2-5dc3-4454-8845-5a0371020734" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {user.audioCategoryIds.length}<span className="editable-text" data-unique-id="bdc30640-9bc3-4690-a857-b5d649e8cf2c" data-file-name="components/UserTable.tsx"> Audio</span>
                               </span>
-                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="befda858-b53d-4f1f-a61a-c59a3d5b5f44" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="dcf8d20e-d618-4239-9974-203748af9c7c" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                                 {user.audioCategoryIds.map(catId => {
                         const category = categories.find(c => c.id === catId);
-                        return category ? <div key={`audio-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="ca5bafae-4fcc-4cd2-8709-302ee72ffe08" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="555fe993-d450-43e4-9d17-48e64785d84b" data-file-name="components/UserTable.tsx">
+                        return category ? <div key={`audio-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="8986401b-c592-446d-a757-a76053d24cac" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="b57069ce-7699-4bde-b231-3df12eb8ca5d" data-file-name="components/UserTable.tsx">
                                       • </span>{category.name}
                                     </div> : null;
                       })}
                               </div>
                             </div>}
                           
-                          {user.pdfCategoryIds && user.pdfCategoryIds.length > 0 && <div data-unique-id="7b691e93-5c24-4b94-9017-a59aad6a8f0a" data-file-name="components/UserTable.tsx">
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mb-1" data-is-mapped="true" data-unique-id="7334daf0-ff91-4229-923e-3977a065f77f" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {user.pdfCategoryIds.length}<span className="editable-text" data-unique-id="488795af-815a-4070-88b6-3790f00ae8ef" data-file-name="components/UserTable.tsx"> PDF</span>
+                          {user.pdfCategoryIds && user.pdfCategoryIds.length > 0 && <div data-unique-id="e748bdcf-6da5-4a8f-90a3-f72784c0ce49" data-file-name="components/UserTable.tsx">
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mb-1" data-is-mapped="true" data-unique-id="bd4ed61f-eaa8-42f7-aeeb-6dae4b98c4c6" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {user.pdfCategoryIds.length}<span className="editable-text" data-unique-id="ebefcccf-2a4e-4653-9e17-74848b9e76d6" data-file-name="components/UserTable.tsx"> PDF</span>
                               </span>
-                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="f60afebe-823b-4a95-8202-444fd02eb503" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="38435fd9-4685-4539-9e9e-25ac813b0269" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                                 {user.pdfCategoryIds.map(catId => {
                         const category = categories.find(c => c.id === catId);
-                        return category ? <div key={`pdf-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="df00955d-d0c7-4758-95c7-9a5c8a7a40a4" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="2c96f91d-bf8b-41cc-9147-0d0c88527ba6" data-file-name="components/UserTable.tsx">
+                        return category ? <div key={`pdf-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="73b4722e-271c-4925-a195-16098188acc8" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="7193b36c-7a2e-490d-bde9-f6572214b863" data-file-name="components/UserTable.tsx">
                                       • </span>{category.name}
                                     </div> : null;
                       })}
                               </div>
                             </div>}
                           
-                          {user.videoCategoryIds && user.videoCategoryIds.length > 0 && <div data-unique-id="7a03cca6-2d83-4870-a399-e1808931cddc" data-file-name="components/UserTable.tsx">
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mb-1" data-is-mapped="true" data-unique-id="bac46bfe-7a9d-492a-ad30-1ba68a092414" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {user.videoCategoryIds.length}<span className="editable-text" data-unique-id="6b24674f-cda2-4fd0-8240-59ecb5ee4bcc" data-file-name="components/UserTable.tsx"> Video</span>
+                          {user.videoCategoryIds && user.videoCategoryIds.length > 0 && <div data-unique-id="e08d1256-5706-4b3c-bb03-bc9494168108" data-file-name="components/UserTable.tsx">
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mb-1" data-is-mapped="true" data-unique-id="7ed6ac0e-b18f-49f3-bf1e-f68fea1df7fe" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {user.videoCategoryIds.length}<span className="editable-text" data-unique-id="9bfb09db-d402-454c-a893-7ee0a506c9e4" data-file-name="components/UserTable.tsx"> Video</span>
                               </span>
-                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="c4d5ecb9-8e22-41e5-a8e4-e25df31a99b0" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                              <div className="text-xs text-muted-foreground pl-1" data-unique-id="67981e44-8856-4f9e-959c-4bd9fa0d2703" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                                 {user.videoCategoryIds.map(catId => {
                         const category = categories.find(c => c.id === catId);
-                        return category ? <div key={`video-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="072920ec-5ef0-4c4f-bec4-e894e9b17083" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="d1bd6b83-8722-4817-9798-df7e9e3f0895" data-file-name="components/UserTable.tsx">
+                        return category ? <div key={`video-${catId}`} className="truncate max-w-[180px]" title={category.name} data-unique-id="34a3078b-785e-4cb7-ae01-f9cc571ea733" data-file-name="components/UserTable.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="f3a8e93b-84da-473b-a613-a3c6ef76e717" data-file-name="components/UserTable.tsx">
                                       • </span>{category.name}
                                     </div> : null;
                       })}
                               </div>
                             </div>}
                           
-                          {(!user.audioCategoryIds || user.audioCategoryIds.length === 0) && (!user.pdfCategoryIds || user.pdfCategoryIds.length === 0) && (!user.videoCategoryIds || user.videoCategoryIds.length === 0) && <span className="text-sm text-muted-foreground" data-is-mapped="true" data-unique-id="65024d63-cc85-45f9-82d1-bd9e9df7e9d4" data-file-name="components/UserTable.tsx">
-                             <span className="editable-text" data-unique-id="459c4889-7aeb-4bae-984c-dc563c8bf135" data-file-name="components/UserTable.tsx">—</span>
+                          {(!user.audioCategoryIds || user.audioCategoryIds.length === 0) && (!user.pdfCategoryIds || user.pdfCategoryIds.length === 0) && (!user.videoCategoryIds || user.videoCategoryIds.length === 0) && <span className="text-sm text-muted-foreground" data-is-mapped="true" data-unique-id="59ac5074-f2d1-47cd-91d4-6e8ab215cde0" data-file-name="components/UserTable.tsx">
+                             <span className="editable-text" data-unique-id="88ada591-c09c-480c-925f-2fc31136b0f2" data-file-name="components/UserTable.tsx">—</span>
                            </span>}
                         </div>
                       </TableCell>
                       <TableCell>
-                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${user.isActive ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"}`} data-is-mapped="true" data-unique-id="848b2962-40e9-4275-9115-539c8e11db00" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${user.isActive ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"}`} data-is-mapped="true" data-unique-id="b2c74a10-304f-48ea-87e3-60b248473d19" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                           {user.isActive ? "Aktif" : "Nonaktif"}
                         </span>
                       </TableCell>
                       <TableCell className="text-right">
-                        <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="7b7d28d5-ea7b-424a-aae9-28fbc9e54168" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                          <Button variant="outline" size="sm" onClick={() => startEditing(user)} disabled={editingUser !== null || isCreating || showDeleteConfirmation !== null} title="Edit User" data-is-mapped="true" data-unique-id="b8a48d9f-e46b-4374-ae5e-df077839ac6c" data-file-name="components/UserTable.tsx">
+                        <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="1bc38703-4f6d-4773-b21b-c7d588743120" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                          <Button variant="outline" size="sm" onClick={() => startEditing(user)} disabled={editingUser !== null || isCreating || showDeleteConfirmation !== null} title="Edit User" data-is-mapped="true" data-unique-id="da38ed92-910d-4efa-bc79-bac214d531f4" data-file-name="components/UserTable.tsx">
                             <Pencil className="h-4 w-4" />
                           </Button>
-                          {showDeleteConfirmation === user.id ? <div className="flex space-x-1" data-is-mapped="true" data-unique-id="4a9f1148-3b01-40c7-b219-37984318dccf" data-file-name="components/UserTable.tsx">
-                              <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirmation(null)} data-is-mapped="true" data-unique-id="33c90a49-6fe1-4d01-bdf9-85f7c547b88e" data-file-name="components/UserTable.tsx">
+                          {showDeleteConfirmation === user.id ? <div className="flex space-x-1" data-is-mapped="true" data-unique-id="219c7a4c-0fb8-4fd7-aa25-6aa80dc1abb7" data-file-name="components/UserTable.tsx">
+                              <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirmation(null)} data-is-mapped="true" data-unique-id="86f341ca-ffc2-4bd1-94d5-67ced171a5b7" data-file-name="components/UserTable.tsx">
                                 <X className="h-4 w-4" />
                               </Button>
-                              <Button variant="destructive" size="sm" onClick={() => deleteUser(user.id)} disabled={isLoading} data-is-mapped="true" data-unique-id="268fa386-1780-415c-8e28-54ff531b7c80" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-                                {isLoading ? <svg className="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-is-mapped="true" data-unique-id="099267c6-0181-4540-b790-441540efdedf" data-file-name="components/UserTable.tsx">
+                              <Button variant="destructive" size="sm" onClick={() => deleteUser(user.id)} disabled={isLoading} data-is-mapped="true" data-unique-id="8dea621a-98fa-48f6-be40-537a13e7196d" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+                                {isLoading ? <svg className="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-is-mapped="true" data-unique-id="ef53d815-12cb-42e9-93af-35e4f3e9ee56" data-file-name="components/UserTable.tsx">
                                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                                   </svg> : "Ya"}
                               </Button>
-                            </div> : <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirmation(user.id)} disabled={editingUser !== null || isCreating || isLoading || showDeleteConfirmation !== null} className="text-red-500 hover:text-red-700" title="Hapus User" data-is-mapped="true" data-unique-id="1aa07559-a11f-4f1c-a900-4d4bfde5a41d" data-file-name="components/UserTable.tsx">
+                            </div> : <Button variant="outline" size="sm" onClick={() => setShowDeleteConfirmation(user.id)} disabled={editingUser !== null || isCreating || isLoading || showDeleteConfirmation !== null} className="text-red-500 hover:text-red-700" title="Hapus User" data-is-mapped="true" data-unique-id="34f79892-4786-4101-9d46-1081dd8ec223" data-file-name="components/UserTable.tsx">
                               <Trash2 className="h-4 w-4" />
                             </Button>}
                         </div>
@@ -645,19 +645,19 @@ export default function UserTable({
       </div>
       
       {/* Pagination controls */}
-      {totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="2136b04d-091f-4d1b-bfe2-9cb40c0976e7" data-file-name="components/UserTable.tsx">
-          <div className="flex items-center space-x-2" data-unique-id="417263a2-8406-4996-be4f-4d411a7e2d6c" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
-            <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="e8da3e82-9aa0-44eb-a5ee-7204e6f624ff" data-file-name="components/UserTable.tsx">
+      {totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="38f87d9b-d046-4569-80c0-3aa4995e35aa" data-file-name="components/UserTable.tsx">
+          <div className="flex items-center space-x-2" data-unique-id="5ce4e06f-ba83-47df-91ae-01bc77882fa3" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+            <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="a90666aa-66bb-4b7f-bf6a-7baebe97121d" data-file-name="components/UserTable.tsx">
               <ChevronLeft className="h-4 w-4" />
-              <span data-unique-id="ac148182-5954-45ec-9aa7-437ff180a124" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="86db62ca-ebde-4ba3-8f5a-d508c1b0d5f3" data-file-name="components/UserTable.tsx">Previous</span></span>
+              <span data-unique-id="346507d9-7963-444e-9cf2-d4806ae4f9e9" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="37e111cb-f7ef-4542-b30f-56586de0771a" data-file-name="components/UserTable.tsx">Previous</span></span>
             </Button>
             
-            {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="f60d5d0f-dc8d-4fa0-9939-a71255774c76" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
+            {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="44650bb0-160c-4936-8b52-97ef76d09d13" data-file-name="components/UserTable.tsx" data-dynamic-text="true">
                 {number}
               </Button>)}
             
-            <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="de94d7e3-43a9-4fd1-953c-9791da9505fd" data-file-name="components/UserTable.tsx">
-              <span data-unique-id="3d2e792d-14bd-4810-9491-d60bd888624d" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="4714e046-f14b-49b3-b4c4-52f9c0ff3a5e" data-file-name="components/UserTable.tsx">Next</span></span>
+            <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="04fe7449-a26a-4393-89fe-9c17fcd81e02" data-file-name="components/UserTable.tsx">
+              <span data-unique-id="99c7331b-ed74-4983-b9c0-ceadcae0094a" data-file-name="components/UserTable.tsx"><span className="editable-text" data-unique-id="7d2e3c26-049a-4ee6-9330-18133100f344" data-file-name="components/UserTable.tsx">Next</span></span>
               <ChevronRight className="h-4 w-4" />
             </Button>
           </div>

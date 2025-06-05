@@ -95,45 +95,45 @@ export default function WhatsappSettings() {
     }
   };
   if (isLoading) {
-    return <div className="flex justify-center items-center h-64" data-unique-id="91f2fdf4-e33f-4c35-a997-c32e3dc410ce" data-file-name="components/WhatsappSettings.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="360f373d-4589-480f-8eb4-64a98ebe95f8" data-file-name="components/WhatsappSettings.tsx"></div>
+    return <div className="flex justify-center items-center h-64" data-unique-id="e034fc4e-0838-4647-8be4-64e000693328" data-file-name="components/WhatsappSettings.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="86234a35-bca4-4dec-a65e-25bff0bbd5e9" data-file-name="components/WhatsappSettings.tsx"></div>
       </div>;
   }
-  return <div className="space-y-6" data-unique-id="9c449448-a0f0-457b-b154-1fb32354418f" data-file-name="components/WhatsappSettings.tsx">
-      <Card data-unique-id="5c6b12a1-940a-425b-8405-809a8f455a0d" data-file-name="components/WhatsappSettings.tsx">
-        <CardHeader data-unique-id="a0fccb16-3c00-4e53-abeb-fd3b71893fd7" data-file-name="components/WhatsappSettings.tsx">
-          <CardTitle className="flex items-center gap-2" data-unique-id="22144be0-34db-422d-8e62-cf1de92d2781" data-file-name="components/WhatsappSettings.tsx">
-            <MessageCircle className="h-5 w-5" /><span className="editable-text" data-unique-id="3f974ba9-a29b-47c8-b390-b23b99d84b17" data-file-name="components/WhatsappSettings.tsx">
+  return <div className="space-y-6" data-unique-id="34fb2590-44aa-4580-b6e5-65732e70c925" data-file-name="components/WhatsappSettings.tsx">
+      <Card data-unique-id="9b340ace-ab2a-4876-8be6-683d664c7b77" data-file-name="components/WhatsappSettings.tsx">
+        <CardHeader data-unique-id="6938227b-02b8-4517-a7d3-ddc900f1e166" data-file-name="components/WhatsappSettings.tsx">
+          <CardTitle className="flex items-center gap-2" data-unique-id="62b2c1be-5f41-42a4-9aff-92c8fc903ba1" data-file-name="components/WhatsappSettings.tsx">
+            <MessageCircle className="h-5 w-5" /><span className="editable-text" data-unique-id="135d76e3-fad8-480b-9e66-30578dd783b5" data-file-name="components/WhatsappSettings.tsx">
             WhatsApp Settings
           </span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="3fa64bc5-cc1f-4910-a0f2-5fa772b5cc28" data-file-name="components/WhatsappSettings.tsx">
+          <CardDescription><span className="editable-text" data-unique-id="de12e150-a3a9-4851-878b-8d52449a9b19" data-file-name="components/WhatsappSettings.tsx">
             Configure the admin WhatsApp number for customer support
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="1035e8c8-0b7f-4a84-afe2-133409a6bfb6" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">
-          <div className="space-y-4" data-unique-id="f15d874e-12ef-4a7a-b17e-c3d73d400e44" data-file-name="components/WhatsappSettings.tsx">
-            <div data-unique-id="b5db62f7-b749-4dc6-84a8-1aaed31294f4" data-file-name="components/WhatsappSettings.tsx">
-              <Label htmlFor="phoneNumber" className="block text-sm font-medium mb-1" data-unique-id="a63ffe02-180b-4aad-ab20-6883e7f00bfa" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="47c04071-c60e-44fe-af79-42b2296917e1" data-file-name="components/WhatsappSettings.tsx">
+        <CardContent className="space-y-6" data-unique-id="5f7d2877-6b8c-4b60-b10c-58f1a05b8746" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">
+          <div className="space-y-4" data-unique-id="04e8db2b-b1d7-4e65-b89f-23813685ed56" data-file-name="components/WhatsappSettings.tsx">
+            <div data-unique-id="a66d8143-579d-4735-b35e-4511d3ae75b8" data-file-name="components/WhatsappSettings.tsx">
+              <Label htmlFor="phoneNumber" className="block text-sm font-medium mb-1" data-unique-id="bb01a1be-b9a1-4a24-816f-1a01a0844707" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="2c4a8a55-e077-4e6c-8bfb-d85e45bff283" data-file-name="components/WhatsappSettings.tsx">
                 Admin WhatsApp Number
               </span></Label>
-              <div className="flex gap-2" data-unique-id="088fdef7-d55e-49d5-826a-a1fc8d306e55" data-file-name="components/WhatsappSettings.tsx">
-                <div className="flex-1" data-unique-id="a6fb85c3-de25-4399-b9e2-96c61939cad0" data-file-name="components/WhatsappSettings.tsx">
-                  <Input id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder="6285716665995" className="w-full" data-unique-id="e6a37244-dcfa-472f-ab10-fde3ffdf1d40" data-file-name="components/WhatsappSettings.tsx" />
-                  <p className="text-xs text-muted-foreground mt-1" data-unique-id="2ecc9b31-57b5-48c6-8a6a-2ea5ae566a40" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="58fd4ead-4f02-42ea-a206-de4582b7f4f4" data-file-name="components/WhatsappSettings.tsx">
+              <div className="flex gap-2" data-unique-id="3f8cdb68-10ac-4568-9d05-dd9642b7ff0e" data-file-name="components/WhatsappSettings.tsx">
+                <div className="flex-1" data-unique-id="2ad89a33-308b-4597-a28f-d3249658e340" data-file-name="components/WhatsappSettings.tsx">
+                  <Input id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder="6285716665995" className="w-full" data-unique-id="26f30156-8bd7-4733-948b-7cf5280c43b5" data-file-name="components/WhatsappSettings.tsx" />
+                  <p className="text-xs text-muted-foreground mt-1" data-unique-id="77584e98-8009-4dc6-a28b-436ff7c72c16" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="d726581e-efef-479d-8905-1fc861826e4e" data-file-name="components/WhatsappSettings.tsx">
                     Enter phone number with country code (without + sign)
                   </span></p>
                 </div>
-                <Button variant="outline" onClick={testWhatsappLink} disabled={!phoneNumber.trim()} className="flex items-center gap-2" data-unique-id="57309abe-293b-4ccf-a265-5e0e202c2db9" data-file-name="components/WhatsappSettings.tsx">
-                  <Phone className="h-4 w-4" /><span className="editable-text" data-unique-id="c0fb7ab0-31c7-45c1-a757-9fec7cb6b1b3" data-file-name="components/WhatsappSettings.tsx">
+                <Button variant="outline" onClick={testWhatsappLink} disabled={!phoneNumber.trim()} className="flex items-center gap-2" data-unique-id="19acd3b0-8d9a-4021-8f64-e9b85a4150fa" data-file-name="components/WhatsappSettings.tsx">
+                  <Phone className="h-4 w-4" /><span className="editable-text" data-unique-id="9987b411-eec4-42fc-9c5c-b74ba4346f5c" data-file-name="components/WhatsappSettings.tsx">
                   Test
                 </span></Button>
               </div>
             </div>
 
-            <div className="flex justify-end" data-unique-id="eaa4af96-5197-4afb-9add-537fa8785b72" data-file-name="components/WhatsappSettings.tsx">
-              <Button onClick={handleSave} disabled={isSaving || !phoneNumber.trim()} className="flex items-center gap-2" data-unique-id="e3e5bc87-90b2-4e7d-b533-e481f7e2594f" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">
+            <div className="flex justify-end" data-unique-id="e7d3055d-8e8a-48ed-9cf1-07cdf3e97115" data-file-name="components/WhatsappSettings.tsx">
+              <Button onClick={handleSave} disabled={isSaving || !phoneNumber.trim()} className="flex items-center gap-2" data-unique-id="26a70481-f052-4f36-8cc8-5e5fa339a6f1" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">
                 {isSaving ? <>
-                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white" data-unique-id="fb43842e-434a-4e81-a85d-42d13d4c55d8" data-file-name="components/WhatsappSettings.tsx"></div>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white" data-unique-id="7e7f9711-aa5c-45d4-8980-42a17f77f99b" data-file-name="components/WhatsappSettings.tsx"></div>
                     Saving...
                   </> : <>
                     <CheckCircle className="h-4 w-4" />
@@ -143,18 +143,18 @@ export default function WhatsappSettings() {
             </div>
           </div>
 
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800 border-green-200' : 'bg-red-50 text-red-800 border-red-200'} p-3 rounded-md border flex items-center`} data-unique-id="ac8dcc84-e7d5-490a-8b27-abf96eac7342" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800 border-green-200' : 'bg-red-50 text-red-800 border-red-200'} p-3 rounded-md border flex items-center`} data-unique-id="b90fc14c-8900-485f-a019-1b47953b9ec7" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="56c778f7-7fc9-4fdf-ba20-e60f8828d3c2" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="f9dcb147-8725-4071-9f66-d06b63b466cd" data-file-name="components/WhatsappSettings.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
-          <div className="bg-blue-50 p-4 rounded-md" data-unique-id="72d86f5d-9113-4e41-9760-a124d7024c5f" data-file-name="components/WhatsappSettings.tsx">
-            <h3 className="font-medium text-blue-900 mb-2" data-unique-id="99d31c70-c940-432a-88a8-2b3cc0c35522" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="5df8ba7f-27d3-4792-8b7a-0215d02fd681" data-file-name="components/WhatsappSettings.tsx">How it works:</span></h3>
-            <ul className="text-sm text-blue-800 space-y-1" data-unique-id="38a67aa3-df2a-4a6b-8329-6bc2e1d40c67" data-file-name="components/WhatsappSettings.tsx">
-              <li data-unique-id="ea053181-00ca-4778-bc1b-4c3881e44a00" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="7deb34b0-2b12-4592-8925-46703981f0ca" data-file-name="components/WhatsappSettings.tsx">• Users will see a floating WhatsApp widget on the homepage</span></li>
-              <li data-unique-id="9e7a686a-437a-4d33-ac94-cc1154925f49" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="cc42b069-8fb7-4237-a404-06f1251e8af4" data-file-name="components/WhatsappSettings.tsx">• Clicking the widget will open WhatsApp with your number</span></li>
-              <li data-unique-id="6345aaaa-6d1e-4e57-ba4c-e5768e2145c5" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="e8cb9177-9c47-4dc0-abd6-77189159f5a9" data-file-name="components/WhatsappSettings.tsx">• The number can be changed anytime from this settings page</span></li>
-              <li data-unique-id="a63df583-97ac-48cc-a519-5cc7e61e0314" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="d61cc77b-6656-458d-ab80-c23585f79918" data-file-name="components/WhatsappSettings.tsx">• Use the "Test" button to verify the WhatsApp link works</span></li>
+          <div className="bg-blue-50 p-4 rounded-md" data-unique-id="58a4c6d0-153d-4b2b-b7ec-9b3d7122187e" data-file-name="components/WhatsappSettings.tsx">
+            <h3 className="font-medium text-blue-900 mb-2" data-unique-id="f5d0f5e0-a338-4e14-a07a-675fb0819231" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="4460e161-e08b-41e8-b5b3-305c01735331" data-file-name="components/WhatsappSettings.tsx">How it works:</span></h3>
+            <ul className="text-sm text-blue-800 space-y-1" data-unique-id="dcf2f6c0-df70-46f9-8754-5096dc830ea3" data-file-name="components/WhatsappSettings.tsx">
+              <li data-unique-id="81fef31f-ffbd-42ae-bb34-bcd86ab0792c" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="5ceca9f9-5f5e-4056-b29c-ad7d1bebb21e" data-file-name="components/WhatsappSettings.tsx">• Users will see a floating WhatsApp widget on the homepage</span></li>
+              <li data-unique-id="928c8cd8-58c1-4f0d-9193-ddbcea0a9143" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="f1af5f47-95a7-403e-a040-5c3a7958937c" data-file-name="components/WhatsappSettings.tsx">• Clicking the widget will open WhatsApp with your number</span></li>
+              <li data-unique-id="8d042cbf-8379-4359-bddb-f1f97f786d17" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="606c9bde-2b12-412e-a003-c3ffb25b6641" data-file-name="components/WhatsappSettings.tsx">• The number can be changed anytime from this settings page</span></li>
+              <li data-unique-id="af1536c5-fd4f-4eec-a8e7-e6a16b26e3f7" data-file-name="components/WhatsappSettings.tsx"><span className="editable-text" data-unique-id="77ced07a-ac86-4299-979b-7a73dbcaa1d3" data-file-name="components/WhatsappSettings.tsx">• Use the "Test" button to verify the WhatsApp link works</span></li>
             </ul>
           </div>
         </CardContent>

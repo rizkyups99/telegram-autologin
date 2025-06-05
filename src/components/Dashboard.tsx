@@ -4,27 +4,27 @@ import { useState } from "react";
 import LoginForm from "./LoginForm";
 import Link from "next/link";
 export default function Dashboard() {
-  return <div className="min-h-screen bg-background flex flex-col" data-unique-id="bf94d019-e9eb-408c-8e92-eea73e18c49f" data-file-name="components/Dashboard.tsx">
-      <header className="border-b border-border" data-unique-id="f194e0be-be8d-4ac1-b3af-7706c2fadad7" data-file-name="components/Dashboard.tsx">
-        <div className="container mx-auto px-4 py-4 sm:py-6 text-center" data-unique-id="b48a84d9-5342-4ee9-902f-32884a7499b9" data-file-name="components/Dashboard.tsx">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold" data-unique-id="b4525536-5f97-4c50-b6d3-6747a3d00491" data-file-name="components/Dashboard.tsx"><span className="editable-text" data-unique-id="33dfaef6-fbbb-4827-b814-9f6f296bca3a" data-file-name="components/Dashboard.tsx">LANGIT DIGITAL</span></h1>
-          <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl mx-auto" data-unique-id="e0198c0c-f848-4eb6-849d-adb7a6639ec9" data-file-name="components/Dashboard.tsx"><span className="editable-text" data-unique-id="e0454294-28fb-4e1f-bbbe-e91887761e59" data-file-name="components/Dashboard.tsx">
+  return <div className="min-h-screen bg-background flex flex-col" data-unique-id="f2ea118c-230f-4599-b32c-143b19e46009" data-file-name="components/Dashboard.tsx">
+      <header className="border-b border-border" data-unique-id="e1740e1e-f606-4901-989f-1d6872814fca" data-file-name="components/Dashboard.tsx">
+        <div className="container mx-auto px-4 py-4 sm:py-6 text-center" data-unique-id="02bbb13e-f606-4ab5-9d4f-33f18d2ea115" data-file-name="components/Dashboard.tsx">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold" data-unique-id="5b4c8269-4acb-40e3-b8b6-5c44e510b473" data-file-name="components/Dashboard.tsx"><span className="editable-text" data-unique-id="86d78d83-584d-4ca6-94b6-2675f0b768a8" data-file-name="components/Dashboard.tsx">LANGIT DIGITAL</span></h1>
+          <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-2xl mx-auto" data-unique-id="3658fb72-4436-4da9-be9b-acd6d38949fd" data-file-name="components/Dashboard.tsx"><span className="editable-text" data-unique-id="0c4d5e4a-89ab-4f02-825f-ea6903481d5f" data-file-name="components/Dashboard.tsx">
             Selamat Datang di Platform Langit Digital
           </span></p>
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 sm:py-8 flex-grow" data-unique-id="bf9ec434-dd0d-457f-89c2-8480d4dd6ec3" data-file-name="components/Dashboard.tsx">
-        <div className="max-w-md mx-auto" data-unique-id="d0b2698d-63c5-4745-b360-a04efe6e8f47" data-file-name="components/Dashboard.tsx">
+      <main className="container mx-auto px-4 py-6 sm:py-8 flex-grow" data-unique-id="b1bfee53-2979-49f5-a79f-2b615f39c3af" data-file-name="components/Dashboard.tsx">
+        <div className="max-w-md mx-auto" data-unique-id="324f4723-e041-4a5d-8e3c-83f9b2ee27c4" data-file-name="components/Dashboard.tsx">
           <LoginForm />
         </div>
       </main>
       
-      <footer className="border-t border-border py-4 sm:py-6" data-unique-id="afb45501-7270-4d83-b080-bb8a92741089" data-file-name="components/Dashboard.tsx">
-        <div className="container mx-auto px-4 text-center text-xs sm:text-sm text-muted-foreground" data-unique-id="ec0485f6-a952-4d75-9e07-5e4e26ca7028" data-file-name="components/Dashboard.tsx">
-          <p data-unique-id="124c3723-be5d-437f-92e0-766fa9f43c55" data-file-name="components/Dashboard.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="d686cb2b-5227-4f23-b871-22670ed796de" data-file-name="components/Dashboard.tsx">© </span>{new Date().getFullYear()}<span className="editable-text" data-unique-id="ba839dca-6753-470c-b737-59b9eb8e016b" data-file-name="components/Dashboard.tsx"> Langit Digital. All rights reserved.</span></p>
-          <p className="mt-2" data-unique-id="f608a76f-d39f-4975-a76c-c84a3964ff62" data-file-name="components/Dashboard.tsx">
-            <Link href="/admin" className="hover:underline" data-unique-id="bd336d18-ecf4-4bd8-8500-26c18193af2d" data-file-name="components/Dashboard.tsx"><span className="editable-text" data-unique-id="49b01613-78cd-4503-937a-e39630bdb02f" data-file-name="components/Dashboard.tsx">
+      <footer className="border-t border-border py-4 sm:py-6" data-unique-id="63dcb9f6-f6c4-40a9-8d24-8cafeb12c010" data-file-name="components/Dashboard.tsx">
+        <div className="container mx-auto px-4 text-center text-xs sm:text-sm text-muted-foreground" data-unique-id="b97ebdcc-b1e7-4933-b463-2779aac04b2e" data-file-name="components/Dashboard.tsx">
+          <p data-unique-id="bb14705c-2ef3-499f-8a94-3e2195f1d89d" data-file-name="components/Dashboard.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="f667be73-4b6e-4f4b-8619-8f67102d248d" data-file-name="components/Dashboard.tsx">© </span>{new Date().getFullYear()}<span className="editable-text" data-unique-id="03f7bd63-8d73-4216-84a0-a4f04e3aeabf" data-file-name="components/Dashboard.tsx"> Langit Digital. All rights reserved.</span></p>
+          <p className="mt-2" data-unique-id="3e2646a5-079e-44cc-a21e-63a195aca484" data-file-name="components/Dashboard.tsx">
+            <Link href="/admin" className="hover:underline" data-unique-id="44111c22-e8c0-40e5-854f-2c536909d8e7" data-file-name="components/Dashboard.tsx"><span className="editable-text" data-unique-id="2d16b117-a98d-4364-a972-575a321735cd" data-file-name="components/Dashboard.tsx">
               Langit Digital
             </span></Link>
           </p>

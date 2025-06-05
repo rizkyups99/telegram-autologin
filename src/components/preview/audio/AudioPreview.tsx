@@ -251,15 +251,15 @@ export default function AudioPreview({
     }));
   };
   if (isLoading) {
-    return <div className="flex justify-center py-8" data-unique-id="01b8dd18-8611-4485-8f8c-7084a1da971e" data-file-name="components/preview/audio/AudioPreview.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="6746b428-219e-4eb0-a61f-03c436155e6c" data-file-name="components/preview/audio/AudioPreview.tsx"></div>
+    return <div className="flex justify-center py-8" data-unique-id="82775cc7-18ab-46e8-8789-0035a5dc7597" data-file-name="components/preview/audio/AudioPreview.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="76b2511c-f055-4dba-a1dd-77e557804d56" data-file-name="components/preview/audio/AudioPreview.tsx"></div>
       </div>;
   }
   if (audiosByCategory.length === 0) {
-    return <p className="text-center py-8 text-muted-foreground" data-unique-id="93dae1c0-5202-43f9-9704-9f2af7e3cf97" data-file-name="components/preview/audio/AudioPreview.tsx"><span className="editable-text" data-unique-id="e476736a-2580-4dc0-a971-c00ae107fdfb" data-file-name="components/preview/audio/AudioPreview.tsx">Tidak ada audio yang tersedia.</span></p>;
+    return <p className="text-center py-8 text-muted-foreground" data-unique-id="346de8b4-8572-4b3c-87b4-1bc582bc40be" data-file-name="components/preview/audio/AudioPreview.tsx"><span className="editable-text" data-unique-id="3a9e2ca2-fca0-4d15-877d-4a1390151cc0" data-file-name="components/preview/audio/AudioPreview.tsx">Tidak ada audio yang tersedia.</span></p>;
   }
-  return <div className="border rounded-lg p-6" data-unique-id="001ec5fb-f521-4437-bf1e-5345e933d9f5" data-file-name="components/preview/audio/AudioPreview.tsx">
-      <div className="space-y-8" data-unique-id="6d8514a2-ee7d-4b3e-bc5c-034e0825aecb" data-file-name="components/preview/audio/AudioPreview.tsx" data-dynamic-text="true">
+  return <div className="border rounded-lg p-6" data-unique-id="295ac46b-a055-4a02-814d-fcb8c947e6a1" data-file-name="components/preview/audio/AudioPreview.tsx">
+      <div className="space-y-8" data-unique-id="457a826c-84d4-454d-bcd8-a941ad98e6a3" data-file-name="components/preview/audio/AudioPreview.tsx" data-dynamic-text="true">
         {audiosByCategory.map(category => <AudioCategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} toggleCategory={toggleCategory} playingAudioId={playingAudioId} expandedAudioId={expandedAudioId} handlePlayAudio={handlePlayAudio} handleDownload={handleDownload} formatTime={formatTime} currentTime={currentTime} duration={duration} handleSeek={handleSeek} toggleMute={toggleMute} isMuted={isMuted} volume={volume} handleVolumeChange={handleVolumeChange} changePlaybackRate={changePlaybackRate} playbackRate={playbackRate} downloading={downloading} downloadSuccess={downloadSuccess} />)}
       </div>
     </div>;

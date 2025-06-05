@@ -39,114 +39,114 @@ export default function AdminDashboard({
   error,
   handleLogout
 }: AdminDashboardProps) {
-  return <div className="min-h-screen bg-background" data-unique-id="9b78896a-f1c7-4974-b36c-5339dbffb296" data-file-name="components/AdminDashboard.tsx">
-      <header className="border-b border-border" data-unique-id="ae81f552-ccc5-4c67-b8ba-ec5761e0d67c" data-file-name="components/AdminDashboard.tsx">
-        <div className="container mx-auto px-4 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4" data-unique-id="299e5997-60bb-41e4-baa6-57ff38bd1d2a" data-file-name="components/AdminDashboard.tsx">
-          <h1 className="text-2xl sm:text-3xl font-bold" data-unique-id="540bf81c-b095-43da-9441-bb7f9e79e37f" data-file-name="components/AdminDashboard.tsx"><span className="editable-text" data-unique-id="34b5617d-7b2b-481d-bcd0-ee4fd0044b74" data-file-name="components/AdminDashboard.tsx">Admin Panel</span></h1>
-          <Button variant="outline" onClick={handleLogout} className="flex items-center gap-2" size="sm" data-unique-id="2e319106-3df3-4a8c-b8d1-56d48bfcdd55" data-file-name="components/AdminDashboard.tsx">
-            <LogOut className="h-4 w-4" /><span className="editable-text" data-unique-id="6c6095b9-2ab4-47c7-916b-398c73eaa944" data-file-name="components/AdminDashboard.tsx">
+  return <div className="min-h-screen bg-background" data-unique-id="b8ae20e8-a20b-411c-b0f8-7aff19408ddc" data-file-name="components/AdminDashboard.tsx">
+      <header className="border-b border-border" data-unique-id="39950df6-4ad1-46d5-8fcf-bf9c5f86bb14" data-file-name="components/AdminDashboard.tsx">
+        <div className="container mx-auto px-4 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4" data-unique-id="e85d4756-c0b0-4d92-87e2-4cc233ece462" data-file-name="components/AdminDashboard.tsx">
+          <h1 className="text-2xl sm:text-3xl font-bold" data-unique-id="281b7335-31f8-428c-9922-0556f7b9feb1" data-file-name="components/AdminDashboard.tsx"><span className="editable-text" data-unique-id="b22c61cb-66ae-4320-8055-9dd46a0e6285" data-file-name="components/AdminDashboard.tsx">Admin Panel</span></h1>
+          <Button variant="outline" onClick={handleLogout} className="flex items-center gap-2" size="sm" data-unique-id="a432c836-c904-4285-9bc5-854b4943ff53" data-file-name="components/AdminDashboard.tsx">
+            <LogOut className="h-4 w-4" /><span className="editable-text" data-unique-id="2d622224-e516-4486-87ed-398f419dc936" data-file-name="components/AdminDashboard.tsx">
             Logout
           </span></Button>
         </div>
       </header>
       
-      <main className="container mx-auto px-4 py-6 sm:py-8" data-unique-id="336bca51-051a-451f-8583-163e1145e60b" data-file-name="components/AdminDashboard.tsx">
-        <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row justify-between items-center gap-4" data-unique-id="c52be2e7-5945-4e5d-a5a7-f783b9804094" data-file-name="components/AdminDashboard.tsx">
-          <h2 className="text-xl sm:text-2xl font-semibold text-center sm:text-left" data-unique-id="0c9d079e-cae0-458d-a0d8-b45bc2e303e7" data-file-name="components/AdminDashboard.tsx"><span className="editable-text" data-unique-id="034f7bb3-64be-48fb-a0db-f0c5322a084c" data-file-name="components/AdminDashboard.tsx">Selamat datang, </span><span className="font-semibold" data-unique-id="cb0bc046-bc4d-408b-9071-4f5895b51886" data-file-name="components/AdminDashboard.tsx" data-dynamic-text="true">{admin.email}</span><span className="editable-text" data-unique-id="cae40fe4-dfbd-406a-bf0f-c59fdce8f586" data-file-name="components/AdminDashboard.tsx">!</span></h2>
-          <Link href="/forward" data-unique-id="67fd04e8-b29e-4f64-ba7e-09eea00b57cf" data-file-name="components/AdminDashboard.tsx">
-            <Button className="flex items-center gap-2 w-full sm:w-auto" size="sm" data-unique-id="17f33cfa-b3c7-41f9-9c1b-d044f06e6758" data-file-name="components/AdminDashboard.tsx"><span className="editable-text" data-unique-id="2d713dfb-e3c6-4285-b2b1-46cb6b779487" data-file-name="components/AdminDashboard.tsx">
+      <main className="container mx-auto px-4 py-6 sm:py-8" data-unique-id="cf1966c7-b14c-4625-ba8f-12d5aa448fac" data-file-name="components/AdminDashboard.tsx">
+        <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row justify-between items-center gap-4" data-unique-id="d567de08-fe98-4d60-8905-0529c3bd7211" data-file-name="components/AdminDashboard.tsx">
+          <h2 className="text-xl sm:text-2xl font-semibold text-center sm:text-left" data-unique-id="c17b5196-ac39-4835-91c7-c9e7f9058273" data-file-name="components/AdminDashboard.tsx"><span className="editable-text" data-unique-id="e64bec91-300a-4fcc-bb70-5aaa628c7749" data-file-name="components/AdminDashboard.tsx">Selamat datang, </span><span className="font-semibold" data-unique-id="af756216-ed94-4748-abb9-fcb435fa8722" data-file-name="components/AdminDashboard.tsx" data-dynamic-text="true">{admin.email}</span><span className="editable-text" data-unique-id="293af0ed-ba07-4660-867e-a401b10d7a83" data-file-name="components/AdminDashboard.tsx">!</span></h2>
+          <Link href="/forward" data-unique-id="5f1cf93d-eb41-4e58-a571-d1de93ef2338" data-file-name="components/AdminDashboard.tsx">
+            <Button className="flex items-center gap-2 w-full sm:w-auto" size="sm" data-unique-id="9cb83526-ac17-44e2-9e64-23b68d461599" data-file-name="components/AdminDashboard.tsx"><span className="editable-text" data-unique-id="7fb657cf-800b-4be8-a079-f4ba95472970" data-file-name="components/AdminDashboard.tsx">
               Penerusan Pesan
               </span><ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
         </div>
         
-        <Tabs defaultValue="review" className="w-full" data-unique-id="41614102-88e8-423c-b86e-60deb771156e" data-file-name="components/AdminDashboard.tsx">
-          <div className="overflow-x-auto" data-unique-id="880dbb73-0ba9-4da8-8c98-6e684541d8a1" data-file-name="components/AdminDashboard.tsx">
+        <Tabs defaultValue="review" className="w-full" data-unique-id="204f1ed6-2bc3-4905-8c34-95ff5f30f635" data-file-name="components/AdminDashboard.tsx">
+          <div className="overflow-x-auto" data-unique-id="bd66c7d3-3540-4319-9850-bcaa8043f2c4" data-file-name="components/AdminDashboard.tsx">
             <TabsList className="mb-6 sm:mb-8 flex flex-nowrap min-w-max">
             <TabsTrigger value="review" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="1cf465f1-4037-4b43-b0ba-d4e76652ac24" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="26afcb29-676d-4d62-8d10-e8b57baa5b16" data-file-name="components/AdminDashboard.tsx">
                 <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
-              </svg><span className="editable-text" data-unique-id="dfcbaffd-8cf3-4e89-9fa6-b88a9581a1d7" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="18986097-14df-4310-837c-41a00a62720d" data-file-name="components/AdminDashboard.tsx">
               REVIEW UJICOBA
             </span></TabsTrigger>
             <TabsTrigger value="user-registration" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="e7f2aa41-e870-475e-9cce-658f3e59ffe9" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="68d6cd89-4d71-440c-a900-6a792b0ef29d" data-file-name="components/AdminDashboard.tsx">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 <path d="M19 8h2"></path>
                 <path d="M19 12h2"></path>
-              </svg><span className="editable-text" data-unique-id="dc15cd95-340b-431d-80e4-5cbeb19ba2d1" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="9c0dedc5-13df-4d29-a152-551dc55b0592" data-file-name="components/AdminDashboard.tsx">
               Daftar User
             </span></TabsTrigger>
             <TabsTrigger value="admin-mgmt" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="fad2c504-88c4-40c9-a44f-c5e5ad45f84b" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="6a1f7d4b-4d37-473f-b437-6496d5e4a1c4" data-file-name="components/AdminDashboard.tsx">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg><span className="editable-text" data-unique-id="c08ba542-4b05-4992-90e5-820af04220f9" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="04361849-e568-41a7-8f30-0bad1500aa32" data-file-name="components/AdminDashboard.tsx">
               Daftar Admin
             </span></TabsTrigger>
             <TabsTrigger value="setup" className="flex items-center gap-1">
-              <Settings className="h-4 w-4" /><span className="editable-text" data-unique-id="244f15cf-87b0-4fe7-9da1-82b3f62556c4" data-file-name="components/AdminDashboard.tsx">
+              <Settings className="h-4 w-4" /><span className="editable-text" data-unique-id="38704f53-3b8e-4c25-a2af-c5da4605e810" data-file-name="components/AdminDashboard.tsx">
               Atur Telegram
             </span></TabsTrigger>
             <TabsTrigger value="audio" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="22bbf1fe-d9e8-4f48-abdc-443043210805" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="e936980e-3bb3-4005-ae56-970fa43becf0" data-file-name="components/AdminDashboard.tsx">
                 <path d="M2 10v3"></path>
                 <path d="M6 6v11"></path>
                 <path d="M10 3v18"></path>
                 <path d="M14 8v8"></path>
                 <path d="M18 5v13"></path>
                 <path d="M22 10v3"></path>
-              </svg><span className="editable-text" data-unique-id="3a5d5bfb-9dd4-43bf-8994-89acb8edfef6" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="99824976-2fce-49cb-a885-ac5ae494b5a4" data-file-name="components/AdminDashboard.tsx">
               Audio
             </span></TabsTrigger>
             <TabsTrigger value="pdf" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="4372d862-e52b-4310-877d-624fb21ad7a5" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="c236bc2d-c789-44c8-9096-ec527bfd3f45" data-file-name="components/AdminDashboard.tsx">
                 <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
-              </svg><span className="editable-text" data-unique-id="04a6ed63-b61b-45d3-9b48-50ed77b8d6a3" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="d3c4fd17-6024-4416-bdec-b5e2c068dbfc" data-file-name="components/AdminDashboard.tsx">
               PDF
             </span></TabsTrigger>
             <TabsTrigger value="video" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="b712280a-de36-4669-a2e9-ba71795bd7a4" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="0d0600f3-13cd-4597-97fb-2d1ab6e38865" data-file-name="components/AdminDashboard.tsx">
                 <path d="m22 8-6 4 6 4V8Z"></path>
                 <rect width="14" height="12" x="2" y="6" rx="2" ry="2"></rect>
-              </svg><span className="editable-text" data-unique-id="3c0199d9-d3c8-45a0-8a28-b4434a962967" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="b560711d-13e4-49d4-8fe3-dc2f366f415a" data-file-name="components/AdminDashboard.tsx">
               Video
             </span></TabsTrigger>
             <TabsTrigger value="category" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="0cc12974-3f62-4cd6-98a8-001013298ff7" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="6f4f4f58-6826-41fc-b2e4-417584522e69" data-file-name="components/AdminDashboard.tsx">
                 <rect width="7" height="7" x="3" y="3" rx="1"></rect>
                 <rect width="7" height="7" x="14" y="3" rx="1"></rect>
                 <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                 <rect width="7" height="7" x="3" y="14" rx="1"></rect>
-              </svg><span className="editable-text" data-unique-id="057866a2-85a9-4478-9538-6a28a62f6b95" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="0a39941c-96bc-4229-bf86-48e4c0d41485" data-file-name="components/AdminDashboard.tsx">
               Kategori
             </span></TabsTrigger>
             <TabsTrigger value="preview" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="e4c40504-eeb5-465c-8357-28ae0730e1f2" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="f710a5d7-5dca-4fff-93fa-98bf3c1cba79" data-file-name="components/AdminDashboard.tsx">
                 <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
-              </svg><span className="editable-text" data-unique-id="6af4f722-9e3d-4b35-b8b3-90daf450c8a3" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="bd621556-9644-4255-802f-29203327c0d2" data-file-name="components/AdminDashboard.tsx">
               Preview User
             </span></TabsTrigger>
             <TabsTrigger value="stats" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="5d43e484-6f4f-4873-a549-7c08d36b68ad" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="d1cc75b4-5adb-4176-b4a0-8b327e483d17" data-file-name="components/AdminDashboard.tsx">
                 <path d="M3 3v18h18"></path>
                 <path d="m19 9-5 5-4-4-3 3"></path>
-              </svg><span className="editable-text" data-unique-id="c8578aa0-da9c-4064-909d-6eb501086f1b" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="4a1fdf58-b6da-4c33-8fdb-b3172e18b21a" data-file-name="components/AdminDashboard.tsx">
               Statistik
             </span></TabsTrigger>
             <TabsTrigger value="whatsapp" className="flex items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="7c98721b-75d5-4cd3-9dd0-080be6e7d2ae" data-file-name="components/AdminDashboard.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-unique-id="e548ab4c-ce16-4d18-b56e-0fb126c4c567" data-file-name="components/AdminDashboard.tsx">
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-              </svg><span className="editable-text" data-unique-id="e92100a3-107e-49bb-b64d-e4e73bf37e8a" data-file-name="components/AdminDashboard.tsx">
+              </svg><span className="editable-text" data-unique-id="3af3c1b6-800a-4793-8299-2cbffa246831" data-file-name="components/AdminDashboard.tsx">
               WhatsApp
             </span></TabsTrigger>
             </TabsList>
@@ -185,11 +185,11 @@ export default function AdminDashboard({
           </TabsContent>
           
           <TabsContent value="preview">
-            <Tabs defaultValue="audio" className="w-full" data-unique-id="a223fd47-6abe-4c2d-ab4f-d0f4e60e9bbb" data-file-name="components/AdminDashboard.tsx">
+            <Tabs defaultValue="audio" className="w-full" data-unique-id="ab84c301-0468-4007-9374-2aecff60f257" data-file-name="components/AdminDashboard.tsx">
               <TabsList className="mb-6 flex flex-wrap w-full">
-                <TabsTrigger value="audio"><span className="editable-text" data-unique-id="3621759b-fa9d-4d80-be4f-8bb3ae853d4a" data-file-name="components/AdminDashboard.tsx">Preview Audio</span></TabsTrigger>
-                <TabsTrigger value="pdf"><span className="editable-text" data-unique-id="ac5850b5-80bc-4c09-bb25-ef61df5b2195" data-file-name="components/AdminDashboard.tsx">Preview PDF</span></TabsTrigger>
-                <TabsTrigger value="video"><span className="editable-text" data-unique-id="891efbe2-36bb-420d-8384-03a69235c563" data-file-name="components/AdminDashboard.tsx">Preview Video</span></TabsTrigger>
+                <TabsTrigger value="audio"><span className="editable-text" data-unique-id="1dc923e1-5ef2-455f-909e-55db041f842f" data-file-name="components/AdminDashboard.tsx">Preview Audio</span></TabsTrigger>
+                <TabsTrigger value="pdf"><span className="editable-text" data-unique-id="a6f2543e-796f-45eb-a911-666f1bae1634" data-file-name="components/AdminDashboard.tsx">Preview PDF</span></TabsTrigger>
+                <TabsTrigger value="video"><span className="editable-text" data-unique-id="5ce65273-49eb-465c-8ec5-50dedb56ddf4" data-file-name="components/AdminDashboard.tsx">Preview Video</span></TabsTrigger>
               </TabsList>
               
               <TabsContent value="audio">
@@ -207,7 +207,7 @@ export default function AdminDashboard({
           </TabsContent>
           
           <TabsContent value="stats">
-            <div className="space-y-6" data-unique-id="e8fe5f94-8f30-441a-8021-a24fd5adc3df" data-file-name="components/AdminDashboard.tsx" data-dynamic-text="true">
+            <div className="space-y-6" data-unique-id="55e84b54-7226-4b18-82a9-942fb1daed55" data-file-name="components/AdminDashboard.tsx" data-dynamic-text="true">
               <StatisticsPanel />
               
               {/* Daily User Registrations */}

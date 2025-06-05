@@ -71,37 +71,37 @@ export default function ForwardingDashboard() {
     return () => clearInterval(interval);
   };
   if (!isAdmin) {
-    return <div className="flex justify-center items-center min-h-screen" data-unique-id="4fb6f8ac-ce9f-4616-9ab0-4f0e687d2ea3" data-file-name="components/ForwardingDashboard.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="7bc18e16-fd70-4c95-9dc9-5adcb243140b" data-file-name="components/ForwardingDashboard.tsx"></div>
+    return <div className="flex justify-center items-center min-h-screen" data-unique-id="f320e815-8c3a-4fce-a8ec-6b8430d932da" data-file-name="components/ForwardingDashboard.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="152cb7a3-199b-4816-8dd2-cb6adb3f8464" data-file-name="components/ForwardingDashboard.tsx"></div>
       </div>;
   }
-  return <div className="min-h-screen bg-background" data-unique-id="5972e415-f52a-441a-8570-56490975275b" data-file-name="components/ForwardingDashboard.tsx">
-      <header className="border-b border-border" data-unique-id="a6f9f1d7-7a1e-4b5c-965a-62338bd1c58e" data-file-name="components/ForwardingDashboard.tsx">
-        <div className="container mx-auto px-4 py-4 sm:py-6" data-unique-id="53d1d867-4ee5-4284-a45d-3707c4f9da16" data-file-name="components/ForwardingDashboard.tsx">
-          <h1 className="text-2xl sm:text-3xl font-bold" data-unique-id="40f32d2e-f6ea-4d83-8d57-7148a417a7bb" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="94c2b16f-cdbd-4145-b809-56b1897219a1" data-file-name="components/ForwardingDashboard.tsx">Telegram Message Forwarding</span></h1>
-          <p className="text-sm sm:text-base text-muted-foreground mt-2" data-unique-id="3a2b562b-e240-4bc9-81bb-c1b0cb8155a8" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="7b7df72c-ae1b-4953-aa19-dac1e2429616" data-file-name="components/ForwardingDashboard.tsx">
+  return <div className="min-h-screen bg-background" data-unique-id="d87d0aa9-b811-4664-ad3f-e62ef6051a76" data-file-name="components/ForwardingDashboard.tsx">
+      <header className="border-b border-border" data-unique-id="bb870d80-70af-4b52-9ec3-9e867664d436" data-file-name="components/ForwardingDashboard.tsx">
+        <div className="container mx-auto px-4 py-4 sm:py-6" data-unique-id="c05227fa-f6b9-4a26-b84f-43a710b905af" data-file-name="components/ForwardingDashboard.tsx">
+          <h1 className="text-2xl sm:text-3xl font-bold" data-unique-id="912d8ffe-69f5-4447-8e2f-2ff0c2170218" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="7ee43185-226a-44a5-8f87-5ddd86f367a9" data-file-name="components/ForwardingDashboard.tsx">Telegram Message Forwarding</span></h1>
+          <p className="text-sm sm:text-base text-muted-foreground mt-2" data-unique-id="f1940e3f-fd30-4ac3-a30b-5ce35cf1d17d" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="ae7db54c-0426-492f-a9db-66a293aa0816" data-file-name="components/ForwardingDashboard.tsx">
             Teruskan pesan dari @scalevid_bot ke bot Telegram pribadi Anda
           </span></p>
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 sm:py-8" data-unique-id="4a4574c9-76c7-41d8-baf0-541c8c58eb59" data-file-name="components/ForwardingDashboard.tsx">
-        <div className="mb-6 sm:mb-8 flex justify-between items-center" data-unique-id="ae6e3829-b199-41e4-a860-9247fcb6c72d" data-file-name="components/ForwardingDashboard.tsx">
-          <Link href="/admin" data-unique-id="7775b422-317c-451c-97fe-a03276db33dd" data-file-name="components/ForwardingDashboard.tsx">
-            <Button variant="outline" size="sm" data-unique-id="1693fe5c-e95a-4e0a-8cf1-d147c1bea311" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="9b1846e3-b834-4638-8ab3-9c6f31338d54" data-file-name="components/ForwardingDashboard.tsx">Kembali ke Admin Panel</span></Button>
+      <main className="container mx-auto px-4 py-6 sm:py-8" data-unique-id="74c6cade-64ae-470e-ac5e-7c7730b4e662" data-file-name="components/ForwardingDashboard.tsx">
+        <div className="mb-6 sm:mb-8 flex justify-between items-center" data-unique-id="0b603f83-9668-48dc-b7cf-afee64de3bab" data-file-name="components/ForwardingDashboard.tsx">
+          <Link href="/admin" data-unique-id="685f0f9c-25ca-4e3c-87ef-3cb73091b17b" data-file-name="components/ForwardingDashboard.tsx">
+            <Button variant="outline" size="sm" data-unique-id="1c4ce1f3-e7a3-463a-9451-c66bb639e9b6" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="aed0d539-d98a-4c6b-aa88-45eef2bc9639" data-file-name="components/ForwardingDashboard.tsx">Kembali ke Admin Panel</span></Button>
           </Link>
         </div>
         
-        <Tabs defaultValue="gateway" className="w-full" data-unique-id="1634d85e-a491-40c3-b875-0230b371f190" data-file-name="components/ForwardingDashboard.tsx">
-          <div className="overflow-x-auto" data-unique-id="f2974a57-c16a-4489-818d-4722cd4a7961" data-file-name="components/ForwardingDashboard.tsx">
+        <Tabs defaultValue="gateway" className="w-full" data-unique-id="5ac5b035-02a9-41ac-bc62-a6b85fa57db7" data-file-name="components/ForwardingDashboard.tsx">
+          <div className="overflow-x-auto" data-unique-id="d64f90b4-81ca-4d05-9b1a-79ea5fbf596e" data-file-name="components/ForwardingDashboard.tsx">
             <TabsList className="mb-6 sm:mb-8 flex flex-nowrap min-w-max">
-            <TabsTrigger value="gateway"><span className="editable-text" data-unique-id="3d29c993-1278-4eaf-9355-2d1153dc6ec8" data-file-name="components/ForwardingDashboard.tsx">Gateway Telegram</span></TabsTrigger>
-            <TabsTrigger value="setup"><span className="editable-text" data-unique-id="e2b80425-0971-4dc2-931b-251423830ba7" data-file-name="components/ForwardingDashboard.tsx">Pengaturan</span></TabsTrigger>
-            <TabsTrigger value="rules"><span className="editable-text" data-unique-id="10da63be-d169-4a8a-898c-1ea28e36c6fb" data-file-name="components/ForwardingDashboard.tsx">Aturan Filter</span></TabsTrigger>
-            <TabsTrigger value="logs"><span className="editable-text" data-unique-id="dc5d30f1-5359-41f9-9fbd-e93a3a4285fb" data-file-name="components/ForwardingDashboard.tsx">Log Aktivitas</span></TabsTrigger>
-            <TabsTrigger value="audio_cloud"><span className="editable-text" data-unique-id="63f1a2b9-10e0-4904-9189-bf161adc2931" data-file-name="components/ForwardingDashboard.tsx">Audio Cloud</span></TabsTrigger>
-            <TabsTrigger value="pdf_cloud"><span className="editable-text" data-unique-id="0ae5bf93-8679-4d09-a10e-9ae071c3e6e0" data-file-name="components/ForwardingDashboard.tsx">PDF Cloud</span></TabsTrigger>
-            <TabsTrigger value="file_cloud"><span className="editable-text" data-unique-id="112fc1be-da1d-4d22-9943-05c8c4a29695" data-file-name="components/ForwardingDashboard.tsx">File Cloud</span></TabsTrigger>
+            <TabsTrigger value="gateway"><span className="editable-text" data-unique-id="68990902-6e44-48f8-9813-c20f223c5459" data-file-name="components/ForwardingDashboard.tsx">Gateway Telegram</span></TabsTrigger>
+            <TabsTrigger value="setup"><span className="editable-text" data-unique-id="a019f0c2-ef31-46c4-9d57-52e73f09530f" data-file-name="components/ForwardingDashboard.tsx">Pengaturan</span></TabsTrigger>
+            <TabsTrigger value="rules"><span className="editable-text" data-unique-id="ffd6f02c-be39-4e55-8597-c964d0d15c3a" data-file-name="components/ForwardingDashboard.tsx">Aturan Filter</span></TabsTrigger>
+            <TabsTrigger value="logs"><span className="editable-text" data-unique-id="f1ba1444-b955-41af-85c5-2e3baa3d574f" data-file-name="components/ForwardingDashboard.tsx">Log Aktivitas</span></TabsTrigger>
+            <TabsTrigger value="audio_cloud"><span className="editable-text" data-unique-id="f3aeef9d-a6a1-41ef-b3ed-9abc89f07f53" data-file-name="components/ForwardingDashboard.tsx">Audio Cloud</span></TabsTrigger>
+            <TabsTrigger value="pdf_cloud"><span className="editable-text" data-unique-id="651f5939-d9fc-4dc1-aad6-b58182e5dd1d" data-file-name="components/ForwardingDashboard.tsx">PDF Cloud</span></TabsTrigger>
+            <TabsTrigger value="file_cloud"><span className="editable-text" data-unique-id="82dbf3df-2378-4dac-a652-978089576f18" data-file-name="components/ForwardingDashboard.tsx">File Cloud</span></TabsTrigger>
             </TabsList>
           </div>
           
@@ -114,17 +114,17 @@ export default function ForwardingDashboard() {
           </TabsContent>
           
           <TabsContent value="logs">
-            <Card data-unique-id="82306eaa-a8bc-445e-a345-9d45239f9820" data-file-name="components/ForwardingDashboard.tsx">
-              <CardHeader data-unique-id="8f07f745-1960-4d4a-b573-52a1c913acf4" data-file-name="components/ForwardingDashboard.tsx">
-                <CardTitle data-unique-id="93553e17-61d9-4db5-ae28-522512d66c87" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="afd93f4d-4d8c-419d-aa5c-0153e034c4b0" data-file-name="components/ForwardingDashboard.tsx">Log Aktivitas</span></CardTitle>
-                <CardDescription><span className="editable-text" data-unique-id="05c69a3a-adf8-4c59-b1d5-3aa9a16e2d21" data-file-name="components/ForwardingDashboard.tsx">
+            <Card data-unique-id="57a51d2c-76e8-472e-880d-91742c6f8948" data-file-name="components/ForwardingDashboard.tsx">
+              <CardHeader data-unique-id="a7d915e1-8ea3-4d10-a6e7-5b4219081391" data-file-name="components/ForwardingDashboard.tsx">
+                <CardTitle data-unique-id="d8635ade-7b32-478b-a434-e5faab8c8b5e" data-file-name="components/ForwardingDashboard.tsx"><span className="editable-text" data-unique-id="de50a563-f7c6-4a66-b1d2-e6706f19d04d" data-file-name="components/ForwardingDashboard.tsx">Log Aktivitas</span></CardTitle>
+                <CardDescription><span className="editable-text" data-unique-id="230b28f2-bb84-4e16-8f08-d1d61285bc1c" data-file-name="components/ForwardingDashboard.tsx">
                   Riwayat pesan yang diterima dan diteruskan
                 </span></CardDescription>
               </CardHeader>
-              <CardContent data-unique-id="3dde631a-30c3-4c97-be15-bcfde4ede841" data-file-name="components/ForwardingDashboard.tsx" data-dynamic-text="true">
-                {loading ? <div className="flex justify-center py-8" data-unique-id="c85e79c2-01ec-4754-957b-f56ba59c2efa" data-file-name="components/ForwardingDashboard.tsx">
-                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="51a1d595-894b-4635-bc7c-89a1b9e8b77e" data-file-name="components/ForwardingDashboard.tsx"></div>
-                  </div> : error ? <div className="text-red-500 py-4" data-unique-id="b2623e86-d448-4db6-93d8-f0cb338c2aec" data-file-name="components/ForwardingDashboard.tsx" data-dynamic-text="true">{error}</div> : <ForwardingLogs logs={logs} />}
+              <CardContent data-unique-id="50af3385-ac08-4a4b-aefc-05fa5ceafda6" data-file-name="components/ForwardingDashboard.tsx" data-dynamic-text="true">
+                {loading ? <div className="flex justify-center py-8" data-unique-id="a053ae7e-3634-4709-9194-2bbb7affb354" data-file-name="components/ForwardingDashboard.tsx">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="3eabdd54-9e7b-46d4-9352-5e7bcb54cfff" data-file-name="components/ForwardingDashboard.tsx"></div>
+                  </div> : error ? <div className="text-red-500 py-4" data-unique-id="82fce3af-1076-4ab2-bd41-867e4d10f09a" data-file-name="components/ForwardingDashboard.tsx" data-dynamic-text="true">{error}</div> : <ForwardingLogs logs={logs} />}
               </CardContent>
             </Card>
           </TabsContent>

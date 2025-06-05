@@ -122,3 +122,19 @@
 nextjs-portal {
   display: none;
 }
+
+/* Custom styling for PDF read tab when active */
+.pdf-read-tab-active {
+  background-color: #16a34a !important;
+  color: white !important;
+}
+
+.pdf-read-tab-active:hover {
+  background-color: #15803d !important;
+  color: white !important;
+}
+
+[data-state="active"].pdf-read-tab-active {
+  background-color: #16a34a !important;
+  color: white !important;
+}

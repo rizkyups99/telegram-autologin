@@ -99,50 +99,50 @@ export default function PDFRecoveryTool() {
   if (itemsArray.length === 0) {
     return null; // Don't render anything if there are no recovery items
   }
-  return <Card className="mb-6" data-unique-id="5f268e5a-c613-4c8a-9413-d1d124dcef53" data-file-name="components/PDFRecoveryTool.tsx">
-      <CardHeader data-unique-id="908b1c14-88a4-4340-a8d0-54ab85d4b2e7" data-file-name="components/PDFRecoveryTool.tsx">
-        <CardTitle data-unique-id="e890a4eb-a3fb-4391-9e3b-b777088e078f" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="38ed4cb9-2d43-42f2-a688-c82eb0fe4464" data-file-name="components/PDFRecoveryTool.tsx">PDF Recovery Tool</span></CardTitle>
-        <CardDescription><span className="editable-text" data-unique-id="6dc653c2-5c6d-4b53-8d5f-a1d905463655" data-file-name="components/PDFRecoveryTool.tsx">
+  return <Card className="mb-6" data-unique-id="4b2df8de-8747-4a22-8aff-73ec4d1abb47" data-file-name="components/PDFRecoveryTool.tsx">
+      <CardHeader data-unique-id="dd6657cf-1836-4023-af83-2dc999d19da7" data-file-name="components/PDFRecoveryTool.tsx">
+        <CardTitle data-unique-id="634591ba-f6b4-4d19-9f14-8c41e0ce6a41" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="c0014320-dd1d-4607-909b-2e562d10edec" data-file-name="components/PDFRecoveryTool.tsx">PDF Recovery Tool</span></CardTitle>
+        <CardDescription><span className="editable-text" data-unique-id="c0ab09d7-1809-4edc-bae9-26b0a6f811d5" data-file-name="components/PDFRecoveryTool.tsx">
           PDF files yang berhasil diupload ke Cloudinary tapi gagal disimpan ke database
         </span></CardDescription>
       </CardHeader>
-      <CardContent data-unique-id="414bb56d-ffc1-4628-883f-ccf5965b7ce0" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
-        {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 mb-4 rounded-md flex items-center`} data-unique-id="b7dd865a-7114-443d-be8f-aa2a24c9bd9b" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
+      <CardContent data-unique-id="41c5ff94-28b5-449c-9a19-2be36d9f9557" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
+        {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 mb-4 rounded-md flex items-center`} data-unique-id="3fe8a20a-2041-4f75-93bc-43fb005f3a9f" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
             {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-            <span data-unique-id="e9c81398-b0fc-43fd-8051-2d5fa0ae6bd7" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+            <span data-unique-id="eb65c631-2c8c-4408-ba9a-37b63cd1c816" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{statusMessage.message}</span>
           </div>}
         
-        <div className="space-y-4" data-unique-id="288ccf71-f183-4b46-a77f-dfc777681314" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
-          {itemsArray.map(([key, item]) => <div key={key} className="p-4 border rounded-md" data-is-mapped="true" data-unique-id="d896e392-176c-44d7-835c-792ccbd28087" data-file-name="components/PDFRecoveryTool.tsx">
-              <div className="flex items-center justify-between mb-2" data-is-mapped="true" data-unique-id="60a667e6-d142-489f-80f4-653dd00e5b0a" data-file-name="components/PDFRecoveryTool.tsx">
-                <h3 className="font-medium" data-is-mapped="true" data-unique-id="aed32c85-796f-472d-ab16-0373b32eb886" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{item.title}</h3>
-                <span className="text-sm text-muted-foreground" data-is-mapped="true" data-unique-id="b6c6ba09-34a4-4f17-a0da-3f3cbd12531f" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
+        <div className="space-y-4" data-unique-id="6589a4ed-25ec-43ec-a9de-82dddeaa2e5e" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
+          {itemsArray.map(([key, item]) => <div key={key} className="p-4 border rounded-md" data-is-mapped="true" data-unique-id="e75582ed-d0bd-42d4-a864-5b7b36185301" data-file-name="components/PDFRecoveryTool.tsx">
+              <div className="flex items-center justify-between mb-2" data-is-mapped="true" data-unique-id="13724334-efc8-41d9-a50d-b0af6959d9c3" data-file-name="components/PDFRecoveryTool.tsx">
+                <h3 className="font-medium" data-is-mapped="true" data-unique-id="38d9ef8d-57d0-4d22-8df7-beba754337dd" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{item.title}</h3>
+                <span className="text-sm text-muted-foreground" data-is-mapped="true" data-unique-id="41eff683-56df-418e-b466-7ff35e9453cd" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
                   {new Date(item.uploadTime).toLocaleString()}
                 </span>
               </div>
-              <div className="grid gap-2 grid-cols-1 md:grid-cols-2 mb-4" data-is-mapped="true" data-unique-id="11093f3d-83b3-4037-b318-6fe1a87b72e1" data-file-name="components/PDFRecoveryTool.tsx">
-                <div className="flex flex-col" data-is-mapped="true" data-unique-id="61745419-ec4f-4dbf-a702-9341cbd51888" data-file-name="components/PDFRecoveryTool.tsx">
-                  <span className="text-sm font-medium" data-is-mapped="true" data-unique-id="f4ec4ca7-daeb-4a18-9028-32c5ae61e218" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="1404af64-aad3-4ec2-a85b-061886265f9b" data-file-name="components/PDFRecoveryTool.tsx">Cover URL:</span></span>
-                  <span className="text-xs text-muted-foreground truncate" data-is-mapped="true" data-unique-id="ae465fb7-409c-4df1-be5e-d282cd287e3a" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{item.coverUrl}</span>
-                  <span className="text-xs text-green-600" data-is-mapped="true" data-unique-id="f1c1f3f3-b653-4554-84c3-4249a48663ce" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="44caa7d8-4447-4ed9-9fe6-e782d46ce6e8" data-file-name="components/PDFRecoveryTool.tsx">(Supabase Storage)</span></span>
+              <div className="grid gap-2 grid-cols-1 md:grid-cols-2 mb-4" data-is-mapped="true" data-unique-id="2135295d-e6af-4a2b-8376-e2b9ab8e36fc" data-file-name="components/PDFRecoveryTool.tsx">
+                <div className="flex flex-col" data-is-mapped="true" data-unique-id="9952f45a-4523-48ab-9964-05eac981e171" data-file-name="components/PDFRecoveryTool.tsx">
+                  <span className="text-sm font-medium" data-is-mapped="true" data-unique-id="4b01ec04-e423-4076-ab3f-65a77badee68" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="b70917a1-5972-46ea-b6a6-fd9f9c163418" data-file-name="components/PDFRecoveryTool.tsx">Cover URL:</span></span>
+                  <span className="text-xs text-muted-foreground truncate" data-is-mapped="true" data-unique-id="72053744-7b11-42e9-9ead-0b3bb28627ea" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{item.coverUrl}</span>
+                  <span className="text-xs text-green-600" data-is-mapped="true" data-unique-id="4824ff82-2078-4146-bb7f-bc6719d3778d" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="515f3c96-0a3b-43fa-a5ad-10ac69a990f7" data-file-name="components/PDFRecoveryTool.tsx">(Supabase Storage)</span></span>
                 </div>
-                <div className="flex flex-col" data-is-mapped="true" data-unique-id="825d8565-ea43-4cd3-83d8-257d44c0dc22" data-file-name="components/PDFRecoveryTool.tsx">
-                  <span className="text-sm font-medium" data-is-mapped="true" data-unique-id="8675e31d-d34a-41b1-ad04-b7f054bd9938" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="f9ce38cf-47be-4bc9-b298-ade22d4f1495" data-file-name="components/PDFRecoveryTool.tsx">File URL:</span></span>
-                  <span className="text-xs text-muted-foreground truncate" data-is-mapped="true" data-unique-id="07e8dea7-c907-44a6-a2d9-288cb4aaf145" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{item.fileUrl}</span>
-                  <span className="text-xs text-green-600" data-is-mapped="true" data-unique-id="4d327c87-3c16-436e-861f-97c472638cdd" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="c29184ef-5832-4d06-9a3b-708a60fdbed8" data-file-name="components/PDFRecoveryTool.tsx">(Supabase Storage)</span></span>
+                <div className="flex flex-col" data-is-mapped="true" data-unique-id="82a4bd99-8c36-462c-a17e-e11b2cc5766d" data-file-name="components/PDFRecoveryTool.tsx">
+                  <span className="text-sm font-medium" data-is-mapped="true" data-unique-id="ae9577eb-361c-4273-9008-f6a4469352bf" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="1f0b2d09-1d31-4eb7-800e-165dc8de7e27" data-file-name="components/PDFRecoveryTool.tsx">File URL:</span></span>
+                  <span className="text-xs text-muted-foreground truncate" data-is-mapped="true" data-unique-id="7f9c06d5-2ab8-46ca-a656-a60b54cb0c94" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">{item.fileUrl}</span>
+                  <span className="text-xs text-green-600" data-is-mapped="true" data-unique-id="52885805-3833-4d65-bc86-aa70fedaadec" data-file-name="components/PDFRecoveryTool.tsx"><span className="editable-text" data-unique-id="a43b0840-dbfd-4be6-bbbc-1deae5e70b18" data-file-name="components/PDFRecoveryTool.tsx">(Supabase Storage)</span></span>
                 </div>
               </div>
-              <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="9322c49c-9041-4ffb-be6d-900a46b5ee8d" data-file-name="components/PDFRecoveryTool.tsx">
-                <Button variant="outline" size="sm" onClick={() => handleDelete(key)} data-is-mapped="true" data-unique-id="fea458b7-6f93-447b-93ad-59a1914048a0" data-file-name="components/PDFRecoveryTool.tsx">
-                  <Trash className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="53d4aac0-12a8-4d53-b3be-87d635ff383b" data-file-name="components/PDFRecoveryTool.tsx">
+              <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="b8164c5c-4208-47e9-9b48-8031b9080f86" data-file-name="components/PDFRecoveryTool.tsx">
+                <Button variant="outline" size="sm" onClick={() => handleDelete(key)} data-is-mapped="true" data-unique-id="5e88815a-30f3-4ad6-a354-08071c7ad4af" data-file-name="components/PDFRecoveryTool.tsx">
+                  <Trash className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="3a3e19cb-71bf-4079-9860-70676b388251" data-file-name="components/PDFRecoveryTool.tsx">
                   Delete
                 </span></Button>
-                <Button size="sm" onClick={() => handleRecovery(key, item)} disabled={isRecovering} data-is-mapped="true" data-unique-id="90269a0f-e096-456e-9a89-fa38d43677f4" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
-                  {isRecovering ? <span className="flex items-center" data-is-mapped="true" data-unique-id="d5c1e341-f99a-45fc-b727-e0539603bbbf" data-file-name="components/PDFRecoveryTool.tsx">
-                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-is-mapped="true" data-unique-id="0d5c3de7-cc84-4080-a609-78b7a348b139" data-file-name="components/PDFRecoveryTool.tsx">
+                <Button size="sm" onClick={() => handleRecovery(key, item)} disabled={isRecovering} data-is-mapped="true" data-unique-id="2aca30fd-3b7e-4a6f-a171-b04665818afe" data-file-name="components/PDFRecoveryTool.tsx" data-dynamic-text="true">
+                  {isRecovering ? <span className="flex items-center" data-is-mapped="true" data-unique-id="3c990c85-977f-4e89-b186-be569091590c" data-file-name="components/PDFRecoveryTool.tsx">
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-is-mapped="true" data-unique-id="58eb0141-a39f-41e1-8a7c-ba328b1b0095" data-file-name="components/PDFRecoveryTool.tsx">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                      </svg><span className="editable-text" data-unique-id="0e570169-1c40-470a-b9e5-d6d7b759ca47" data-file-name="components/PDFRecoveryTool.tsx">
+                      </svg><span className="editable-text" data-unique-id="b3509e3a-b8ea-4a6e-9f9e-284e7b24bd79" data-file-name="components/PDFRecoveryTool.tsx">
                       Recovering...
                     </span></span> : "Recover to Database"}
                 </Button>

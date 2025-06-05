@@ -28,6 +28,7 @@ interface PDFCategoryItemProps {
     id: number | null;
     status: 'downloading' | 'completed' | null;
   };
+  currentReadingPDF: PDF | null;
 }
 export function PDFCategoryItem({
   category,
@@ -35,21 +36,22 @@ export function PDFCategoryItem({
   toggleCategory,
   onDownloadPDF,
   onReadPDF,
-  downloadStatus
+  downloadStatus,
+  currentReadingPDF
 }: PDFCategoryItemProps) {
-  return <div key={category.id} className="border rounded-lg overflow-hidden" data-unique-id="e98c68f7-88ae-42e2-8e75-aefb049dc3e9" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
-      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="d105d4a7-c25f-4e2b-9390-bd3e9ddbaf2a" data-file-name="components/preview/pdf/PDFCategoryItem.tsx">
-        <div data-unique-id="e4e24c26-9861-4ddd-be5c-992bdc17d34d" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
-          <h3 className="font-semibold text-lg" data-unique-id="864b3c47-08f5-440d-8527-7a3e6cdad5ce" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
-          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="abed3dfe-9864-40d3-ac0d-93346f4bd7fc" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
+  return <div key={category.id} className="border rounded-lg overflow-hidden" data-unique-id="e86acfea-86d0-4af8-a1ca-739599ca4356" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="ae7c4c21-c647-4076-aa0b-9cfee1485de3" data-file-name="components/preview/pdf/PDFCategoryItem.tsx">
+        <div data-unique-id="e114175b-f5d3-4180-a283-db5dd00d6ed2" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+          <h3 className="font-semibold text-lg" data-unique-id="013a908a-f747-44b8-807c-dfbc52f37e22" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
+          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="0045cb4c-58d3-4f9c-a070-09383437839e" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
         </div>
-        <Button variant="ghost" size="sm" data-unique-id="14d5c887-78ab-490d-8710-43e2dd0fa18e" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+        <Button variant="ghost" size="sm" data-unique-id="cc6f059f-7e4d-4e68-9fa6-86299230a0f9" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
           {isExpanded ? <ChevronDown className="h-5 w-5" /> : <ChevronRight className="h-5 w-5" />}
         </Button>
       </div>
       
-      {isExpanded && <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" data-unique-id="3effa1d3-66a5-4db1-89c7-bd4deb5f3098" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
-          {category.pdfs.map(pdf => <PDFItem key={pdf.id} pdf={pdf} onDownloadPDF={onDownloadPDF} onReadPDF={onReadPDF} downloadStatus={downloadStatus} />)}
+      {isExpanded && <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" data-unique-id="67459ebc-7588-4d83-86f5-13f568f3fefa" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+          {category.pdfs.map(pdf => <PDFItem key={pdf.id} pdf={pdf} onDownloadPDF={onDownloadPDF} onReadPDF={onReadPDF} downloadStatus={downloadStatus} currentReadingPDF={currentReadingPDF} />)}
         </div>}
     </div>;
 }

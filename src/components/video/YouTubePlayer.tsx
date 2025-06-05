@@ -190,11 +190,11 @@ export function YouTubePlayer({
       }
     }
   };
-  return <div className="w-full aspect-video relative" data-unique-id="0ef2c790-2988-474e-a126-3ee671bec9a1" data-file-name="components/video/YouTubePlayer.tsx">
-      <iframe id="youtube-player-iframe" src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&controls=0&disablekb=1&rel=0&modestbranding=1&playsinline=1&origin=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin : '')}`} className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-unique-id="00c13226-f29e-4bed-85ce-83bb9cba4caf" data-file-name="components/video/YouTubePlayer.tsx"></iframe>
+  return <div className="w-full aspect-video relative" data-unique-id="6b65a1f2-f437-466b-9cff-842546197d29" data-file-name="components/video/YouTubePlayer.tsx">
+      <iframe id="youtube-player-iframe" src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&controls=0&disablekb=1&rel=0&modestbranding=1&playsinline=1&origin=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin : '')}`} className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-unique-id="2a28c946-cf55-4cab-8d2e-40e31e7eae3d" data-file-name="components/video/YouTubePlayer.tsx"></iframe>
       
-      <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={togglePlay} data-unique-id="68058cea-e502-4f37-8806-d086faf88e68" data-file-name="components/video/YouTubePlayer.tsx" data-dynamic-text="true">
-        {!isPlaying && <div className="w-16 h-16 bg-black bg-opacity-60 rounded-full flex items-center justify-center" data-unique-id="e17ca05a-c2d9-4a94-96da-45056bb27236" data-file-name="components/video/YouTubePlayer.tsx">
+      <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={togglePlay} data-unique-id="bbc4fad2-ce44-4f71-a648-564072951457" data-file-name="components/video/YouTubePlayer.tsx" data-dynamic-text="true">
+        {!isPlaying && <div className="w-16 h-16 bg-black bg-opacity-60 rounded-full flex items-center justify-center" data-unique-id="bc6e7916-7317-4a49-8055-5f4da43ec8bc" data-file-name="components/video/YouTubePlayer.tsx">
             <Play className="h-8 w-8 text-white" />
           </div>}
       </div>
