@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { userAudioAccess, userPdfAccess, userVideoAccess, categories } from "@/db/schema";
+import { 
+  userAudioAccess, 
+  userPdfAccess, 
+  userVideoAccess, 
+  userAudioCloudAccess,
+  userPdfCloudAccess,
+  userFileCloudAccess,
+  categories 
+} from "@/db/schema";
 import { eq } from "drizzle-orm";
 
 // Get categories a user has access to
@@ -42,11 +50,41 @@ export async function GET(request: Request) {
     .from(userVideoAccess)
     .leftJoin(categories, eq(userVideoAccess.categoryId, categories.id))
     .where(eq(userVideoAccess.userId, parseInt(userId)));
+
+    // Get audio cloud category access
+    const audioCloudAccess = await db.select({
+      categoryId: userAudioCloudAccess.categoryId,
+      categoryName: categories.name
+    })
+    .from(userAudioCloudAccess)
+    .leftJoin(categories, eq(userAudioCloudAccess.categoryId, categories.id))
+    .where(eq(userAudioCloudAccess.userId, parseInt(userId)));
+    
+    // Get PDF cloud category access
+    const pdfCloudAccess = await db.select({
+      categoryId: userPdfCloudAccess.categoryId,
+      categoryName: categories.name
+    })
+    .from(userPdfCloudAccess)
+    .leftJoin(categories, eq(userPdfCloudAccess.categoryId, categories.id))
+    .where(eq(userPdfCloudAccess.userId, parseInt(userId)));
+    
+    // Get file cloud category access
+    const fileCloudAccess = await db.select({
+      categoryId: userFileCloudAccess.categoryId,
+      categoryName: categories.name
+    })
+    .from(userFileCloudAccess)
+    .leftJoin(categories, eq(userFileCloudAccess.categoryId, categories.id))
+    .where(eq(userFileCloudAccess.userId, parseInt(userId)));
     
     return NextResponse.json({
       audio: audioAccess,
       pdf: pdfAccess,
-      video: videoAccess
+      video: videoAccess,
+      audioCloud: audioCloudAccess,
+      pdfCloud: pdfCloudAccess,
+      fileCloud: fileCloudAccess
     });
     
   } catch (error) {

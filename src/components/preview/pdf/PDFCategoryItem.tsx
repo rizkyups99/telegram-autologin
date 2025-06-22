@@ -39,18 +39,18 @@ export function PDFCategoryItem({
   downloadStatus,
   currentReadingPDF
 }: PDFCategoryItemProps) {
-  return <div key={category.id} className="border rounded-lg overflow-hidden" data-unique-id="e86acfea-86d0-4af8-a1ca-739599ca4356" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
-      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="ae7c4c21-c647-4076-aa0b-9cfee1485de3" data-file-name="components/preview/pdf/PDFCategoryItem.tsx">
-        <div data-unique-id="e114175b-f5d3-4180-a283-db5dd00d6ed2" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
-          <h3 className="font-semibold text-lg" data-unique-id="013a908a-f747-44b8-807c-dfbc52f37e22" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
-          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="0045cb4c-58d3-4f9c-a070-09383437839e" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
+  return <div key={category.id} className="border rounded-lg overflow-hidden" data-unique-id="4c8b1686-d491-4f68-bf34-e2eb9a4a7e69" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="92da4e18-d4d2-46d9-93b1-2ebfcfb13102" data-file-name="components/preview/pdf/PDFCategoryItem.tsx">
+        <div data-unique-id="8eb693a8-0239-4553-9c45-51c2a057bc9b" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+          <h3 className="font-semibold text-lg" data-unique-id="e1b81d60-66cc-4ca8-bbcc-8cf6e50314f1" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
+          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="210e4cc6-4df9-4384-bdc0-68a69f3449e4" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
         </div>
-        <Button variant="ghost" size="sm" data-unique-id="cc6f059f-7e4d-4e68-9fa6-86299230a0f9" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+        <Button variant="ghost" size="sm" data-unique-id="a7f0a9ff-bf5b-49b3-a892-70177e087da8" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
           {isExpanded ? <ChevronDown className="h-5 w-5" /> : <ChevronRight className="h-5 w-5" />}
         </Button>
       </div>
       
-      {isExpanded && <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" data-unique-id="67459ebc-7588-4d83-86f5-13f568f3fefa" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
+      {isExpanded && <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" data-unique-id="0c320a55-1516-4cd3-a332-b8404c58c9a6" data-file-name="components/preview/pdf/PDFCategoryItem.tsx" data-dynamic-text="true">
           {category.pdfs.map(pdf => <PDFItem key={pdf.id} pdf={pdf} onDownloadPDF={onDownloadPDF} onReadPDF={onReadPDF} downloadStatus={downloadStatus} currentReadingPDF={currentReadingPDF} />)}
         </div>}
     </div>;

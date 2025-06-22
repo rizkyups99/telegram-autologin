@@ -259,97 +259,97 @@ export default function AudioCloudManager() {
     setItemsPerPage(Number(e.target.value));
     setCurrentPage(1);
   };
-  return <div className="space-y-6" data-unique-id="73dc6d09-6c4a-44e5-9b38-4ed84698fd54" data-file-name="components/AudioCloudManager.tsx">
-      <Card data-unique-id="fd3ec983-6ca1-4a35-b863-27ada883315d" data-file-name="components/AudioCloudManager.tsx">
-        <CardHeader data-unique-id="5177a25c-6c29-42e9-ba10-f1c044d171d2" data-file-name="components/AudioCloudManager.tsx">
-          <CardTitle data-unique-id="75c237d0-f53e-4c7f-ac49-9036ba3bc8c2" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="1db7b8f7-1f90-4103-931f-8c1e1e48647d" data-file-name="components/AudioCloudManager.tsx">Audio Cloud Management</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="39a33d97-59a1-45ff-bb29-7af7726e1720" data-file-name="components/AudioCloudManager.tsx">
+  return <div className="space-y-6" data-unique-id="1c0d3d80-2153-4956-b717-a2331f9177de" data-file-name="components/AudioCloudManager.tsx">
+      <Card data-unique-id="9f9771f3-bfe1-4ab7-a220-3f8916917754" data-file-name="components/AudioCloudManager.tsx">
+        <CardHeader data-unique-id="a1f5e1d9-909d-4d44-8a38-e5035926663c" data-file-name="components/AudioCloudManager.tsx">
+          <CardTitle data-unique-id="c4f650af-ae20-4505-9f44-b9609d105471" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="2dc012b3-8fa0-418b-a4ac-98fa0e0c24b5" data-file-name="components/AudioCloudManager.tsx">Audio Cloud Management</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="9a505f19-b507-476f-92d5-1c7b847e4387" data-file-name="components/AudioCloudManager.tsx">
             Manage audio files stored in cloud storage
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="a002d1fc-143a-443f-90d9-fe1eff26db14" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="e5c95a6c-9797-42b6-8af4-5f905e8e5190" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
           {/* Upload form */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="e78958ae-70d5-4640-9aca-5d7bc8edf446" data-file-name="components/AudioCloudManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="1b20f57c-ec80-4071-8a7a-9b9f2dde5a71" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="f986bf78-84ab-408f-81dc-53018d5c01bb" data-file-name="components/AudioCloudManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="4c11e21c-fdfb-491c-bd05-a967f8d3993e" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
               {editingFile !== null ? "Edit Audio" : "Add Audio From Cloud"}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" data-unique-id="4e0c5a01-45ae-4912-817b-d9e5f7c3a65e" data-file-name="components/AudioCloudManager.tsx">
-              <div data-unique-id="d1f4d489-0391-4f3e-a691-96955fd7577c" data-file-name="components/AudioCloudManager.tsx">
-                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="34db89ef-2683-4340-bafe-7f6f24b07253" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="7d3ea862-00fa-44aa-92b1-3f7c85ea1650" data-file-name="components/AudioCloudManager.tsx">Title</span></Label>
-                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Enter audio title" className="w-full" data-unique-id="126a1473-f4fa-498b-8937-f8a27c555913" data-file-name="components/AudioCloudManager.tsx" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" data-unique-id="107587f4-8f67-4fe3-bf27-ac5c500e91b8" data-file-name="components/AudioCloudManager.tsx">
+              <div data-unique-id="c8a0bfc3-4cab-4b5d-b22f-f5ea85ef8deb" data-file-name="components/AudioCloudManager.tsx">
+                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="ecd715ce-5f9e-4518-afd5-30c88ca7314d" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="dc4e5cc8-fbd7-4b2c-bb4b-a5dc355a909a" data-file-name="components/AudioCloudManager.tsx">Title</span></Label>
+                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Enter audio title" className="w-full" data-unique-id="10874fb0-97f3-40f8-875e-84327a915b0f" data-file-name="components/AudioCloudManager.tsx" />
               </div>
               
-              <div data-unique-id="8eb3f085-6bc0-491f-bd11-6b3dfa7325cc" data-file-name="components/AudioCloudManager.tsx">
-                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="3b68e05c-2ff9-46e7-b4a5-9884b875b9ef" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="f4c10c2d-591d-4eb4-a8b9-c4e32adecb0f" data-file-name="components/AudioCloudManager.tsx">Category</span></Label>
-                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="ba06f83d-df77-4d38-bed4-f96daa1ee280" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="960b410c-0dd6-4a27-be4e-1dc32dfc1c91" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="15af4f94-c046-4ac2-b784-aa2afe6356ef" data-file-name="components/AudioCloudManager.tsx">Select Category</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="e153041b-a5c9-47b7-9e1f-951556dfd53e" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="0cbd734b-3dc1-4695-8fb5-93708f60392b" data-file-name="components/AudioCloudManager.tsx">
+                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="26d500e0-4ed4-470b-8fe1-74b058cd969f" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="c88dd77d-f47e-4465-9a70-fdaaecc97a22" data-file-name="components/AudioCloudManager.tsx">Category</span></Label>
+                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="126a268a-dd00-4c15-a9dd-33cc1779b8b1" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="44e30844-01d7-4869-a5d2-d7bb80dbaba3" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="6527c3c7-e4eb-48ee-815c-016a421e02fb" data-file-name="components/AudioCloudManager.tsx">Select Category</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="99a7a67c-b503-411d-8cec-a734d1bd9e14" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
               
-              <div className="md:col-span-2" data-unique-id="b2bc1347-e8ca-42ff-9f14-e224f543e70a" data-file-name="components/AudioCloudManager.tsx">
-                <Label htmlFor="fileUrl" className="block text-sm font-medium mb-1" data-unique-id="ce758844-990b-4810-8e2a-8f7f3fd463d4" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="2a0e7a73-2d0c-4d06-80f7-64f388c5a52e" data-file-name="components/AudioCloudManager.tsx">Audio URL</span></Label>
-                <Input id="fileUrl" name="fileUrl" value={formData.fileUrl} onChange={handleInputChange} placeholder="Enter audio file URL from cloud storage" className="w-full" data-unique-id="d0eb7881-b5b8-43f2-83be-05a8191c8533" data-file-name="components/AudioCloudManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="fbbe2cea-374c-4e60-b294-2dd82277225b" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="334b54b9-df16-4f8f-8614-11d2fdc5d2bc" data-file-name="components/AudioCloudManager.tsx">
+              <div className="md:col-span-2" data-unique-id="fba9d84b-c740-44a4-b301-81b135570de6" data-file-name="components/AudioCloudManager.tsx">
+                <Label htmlFor="fileUrl" className="block text-sm font-medium mb-1" data-unique-id="bffc5f75-6c8a-40e8-8389-c29db64c428c" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="4c4d9d30-3cfa-4a4e-81e3-3040251e065d" data-file-name="components/AudioCloudManager.tsx">Audio URL</span></Label>
+                <Input id="fileUrl" name="fileUrl" value={formData.fileUrl} onChange={handleInputChange} placeholder="Enter audio file URL from cloud storage" className="w-full" data-unique-id="8c42b603-24ec-47b2-97bd-bebb700e7ae7" data-file-name="components/AudioCloudManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="0e359649-8684-4d89-b607-ec464ce32788" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="fe9da911-add8-4bf4-abe7-99106ba33675" data-file-name="components/AudioCloudManager.tsx">
                   Paste the URL of your audio file from cloud storage
                 </span></p>
               </div>
             </div>
             
-            <div className="flex justify-end space-x-2" data-unique-id="9fd7a503-50d9-4d04-a7d3-fe1d02195577" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-              {editingFile !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="adc253e1-c0b3-433f-a254-0658bf06a2c6" data-file-name="components/AudioCloudManager.tsx">
+            <div className="flex justify-end space-x-2" data-unique-id="f269a785-cf30-466a-b8a7-34bb5ec99c3c" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+              {editingFile !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="c8d64c18-eb02-4799-916d-0482f9f0e8e4" data-file-name="components/AudioCloudManager.tsx">
                   <X className="h-4 w-4" />
-                  <span className="hidden sm:inline" data-unique-id="b6d1035b-d9c3-46fe-8ea8-6036ecfdf721" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="2f67af72-47f1-4c26-8782-67b03ee3557f" data-file-name="components/AudioCloudManager.tsx">Cancel</span></span>
+                  <span className="hidden sm:inline" data-unique-id="a1abbbe1-8fdf-40ba-98d9-ae491fdc4e90" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="3f7821bf-27c4-4ddd-ad9d-148673680b7a" data-file-name="components/AudioCloudManager.tsx">Cancel</span></span>
                 </Button>}
-              <Button onClick={editingFile !== null ? () => updateFile(editingFile) : createFile} disabled={isLoading || !formData.title || !formData.categoryId || !formData.fileUrl} className="flex items-center gap-1" data-unique-id="1a044105-61e3-4a88-b84c-c4e9d146d7ac" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                {isLoading ? <span className="flex items-center" data-unique-id="1a73df27-b810-4797-98c3-e853b07ff21d" data-file-name="components/AudioCloudManager.tsx">
-                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="0008dd0c-845b-433a-9a85-d47fb69a6555" data-file-name="components/AudioCloudManager.tsx">
+              <Button onClick={editingFile !== null ? () => updateFile(editingFile) : createFile} disabled={isLoading || !formData.title || !formData.categoryId || !formData.fileUrl} className="flex items-center gap-1" data-unique-id="7713b3c1-32a8-430e-8b86-a07fbddacb8d" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                {isLoading ? <span className="flex items-center" data-unique-id="051fa976-84a8-42d6-a6c0-fac9870d2a28" data-file-name="components/AudioCloudManager.tsx">
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="95d6869c-f38b-48ff-a3b2-3a02ef0e8972" data-file-name="components/AudioCloudManager.tsx">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    <span className="hidden sm:inline" data-unique-id="5aea908c-ebb2-4f2d-bd78-5242b39c9a06" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="d089e777-e22d-4c37-93f3-48b962b5eff8" data-file-name="components/AudioCloudManager.tsx">Saving...</span></span>
+                    <span className="hidden sm:inline" data-unique-id="559c5954-f6fd-4c00-98a4-365f4e168ff2" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="8e021fa6-9c41-41b0-9b08-7937c6052c00" data-file-name="components/AudioCloudManager.tsx">Saving...</span></span>
                   </span> : editingFile !== null ? <>
                     <Save className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="1fd593dc-35ae-4100-bc06-e088c0596cd5" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="1aeffa64-c7dc-4e72-9e8e-6dff83e17bb0" data-file-name="components/AudioCloudManager.tsx">Update Audio</span></span>
+                    <span className="hidden sm:inline" data-unique-id="f181dd0c-8de2-4a04-a13e-b5b0bdc8ef50" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="a7617cb1-ebb1-48f8-bbfa-0f77775537d2" data-file-name="components/AudioCloudManager.tsx">Update Audio</span></span>
                   </> : <>
                     <Plus className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="0de4fc48-78ee-44a8-97d9-0cd5a41a2892" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="f7acdcca-88e8-4676-bf63-cf62f3acaa11" data-file-name="components/AudioCloudManager.tsx">Add Audio</span></span>
+                    <span className="hidden sm:inline" data-unique-id="4d70fb79-8757-48c2-a286-1be4e7231969" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="ccba84b2-863c-4705-bcdf-77c43998ebc3" data-file-name="components/AudioCloudManager.tsx">Add Audio</span></span>
                   </>}
               </Button>
             </div>
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="16644837-0800-489d-b55c-2876203bf759" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="8271b3d7-d695-49aa-8193-660410d93480" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="85e802ff-41b7-4ea2-833b-548d3f753268" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="5acb022a-16c5-4a1d-8cb5-6307804cb4fd" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
           {/* Search filters */}
-          <div className="bg-muted p-4 rounded-md" data-unique-id="605644a8-f378-4577-8914-5ce59530b608" data-file-name="components/AudioCloudManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="19cbd61c-ad9a-4e1a-92ea-afe2ff1dfdef" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="ad6a2754-b20d-4b03-8b9a-006a319f12e4" data-file-name="components/AudioCloudManager.tsx">Search Filters</span></h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="7388965f-3bc6-499f-869c-1c5a93485f86" data-file-name="components/AudioCloudManager.tsx">
-              <div data-unique-id="c158cd67-a5ea-49ea-9f10-4fde97b99c78" data-file-name="components/AudioCloudManager.tsx">
-                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="408ec959-c836-4a3f-aa3f-14cf914733b4" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="b5b0ee07-4b1f-42ca-8cbd-abf960903c50" data-file-name="components/AudioCloudManager.tsx">Title</span></Label>
-                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Search by title" data-unique-id="7c64fa1b-e8b6-4ab2-bd15-df048965867d" data-file-name="components/AudioCloudManager.tsx" />
+          <div className="bg-muted p-4 rounded-md" data-unique-id="fa733474-33f5-4939-9b2a-35637a31ee84" data-file-name="components/AudioCloudManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="87e14c37-7603-441e-a303-b3bdcbc8fab7" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="271d0522-5734-440c-824a-52539cfc50a7" data-file-name="components/AudioCloudManager.tsx">Search Filters</span></h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="1f10b270-a237-45b7-9213-d757ffa4f898" data-file-name="components/AudioCloudManager.tsx">
+              <div data-unique-id="a21a736d-01bb-4172-9130-5dd61bb16573" data-file-name="components/AudioCloudManager.tsx">
+                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="931fafd7-4631-4107-ae7c-a7aca5ae5896" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="d62200c6-0a88-4fa5-ae06-b6f4c086e153" data-file-name="components/AudioCloudManager.tsx">Title</span></Label>
+                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Search by title" data-unique-id="c3039178-b663-4f64-8107-36331090090f" data-file-name="components/AudioCloudManager.tsx" />
               </div>
-              <div data-unique-id="d07fbff4-afd4-4fc8-a8f9-4d357f9552af" data-file-name="components/AudioCloudManager.tsx">
-                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="df026f16-cfa4-4382-aea7-c00b3a0b02ca" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="a28c18ef-3035-408a-a014-d3d97260f013" data-file-name="components/AudioCloudManager.tsx">Category</span></Label>
-                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="b4625f30-b0ed-4a13-9ff6-c050800af16d" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="b5edaf53-65f1-4101-b248-55c28bac7b1b" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="a5d8f6a2-cd77-446d-aade-c830e2341688" data-file-name="components/AudioCloudManager.tsx">All Categories</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="98d4e16b-af41-4553-bd71-1cd28cfc2201" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="6992a756-8e1d-4a53-a9c4-2a233caf99c9" data-file-name="components/AudioCloudManager.tsx">
+                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="d3ff2f6c-73cd-44ed-bdf8-5f716b22b7b1" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="a138f3fe-fd86-4cd0-abe2-d525d5fbc910" data-file-name="components/AudioCloudManager.tsx">Category</span></Label>
+                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="98833b48-657b-45ab-9c83-9bf4d54589cd" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="20ad430e-b711-4c16-aee0-e77ee6e7527c" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="889646a6-5bb1-4595-96f0-f13adf3006ab" data-file-name="components/AudioCloudManager.tsx">All Categories</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="5472e34e-e04d-49ec-b2e8-ec3e96f08f7c" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
-              <div className="flex items-end gap-2" data-unique-id="50be9615-fd76-46c8-99fa-332d03a0ce40" data-file-name="components/AudioCloudManager.tsx">
-                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="16033553-5d8b-4d4c-be6b-01342706c1d2" data-file-name="components/AudioCloudManager.tsx">
-                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="d9c57739-9a57-47f2-b09f-c89b120b4b01" data-file-name="components/AudioCloudManager.tsx">
+              <div className="flex items-end gap-2" data-unique-id="2bbe06f6-c16a-4ade-8705-35da331b0bca" data-file-name="components/AudioCloudManager.tsx">
+                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="a5443d91-ac73-4103-8937-f4e4494b8eaf" data-file-name="components/AudioCloudManager.tsx">
+                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="ae73e3ac-6309-44be-b52d-39eec2ea7c9e" data-file-name="components/AudioCloudManager.tsx">
                   Search
                 </span></Button>
-                <Button variant="outline" onClick={resetSearch} data-unique-id="8afefb48-a536-407b-9ed0-00b858d0c557" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="f7824954-ec9d-4af6-b363-8bb8eeb17136" data-file-name="components/AudioCloudManager.tsx">
+                <Button variant="outline" onClick={resetSearch} data-unique-id="e977988e-04d7-410d-97ac-c652ae7e7dea" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="d1131df1-a141-4cd0-a326-b57048557531" data-file-name="components/AudioCloudManager.tsx">
                   Reset
                 </span></Button>
               </div>
@@ -357,43 +357,43 @@ export default function AudioCloudManager() {
           </div>
 
           {/* Audio list */}
-          <div data-unique-id="7ddf3a37-04d6-46d7-813b-9d37385aa42f" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-            <div className="flex items-center justify-between mb-4" data-unique-id="6458c009-a59b-4239-9f64-3a4df52690d3" data-file-name="components/AudioCloudManager.tsx">
-              <h3 className="text-lg font-medium" data-unique-id="5e661c41-ce12-464e-9ec8-5bc2284fb501" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="43886da4-3d48-4518-bd21-5631c8be5b26" data-file-name="components/AudioCloudManager.tsx">
+          <div data-unique-id="636862dd-9641-4994-b751-3d3591f5f752" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+            <div className="flex items-center justify-between mb-4" data-unique-id="716c3220-ad74-4811-8503-cbf500f6c706" data-file-name="components/AudioCloudManager.tsx">
+              <h3 className="text-lg font-medium" data-unique-id="5d627a9d-8667-4cb5-8c14-35b9c602fc2d" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="1c648608-6023-4f95-9d73-a8875781ea8c" data-file-name="components/AudioCloudManager.tsx">
                 Audio Files
-                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="7a3db928-c501-4aee-be6a-7fd697324591" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="57b46d7e-d04e-4030-84e8-3fd24bf9659f" data-file-name="components/AudioCloudManager.tsx">
-                  (</span>{totalItems}<span className="editable-text" data-unique-id="ea651afe-900b-45f2-b5da-93324daa6fb3" data-file-name="components/AudioCloudManager.tsx"> files)
+                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="3f0d40c8-3eb5-48df-8b19-51605f7d5659" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="3b910e54-563b-4967-b146-c666edeed571" data-file-name="components/AudioCloudManager.tsx">
+                  (</span>{totalItems}<span className="editable-text" data-unique-id="9d811700-7e25-4db8-ac58-f9e0910cccd5" data-file-name="components/AudioCloudManager.tsx"> files)
                 </span></span>
               </h3>
-              <div className="flex items-center gap-2" data-unique-id="21a20916-f212-450e-8a49-7b09b87416c7" data-file-name="components/AudioCloudManager.tsx">
-                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="a3b5e740-313a-4068-9a0c-f6b4f9f645bf" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="a2fd57cb-f7c4-4290-bcf1-7d531baea949" data-file-name="components/AudioCloudManager.tsx">Show:</span></Label>
-                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="aaa83005-e03d-4d65-aadf-85d650faaea6" data-file-name="components/AudioCloudManager.tsx">
-                  <option value={10} data-unique-id="7730f918-436a-43a5-8d8f-55b54bc39a8a" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="74665054-3ce3-444d-86be-ca53039e0c97" data-file-name="components/AudioCloudManager.tsx">10</span></option>
-                  <option value={25} data-unique-id="4c38068f-c26d-4edf-a3a4-c3fb46b2c5f4" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="3606365b-a099-403d-bcb4-817e429488eb" data-file-name="components/AudioCloudManager.tsx">25</span></option>
-                  <option value={50} data-unique-id="2ec10b3b-ab89-4aee-94d7-5fc4cac0bc3c" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="0f36a9c1-984d-4a23-a099-cc7efde8fbb1" data-file-name="components/AudioCloudManager.tsx">50</span></option>
-                  <option value={100} data-unique-id="757c9571-236c-46d3-a7d7-892fd5bba8ca" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="f3516c98-5020-4ea7-8a41-b25439ee49be" data-file-name="components/AudioCloudManager.tsx">100</span></option>
+              <div className="flex items-center gap-2" data-unique-id="8822f427-7f91-495e-9e8b-4f99b2706d8c" data-file-name="components/AudioCloudManager.tsx">
+                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="d7f9b145-4996-4b8d-a568-a6abc631531f" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="c237bc02-4fad-4a1c-ab60-a432af568fa1" data-file-name="components/AudioCloudManager.tsx">Show:</span></Label>
+                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="e32e3293-a6db-476e-9ac0-6950077c8a5a" data-file-name="components/AudioCloudManager.tsx">
+                  <option value={10} data-unique-id="999b8250-2a85-4937-997f-02729aef82dd" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="967bbfa3-a6f7-4e40-9dbc-ecf9f0c7896e" data-file-name="components/AudioCloudManager.tsx">10</span></option>
+                  <option value={25} data-unique-id="4770315f-21d5-4314-b3d7-47e86eea7464" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="87ce6220-e385-428e-a279-dec5d7e71c79" data-file-name="components/AudioCloudManager.tsx">25</span></option>
+                  <option value={50} data-unique-id="c4cfc937-2edc-4413-8069-d0cd1572a809" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="79e77fd2-15fd-42c8-9f25-66a9bd679611" data-file-name="components/AudioCloudManager.tsx">50</span></option>
+                  <option value={100} data-unique-id="c8a28b55-c980-43e9-84db-cafcd20cbb88" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="f4ed5b07-7d66-412f-9ad6-bb592d5fa5a0" data-file-name="components/AudioCloudManager.tsx">100</span></option>
                 </select>
               </div>
             </div>
             
-            <div className="overflow-x-auto" data-unique-id="3e137095-05df-4f39-b7a2-2a034e6a2776" data-file-name="components/AudioCloudManager.tsx">
-              <Table data-unique-id="12273387-f033-4eb2-b039-94b2205c01a4" data-file-name="components/AudioCloudManager.tsx">
+            <div className="overflow-x-auto" data-unique-id="2dffbf6e-b196-4e73-8b1a-719f69d19740" data-file-name="components/AudioCloudManager.tsx">
+              <Table data-unique-id="f4b76f8c-d534-492a-af5b-580243b35571" data-file-name="components/AudioCloudManager.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="dcc1b27b-4421-4ffe-952d-e8895dc6a04b" data-file-name="components/AudioCloudManager.tsx">No.</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="6112dc92-8f3e-4d53-a504-75c7a1fd2db5" data-file-name="components/AudioCloudManager.tsx">Title</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="0ac62f78-8d33-4283-a197-c4b63ed23150" data-file-name="components/AudioCloudManager.tsx">Audio</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="fae34cc4-b863-472e-93a3-ab1018854f8f" data-file-name="components/AudioCloudManager.tsx">URL</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="64e90cd0-1aad-4cbd-9ae2-004ceb436083" data-file-name="components/AudioCloudManager.tsx">Category</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="fc00b8c8-b1a2-4e6f-bb48-6b5b8083ff61" data-file-name="components/AudioCloudManager.tsx">Created</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="53edef38-fbe2-4432-b307-e1358ff1a638" data-file-name="components/AudioCloudManager.tsx">Actions</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="80860d4c-d66f-498b-98b8-93caa9963d59" data-file-name="components/AudioCloudManager.tsx">No.</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="1629ffe5-9355-4afd-88ea-d91fb2f69d73" data-file-name="components/AudioCloudManager.tsx">Title</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="ae24396b-b61e-4edd-849c-2fb4fa609a3b" data-file-name="components/AudioCloudManager.tsx">Audio</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="c8e1a4b0-c107-4eb4-a545-ca23637e6150" data-file-name="components/AudioCloudManager.tsx">URL</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="f556fd01-8e68-4185-8d70-a4b3fc7ad316" data-file-name="components/AudioCloudManager.tsx">Category</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="87694b4c-7e6e-4872-b760-bdb5c673d016" data-file-name="components/AudioCloudManager.tsx">Created</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="60ff8ec0-a229-4fd6-a469-223b0f6851a6" data-file-name="components/AudioCloudManager.tsx">Actions</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={7} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="34607e0a-1e11-48fd-a61c-3e0e9897517d" data-file-name="components/AudioCloudManager.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="11e82d77-dd61-4e17-a179-841d4ef88ddc" data-file-name="components/AudioCloudManager.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="3bb6bd0e-b540-4e40-897d-3c5bdb81dc36" data-file-name="components/AudioCloudManager.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="ee1023ad-98bd-43a8-9344-cde67e78078b" data-file-name="components/AudioCloudManager.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -401,38 +401,38 @@ export default function AudioCloudManager() {
                         {error}
                       </TableCell>
                     </TableRow> : files.length === 0 ? <TableRow>
-                      <TableCell colSpan={7} className="text-center py-8"><span className="editable-text" data-unique-id="829dd438-56a4-4c9d-a84f-cd4924f53852" data-file-name="components/AudioCloudManager.tsx">
+                      <TableCell colSpan={7} className="text-center py-8"><span className="editable-text" data-unique-id="430359e4-468c-4166-8a65-b3ed2b7a6343" data-file-name="components/AudioCloudManager.tsx">
                         No audio files found. Add a new audio file above.
                       </span></TableCell>
-                    </TableRow> : files.map((file, index) => <TableRow key={file.id} data-unique-id="38c32ed5-6e02-4615-9f41-904a82fef06f" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="3be070c2-c80a-4918-8a56-8b3b6b8fded4" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{(currentPage - 1) * itemsPerPage + index + 1}</TableCell>
-                        <TableCell className="font-medium" data-unique-id="d4adda41-6c59-438f-b3bb-aaf88750aca2" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{file.title}</TableCell>
-                        <TableCell data-unique-id="e30e290f-460d-4e47-9335-599bab4ea4f7" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                          <audio controls className="w-full max-w-[200px]" data-unique-id="31c0f3e3-ae55-4a31-b8ee-d352ca6635f0" data-file-name="components/AudioCloudManager.tsx">
-                            <source src={file.fileUrl} type="audio/mpeg" data-unique-id="2a2d4d34-2bf6-4daa-af55-4024f9b340e8" data-file-name="components/AudioCloudManager.tsx" /><span className="editable-text" data-unique-id="ede2e104-dff9-4395-bbbe-9fea6e6c7ecf" data-file-name="components/AudioCloudManager.tsx">
+                    </TableRow> : files.map((file, index) => <TableRow key={file.id} data-unique-id="6cd3b688-543e-44bb-a4c4-60dcbd7fb39d" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="34797b0f-bc60-4508-be66-55aa622e7619" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{(currentPage - 1) * itemsPerPage + index + 1}</TableCell>
+                        <TableCell className="font-medium" data-unique-id="fa72649d-3013-4027-ae1d-81c518575dd6" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{file.title}</TableCell>
+                        <TableCell data-unique-id="c18de239-7da3-40cc-855d-c80561318bed" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                          <audio controls className="w-full max-w-[200px]" data-unique-id="0cd2b91e-1e45-47fb-b28b-e8b37db04429" data-file-name="components/AudioCloudManager.tsx">
+                            <source src={file.fileUrl} type="audio/mpeg" data-unique-id="8e2dc789-e18d-473d-8c0d-e1566096536a" data-file-name="components/AudioCloudManager.tsx" /><span className="editable-text" data-unique-id="013a92b1-5f34-42f7-b79f-1635284dd6d8" data-file-name="components/AudioCloudManager.tsx">
                             Your browser does not support the audio element.
                           </span></audio>
                         </TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="204fb037-6767-4f05-9f67-8eaaec4e80f2" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                          <div className="max-w-[200px] truncate" data-unique-id="7254f13d-c422-4080-afac-61d8bf77bd2f" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                        <TableCell className="hidden md:table-cell" data-unique-id="a7254485-eac2-44fd-9653-a5b0bc361e07" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                          <div className="max-w-[200px] truncate" data-unique-id="3f273c15-4f0b-4b55-8cd9-09b4fa951681" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
                             {file.fileUrl}
                           </div>
                         </TableCell>
-                        <TableCell data-unique-id="7cbf2362-5f41-48e1-b99e-160ff53a9355" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{file.categoryName}</TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="5aa5655c-cf39-4fb6-9e0c-1e007ab181ad" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="c114fd4e-88c2-46d1-973a-8c9bd2ba2671" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">{file.categoryName}</TableCell>
+                        <TableCell className="hidden md:table-cell" data-unique-id="39aed8a6-99f7-42bb-8f50-2225787c2511" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
                           {file.createdAt ? formatDistanceToNow(new Date(file.createdAt), {
                       addSuffix: true
                     }) : "-"}
                         </TableCell>
-                        <TableCell className="text-right" data-unique-id="eea75b28-d074-4d54-b9a6-476de58aa243" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-unique-id="1ab3acac-eed0-4103-ae9e-2b9534d18ae3" data-file-name="components/AudioCloudManager.tsx">
-                            <Button variant="outline" size="sm" onClick={() => startEditing(file)} disabled={editingFile !== null} title="Edit" data-unique-id="fa1ad4c8-77be-454a-8fc2-c6597274420f" data-file-name="components/AudioCloudManager.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="0cbfdeb6-d062-4f4c-b1dc-6dccbca1326f" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-unique-id="a146d1f7-c4e9-47d9-9d51-f9553e2c7994" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="8d203776-51d0-4e40-8b4a-0d0fb2703622" data-file-name="components/AudioCloudManager.tsx">Edit</span></span>
+                        <TableCell className="text-right" data-unique-id="c124c857-d842-43fe-87d7-e6fbe968626a" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-unique-id="94249ddd-bebe-4547-b3ea-46da84948610" data-file-name="components/AudioCloudManager.tsx">
+                            <Button variant="outline" size="sm" onClick={() => startEditing(file)} disabled={editingFile !== null} title="Edit" data-unique-id="7bd76e63-f344-497e-a067-5fbc8364ed71" data-file-name="components/AudioCloudManager.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="52bd6f60-000f-4da5-b379-64cadbd93ec2" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-unique-id="bb96ffa2-93f8-46cb-91c3-dd3583e79222" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="ae63e03c-529c-42c0-ac8c-e647f2ef48d5" data-file-name="components/AudioCloudManager.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deleteFile(file.id)} disabled={editingFile !== null || isLoading} className="text-red-500 hover:text-red-700" title="Delete" data-unique-id="12b8dbb7-3188-4c44-93c7-b042873ac539" data-file-name="components/AudioCloudManager.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="4c5c1284-957c-462e-85d6-70f952589f9c" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-unique-id="5ac125f8-6827-42a0-b5f5-82951e5525e0" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="32481295-9cbe-4427-b14e-d31f644a4db2" data-file-name="components/AudioCloudManager.tsx">Delete</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deleteFile(file.id)} disabled={editingFile !== null || isLoading} className="text-red-500 hover:text-red-700" title="Delete" data-unique-id="2be2cdb7-fa55-4c8e-9c26-bda58706146c" data-file-name="components/AudioCloudManager.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="39f632c7-9b13-4ad9-aefa-c745dc28436d" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-unique-id="f8bf0c56-f245-4b43-ae81-bc09ce2df012" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="970417dc-92dc-4718-86a5-8fc098a133e2" data-file-name="components/AudioCloudManager.tsx">Delete</span></span>
                             </Button>
                           </div>
                         </TableCell>
@@ -442,19 +442,19 @@ export default function AudioCloudManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="eeb8a3c8-049c-4458-b922-64469567aa9e" data-file-name="components/AudioCloudManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="5ee61bf9-b01f-409b-9ac5-03a754e70a57" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="f8f9a029-dbf4-437b-aff0-d64fd1ca2c0b" data-file-name="components/AudioCloudManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="b715a719-ab36-4bb7-a257-9c33286f1266" data-file-name="components/AudioCloudManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="8c086cb7-f0aa-4ff7-b4fd-5452e98fb4b0" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="b235186e-9e02-4de7-8fb1-bd54d9b25bf5" data-file-name="components/AudioCloudManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="611ce8ba-a1a0-47f5-a1e1-f6ce13c7bf99" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="c5400ff5-2166-4e4e-ae4c-8664c6c50935" data-file-name="components/AudioCloudManager.tsx">Previous</span></span>
+                    <span data-unique-id="0ff0f815-a727-4c27-878f-6c0a3620c505" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="9b2e4abd-7554-477f-8c51-a0bb01a8e37a" data-file-name="components/AudioCloudManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-unique-id="3e9e7129-f697-48a7-b375-dd10c9c50902" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-unique-id="733a9617-5c77-4fba-b0e4-4fdbe0a0724e" data-file-name="components/AudioCloudManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="96f17776-746b-49ba-9f20-45991188943c" data-file-name="components/AudioCloudManager.tsx">
-                    <span data-unique-id="27cae9cb-910f-406f-9114-4083a48f1eac" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="c157a2d2-e24a-40aa-9853-1bb8dbd258bb" data-file-name="components/AudioCloudManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="557fc354-b880-4317-b2da-72059ccf0064" data-file-name="components/AudioCloudManager.tsx">
+                    <span data-unique-id="401c8980-8aaa-4f88-86d5-014af63405e2" data-file-name="components/AudioCloudManager.tsx"><span className="editable-text" data-unique-id="0bc2c064-545f-46fd-be42-afc89050c9f5" data-file-name="components/AudioCloudManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>

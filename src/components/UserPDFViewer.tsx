@@ -105,38 +105,38 @@ export default function UserPDFViewer() {
     setSelectedCategory('');
     fetchPDFs();
   };
-  return <div className="space-y-6" data-unique-id="410e1b81-d9a6-443c-a9d3-ad286d9d4b91" data-file-name="components/UserPDFViewer.tsx">
-      <Card data-unique-id="dc4e725f-895f-450d-abdb-6b6b8135cdce" data-file-name="components/UserPDFViewer.tsx">
-        <CardHeader data-unique-id="f09f4ca4-c006-4d74-b0a7-59fe07d002ce" data-file-name="components/UserPDFViewer.tsx">
-          <CardTitle data-unique-id="719f7a86-2fb7-4ee6-b060-23fbdbf3006e" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="019598f2-2332-4cad-9e7e-713857c173d4" data-file-name="components/UserPDFViewer.tsx">Ebook PDF Library</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="78766c3c-0967-454b-ac3f-0637a0c0e509" data-file-name="components/UserPDFViewer.tsx">
+  return <div className="space-y-6" data-unique-id="fb8d68d2-92dc-40fd-91fb-c44639b8be26" data-file-name="components/UserPDFViewer.tsx">
+      <Card data-unique-id="12c8ee8d-c2ed-49e8-986e-652a1c15dab0" data-file-name="components/UserPDFViewer.tsx">
+        <CardHeader data-unique-id="61a76e5a-5e6f-4145-9c8d-e3139c01b2f8" data-file-name="components/UserPDFViewer.tsx">
+          <CardTitle data-unique-id="864fe5b8-21c8-4356-be8e-bd410c008159" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="0ab039f2-f95a-49b0-afb5-632aa38e927b" data-file-name="components/UserPDFViewer.tsx">Ebook PDF Library</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="ad845ba6-33b4-4044-86f8-1c10f90c31df" data-file-name="components/UserPDFViewer.tsx">
             Browse and read available PDF ebooks
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="b2fa6e22-31ac-435d-833d-d3dcea9ac556" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="d48fafec-d4bd-4c9a-8068-19a18298b224" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
           {/* Search filters */}
-          <div className="bg-muted p-4 rounded-md" data-unique-id="7f201808-c765-4d99-8033-6121045e4e83" data-file-name="components/UserPDFViewer.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="e545557b-9326-4df5-81f8-35d3ebcea1b8" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="75915daf-61f9-4577-bfef-541bca7660db" data-file-name="components/UserPDFViewer.tsx">Search PDFs</span></h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="9f9cd615-57d3-45ba-ac2b-7a601e9a5745" data-file-name="components/UserPDFViewer.tsx">
-              <div data-unique-id="f4665836-5123-4331-9e37-3227d03ef545" data-file-name="components/UserPDFViewer.tsx">
-                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="1e16529a-e81e-44f5-8010-1a46b2bfb8ae" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="a9bd3087-5b0d-4caf-9dbb-e3b3d81fdd74" data-file-name="components/UserPDFViewer.tsx">Title</span></Label>
-                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Search by title" data-unique-id="97563eda-5505-41b9-868f-566dccf1f732" data-file-name="components/UserPDFViewer.tsx" />
+          <div className="bg-muted p-4 rounded-md" data-unique-id="c11b4d46-638d-461e-9bcd-1ca28bce0be0" data-file-name="components/UserPDFViewer.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="63789aac-8cb0-447f-8dc1-a42a1186b670" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="9d35789e-089b-4704-809e-dcc0795bb10e" data-file-name="components/UserPDFViewer.tsx">Search PDFs</span></h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="cec8bf40-6d11-463c-bf37-8dace83d31f3" data-file-name="components/UserPDFViewer.tsx">
+              <div data-unique-id="2b1f9215-bf79-4de2-9c9d-c27b1ab29c5e" data-file-name="components/UserPDFViewer.tsx">
+                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="3151d7f7-3850-43b1-89a7-1ebc92886662" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="c1c579e5-d2b8-4de6-92a5-e03389f6d508" data-file-name="components/UserPDFViewer.tsx">Title</span></Label>
+                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Search by title" data-unique-id="94af3c22-08b2-4910-9c2d-b24cd2f0b712" data-file-name="components/UserPDFViewer.tsx" />
               </div>
-              <div data-unique-id="0db97111-e693-482f-bc87-a708335a0b6c" data-file-name="components/UserPDFViewer.tsx">
-                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="ef3c02a6-968c-4dfa-a4de-7d24bba13cdc" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="fede3cb9-5db8-4cdc-9705-e226d600a875" data-file-name="components/UserPDFViewer.tsx">Category</span></Label>
-                <select id="searchCategory" value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="505fcd6f-dc35-4ce6-b9e5-2b3ad16536c9" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="2f29983f-7317-49bd-bbdb-78bc1b988eeb" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="58e77b26-6cfe-4f37-b708-adcba6d93043" data-file-name="components/UserPDFViewer.tsx">All Categories</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="2e939531-2e39-465b-8840-7ff814799b3b" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
+              <div data-unique-id="cbd2a115-6263-4853-9915-bbf3234ed1e3" data-file-name="components/UserPDFViewer.tsx">
+                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="4d729624-7204-4d2b-b7bc-083bda98de3a" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="2422c593-d61f-43f5-b0fe-23b188522904" data-file-name="components/UserPDFViewer.tsx">Category</span></Label>
+                <select id="searchCategory" value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="4a74b63c-913e-473f-9288-7b8e9cd09f53" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="69354a55-f799-4b1b-add7-31d8d1d1f7f4" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="7e44e430-0a59-4220-98aa-1d67fdb725ba" data-file-name="components/UserPDFViewer.tsx">All Categories</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="b2a05051-dce6-4822-955e-d3b599045867" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
-              <div className="flex items-end space-x-2" data-unique-id="4de459aa-6f03-4a25-b48e-097e93c6bcfb" data-file-name="components/UserPDFViewer.tsx">
-                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="ed0926d8-3f88-4e8b-929d-5901e4d1b207" data-file-name="components/UserPDFViewer.tsx">
-                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="cfedad65-8892-4081-96f1-f53b86c2d185" data-file-name="components/UserPDFViewer.tsx">
+              <div className="flex items-end space-x-2" data-unique-id="b52a5977-d880-46e3-927b-d0f2fdce866d" data-file-name="components/UserPDFViewer.tsx">
+                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="dce669e5-5d04-42f5-a492-ba0caae78d75" data-file-name="components/UserPDFViewer.tsx">
+                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="19584b87-8233-42b2-8a01-56b8802e8a82" data-file-name="components/UserPDFViewer.tsx">
                   Search
                 </span></Button>
-                <Button variant="outline" onClick={resetSearch} data-unique-id="aa333d69-7bd3-422e-8293-8d01ff10e9cb" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="c9f98ead-8834-4687-a247-76d1a015cfcc" data-file-name="components/UserPDFViewer.tsx">
+                <Button variant="outline" onClick={resetSearch} data-unique-id="c307c61a-b5df-4dcb-a0c6-8c9bffe5c3b8" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="6e30674e-e00d-4868-8d6a-85fec4b21bee" data-file-name="components/UserPDFViewer.tsx">
                   Reset
                 </span></Button>
               </div>
@@ -144,27 +144,27 @@ export default function UserPDFViewer() {
           </div>
 
           {/* PDF Grid */}
-          {isLoading ? <div className="flex justify-center py-12" data-unique-id="23a880e4-9192-4011-a7ef-3bb9300db4ab" data-file-name="components/UserPDFViewer.tsx">
+          {isLoading ? <div className="flex justify-center py-12" data-unique-id="7115a4e1-d573-4896-9fc1-56da7b9f1759" data-file-name="components/UserPDFViewer.tsx">
               <Loader className="h-8 w-8 animate-spin text-primary" />
-            </div> : error ? <div className="text-center py-12 text-red-500" data-unique-id="a0a8a45b-6010-47a3-af66-2488208700ff" data-file-name="components/UserPDFViewer.tsx">
-              <p data-unique-id="4a2d6035-9324-4308-9233-4ad2abd9ff6e" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">{error}</p>
-            </div> : pdfs.length === 0 ? <div className="text-center py-12 text-muted-foreground" data-unique-id="5aa7706e-6bcb-4c5b-94e8-eea7120a35a2" data-file-name="components/UserPDFViewer.tsx">
+            </div> : error ? <div className="text-center py-12 text-red-500" data-unique-id="5bbfee28-4c6c-483a-8f72-824c51db09d4" data-file-name="components/UserPDFViewer.tsx">
+              <p data-unique-id="eadb2e1c-d0e3-416f-943a-37480efb1b8f" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">{error}</p>
+            </div> : pdfs.length === 0 ? <div className="text-center py-12 text-muted-foreground" data-unique-id="782b2eb5-4688-47cf-99e5-dc766b53b074" data-file-name="components/UserPDFViewer.tsx">
               <FileText className="h-12 w-12 mx-auto mb-4 opacity-30" />
-              <p data-unique-id="74712f21-77b6-4010-a771-454a486656ed" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="d2698210-1e06-4ed2-93a6-9a20928771d8" data-file-name="components/UserPDFViewer.tsx">No PDFs found. Try adjusting your search criteria.</span></p>
-            </div> : <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-unique-id="6da2e9b4-ee00-4fe1-8e7a-3b273e32d8ca" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
-              {Array.isArray(pdfs) && pdfs.map(pdf => <Card key={pdf.id} className="overflow-hidden flex flex-col h-full" data-is-mapped="true" data-unique-id="6f030012-c950-4aeb-8348-7093b38dccd9" data-file-name="components/UserPDFViewer.tsx">
-                  <div className="aspect-[3/4] relative overflow-hidden" data-is-mapped="true" data-unique-id="5fe387a9-01f1-4d8f-b8be-764d274bae8d" data-file-name="components/UserPDFViewer.tsx">
-                    <img src={pdf.coverUrl} alt={pdf.title} className="object-cover w-full h-full" data-is-mapped="true" data-unique-id="7bd10b1b-8a50-40b8-8202-4c9a951bcfe6" data-file-name="components/UserPDFViewer.tsx" />
+              <p data-unique-id="0e39a021-57bd-4c12-957a-c354537ab2fc" data-file-name="components/UserPDFViewer.tsx"><span className="editable-text" data-unique-id="1c1fb7ee-ba81-4c29-ad3f-ca96df2dab86" data-file-name="components/UserPDFViewer.tsx">No PDFs found. Try adjusting your search criteria.</span></p>
+            </div> : <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-unique-id="53bb9688-fe6a-48e2-a19d-afcd30594cea" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
+              {Array.isArray(pdfs) && pdfs.map(pdf => <Card key={pdf.id} className="overflow-hidden flex flex-col h-full" data-is-mapped="true" data-unique-id="9075d39b-8b44-45fc-8b44-7472b9440c06" data-file-name="components/UserPDFViewer.tsx">
+                  <div className="aspect-[3/4] relative overflow-hidden" data-is-mapped="true" data-unique-id="d9c6e98b-0213-450c-b8ac-c1a285b557b7" data-file-name="components/UserPDFViewer.tsx">
+                    <img src={pdf.coverUrl} alt={pdf.title} className="object-cover w-full h-full" data-is-mapped="true" data-unique-id="34dd98bc-14b3-4b23-a7e1-8620399b30eb" data-file-name="components/UserPDFViewer.tsx" />
                   </div>
-                  <CardContent className="p-4 flex flex-col flex-grow" data-is-mapped="true" data-unique-id="9442c2f5-4123-4cc0-b89d-5501aeb476fd" data-file-name="components/UserPDFViewer.tsx">
-                    <h3 className="font-semibold text-lg line-clamp-2 mb-1" data-is-mapped="true" data-unique-id="2bcfdd3d-32b7-4ae7-a701-efa61e027cb4" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">{pdf.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-4" data-is-mapped="true" data-unique-id="e731de8e-5d3c-46fb-9276-6022f1d9219d" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
+                  <CardContent className="p-4 flex flex-col flex-grow" data-is-mapped="true" data-unique-id="4f96b066-540b-4598-bb7c-c1e488d35fbf" data-file-name="components/UserPDFViewer.tsx">
+                    <h3 className="font-semibold text-lg line-clamp-2 mb-1" data-is-mapped="true" data-unique-id="0233a894-46bb-4b4a-9e67-9fc55f578314" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">{pdf.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4" data-is-mapped="true" data-unique-id="18d0330b-5190-4de6-a10d-6ee15bd514d3" data-file-name="components/UserPDFViewer.tsx" data-dynamic-text="true">
                       {pdf.categoryName || "Uncategorized"}
                     </p>
-                    <div className="mt-auto" data-is-mapped="true" data-unique-id="bd18fb63-0109-4f99-b540-c6133e78b421" data-file-name="components/UserPDFViewer.tsx">
-                      <Link href={`/pdf-viewer?id=${pdf.id}&t=${Date.now()}`} passHref data-is-mapped="true" data-unique-id="5f7d129d-2e04-449c-8d30-1035204cc9a4" data-file-name="components/UserPDFViewer.tsx">
-                        <Button className="w-full flex items-center gap-2" data-is-mapped="true" data-unique-id="16631148-3fbe-456f-9299-d5d1a44dc1ec" data-file-name="components/UserPDFViewer.tsx">
-                          <FileText className="h-4 w-4" /><span className="editable-text" data-unique-id="a77f9eb7-1ab6-4041-a5c0-6c03044d6eb7" data-file-name="components/UserPDFViewer.tsx">
+                    <div className="mt-auto" data-is-mapped="true" data-unique-id="69d070d0-66f9-4cc3-bc8e-533660ef1b92" data-file-name="components/UserPDFViewer.tsx">
+                      <Link href={`/pdf-viewer?id=${pdf.id}&t=${Date.now()}`} passHref data-is-mapped="true" data-unique-id="7a960d6c-e727-43b8-a327-d0f8f10b409d" data-file-name="components/UserPDFViewer.tsx">
+                        <Button className="w-full flex items-center gap-2" data-is-mapped="true" data-unique-id="0dd85825-f53a-49b9-8bda-96f379a90d00" data-file-name="components/UserPDFViewer.tsx">
+                          <FileText className="h-4 w-4" /><span className="editable-text" data-unique-id="ff038843-7935-4ef7-a14e-69bda423e50b" data-file-name="components/UserPDFViewer.tsx">
                           Read PDF
                         </span></Button>
                       </Link>

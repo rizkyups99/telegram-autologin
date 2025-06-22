@@ -22,11 +22,20 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, description } = body;
+    const { name, description, filter } = body;
     
     if (!name) {
       return NextResponse.json(
         { error: "Category name is required" },
+        { status: 400 }
+      );
+    }
+
+    // Validate filter
+    const validFilters = ['audio', 'pdf', 'video', 'audio_cloud', 'pdf_cloud', 'file_cloud'];
+    if (filter && !validFilters.includes(filter)) {
+      return NextResponse.json(
+        { error: "Invalid filter type" },
         { status: 400 }
       );
     }
@@ -35,6 +44,9 @@ export async function POST(request: Request) {
     const newCategory: NewCategory = {
       name,
       description: description || null,
+      filter: filter || null,
+      createdAt: new Date(),
+      updatedAt: new Date()
     };
     
     const insertedCategory = await db.insert(categories).values(newCategory).returning();
@@ -49,15 +61,21 @@ export async function POST(request: Request) {
   }
 }
 
-// Update an existing category
 export async function PUT(request: Request) {
   try {
     const body = await request.json();
-    const { id, name, description } = body;
+    const { id, name, description, filter } = body;
     
     if (!id) {
       return NextResponse.json(
-        { error: "Category ID is required" },
+        { error: "Category ID diperlukan" },
+        { status: 400 }
+      );
+    }
+    
+    if (!name) {
+      return NextResponse.json(
+        { error: "Nama kategori diperlukan" },
         { status: 400 }
       );
     }
@@ -69,16 +87,29 @@ export async function PUT(request: Request) {
     
     if (existingCategory.length === 0) {
       return NextResponse.json(
-        { error: "Category not found" },
+        { error: "Kategori tidak ditemukan" },
         { status: 404 }
       );
     }
     
-    // Update category data
-    const updateData: Partial<NewCategory> = {};
+    // Check if another category with the same name exists (excluding current one)
+    const duplicateCategory = await db.select()
+      .from(categories)
+      .where(eq(categories.name, name));
     
-    if (name !== undefined) updateData.name = name;
-    if (description !== undefined) updateData.description = description;
+    if (duplicateCategory.length > 0 && duplicateCategory[0].id !== id) {
+      return NextResponse.json(
+        { error: "Kategori dengan nama ini sudah ada" },
+        { status: 400 }
+      );
+    }
+    
+    const updateData: Partial<NewCategory> = {
+      name,
+      description: description || null,
+      filter: filter || null,
+      updatedAt: new Date()
+    };
     
     const updatedCategory = await db.update(categories)
       .set(updateData)
@@ -95,7 +126,6 @@ export async function PUT(request: Request) {
   }
 }
 
-// Delete a category
 export async function DELETE(request: Request) {
   try {
     const url = new URL(request.url);
@@ -103,7 +133,7 @@ export async function DELETE(request: Request) {
     
     if (!id) {
       return NextResponse.json(
-        { error: "Category ID is required" },
+        { error: "Category ID diperlukan" },
         { status: 400 }
       );
     }
@@ -115,7 +145,7 @@ export async function DELETE(request: Request) {
     
     if (existingCategory.length === 0) {
       return NextResponse.json(
-        { error: "Category not found" },
+        { error: "Kategori tidak ditemukan" },
         { status: 404 }
       );
     }
@@ -123,7 +153,7 @@ export async function DELETE(request: Request) {
     // Delete category
     await db.delete(categories).where(eq(categories.id, parseInt(id)));
     
-    return NextResponse.json({ success: true, message: "Category deleted successfully" });
+    return NextResponse.json({ success: true, message: "Kategori berhasil dihapus" });
   } catch (error) {
     console.error("Error deleting category:", error);
     return NextResponse.json(

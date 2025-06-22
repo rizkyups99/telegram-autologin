@@ -23,7 +23,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
     "h-9 rounded-md px-3": size === "sm",
     "h-11 rounded-md px-8": size === "lg",
     "h-10 w-10": size === "icon"
-  }, className)} ref={ref} {...props} data-unique-id="578b193b-f3bf-40a1-b5a9-f75df3dbed9e" data-file-name="components/ui/button.tsx" />;
+  }, className)} ref={ref} {...props} data-unique-id="747efbcb-2dfe-4611-ac1b-1638123e476f" data-file-name="components/ui/button.tsx" />;
 });
 Button.displayName = "Button";
 export { Button };

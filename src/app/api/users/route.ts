@@ -1,70 +1,70 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { users, userAudioAccess, userPdfAccess, userVideoAccess } from "@/db/schema";
+import { 
+  users, 
+  userAudioAccess, 
+  userPdfAccess, 
+  userVideoAccess,
+  userAudioCloudAccess,
+  userPdfCloudAccess,
+  userFileCloudAccess
+} from "@/db/schema";
 import { desc, eq, sql } from "drizzle-orm";
 import { NewUser } from "@/db/schema";
 
 export async function GET() {
   try {
-    const allUsers = await db.select().from(users).orderBy(desc(users.createdAt));
+    // Get users with their category access information using a single query
+    const usersWithAccess = await db.execute(sql`
+      SELECT 
+        u.*,
+        COALESCE(
+          json_agg(DISTINCT audio_cats.category_id) FILTER (WHERE audio_cats.category_id IS NOT NULL), 
+          '[]'
+        ) as audio_category_ids,
+        COALESCE(
+          json_agg(DISTINCT pdf_cats.category_id) FILTER (WHERE pdf_cats.category_id IS NOT NULL), 
+          '[]'
+        ) as pdf_category_ids,
+        COALESCE(
+          json_agg(DISTINCT video_cats.category_id) FILTER (WHERE video_cats.category_id IS NOT NULL), 
+          '[]'
+        ) as video_category_ids,
+        COALESCE(
+          json_agg(DISTINCT audio_cloud_cats.category_id) FILTER (WHERE audio_cloud_cats.category_id IS NOT NULL), 
+          '[]'
+        ) as audio_cloud_category_ids,
+        COALESCE(
+          json_agg(DISTINCT pdf_cloud_cats.category_id) FILTER (WHERE pdf_cloud_cats.category_id IS NOT NULL), 
+          '[]'
+        ) as pdf_cloud_category_ids,
+        COALESCE(
+          json_agg(DISTINCT file_cloud_cats.category_id) FILTER (WHERE file_cloud_cats.category_id IS NOT NULL), 
+          '[]'
+        ) as file_cloud_category_ids
+      FROM users u
+      LEFT JOIN user_audio_access audio_cats ON u.id = audio_cats.user_id
+      LEFT JOIN user_pdf_access pdf_cats ON u.id = pdf_cats.user_id
+      LEFT JOIN user_video_access video_cats ON u.id = video_cats.user_id
+      LEFT JOIN user_audio_cloud_access audio_cloud_cats ON u.id = audio_cloud_cats.user_id
+      LEFT JOIN user_pdf_cloud_access pdf_cloud_cats ON u.id = pdf_cloud_cats.user_id
+      LEFT JOIN user_file_cloud_access file_cloud_cats ON u.id = file_cloud_cats.user_id
+      GROUP BY u.id
+      ORDER BY u.created_at DESC
+    `);
     
-    // Initialize tables if needed
-    try {
-      await fetch('/api/users/init-access-tables', { method: 'POST' });
-    } catch (initError) {
-      console.warn('Access tables initialization warning:', initError);
-      // Continue anyway
-    }
-    
-    // Fetch category access for each user using raw SQL to handle missing tables gracefully
-    const usersWithAccess = await Promise.all(allUsers.map(async user => {
-      let audioCategoryIds: number[] = [];
-      let pdfCategoryIds: number[] = [];
-      let videoCategoryIds: number[] = [];
-      
-      try {
-        // Get audio category access
-        try {
-          const audioResult = await db.execute(sql`
-            SELECT "category_id" FROM "user_audio_access" WHERE "user_id" = ${user.id}
-          `);
-          audioCategoryIds = (audioResult as any[]).map(row => row.category_id);
-        } catch (audioError) {
-          console.warn(`Error getting audio access for user ${user.id}:`, audioError);
-        }
-        
-        // Get PDF category access
-        try {
-          const pdfResult = await db.execute(sql`
-            SELECT "category_id" FROM "user_pdf_access" WHERE "user_id" = ${user.id}
-          `);
-          pdfCategoryIds = (pdfResult as any[]).map(row => row.category_id);
-        } catch (pdfError) {
-          console.warn(`Error getting PDF access for user ${user.id}:`, pdfError);
-        }
-        
-        // Get video category access
-        try {
-          const videoResult = await db.execute(sql`
-            SELECT "category_id" FROM "user_video_access" WHERE "user_id" = ${user.id}
-          `);
-          videoCategoryIds = (videoResult as any[]).map(row => row.category_id);
-        } catch (videoError) {
-          console.warn(`Error getting video access for user ${user.id}:`, videoError);
-        }
-      } catch (accessError) {
-        console.warn(`Error getting category access for user ${user.id}:`, accessError);
-      }
-      
-      return {
-        ...user,
-        audioCategoryIds,
-        pdfCategoryIds,
-        videoCategoryIds
-      };
+    // Transform the result to include category arrays
+    const transformedUsers = (usersWithAccess as any[]).map(user => ({
+      ...user,
+      audioCategoryIds: user.audio_category_ids || [],
+      pdfCategoryIds: user.pdf_category_ids || [],
+      videoCategoryIds: user.video_category_ids || [],
+      audioCloudCategoryIds: user.audio_cloud_category_ids || [],
+      pdfCloudCategoryIds: user.pdf_cloud_category_ids || [],
+      fileCloudCategoryIds: user.file_cloud_category_ids || []
     }));
     
-    return NextResponse.json(usersWithAccess);
+    return NextResponse.json(transformedUsers);
   } catch (error) {
     console.error("Error fetching users:", error);
     return NextResponse.json(
@@ -78,7 +78,19 @@ export async function GET() {
 export async function PUT(request: Request) {
   try {
     const body = await request.json();
-    const { id, username, name, accessCode, isActive, audioCategoryIds, pdfCategoryIds, videoCategoryIds } = body;
+    const { 
+      id, 
+      username, 
+      name, 
+      accessCode, 
+      isActive, 
+      audioCategoryIds = [], 
+      pdfCategoryIds = [], 
+      videoCategoryIds = [],
+      audioCloudCategoryIds = [],
+      pdfCloudCategoryIds = [],
+      fileCloudCategoryIds = []
+    } = body;
     
     if (!id) {
       return NextResponse.json(
@@ -90,7 +102,8 @@ export async function PUT(request: Request) {
     // Check if user exists
     const existingUser = await db.select()
       .from(users)
-      .where(eq(users.id, id));
+      .where(eq(users.id, id))
+      .limit(1);
     
     if (existingUser.length === 0) {
       return NextResponse.json(
@@ -99,17 +112,10 @@ export async function PUT(request: Request) {
       );
     }
     
-    // Ensure the access tables exist
-    try {
-      // Try to initialize tables if they don't exist yet
-      await fetch('/api/users/init-access-tables', { method: 'POST' });
-    } catch (initError) {
-      console.warn('Access tables initialization warning:', initError);
-      // Continue anyway - the main user update is more important
-    }
-    
     // Update user data
-    const updateData: Partial<NewUser> = {};
+    const updateData: Partial<NewUser> = {
+      updatedAt: new Date(),
+    };
     
     if (username !== undefined) updateData.username = username;
     if (name !== undefined) updateData.name = name;
@@ -121,92 +127,86 @@ export async function PUT(request: Request) {
       .where(eq(users.id, id))
       .returning();
     
-    try {
-      // Update audio category access
-      if (audioCategoryIds !== undefined) {
-        try {
-          // Delete existing access records
-          await db.execute(sql`DELETE FROM "user_audio_access" WHERE "user_id" = ${id}`);
-          
-          // Add new access records if any categories are selected
-          if (Array.isArray(audioCategoryIds) && audioCategoryIds.length > 0) {
-            for (const categoryId of audioCategoryIds) {
-              try {
-                await db.execute(sql`
-                  INSERT INTO "user_audio_access" ("user_id", "category_id")
-                  VALUES (${id}, ${parseInt(String(categoryId))})
-                  ON CONFLICT ("user_id", "category_id") DO NOTHING
-                `);
-              } catch (err) {
-                console.warn(`Error inserting audio category ${categoryId}:`, err);
-              }
-            }
-          }
-        } catch (audioAccessError) {
-          console.warn('Error updating audio access:', audioAccessError);
-        }
-      }
-      
-      // Update PDF category access
-      if (pdfCategoryIds !== undefined) {
-        try {
-          // Delete existing access records
-          await db.execute(sql`DELETE FROM "user_pdf_access" WHERE "user_id" = ${id}`);
-          
-          // Add new access records if any categories are selected
-          if (Array.isArray(pdfCategoryIds) && pdfCategoryIds.length > 0) {
-            for (const categoryId of pdfCategoryIds) {
-              try {
-                await db.execute(sql`
-                  INSERT INTO "user_pdf_access" ("user_id", "category_id")
-                  VALUES (${id}, ${parseInt(String(categoryId))})
-                  ON CONFLICT ("user_id", "category_id") DO NOTHING
-                `);
-              } catch (err) {
-                console.warn(`Error inserting PDF category ${categoryId}:`, err);
-              }
-            }
-          }
-        } catch (pdfAccessError) {
-          console.warn('Error updating PDF access:', pdfAccessError);
-        }
-      }
-      
-      // Update video category access
-      if (videoCategoryIds !== undefined) {
-        try {
-          // Delete existing access records
-          await db.execute(sql`DELETE FROM "user_video_access" WHERE "user_id" = ${id}`);
-          
-          // Add new access records if any categories are selected
-          if (Array.isArray(videoCategoryIds) && videoCategoryIds.length > 0) {
-            for (const categoryId of videoCategoryIds) {
-              try {
-                await db.execute(sql`
-                  INSERT INTO "user_video_access" ("user_id", "category_id")
-                  VALUES (${id}, ${parseInt(String(categoryId))})
-                  ON CONFLICT ("user_id", "category_id") DO NOTHING
-                `);
-              } catch (err) {
-                console.warn(`Error inserting video category ${categoryId}:`, err);
-              }
-            }
-          }
-        } catch (videoAccessError) {
-          console.warn('Error updating video access:', videoAccessError);
-        }
-      }
-    } catch (accessError) {
-      console.error('Error updating category access:', accessError);
-      // Continue anyway, user update succeeded
+    // Delete existing category access
+    await db.delete(userAudioAccess).where(eq(userAudioAccess.userId, id));
+    await db.delete(userPdfAccess).where(eq(userPdfAccess.userId, id));
+    await db.delete(userVideoAccess).where(eq(userVideoAccess.userId, id));
+    await db.delete(userAudioCloudAccess).where(eq(userAudioCloudAccess.userId, id));
+    await db.delete(userPdfCloudAccess).where(eq(userPdfCloudAccess.userId, id));
+    await db.delete(userFileCloudAccess).where(eq(userFileCloudAccess.userId, id));
+    
+    // Create new category access records
+    const accessPromises = [];
+    
+    // Audio access
+    if (audioCategoryIds.length > 0) {
+      const audioAccessData = audioCategoryIds.map((categoryId: number) => ({
+        userId: id,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userAudioAccess).values(audioAccessData));
     }
     
-    return NextResponse.json({
+    // PDF access
+    if (pdfCategoryIds.length > 0) {
+      const pdfAccessData = pdfCategoryIds.map((categoryId: number) => ({
+        userId: id,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userPdfAccess).values(pdfAccessData));
+    }
+    
+    // Video access
+    if (videoCategoryIds.length > 0) {
+      const videoAccessData = videoCategoryIds.map((categoryId: number) => ({
+        userId: id,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userVideoAccess).values(videoAccessData));
+    }
+    
+    // Audio Cloud access
+    if (audioCloudCategoryIds.length > 0) {
+      const audioCloudAccessData = audioCloudCategoryIds.map((categoryId: number) => ({
+        userId: id,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userAudioCloudAccess).values(audioCloudAccessData));
+    }
+    
+    // PDF Cloud access
+    if (pdfCloudCategoryIds.length > 0) {
+      const pdfCloudAccessData = pdfCloudCategoryIds.map((categoryId: number) => ({
+        userId: id,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userPdfCloudAccess).values(pdfCloudAccessData));
+    }
+    
+    // File Cloud access
+    if (fileCloudCategoryIds.length > 0) {
+      const fileCloudAccessData = fileCloudCategoryIds.map((categoryId: number) => ({
+        userId: id,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userFileCloudAccess).values(fileCloudAccessData));
+    }
+    
+    // Execute all access insertions
+    await Promise.all(accessPromises);
+    
+    // Return updated user with category access
+    const userWithAccess = {
       ...updatedUser[0],
       audioCategoryIds,
       pdfCategoryIds,
-      videoCategoryIds
-    });
+      videoCategoryIds,
+      audioCloudCategoryIds,
+      pdfCloudCategoryIds,
+      fileCloudCategoryIds
+    };
+    
+    return NextResponse.json(userWithAccess);
   } catch (error) {
     console.error("Error updating user:", error);
     return NextResponse.json(
@@ -241,27 +241,15 @@ export async function DELETE(request: Request) {
       );
     }
     
-    // Delete category access records using raw SQL for better error handling
-    try {
-      await db.execute(sql`DELETE FROM "user_audio_access" WHERE "user_id" = ${parseInt(id)}`);
-    } catch (audioError) {
-      console.warn(`Error deleting audio access for user ${id}:`, audioError);
-      // Continue anyway
-    }
+    const userId = parseInt(id);
     
-    try {
-      await db.execute(sql`DELETE FROM "user_pdf_access" WHERE "user_id" = ${parseInt(id)}`);
-    } catch (pdfError) {
-      console.warn(`Error deleting PDF access for user ${id}:`, pdfError);
-      // Continue anyway
-    }
-    
-    try {
-      await db.execute(sql`DELETE FROM "user_video_access" WHERE "user_id" = ${parseInt(id)}`);
-    } catch (videoError) {
-      console.warn(`Error deleting video access for user ${id}:`, videoError);
-      // Continue anyway
-    }
+    // Delete user category access first
+    await db.delete(userAudioAccess).where(eq(userAudioAccess.userId, userId));
+    await db.delete(userPdfAccess).where(eq(userPdfAccess.userId, userId));
+    await db.delete(userVideoAccess).where(eq(userVideoAccess.userId, userId));
+    await db.delete(userAudioCloudAccess).where(eq(userAudioCloudAccess.userId, userId));
+    await db.delete(userPdfCloudAccess).where(eq(userPdfCloudAccess.userId, userId));
+    await db.delete(userFileCloudAccess).where(eq(userFileCloudAccess.userId, userId));
     
     // Delete user
     await db.delete(users).where(eq(users.id, parseInt(id)));
@@ -280,7 +268,18 @@ export async function DELETE(request: Request) {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { username, name, accessCode, isActive, audioCategoryIds, pdfCategoryIds, videoCategoryIds } = body;
+    const { 
+      username, 
+      name, 
+      accessCode, 
+      isActive, 
+      audioCategoryIds = [], 
+      pdfCategoryIds = [], 
+      videoCategoryIds = [],
+      audioCloudCategoryIds = [],
+      pdfCloudCategoryIds = [],
+      fileCloudCategoryIds = []
+    } = body;
     
     if (!username) {
       return NextResponse.json(
@@ -289,97 +288,104 @@ export async function POST(request: Request) {
       );
     }
     
-    // Check if user already exists
+    // Check if username already exists
     const existingUser = await db.select()
       .from(users)
-      .where(eq(users.username, username));
+      .where(eq(users.username, username))
+      .limit(1);
     
     if (existingUser.length > 0) {
       return NextResponse.json(
-        { error: "User with this username already exists" },
+        { error: "Username already exists" },
         { status: 400 }
       );
     }
     
-    // Ensure the access tables exist
-    try {
-      // Try to initialize tables if they don't exist yet
-      await fetch('/api/users/init-access-tables', { method: 'POST' });
-    } catch (initError) {
-      console.warn('Access tables initialization warning:', initError);
-      // Continue anyway - the main user creation is more important
-    }
-    
-    // Create new user
-    const newUser: NewUser = {
+    // Create new user data
+    const userData: NewUser = {
       username,
       password: username, // Using username as password
-      accessCode: accessCode || username, // Using username as access code if not provided
-      name: name || "",
-      isActive: isActive !== undefined ? isActive : true
+      accessCode: accessCode || username, // Use username as access code if not provided
+      name: name || null,
+      isActive: isActive !== undefined ? isActive : true,
     };
-      
-    // Insert user and get the created user with ID
-    const insertedUser = await db.insert(users).values(newUser).returning();
-    const userId = insertedUser[0].id;
-      
-    try {
-      // Save category access for audio
-      if (audioCategoryIds && Array.isArray(audioCategoryIds) && audioCategoryIds.length > 0) {
-        // Use manual SQL insertion to handle potential missing tables gracefully
-        for (const categoryId of audioCategoryIds) {
-          try {
-            await db.execute(sql`
-              INSERT INTO "user_audio_access" ("user_id", "category_id")
-              VALUES (${userId}, ${parseInt(String(categoryId))})
-              ON CONFLICT ("user_id", "category_id") DO NOTHING
-            `);
-          } catch (err) {
-            console.warn(`Error inserting audio category ${categoryId}:`, err);
-          }
-        }
-      }
-      
-      // Save category access for PDF
-      if (pdfCategoryIds && Array.isArray(pdfCategoryIds) && pdfCategoryIds.length > 0) {
-        for (const categoryId of pdfCategoryIds) {
-          try {
-            await db.execute(sql`
-              INSERT INTO "user_pdf_access" ("user_id", "category_id")
-              VALUES (${userId}, ${parseInt(String(categoryId))})
-              ON CONFLICT ("user_id", "category_id") DO NOTHING
-            `);
-          } catch (err) {
-            console.warn(`Error inserting PDF category ${categoryId}:`, err);
-          }
-        }
-      }
-      
-      // Save category access for video
-      if (videoCategoryIds && Array.isArray(videoCategoryIds) && videoCategoryIds.length > 0) {
-        for (const categoryId of videoCategoryIds) {
-          try {
-            await db.execute(sql`
-              INSERT INTO "user_video_access" ("user_id", "category_id")
-              VALUES (${userId}, ${parseInt(String(categoryId))})
-              ON CONFLICT ("user_id", "category_id") DO NOTHING
-            `);
-          } catch (err) {
-            console.warn(`Error inserting video category ${categoryId}:`, err);
-          }
-        }
-      }
-    } catch (accessError) {
-      console.error("Error saving category access:", accessError);
-      // Continue anyway - user creation succeeded
+    
+    // Create user
+    const newUser = await db.insert(users).values(userData).returning();
+    const userId = newUser[0].id;
+    
+    // Create category access records
+    const accessPromises = [];
+    
+    // Audio access
+    if (audioCategoryIds.length > 0) {
+      const audioAccessData = audioCategoryIds.map((categoryId: number) => ({
+        userId,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userAudioAccess).values(audioAccessData));
     }
     
-    return NextResponse.json({
-      ...insertedUser[0],
+    // PDF access
+    if (pdfCategoryIds.length > 0) {
+      const pdfAccessData = pdfCategoryIds.map((categoryId: number) => ({
+        userId,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userPdfAccess).values(pdfAccessData));
+    }
+    
+    // Video access
+    if (videoCategoryIds.length > 0) {
+      const videoAccessData = videoCategoryIds.map((categoryId: number) => ({
+        userId,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userVideoAccess).values(videoAccessData));
+    }
+    
+    // Audio Cloud access
+    if (audioCloudCategoryIds.length > 0) {
+      const audioCloudAccessData = audioCloudCategoryIds.map((categoryId: number) => ({
+        userId,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userAudioCloudAccess).values(audioCloudAccessData));
+    }
+    
+    // PDF Cloud access
+    if (pdfCloudCategoryIds.length > 0) {
+      const pdfCloudAccessData = pdfCloudCategoryIds.map((categoryId: number) => ({
+        userId,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userPdfCloudAccess).values(pdfCloudAccessData));
+    }
+    
+    // File Cloud access
+    if (fileCloudCategoryIds.length > 0) {
+      const fileCloudAccessData = fileCloudCategoryIds.map((categoryId: number) => ({
+        userId,
+        categoryId
+      }));
+      accessPromises.push(db.insert(userFileCloudAccess).values(fileCloudAccessData));
+    }
+    
+    // Execute all access insertions
+    await Promise.all(accessPromises);
+    
+    // Return user with category access
+    const userWithAccess = {
+      ...newUser[0],
       audioCategoryIds,
       pdfCategoryIds,
-      videoCategoryIds
-    });
+      videoCategoryIds,
+      audioCloudCategoryIds,
+      pdfCloudCategoryIds,
+      fileCloudCategoryIds
+    };
+    
+    return NextResponse.json(userWithAccess);
   } catch (error) {
     console.error("Error creating user:", error);
     return NextResponse.json(

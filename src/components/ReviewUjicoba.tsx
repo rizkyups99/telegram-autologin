@@ -1,17 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Card, CardContent } from './ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Label } from './ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
-import { Search, AlertCircle, Loader } from 'lucide-react';
-
-// Import preview components
+import { Search, User, AudioLines, FileText, Video, Music, Cloud, HardDrive, Loader2 } from 'lucide-react';
+import AudioPreview from './preview/audio/AudioPreview';
 import PDFPreview from './preview/pdf/PDFPreview';
 import VideoPreview from './preview/video/VideoPreview';
-import AudioPreview from './preview/audio/AudioPreview';
+import AudioCloudPreview from './preview/cloud/AudioCloudPreview';
+import PDFCloudPreview from './preview/cloud/PDFCloudPreview';
+import FileCloudPreview from './preview/cloud/FileCloudPreview';
 interface User {
   id: number;
   username: string;
@@ -24,30 +25,50 @@ interface Category {
   id: number;
   name: string;
 }
+interface CategoryAccess {
+  audio: Array<{
+    categoryId: number;
+    categoryName: string;
+  }>;
+  pdf: Array<{
+    categoryId: number;
+    categoryName: string;
+  }>;
+  video: Array<{
+    categoryId: number;
+    categoryName: string;
+  }>;
+  audioCloud: Array<{
+    categoryId: number;
+    categoryName: string;
+  }>;
+  pdfCloud: Array<{
+    categoryId: number;
+    categoryName: string;
+  }>;
+  fileCloud: Array<{
+    categoryId: number;
+    categoryName: string;
+  }>;
+}
 export default function ReviewUjicoba() {
-  const [username, setUsername] = useState('');
+  const [searchUsername, setSearchUsername] = useState('');
+  const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [searchedUser, setSearchedUser] = useState<User | null>(null);
+  const [categoryAccess, setCategoryAccess] = useState<CategoryAccess>({
+    audio: [],
+    pdf: [],
+    video: [],
+    audioCloud: [],
+    pdfCloud: [],
+    fileCloud: []
+  });
+  const [isLoading, setIsLoading] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [categories, setCategories] = useState<Category[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
-
-  // Fetch categories on component mount
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await fetch('/api/categories');
-        if (!response.ok) throw new Error('Failed to fetch categories');
-        const data = await response.json();
-        setCategories(data);
-      } catch (err) {
-        console.error('Error fetching categories:', err);
-      }
-    };
-    fetchCategories();
-  }, []);
+  const [error, setError] = useState<string | null>(null);
   const handleSearch = async () => {
-    if (!username.trim()) {
+    if (!searchUsername.trim()) {
       setError('Harap masukkan username untuk mencari');
       return;
     }
@@ -56,18 +77,38 @@ export default function ReviewUjicoba() {
     setHasSearched(true);
     try {
       // Search for the user by username
-      const response = await fetch(`/api/users?username=${encodeURIComponent(username.trim())}`);
+      const response = await fetch(`/api/users?username=${encodeURIComponent(searchUsername.trim())}`);
       if (!response.ok) throw new Error('Failed to fetch user data');
       const users = await response.json();
 
       // Find the user with the matching username
-      const user = Array.isArray(users) ? users.find(u => u.username.toLowerCase() === username.trim().toLowerCase()) : null;
+      const user = Array.isArray(users) ? users.find(u => u.username.toLowerCase() === searchUsername.trim().toLowerCase()) : null;
       if (!user) {
-        setError(`Tidak ditemukan user dengan username "${username}"`);
+        setError(`Tidak ditemukan user dengan username "${searchUsername}"`);
         setSearchedUser(null);
+        setCategoryAccess({
+          audio: [],
+          pdf: [],
+          video: [],
+          audioCloud: [],
+          pdfCloud: [],
+          fileCloud: []
+        });
       } else {
         setSearchedUser(user);
+        setSelectedUser(user);
         setError(null);
+
+        // Fetch user's category access
+        try {
+          const accessResponse = await fetch(`/api/users/categories?userId=${user.id}`);
+          if (accessResponse.ok) {
+            const accessData = await accessResponse.json();
+            setCategoryAccess(accessData);
+          }
+        } catch (accessError) {
+          console.error('Error fetching user access:', accessError);
+        }
       }
     } catch (err) {
       console.error('Error searching for user:', err);
@@ -77,96 +118,184 @@ export default function ReviewUjicoba() {
       setIsSearching(false);
     }
   };
-  return <Card data-unique-id="a8cdd083-51c0-4a2c-b344-7b96843b922a" data-file-name="components/ReviewUjicoba.tsx">
-      <CardContent className="pt-6" data-unique-id="a2a49351-86ca-48e8-91c8-17186bd1a8cd" data-file-name="components/ReviewUjicoba.tsx">
-        <div className="mb-6" data-unique-id="86fc4522-fbe9-4dbf-82f4-0edf33819b93" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
-          <h2 className="text-2xl font-semibold mb-2" data-unique-id="cc9e2ba7-c696-4044-8e2f-43aa49150471" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="0a7efc5b-b42b-4dde-94f1-6db2e56b6a5d" data-file-name="components/ReviewUjicoba.tsx">Review Ujicoba</span></h2>
-          <p className="text-muted-foreground mb-6" data-unique-id="c4497745-2ddc-4644-b6db-8b54e35a239a" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="37b1df3c-f2dd-48cc-84e6-0d0754da2a89" data-file-name="components/ReviewUjicoba.tsx">
-            Lihat konten yang tersedia untuk pengguna tertentu berdasarkan akses kategori mereka
-          </span></p>
 
-          <div className="bg-muted p-4 rounded-md mb-6" data-unique-id="7544f7c7-d233-4fa6-aaa1-748b7d343d15" data-file-name="components/ReviewUjicoba.tsx">
-            <div className="grid grid-cols-3 gap-4" data-unique-id="7b81337c-9ab2-47e5-a2f4-a2aa2b71fa3c" data-file-name="components/ReviewUjicoba.tsx">
-              <div className="col-span-2" data-unique-id="222d3b7b-10b6-4e36-850c-bbfd5d80e642" data-file-name="components/ReviewUjicoba.tsx">
-                <Label htmlFor="username" className="block text-sm font-medium mb-1" data-unique-id="56ed5696-e353-464a-b4ae-1ba15d2e0e92" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="d0ce0514-b808-435e-9bd7-2e5ac2a0a21b" data-file-name="components/ReviewUjicoba.tsx">Username</span></Label>
-                <Input id="username" placeholder="Masukkan username untuk melihat konten yang tersedia" value={username} onChange={e => setUsername(e.target.value)} onKeyDown={e => {
-                if (e.key === 'Enter') {
-                  handleSearch();
-                }
-              }} data-unique-id="18ddc6fb-7246-44cd-99a6-de0ef8157496" data-file-name="components/ReviewUjicoba.tsx" />
-              </div>
-              <div className="flex items-end" data-unique-id="ebe3e678-0779-463f-808b-23a029431643" data-file-name="components/ReviewUjicoba.tsx">
-                <Button onClick={handleSearch} className="w-full" disabled={isSearching} data-unique-id="5244224e-3658-4fe9-8fc5-36f8d7e97296" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
-                  {isSearching ? <>
-                      <Loader className="h-4 w-4 mr-2 animate-spin" />
-                      Mencari...
-                    </> : <>
-                      <Search className="h-4 w-4 mr-2" />
-                      Cari User
-                    </>}
-                </Button>
-              </div>
+  // Calculate access counts
+  const accessCounts = {
+    audio: categoryAccess.audio.length,
+    pdf: categoryAccess.pdf.length,
+    video: categoryAccess.video.length,
+    audioCloud: categoryAccess.audioCloud.length,
+    pdfCloud: categoryAccess.pdfCloud.length,
+    fileCloud: categoryAccess.fileCloud.length
+  };
+  const hasAnyAccess = Object.values(accessCounts).some(count => count > 0);
+  return <div className="space-y-6" data-unique-id="acc3cf02-d4f5-491f-bb9b-90142d565d6e" data-file-name="components/ReviewUjicoba.tsx">
+      <Card data-unique-id="0c034cec-c72e-4a19-a13a-d9352a7273d1" data-file-name="components/ReviewUjicoba.tsx">
+        <CardHeader data-unique-id="dbfcc278-0f97-4f9f-b7cc-622f1c0b3134" data-file-name="components/ReviewUjicoba.tsx">
+          <CardTitle className="flex items-center space-x-2" data-unique-id="d2d3d153-294d-4415-ab70-e01b537c8d87" data-file-name="components/ReviewUjicoba.tsx">
+            <User className="h-5 w-5" />
+            <span data-unique-id="f4d6baa2-918b-482b-95bf-e1976a7f112a" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="e710ceff-aa8e-4902-a370-31bfe44f75a2" data-file-name="components/ReviewUjicoba.tsx">Review Ujicoba</span></span>
+          </CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="8f32650d-743c-4b72-8f5b-b7480767a569" data-file-name="components/ReviewUjicoba.tsx">
+            Lihat konten yang tersedia untuk pengguna tertentu berdasarkan akses kategori mereka
+          </span></CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6" data-unique-id="74f753cb-e999-4799-af70-a592da27cc67" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+          {/* Search Section */}
+          <div className="flex space-x-4" data-unique-id="f5292739-6249-4633-b302-7dc0eb4215c0" data-file-name="components/ReviewUjicoba.tsx">
+            <div className="flex-1" data-unique-id="e1b27f27-1a04-420e-88fc-76eb4029c200" data-file-name="components/ReviewUjicoba.tsx">
+              <Label htmlFor="search-username" data-unique-id="73ca5b7e-f310-4217-92ad-594ada0b3e64" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="3d4e4861-1a90-4084-a106-6cac1fd22263" data-file-name="components/ReviewUjicoba.tsx">Username</span></Label>
+              <Input id="search-username" value={searchUsername} onChange={e => setSearchUsername(e.target.value)} placeholder="Masukkan username (contoh: 628567899494)" onKeyPress={e => e.key === 'Enter' && handleSearch()} data-unique-id="c52638b6-cffa-43fe-ae36-9ae5a37b04fc" data-file-name="components/ReviewUjicoba.tsx" />
+            </div>
+            <div className="flex items-end" data-unique-id="e399fe9b-4543-4124-b301-c8af90a7baa1" data-file-name="components/ReviewUjicoba.tsx">
+              <Button onClick={handleSearch} disabled={isLoading} className="flex items-center space-x-2" data-unique-id="79c8489b-6144-4fbf-ad85-5574a9d28bcd" data-file-name="components/ReviewUjicoba.tsx">
+                <Search className="h-4 w-4" />
+                <span data-unique-id="c1d8ec98-7907-47ee-bc75-a3e6da96a690" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">{isLoading ? 'Mencari...' : 'Cari User'}</span>
+              </Button>
             </div>
           </div>
 
-          {error && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center mb-6" data-unique-id="510192a9-c8bc-42ae-93e8-fe6139a5bb46" data-file-name="components/ReviewUjicoba.tsx">
-              <AlertCircle className="h-5 w-5 mr-2" />
-              <span data-unique-id="8acd8dec-7432-4a1a-a9b8-13ec5a96fc0c" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">{error}</span>
+          {/* Error Message */}
+          {error && <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md" data-unique-id="27edb044-e297-4b19-a419-e25f60c25422" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+              {error}
             </div>}
 
-          {searchedUser && <div className="bg-green-50 text-green-800 p-3 rounded-md mb-6" data-unique-id="246d357b-6e7c-49ab-afa1-dd96a373588b" data-file-name="components/ReviewUjicoba.tsx">
-              <h3 className="font-semibold" data-unique-id="850a89c7-a042-49d0-93d8-d473f4dc2cc9" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="8c14a41b-2765-4c2c-a96b-a4ae244aab8a" data-file-name="components/ReviewUjicoba.tsx">User ditemukan:</span></h3>
-              <p data-unique-id="f8656865-0dbe-4598-9b5f-8b71681c17f0" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="cd66d8d2-56d4-4625-8e91-2661e7df6540" data-file-name="components/ReviewUjicoba.tsx">Username: </span>{searchedUser.username}</p>
-              <p data-unique-id="86100b45-c7d4-4ed3-939d-4836ecece101" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="115fb072-8a5c-4705-9cb8-e0fcb0684e1e" data-file-name="components/ReviewUjicoba.tsx">Nama: </span>{searchedUser.name || '-'}</p>
-              <p data-unique-id="e5d5e175-6c84-4d60-a470-a1de62469b7f" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="fd755261-1763-4227-ab50-369135d535b5" data-file-name="components/ReviewUjicoba.tsx">Total Akses Kategori: 
-                </span>{' '}<span className="editable-text" data-unique-id="b9898676-4e08-46cb-b1fe-3a08400656a4" data-file-name="components/ReviewUjicoba.tsx">Audio (</span>{searchedUser.audioCategoryIds?.length || 0}<span className="editable-text" data-unique-id="0f397d3c-f295-48b1-a2e5-18a696fb849c" data-file-name="components/ReviewUjicoba.tsx">), 
-                </span>{' '}<span className="editable-text" data-unique-id="ab7ad3c7-a959-42a0-9dfd-727834e86f1d" data-file-name="components/ReviewUjicoba.tsx">PDF (</span>{searchedUser.pdfCategoryIds?.length || 0}<span className="editable-text" data-unique-id="3d2d36ca-a53d-480f-8aef-47fba89dab5a" data-file-name="components/ReviewUjicoba.tsx">), 
-                </span>{' '}<span className="editable-text" data-unique-id="b9d95827-65d2-47ca-9708-c9578be7a643" data-file-name="components/ReviewUjicoba.tsx">Video (</span>{searchedUser.videoCategoryIds?.length || 0}<span className="editable-text" data-unique-id="a6605b42-512d-4d4b-b558-34dd05d0dce9" data-file-name="components/ReviewUjicoba.tsx">)
-              </span></p>
-            </div>}
+          {/* User Found Section */}
+          {searchedUser && <>
+              {/* User Info */}
+              <div className="bg-green-50 border border-green-200 p-4 rounded-md" data-unique-id="38fe22a2-7b06-4d30-981c-e56eecb950eb" data-file-name="components/ReviewUjicoba.tsx">
+                <h3 className="font-semibold text-green-800 mb-2" data-unique-id="5f20fea4-22a0-4a59-a582-562dd522cd39" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="4e9f0bc4-bac6-49ae-976f-fdd95dd6a1d6" data-file-name="components/ReviewUjicoba.tsx">User ditemukan:</span></h3>
+                <div className="space-y-1" data-unique-id="55d20ad0-e6ef-4c1b-8f50-e744558571c3" data-file-name="components/ReviewUjicoba.tsx">
+                  <p data-unique-id="835cd4f8-ae3b-454d-9c8c-9b678c6706e7" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true"><span className="font-medium" data-unique-id="73ef6282-981d-4e88-b865-1de8ae7eb199" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="27a6d296-df5b-4e07-95b8-af564041a962" data-file-name="components/ReviewUjicoba.tsx">Username:</span></span> {selectedUser.username}</p>
+                  <p data-unique-id="fb397770-9592-4064-85d3-109e345383cb" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true"><span className="font-medium" data-unique-id="8fc09dec-ea03-4bb1-84da-dc261007de3d" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="08313b1b-1fff-4ad1-9760-6184ad43e781" data-file-name="components/ReviewUjicoba.tsx">Nama:</span></span> {selectedUser.name}</p>
+                  <p data-unique-id="17148ab6-8ab1-4b63-862b-36ffc8a65791" data-file-name="components/ReviewUjicoba.tsx">
+                    <span className="font-medium" data-unique-id="2d5b473c-c63c-4d9c-ad4e-997b7de0f75c" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="c9dcf025-2a41-41d6-8b0b-5bde2da1eda8" data-file-name="components/ReviewUjicoba.tsx">Total Akses Kategori:</span></span> 
+                    <span className="ml-2" data-unique-id="19490abf-3b70-4242-b073-83e0c89d4372" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="c92ada81-32d5-402b-8eb2-1ee1c73f657b" data-file-name="components/ReviewUjicoba.tsx">
+                      Audio (</span>{accessCounts.audio}<span className="editable-text" data-unique-id="50a0d8db-2a4f-4f5f-9e5d-1a857a7b7e99" data-file-name="components/ReviewUjicoba.tsx">), 
+                      PDF (</span>{accessCounts.pdf}<span className="editable-text" data-unique-id="382c3f3b-6650-4fb2-bb97-d5fda5802a04" data-file-name="components/ReviewUjicoba.tsx">), 
+                      Video (</span>{accessCounts.video}<span className="editable-text" data-unique-id="555b7d8a-6c85-4b0c-96df-724b01eff7c9" data-file-name="components/ReviewUjicoba.tsx">), 
+                      Audio Cloud (</span>{accessCounts.audioCloud}<span className="editable-text" data-unique-id="ea90a7a1-07c2-45e6-bc1b-d75c79479f2d" data-file-name="components/ReviewUjicoba.tsx">), 
+                      PDF Cloud (</span>{accessCounts.pdfCloud}<span className="editable-text" data-unique-id="b6f6b0d3-f17f-44b1-9f3b-76e3e606becc" data-file-name="components/ReviewUjicoba.tsx">), 
+                      File Cloud (</span>{accessCounts.fileCloud}<span className="editable-text" data-unique-id="b21dd029-0355-465b-9feb-5d9aea1da10b" data-file-name="components/ReviewUjicoba.tsx">)
+                    </span></span>
+                  </p>
+                </div>
+              </div>
 
-          {(searchedUser || hasSearched) && <Tabs defaultValue="audio" className="w-full" data-unique-id="bf14dd15-ff9e-41cd-a9cf-ff17020bb10a" data-file-name="components/ReviewUjicoba.tsx">
-              <TabsList className="mb-6">
-                <TabsTrigger value="audio"><span className="editable-text" data-unique-id="216d4092-3909-4f69-9b66-89511015d25c" data-file-name="components/ReviewUjicoba.tsx">Audio</span></TabsTrigger>
-                <TabsTrigger value="pdf"><span className="editable-text" data-unique-id="0d0cb5c2-769b-4730-bcdd-3d60b335a5aa" data-file-name="components/ReviewUjicoba.tsx">PDF</span></TabsTrigger>
-                <TabsTrigger value="video"><span className="editable-text" data-unique-id="fb4e3ee6-fbf6-4d2a-a72b-e3cad01d6aac" data-file-name="components/ReviewUjicoba.tsx">Video</span></TabsTrigger>
-              </TabsList>
-              
-              <TabsContent value="audio">
-                {searchedUser ? searchedUser.audioCategoryIds && searchedUser.audioCategoryIds.length > 0 ? <AudioPreview filterCategoryIds={searchedUser.audioCategoryIds} /> : <div className="text-center py-12 text-muted-foreground" data-unique-id="15666cbe-3e1e-4592-b6d7-5e239d12a52a" data-file-name="components/ReviewUjicoba.tsx">
-                      <p className="text-lg mb-2" data-unique-id="9201c4d1-bc4e-42a8-9a21-ad97aa8d37fa" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="504900f4-c2a4-4add-a60b-52cd24120856" data-file-name="components/ReviewUjicoba.tsx">Tidak ada akses kategori audio</span></p>
-                      <p data-unique-id="a0d48cb0-58d2-4f24-ac59-50cd224b1157" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="b4a9a569-2569-45bb-8a99-13f7d081e81e" data-file-name="components/ReviewUjicoba.tsx">User ini tidak memiliki akses ke kategori audio manapun</span></p>
-                    </div> : hasSearched && <div className="text-center py-12 text-muted-foreground" data-unique-id="c91360bf-0df4-40a2-877d-5674f6c57bd9" data-file-name="components/ReviewUjicoba.tsx">
-                    <p data-unique-id="e3009ad1-1a81-4dde-98b1-5f6cf09cc65a" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="54c10437-162b-42fb-968d-1f1564c6e247" data-file-name="components/ReviewUjicoba.tsx">Silakan cari user terlebih dahulu</span></p>
-                  </div>}
-              </TabsContent>
-              
-              <TabsContent value="pdf">
-                {searchedUser ? searchedUser.pdfCategoryIds && searchedUser.pdfCategoryIds.length > 0 ? <UserContentPreview type="pdf" userId={searchedUser.id} categoryIds={searchedUser.pdfCategoryIds} categories={categories} /> : <div className="text-center py-12 text-muted-foreground" data-unique-id="b84ac6b0-103a-4b4b-b20b-5c7f9cf13acf" data-file-name="components/ReviewUjicoba.tsx">
-                      <p className="text-lg mb-2" data-unique-id="edd2ecf8-cf6d-438f-bb3e-dae38d03a167" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="f318b980-4e71-4c24-865b-90908a5d8763" data-file-name="components/ReviewUjicoba.tsx">Tidak ada akses kategori PDF</span></p>
-                      <p data-unique-id="3b8390a9-6f4d-49ef-8dbe-8565a9cfe63e" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="daffa0ab-c7b0-48dd-9384-35a740f927cf" data-file-name="components/ReviewUjicoba.tsx">User ini tidak memiliki akses ke kategori PDF manapun</span></p>
-                    </div> : hasSearched && <div className="text-center py-12 text-muted-foreground" data-unique-id="b9b02e0a-1900-4ddd-8c06-4376382a4bc0" data-file-name="components/ReviewUjicoba.tsx">
-                    <p data-unique-id="cc370dc2-c616-470e-8884-3c13d30978cf" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="9c8f53d0-1681-44f4-9440-8ebdba1d7bf0" data-file-name="components/ReviewUjicoba.tsx">Silakan cari user terlebih dahulu</span></p>
-                  </div>}
-              </TabsContent>
-              
-              <TabsContent value="video">
-                {searchedUser ? searchedUser.videoCategoryIds && searchedUser.videoCategoryIds.length > 0 ? <UserContentPreview type="video" userId={searchedUser.id} categoryIds={searchedUser.videoCategoryIds} categories={categories} /> : <div className="text-center py-12 text-muted-foreground" data-unique-id="0ae59f24-910a-48c4-8b7c-2b6c9dd4d8a1" data-file-name="components/ReviewUjicoba.tsx">
-                      <p className="text-lg mb-2" data-unique-id="362d05fe-825e-4027-a537-646f2e67bd48" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="a4eec85e-8cd1-4a5e-b5cf-0f73ad2bab35" data-file-name="components/ReviewUjicoba.tsx">Tidak ada akses kategori video</span></p>
-                      <p data-unique-id="6c30e267-68dd-4778-a8ad-4b4efb618f0d" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="31749383-f005-44aa-be9d-aa7c3273736a" data-file-name="components/ReviewUjicoba.tsx">User ini tidak memiliki akses ke kategori video manapun</span></p>
-                    </div> : hasSearched && <div className="text-center py-12 text-muted-foreground" data-unique-id="3dc9d9c7-a50a-4fa5-b32a-dc0ea5f8a3ac" data-file-name="components/ReviewUjicoba.tsx">
-                    <p data-unique-id="c99dc4da-0eaf-4e90-ac5b-0e61086ccee5" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="af3cc02a-c603-46cd-8934-c8980ac30f64" data-file-name="components/ReviewUjicoba.tsx">Silakan cari user terlebih dahulu</span></p>
-                  </div>}
-              </TabsContent>
-            </Tabs>}
+              {/* Access Information Card */}
+              <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200" data-unique-id="92bf6edf-bd75-400f-bd61-973b5491fdfe" data-file-name="components/ReviewUjicoba.tsx">
+                <CardHeader data-unique-id="e3533641-a979-4276-9c1c-c1081ad7fc80" data-file-name="components/ReviewUjicoba.tsx">
+                  <CardTitle className="text-blue-800 flex items-center space-x-2" data-unique-id="73e1e1e9-f9ff-4fff-9142-5c7c3196698b" data-file-name="components/ReviewUjicoba.tsx">
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center" data-unique-id="62739d46-f5b4-4292-83d0-11861190de36" data-file-name="components/ReviewUjicoba.tsx">
+                      <User className="h-5 w-5 text-white" />
+                    </div>
+                    <span data-unique-id="fc34ca56-8f30-4653-a534-b7528bb4219c" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="7ce15069-d055-4ee0-bf13-e7e89539b6da" data-file-name="components/ReviewUjicoba.tsx">Akses Kategori User</span></span>
+                  </CardTitle>
+                  <CardDescription className="text-blue-700"><span className="editable-text" data-unique-id="b03aa1c5-16c4-43b6-85ee-1de4cb71f0b9" data-file-name="components/ReviewUjicoba.tsx">
+                    Berikut adalah kategori konten yang dapat diakses oleh user ini
+                  </span></CardDescription>
+                </CardHeader>
+                <CardContent data-unique-id="be80d7de-524f-46ce-9267-379dad8d8490" data-file-name="components/ReviewUjicoba.tsx">
+                  <div className="bg-white p-4 rounded-lg border border-blue-200" data-unique-id="28e16384-531f-41f1-8673-5c199b0d5054" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                    <p className="text-lg font-semibold text-gray-800 mb-2" data-unique-id="681e5f36-d67b-41d3-94bf-14942fd95730" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="d1e0f9b3-8125-479a-b320-bffb65d6ca68" data-file-name="components/ReviewUjicoba.tsx">
+                      User Memiliki Akses:
+                    </span></p>
+                    <div className="flex flex-wrap gap-3" data-unique-id="2eac33c5-d7a5-4f97-b4cc-38a515df93cd" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                      {accessCounts.audio > 0 && <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800" data-unique-id="655ffbbb-0cfb-4048-acc4-cf5bf5d7db6f" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                          <AudioLines className="h-4 w-4 mr-1" /><span className="editable-text" data-unique-id="886a2e32-e19d-417a-aaca-c3f10c5894a2" data-file-name="components/ReviewUjicoba.tsx">
+                          Audio (</span>{accessCounts.audio}<span className="editable-text" data-unique-id="ed7b36ba-c72b-4458-b842-61a41a2d46dd" data-file-name="components/ReviewUjicoba.tsx">)
+                        </span></span>}
+                      {accessCounts.pdf > 0 && <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800" data-unique-id="21b1fb8b-db5c-48d8-a6f7-8c46751d0b52" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                          <FileText className="h-4 w-4 mr-1" /><span className="editable-text" data-unique-id="a1b33b53-34ff-42db-9408-08bab476c6af" data-file-name="components/ReviewUjicoba.tsx">
+                          PDF (</span>{accessCounts.pdf}<span className="editable-text" data-unique-id="d1ea78c3-7f74-4f71-bbec-a808862e9fa0" data-file-name="components/ReviewUjicoba.tsx">)
+                        </span></span>}
+                      {accessCounts.video > 0 && <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800" data-unique-id="eb9610a6-0431-4a06-b2ba-e148d3e34ef1" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                          <Video className="h-4 w-4 mr-1" /><span className="editable-text" data-unique-id="03c554b0-d8ea-40ae-9639-4c35d1fa71fa" data-file-name="components/ReviewUjicoba.tsx">
+                          Video (</span>{accessCounts.video}<span className="editable-text" data-unique-id="00e419a7-1f80-452c-926f-d8a1d9bd612c" data-file-name="components/ReviewUjicoba.tsx">)
+                        </span></span>}
+                      {accessCounts.audioCloud > 0 && <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-cyan-100 text-cyan-800" data-unique-id="99abc362-61ae-465b-9982-e0e79424dbe0" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                          <Music className="h-4 w-4 mr-1" /><span className="editable-text" data-unique-id="dcf21063-ce75-4262-b19a-8214fddabc70" data-file-name="components/ReviewUjicoba.tsx">
+                          Audio Cloud (</span>{accessCounts.audioCloud}<span className="editable-text" data-unique-id="8cfcdd37-2c41-4c9c-a944-186932d346a3" data-file-name="components/ReviewUjicoba.tsx">)
+                        </span></span>}
+                      {accessCounts.pdfCloud > 0 && <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800" data-unique-id="699274ad-023d-4022-a500-0680e9ff7f1a" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                          <Cloud className="h-4 w-4 mr-1" /><span className="editable-text" data-unique-id="9661189c-44fd-4553-bf0d-a513e7a3f60d" data-file-name="components/ReviewUjicoba.tsx">
+                          PDF Cloud (</span>{accessCounts.pdfCloud}<span className="editable-text" data-unique-id="3e29db05-eb55-4214-a9b4-efe7b27df51d" data-file-name="components/ReviewUjicoba.tsx">)
+                        </span></span>}
+                      {accessCounts.fileCloud > 0 && <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800" data-unique-id="343cc4b5-aad3-42ce-8753-93f3f68ab156" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                          <HardDrive className="h-4 w-4 mr-1" /><span className="editable-text" data-unique-id="4fc99eae-c4fc-48ba-9c93-942812b184fe" data-file-name="components/ReviewUjicoba.tsx">
+                          File Cloud (</span>{accessCounts.fileCloud}<span className="editable-text" data-unique-id="88a69c6f-6ad3-40d6-a5dd-ea73490a7996" data-file-name="components/ReviewUjicoba.tsx">)
+                        </span></span>}
+                    </div>
+                    {!hasAnyAccess && <p className="text-gray-600 italic" data-unique-id="524b8c7d-ade7-4565-ac79-492e1e95e412" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="7d89abc9-edcb-460f-a7a5-37cf0a40766f" data-file-name="components/ReviewUjicoba.tsx">
+                        User ini belum memiliki akses ke kategori apapun.
+                      </span></p>}
+                  </div>
+                </CardContent>
+              </Card>
 
-          {!hasSearched && <div className="text-center py-12 text-muted-foreground" data-unique-id="f07ebdd0-48bc-4f70-8dc6-d0fdb0aff413" data-file-name="components/ReviewUjicoba.tsx">
-              <p className="text-lg mb-2" data-unique-id="f6ddf2d6-4594-44b1-aff8-17d8b7c6db21" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="47db85df-4458-4bce-9a99-d85f2f25681c" data-file-name="components/ReviewUjicoba.tsx">Masukkan username untuk melihat konten</span></p>
-              <p data-unique-id="e68dfc3d-f05c-4d12-a705-6c3ef242a772" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="d4b8bc92-b37f-40f2-b36b-251bb249b7b7" data-file-name="components/ReviewUjicoba.tsx">Ketik username dan klik tombol "Cari User" untuk melihat konten yang tersedia untuk user tersebut</span></p>
-            </div>}
-        </div>
-      </CardContent>
-    </Card>;
+              {/* Content Preview */}
+              {hasAnyAccess && <Card data-unique-id="e868f57d-71cc-41a1-9da3-40569f493fa6" data-file-name="components/ReviewUjicoba.tsx">
+                  <CardContent className="p-6" data-unique-id="7476c4f7-5fef-47b5-b073-63b686a1c6a3" data-file-name="components/ReviewUjicoba.tsx">
+                    <Tabs defaultValue="audio" className="w-full" data-unique-id="87aa892a-1a9d-4049-9aaa-fe60819607cf" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+                      {/* TabsList with all available tabs */}
+                      <TabsList className="grid grid-cols-3 lg:grid-cols-6 gap-1 h-auto p-2 bg-gray-100">
+                        {accessCounts.audio > 0 && <TabsTrigger value="audio" className="flex flex-col items-center p-3 text-xs lg:text-sm data-[state=active]:bg-blue-500 data-[state=active]:text-white">
+                            <AudioLines className="h-4 w-4 mb-1" />
+                            <span data-unique-id="6724c672-ad41-4698-ba0e-1522e74fbfaf" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="77ce7a5b-7754-4b95-85a2-e2cadb9b4982" data-file-name="components/ReviewUjicoba.tsx">Audio</span></span>
+                          </TabsTrigger>}
+                        {accessCounts.pdf > 0 && <TabsTrigger value="pdf" className="flex flex-col items-center p-3 text-xs lg:text-sm data-[state=active]:bg-red-500 data-[state=active]:text-white">
+                            <FileText className="h-4 w-4 mb-1" />
+                            <span data-unique-id="497ab79e-13d2-447e-b578-696d7a31e5f0" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="77574afe-097f-4111-bf03-9c65f23df067" data-file-name="components/ReviewUjicoba.tsx">PDF</span></span>
+                          </TabsTrigger>}
+                        {accessCounts.video > 0 && <TabsTrigger value="video" className="flex flex-col items-center p-3 text-xs lg:text-sm data-[state=active]:bg-purple-500 data-[state=active]:text-white">
+                            <Video className="h-4 w-4 mb-1" />
+                            <span data-unique-id="611e57be-a371-4899-a3fe-87785099e237" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="39875b35-b6b9-4797-8268-b103c02d5d51" data-file-name="components/ReviewUjicoba.tsx">Video</span></span>
+                          </TabsTrigger>}
+                        {accessCounts.audioCloud > 0 && <TabsTrigger value="audioCloud" className="flex flex-col items-center p-3 text-xs lg:text-sm data-[state=active]:bg-cyan-500 data-[state=active]:text-white">
+                            <Music className="h-4 w-4 mb-1" />
+                            <span className="text-center" data-unique-id="e3c2f208-5d20-4d0c-8ca8-8585c46e51e4" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="7b40173e-4a5b-4790-845e-10bd72fdb8e4" data-file-name="components/ReviewUjicoba.tsx">Audio</span><br data-unique-id="a6196314-aff4-4537-bf94-f8373020462b" data-file-name="components/ReviewUjicoba.tsx" /><span className="editable-text" data-unique-id="ea116c78-2125-4c46-a0c7-fe417b3e807f" data-file-name="components/ReviewUjicoba.tsx">Cloud</span></span>
+                          </TabsTrigger>}
+                        {accessCounts.pdfCloud > 0 && <TabsTrigger value="pdfCloud" className="flex flex-col items-center p-3 text-xs lg:text-sm data-[state=active]:bg-orange-500 data-[state=active]:text-white">
+                            <Cloud className="h-4 w-4 mb-1" />
+                            <span className="text-center" data-unique-id="2daf20f1-aeb4-41a1-970c-d6d256e73b2e" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="db09dd0a-9e2b-4549-8703-338c315abca6" data-file-name="components/ReviewUjicoba.tsx">PDF</span><br data-unique-id="9ed9d68e-90a2-4c50-9b65-c9fa2c1d2c35" data-file-name="components/ReviewUjicoba.tsx" /><span className="editable-text" data-unique-id="bac95618-c9f5-4b74-b716-0c02ef28da2a" data-file-name="components/ReviewUjicoba.tsx">Cloud</span></span>
+                          </TabsTrigger>}
+                        {accessCounts.fileCloud > 0 && <TabsTrigger value="fileCloud" className="flex flex-col items-center p-3 text-xs lg:text-sm data-[state=active]:bg-gray-500 data-[state=active]:text-white">
+                            <HardDrive className="h-4 w-4 mb-1" />
+                            <span className="text-center" data-unique-id="5b236717-fc83-45e3-a23f-f8c14bd54d5b" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="53b08b1b-b322-4699-8ef3-9d22693ce2ca" data-file-name="components/ReviewUjicoba.tsx">File</span><br data-unique-id="70c6bc77-9bee-48f4-a9ec-f763234adfb5" data-file-name="components/ReviewUjicoba.tsx" /><span className="editable-text" data-unique-id="e687c1fc-5e62-4db4-8544-7a70beb5e19c" data-file-name="components/ReviewUjicoba.tsx">Cloud</span></span>
+                          </TabsTrigger>}
+                      </TabsList>
+
+                      {/* Tab Contents */}
+                      {accessCounts.audio > 0 && <TabsContent value="audio" className="mt-6">
+                          <AudioPreview filterCategoryIds={categoryAccess.audio.map(a => a.categoryId)} />
+                        </TabsContent>}
+
+                      {accessCounts.pdf > 0 && <TabsContent value="pdf" className="mt-6">
+                          <PDFPreview filterCategoryIds={categoryAccess.pdf.map(p => p.categoryId)} />
+                        </TabsContent>}
+
+                      {accessCounts.video > 0 && <TabsContent value="video" className="mt-6">
+                          <VideoPreview filterCategoryIds={categoryAccess.video.map(v => v.categoryId)} />
+                        </TabsContent>}
+
+                      {accessCounts.audioCloud > 0 && <TabsContent value="audioCloud" className="mt-6">
+                          <AudioCloudPreview filterCategoryIds={categoryAccess.audioCloud.map(a => a.categoryId)} />
+                        </TabsContent>}
+
+                      {accessCounts.pdfCloud > 0 && <TabsContent value="pdfCloud" className="mt-6">
+                          <PDFCloudPreview filterCategoryIds={categoryAccess.pdfCloud.map(p => p.categoryId)} />
+                        </TabsContent>}
+
+                      {accessCounts.fileCloud > 0 && <TabsContent value="fileCloud" className="mt-6">
+                          <FileCloudPreview filterCategoryIds={categoryAccess.fileCloud.map(f => f.categoryId)} />
+                        </TabsContent>}
+                    </Tabs>
+                  </CardContent>
+                </Card>}
+            </>}
+        </CardContent>
+      </Card>
+    </div>;
 }
 interface UserContentPreviewProps {
   type: 'audio' | 'pdf' | 'video';
@@ -192,14 +321,14 @@ function UserContentPreview({
     return () => clearTimeout(timer);
   }, []);
   if (isLoading) {
-    return <div className="flex justify-center py-8" data-unique-id="4070740a-2aca-4c3c-8896-dfc225163e43" data-file-name="components/ReviewUjicoba.tsx">
-        <Loader className="h-8 w-8 animate-spin text-primary" />
+    return <div className="flex justify-center py-8" data-unique-id="44917f98-14f2-48a6-9a95-7bbc181f56b1" data-file-name="components/ReviewUjicoba.tsx">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
       </div>;
   }
-  return <div data-unique-id="236d4e3f-0b26-403c-aa37-737fd70fa735" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
-      <div className="bg-blue-50 text-blue-800 p-3 mb-6 rounded-md" data-unique-id="506f8c2a-2b8d-488a-bdbe-472af504f4bc" data-file-name="components/ReviewUjicoba.tsx">
-        <p className="font-semibold mb-1" data-unique-id="ae4d5e88-76d0-4b87-9a31-23fb75d1183d" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="9203991f-a0d6-437f-84e9-519a55bfd775" data-file-name="components/ReviewUjicoba.tsx">Kategori yang dapat diakses:</span></p>
-        <p data-unique-id="4dfa8b4e-e035-4af0-b967-9e53867ecc8d" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">{categoryNames || 'Tidak ada kategori akses'}</p>
+  return <div data-unique-id="85f2f848-d12e-4e40-9836-1f0fc0d00ecb" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">
+      <div className="bg-blue-50 text-blue-800 p-3 mb-6 rounded-md" data-unique-id="107a4760-0137-4eff-bdbd-2ccdfcd240bd" data-file-name="components/ReviewUjicoba.tsx">
+        <p className="font-semibold mb-1" data-unique-id="ebcaa6f0-c713-49ed-b535-c8dfa358dc2b" data-file-name="components/ReviewUjicoba.tsx"><span className="editable-text" data-unique-id="f2809787-6ac3-436d-8dcc-93b3c24577b5" data-file-name="components/ReviewUjicoba.tsx">Kategori yang dapat diakses:</span></p>
+        <p data-unique-id="e0f86532-5767-4c9e-9143-7239c1bb7658" data-file-name="components/ReviewUjicoba.tsx" data-dynamic-text="true">{categoryNames || 'Tidak ada kategori akses'}</p>
       </div>
 
       {type === 'pdf' && <PDFPreview filterCategoryIds={categoryIds} />}

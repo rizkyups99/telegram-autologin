@@ -69,9 +69,9 @@ export default function VideoPreview({
   const handleViewVideo = (video: Video) => {
     setSelectedVideo(video);
   };
-  return <Card data-unique-id="30a0ab95-0f60-4f1f-9eae-e506365c5e0e" data-file-name="components/preview/video/VideoPreview.tsx">
-      <CardContent className="p-6" data-unique-id="74b34bf6-de30-4e25-a770-39b0fc0e6fab" data-file-name="components/preview/video/VideoPreview.tsx">
-        <div className="w-full" data-unique-id="2038d5a3-b4ad-4f47-9027-33c4ed9770c0" data-file-name="components/preview/video/VideoPreview.tsx" data-dynamic-text="true">
+  return <Card data-unique-id="6fc1c491-0c40-47e6-bcbf-a2af9c822842" data-file-name="components/preview/video/VideoPreview.tsx">
+      <CardContent className="p-6" data-unique-id="0779a239-94ad-4e5c-8231-8ed83575b668" data-file-name="components/preview/video/VideoPreview.tsx">
+        <div className="w-full" data-unique-id="391885b4-414c-4c1c-902a-24b1fbddf635" data-file-name="components/preview/video/VideoPreview.tsx" data-dynamic-text="true">
           {isLoading ? <VideoLoadingIndicator /> : categories.length === 0 ? <EmptyVideoList /> : <VideoList categories={categories} onSelectVideo={handleViewVideo} />}
         </div>
       </CardContent>

@@ -69,6 +69,7 @@ export const categories = pgTable('categories', {
   id: serial('id').primaryKey(),
   name: text('name').notNull().unique(),
   description: text('description'),
+  filter: text('filter'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
@@ -196,29 +197,48 @@ export type WhatsappSetting = InferSelectModel<typeof whatsappSettings>;
 export type NewWhatsappSetting = InferInsertModel<typeof whatsappSettings>;
 
 // User access tables for category filtering
-// User access tables for category filtering - use 'if not exists' approach via direct SQL for these
+// User access tables for category filtering - using composite primary keys to avoid constraint conflicts
 export const userAudioAccess = pgTable('user_audio_access', {
-  id: serial('id').primaryKey(),
   userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   categoryId: integer('category_id').notNull().references(() => categories.id),
 }, (table) => [
-  uniqueIndex('user_audio_cat_idx').on(table.userId, table.categoryId)
+  primaryKey({ columns: [table.userId, table.categoryId] }),
 ]);
 
 export const userPdfAccess = pgTable('user_pdf_access', {
-  id: serial('id').primaryKey(),
   userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   categoryId: integer('category_id').notNull().references(() => categories.id),
 }, (table) => [
-  uniqueIndex('user_pdf_cat_idx').on(table.userId, table.categoryId)
+  primaryKey({ columns: [table.userId, table.categoryId] }),
 ]);
 
 export const userVideoAccess = pgTable('user_video_access', {
-  id: serial('id').primaryKey(),
   userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   categoryId: integer('category_id').notNull().references(() => categories.id),
 }, (table) => [
-  uniqueIndex('user_video_cat_idx').on(table.userId, table.categoryId)
+  primaryKey({ columns: [table.userId, table.categoryId] }),
+]);
+
+// Cloud access tables
+export const userAudioCloudAccess = pgTable('user_audio_cloud_access', {
+  userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  categoryId: integer('category_id').notNull().references(() => categories.id),
+}, (table) => [
+  primaryKey({ columns: [table.userId, table.categoryId] }),
+]);
+
+export const userPdfCloudAccess = pgTable('user_pdf_cloud_access', {
+  userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  categoryId: integer('category_id').notNull().references(() => categories.id),
+}, (table) => [
+  primaryKey({ columns: [table.userId, table.categoryId] }),
+]);
+
+export const userFileCloudAccess = pgTable('user_file_cloud_access', {
+  userId: integer('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  categoryId: integer('category_id').notNull().references(() => categories.id),
+}, (table) => [
+  primaryKey({ columns: [table.userId, table.categoryId] }),
 ]);
 
 // Define types for user access
@@ -228,6 +248,12 @@ export type UserPdfAccess = InferSelectModel<typeof userPdfAccess>;
 export type NewUserPdfAccess = InferInsertModel<typeof userPdfAccess>;
 export type UserVideoAccess = InferSelectModel<typeof userVideoAccess>;
 export type NewUserVideoAccess = InferInsertModel<typeof userVideoAccess>;
+export type UserAudioCloudAccess = InferSelectModel<typeof userAudioCloudAccess>;
+export type NewUserAudioCloudAccess = InferInsertModel<typeof userAudioCloudAccess>;
+export type UserPdfCloudAccess = InferSelectModel<typeof userPdfCloudAccess>;
+export type NewUserPdfCloudAccess = InferInsertModel<typeof userPdfCloudAccess>;
+export type UserFileCloudAccess = InferSelectModel<typeof userFileCloudAccess>;
+export type NewUserFileCloudAccess = InferInsertModel<typeof userFileCloudAccess>;
 
 export type Video = InferSelectModel<typeof videos>;
 export type NewVideo = InferInsertModel<typeof videos>;

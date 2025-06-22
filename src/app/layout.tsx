@@ -25,11 +25,11 @@ export const viewport = {
 };
 export const metadata: Metadata = {
   title: {
-    default: "Langit Digital",
-    template: "%s | Langit Digital"
+    default: "Creatr",
+    template: "%s | Creatr"
   },
-  description: "Langit Digital Platform",
-  applicationName: "Langit Digital",
+  description: "A modern web application built with Next.js and TypeScript",
+  applicationName: "Creatr",
   keywords: ["next.js", "react", "typescript", "web application"],
   authors: [{
     name: "Creatr Team"
@@ -71,9 +71,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <html lang="en" className={`${GeistSans.variable}`} data-unique-id="d77501d9-5923-45cb-a1de-79d887efc6ca" data-file-name="app/layout.tsx">
+  return <html lang="en" className={`${GeistSans.variable}`} data-unique-id="82a262e9-87b7-4991-bf87-74e4d3cf03e9" data-file-name="app/layout.tsx">
       
-  <body data-unique-id="ffb5c47b-93c4-4cd9-80da-26653c006509" data-file-name="app/layout.tsx" data-dynamic-text="true">{children}</body>
+  <body data-unique-id="a518038d-4e4a-4412-b547-ccece786e038" data-file-name="app/layout.tsx" data-dynamic-text="true">{children}</body>
 
     </html>;
 }

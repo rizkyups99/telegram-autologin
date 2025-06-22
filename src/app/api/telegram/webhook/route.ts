@@ -27,14 +27,43 @@ function extractCustomerName(message: string): string | null {
 
 // Function to extract category info from message
 function extractCategory(message: string, type: string): string | null {
-  // New format has categories potentially with multiple values separated by commas
-  const regex = new RegExp(`Kategori ${type}\\s*:\\s*([^\\n]+)`, 'i');
-  const match = message.match(regex);
-  if (!match) return null;
+  // Handle both regular and cloud categories
+  const patterns = [
+    new RegExp(`Kategori ${type}\\s*:\\s*([^\\n]+)`, 'i'),
+    new RegExp(`${type} Kategori\\s*:\\s*([^\\n]+)`, 'i'),
+    new RegExp(`${type}\\s*:\\s*([^\\n]+)`, 'i')
+  ];
   
-  const categoryText = match[1].trim();
-  // Return null for empty categories
-  return categoryText === "" ? null : categoryText;
+  for (const regex of patterns) {
+    const match = message.match(regex);
+    if (match && match[1]) {
+      const categoryText = match[1].trim();
+      // Return null for empty categories
+      return categoryText === "" ? null : categoryText;
+    }
+  }
+  
+  return null;
+}
+
+// Function to extract cloud category info from message
+function extractCloudCategory(message: string, type: string): string | null {
+  const patterns = [
+    new RegExp(`Kategori ${type} Cloud\\s*:\\s*([^\\n]+)`, 'i'),
+    new RegExp(`${type} Cloud Kategori\\s*:\\s*([^\\n]+)`, 'i'),
+    new RegExp(`${type} Cloud\\s*:\\s*([^\\n]+)`, 'i'),
+    new RegExp(`Cloud ${type}\\s*:\\s*([^\\n]+)`, 'i')
+  ];
+  
+  for (const regex of patterns) {
+    const match = message.match(regex);
+    if (match && match[1]) {
+      const categoryText = match[1].trim();
+      return categoryText === "" ? null : categoryText;
+    }
+  }
+  
+  return null;
 }
 
 // Debug log function
@@ -149,7 +178,19 @@ async function createUserFromMessage(phoneNumber: string | null, customerName: s
     const pdfCategory = extractCategory(message, "PDF");
     const videoCategory = extractCategory(message, "Video");
     
-    logDebug("Extracted categories:", { audioCategory, pdfCategory, videoCategory });
+    // Extract cloud category information
+    const audioCloudCategory = extractCloudCategory(message, "Audio");
+    const pdfCloudCategory = extractCloudCategory(message, "PDF");  
+    const fileCloudCategory = extractCloudCategory(message, "File");
+    
+    logDebug("Extracted categories:", { 
+      audioCategory, 
+      pdfCategory, 
+      videoCategory,
+      audioCloudCategory,
+      pdfCloudCategory,
+      fileCloudCategory
+    });
     
     // Check if user already exists
     const existingUser = await db.select()
@@ -234,25 +275,92 @@ async function createUserFromMessage(phoneNumber: string | null, customerName: s
       
       return anyAssigned;
     };
+
+    // Function to assign cloud categories to user
+    const assignCloudCategories = async (categoryString: string | null, type: 'audio_cloud' | 'pdf_cloud' | 'file_cloud'): Promise<boolean> => {
+      if (!categoryString) return false;
+      
+      // Parse categories array from comma-separated string
+      const categoryNames = parseCategoriesArray(categoryString);
+      if (categoryNames.length === 0) return false;
+      
+      let anyAssigned = false;
+      
+      // Process each category
+      for (const categoryName of categoryNames) {
+        try {
+          logDebug(`Processing ${type} category: "${categoryName}"`);
+          
+          // Find the category by name (partial match)
+          const matchingCategories = await db.select()
+            .from(categories)
+            .where(like(categories.name, `%${categoryName}%`));
+          
+          if (matchingCategories.length === 0) {
+            logDebug(`No matching ${type} category found for: ${categoryName}`);
+            continue;
+          }
+          
+          const categoryId = matchingCategories[0].id;
+          logDebug(`Found ${type} category: ${matchingCategories[0].name} (ID: ${categoryId})`);
+          
+          let tableName: string;
+          if (type === 'audio_cloud') tableName = 'user_audio_cloud_access';
+          else if (type === 'pdf_cloud') tableName = 'user_pdf_cloud_access';
+          else tableName = 'user_file_cloud_access';
+          
+          // Build an SQL query that's safe for missing tables
+          try {
+            // Use parameterized query for better security and reliability
+            await db.execute(sql`
+              INSERT INTO ${sql.raw(tableName)} (user_id, category_id)
+              VALUES (${userId}, ${categoryId})
+              ON CONFLICT (user_id, category_id) DO NOTHING
+            `);
+            logDebug(`Assigned ${type} category ${categoryId} to user ${userId}`);
+            anyAssigned = true;
+          } catch (err) {
+            console.error(`Error assigning ${type} category:`, err);
+          }
+        } catch (error) {
+          console.error(`Error finding ${type} category:`, error);
+        }
+      }
+      
+      return anyAssigned;
+    };
     
-    // Assign categories (now handling multiple categories per type)
+    // Assign categories (now handling multiple categories per type including cloud categories)
     // Execute category assignments with detailed logging
     logDebug(`Processing category assignments for user ${userId}`);
     logDebug(`Audio category: ${audioCategory || 'none'}`);
     logDebug(`PDF category: ${pdfCategory || 'none'}`);
     logDebug(`Video category: ${videoCategory || 'none'}`);
+    logDebug(`Audio Cloud category: ${audioCloudCategory || 'none'}`);
+    logDebug(`PDF Cloud category: ${pdfCloudCategory || 'none'}`);
+    logDebug(`File Cloud category: ${fileCloudCategory || 'none'}`);
     
+    // Assign regular categories
     const audioAssigned = await assignCategories(audioCategory, 'audio');
     const pdfAssigned = await assignCategories(pdfCategory, 'pdf');
     const videoAssigned = await assignCategories(videoCategory, 'video');
     
+    // Assign cloud categories
+    const audioCloudAssigned = await assignCloudCategories(audioCloudCategory, 'audio_cloud');
+    const pdfCloudAssigned = await assignCloudCategories(pdfCloudCategory, 'pdf_cloud');
+    const fileCloudAssigned = await assignCloudCategories(fileCloudCategory, 'file_cloud');
+    
     logDebug("Category assignment results:", {
       audioAssigned,
       pdfAssigned,
-      videoAssigned
+      videoAssigned,
+      audioCloudAssigned,
+      pdfCloudAssigned,
+      fileCloudAssigned
     });
     
-    return isNewUser || audioAssigned || pdfAssigned || videoAssigned;
+    return isNewUser || audioAssigned || pdfAssigned || videoAssigned || 
+           audioCloudAssigned || pdfCloudAssigned || fileCloudAssigned;
   } catch (error) {
     console.error("Error creating/updating user:", error);
     return false;

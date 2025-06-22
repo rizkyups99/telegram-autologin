@@ -153,21 +153,21 @@ export default function PDFPreview({
       alert('Failed to download PDF. Please try again.');
     }
   };
-  return <Card data-unique-id="eaeee0d6-ebe5-4d48-ae92-a11876f84e69" data-file-name="components/preview/pdf/PDFPreview.tsx">
-      <Tabs defaultValue="browse" data-unique-id="61a0fb0e-2223-4bea-a505-a1df6a4054cd" data-file-name="components/preview/pdf/PDFPreview.tsx">
+  return <Card data-unique-id="e2cf83f5-70bd-4895-823a-30eca17e140e" data-file-name="components/preview/pdf/PDFPreview.tsx">
+      <Tabs defaultValue="browse" data-unique-id="b07350fc-de1d-408f-a99b-3162d798be58" data-file-name="components/preview/pdf/PDFPreview.tsx">
         <TabsList className="grid grid-cols-2 mb-4">
-          <TabsTrigger value="browse"><span className="editable-text" data-unique-id="9e3f768e-8f7a-495a-9682-8752e37a5317" data-file-name="components/preview/pdf/PDFPreview.tsx">Browse PDFs</span></TabsTrigger>
+          <TabsTrigger value="browse"><span className="editable-text" data-unique-id="12694433-10f3-4347-9878-63e188804eae" data-file-name="components/preview/pdf/PDFPreview.tsx">Browse PDFs</span></TabsTrigger>
           <TabsTrigger value="read" disabled={!readPDF} className={readPDF ? 'pdf-read-tab-active' : ''}>
-            <span className="editable-text" data-unique-id="525c301c-83be-4ae4-adbe-e6eeb42e79f9" data-file-name="components/preview/pdf/PDFPreview.tsx">BACA PDF</span>
+            <span className="editable-text" data-unique-id="85df8b55-a787-4516-b47e-7b2a4bda1b84" data-file-name="components/preview/pdf/PDFPreview.tsx">BACA PDF</span>
           </TabsTrigger>
         </TabsList>
         
         <TabsContent value="browse">
-          <CardContent className="p-6" data-unique-id="2ac2beb5-a60b-4330-92a4-bb332f714b73" data-file-name="components/preview/pdf/PDFPreview.tsx">
-            <div className="w-full" data-unique-id="79a9329e-88f7-4b70-abd8-d503bddb7a53" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
-              {isLoading ? <div className="flex justify-center py-8" data-unique-id="670cc969-e274-4800-96c0-aad12f878db8" data-file-name="components/preview/pdf/PDFPreview.tsx">
+          <CardContent className="p-6" data-unique-id="4396add7-82d7-4180-b9e9-d8740919d941" data-file-name="components/preview/pdf/PDFPreview.tsx">
+            <div className="w-full" data-unique-id="d52f5d03-6bce-4f37-9c30-55f7ac7659e9" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
+              {isLoading ? <div className="flex justify-center py-8" data-unique-id="5d908a0a-58cd-43a0-8509-adc9d0e09968" data-file-name="components/preview/pdf/PDFPreview.tsx">
                   <Loader className="h-8 w-8 animate-spin text-primary" />
-                </div> : categories.length === 0 ? <p className="text-center py-8 text-muted-foreground" data-unique-id="f4a37868-cde7-48ef-97e4-a643e49d44aa" data-file-name="components/preview/pdf/PDFPreview.tsx"><span className="editable-text" data-unique-id="221c9ba7-e58f-4a9c-81c3-ef17db31544c" data-file-name="components/preview/pdf/PDFPreview.tsx">Tidak ada PDF yang tersedia.</span></p> : <div className="space-y-6" data-unique-id="3c40e1fa-e8f7-4c9d-ad58-13e62b2d532c" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
+                </div> : categories.length === 0 ? <p className="text-center py-8 text-muted-foreground" data-unique-id="0c883fba-a82f-4c4f-a930-05511e4b46b2" data-file-name="components/preview/pdf/PDFPreview.tsx"><span className="editable-text" data-unique-id="b3694feb-f88c-4795-9939-fa949809c293" data-file-name="components/preview/pdf/PDFPreview.tsx">Tidak ada PDF yang tersedia.</span></p> : <div className="space-y-6" data-unique-id="ea76fa37-edfc-4a46-9eac-1846f6e05e53" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
                   {categories.map(category => <PDFCategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} toggleCategory={toggleCategory} onDownloadPDF={handleDownloadPDF} onReadPDF={handleReadPDF} downloadStatus={downloadStatus} currentReadingPDF={readPDF} />)}
                 </div>}
             </div>
@@ -175,22 +175,22 @@ export default function PDFPreview({
         </TabsContent>
         
         <TabsContent value="read">
-          <CardContent className="px-4 py-4" data-unique-id="7359e22e-c4bb-4e00-9ad0-d474e17db933" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
-            {readPDF ? isMobile ? <MobilePDFReader selectedPDF={readPDF} onDownloadPDF={handleDownloadPDF} categoryName={categories.find(c => c.id === readPDF.categoryId)?.name} /> : <div className="space-y-4" data-unique-id="6e939f1e-cf59-456b-9703-f7fb264b59f2" data-file-name="components/preview/pdf/PDFPreview.tsx">
-                  <div className="flex justify-between items-center mb-4" data-unique-id="52d7d37f-3bb5-47bf-9fb6-52b9c31c2363" data-file-name="components/preview/pdf/PDFPreview.tsx">
-                    <h2 className="text-xl font-semibold" data-unique-id="edd98947-6acc-4719-a46b-4c9185e907d2" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">{readPDF.title}</h2>
-                    <span className="text-sm text-muted-foreground" data-unique-id="f1f81094-882f-4cce-976d-c0977b0403b4" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
+          <CardContent className="px-4 py-4" data-unique-id="cc0fe7af-3daf-40e5-9c32-a2cb3fe796c0" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
+            {readPDF ? isMobile ? <MobilePDFReader selectedPDF={readPDF} onDownloadPDF={handleDownloadPDF} categoryName={categories.find(c => c.id === readPDF.categoryId)?.name} /> : <div className="space-y-4" data-unique-id="c046d199-b880-4a3c-8d02-bece82f97acf" data-file-name="components/preview/pdf/PDFPreview.tsx">
+                  <div className="flex justify-between items-center mb-4" data-unique-id="620053f5-e836-4e91-b52b-2f9d15622d20" data-file-name="components/preview/pdf/PDFPreview.tsx">
+                    <h2 className="text-xl font-semibold" data-unique-id="6c05edbf-6300-4cdb-ad9b-89ca68bb736c" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">{readPDF.title}</h2>
+                    <span className="text-sm text-muted-foreground" data-unique-id="ca9ff698-0bed-49ce-a2c4-69aacfe22e29" data-file-name="components/preview/pdf/PDFPreview.tsx" data-dynamic-text="true">
                       {categories.find(c => c.id === readPDF.categoryId)?.name}
                     </span>
                   </div>
-                  <div className="w-full h-[70vh] border rounded-lg overflow-hidden bg-white" data-unique-id="8bc5aa51-2fa6-48b2-b40b-0c1754d739a4" data-file-name="components/preview/pdf/PDFPreview.tsx">
+                  <div className="w-full h-[70vh] border rounded-lg overflow-hidden bg-white" data-unique-id="be3d6d67-c0da-4c8a-9add-6fe427dd5ddd" data-file-name="components/preview/pdf/PDFPreview.tsx">
                     <iframe src={`${readPDF.fileUrl}#toolbar=1&navpanes=1&scrollbar=1&view=FitH`} className="w-full h-full" title={`PDF Viewer - ${readPDF.title}`} style={{
                 border: 'none'
-              }} data-unique-id="9af9ffff-763a-4adf-b06d-6ad70db2a7b0" data-file-name="components/preview/pdf/PDFPreview.tsx" />
+              }} data-unique-id="56727bd8-cfb5-47ec-9437-d02a6eb3e082" data-file-name="components/preview/pdf/PDFPreview.tsx" />
                   </div>
-                </div> : <div className="flex flex-col items-center justify-center py-12" data-unique-id="2d88d512-b50c-427c-83a7-dd1accdfd018" data-file-name="components/preview/pdf/PDFPreview.tsx">
-                <p className="text-lg font-medium mb-2" data-unique-id="fff1e564-14be-4843-ae2e-97b7b37ee4aa" data-file-name="components/preview/pdf/PDFPreview.tsx"><span className="editable-text" data-unique-id="07427ccf-ce70-4008-ab1a-4a03a40dcfba" data-file-name="components/preview/pdf/PDFPreview.tsx">Tidak ada PDF yang dipilih</span></p>
-                <p className="text-muted-foreground" data-unique-id="7f7d4772-4d51-4ffd-a1b6-4bfb43813e01" data-file-name="components/preview/pdf/PDFPreview.tsx"><span className="editable-text" data-unique-id="cd3b3909-6855-40f1-9ade-b53cbc6bdf00" data-file-name="components/preview/pdf/PDFPreview.tsx">Silakan pilih PDF untuk dibaca dari daftar</span></p>
+                </div> : <div className="flex flex-col items-center justify-center py-12" data-unique-id="3272c1c8-df51-4f0f-8438-87a47eb882d9" data-file-name="components/preview/pdf/PDFPreview.tsx">
+                <p className="text-lg font-medium mb-2" data-unique-id="bec64f95-f433-4dc1-b4a7-b5cdfe3e5416" data-file-name="components/preview/pdf/PDFPreview.tsx"><span className="editable-text" data-unique-id="858d2c17-1cef-4049-afac-c3759bde20db" data-file-name="components/preview/pdf/PDFPreview.tsx">Tidak ada PDF yang dipilih</span></p>
+                <p className="text-muted-foreground" data-unique-id="1170382c-7b56-49bd-b186-78b4b55c1c6d" data-file-name="components/preview/pdf/PDFPreview.tsx"><span className="editable-text" data-unique-id="49627034-4d3a-40b0-8dbd-97d78eee6de1" data-file-name="components/preview/pdf/PDFPreview.tsx">Silakan pilih PDF untuk dibaca dari daftar</span></p>
               </div>}
           </CardContent>
         </TabsContent>

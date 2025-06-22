@@ -61,39 +61,39 @@ export function StatisticsCategoryList({
   if (categorySummary.length === 0) {
     return null;
   }
-  return <Card data-unique-id="f2d4b944-b00c-4a82-b502-3b44c954b199" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-      <CardHeader data-unique-id="3a392601-2d04-4bff-93d0-d96c65cafb7e" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-        <CardTitle className="flex items-center gap-2" data-unique-id="1b45bc14-7341-4135-afaf-bf2cf94d4567" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+  return <Card data-unique-id="f14e2120-3f8d-4b30-a5bc-d7d0180456b1" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+      <CardHeader data-unique-id="265e70a4-54e2-4a4c-9b19-9e603620560c" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+        <CardTitle className="flex items-center gap-2" data-unique-id="a09abd91-71a5-4681-8a25-4b6698a44bc7" data-file-name="components/statistics/StatisticsCategoryList.tsx">
           <Users className="h-5 w-5" />
-          <span className="editable-text" data-unique-id="a58f9163-465f-4110-92c0-18bfb7112bc8" data-file-name="components/statistics/StatisticsCategoryList.tsx">Kategori Populer</span>
+          <span className="editable-text" data-unique-id="7f10dcb3-4041-4acf-9e5e-7a5e0edad8f0" data-file-name="components/statistics/StatisticsCategoryList.tsx">Kategori Populer</span>
         </CardTitle>
       </CardHeader>
-      <CardContent data-unique-id="35d118ff-c8b0-4945-bc79-a50409849ada" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
+      <CardContent data-unique-id="34dcbe6d-a90c-4ae8-b1c6-6295f8e611b3" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
         {/* Filter Analisis Section */}
-        <div className="bg-muted p-4 rounded-lg mb-6" data-unique-id="67618224-201e-46cf-a590-02e461112e18" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-          <div className="flex items-center gap-2 mb-3" data-unique-id="db5d474b-a0ba-4b92-a5e9-6451f2f64ef8" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+        <div className="bg-muted p-4 rounded-lg mb-6" data-unique-id="ee065242-e977-4956-9ef8-3bdc61fab4cd" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+          <div className="flex items-center gap-2 mb-3" data-unique-id="63b38d8c-fba2-4517-8011-78b4fd6bed78" data-file-name="components/statistics/StatisticsCategoryList.tsx">
             <Filter className="h-4 w-4" />
-            <h3 className="font-medium text-sm" data-unique-id="0ac1a4ed-a29e-4c89-9b78-88e1ebeabaef" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-              <span className="editable-text" data-unique-id="b73f55c1-01f6-4ef5-8e53-d099e82ba6c1" data-file-name="components/statistics/StatisticsCategoryList.tsx">Filter Analisis</span>
+            <h3 className="font-medium text-sm" data-unique-id="c30ce9d6-34b7-4614-9566-ad0776208986" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+              <span className="editable-text" data-unique-id="7b7550b7-a068-40d4-85f8-35af165a383a" data-file-name="components/statistics/StatisticsCategoryList.tsx">Filter Analisis</span>
             </h3>
           </div>
-          <div className="grid grid-cols-2 gap-4" data-unique-id="88e8660a-6c83-4309-a3e4-2a21efba5e03" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-            <div data-unique-id="7886098d-980b-4cf0-9a3e-f4de2020e5aa" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-              <label className="block text-sm font-medium mb-1" data-unique-id="1596d196-583c-470d-bd87-64122f9e948a" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                <span className="editable-text" data-unique-id="c40d671d-dcee-4fd2-a572-40eec5125b31" data-file-name="components/statistics/StatisticsCategoryList.tsx">Tahun</span>
+          <div className="grid grid-cols-2 gap-4" data-unique-id="7f0d60a3-5089-4169-acb1-546982b5f7c4" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+            <div data-unique-id="c710f568-c2a6-490d-a64f-01d12a797a20" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+              <label className="block text-sm font-medium mb-1" data-unique-id="21424c37-6a1c-4570-801d-e25a481c76b4" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                <span className="editable-text" data-unique-id="c4ac0207-f505-4b3b-9dd8-6f073f28e6cb" data-file-name="components/statistics/StatisticsCategoryList.tsx">Tahun</span>
               </label>
-              <select value={selectedYear} onChange={e => onYearChange && onYearChange(Number(e.target.value))} className="w-full h-9 rounded-md border border-input bg-background px-3 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="40be9553-5b6b-4ee4-8030-a6c89eab843e" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
-                {years.map(year => <option key={year} value={year} data-unique-id="f4f5a801-1383-4d2f-93df-027977dc1edd" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
+              <select value={selectedYear} onChange={e => onYearChange && onYearChange(Number(e.target.value))} className="w-full h-9 rounded-md border border-input bg-background px-3 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="25c977d1-e0cc-4377-90ea-9f9205889011" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
+                {years.map(year => <option key={year} value={year} data-unique-id="ff53fd2b-8abf-4d40-b795-beae4fbaca55" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
                     {year}
                   </option>)}
               </select>
             </div>
-            <div data-unique-id="d61acd6b-4fd8-4793-84b8-1fd67bacf25b" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-              <label className="block text-sm font-medium mb-1" data-unique-id="1f14d2ef-32bc-4569-b99b-d864388db34d" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                <span className="editable-text" data-unique-id="9117bd7d-7ade-4e74-914b-73203d64b55b" data-file-name="components/statistics/StatisticsCategoryList.tsx">Bulan</span>
+            <div data-unique-id="8182b433-1f3f-42fe-96c0-80de3051578c" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+              <label className="block text-sm font-medium mb-1" data-unique-id="92023546-9a15-42c8-ade8-70ea8ed45382" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                <span className="editable-text" data-unique-id="fc2829eb-c9ba-421d-a83e-35bab3967ec8" data-file-name="components/statistics/StatisticsCategoryList.tsx">Bulan</span>
               </label>
-              <select value={selectedMonth} onChange={e => onMonthChange && onMonthChange(Number(e.target.value))} className="w-full h-9 rounded-md border border-input bg-background px-3 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="d06f550a-b10e-4913-aa9f-ea5c93a41065" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
-                {months.map(month => <option key={month.value} value={month.value} data-unique-id="77935714-c5ae-4d39-9717-5ac1d5f95cf2" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
+              <select value={selectedMonth} onChange={e => onMonthChange && onMonthChange(Number(e.target.value))} className="w-full h-9 rounded-md border border-input bg-background px-3 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="9192a514-2129-4220-9ffa-87ad9a80039f" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
+                {months.map(month => <option key={month.value} value={month.value} data-unique-id="807017f5-eecd-4a7a-8140-8c482a3500a6" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
                     {month.label}
                   </option>)}
               </select>
@@ -102,20 +102,20 @@ export function StatisticsCategoryList({
         </div>
 
         {/* Categories List */}
-        <div className="space-y-4" data-unique-id="d9017fe0-f385-44d8-bae2-16baaf34e683" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
-          {categorySummary.length === 0 ? <div className="text-center py-8" data-unique-id="e31a4dcd-36d5-47f4-8355-ac525a2dfe8a" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-              <p className="text-muted-foreground" data-unique-id="47ded207-5c0b-4017-9d01-85b870db85c1" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                <span className="editable-text" data-unique-id="a67c008e-3d32-4fa2-a8d0-b6f295d75637" data-file-name="components/statistics/StatisticsCategoryList.tsx">Tidak ada data kategori untuk periode yang dipilih</span>
+        <div className="space-y-4" data-unique-id="9128422e-240d-40e8-8321-8d9c93ccb0ef" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">
+          {categorySummary.length === 0 ? <div className="text-center py-8" data-unique-id="4298f134-0f04-4954-a607-4c18de803933" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+              <p className="text-muted-foreground" data-unique-id="bd31607f-9162-4ac6-ad4a-8febbb612c83" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                <span className="editable-text" data-unique-id="ab809d04-50dd-4123-ac6c-59ecfbacbf85" data-file-name="components/statistics/StatisticsCategoryList.tsx">Tidak ada data kategori untuk periode yang dipilih</span>
               </p>
-            </div> : categorySummary.slice(0, 5).map(category => <div key={category.name} className="flex items-center justify-between p-3 rounded-lg bg-muted" data-unique-id="4efa9de1-5216-4c57-94ce-1441ada888fa" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                <div className="flex items-center gap-2" data-unique-id="955fe0b6-a244-4002-a351-4ffcafab94ad" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                  <div className="w-2 h-2 rounded-full bg-primary" data-unique-id="8f538db2-7ffb-42ba-8907-90d4069497c4" data-file-name="components/statistics/StatisticsCategoryList.tsx" />
-                  <span className="font-medium" data-unique-id="f14ba1ab-716a-4cc1-890c-c0c9dba6d8cd" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">{category.name}</span>
+            </div> : categorySummary.slice(0, 5).map(category => <div key={category.name} className="flex items-center justify-between p-3 rounded-lg bg-muted" data-unique-id="7b72692f-7b11-4414-8427-4534f0686866" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                <div className="flex items-center gap-2" data-unique-id="7700c493-97c1-4ed1-a0d6-625cf2ff686e" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                  <div className="w-2 h-2 rounded-full bg-primary" data-unique-id="456eac17-edd5-4d36-92a3-ecdb54379a1f" data-file-name="components/statistics/StatisticsCategoryList.tsx" />
+                  <span className="font-medium" data-unique-id="202c02dc-b2d5-46ba-a720-dc816cb298ed" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">{category.name}</span>
                 </div>
-                <div className="text-right" data-unique-id="3637668e-3a50-4039-b472-8c796eeea552" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                  <p className="text-2xl font-bold" data-unique-id="c6fbfacb-ee66-403a-b869-0afb61fef502" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">{category.count}</p>
-                  <p className="text-xs text-muted-foreground" data-unique-id="c98a60e1-d6ac-4780-82bd-32682a562bad" data-file-name="components/statistics/StatisticsCategoryList.tsx">
-                    <span className="editable-text" data-unique-id="36e2d34f-1ef9-4865-b7df-ba314666c57a" data-file-name="components/statistics/StatisticsCategoryList.tsx">users</span>
+                <div className="text-right" data-unique-id="353696dc-19ae-454a-9a97-e8713a6507f7" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                  <p className="text-2xl font-bold" data-unique-id="7618bd54-1be9-4644-938b-384875b3f974" data-file-name="components/statistics/StatisticsCategoryList.tsx" data-dynamic-text="true">{category.count}</p>
+                  <p className="text-xs text-muted-foreground" data-unique-id="b21860a2-dfd2-4c7d-ad0f-ea6608a1675c" data-file-name="components/statistics/StatisticsCategoryList.tsx">
+                    <span className="editable-text" data-unique-id="fb3cef6b-52d3-4fdc-b71b-939060229d00" data-file-name="components/statistics/StatisticsCategoryList.tsx">users</span>
                   </p>
                 </div>
               </div>)}
