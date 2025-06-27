@@ -140,111 +140,111 @@ export default function EditCategoriesDialog({
       }
     });
   };
-  return <Dialog open={isOpen} onOpenChange={onClose} data-unique-id="f1d6ee52-862c-4f1c-803e-bb8e28d37d99" data-file-name="components/EditCategoriesDialog.tsx">
+  return <Dialog open={isOpen} onOpenChange={onClose} data-unique-id="224245e4-d49b-44d3-ada0-55de56947252" data-file-name="components/EditCategoriesDialog.tsx">
       <DialogContent className="max-w-5xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle><span className="editable-text" data-unique-id="c6b79a1a-98e7-43b5-83b7-a20dc785da54" data-file-name="components/EditCategoriesDialog.tsx">Edit Akses Kategori - </span>{user.username}</DialogTitle>
+          <DialogTitle><span className="editable-text" data-unique-id="8cbdb670-052d-41a5-871b-b6f32a39a572" data-file-name="components/EditCategoriesDialog.tsx">Edit Akses Kategori - </span>{user.username}</DialogTitle>
         </DialogHeader>
         
-        <div className="py-4" data-unique-id="a6c135d4-9cdd-40ce-a6fe-c3df3c9bf1c0" data-file-name="components/EditCategoriesDialog.tsx">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-unique-id="e3da508c-f585-48e9-8ae1-93ca77a96efc" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+        <div className="py-4" data-unique-id="b07b6114-0ab1-4815-9ad4-7f6c92e2e085" data-file-name="components/EditCategoriesDialog.tsx">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-unique-id="e1f3f49e-a987-4213-9704-dab7f830d3c4" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
             {/* Regular Categories Section */}
-            <div className="space-y-6" data-unique-id="d5f88f30-2787-42c8-bbf2-d5162c989660" data-file-name="components/EditCategoriesDialog.tsx">
-              <h3 className="text-lg font-semibold text-blue-700 border-b border-blue-200 pb-2" data-unique-id="19dec123-2d9c-4fa8-b7ee-c80e1bc5c61a" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="eaad60e5-417d-4cfa-94f2-7a2c539b1795" data-file-name="components/EditCategoriesDialog.tsx">
+            <div className="space-y-6" data-unique-id="2088d4cd-d66a-4dbf-b125-4017f9cff795" data-file-name="components/EditCategoriesDialog.tsx">
+              <h3 className="text-lg font-semibold text-blue-700 border-b border-blue-200 pb-2" data-unique-id="60b38e6e-9db2-469f-bceb-5dc5f680e567" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="10f0548f-3ad2-4bc8-a25e-c23e61ace9fb" data-file-name="components/EditCategoriesDialog.tsx">
                 Kategori Regular
               </span></h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="3bcaabe0-2272-4965-a2d1-76ebe321ac88" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="75e59ee1-944d-4996-b484-8fa2070c8830" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                 {/* Audio Categories */}
-                <div className="border rounded-md p-3 bg-blue-50" data-unique-id="ddc05ccc-97ff-4dfd-a0f1-de6cb33ca3dc" data-file-name="components/EditCategoriesDialog.tsx">
-                  <h5 className="font-medium mb-2 text-sm text-blue-800" data-unique-id="de0b27c2-3b77-41bd-a6f6-94aca2cdc9c5" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="de72228e-337e-4e5f-8962-98bcc05814bf" data-file-name="components/EditCategoriesDialog.tsx">Kategori Audio</span></h5>
-                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="639724d5-5cea-446c-9006-c923efb058fb" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-                    {getRegularCategoriesByType('audio').map(category => <div key={`audio-${category.id}`} className="flex items-center" data-unique-id="153643cc-aeb2-4429-ad42-1ec22cbdf7aa" data-file-name="components/EditCategoriesDialog.tsx">
-                        <input type="checkbox" id={`dialog-audio-cat-${category.id}`} checked={audioCategoryIds.includes(category.id)} onChange={e => handleRegularCategoryChange('audio', category.id, e.target.checked)} className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 mr-2" data-unique-id="364cac49-66d3-4c0f-85d4-32f3d8216e18" data-file-name="components/EditCategoriesDialog.tsx" />
-                        <label htmlFor={`dialog-audio-cat-${category.id}`} className="text-sm" data-unique-id="6b41d063-95aa-4f7a-b03f-87b264ccc7c7" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                <div className="border rounded-md p-3 bg-blue-50" data-unique-id="15724b01-9c40-4270-acb5-d8ad861793e6" data-file-name="components/EditCategoriesDialog.tsx">
+                  <h5 className="font-medium mb-2 text-sm text-blue-800" data-unique-id="5171bb46-2be5-4d84-9331-1eabe0993a08" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="b901bcd1-d620-4bdf-a962-81ba42629e9c" data-file-name="components/EditCategoriesDialog.tsx">Kategori Audio</span></h5>
+                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="654ba4a6-15dc-44c4-8a47-564cd19ce7a0" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                    {getRegularCategoriesByType('audio').map(category => <div key={`audio-${category.id}`} className="flex items-center" data-unique-id="5127ec26-e694-4d9c-a0e9-86b59caebc83" data-file-name="components/EditCategoriesDialog.tsx">
+                        <input type="checkbox" id={`dialog-audio-cat-${category.id}`} checked={audioCategoryIds.includes(category.id)} onChange={e => handleRegularCategoryChange('audio', category.id, e.target.checked)} className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 mr-2" data-unique-id="916e10a1-934b-4508-8e59-b92a9004be8a" data-file-name="components/EditCategoriesDialog.tsx" />
+                        <label htmlFor={`dialog-audio-cat-${category.id}`} className="text-sm" data-unique-id="fddd5bad-c4d6-4d61-9132-69bca3a83713" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                    {getRegularCategoriesByType('audio').length === 0 && <p className="text-sm text-gray-500" data-unique-id="328de943-e330-4c40-8f09-e9bf4443ff95" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="909be394-a6e4-4989-b40e-ce0036e12a36" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori audio</span></p>}
+                    {getRegularCategoriesByType('audio').length === 0 && <p className="text-sm text-gray-500" data-unique-id="f0873092-4b95-4dc4-8a8e-6fe151521a9a" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="d6dec832-cb19-471d-96ea-f7aaeafdf5ec" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori audio</span></p>}
                   </div>
                 </div>
                 
                 {/* PDF Categories */}
-                <div className="border rounded-md p-3 bg-green-50" data-unique-id="1ac091b3-8c63-4b21-a4f6-e919a6afe36f" data-file-name="components/EditCategoriesDialog.tsx">
-                  <h5 className="font-medium mb-2 text-sm text-green-800" data-unique-id="8ba39b37-175e-4455-b2c8-fb1437c935f1" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="0f80a903-d104-4cd5-9af6-dcc3316f141f" data-file-name="components/EditCategoriesDialog.tsx">Kategori PDF</span></h5>
-                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="87b91509-14ca-4d3c-a37b-3a37e9e44a3f" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-                    {getRegularCategoriesByType('pdf').map(category => <div key={`pdf-${category.id}`} className="flex items-center" data-unique-id="7107f445-1e46-4398-9900-5a61f8831d64" data-file-name="components/EditCategoriesDialog.tsx">
-                        <input type="checkbox" id={`dialog-pdf-cat-${category.id}`} checked={pdfCategoryIds.includes(category.id)} onChange={e => handleRegularCategoryChange('pdf', category.id, e.target.checked)} className="rounded border-gray-300 text-green-600 focus:ring-green-500 mr-2" data-unique-id="1c026796-125c-49a5-b030-6fde595d519b" data-file-name="components/EditCategoriesDialog.tsx" />
-                        <label htmlFor={`dialog-pdf-cat-${category.id}`} className="text-sm" data-unique-id="9eafe328-4d3f-4d33-bd6b-f7bc9d9f0f8e" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                <div className="border rounded-md p-3 bg-green-50" data-unique-id="2df175dd-47b5-49da-955a-adfb8c2a61c3" data-file-name="components/EditCategoriesDialog.tsx">
+                  <h5 className="font-medium mb-2 text-sm text-green-800" data-unique-id="285ede1c-d0c9-46c9-b313-a3264041a07d" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="3a2c7c8a-98d6-4f07-8506-2e294311d20e" data-file-name="components/EditCategoriesDialog.tsx">Kategori PDF</span></h5>
+                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="d4592cbe-ad0e-44cc-adba-4b648109cd3b" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                    {getRegularCategoriesByType('pdf').map(category => <div key={`pdf-${category.id}`} className="flex items-center" data-unique-id="6a54f93a-0910-457f-9cea-e6a30a377b68" data-file-name="components/EditCategoriesDialog.tsx">
+                        <input type="checkbox" id={`dialog-pdf-cat-${category.id}`} checked={pdfCategoryIds.includes(category.id)} onChange={e => handleRegularCategoryChange('pdf', category.id, e.target.checked)} className="rounded border-gray-300 text-green-600 focus:ring-green-500 mr-2" data-unique-id="0088dd9a-61d2-4d51-a33e-242bae44d1c9" data-file-name="components/EditCategoriesDialog.tsx" />
+                        <label htmlFor={`dialog-pdf-cat-${category.id}`} className="text-sm" data-unique-id="da5b408e-faf1-49ee-87f0-00249f4e34a5" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                    {getRegularCategoriesByType('pdf').length === 0 && <p className="text-sm text-gray-500" data-unique-id="6354a76b-8671-4821-8943-613d2c81f127" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="78fdc93f-e56d-429a-b670-e2b35defd2ac" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori PDF</span></p>}
+                    {getRegularCategoriesByType('pdf').length === 0 && <p className="text-sm text-gray-500" data-unique-id="c7a7ba1f-1a4f-4a15-afb4-61b72bf7e025" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="fe8d67ee-9a3a-4b23-a08e-93ba6a4b6697" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori PDF</span></p>}
                   </div>
                 </div>
                 
                 {/* Video Categories */}
-                <div className="border rounded-md p-3 bg-purple-50" data-unique-id="139c8bb3-6f28-49be-985e-618e675423f4" data-file-name="components/EditCategoriesDialog.tsx">
-                  <h5 className="font-medium mb-2 text-sm text-purple-800" data-unique-id="ffe39461-164d-41e5-81d8-17ed955d6274" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="976f6cb2-5e3f-4c3d-b67e-1d6addd56beb" data-file-name="components/EditCategoriesDialog.tsx">Kategori Video</span></h5>
-                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="810be340-536d-4650-8394-7da5e0e2fdba" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-                    {getRegularCategoriesByType('video').map(category => <div key={`video-${category.id}`} className="flex items-center" data-unique-id="c56389ae-e00b-45e4-bd50-6491c0984191" data-file-name="components/EditCategoriesDialog.tsx">
-                        <input type="checkbox" id={`dialog-video-cat-${category.id}`} checked={videoCategoryIds.includes(category.id)} onChange={e => handleRegularCategoryChange('video', category.id, e.target.checked)} className="rounded border-gray-300 text-purple-600 focus:ring-purple-500 mr-2" data-unique-id="861483ec-497e-4f62-9674-3b2856c989b8" data-file-name="components/EditCategoriesDialog.tsx" />
-                        <label htmlFor={`dialog-video-cat-${category.id}`} className="text-sm" data-unique-id="5fbac481-64e8-4fea-af75-a94de0ba215d" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                <div className="border rounded-md p-3 bg-purple-50" data-unique-id="bad06643-c008-458e-b5a0-33c3c755f2de" data-file-name="components/EditCategoriesDialog.tsx">
+                  <h5 className="font-medium mb-2 text-sm text-purple-800" data-unique-id="1f070797-b327-418a-bf42-cb2f3af0c295" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="37205c8c-43d2-43c8-82d2-afff7e4b8efe" data-file-name="components/EditCategoriesDialog.tsx">Kategori Video</span></h5>
+                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="656d73b0-28bd-4ceb-ad79-7ea7dc201191" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                    {getRegularCategoriesByType('video').map(category => <div key={`video-${category.id}`} className="flex items-center" data-unique-id="265fc68a-d351-48b0-9cdb-00867643e2f1" data-file-name="components/EditCategoriesDialog.tsx">
+                        <input type="checkbox" id={`dialog-video-cat-${category.id}`} checked={videoCategoryIds.includes(category.id)} onChange={e => handleRegularCategoryChange('video', category.id, e.target.checked)} className="rounded border-gray-300 text-purple-600 focus:ring-purple-500 mr-2" data-unique-id="8ceb4e78-39fb-424e-a346-d390508f346c" data-file-name="components/EditCategoriesDialog.tsx" />
+                        <label htmlFor={`dialog-video-cat-${category.id}`} className="text-sm" data-unique-id="eb202cc2-bce7-4c29-9a82-aa9232819026" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                    {getRegularCategoriesByType('video').length === 0 && <p className="text-sm text-gray-500" data-unique-id="65c62ddf-1fce-4de1-af0a-2a81a04265c5" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="9e9eb7f0-c9d6-40a2-87e2-11e141060766" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori video</span></p>}
+                    {getRegularCategoriesByType('video').length === 0 && <p className="text-sm text-gray-500" data-unique-id="fd8194ec-7d61-46a3-9e28-069c7333437f" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="6d8d2cb1-6892-48d4-bcfe-24d7c0591586" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori video</span></p>}
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Cloud Categories Section */}
-            <div className="space-y-6" data-unique-id="c304796d-12dd-4f3a-85bc-e52d9f10bbde" data-file-name="components/EditCategoriesDialog.tsx">
-              <h3 className="text-lg font-semibold text-cyan-700 border-b border-cyan-200 pb-2" data-unique-id="c75e1cc0-d2a8-4e41-b6af-d7812213cbe9" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="f6a6bb01-4209-498b-a1ee-9ed38bea6616" data-file-name="components/EditCategoriesDialog.tsx">
+            <div className="space-y-6" data-unique-id="13475df7-c477-4695-ac80-aab30231c938" data-file-name="components/EditCategoriesDialog.tsx">
+              <h3 className="text-lg font-semibold text-cyan-700 border-b border-cyan-200 pb-2" data-unique-id="fa31020f-e9b4-4fd5-a475-975454d5da24" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="d4a471e7-6092-4d62-95b2-d1cb3db250b3" data-file-name="components/EditCategoriesDialog.tsx">
                 Kategori Cloud
               </span></h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="fb88b2f2-f649-4cdb-8e83-ef5823d835f7" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="e1bf5e28-9ffb-4c0a-9e36-3e297557564b" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                 {/* Audio Cloud Categories */}
-                <div className="border rounded-md p-3 bg-cyan-50" data-unique-id="ccd8d33e-eb43-497d-9eca-a786e8021ff8" data-file-name="components/EditCategoriesDialog.tsx">
-                  <h5 className="font-medium mb-2 text-sm text-cyan-800" data-unique-id="cba9b83f-9e22-408a-842b-9061cb6c47b5" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="070e54c0-d775-4451-b0e6-dd4b738dcbde" data-file-name="components/EditCategoriesDialog.tsx">Audio Cloud</span></h5>
-                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="b7e53626-90c4-410e-aad0-f087438a442a" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-                    {getCloudCategoriesByType('audioCloud').map(category => <div key={`audioCloud-${category.id}`} className="flex items-center" data-unique-id="780e4ae0-08d6-457b-81ec-641cba53ba8d" data-file-name="components/EditCategoriesDialog.tsx">
-                        <input type="checkbox" id={`dialog-audiocloud-cat-${category.id}`} checked={audioCloudCategoryIds.includes(category.id)} onChange={e => handleCloudCategoryChange('audioCloud', category.id, e.target.checked)} className="rounded border-gray-300 text-cyan-600 focus:ring-cyan-500 mr-2" data-unique-id="129339d7-6acf-4211-b480-fff3caf50f37" data-file-name="components/EditCategoriesDialog.tsx" />
-                        <label htmlFor={`dialog-audiocloud-cat-${category.id}`} className="text-sm" data-unique-id="3214eb57-5f94-427a-93c9-1aa4fadddeb7" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                <div className="border rounded-md p-3 bg-cyan-50" data-unique-id="72c9e25c-e8e0-4cae-ab12-7eb0a9a71ee1" data-file-name="components/EditCategoriesDialog.tsx">
+                  <h5 className="font-medium mb-2 text-sm text-cyan-800" data-unique-id="86e97119-6a51-46b0-a00f-772b9ce10d47" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="5159e5fe-ba0b-4310-b31d-b192168650a3" data-file-name="components/EditCategoriesDialog.tsx">Audio Cloud</span></h5>
+                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="6e258517-1857-4e74-965d-f4dbdf696562" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                    {getCloudCategoriesByType('audioCloud').map(category => <div key={`audioCloud-${category.id}`} className="flex items-center" data-unique-id="39be2068-1ed7-4320-a40d-46258cc4f821" data-file-name="components/EditCategoriesDialog.tsx">
+                        <input type="checkbox" id={`dialog-audiocloud-cat-${category.id}`} checked={audioCloudCategoryIds.includes(category.id)} onChange={e => handleCloudCategoryChange('audioCloud', category.id, e.target.checked)} className="rounded border-gray-300 text-cyan-600 focus:ring-cyan-500 mr-2" data-unique-id="31f5f19d-d412-4c4c-aecb-9643ee2e2cb2" data-file-name="components/EditCategoriesDialog.tsx" />
+                        <label htmlFor={`dialog-audiocloud-cat-${category.id}`} className="text-sm" data-unique-id="5b459901-a090-4716-80fd-16adb5943d53" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                    {getCloudCategoriesByType('audioCloud').length === 0 && <p className="text-sm text-gray-500" data-unique-id="d4bd9c85-cd7a-473a-a971-1151f9418a9d" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="8815e78a-6162-4b00-94e6-af28df8cc0be" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori audio cloud</span></p>}
+                    {getCloudCategoriesByType('audioCloud').length === 0 && <p className="text-sm text-gray-500" data-unique-id="64431f4b-50df-4a07-8c1f-8f93a66c356d" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="f0e4c0d9-9f5c-4211-862d-31bc38ec4d1d" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori audio cloud</span></p>}
                   </div>
                 </div>
                 
                 {/* PDF Cloud Categories */}
-                <div className="border rounded-md p-3 bg-teal-50" data-unique-id="15a4bb58-72de-49de-bb4a-f75108b91213" data-file-name="components/EditCategoriesDialog.tsx">
-                  <h5 className="font-medium mb-2 text-sm text-teal-800" data-unique-id="c6ec1339-bddf-4b84-985a-9f3796f3503c" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="5c9deed3-5489-42c7-91a6-c9ed5b32b1f3" data-file-name="components/EditCategoriesDialog.tsx">PDF Cloud</span></h5>
-                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="3d84dc16-c625-4d87-bcc6-1a1e55068270" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-                    {getCloudCategoriesByType('pdfCloud').map(category => <div key={`pdfCloud-${category.id}`} className="flex items-center" data-unique-id="1ff8db52-a79c-4c7e-a612-333bbf1dcf48" data-file-name="components/EditCategoriesDialog.tsx">
-                        <input type="checkbox" id={`dialog-pdfcloud-cat-${category.id}`} checked={pdfCloudCategoryIds.includes(category.id)} onChange={e => handleCloudCategoryChange('pdfCloud', category.id, e.target.checked)} className="rounded border-gray-300 text-teal-600 focus:ring-teal-500 mr-2" data-unique-id="c4a88413-73f3-4166-abaf-1b1ab767ceda" data-file-name="components/EditCategoriesDialog.tsx" />
-                        <label htmlFor={`dialog-pdfcloud-cat-${category.id}`} className="text-sm" data-unique-id="6dc7d40a-c777-461d-bb66-85b04cd872bb" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                <div className="border rounded-md p-3 bg-teal-50" data-unique-id="c8323b40-e2bc-457e-9560-cef21f70583f" data-file-name="components/EditCategoriesDialog.tsx">
+                  <h5 className="font-medium mb-2 text-sm text-teal-800" data-unique-id="1a49ef07-03cc-4030-a366-4ea31772f7e1" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="4d41699f-4fc7-4682-a6f4-95e44454f06a" data-file-name="components/EditCategoriesDialog.tsx">PDF Cloud</span></h5>
+                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="c60ca646-954e-4c08-be1c-bad1277d6118" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                    {getCloudCategoriesByType('pdfCloud').map(category => <div key={`pdfCloud-${category.id}`} className="flex items-center" data-unique-id="66f4195e-e26a-4b9e-83d8-5f3161e891a7" data-file-name="components/EditCategoriesDialog.tsx">
+                        <input type="checkbox" id={`dialog-pdfcloud-cat-${category.id}`} checked={pdfCloudCategoryIds.includes(category.id)} onChange={e => handleCloudCategoryChange('pdfCloud', category.id, e.target.checked)} className="rounded border-gray-300 text-teal-600 focus:ring-teal-500 mr-2" data-unique-id="09231fc7-18a2-4a64-8d67-5cff1057d7dd" data-file-name="components/EditCategoriesDialog.tsx" />
+                        <label htmlFor={`dialog-pdfcloud-cat-${category.id}`} className="text-sm" data-unique-id="31e41b38-0b3e-40c0-8812-0bdb643484e3" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                    {getCloudCategoriesByType('pdfCloud').length === 0 && <p className="text-sm text-gray-500" data-unique-id="29b8c5c0-16d7-4c63-88dc-5401e9c6acff" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="c28a9146-f574-42af-8b1d-cfc55888af6f" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori PDF cloud</span></p>}
+                    {getCloudCategoriesByType('pdfCloud').length === 0 && <p className="text-sm text-gray-500" data-unique-id="8ea5888a-3903-4dd7-9e14-4480bc191f1c" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="47c02028-6fe6-4ffc-8369-f803bdf4b00e" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori PDF cloud</span></p>}
                   </div>
                 </div>
                 
                 {/* File Cloud Categories */}
-                <div className="border rounded-md p-3 bg-amber-50" data-unique-id="e6973985-fde7-4c47-b9aa-599dfaa46592" data-file-name="components/EditCategoriesDialog.tsx">
-                  <h5 className="font-medium mb-2 text-sm text-amber-800" data-unique-id="ba2a2537-82a6-45dc-958a-885c81deb2c2" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="1b29c7f8-1ead-4505-9586-ced8aff5f4a4" data-file-name="components/EditCategoriesDialog.tsx">File Cloud</span></h5>
-                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="c810175d-c1c6-40db-a3aa-a94fbed6ee06" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-                    {getCloudCategoriesByType('fileCloud').map(category => <div key={`fileCloud-${category.id}`} className="flex items-center" data-unique-id="058f3f53-a4cb-4185-8f84-1d0b58a04a4b" data-file-name="components/EditCategoriesDialog.tsx">
-                        <input type="checkbox" id={`dialog-filecloud-cat-${category.id}`} checked={fileCloudCategoryIds.includes(category.id)} onChange={e => handleCloudCategoryChange('fileCloud', category.id, e.target.checked)} className="rounded border-gray-300 text-amber-600 focus:ring-amber-500 mr-2" data-unique-id="7c3c2b5d-9ab6-40b7-b407-c2651b6fd1fc" data-file-name="components/EditCategoriesDialog.tsx" />
-                        <label htmlFor={`dialog-filecloud-cat-${category.id}`} className="text-sm" data-unique-id="5eadaca5-f217-4b0e-9319-e8f067fbb942" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                <div className="border rounded-md p-3 bg-amber-50" data-unique-id="55407773-cb8e-46b0-81f6-2ab0d3b5f0e7" data-file-name="components/EditCategoriesDialog.tsx">
+                  <h5 className="font-medium mb-2 text-sm text-amber-800" data-unique-id="0e955f6e-afa4-4f21-aa1a-39d397255f66" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="46528397-9d8f-44f2-a08c-22223fd9054d" data-file-name="components/EditCategoriesDialog.tsx">File Cloud</span></h5>
+                  <div className="space-y-2 max-h-40 overflow-y-auto" data-unique-id="c27e3856-0cd9-47a8-a493-451817e8198a" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+                    {getCloudCategoriesByType('fileCloud').map(category => <div key={`fileCloud-${category.id}`} className="flex items-center" data-unique-id="8765743b-b561-449a-b385-6425e2effbd5" data-file-name="components/EditCategoriesDialog.tsx">
+                        <input type="checkbox" id={`dialog-filecloud-cat-${category.id}`} checked={fileCloudCategoryIds.includes(category.id)} onChange={e => handleCloudCategoryChange('fileCloud', category.id, e.target.checked)} className="rounded border-gray-300 text-amber-600 focus:ring-amber-500 mr-2" data-unique-id="9dc8128e-5bf2-475f-8d1f-2870ce09ee08" data-file-name="components/EditCategoriesDialog.tsx" />
+                        <label htmlFor={`dialog-filecloud-cat-${category.id}`} className="text-sm" data-unique-id="584ed3f5-4273-4f1e-86ed-87f1f5fd0649" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
                           {category.name}
                         </label>
                       </div>)}
-                    {getCloudCategoriesByType('fileCloud').length === 0 && <p className="text-sm text-gray-500" data-unique-id="fbb2dc44-9be3-44ae-9a07-1e0ea9c8e08e" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="3ec3cc71-1365-4363-abff-acef0ec0d9bc" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori file cloud</span></p>}
+                    {getCloudCategoriesByType('fileCloud').length === 0 && <p className="text-sm text-gray-500" data-unique-id="ccf0cacd-81f5-4038-8605-329040b44101" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="68638ba4-7d80-41e6-83ca-92e373f749e7" data-file-name="components/EditCategoriesDialog.tsx">Tidak ada kategori file cloud</span></p>}
                   </div>
                 </div>
               </div>
@@ -253,15 +253,15 @@ export default function EditCategoriesDialog({
         </div>
         
         <DialogFooter>
-          <Button variant="outline" onClick={onClose} disabled={isLoading} data-unique-id="a2515bed-2f82-42d0-a26f-e10e9f3ca236" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="ea6073fd-bc6a-4928-8d85-7abde70db69f" data-file-name="components/EditCategoriesDialog.tsx">
+          <Button variant="outline" onClick={onClose} disabled={isLoading} data-unique-id="46ff067c-a36f-4b68-bddb-c2cbb319e1da" data-file-name="components/EditCategoriesDialog.tsx"><span className="editable-text" data-unique-id="778cba5f-0178-40bc-ad8f-0e14c7ff43e6" data-file-name="components/EditCategoriesDialog.tsx">
             Batal
           </span></Button>
-          <Button onClick={handleSave} disabled={isLoading} data-unique-id="243d10fc-7104-43fd-b947-9583ceaa4db1" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
-            {isLoading ? <span className="flex items-center" data-unique-id="baa20f65-ce8c-4edf-9e64-7199ea4c29da" data-file-name="components/EditCategoriesDialog.tsx">
-                <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="951e60fa-8de5-48e4-916b-c3eeba291e26" data-file-name="components/EditCategoriesDialog.tsx">
+          <Button onClick={handleSave} disabled={isLoading} data-unique-id="18d08097-9cd9-4714-9041-8006af2a0ee3" data-file-name="components/EditCategoriesDialog.tsx" data-dynamic-text="true">
+            {isLoading ? <span className="flex items-center" data-unique-id="3153b60a-c68c-461f-a4ac-6220601dedb4" data-file-name="components/EditCategoriesDialog.tsx">
+                <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="c0ff5694-acb8-4f5b-bb0f-aca0481c135d" data-file-name="components/EditCategoriesDialog.tsx">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg><span className="editable-text" data-unique-id="300741c7-4ec1-4681-a241-7f59ec72f6a0" data-file-name="components/EditCategoriesDialog.tsx">
+                </svg><span className="editable-text" data-unique-id="2f1701b7-959f-4480-848a-d183d8a1e900" data-file-name="components/EditCategoriesDialog.tsx">
                 Menyimpan...
               </span></span> : <>
                 <Save className="h-4 w-4 mr-2" />

@@ -37,31 +37,31 @@ export function DailyRegistrations({
     }
   };
   if (isLoading) {
-    return <Card data-unique-id="531a2386-cea6-42ef-a5f4-2c71714308ec" data-file-name="components/statistics/DailyRegistrations.tsx">
-        <CardHeader data-unique-id="18e38934-ef79-49cd-9842-bb17160ef622" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <CardTitle className="flex items-center gap-2" data-unique-id="090c7e8d-6e50-41e5-9964-f34ac5bf74f4" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <Calendar className="h-5 w-5" data-unique-id="d38389f5-c7cd-4b41-92eb-ccd3fc0d93c2" data-file-name="components/statistics/DailyRegistrations.tsx" />
-            <span className="editable-text" data-unique-id="45e3dfea-6449-4347-8344-33fb089d1abf" data-file-name="components/statistics/DailyRegistrations.tsx">Pendaftaran User Per Hari</span>
+    return <Card data-unique-id="ccb3eaee-136c-492d-b0a0-f5449515d353" data-file-name="components/statistics/DailyRegistrations.tsx">
+        <CardHeader data-unique-id="de9ebe87-bcc2-45aa-8ddd-afcdd5531651" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <CardTitle className="flex items-center gap-2" data-unique-id="65e736b0-024f-46bf-a586-73e93b754045" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <Calendar className="h-5 w-5" data-unique-id="3f515142-e773-4b8a-9371-dc614c91f0b9" data-file-name="components/statistics/DailyRegistrations.tsx" />
+            <span className="editable-text" data-unique-id="8942d5a3-6cfd-4896-82cc-80f7c110365d" data-file-name="components/statistics/DailyRegistrations.tsx">Pendaftaran User Per Hari</span>
           </CardTitle>
         </CardHeader>
-        <CardContent data-unique-id="8db9a00f-c24d-4815-8373-7002b755ca09" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <div className="flex justify-center py-8" data-unique-id="9e4c71e2-d713-443f-94c8-bc0b6590732a" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="2eb5831b-1fb1-4d70-abf3-39444e8d635b" data-file-name="components/statistics/DailyRegistrations.tsx"></div>
+        <CardContent data-unique-id="2c9c2071-8be8-4292-8f7d-f659d9c65a74" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <div className="flex justify-center py-8" data-unique-id="9e180a16-14e5-44b8-875d-5a2f0005c49e" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="c16a4d7a-ed8c-43a3-a81c-7be202e3bdd7" data-file-name="components/statistics/DailyRegistrations.tsx"></div>
           </div>
         </CardContent>
       </Card>;
   }
   if (error) {
-    return <Card data-unique-id="709e8df9-c7ab-45d2-9f0c-de862e016cbd" data-file-name="components/statistics/DailyRegistrations.tsx">
-        <CardHeader data-unique-id="6fba9f6e-8a09-4033-a30e-19326e0bb39a" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <CardTitle className="flex items-center gap-2" data-unique-id="1bbb9dd9-5bc6-4357-adda-64433ba0f772" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <Calendar className="h-5 w-5" data-unique-id="6d9ed33e-19b9-4365-adc4-c6db4672d04b" data-file-name="components/statistics/DailyRegistrations.tsx" />
-            <span className="editable-text" data-unique-id="262107ed-0fce-4822-8887-ebabb052e65d" data-file-name="components/statistics/DailyRegistrations.tsx">Pendaftaran User Per Hari</span>
+    return <Card data-unique-id="d458de70-f75e-4bc8-8a3e-c045c7420731" data-file-name="components/statistics/DailyRegistrations.tsx">
+        <CardHeader data-unique-id="a0178a54-21cf-41aa-ab09-1e40219114fe" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <CardTitle className="flex items-center gap-2" data-unique-id="b879145f-2ad3-4c1b-ae6f-0250b4d877c4" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <Calendar className="h-5 w-5" data-unique-id="0377d902-a1bf-4e1f-adef-52820e6c0ddf" data-file-name="components/statistics/DailyRegistrations.tsx" />
+            <span className="editable-text" data-unique-id="96758967-81f2-45db-a3b8-cb3024f6bc07" data-file-name="components/statistics/DailyRegistrations.tsx">Pendaftaran User Per Hari</span>
           </CardTitle>
         </CardHeader>
-        <CardContent data-unique-id="c1cc1d3d-3c43-4d9b-bb52-90b1b891b765" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <div className="text-center py-8" data-unique-id="21ec3bb4-12de-451b-a66e-01ab5afb683b" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <p className="text-muted-foreground text-red-500" data-unique-id="1963c6ef-38eb-4a2f-bea0-262453d7fa3d" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{error}</p>
+        <CardContent data-unique-id="9c0293ce-5a1b-4371-befc-1a0687f8e060" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <div className="text-center py-8" data-unique-id="eb2079f7-9203-487e-b1b0-5b9cfd6c6aac" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <p className="text-muted-foreground text-red-500" data-unique-id="5ccb09ba-ddb1-4922-836f-12f2706a1d7a" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{error}</p>
           </div>
         </CardContent>
       </Card>;
@@ -74,78 +74,78 @@ export function DailyRegistrations({
     fullDate: ''
   });
   const monthNames = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-  return <Card data-unique-id="a87eed15-da23-4367-9e31-c1e8674e4035" data-file-name="components/statistics/DailyRegistrations.tsx">
-      <CardHeader data-unique-id="e8750a1e-6846-4742-af81-bf2413933af3" data-file-name="components/statistics/DailyRegistrations.tsx">
-        <CardTitle className="flex items-center gap-2" data-unique-id="89148695-5e2a-45ff-8215-1482f2184658" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <Calendar className="h-5 w-5" data-unique-id="b2197d20-1ab7-4f6b-8cc1-0eaccd4d4357" data-file-name="components/statistics/DailyRegistrations.tsx" />
-          <span className="editable-text" data-unique-id="c7b9d05d-6166-490d-a0a7-0dcc5848b26b" data-file-name="components/statistics/DailyRegistrations.tsx">Pendaftaran User Per Hari</span>
+  return <Card data-unique-id="c6e23071-dad8-4f96-9f3b-95ef68b20129" data-file-name="components/statistics/DailyRegistrations.tsx">
+      <CardHeader data-unique-id="ede537ee-7066-41b6-8adb-27ea7bca8f28" data-file-name="components/statistics/DailyRegistrations.tsx">
+        <CardTitle className="flex items-center gap-2" data-unique-id="8ea51891-6932-430a-a767-290fbfb44a3b" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <Calendar className="h-5 w-5" data-unique-id="4bde69bd-bcee-4651-bc0c-e39ab3c75f79" data-file-name="components/statistics/DailyRegistrations.tsx" />
+          <span className="editable-text" data-unique-id="f6f2a965-f79f-4180-8492-0ba341ae39e5" data-file-name="components/statistics/DailyRegistrations.tsx">Pendaftaran User Per Hari</span>
         </CardTitle>
-        <p className="text-sm text-muted-foreground" data-unique-id="126043b0-c266-461e-8114-d9090862eebe" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <span className="editable-text" data-unique-id="9bc2558d-d389-406b-b7d5-1f3032e7cd4b" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">Analisis pendaftaran user harian untuk {monthNames[month - 1]} {year}</span>
+        <p className="text-sm text-muted-foreground" data-unique-id="ab0ceeec-5009-43d4-824f-b93c6201c211" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <span className="editable-text" data-unique-id="5d1f3b28-250e-4cb2-9b4d-629a2a950a53" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">Analisis pendaftaran user harian untuk {monthNames[month - 1]} {year}</span>
         </p>
       </CardHeader>
-      <CardContent data-unique-id="2563b396-8035-473d-9a94-a5aba80c9e77" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">
+      <CardContent data-unique-id="bd92b71c-c6c5-4671-8707-178abdf66ca0" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">
         {/* Summary Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" data-unique-id="89388b89-1ba0-43dd-ab91-e3964f0e8bb3" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200" data-unique-id="aca762b3-a8dc-4ab8-a78c-f60d753ef358" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <div className="flex items-center justify-between" data-unique-id="9f0dd90d-0efb-481c-8902-12ea422b2b4f" data-file-name="components/statistics/DailyRegistrations.tsx">
-              <div data-unique-id="5e48c875-2632-4fcd-afcb-55f87fafb656" data-file-name="components/statistics/DailyRegistrations.tsx">
-                <p className="text-sm font-medium text-blue-700" data-unique-id="ba4cdb54-fae7-472e-b5f7-fd9cd65eea26" data-file-name="components/statistics/DailyRegistrations.tsx">
-                  <span className="editable-text" data-unique-id="d33cff0b-3d3f-45b9-9647-76b559c560b7" data-file-name="components/statistics/DailyRegistrations.tsx">Total Pendaftaran</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" data-unique-id="69dd20d6-71f8-4dd6-8830-f655cc04a5db" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200" data-unique-id="5f0abbad-edaf-4b4e-a316-38b109826281" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <div className="flex items-center justify-between" data-unique-id="4aaffa5f-98d2-4f15-8346-b54a114ec851" data-file-name="components/statistics/DailyRegistrations.tsx">
+              <div data-unique-id="fd06540b-a955-4bd4-a14e-c8e0980c2656" data-file-name="components/statistics/DailyRegistrations.tsx">
+                <p className="text-sm font-medium text-blue-700" data-unique-id="388775ac-998b-4100-843f-0261c87c7f48" data-file-name="components/statistics/DailyRegistrations.tsx">
+                  <span className="editable-text" data-unique-id="f67577bd-1c2a-40a2-a3c5-8bb9f80c3b16" data-file-name="components/statistics/DailyRegistrations.tsx">Total Pendaftaran</span>
                 </p>
-                <p className="text-2xl font-bold text-blue-900" data-unique-id="93489c7e-45f2-4f0a-8140-04d4be792e0c" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{totalRegistrations}</p>
-                <p className="text-xs text-blue-600" data-unique-id="b58db416-7b8e-457e-ad9e-a30277971355" data-file-name="components/statistics/DailyRegistrations.tsx">
-                  <span className="editable-text" data-unique-id="0e59974c-2b34-4b00-b7c9-90606f3fa7ac" data-file-name="components/statistics/DailyRegistrations.tsx">bulan ini</span>
+                <p className="text-2xl font-bold text-blue-900" data-unique-id="1c65dff8-8f9b-47d0-9912-ba6bd5ecf07a" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{totalRegistrations}</p>
+                <p className="text-xs text-blue-600" data-unique-id="03be08c5-fe05-4547-90aa-d0d029899379" data-file-name="components/statistics/DailyRegistrations.tsx">
+                  <span className="editable-text" data-unique-id="c090e4cc-ce58-4061-a342-c01cca168e54" data-file-name="components/statistics/DailyRegistrations.tsx">bulan ini</span>
                 </p>
               </div>
               <Users className="h-8 w-8 text-blue-500" />
             </div>
           </div>
 
-          <div className="bg-green-50 p-4 rounded-lg border border-green-200" data-unique-id="cd1b4aa6-e2d7-4a58-9b0d-fd0732ffcccb" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <div className="flex items-center justify-between" data-unique-id="1e38a372-47e4-4bc5-a944-48ecda810470" data-file-name="components/statistics/DailyRegistrations.tsx">
-              <div data-unique-id="687f99f4-dac0-4897-bc6c-088e59a2e57e" data-file-name="components/statistics/DailyRegistrations.tsx">
-                <p className="text-sm font-medium text-green-700" data-unique-id="9d38a08a-c075-44da-9153-28b3c8eb46bc" data-file-name="components/statistics/DailyRegistrations.tsx">
-                  <span className="editable-text" data-unique-id="077851dc-ce3e-4884-8863-ccb02bd9bf9e" data-file-name="components/statistics/DailyRegistrations.tsx">Rata-rata per Hari</span>
+          <div className="bg-green-50 p-4 rounded-lg border border-green-200" data-unique-id="cc585748-f64b-48a2-b292-a7c69a713d08" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <div className="flex items-center justify-between" data-unique-id="4d0a0873-eec6-4319-8d41-f23164b7f7cd" data-file-name="components/statistics/DailyRegistrations.tsx">
+              <div data-unique-id="060d2bba-d36c-463f-93ac-f78ae5b43d97" data-file-name="components/statistics/DailyRegistrations.tsx">
+                <p className="text-sm font-medium text-green-700" data-unique-id="3a6d3416-472a-4071-b8bc-203b817094c6" data-file-name="components/statistics/DailyRegistrations.tsx">
+                  <span className="editable-text" data-unique-id="39f9ab42-642d-4a77-9339-706afdd302b5" data-file-name="components/statistics/DailyRegistrations.tsx">Rata-rata per Hari</span>
                 </p>
-                <p className="text-2xl font-bold text-green-900" data-unique-id="6436e06b-42e1-4dda-84d8-6d32449780b8" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{averagePerDay}</p>
-                <p className="text-xs text-green-600" data-unique-id="36bf5649-9268-4d0a-a4d0-634bcb32f9f0" data-file-name="components/statistics/DailyRegistrations.tsx">
-                  <span className="editable-text" data-unique-id="a2540d14-b295-4b2e-9697-9f2517cb20ee" data-file-name="components/statistics/DailyRegistrations.tsx">user/hari</span>
+                <p className="text-2xl font-bold text-green-900" data-unique-id="9121a2d6-5d1f-489c-b309-97d2e03fafb7" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{averagePerDay}</p>
+                <p className="text-xs text-green-600" data-unique-id="cee7250d-5567-4a22-a597-d8a6ec186fb7" data-file-name="components/statistics/DailyRegistrations.tsx">
+                  <span className="editable-text" data-unique-id="12afd12a-6c9e-40bd-8b5f-37b1e4052c48" data-file-name="components/statistics/DailyRegistrations.tsx">user/hari</span>
                 </p>
               </div>
               <TrendingUp className="h-8 w-8 text-green-500" />
             </div>
           </div>
 
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200" data-unique-id="c4d5d8f9-78cb-4e24-b65c-73c6065e7119" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <div className="flex items-center justify-between" data-unique-id="502eb834-2b43-4ee9-9358-d373336382f0" data-file-name="components/statistics/DailyRegistrations.tsx">
-              <div data-unique-id="74f00d0e-5f1a-4fd4-8b61-e5e8f02faf22" data-file-name="components/statistics/DailyRegistrations.tsx">
-                <p className="text-sm font-medium text-purple-700" data-unique-id="585c4752-16fb-4d3f-8f7e-8d6d147d144b" data-file-name="components/statistics/DailyRegistrations.tsx">
-                  <span className="editable-text" data-unique-id="81a47357-a890-440a-8d9e-5bea18b7a2e7" data-file-name="components/statistics/DailyRegistrations.tsx">Hari Tertinggi</span>
+          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200" data-unique-id="391e1f5f-bf63-453d-84c0-58be9862aae5" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <div className="flex items-center justify-between" data-unique-id="2bc8c42a-8b85-421f-abf3-bcf413a59c9e" data-file-name="components/statistics/DailyRegistrations.tsx">
+              <div data-unique-id="6fcb8565-b50d-4929-bd7a-d6ddee6e2fa7" data-file-name="components/statistics/DailyRegistrations.tsx">
+                <p className="text-sm font-medium text-purple-700" data-unique-id="9b758460-f12c-41b5-b19e-666b72c49281" data-file-name="components/statistics/DailyRegistrations.tsx">
+                  <span className="editable-text" data-unique-id="3d297e44-c46d-4eaa-b5a8-e50396efa315" data-file-name="components/statistics/DailyRegistrations.tsx">Hari Tertinggi</span>
                 </p>
-                <p className="text-2xl font-bold text-purple-900" data-unique-id="b06ba0f0-e455-4046-9133-613ddc2ef998" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{peakDay.registrations}</p>
-                <p className="text-xs text-purple-600" data-unique-id="87a39fd3-ac43-4a07-9669-4b29123dc602" data-file-name="components/statistics/DailyRegistrations.tsx">
-                  <span className="editable-text" data-unique-id="0247992d-841b-46c5-815d-aecd92ee525a" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">tanggal {peakDay.day}</span>
+                <p className="text-2xl font-bold text-purple-900" data-unique-id="b6bcc60d-8377-4f6d-8933-b2772c604619" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">{peakDay.registrations}</p>
+                <p className="text-xs text-purple-600" data-unique-id="b52d6033-9e80-44df-b8f2-7909f47e4903" data-file-name="components/statistics/DailyRegistrations.tsx">
+                  <span className="editable-text" data-unique-id="ff401c7d-8a34-4eb8-bef2-0a5cb0c74480" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">tanggal {peakDay.day}</span>
                 </p>
               </div>
-              <Calendar className="h-8 w-8 text-purple-500" data-unique-id="fc92cba3-d871-4b14-ad43-fb8b30898051" data-file-name="components/statistics/DailyRegistrations.tsx" />
+              <Calendar className="h-8 w-8 text-purple-500" data-unique-id="44c85427-8485-4eea-ba91-6ec42238dc32" data-file-name="components/statistics/DailyRegistrations.tsx" />
             </div>
           </div>
         </div>
 
         {/* Charts */}
-        <Tabs defaultValue="bar" className="space-y-4" data-unique-id="c5c2b81e-258f-4a1b-be1f-9ec1e0b5ae22" data-file-name="components/statistics/DailyRegistrations.tsx">
+        <Tabs defaultValue="bar" className="space-y-4" data-unique-id="0e657f44-5394-4493-9f88-47d6935872d1" data-file-name="components/statistics/DailyRegistrations.tsx">
           <TabsList>
             <TabsTrigger value="bar" className="flex items-center gap-2">
-              <span className="editable-text" data-unique-id="5c200003-40b9-4dd4-bb06-3d76ea56330b" data-file-name="components/statistics/DailyRegistrations.tsx">Grafik Batang</span>
+              <span className="editable-text" data-unique-id="26d21914-2e7e-493d-93d2-26c02432b173" data-file-name="components/statistics/DailyRegistrations.tsx">Grafik Batang</span>
             </TabsTrigger>
             <TabsTrigger value="line" className="flex items-center gap-2">
-              <span className="editable-text" data-unique-id="5490473e-2abf-48fb-a086-956c4aabd1b3" data-file-name="components/statistics/DailyRegistrations.tsx">Grafik Garis</span>
+              <span className="editable-text" data-unique-id="593c11c7-b8a8-4332-a483-1212ad0cd55f" data-file-name="components/statistics/DailyRegistrations.tsx">Grafik Garis</span>
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="bar" className="space-y-4">
-            <div className="h-80" data-unique-id="9e034ca4-5cdf-412a-b07b-dd8325eb0e29" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <div className="h-80" data-unique-id="0e68bc24-94a6-49b3-8307-b6b992d2652e" data-file-name="components/statistics/DailyRegistrations.tsx">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={dailyData} margin={{
                 top: 20,
@@ -175,7 +175,7 @@ export function DailyRegistrations({
           </TabsContent>
 
           <TabsContent value="line" className="space-y-4">
-            <div className="h-80" data-unique-id="d25f7672-7fd6-4225-909f-98efe6bb956f" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <div className="h-80" data-unique-id="37f17165-d71c-43fd-94e1-4934fa9b4339" data-file-name="components/statistics/DailyRegistrations.tsx">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={dailyData} margin={{
                 top: 20,
@@ -214,9 +214,9 @@ export function DailyRegistrations({
         </Tabs>
 
         {/* Additional Info */}
-        <div className="mt-4 p-4 bg-blue-50 rounded-lg" data-unique-id="e20071c1-095a-4c52-95c7-54aeaafb4a34" data-file-name="components/statistics/DailyRegistrations.tsx">
-          <p className="text-sm text-blue-800" data-unique-id="77af45ba-bf42-4844-b9a0-d3cf0b2304be" data-file-name="components/statistics/DailyRegistrations.tsx">
-            <span className="editable-text" data-unique-id="f1820355-d0f8-4d63-9eed-b688c7ce02f1" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">Menampilkan jumlah user yang mendaftar setiap hari dalam bulan {monthNames[month - 1]} {year}. 
+        <div className="mt-4 p-4 bg-blue-50 rounded-lg" data-unique-id="f381d2ba-cb9a-4d19-b246-85722c4064c1" data-file-name="components/statistics/DailyRegistrations.tsx">
+          <p className="text-sm text-blue-800" data-unique-id="848714cb-f517-40f8-a31a-94efe4f5e577" data-file-name="components/statistics/DailyRegistrations.tsx">
+            <span className="editable-text" data-unique-id="fa99aa34-4a95-42d8-994e-0ee6a5ec95cb" data-file-name="components/statistics/DailyRegistrations.tsx" data-dynamic-text="true">Menampilkan jumlah user yang mendaftar setiap hari dalam bulan {monthNames[month - 1]} {year}. 
             Total {totalRegistrations} pendaftaran dengan rata-rata {averagePerDay} pendaftaran per hari.</span>
           </p>
         </div>

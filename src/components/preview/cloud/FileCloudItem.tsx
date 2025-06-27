@@ -87,51 +87,51 @@ export function FileCloudItem({
       return 'border-gray-500 bg-gray-50 text-gray-600';
     }
   };
-  return <div className="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-lg transition-all duration-200 flex flex-col h-full" data-unique-id="3216081d-f1cd-4c85-b7f6-7d49373b2683" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+  return <div className="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-lg transition-all duration-200 flex flex-col h-full" data-unique-id="4bb1c78a-6615-4500-9cf2-447be984a916" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
       {/* File Cover/Icon - Top */}
-      <div className="w-full aspect-[3/4] relative overflow-hidden rounded-lg border border-gray-100 mb-3 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center" data-unique-id="8956c66b-9eaf-4be2-b799-5c4e84baed2d" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+      <div className="w-full aspect-[3/4] relative overflow-hidden rounded-lg border border-gray-100 mb-3 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center" data-unique-id="d5c96d6a-b0d0-498d-aaf0-7bf1718867df" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
         {file.coverUrl && file.coverUrl !== '' ? <img src={file.coverUrl} alt={`Cover for ${file.title}`} className="w-full h-full object-cover transition-transform duration-200 hover:scale-105" onError={e => {
         const target = e.target as HTMLImageElement;
         target.style.display = 'none';
         target.parentElement?.classList.add('bg-gradient-to-br', 'from-gray-50', 'to-gray-100');
-      }} data-unique-id="a1bb141e-94c6-41e0-9452-47d7a180a275" data-file-name="components/preview/cloud/FileCloudItem.tsx" /> : <div className="text-blue-600" data-unique-id="6bb99c94-f821-4547-97e1-687f53a43f24" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+      }} data-unique-id="15518f97-bc27-4d17-996c-aeb5c1ccc585" data-file-name="components/preview/cloud/FileCloudItem.tsx" /> : <div className="text-blue-600" data-unique-id="4725fa76-ccfe-46bd-a11d-56ecdedde139" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
             {getFileTypeIcon(file.fileType)}
           </div>}
       </div>
 
       {/* Title and File Type - Center */}
-      <div className="flex-1 mb-4" data-unique-id="a22cb1ee-2b20-48e3-b961-9e8d155bb530" data-file-name="components/preview/cloud/FileCloudItem.tsx">
-        <h4 className="font-semibold text-gray-900 line-clamp-2 text-sm leading-tight mb-1" data-unique-id="f25fd47c-5440-46da-a6e4-43d22e1e76a0" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+      <div className="flex-1 mb-4" data-unique-id="fa0a315a-0149-4dbb-9361-743b1e862696" data-file-name="components/preview/cloud/FileCloudItem.tsx">
+        <h4 className="font-semibold text-gray-900 line-clamp-2 text-sm leading-tight mb-1" data-unique-id="2c55c002-0432-4433-9336-8e4e45d305bd" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
           {file.title}
         </h4>
-        <div className="flex items-center justify-between text-xs text-gray-500" data-unique-id="ed2eee7e-a179-4227-b365-ec8ee168f1f7" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
-          {file.categoryName && <span className="truncate" data-unique-id="3383538d-2d3b-4685-b3f3-cc95500116db" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">{file.categoryName}</span>}
-          {file.fileType && <span className="bg-gray-100 px-2 py-1 rounded-full text-xs font-medium uppercase" data-unique-id="9f817067-d76b-441a-8a7f-3e3f7ef60f95" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+        <div className="flex items-center justify-between text-xs text-gray-500" data-unique-id="a2b7c9d5-fd43-4bd4-be90-e576308d86ce" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+          {file.categoryName && <span className="truncate" data-unique-id="b1c30f31-aaf2-41f4-a87d-52a08fec735f" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">{file.categoryName}</span>}
+          {file.fileType && <span className="bg-gray-100 px-2 py-1 rounded-full text-xs font-medium uppercase" data-unique-id="408a5d96-de57-483b-891d-333a9b29f29d" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
               {file.fileType}
             </span>}
         </div>
       </div>
 
       {/* Action Buttons - Bottom */}
-      <div className="space-y-2" data-unique-id="02f76aa1-b31e-4698-a6a6-acd5a3257f49" data-file-name="components/preview/cloud/FileCloudItem.tsx">
-        <Button onClick={openInNewTab} className="w-full bg-blue-600 hover:bg-blue-700 text-white border-0 h-9 text-sm font-medium" data-unique-id="3a914fe4-48a2-4b30-b53f-b2c08aacd92f" data-file-name="components/preview/cloud/FileCloudItem.tsx">
+      <div className="space-y-2" data-unique-id="4d9d106c-af1d-43a3-a881-8ffb469f4cd1" data-file-name="components/preview/cloud/FileCloudItem.tsx">
+        <Button onClick={openInNewTab} className="w-full bg-blue-600 hover:bg-blue-700 text-white border-0 h-9 text-sm font-medium" data-unique-id="ff3651a0-84eb-4f64-92b0-79f6dde63871" data-file-name="components/preview/cloud/FileCloudItem.tsx">
           <ExternalLink className="h-4 w-4 mr-2" />
-          <span className="editable-text" data-unique-id="4a1db285-0e38-4d06-8b8d-aae520ed4f69" data-file-name="components/preview/cloud/FileCloudItem.tsx">Open</span>
+          <span className="editable-text" data-unique-id="5b38af5d-93e8-427d-9a8c-dca521f0c680" data-file-name="components/preview/cloud/FileCloudItem.tsx">Open</span>
         </Button>
 
-        <Button onClick={handleDownload} variant="outline" className="w-full border-green-200 bg-green-50 text-green-700 hover:bg-green-100 hover:border-green-300 h-9 text-sm font-medium" disabled={downloading} data-unique-id="9605fbb2-a2bc-45a1-a7e2-fbf5923173b5" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+        <Button onClick={handleDownload} variant="outline" className="w-full border-green-200 bg-green-50 text-green-700 hover:bg-green-100 hover:border-green-300 h-9 text-sm font-medium" disabled={downloading} data-unique-id="b10105de-8e34-441c-b21b-efae6c2d21b4" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
           {downloading ? <Loader className="h-4 w-4 mr-2 animate-spin" /> : downloadSuccess ? <Check className="h-4 w-4 mr-2 text-green-600" /> : <Download className="h-4 w-4 mr-2" />}
-          <span className="editable-text" data-unique-id="b18a1a67-6d56-4f60-832b-0b053a4b25e0" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
+          <span className="editable-text" data-unique-id="0083a60b-35db-46b2-a78f-c7b8fd39ea80" data-file-name="components/preview/cloud/FileCloudItem.tsx" data-dynamic-text="true">
             {downloading ? 'Downloading...' : downloadSuccess ? 'Downloaded!' : 'Download'}
           </span>
         </Button>
       </div>
 
       {/* Success Message */}
-      {downloadSuccess && <div className="mt-2 p-2 bg-green-50 border border-green-200 rounded-lg" data-unique-id="1bca8a63-e80f-435f-b382-11e95f5333b9" data-file-name="components/preview/cloud/FileCloudItem.tsx">
-          <p className="text-xs text-green-700 text-center flex items-center justify-center" data-unique-id="fe9d1505-ab71-4e42-b7ed-cf5cd8388850" data-file-name="components/preview/cloud/FileCloudItem.tsx">
+      {downloadSuccess && <div className="mt-2 p-2 bg-green-50 border border-green-200 rounded-lg" data-unique-id="a81085d1-0c24-47ea-be5e-b5dc644f32ec" data-file-name="components/preview/cloud/FileCloudItem.tsx">
+          <p className="text-xs text-green-700 text-center flex items-center justify-center" data-unique-id="76c36c55-28b2-4dee-abb2-639fe7a3c504" data-file-name="components/preview/cloud/FileCloudItem.tsx">
             <Check className="h-3 w-3 mr-1" />
-            <span className="editable-text" data-unique-id="55b9c7b4-23a9-47d4-b665-be350e9ada5f" data-file-name="components/preview/cloud/FileCloudItem.tsx">File downloaded successfully!</span>
+            <span className="editable-text" data-unique-id="c91b2580-eff1-41de-b890-07bf957b64a3" data-file-name="components/preview/cloud/FileCloudItem.tsx">File downloaded successfully!</span>
           </p>
         </div>}
     </div>;

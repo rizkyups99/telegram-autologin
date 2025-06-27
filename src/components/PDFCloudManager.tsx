@@ -371,125 +371,125 @@ export default function PDFCloudManager() {
       window.open(url, '_blank');
     }
   };
-  return <div className="space-y-6" data-unique-id="6ef04cf6-5e31-4329-b8db-887031f7b5dd" data-file-name="components/PDFCloudManager.tsx">
-      <Card data-unique-id="d3d953fb-1579-49da-be8f-d955b954af85" data-file-name="components/PDFCloudManager.tsx">
-        <CardHeader data-unique-id="60012ecc-c8c3-4b93-af53-cbf55aae5996" data-file-name="components/PDFCloudManager.tsx">
-          <CardTitle data-unique-id="7b4b7618-23bc-452f-b1ed-48e335196ca3" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="b8f6b74c-1ce9-4dc3-90ee-92b573899a20" data-file-name="components/PDFCloudManager.tsx">PDF Cloud Management</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="4e62f977-c9a7-41e2-b9c0-d9a76747bd6e" data-file-name="components/PDFCloudManager.tsx">
+  return <div className="space-y-6" data-unique-id="adf0e2c8-0bd7-414b-bbd0-ce75e52a4862" data-file-name="components/PDFCloudManager.tsx">
+      <Card data-unique-id="def82dee-e479-401d-b20c-26196b710853" data-file-name="components/PDFCloudManager.tsx">
+        <CardHeader data-unique-id="598d3956-0a82-4934-8363-73b871e6033b" data-file-name="components/PDFCloudManager.tsx">
+          <CardTitle data-unique-id="122ec822-c89c-4b2b-b973-32f08a9389c0" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="c17a8009-1258-4d36-8770-51567399dd0d" data-file-name="components/PDFCloudManager.tsx">PDF Cloud Management</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="f3e425b8-71c5-4e28-bcf4-6d7ff71f4a17" data-file-name="components/PDFCloudManager.tsx">
             Manage PDF files stored in cloud storage
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="32e6bfb5-1db9-4572-bb3c-f30196732e2e" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="f180663a-6ed5-4321-bb1c-877ddeb0dad7" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
           {/* Upload form */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="09120631-6cf3-4ac2-b162-f5ebd6930362" data-file-name="components/PDFCloudManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="46ccd6e7-6bdc-4018-8a30-7168b0308155" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="037ea93c-dd7e-474b-936e-3cc604b0f8dd" data-file-name="components/PDFCloudManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="2bf4791a-4454-4464-875e-ac461332f2dc" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
               {editingFile !== null ? "Edit PDF" : "Add PDF From Cloud"}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" data-unique-id="56a61e58-6f06-4d78-93c1-4aebdb35d3cf" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-              <div data-unique-id="d16747a8-fda4-44c1-9a86-cbdfe405bf79" data-file-name="components/PDFCloudManager.tsx">
-                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="90aef578-50c8-45da-bd61-9cd2cbbe41a0" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="3dcb153b-396c-48cf-9e7f-ea8d01a28ffb" data-file-name="components/PDFCloudManager.tsx">Title</span></Label>
-                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Enter PDF title" className="w-full" data-unique-id="31b1eb48-807e-4ccc-9b71-23711a562504" data-file-name="components/PDFCloudManager.tsx" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4" data-unique-id="02c92ab3-3a24-4324-990e-e3a66a87e76b" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="f2d20212-dc21-4b66-9ad6-b43776271f1d" data-file-name="components/PDFCloudManager.tsx">
+                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="35736aeb-e9ad-4ceb-8739-e4bce48a2aaa" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="2210bb6d-2c42-49ff-924e-fad25fb6e672" data-file-name="components/PDFCloudManager.tsx">Title</span></Label>
+                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Enter PDF title" className="w-full" data-unique-id="0821851c-de4a-4b21-a2b7-f42ab27d078d" data-file-name="components/PDFCloudManager.tsx" />
               </div>
               
-              <div data-unique-id="1494b6ec-5bb7-47c1-8b24-4816dd26b84a" data-file-name="components/PDFCloudManager.tsx">
-                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="9cab3796-c3d1-4db8-ad83-ddfa7eb512a7" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="3e9a4dc4-d160-4be3-a123-e06b80b9a614" data-file-name="components/PDFCloudManager.tsx">Category</span></Label>
-                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="46231ff0-6103-4551-b702-5ddf9c143ecd" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="692193c2-6d2f-451a-929a-a6cfbb2f0e90" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="a03250e6-6ba5-43ff-9759-170de681aeee" data-file-name="components/PDFCloudManager.tsx">Select Category</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="89f88d3d-be9e-4cf0-ba3d-7ee72eb32e65" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="3d8d2544-be18-4d7e-9aa9-0e03c373bbb2" data-file-name="components/PDFCloudManager.tsx">
+                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="f81136ab-6194-45ad-8603-f3f5cb00899d" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="f27ac0f3-49e1-4cac-9cd9-755252f62fed" data-file-name="components/PDFCloudManager.tsx">Category</span></Label>
+                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="3f7235fe-e69d-4b96-a0cd-f57f1da4b928" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="aa164cfc-0289-4312-9848-4a60e93bfb96" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="34647998-9581-46f0-88cb-c3fe2aada6bf" data-file-name="components/PDFCloudManager.tsx">Select Category</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="1dbb3223-7947-4e37-b305-41c4216f31cf" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
               
               {/* Cover Upload Section */}
-              <div className="md:col-span-2" data-unique-id="701a370a-7efc-4350-a409-d2673346ff6e" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                <Label htmlFor="coverFile" className="block text-sm font-medium mb-1" data-unique-id="c4cfd03a-e0b3-487f-b536-78e00a8e2d60" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="d205c1f8-47e9-4953-b1f7-4d0484b92b83" data-file-name="components/PDFCloudManager.tsx">Cover Image</span></Label>
-                <div className="flex items-center space-x-2" data-unique-id="610d48df-ce79-4d13-addf-0ae7f86422af" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                  <Button type="button" variant="outline" onClick={() => coverFileInputRef.current?.click()} className="flex items-center" disabled={isUploadingCover} data-unique-id="9a40d0c8-2890-4093-8dca-a3cd6bb93da0" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                    <Image className="h-4 w-4 mr-2" data-unique-id="9b55952a-de32-46ab-b14c-28b3993ce54d" data-file-name="components/PDFCloudManager.tsx" />
+              <div className="md:col-span-2" data-unique-id="9bbd6956-bdcb-44c0-a83d-39453d557f86" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                <Label htmlFor="coverFile" className="block text-sm font-medium mb-1" data-unique-id="388e7cb4-96b0-4b25-9b74-128c509c5e59" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="954cc025-c74e-4058-8ce5-94ad8cca22dd" data-file-name="components/PDFCloudManager.tsx">Cover Image</span></Label>
+                <div className="flex items-center space-x-2" data-unique-id="b6c3cff6-f291-4412-8316-d5f86c37385f" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                  <Button type="button" variant="outline" onClick={() => coverFileInputRef.current?.click()} className="flex items-center" disabled={isUploadingCover} data-unique-id="869ec85e-ff5d-4ec5-8406-5e80857f1518" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                    <Image className="h-4 w-4 mr-2" data-unique-id="6c81f329-80ec-48dc-9509-e90b69cd0668" data-file-name="components/PDFCloudManager.tsx" />
                     {coverFile ? 'Change Cover' : 'Select Cover'}
                   </Button>
-                  {coverFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="d9851c00-1fa0-408e-a675-6defd5f9a117" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                  {coverFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="6c7ed85e-6c17-4df9-a144-2433fcbbfa88" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
                       {coverFile.name}
-                      <span className="text-xs ml-1 text-green-600" data-unique-id="bfbc382f-b963-4ac9-9c7a-ef69fd7482f8" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="bfff55f1-7d0b-4edc-9967-22dcbe6dce41" data-file-name="components/PDFCloudManager.tsx">(Will be uploaded)</span></span>
+                      <span className="text-xs ml-1 text-green-600" data-unique-id="05aabde1-8535-40e4-b04c-a4d702f37865" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="839fa13e-a63c-4411-a7bf-e385bbfd9eb3" data-file-name="components/PDFCloudManager.tsx">(Will be uploaded)</span></span>
                     </span>}
                 </div>
-                <input ref={coverFileInputRef} id="coverFile" type="file" accept="image/*" onChange={handleCoverFileChange} className="hidden" data-unique-id="c15d20a5-ee6a-4f61-9f6e-348fe999ad8b" data-file-name="components/PDFCloudManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="fd72bfd2-961c-4a33-8319-5502e3981d98" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="d201a818-dbdc-4764-bd5f-3c2929fc07b5" data-file-name="components/PDFCloudManager.tsx">
+                <input ref={coverFileInputRef} id="coverFile" type="file" accept="image/*" onChange={handleCoverFileChange} className="hidden" data-unique-id="6ab1974d-61db-48e4-9eb4-565baba5539f" data-file-name="components/PDFCloudManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="c0c2fdc3-9618-475b-ac65-efa097db9375" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="131a0f66-91be-4963-aa2f-1583fa02a416" data-file-name="components/PDFCloudManager.tsx">
                   Image format: JPG, PNG, or GIF
                 </span></p>
 
-                {previewUrl && <div className="mt-4" data-unique-id="96bf89be-0db4-4d5b-b4fd-80f8d59fee8d" data-file-name="components/PDFCloudManager.tsx">
-                    <Label className="block text-sm font-medium mb-1" data-unique-id="fd685501-82f4-4f61-8601-06a0622e2123" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="fabb5fea-8486-4c6d-aecc-2b99ad08a6e8" data-file-name="components/PDFCloudManager.tsx">Preview</span></Label>
-                    <div className="mt-2 relative w-40 h-56 overflow-hidden border rounded-md" data-unique-id="5735f532-f7cd-47b9-b540-85c7cdecc5bb" data-file-name="components/PDFCloudManager.tsx">
-                      <img src={previewUrl} alt="Preview" className="object-cover w-full h-full" data-unique-id="08805940-5a21-4803-beb2-5c80ca43aade" data-file-name="components/PDFCloudManager.tsx" />
+                {previewUrl && <div className="mt-4" data-unique-id="4784d17a-b774-418b-adbf-84f8e57ce4e1" data-file-name="components/PDFCloudManager.tsx">
+                    <Label className="block text-sm font-medium mb-1" data-unique-id="ac2ef7dc-4c22-446f-be81-f280a27086b8" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="0e9d10a0-f442-48a6-9462-23bb97adecde" data-file-name="components/PDFCloudManager.tsx">Preview</span></Label>
+                    <div className="mt-2 relative w-40 h-56 overflow-hidden border rounded-md" data-unique-id="ddd13594-7cf5-40ec-813b-303586275280" data-file-name="components/PDFCloudManager.tsx">
+                      <img src={previewUrl} alt="Preview" className="object-cover w-full h-full" data-unique-id="9292abc3-c1e6-47b9-9379-cd4b7b7d9b64" data-file-name="components/PDFCloudManager.tsx" />
                     </div>
                   </div>}
               </div>
               
-              <div className="md:col-span-2" data-unique-id="40fb4a70-624c-4252-86bc-c415ac86f305" data-file-name="components/PDFCloudManager.tsx">
-                <Label htmlFor="fileUrl" className="block text-sm font-medium mb-1" data-unique-id="73190aa5-7673-4101-8fd4-d23fcf2fadd7" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="192a384c-d20b-4224-a0a4-678f5c0de4b0" data-file-name="components/PDFCloudManager.tsx">PDF URL</span></Label>
-                <Input id="fileUrl" name="fileUrl" value={formData.fileUrl} onChange={handleInputChange} placeholder="Enter PDF file URL from cloud storage" className="w-full" data-unique-id="d01deea0-6a83-489d-9423-5db3ab637840" data-file-name="components/PDFCloudManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="765a14c1-c79f-4612-b7c4-ba9d8fcfb2f1" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="cd37fe9a-7c9a-4db4-8faa-a90b4f8cb660" data-file-name="components/PDFCloudManager.tsx">
+              <div className="md:col-span-2" data-unique-id="836c86b6-a061-4e4a-ac70-b20219eba66c" data-file-name="components/PDFCloudManager.tsx">
+                <Label htmlFor="fileUrl" className="block text-sm font-medium mb-1" data-unique-id="f7834c7e-53dd-4d20-aa86-4e42addf1045" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="4693560d-de72-4a35-b430-d5b14a6f6ab9" data-file-name="components/PDFCloudManager.tsx">PDF URL</span></Label>
+                <Input id="fileUrl" name="fileUrl" value={formData.fileUrl} onChange={handleInputChange} placeholder="Enter PDF file URL from cloud storage" className="w-full" data-unique-id="78a1cc24-e422-4ae4-a49e-9d6949d9f6e2" data-file-name="components/PDFCloudManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="6ecb09d0-6c70-4c67-8778-f8d746b68859" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="1d1b5b47-bbc9-48e3-b5e4-fee43a7d1f8f" data-file-name="components/PDFCloudManager.tsx">
                   Paste the URL of your PDF file from cloud storage
                 </span></p>
               </div>
             </div>
             
-            <div className="flex justify-end space-x-2" data-unique-id="19e28545-08a3-4cff-9739-dc6cc9cbd2a7" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-              {editingFile !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="770e1c4d-2b7f-4904-b523-5ae804549e34" data-file-name="components/PDFCloudManager.tsx">
+            <div className="flex justify-end space-x-2" data-unique-id="466e6b33-2123-4836-97b1-e705b544ade8" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+              {editingFile !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="7301c391-8460-47c5-877e-5442845db093" data-file-name="components/PDFCloudManager.tsx">
                   <X className="h-4 w-4" />
-                  <span className="hidden sm:inline" data-unique-id="7a16730e-3bba-44f7-825f-49fc38a2372c" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="b2781a63-b61c-45b1-b046-67542edc8ae4" data-file-name="components/PDFCloudManager.tsx">Cancel</span></span>
+                  <span className="hidden sm:inline" data-unique-id="9aff71c8-419d-4cf2-8a46-282f567b5581" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="236c38a7-78d1-4cce-beb3-fbf1eac23cc2" data-file-name="components/PDFCloudManager.tsx">Cancel</span></span>
                 </Button>}
-              <Button onClick={editingFile !== null ? () => updateFile(editingFile) : createFile} disabled={isLoading || isUploadingCover || !formData.title || !formData.fileUrl || !formData.categoryId} className="flex items-center gap-1" data-unique-id="e55514d8-f18a-4cd8-9c97-9185c66348ab" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                {isLoading || isUploadingCover ? <span className="flex items-center" data-unique-id="d2ced70a-5738-4540-8956-17f2fd817cad" data-file-name="components/PDFCloudManager.tsx">
-                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="d9390471-9fc9-4e31-a490-af5b5105064d" data-file-name="components/PDFCloudManager.tsx">
+              <Button onClick={editingFile !== null ? () => updateFile(editingFile) : createFile} disabled={isLoading || isUploadingCover || !formData.title || !formData.fileUrl || !formData.categoryId} className="flex items-center gap-1" data-unique-id="c57ecf89-73bd-4f91-b236-bc671ccf376e" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                {isLoading || isUploadingCover ? <span className="flex items-center" data-unique-id="262e5785-b226-4fe7-bc59-80ba561baae8" data-file-name="components/PDFCloudManager.tsx">
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="d9328804-30f8-4ed5-ac25-a2bda94d0aef" data-file-name="components/PDFCloudManager.tsx">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    <span className="hidden sm:inline" data-unique-id="ffb314c1-b314-44f0-b2b0-bdd42c81d68a" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                    <span className="hidden sm:inline" data-unique-id="47e330a0-c354-4ea8-bd35-e5a5f0f8abe4" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
                       {isUploadingCover ? `Uploading... ${uploadProgress}%` : 'Saving...'}
                     </span>
                   </span> : editingFile !== null ? <>
                     <Save className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="19d09dfd-aa92-4bce-98e4-7459b194dff8" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="4adda7f9-68f2-48d7-9568-04c9683db3b7" data-file-name="components/PDFCloudManager.tsx">Update PDF</span></span>
+                    <span className="hidden sm:inline" data-unique-id="52fc64bf-a543-406c-98c8-2dbd663d2355" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="8942dbfa-d259-4fb2-a000-6b6d632518d5" data-file-name="components/PDFCloudManager.tsx">Update PDF</span></span>
                   </> : <>
                     <Plus className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="197ce9de-863c-4ec4-89aa-d7054106da80" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="aa46896e-5caa-48e9-9b40-766471b0acc2" data-file-name="components/PDFCloudManager.tsx">Add PDF</span></span>
+                    <span className="hidden sm:inline" data-unique-id="02462816-4e65-4477-b98e-913cfd504c4f" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="993da0d2-8f96-40aa-a173-d36fd8932b5d" data-file-name="components/PDFCloudManager.tsx">Add PDF</span></span>
                   </>}
               </Button>
             </div>
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="995ba072-5542-4b16-8d48-62d7832d05ee" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="79809025-827e-4132-acb4-1c160097f059" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="7c333ad1-372e-4fa2-beab-d91940cd14da" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="1d257343-b31a-4d98-aaac-2452d5fa20ea" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
           {/* Search filters */}
-          <div className="bg-muted p-4 rounded-md" data-unique-id="bbc71210-6cc3-4ef0-9d30-355bfdf44867" data-file-name="components/PDFCloudManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="bf35b2d3-5e5f-441e-a6f3-c908467fd3fd" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="a715c07b-da4f-4aa0-afe2-10a2c2f9aa14" data-file-name="components/PDFCloudManager.tsx">Search Filters</span></h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="6b126ee5-8d32-4ecd-8538-e4e8f0032538" data-file-name="components/PDFCloudManager.tsx">
-              <div data-unique-id="b4d8076f-8649-4870-98fd-92fc5aad4617" data-file-name="components/PDFCloudManager.tsx">
-                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="7119ecf3-551d-4e9a-a31c-b06253423496" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="4c71a6d3-c4e0-480c-9d11-7eacfe08c507" data-file-name="components/PDFCloudManager.tsx">Title</span></Label>
-                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Search by title" data-unique-id="999426a3-b4d9-4181-9389-b8f9f2aca8e3" data-file-name="components/PDFCloudManager.tsx" />
+          <div className="bg-muted p-4 rounded-md" data-unique-id="7407f0a1-ac8a-4a16-b503-5f9732ac4a05" data-file-name="components/PDFCloudManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="16460f75-f8da-4b62-87f8-10c0d87175ac" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="bf3a409a-b877-40d0-a787-c0c1ba4540c8" data-file-name="components/PDFCloudManager.tsx">Search Filters</span></h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="b39462b5-46dd-4ab1-9084-67632ba34cce" data-file-name="components/PDFCloudManager.tsx">
+              <div data-unique-id="d6db740f-c191-429f-ba60-0ae9fdab8a8f" data-file-name="components/PDFCloudManager.tsx">
+                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="467030ad-7b73-420b-beea-5483c4ae7f3d" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="f4dc5967-f049-4c50-9717-4e04e0a790ff" data-file-name="components/PDFCloudManager.tsx">Title</span></Label>
+                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Search by title" data-unique-id="94770dab-ca1a-49fc-b0ba-818dd8d35ae0" data-file-name="components/PDFCloudManager.tsx" />
               </div>
-              <div data-unique-id="a4131ade-a3b6-4880-be45-b849b2c7e551" data-file-name="components/PDFCloudManager.tsx">
-                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="81cfb3e0-49f6-45b3-a71d-26cbc988fb90" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="9f524d22-eca5-4d1c-86ce-2aee74acdd6e" data-file-name="components/PDFCloudManager.tsx">Category</span></Label>
-                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="2bbd1faa-66e2-4ddb-95c9-f57a45bccac1" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="76c8a53a-1a47-4b7a-96c8-bc82f382ce5c" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="721e6b3b-25f3-4a34-9842-1449e4bd37f2" data-file-name="components/PDFCloudManager.tsx">All Categories</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="301338f8-75c2-4c3c-bcd4-920f06f61821" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="6ecb9b75-737c-43af-9bb5-bdbaa407013c" data-file-name="components/PDFCloudManager.tsx">
+                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="6827b7b5-7b61-47db-b6ae-c47e05f5ac76" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="9ddd0561-f2c9-45af-beab-a849f74120ed" data-file-name="components/PDFCloudManager.tsx">Category</span></Label>
+                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="4746cdb2-a3f4-4065-8cc8-d59bc981c642" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="02f8d3ba-4697-44b8-8268-3ccc374f6fbb" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="86c573b7-0c65-4b13-8f3d-855f0e096d91" data-file-name="components/PDFCloudManager.tsx">All Categories</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-unique-id="fdc77a79-3bde-4359-8f74-197b2a725996" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
-              <div className="flex items-end gap-2" data-unique-id="10bd7d15-2e08-4bca-9907-4f447572755c" data-file-name="components/PDFCloudManager.tsx">
-                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="727cc13c-c9e8-43ef-822d-6448f28b5731" data-file-name="components/PDFCloudManager.tsx">
-                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="b14596d6-f9a5-441c-878c-2638edbab767" data-file-name="components/PDFCloudManager.tsx">
+              <div className="flex items-end gap-2" data-unique-id="d00ec864-7c08-4c40-b4fe-0b812c50041f" data-file-name="components/PDFCloudManager.tsx">
+                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="e9bb748d-0e39-405d-a300-0ff6d05b2523" data-file-name="components/PDFCloudManager.tsx">
+                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="1e25d8aa-0707-4846-a82e-94660b32c76b" data-file-name="components/PDFCloudManager.tsx">
                   Search
                 </span></Button>
-                <Button variant="outline" onClick={resetSearch} data-unique-id="28adc8e1-228d-4f54-b841-f5bed218b075" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="3ceb85ff-d81d-41ec-af87-49aa0eb97d0e" data-file-name="components/PDFCloudManager.tsx">
+                <Button variant="outline" onClick={resetSearch} data-unique-id="1da3daee-de1b-44a1-9bd8-181a294e025a" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="e923d5d0-22b7-49c7-98a8-206ce51429d1" data-file-name="components/PDFCloudManager.tsx">
                   Reset
                 </span></Button>
               </div>
@@ -497,43 +497,43 @@ export default function PDFCloudManager() {
           </div>
 
           {/* PDF list */}
-          <div data-unique-id="3f4abc5c-2ff9-42d6-8b30-adc232d8089b" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-            <div className="flex items-center justify-between mb-4" data-unique-id="5bff2bf6-8c20-46e7-a64a-a016b10f8f2e" data-file-name="components/PDFCloudManager.tsx">
-              <h3 className="text-lg font-medium" data-unique-id="2cd663be-e194-496f-aea2-09afd569642a" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="c59785e4-69cc-4be7-9a73-7b42f71fed5d" data-file-name="components/PDFCloudManager.tsx">
+          <div data-unique-id="e5fa36c4-f83b-4763-80d4-f500314299fa" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+            <div className="flex items-center justify-between mb-4" data-unique-id="92db302c-ce8b-4797-9abf-26716f64e9e8" data-file-name="components/PDFCloudManager.tsx">
+              <h3 className="text-lg font-medium" data-unique-id="1bb475a5-c7b1-4496-b7f0-6f466b12c22e" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="78c00b01-7624-46c9-958f-da4f9d73d4f2" data-file-name="components/PDFCloudManager.tsx">
                 PDF Files
-                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="47a6b370-c5dd-47de-b6bf-8a29ccb8b27b" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="37900cde-6dca-49f2-b471-483ecaae1f47" data-file-name="components/PDFCloudManager.tsx">
-                  (</span>{totalItems}<span className="editable-text" data-unique-id="db114926-323a-4774-8394-15ab8f9ecdf7" data-file-name="components/PDFCloudManager.tsx"> files)
+                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="a44e3d3e-5d47-487d-aae3-943f406c6bd2" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="3c4e2ed8-400b-4972-87fe-d741bbcc91e0" data-file-name="components/PDFCloudManager.tsx">
+                  (</span>{totalItems}<span className="editable-text" data-unique-id="703b1aec-279d-44da-bc1c-f388189b0db0" data-file-name="components/PDFCloudManager.tsx"> files)
                 </span></span>
               </h3>
-              <div className="flex items-center gap-2" data-unique-id="f9e94b58-6a86-43c5-88e9-0a0291815ce5" data-file-name="components/PDFCloudManager.tsx">
-                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="2df88b64-fb1c-496f-8115-6e20a983518a" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="a7c083b0-b3f6-45be-b6e6-a7d1b0097668" data-file-name="components/PDFCloudManager.tsx">Show:</span></Label>
-                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="c61be1c5-038f-4e0e-a8e3-34dac6c70dfc" data-file-name="components/PDFCloudManager.tsx">
-                  <option value={10} data-unique-id="ad042fe3-1003-4ac2-9274-a79a0c61b18e" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="dc5c1b5a-2df2-4c91-93c0-3f6e4acd138c" data-file-name="components/PDFCloudManager.tsx">10</span></option>
-                  <option value={25} data-unique-id="489dd7de-f471-4ec0-8ed8-d3c17a34f47c" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="0ce2d489-9a94-42f0-9ac4-3d2b77f9878a" data-file-name="components/PDFCloudManager.tsx">25</span></option>
-                  <option value={50} data-unique-id="a96b2504-3662-4c34-8148-73117739bc16" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="43be3dd0-e622-465d-aeb6-896c6d6be0b2" data-file-name="components/PDFCloudManager.tsx">50</span></option>
-                  <option value={100} data-unique-id="a52c123b-f7c0-4e57-bc05-9139380598a1" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="e326a2d7-92b3-43d7-92de-d9df976db92c" data-file-name="components/PDFCloudManager.tsx">100</span></option>
+              <div className="flex items-center gap-2" data-unique-id="f174c5b0-7611-4fac-bff4-46385b2e2c58" data-file-name="components/PDFCloudManager.tsx">
+                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="16402dfb-4d79-4a8e-b782-fabdefa5dd56" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="4f080af6-190e-40cb-983a-aa6844f3eb87" data-file-name="components/PDFCloudManager.tsx">Show:</span></Label>
+                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="8a5bba2c-d563-48e6-a49f-225f19c26dae" data-file-name="components/PDFCloudManager.tsx">
+                  <option value={10} data-unique-id="f45d962d-5dec-4552-8ded-b426327c7ac7" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="a9ab185b-f4f2-49cb-b2a2-f46e9ddae55c" data-file-name="components/PDFCloudManager.tsx">10</span></option>
+                  <option value={25} data-unique-id="3aa62f03-e0ec-4101-a388-a57c12bd45f5" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="8e47853a-b35a-48c9-8755-e13b278d421e" data-file-name="components/PDFCloudManager.tsx">25</span></option>
+                  <option value={50} data-unique-id="d6d5c9f2-07f7-4ec9-8791-4b8baa0a7d31" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="55d6c46e-a046-4abd-acbb-93c00d271dde" data-file-name="components/PDFCloudManager.tsx">50</span></option>
+                  <option value={100} data-unique-id="b7a67227-c5ab-4571-af37-fd370e4ca8fa" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="20965d71-a1f2-45d9-ba32-d57e485ca708" data-file-name="components/PDFCloudManager.tsx">100</span></option>
                 </select>
               </div>
             </div>
             
-            <div className="overflow-x-auto" data-unique-id="01f14a01-e189-4851-917d-100cd093b950" data-file-name="components/PDFCloudManager.tsx">
-              <Table data-unique-id="471460f4-a2a9-44e2-b2fd-9bbf80eb8fd9" data-file-name="components/PDFCloudManager.tsx">
+            <div className="overflow-x-auto" data-unique-id="7374764b-4d50-4610-a858-7d2d7caaaf81" data-file-name="components/PDFCloudManager.tsx">
+              <Table data-unique-id="cbb8b393-1d78-4710-b90f-22035ba014db" data-file-name="components/PDFCloudManager.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="9692db10-1abe-40b4-ab15-a81b5342f66e" data-file-name="components/PDFCloudManager.tsx">No.</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="f30573e4-d907-4e1d-bf4e-dbb495cd0031" data-file-name="components/PDFCloudManager.tsx">Title</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="ef9cec32-5dc7-484d-a98a-d33ea516af42" data-file-name="components/PDFCloudManager.tsx">Cover</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="9ed3d034-0175-47c9-9b7e-f1ef41d1de09" data-file-name="components/PDFCloudManager.tsx">File</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="4db9a663-32c9-4ce0-93f5-ccde964a5ee6" data-file-name="components/PDFCloudManager.tsx">Category</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="7a49fbb6-1044-44a6-af4f-c510c9138168" data-file-name="components/PDFCloudManager.tsx">Created</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="9cead8c8-1b93-4e74-a880-415b4dd5be17" data-file-name="components/PDFCloudManager.tsx">Actions</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="b282318d-e19b-4120-a6f6-36d8806be8dd" data-file-name="components/PDFCloudManager.tsx">No.</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="06327827-7be0-4d75-9b0c-0ef346692b0a" data-file-name="components/PDFCloudManager.tsx">Title</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="1fdad93f-e80a-4b81-abd8-c34284c23891" data-file-name="components/PDFCloudManager.tsx">Cover</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="bcc98047-659e-4e45-af80-10931f544687" data-file-name="components/PDFCloudManager.tsx">File</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="70dca438-b3cf-464f-bb2f-b00bfaead642" data-file-name="components/PDFCloudManager.tsx">Category</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="9d9100e8-59f0-4011-b1fb-8d65042f2498" data-file-name="components/PDFCloudManager.tsx">Created</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="a54c0722-ee4b-4d08-ba36-038b4c07c4c6" data-file-name="components/PDFCloudManager.tsx">Actions</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={7} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="a2df4f62-c5c2-4dc5-99ab-1740cce7c295" data-file-name="components/PDFCloudManager.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="0041338c-f028-46c0-b972-63fb95fee325" data-file-name="components/PDFCloudManager.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="735a3565-2d6f-47d5-8a44-36aa1e5fd320" data-file-name="components/PDFCloudManager.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="3b2c1e69-2434-4ada-b186-50b0d229e39f" data-file-name="components/PDFCloudManager.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -541,41 +541,41 @@ export default function PDFCloudManager() {
                         {error}
                       </TableCell>
                     </TableRow> : files.length === 0 ? <TableRow>
-                      <TableCell colSpan={7} className="text-center py-8"><span className="editable-text" data-unique-id="fc1e4afd-8fbe-4fe2-8560-eb81e8fc1063" data-file-name="components/PDFCloudManager.tsx">
+                      <TableCell colSpan={7} className="text-center py-8"><span className="editable-text" data-unique-id="962fa4e3-f226-43d4-a9fa-8e19808386d9" data-file-name="components/PDFCloudManager.tsx">
                         No PDF files found. Add a new PDF file above.
                       </span></TableCell>
-                    </TableRow> : files.map((file, index) => <TableRow key={file.id} data-unique-id="62bd639e-8c34-4d3c-93ec-158d78d3d58b" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="f9b19f78-60a2-42e0-a0bf-0b08cb61848f" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{(currentPage - 1) * itemsPerPage + index + 1}</TableCell>
-                        <TableCell className="font-medium" data-unique-id="d30458d1-921a-4031-988f-9b067b19161e" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{file.title}</TableCell>
-                        <TableCell data-unique-id="e7ecf2dc-51bb-4061-8e39-dbd88ce40706" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                          <div className="h-16 w-12 relative overflow-hidden" data-unique-id="c446c10d-9a5a-4c57-b37b-da844d88955f" data-file-name="components/PDFCloudManager.tsx">
+                    </TableRow> : files.map((file, index) => <TableRow key={file.id} data-unique-id="d9b38db9-5dc6-4ff5-bb30-7e992e1d5647" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="3cfc245e-06d0-4a4d-afab-97a8e9f49f7d" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{(currentPage - 1) * itemsPerPage + index + 1}</TableCell>
+                        <TableCell className="font-medium" data-unique-id="5b49c11e-1151-4644-84e6-c9daa413aa24" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{file.title}</TableCell>
+                        <TableCell data-unique-id="b9df9bf3-fe7d-4485-b1bf-0923ef9a5a0a" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                          <div className="h-16 w-12 relative overflow-hidden" data-unique-id="e7f75b94-321e-4c6a-95d7-324680d88243" data-file-name="components/PDFCloudManager.tsx">
                             <img src={file.coverUrl} alt={`Cover for ${file.title}`} className="h-full w-full object-cover" onError={e => {
                         const target = e.target as HTMLImageElement;
                         target.src = "https://via.placeholder.com/120x160?text=No+Cover";
-                      }} data-unique-id="be47c2ca-6269-4532-8f5b-3b00345dbf9c" data-file-name="components/PDFCloudManager.tsx" />
+                      }} data-unique-id="486ed0d3-0119-4006-9be6-33e9b1f02907" data-file-name="components/PDFCloudManager.tsx" />
                           </div>
                         </TableCell>
-                        <TableCell data-unique-id="d8ef3f67-4030-4d3f-9e36-13e66c17830f" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                          <Button variant="outline" size="sm" onClick={() => openPdf(file.fileUrl)} className="flex items-center gap-1" data-unique-id="6dc26098-0a79-4608-875a-b0f71540e5d9" data-file-name="components/PDFCloudManager.tsx">
-                            <FileText className="h-4 w-4" data-unique-id="812203a8-d55e-49ef-83c5-4cb24ae82056" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true" />
-                            <span className="hidden sm:inline" data-unique-id="6a09d61c-9903-4a37-94db-946a226ec702" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="ca2c3b3f-86fd-4c25-a591-48bcf2560d21" data-file-name="components/PDFCloudManager.tsx">View PDF</span></span>
+                        <TableCell data-unique-id="7000fa6b-702c-468e-aad2-4d3fe1dbfecf" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                          <Button variant="outline" size="sm" onClick={() => openPdf(file.fileUrl)} className="flex items-center gap-1" data-unique-id="465390cd-ffd8-41d0-8898-90ae9ee50e82" data-file-name="components/PDFCloudManager.tsx">
+                            <FileText className="h-4 w-4" data-unique-id="3a922cee-998c-421a-9d7d-bc97c017a601" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true" />
+                            <span className="hidden sm:inline" data-unique-id="0ff55f90-ae35-4094-b6f0-f54e44af522a" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="f580dd52-64b0-44cf-aa21-6818b15b84d9" data-file-name="components/PDFCloudManager.tsx">View PDF</span></span>
                           </Button>
                         </TableCell>
-                        <TableCell data-unique-id="ad76878e-91b0-49e1-be4c-4137b42cc08f" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{file.categoryName}</TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="67568833-1420-4412-9ad9-bda5be184c74" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="36fc61e3-c73c-4133-967a-5305198bcc12" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">{file.categoryName}</TableCell>
+                        <TableCell className="hidden md:table-cell" data-unique-id="93b8d110-7c6d-429f-9ec8-b10787b5dc40" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
                           {file.createdAt ? formatDistanceToNow(new Date(file.createdAt), {
                       addSuffix: true
                     }) : "-"}
                         </TableCell>
-                        <TableCell className="text-right" data-unique-id="8f828e2d-efe8-4f70-a4ee-528be08c6aed" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-unique-id="e9ad93aa-5ba2-4aef-a721-a050534334f5" data-file-name="components/PDFCloudManager.tsx">
-                            <Button variant="outline" size="sm" onClick={() => startEditing(file)} disabled={editingFile !== null} title="Edit" data-unique-id="a4c674df-53bb-4b73-9236-da615720ac31" data-file-name="components/PDFCloudManager.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="7b51afbc-8e23-462a-9b23-128ba23e7bda" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-unique-id="453d9898-569a-4aeb-87c6-56f40604a3d3" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="41bcfc1c-2464-49f7-9e3f-4ca248ca9d05" data-file-name="components/PDFCloudManager.tsx">Edit</span></span>
+                        <TableCell className="text-right" data-unique-id="790ce501-c1b5-465e-bb66-76dc7feb04b7" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-unique-id="c8262f66-9ebf-4828-9be4-4ed8f78ff7a3" data-file-name="components/PDFCloudManager.tsx">
+                            <Button variant="outline" size="sm" onClick={() => startEditing(file)} disabled={editingFile !== null} title="Edit" data-unique-id="4060e0b9-2d32-4b56-9287-011cb205d1a1" data-file-name="components/PDFCloudManager.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="708d7c3a-0cd2-4f54-b232-13ed48f947fa" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-unique-id="43022b7c-60a1-4ba5-95e8-0aab9f9a080b" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="f5e691c5-c7cc-4be6-9936-48698c995e85" data-file-name="components/PDFCloudManager.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deleteFile(file.id)} disabled={editingFile !== null || isLoading} className="text-red-500 hover:text-red-700" title="Delete" data-unique-id="e07bfbae-fc1c-4420-9c37-aa5e416d04a9" data-file-name="components/PDFCloudManager.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="f6d9e202-6643-4647-b03b-be45deda0619" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-unique-id="1ad61650-24fc-4dba-acd4-6d79189cca54" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="f9023742-78d7-4ff2-9d52-6bf789172a44" data-file-name="components/PDFCloudManager.tsx">Delete</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deleteFile(file.id)} disabled={editingFile !== null || isLoading} className="text-red-500 hover:text-red-700" title="Delete" data-unique-id="acdcbdfa-a3d2-41d4-afd0-4b7b7f964144" data-file-name="components/PDFCloudManager.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="c4f7951d-91e4-4fd2-9768-a8d42b1d6a06" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-unique-id="e96f45c9-91dc-4e6f-a38c-5f30e7201ca2" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="1313f86a-dede-4342-9664-7faa9c3c22bb" data-file-name="components/PDFCloudManager.tsx">Delete</span></span>
                             </Button>
                           </div>
                         </TableCell>
@@ -585,19 +585,19 @@ export default function PDFCloudManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="787d826e-9035-4b33-a889-68ec98a258cf" data-file-name="components/PDFCloudManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="e8e87908-5aeb-4b18-a01a-2507b622821c" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="489b6fb8-d812-4998-b6e2-48e402f15066" data-file-name="components/PDFCloudManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="bff12180-62b5-4889-8ab3-a9a46acf214c" data-file-name="components/PDFCloudManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="b6ff94bd-b0ad-4917-8afe-dc7126722e4f" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="d27b6185-5202-4a3f-9896-0a3e5211cef6" data-file-name="components/PDFCloudManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="84bfb2d9-b191-4084-a088-fdbaba647b93" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="06454edc-bcaa-410b-82ed-1f87e048bcef" data-file-name="components/PDFCloudManager.tsx">Previous</span></span>
+                    <span data-unique-id="122f3f33-f379-462b-b9ea-78b5a29ec1e5" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="8ee46a6e-2a48-455b-a339-c1d40c4643b9" data-file-name="components/PDFCloudManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-unique-id="99a4c320-e178-49e2-aa20-689d03b80950" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-unique-id="dcfeb804-8595-45b7-8f5d-d6f04fa48ba4" data-file-name="components/PDFCloudManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="a26e4708-c5c8-458b-9cf4-6c9bc157c2de" data-file-name="components/PDFCloudManager.tsx">
-                    <span data-unique-id="65198caf-8137-4e2f-a7c1-b9684866dd96" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="b182662e-f440-4df4-b83b-77da311f0162" data-file-name="components/PDFCloudManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="2de6c627-eccc-49cf-b59e-d3a0cd43c4a3" data-file-name="components/PDFCloudManager.tsx">
+                    <span data-unique-id="ea0df393-ebfa-4b7f-86a6-f5a6ecd175f8" data-file-name="components/PDFCloudManager.tsx"><span className="editable-text" data-unique-id="e05417c7-6b51-48c1-8a5e-008df7e48d1c" data-file-name="components/PDFCloudManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>

@@ -11,27 +11,27 @@ interface StatisticsChartsProps {
 export function StatisticsCharts({
   monthlyData
 }: StatisticsChartsProps) {
-  return <Tabs defaultValue="bar" className="space-y-4" data-unique-id="69d11a9e-2e1b-4e68-928b-8a8730456b70" data-file-name="components/statistics/StatisticsCharts.tsx">
+  return <Tabs defaultValue="bar" className="space-y-4" data-unique-id="033b85df-f046-403f-a2cf-df23dacf9c86" data-file-name="components/statistics/StatisticsCharts.tsx">
       <TabsList>
         <TabsTrigger value="bar" className="flex items-center gap-2">
           <BarChart2 className="h-4 w-4" />
-          <span className="editable-text" data-unique-id="427af635-1a1a-4012-a3f1-b21838a54408" data-file-name="components/statistics/StatisticsCharts.tsx">Grafik Batang</span>
+          <span className="editable-text" data-unique-id="a31fc621-32ec-40d4-a6bb-c91f01728be7" data-file-name="components/statistics/StatisticsCharts.tsx">Grafik Batang</span>
         </TabsTrigger>
         <TabsTrigger value="line" className="flex items-center gap-2">
           <LineChartIcon className="h-4 w-4" />
-          <span className="editable-text" data-unique-id="b778c905-85af-4d61-bb4c-3b6eb005fb3c" data-file-name="components/statistics/StatisticsCharts.tsx">Grafik Garis</span>
+          <span className="editable-text" data-unique-id="5d5a929f-2759-450b-84a4-24e0452377f8" data-file-name="components/statistics/StatisticsCharts.tsx">Grafik Garis</span>
         </TabsTrigger>
       </TabsList>
 
       <TabsContent value="bar" className="space-y-4">
-        <Card data-unique-id="5ff55f0a-db39-498f-92dd-0aeeaf3f9239" data-file-name="components/statistics/StatisticsCharts.tsx">
-          <CardHeader data-unique-id="de78f695-d71c-4a6f-a225-a4c2ba284a1b" data-file-name="components/statistics/StatisticsCharts.tsx">
-            <CardTitle data-unique-id="cf0165dd-2de9-4e7e-8817-755594f6c56e" data-file-name="components/statistics/StatisticsCharts.tsx">
-              <span className="editable-text" data-unique-id="8daa677a-d09c-40fd-9b29-75fdd8f41a67" data-file-name="components/statistics/StatisticsCharts.tsx">Pendaftaran User Per Bulan</span>
+        <Card data-unique-id="1a8e5096-a812-470b-8f93-e54654886863" data-file-name="components/statistics/StatisticsCharts.tsx">
+          <CardHeader data-unique-id="7c89e5ac-b939-4381-95a3-8d46be7ca819" data-file-name="components/statistics/StatisticsCharts.tsx">
+            <CardTitle data-unique-id="48df1724-6a36-4951-a3a2-d71bb863c169" data-file-name="components/statistics/StatisticsCharts.tsx">
+              <span className="editable-text" data-unique-id="97f85299-bfa4-4180-ae8a-d9a924791467" data-file-name="components/statistics/StatisticsCharts.tsx">Pendaftaran User Per Bulan</span>
             </CardTitle>
           </CardHeader>
-          <CardContent data-unique-id="8fd14931-a653-4013-bc04-461e2bd89e85" data-file-name="components/statistics/StatisticsCharts.tsx">
-            <div className="h-80" data-unique-id="e3bd9ba7-1d4c-4797-81ee-bb87f4d7072d" data-file-name="components/statistics/StatisticsCharts.tsx">
+          <CardContent data-unique-id="b67f145b-4ed1-428b-aecf-415dd8bd6c0f" data-file-name="components/statistics/StatisticsCharts.tsx">
+            <div className="h-80" data-unique-id="8cd8ee24-a05d-49c5-9929-e04fb07b45de" data-file-name="components/statistics/StatisticsCharts.tsx">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={monthlyData} margin={{
                 top: 20,
@@ -62,14 +62,14 @@ export function StatisticsCharts({
       </TabsContent>
 
       <TabsContent value="line" className="space-y-4">
-        <Card data-unique-id="9e645101-154a-43ee-81dd-7704c2df066d" data-file-name="components/statistics/StatisticsCharts.tsx">
-          <CardHeader data-unique-id="3c33a2c9-a175-4c62-be65-9cc404fb0707" data-file-name="components/statistics/StatisticsCharts.tsx">
-            <CardTitle data-unique-id="580418b4-690e-4f4a-bf67-a57181ce0c58" data-file-name="components/statistics/StatisticsCharts.tsx">
-              <span className="editable-text" data-unique-id="5f1f37cb-55dc-474f-85ce-07d8b0ea1d00" data-file-name="components/statistics/StatisticsCharts.tsx">Tren Pertumbuhan User</span>
+        <Card data-unique-id="cbd3e571-2add-4d0c-9726-5db07a76b928" data-file-name="components/statistics/StatisticsCharts.tsx">
+          <CardHeader data-unique-id="7f7328df-0a73-4570-959d-bca914468c01" data-file-name="components/statistics/StatisticsCharts.tsx">
+            <CardTitle data-unique-id="7dc3bd2c-1fdd-4bd7-95ae-480b8cb2c194" data-file-name="components/statistics/StatisticsCharts.tsx">
+              <span className="editable-text" data-unique-id="5ba2d54b-28b4-40ff-988e-bdd0b641c9a5" data-file-name="components/statistics/StatisticsCharts.tsx">Tren Pertumbuhan User</span>
             </CardTitle>
           </CardHeader>
-          <CardContent data-unique-id="9d3ba3d8-b0fc-4057-b93b-b1951ee3eb82" data-file-name="components/statistics/StatisticsCharts.tsx">
-            <div className="h-80" data-unique-id="f1dd25ed-e3e5-40af-b5cb-ac6367fbe5c7" data-file-name="components/statistics/StatisticsCharts.tsx">
+          <CardContent data-unique-id="18e75d42-2bee-4e7f-8bf6-135c7a2db106" data-file-name="components/statistics/StatisticsCharts.tsx">
+            <div className="h-80" data-unique-id="a7546b95-8405-4035-9cbc-aa81e6280457" data-file-name="components/statistics/StatisticsCharts.tsx">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={monthlyData} margin={{
                 top: 20,

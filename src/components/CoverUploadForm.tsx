@@ -90,50 +90,50 @@ export default function CoverUploadForm() {
       setIsUploading(false);
     }
   };
-  return <Card data-unique-id="b0c990c1-d88a-4af5-9d6e-662ab2cab95b" data-file-name="components/CoverUploadForm.tsx">
-      <CardHeader data-unique-id="794efc69-c391-449a-a956-a7f1ea238f85" data-file-name="components/CoverUploadForm.tsx">
-        <CardTitle data-unique-id="c8003d69-7cc9-470d-b7cc-83f1b46bef33" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="634b5d83-79f9-4785-b9e3-8d7ed0330254" data-file-name="components/CoverUploadForm.tsx">Upload Cover PDF</span></CardTitle>
-        <CardDescription><span className="editable-text" data-unique-id="463e5738-c4db-4414-b7cd-5964abd776a8" data-file-name="components/CoverUploadForm.tsx">
+  return <Card data-unique-id="ba51f6a5-2738-4170-8ea7-6dfc56a7bad4" data-file-name="components/CoverUploadForm.tsx">
+      <CardHeader data-unique-id="56f894df-b747-4e5b-a002-10c2f867a522" data-file-name="components/CoverUploadForm.tsx">
+        <CardTitle data-unique-id="42cfb11e-7013-49b4-be38-33651331e9f1" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="0efb0c49-3a4b-40b2-a372-e4a7af0ceaca" data-file-name="components/CoverUploadForm.tsx">Upload Cover PDF</span></CardTitle>
+        <CardDescription><span className="editable-text" data-unique-id="3ef4c9f9-402a-42c3-bd04-4e24085da06a" data-file-name="components/CoverUploadForm.tsx">
           Upload gambar cover untuk buku PDF anda
         </span></CardDescription>
       </CardHeader>
-      <CardContent className="space-y-6" data-unique-id="fb910a86-22a4-430a-9c45-954ce9b94a87" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
-        <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="d9dd7541-a86d-4686-8634-7e414c398049" data-file-name="components/CoverUploadForm.tsx">
-          <h3 className="text-lg font-medium mb-4" data-unique-id="2cd3ec1e-e599-42f9-b6f3-79ed6bde3f40" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="d06d7e24-c6b0-4d8c-be7b-e9bc1865f060" data-file-name="components/CoverUploadForm.tsx">Upload Cover Baru</span></h3>
-          <div className="space-y-4" data-unique-id="180ff43f-05d6-4169-ba74-b209f969bce2" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
-            <div data-unique-id="589ae595-0802-40ba-b87b-ed82191f427f" data-file-name="components/CoverUploadForm.tsx">
-              <Label htmlFor="coverFile" className="block text-sm font-medium mb-1" data-unique-id="3b49037a-7fa4-4414-9d65-cce285f46feb" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="79b53662-e343-4207-8437-c47ae69f379c" data-file-name="components/CoverUploadForm.tsx">File Cover</span></Label>
-              <div className="flex items-center space-x-2" data-unique-id="31f8b6b1-ee23-4038-81d3-67b57da13f6c" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
-                <Button type="button" variant="outline" onClick={() => fileInputRef.current?.click()} className="flex items-center" data-unique-id="856382ff-6451-4566-91fd-dacb04636f99" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
-                  <Image className="h-4 w-4 mr-2" data-unique-id="d847e87e-8bad-4c09-afac-1fe776f67ac5" data-file-name="components/CoverUploadForm.tsx" />
+      <CardContent className="space-y-6" data-unique-id="5184c1e6-540b-47b8-9051-6754628904ce" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+        <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="07a35372-8059-4466-b165-0e9b2d2d5fc3" data-file-name="components/CoverUploadForm.tsx">
+          <h3 className="text-lg font-medium mb-4" data-unique-id="976841a1-ad71-46c5-8fb7-545bd8074582" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="bca7e5c1-a931-47a6-b4e4-e6b30fed761f" data-file-name="components/CoverUploadForm.tsx">Upload Cover Baru</span></h3>
+          <div className="space-y-4" data-unique-id="713c72c8-a832-4f04-8155-851de9c6030b" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+            <div data-unique-id="ada1e516-fe1b-4635-b692-f9f9c479d291" data-file-name="components/CoverUploadForm.tsx">
+              <Label htmlFor="coverFile" className="block text-sm font-medium mb-1" data-unique-id="9e1b3251-fe1c-4474-947e-3557cb518a2a" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="e5f89a2d-c34b-464c-9054-4fc9328c213c" data-file-name="components/CoverUploadForm.tsx">File Cover</span></Label>
+              <div className="flex items-center space-x-2" data-unique-id="668598a5-7ea0-4eac-a307-6750960b380a" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+                <Button type="button" variant="outline" onClick={() => fileInputRef.current?.click()} className="flex items-center" data-unique-id="33b4768c-7b65-4a4e-aec0-c1c0414e6290" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+                  <Image className="h-4 w-4 mr-2" data-unique-id="6c33e31e-2104-4e76-97d5-1f92119b8309" data-file-name="components/CoverUploadForm.tsx" />
                   {coverFile ? 'Ganti Cover' : 'Pilih Cover'}
                 </Button>
-                {coverFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="b43c591b-54cf-4f6c-a6b8-e1f0d7bcf551" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+                {coverFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="ba5fb05c-d615-431a-990f-7da9f113b730" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
                     {coverFile.name}
-                    <span className="text-xs ml-1 text-green-600" data-unique-id="2d429c1a-35b7-4e86-974c-58904ac3c642" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="1d2fcb91-9bf5-4927-967d-698517e18dfa" data-file-name="components/CoverUploadForm.tsx">(Akan diupload dengan nama unik)</span></span>
+                    <span className="text-xs ml-1 text-green-600" data-unique-id="960b89d6-38d6-444f-a3fc-e65b16fc7cad" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="b373de81-745e-443e-bcb7-aaf3a3301090" data-file-name="components/CoverUploadForm.tsx">(Akan diupload dengan nama unik)</span></span>
                   </span>}
               </div>
-              <input ref={fileInputRef} id="coverFile" type="file" accept="image/*" onChange={handleFileChange} className="hidden" data-unique-id="710720f1-c856-4c22-9b9a-111615a64e79" data-file-name="components/CoverUploadForm.tsx" />
-              <p className="text-xs text-muted-foreground mt-1" data-unique-id="fc2ca3ba-53ed-4215-bc1c-7601da270cb4" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="8e3b75b6-5904-4069-8fef-be1abb19e05b" data-file-name="components/CoverUploadForm.tsx">
+              <input ref={fileInputRef} id="coverFile" type="file" accept="image/*" onChange={handleFileChange} className="hidden" data-unique-id="0d475439-1979-4b56-b037-b883f70c9243" data-file-name="components/CoverUploadForm.tsx" />
+              <p className="text-xs text-muted-foreground mt-1" data-unique-id="6d9268fc-81d3-41a7-b21c-551138eb6f99" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="a0d43221-1be2-4aaa-9025-015ecebf4040" data-file-name="components/CoverUploadForm.tsx">
                 Format gambar: JPG, PNG, atau GIF
               </span></p>
             </div>
             
-            {previewUrl && <div className="mt-4" data-unique-id="30f77627-83b0-4596-a55c-fad02290563c" data-file-name="components/CoverUploadForm.tsx">
-                <Label className="block text-sm font-medium mb-1" data-unique-id="0ae8c5dd-4772-45c8-ac09-1ace17db8e70" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="fd49b93e-c1d5-41fb-959d-8b76b494e3e9" data-file-name="components/CoverUploadForm.tsx">Preview</span></Label>
-                <div className="mt-2 relative w-40 h-56 overflow-hidden border rounded-md" data-unique-id="25f6b6d9-112f-4b08-b9f7-d58b5a4a6e3e" data-file-name="components/CoverUploadForm.tsx">
-                  <img src={previewUrl} alt="Preview" className="object-cover w-full h-full" data-unique-id="89bebe2c-df96-4392-8dce-c33c63a9db0f" data-file-name="components/CoverUploadForm.tsx" />
+            {previewUrl && <div className="mt-4" data-unique-id="5b5cb58d-ab0c-47d5-940c-9a4551f1045b" data-file-name="components/CoverUploadForm.tsx">
+                <Label className="block text-sm font-medium mb-1" data-unique-id="a354b1ac-4eeb-4d8f-afbb-79bf6238bcda" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="bb9072c0-9350-49c1-9dfc-db9bd9046918" data-file-name="components/CoverUploadForm.tsx">Preview</span></Label>
+                <div className="mt-2 relative w-40 h-56 overflow-hidden border rounded-md" data-unique-id="c8b54f0b-f482-45c5-9280-aff9e064d82e" data-file-name="components/CoverUploadForm.tsx">
+                  <img src={previewUrl} alt="Preview" className="object-cover w-full h-full" data-unique-id="3b34a2a0-a96e-4fef-b078-442e303dbef4" data-file-name="components/CoverUploadForm.tsx" />
                 </div>
               </div>}
             
-            <div className="flex justify-end" data-unique-id="2d56043c-e2b2-48b4-8525-15b5c78010a5" data-file-name="components/CoverUploadForm.tsx">
-              <Button onClick={handleUpload} disabled={isUploading || !coverFile} className="flex items-center gap-1" data-unique-id="c939f5cd-f6a9-446e-9f57-94377f707709" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
-                {isUploading ? <span className="flex items-center" data-unique-id="374ce35e-f92b-4de0-a776-c2811b4d8d2e" data-file-name="components/CoverUploadForm.tsx">
-                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="350d2956-e22b-4bf3-92e5-5526e51166f0" data-file-name="components/CoverUploadForm.tsx">
+            <div className="flex justify-end" data-unique-id="dad47c6f-9c33-4feb-a777-e17d957e3017" data-file-name="components/CoverUploadForm.tsx">
+              <Button onClick={handleUpload} disabled={isUploading || !coverFile} className="flex items-center gap-1" data-unique-id="35057bb0-864f-4e06-97d3-46e7d1e0beed" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+                {isUploading ? <span className="flex items-center" data-unique-id="69169963-1dce-4cf8-91fd-5cef0490d63b" data-file-name="components/CoverUploadForm.tsx">
+                    <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="41b9613f-d58a-497a-9367-b8f74a84cdb5" data-file-name="components/CoverUploadForm.tsx">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    <span data-unique-id="f569c9ca-8b53-42ce-84ef-05e970529058" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="1854a2dc-8339-41d4-9640-8a8456e3a3c2" data-file-name="components/CoverUploadForm.tsx">Mengupload... </span>{uploadProgress}<span className="editable-text" data-unique-id="591f9ae7-0450-4b43-9506-7d5ba678f0f1" data-file-name="components/CoverUploadForm.tsx">%</span></span>
+                    <span data-unique-id="f4d955ed-697a-4128-964d-a3d94fd49900" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="2ed43be1-3408-4c6a-82c5-642a54e71330" data-file-name="components/CoverUploadForm.tsx">Mengupload... </span>{uploadProgress}<span className="editable-text" data-unique-id="f9bed2f9-1265-4ef8-88ac-14c10028bce3" data-file-name="components/CoverUploadForm.tsx">%</span></span>
                   </span> : <>
                     <Upload className="h-4 w-4 mr-2" />
                     Upload Cover
@@ -144,27 +144,27 @@ export default function CoverUploadForm() {
         </div>
         
         {/* Status messages */}
-        {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="b75cd0e4-4356-41f2-899c-c17937a21122" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
+        {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="51546e6a-5f48-44f2-8000-dc9f0b833330" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">
             {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-            <span data-unique-id="dd7c96cb-434b-4990-8474-9a91e684ee71" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+            <span data-unique-id="113dd65e-16ba-4310-894d-3ea9bcc18fdb" data-file-name="components/CoverUploadForm.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             
             {/* Progress bar for uploads */}
-            {isUploading && uploadProgress > 0 && uploadProgress < 100 && <div className="mt-2 w-full" data-unique-id="b0c2d8af-950f-4ec6-8dc4-f58bd538b71d" data-file-name="components/CoverUploadForm.tsx">
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mt-1" data-unique-id="87904473-69b6-4c1d-a607-c4dafe1f7e49" data-file-name="components/CoverUploadForm.tsx">
+            {isUploading && uploadProgress > 0 && uploadProgress < 100 && <div className="mt-2 w-full" data-unique-id="6900437e-1e24-4276-932f-b28e6d2a64aa" data-file-name="components/CoverUploadForm.tsx">
+                <div className="w-full bg-gray-200 rounded-full h-2.5 mt-1" data-unique-id="66fd7767-1733-4272-b4be-39429c5a8474" data-file-name="components/CoverUploadForm.tsx">
                   <div className="bg-green-600 h-2.5 rounded-full" style={{
               width: `${uploadProgress}%`
-            }} data-unique-id="34e9f598-bc3f-49cb-b214-a8d600778816" data-file-name="components/CoverUploadForm.tsx" />
+            }} data-unique-id="d0af7fd5-dc1c-4850-8361-882450d98469" data-file-name="components/CoverUploadForm.tsx" />
                 </div>
               </div>}
           </div>}
         
-        <div className="bg-blue-50 border border-blue-200 p-4 rounded-md" data-unique-id="6f428188-6ef5-4f6f-8519-7dcaf13a3256" data-file-name="components/CoverUploadForm.tsx">
-          <h3 className="text-blue-800 font-medium mb-2" data-unique-id="d805febe-d9d7-4942-9987-fb4e9f212733" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="9339baa9-c214-4e99-9620-f3bbfc64a4b3" data-file-name="components/CoverUploadForm.tsx">Informasi</span></h3>
-          <ul className="list-disc pl-5 text-blue-700 text-sm space-y-1" data-unique-id="a2edc6c6-1b4b-49fb-8c33-6e9247355aa5" data-file-name="components/CoverUploadForm.tsx">
-            <li data-unique-id="80476ffe-ed14-47a4-becd-4ee611e0ac9f" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="2fee0dec-0368-49b6-b3f3-317cd7b1b791" data-file-name="components/CoverUploadForm.tsx">File cover yang diupload akan disimpan di bucket Supabase 'pdf-covers'</span></li>
-            <li data-unique-id="fd524bf1-f23f-4ac3-aa05-1e42dd2ee770" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="545ccd2f-f6f6-4f5d-9310-884a59464f09" data-file-name="components/CoverUploadForm.tsx">File akan diberi nama unik berdasarkan timestamp untuk menghindari konflik nama</span></li>
-            <li data-unique-id="dfe6c858-cbfd-405a-8227-e40ed7128bf6" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="57b357ee-8cd2-4e32-ba9a-c0f596aeedf7" data-file-name="components/CoverUploadForm.tsx">Format gambar yang didukung: JPG, PNG, GIF, dll</span></li>
-            <li data-unique-id="2e6183fb-7ebc-4803-aee1-c728158be317" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="1f2771b2-551f-4840-88dd-e264624a2fbd" data-file-name="components/CoverUploadForm.tsx">Ukuran file maksimal: 10MB</span></li>
+        <div className="bg-blue-50 border border-blue-200 p-4 rounded-md" data-unique-id="09cc7fb9-b0ff-4144-9663-cd8ba0a9669c" data-file-name="components/CoverUploadForm.tsx">
+          <h3 className="text-blue-800 font-medium mb-2" data-unique-id="242b9b0e-64bf-40d3-b30a-1e16d0a76a37" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="630aebad-bd13-4233-9ddb-e44a50e6d6a1" data-file-name="components/CoverUploadForm.tsx">Informasi</span></h3>
+          <ul className="list-disc pl-5 text-blue-700 text-sm space-y-1" data-unique-id="fce171ea-5bf3-4475-b609-d6fbc185fe7b" data-file-name="components/CoverUploadForm.tsx">
+            <li data-unique-id="f8bd1d11-b8f6-4aa8-96c4-7e8d884babd6" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="f894a9c3-4376-4f07-84b9-3a1f0d5e6a9f" data-file-name="components/CoverUploadForm.tsx">File cover yang diupload akan disimpan di bucket Supabase 'pdf-covers'</span></li>
+            <li data-unique-id="5ab96fad-b343-4715-841a-357257355de6" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="11c8b12b-9fdb-4e8c-8084-d2d94dd41462" data-file-name="components/CoverUploadForm.tsx">File akan diberi nama unik berdasarkan timestamp untuk menghindari konflik nama</span></li>
+            <li data-unique-id="d46e5df9-975c-4cf7-96df-2500961695f0" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="59aa6cb2-a5b2-476d-aa02-c1f8ed7d408b" data-file-name="components/CoverUploadForm.tsx">Format gambar yang didukung: JPG, PNG, GIF, dll</span></li>
+            <li data-unique-id="7e8de85b-3fe8-4277-b799-c669d8aead87" data-file-name="components/CoverUploadForm.tsx"><span className="editable-text" data-unique-id="c8342aa0-aa20-4cae-a213-2c05a2b1e238" data-file-name="components/CoverUploadForm.tsx">Ukuran file maksimal: 10MB</span></li>
           </ul>
         </div>
       </CardContent>

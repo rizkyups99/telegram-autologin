@@ -76,18 +76,18 @@ export default function FileCloudPreview({
     }));
   };
   if (isLoading) {
-    return <div className="flex justify-center py-8" data-unique-id="0db3ef7a-0b2a-4778-8f80-e32e86fef788" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="5ad41283-1d00-4b21-97a6-274077e659bf" data-file-name="components/preview/cloud/FileCloudPreview.tsx"></div>
+    return <div className="flex justify-center py-8" data-unique-id="fa4a5b72-117c-4f00-b71c-5cf445e9e094" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="67dfb741-fbaf-4aff-b37f-8bb91376f967" data-file-name="components/preview/cloud/FileCloudPreview.tsx"></div>
       </div>;
   }
   if (categories.length === 0) {
-    return <p className="text-center py-8 text-muted-foreground" data-unique-id="d7bc790d-c888-41d3-b945-9f0ccabff55b" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
-        <span className="editable-text" data-unique-id="c3ff98c1-020f-491d-b0f4-88ae1fe5b5fa" data-file-name="components/preview/cloud/FileCloudPreview.tsx">Tidak ada file cloud yang tersedia.</span>
+    return <p className="text-center py-8 text-muted-foreground" data-unique-id="3802fa4e-15ce-45ab-977b-ed0b4697ead7" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
+        <span className="editable-text" data-unique-id="490184da-f5d3-4237-96a7-571e1868f890" data-file-name="components/preview/cloud/FileCloudPreview.tsx">Tidak ada file cloud yang tersedia.</span>
       </p>;
   }
-  return <Card data-unique-id="0714bdba-5b05-42f8-aaf3-658d2531b7b3" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
-      <CardContent className="p-6" data-unique-id="6a092518-fdcf-4a3b-8fc3-665e68d975c7" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
-        <div className="space-y-6" data-unique-id="bbc24f00-71e0-4f32-a505-1b12621266d7" data-file-name="components/preview/cloud/FileCloudPreview.tsx" data-dynamic-text="true">
+  return <Card data-unique-id="04ec3c04-966f-43a5-877c-650b8f6422cb" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
+      <CardContent className="p-6" data-unique-id="f5433b44-3043-49dd-a5b7-a82225d45085" data-file-name="components/preview/cloud/FileCloudPreview.tsx">
+        <div className="space-y-6" data-unique-id="4d839636-00fd-4a79-9a5e-3eefd3731781" data-file-name="components/preview/cloud/FileCloudPreview.tsx" data-dynamic-text="true">
           {categories.map(category => <FileCloudCategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} toggleCategory={toggleCategory} />)}
         </div>
       </CardContent>

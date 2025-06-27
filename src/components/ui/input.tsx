@@ -6,7 +6,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(({
   type,
   ...props
 }, ref) => {
-  return <input type={type} className={cn("flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", className)} ref={ref} {...props} data-unique-id="ac338901-fd52-40c2-96db-41dff73a4f39" data-file-name="components/ui/input.tsx" />;
+  return <input type={type} className={cn("flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50", className)} ref={ref} {...props} data-unique-id="91e7ad9c-36bd-4991-9368-19fd37dd28c8" data-file-name="components/ui/input.tsx" />;
 });
 Input.displayName = "Input";
 export { Input };

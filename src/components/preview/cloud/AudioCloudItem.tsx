@@ -46,40 +46,40 @@ export function AudioCloudItem({
       window.open(audio.fileUrl, '_blank');
     }
   };
-  return <div className="bg-white border rounded-lg p-3 hover:shadow-md transition-shadow" data-unique-id="06b33a77-a8c3-472d-b0b8-508196e107b6" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
-      <div className="flex flex-col space-y-3" data-unique-id="ac84ee93-30f9-4034-89be-db7084bd6a87" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
+  return <div className="bg-white border rounded-lg p-3 hover:shadow-md transition-shadow" data-unique-id="251f3f9c-7aa8-47ce-95d7-7be357ab2def" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+      <div className="flex flex-col space-y-3" data-unique-id="776f8f0a-6619-4608-894e-6f879133fb1b" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
         {/* Audio Icon */}
-        <div className="flex justify-center" data-unique-id="b9e12b3f-e8a2-4fbe-90b7-9ba8c2e40a26" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
-          <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center" data-unique-id="3dc7a42e-2fa8-4e0c-8390-17b36e857245" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+        <div className="flex justify-center" data-unique-id="9af83e5b-1096-4c7f-944b-fda7dc61bbe1" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+          <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center" data-unique-id="ba20cd74-057b-4761-94bc-053b8c832451" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
             <Music className="h-8 w-8 text-blue-600" />
           </div>
         </div>
 
         {/* Title */}
-        <div className="text-center" data-unique-id="bd3f7a87-c755-4bd4-b099-6cb5095976ca" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
-          <h4 className="font-medium text-sm line-clamp-2 text-gray-800 mb-3" data-unique-id="dcc11f74-ccea-45c7-ab5e-5134fc558329" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
+        <div className="text-center" data-unique-id="7acb1139-de8d-4d0d-be1f-9f3614b9e201" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+          <h4 className="font-medium text-sm line-clamp-2 text-gray-800 mb-3" data-unique-id="d84aae03-3b90-4739-ae79-0f8c48d90e49" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
             {audio.title}
           </h4>
         </div>
         
         {/* Action Buttons */}
-        <div className="flex flex-col gap-2" data-unique-id="a56f5ed6-53ee-493a-b08c-c429aaa6c221" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
-          <Button onClick={openInNewTab} variant="outline" size="sm" className="w-full flex items-center gap-2 border-green-500 bg-green-50 text-green-600 hover:bg-green-100" data-unique-id="ce8fd363-3f32-4242-a0a0-bc0574f83317" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+        <div className="flex flex-col gap-2" data-unique-id="f826e4c4-6075-48fd-9917-3f192868c7e4" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+          <Button onClick={openInNewTab} variant="outline" size="sm" className="w-full flex items-center gap-2 border-green-500 bg-green-50 text-green-600 hover:bg-green-100" data-unique-id="2adbfe7d-8c82-4c8d-9bad-9fc21df55045" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
             <ExternalLink className="h-4 w-4" />
-            <span className="editable-text" data-unique-id="d0bf7921-d4b7-4a4f-85db-bd29fcc0cfd1" data-file-name="components/preview/cloud/AudioCloudItem.tsx">View</span>
+            <span className="editable-text" data-unique-id="a1ff7a78-e49c-4c8d-8ee9-92f33468aef0" data-file-name="components/preview/cloud/AudioCloudItem.tsx">View</span>
           </Button>
           
-          <Button onClick={handleDownload} variant="outline" size="sm" className="w-full flex items-center gap-2 border-blue-500 bg-blue-50 text-blue-600 hover:bg-blue-100" disabled={downloading} data-unique-id="e0422855-2711-44b8-8b65-0c91ee537f09" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
+          <Button onClick={handleDownload} variant="outline" size="sm" className="w-full flex items-center gap-2 border-blue-500 bg-blue-50 text-blue-600 hover:bg-blue-100" disabled={downloading} data-unique-id="a40d0eb8-9316-4b62-8a12-64a73640fa68" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
             {downloading ? <Loader className="h-4 w-4 animate-spin" /> : downloadSuccess ? <Check className="h-4 w-4 text-green-500" /> : <Download className="h-4 w-4" />}
-            <span className="editable-text" data-unique-id="351ef7de-4a7a-4bff-98ef-40ece4c5d63d" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
+            <span className="editable-text" data-unique-id="d29528fe-2ed0-4cc4-b250-df9bd38a1aa7" data-file-name="components/preview/cloud/AudioCloudItem.tsx" data-dynamic-text="true">
               {downloading ? 'Downloading...' : downloadSuccess ? 'Downloaded!' : 'Download'}
             </span>
           </Button>
         </div>
         
-        {downloadSuccess && <div className="mt-2 p-2 bg-green-50 text-green-800 text-xs rounded flex items-center justify-center" data-unique-id="1ec1e844-a963-4b72-9f0d-0804071289ed" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
+        {downloadSuccess && <div className="mt-2 p-2 bg-green-50 text-green-800 text-xs rounded flex items-center justify-center" data-unique-id="c80e56b6-8b4e-486f-9b92-2992c7df09e3" data-file-name="components/preview/cloud/AudioCloudItem.tsx">
             <Check className="h-3 w-3 mr-1" />
-            <span className="editable-text" data-unique-id="aa1b93a2-1b41-4bb4-b3c3-3cfafd6a89aa" data-file-name="components/preview/cloud/AudioCloudItem.tsx">Audio downloaded successfully!</span>
+            <span className="editable-text" data-unique-id="8cf33b8d-1706-4d1f-9ba3-00bd61bac4ec" data-file-name="components/preview/cloud/AudioCloudItem.tsx">Audio downloaded successfully!</span>
           </div>}
       </div>
     </div>;

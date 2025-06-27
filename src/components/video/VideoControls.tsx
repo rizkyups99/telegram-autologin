@@ -64,44 +64,44 @@ export function VideoControls({
       }
     }
   };
-  return <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-1.5 sm:p-2 md:p-4 z-20" data-unique-id="241a8538-3861-42df-b219-c11ef8f2d62e" data-file-name="components/video/VideoControls.tsx">
-      <div className="flex flex-col gap-1" data-unique-id="62059795-0435-4c9b-8abd-1de766187509" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
+  return <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-1.5 sm:p-2 md:p-4 z-20" data-unique-id="94b7cd9b-8bb5-4a60-b0af-9ad172f04dc0" data-file-name="components/video/VideoControls.tsx">
+      <div className="flex flex-col gap-1" data-unique-id="015ad141-2f07-4119-ad2a-9da5fb5d9e62" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
         {/* Progress bar */}
-        <div className="flex items-center gap-1 sm:gap-2" data-unique-id="e08c16d9-a60c-4dab-9d51-cfbae3665c23" data-file-name="components/video/VideoControls.tsx">
-          <span className="text-white text-xs" data-unique-id="6eccc2fb-9ffc-4143-a800-010fb1bca0e9" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
+        <div className="flex items-center gap-1 sm:gap-2" data-unique-id="0406c36d-71fe-4e5a-83d2-003fb3826571" data-file-name="components/video/VideoControls.tsx">
+          <span className="text-white text-xs" data-unique-id="553c725c-71a0-49b6-82c9-707a17dca6de" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
             {formatTime(videoProgress)}
           </span>
-          <div className="flex-grow mx-1" data-unique-id="d896a48d-43a8-47c4-a452-e7fc4785622a" data-file-name="components/video/VideoControls.tsx">
-            <input type="range" min="0" max={videoDuration || 100} value={videoProgress} onChange={onSeek} className="w-full h-1 bg-gray-300 rounded-lg appearance-none cursor-pointer" data-unique-id="ad7bd268-4712-422c-9e5b-be6a63a4080e" data-file-name="components/video/VideoControls.tsx" />
+          <div className="flex-grow mx-1" data-unique-id="21c9803e-d1f3-466d-8e7d-6178fefc9b24" data-file-name="components/video/VideoControls.tsx">
+            <input type="range" min="0" max={videoDuration || 100} value={videoProgress} onChange={onSeek} className="w-full h-1 bg-gray-300 rounded-lg appearance-none cursor-pointer" data-unique-id="24d08741-5670-4184-b254-0aa2fa89ce79" data-file-name="components/video/VideoControls.tsx" />
           </div>
-          <span className="text-white text-xs" data-unique-id="629ec4cd-d7c2-4a42-929d-87857898594f" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
+          <span className="text-white text-xs" data-unique-id="44f5c12e-60cc-462c-86b2-dccccba2661f" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
             {formatTime(videoDuration)}
           </span>
         </div>
         
         {/* Controls */}
-        <div className="flex items-center gap-1 sm:gap-2" data-unique-id="07d4e2f7-3ed0-430f-b179-3492719aac15" data-file-name="components/video/VideoControls.tsx">
-          <Button onClick={onTogglePlay} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="0bc0e126-1ca2-4f06-9ada-511b65485ddc" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
+        <div className="flex items-center gap-1 sm:gap-2" data-unique-id="4c5c2ab6-0d8d-416a-91fd-65b72fb3287a" data-file-name="components/video/VideoControls.tsx">
+          <Button onClick={onTogglePlay} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="a8493ec2-7644-4759-8a65-df5a2055eac4" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
             {isPlaying ? <Pause className="h-3 w-3 sm:h-4 sm:w-4" /> : <Play className="h-3 w-3 sm:h-4 sm:w-4" />}
           </Button>
           
-          <Button onClick={onToggleMute} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="89e1aeb4-af9b-4bea-8594-60ce62cc5147" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
+          <Button onClick={onToggleMute} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="ed55ee41-8394-45bf-96b8-6bade9174044" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
             {isMuted ? <VolumeX className="h-3 w-3 sm:h-4 sm:w-4" /> : <Volume2 className="h-3 w-3 sm:h-4 sm:w-4" />}
           </Button>
           
-          <div className="ml-auto flex gap-1 sm:gap-2" data-unique-id="70e4bdd5-c86a-4f88-8195-5fc3d00cea61" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
+          <div className="ml-auto flex gap-1 sm:gap-2" data-unique-id="b8fa6e95-922c-4d33-90f3-85a90e4deb73" data-file-name="components/video/VideoControls.tsx" data-dynamic-text="true">
             {/* Mobile zoom controls */}
             {isMobile && <>
-                <Button onClick={handleZoomOut} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="f0cf1c65-c1e0-4bcb-b1d2-6b5344956e09" data-file-name="components/video/VideoControls.tsx">
+                <Button onClick={handleZoomOut} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="f177e7b5-28cd-40cd-834a-47d0cd7303fc" data-file-name="components/video/VideoControls.tsx">
                   <ZoomOut className="h-3 w-3 sm:h-4 sm:w-4" />
                 </Button>
                 
-                <Button onClick={handleZoomIn} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="3c84f71c-ba03-44b9-a5bb-ffac03988967" data-file-name="components/video/VideoControls.tsx">
+                <Button onClick={handleZoomIn} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="58939cfd-1a1a-4806-a404-188c9087b82b" data-file-name="components/video/VideoControls.tsx">
                   <ZoomIn className="h-3 w-3 sm:h-4 sm:w-4" />
                 </Button>
               </>}
             
-            <Button onClick={onToggleFullscreen} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="f13f7aaa-3465-45ce-a07b-2b9530234d93" data-file-name="components/video/VideoControls.tsx">
+            <Button onClick={onToggleFullscreen} variant="ghost" size="sm" className="h-7 w-7 sm:h-8 sm:w-8 p-0 text-white hover:bg-white hover:bg-opacity-10" data-unique-id="fd6455f8-06af-462e-b921-b5338cc2f9bb" data-file-name="components/video/VideoControls.tsx">
               <Maximize className="h-3 w-3 sm:h-4 sm:w-4" />
             </Button>
           </div>

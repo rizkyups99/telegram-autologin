@@ -197,44 +197,44 @@ export default function UniversalPDFViewer({
     return <FallbackPDFViewer pdfUrl={pdfUrl} title={title} onDownload={onDownload} />;
   }
   if (isLoading) {
-    return <div className="flex items-center justify-center h-96 bg-gray-50 rounded-lg" data-unique-id="480ea232-b952-4794-aa75-cdc77fbbb6c5" data-file-name="components/UniversalPDFViewer.tsx">
-        <div className="text-center" data-unique-id="01aab242-3bd4-43ff-9d3e-91e07eb08b18" data-file-name="components/UniversalPDFViewer.tsx">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4" data-unique-id="b590baef-9868-4c04-a973-280dbf78b503" data-file-name="components/UniversalPDFViewer.tsx"></div>
-          <p className="text-gray-600" data-unique-id="dd12c4c9-0865-43db-bb91-1e81f5a9c99f" data-file-name="components/UniversalPDFViewer.tsx"><span className="editable-text" data-unique-id="d17a31f2-fc43-4a66-b972-7e09f9494fdd" data-file-name="components/UniversalPDFViewer.tsx">Loading PDF...</span></p>
+    return <div className="flex items-center justify-center h-96 bg-gray-50 rounded-lg" data-unique-id="cc8661df-15ec-458d-a9ed-5764ca033636" data-file-name="components/UniversalPDFViewer.tsx">
+        <div className="text-center" data-unique-id="97e28df2-ed88-4121-a8e9-f44b0d6e6b28" data-file-name="components/UniversalPDFViewer.tsx">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4" data-unique-id="d84393c1-c068-4308-8673-2e67ade2e4bd" data-file-name="components/UniversalPDFViewer.tsx"></div>
+          <p className="text-gray-600" data-unique-id="3aad7bc9-1ec5-427a-936f-f5c5672495cf" data-file-name="components/UniversalPDFViewer.tsx"><span className="editable-text" data-unique-id="8764ab42-24e0-4fc6-a970-60b713ab5a72" data-file-name="components/UniversalPDFViewer.tsx">Loading PDF...</span></p>
         </div>
       </div>;
   }
   if (error) {
-    return <div className="flex items-center justify-center h-96 bg-red-50 rounded-lg" data-unique-id="1dcc3b3a-3ce9-499f-80dc-e0cff7b468e3" data-file-name="components/UniversalPDFViewer.tsx">
-        <div className="text-center" data-unique-id="9b8f2089-3910-40fe-8dd2-fd76195d5e3a" data-file-name="components/UniversalPDFViewer.tsx">
-          <div className="text-red-600 mb-4" data-unique-id="9e2766d6-2922-4c6e-9301-247cb371facd" data-file-name="components/UniversalPDFViewer.tsx">
-            <svg className="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-unique-id="5b29737e-723b-4558-8fba-caa99d9c3fc7" data-file-name="components/UniversalPDFViewer.tsx">
+    return <div className="flex items-center justify-center h-96 bg-red-50 rounded-lg" data-unique-id="12a459eb-f69c-47f4-8fbc-d121f07a2da7" data-file-name="components/UniversalPDFViewer.tsx">
+        <div className="text-center" data-unique-id="b6153302-f79d-4e9b-8737-d0bfd79430d6" data-file-name="components/UniversalPDFViewer.tsx">
+          <div className="text-red-600 mb-4" data-unique-id="31c4c6a3-eac2-4084-9025-ee91b727ae53" data-file-name="components/UniversalPDFViewer.tsx">
+            <svg className="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-unique-id="bb18a9d7-8147-4d74-87f7-ca12bb4158dc" data-file-name="components/UniversalPDFViewer.tsx">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.732 18.5c-.77.833.192 2.5 1.732 2.5z" />
             </svg>
           </div>
-          <p className="text-red-600 font-medium" data-unique-id="6773aab7-a633-4df4-bf0b-c3a582e4c471" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">{error}</p>
-          <Button onClick={() => window.open(pdfUrl, '_blank')} className="mt-4" data-unique-id="0067a6a3-47c5-4e15-8736-dfd2eca6a142" data-file-name="components/UniversalPDFViewer.tsx"><span className="editable-text" data-unique-id="a944e012-9628-42b0-9e9b-f87139bb9496" data-file-name="components/UniversalPDFViewer.tsx">
+          <p className="text-red-600 font-medium" data-unique-id="752ab0b1-d28a-4832-99e0-9084fd35efcf" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">{error}</p>
+          <Button onClick={() => window.open(pdfUrl, '_blank')} className="mt-4" data-unique-id="4901bc77-b5ff-4ac7-ac2f-cc66753466de" data-file-name="components/UniversalPDFViewer.tsx"><span className="editable-text" data-unique-id="07185193-1dba-432f-a4be-03f7069d91a2" data-file-name="components/UniversalPDFViewer.tsx">
             Open in New Tab
           </span></Button>
         </div>
       </div>;
   }
-  return <div ref={containerRef} className={`bg-white border rounded-lg overflow-hidden ${isFullscreen ? 'fixed inset-0 z-50 rounded-none' : ''}`} data-unique-id="8297b047-2856-4226-a49d-bc2a84b0e002" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
+  return <div ref={containerRef} className={`bg-white border rounded-lg overflow-hidden ${isFullscreen ? 'fixed inset-0 z-50 rounded-none' : ''}`} data-unique-id="edbc75fd-5689-4aec-ba6b-9bfc67929051" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
       {/* Header */}
-      <div className="bg-gray-50 border-b px-4 py-3" data-unique-id="116219b2-06e1-4ec8-9973-fc55bc01f975" data-file-name="components/UniversalPDFViewer.tsx">
-        <div className="flex items-center justify-between" data-unique-id="65da138a-7a70-4c18-823b-02da266e2945" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
-          <div data-unique-id="32c965d5-39f6-4345-b47a-711c27214b95" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
-            {title && <h3 className="font-medium text-gray-900" data-unique-id="2f374173-af57-4ccb-87bd-ab85bfd1defe" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">{title}</h3>}
-            <p className="text-sm text-gray-600" data-unique-id="06e858ce-c451-4673-8a4a-0de24125cfc5" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="cea44eea-3cea-4912-97ea-4c569f241d58" data-file-name="components/UniversalPDFViewer.tsx">
-              Page </span>{currentPage}<span className="editable-text" data-unique-id="2570b5d7-9399-49c5-b233-555340f58955" data-file-name="components/UniversalPDFViewer.tsx"> of </span>{totalPages}
+      <div className="bg-gray-50 border-b px-4 py-3" data-unique-id="4ba66cf2-3ebf-4f95-af44-ed295ee68eef" data-file-name="components/UniversalPDFViewer.tsx">
+        <div className="flex items-center justify-between" data-unique-id="d2565341-415a-4c1e-ae54-c4a16840bdae" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
+          <div data-unique-id="f7a449d8-ec7d-487a-aecc-7629c8a8ca77" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
+            {title && <h3 className="font-medium text-gray-900" data-unique-id="fd714aa9-bd3c-4870-b0da-2b926f0e133b" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">{title}</h3>}
+            <p className="text-sm text-gray-600" data-unique-id="84c1b609-8318-427a-8cfe-99140ef8c33c" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="47909551-dbdf-42c8-b9dd-83ea581d5381" data-file-name="components/UniversalPDFViewer.tsx">
+              Page </span>{currentPage}<span className="editable-text" data-unique-id="3604c384-1724-4365-8c69-1fdc77e08357" data-file-name="components/UniversalPDFViewer.tsx"> of </span>{totalPages}
             </p>
           </div>
           
           {/* Controls */}
-          <div className="flex items-center gap-2" data-unique-id="4cd25247-3e10-4916-a407-c71e94caab9b" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
+          <div className="flex items-center gap-2" data-unique-id="0936aea9-1806-4f1a-95e6-9c522560db24" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
             {/* Navigation */}
-            <div className="flex items-center gap-1" data-unique-id="7d9abca1-83e1-4b5a-b17d-482d67307f78" data-file-name="components/UniversalPDFViewer.tsx">
-              <Button variant="outline" size="sm" onClick={prevPage} disabled={currentPage === 1} data-unique-id="cbcbeea4-aa7a-40bf-bb67-b13885ad750e" data-file-name="components/UniversalPDFViewer.tsx">
+            <div className="flex items-center gap-1" data-unique-id="c4eb5382-40ac-4214-afd3-faf88a6575e9" data-file-name="components/UniversalPDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={prevPage} disabled={currentPage === 1} data-unique-id="ef621f22-809d-4204-940b-cc7c2851b48a" data-file-name="components/UniversalPDFViewer.tsx">
                 <ChevronLeft className="h-4 w-4" />
               </Button>
               
@@ -243,38 +243,38 @@ export default function UniversalPDFViewer({
               if (page >= 1 && page <= totalPages) {
                 goToPage(page);
               }
-            }} className="w-16 px-2 py-1 text-sm border rounded text-center" data-unique-id="31c3d781-3d09-498b-9faa-4be1d371fac3" data-file-name="components/UniversalPDFViewer.tsx" />
+            }} className="w-16 px-2 py-1 text-sm border rounded text-center" data-unique-id="701c2411-19dd-4c92-8fff-065bbd0de2ee" data-file-name="components/UniversalPDFViewer.tsx" />
               
-              <Button variant="outline" size="sm" onClick={nextPage} disabled={currentPage === totalPages} data-unique-id="fbfa0c49-4056-4ecd-bbfe-25a2c2b06497" data-file-name="components/UniversalPDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={nextPage} disabled={currentPage === totalPages} data-unique-id="e31942f7-c08e-4e0f-abe1-e55139cc9942" data-file-name="components/UniversalPDFViewer.tsx">
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </div>
 
             {/* Zoom controls */}
-            <div className="flex items-center gap-1" data-unique-id="56746e4b-987e-4a10-a093-504e5c60b429" data-file-name="components/UniversalPDFViewer.tsx">
-              <Button variant="outline" size="sm" onClick={zoomOut} data-unique-id="0018230a-d5a5-4703-b85a-1adc60f028c2" data-file-name="components/UniversalPDFViewer.tsx">
+            <div className="flex items-center gap-1" data-unique-id="423b4e1e-1cee-4683-9049-02cad55b0363" data-file-name="components/UniversalPDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={zoomOut} data-unique-id="62ee654b-5bfb-4b3b-8e6e-1698f12d3265" data-file-name="components/UniversalPDFViewer.tsx">
                 <ZoomOut className="h-4 w-4" />
               </Button>
               
-              <span className="text-sm font-medium px-2" data-unique-id="0e55fb2c-578b-453f-a4cd-289711f39504" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
-                {Math.round(scale * 100)}<span className="editable-text" data-unique-id="48ab149f-00b7-427e-938c-d35683a52249" data-file-name="components/UniversalPDFViewer.tsx">%
+              <span className="text-sm font-medium px-2" data-unique-id="1b7675e6-4592-444e-bbb0-f354d367f7eb" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
+                {Math.round(scale * 100)}<span className="editable-text" data-unique-id="6b71df0b-4025-4c24-a78c-a06e7835f654" data-file-name="components/UniversalPDFViewer.tsx">%
               </span></span>
               
-              <Button variant="outline" size="sm" onClick={zoomIn} data-unique-id="1f35de28-ce22-46f0-b6fd-0d95b0c4ac98" data-file-name="components/UniversalPDFViewer.tsx">
+              <Button variant="outline" size="sm" onClick={zoomIn} data-unique-id="49f21434-b9ae-4eaa-af48-2850501bc7a8" data-file-name="components/UniversalPDFViewer.tsx">
                 <ZoomIn className="h-4 w-4" />
               </Button>
             </div>
 
             {/* Other controls */}
-            <Button variant="outline" size="sm" onClick={rotate} data-unique-id="591988a9-30c7-4b33-a663-825b5c21f329" data-file-name="components/UniversalPDFViewer.tsx">
+            <Button variant="outline" size="sm" onClick={rotate} data-unique-id="953587e1-e594-4dd3-8a22-5b228722d343" data-file-name="components/UniversalPDFViewer.tsx">
               <RotateCw className="h-4 w-4" />
             </Button>
 
-            <Button variant="outline" size="sm" onClick={toggleFullscreen} data-unique-id="f3149386-48e0-48b7-bcc4-4c9e3fee1e28" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
+            <Button variant="outline" size="sm" onClick={toggleFullscreen} data-unique-id="fd5a5214-6f53-4adc-b30c-67d2276de3f6" data-file-name="components/UniversalPDFViewer.tsx" data-dynamic-text="true">
               {isFullscreen ? <Minimize className="h-4 w-4" /> : <Maximize className="h-4 w-4" />}
             </Button>
 
-            {onDownload && <Button variant="outline" size="sm" onClick={onDownload} data-unique-id="9e1f833b-8879-4e25-a8af-f1dfa96846d6" data-file-name="components/UniversalPDFViewer.tsx">
+            {onDownload && <Button variant="outline" size="sm" onClick={onDownload} data-unique-id="3c9e730f-85a8-4375-ba33-db53b40f6f6d" data-file-name="components/UniversalPDFViewer.tsx">
                 <Download className="h-4 w-4" />
               </Button>}
           </div>
@@ -284,12 +284,12 @@ export default function UniversalPDFViewer({
       {/* PDF Canvas */}
       <div className="p-4 bg-gray-100 overflow-auto" style={{
       height: isFullscreen ? 'calc(100vh - 80px)' : '600px'
-    }} data-unique-id="e06ba9e0-9b24-483c-8f06-70caf00773d7" data-file-name="components/UniversalPDFViewer.tsx">
-        <div className="flex justify-center" data-unique-id="24bc59e1-6952-4272-b952-9d0077ce1e07" data-file-name="components/UniversalPDFViewer.tsx">
+    }} data-unique-id="7064c740-ff39-469c-ad9e-bcb12689ea26" data-file-name="components/UniversalPDFViewer.tsx">
+        <div className="flex justify-center" data-unique-id="f0419468-609e-4350-9fe7-10af53fdb8f5" data-file-name="components/UniversalPDFViewer.tsx">
           <canvas ref={canvasRef} className="shadow-lg bg-white max-w-full h-auto" style={{
           maxWidth: '100%',
           height: 'auto'
-        }} data-unique-id="ad2c1340-7659-4266-b7be-3b004b34efea" data-file-name="components/UniversalPDFViewer.tsx" />
+        }} data-unique-id="1fce0c86-5eab-454d-bf9d-d03fc0b5b0d8" data-file-name="components/UniversalPDFViewer.tsx" />
         </div>
       </div>
     </div>;

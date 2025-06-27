@@ -74,18 +74,18 @@ export default function AudioCloudPreview({
     }));
   };
   if (isLoading) {
-    return <div className="flex justify-center py-8" data-unique-id="b497f178-d7f7-4c39-b56f-13184fed4a8b" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="8fade503-ac2d-45d4-8cea-cc44c415b4a0" data-file-name="components/preview/cloud/AudioCloudPreview.tsx"></div>
+    return <div className="flex justify-center py-8" data-unique-id="dbe6b70e-a0e2-4915-a6ac-64a5e8d0ff62" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="4b7c9a58-5542-4762-90e8-2eb3e24ba6f5" data-file-name="components/preview/cloud/AudioCloudPreview.tsx"></div>
       </div>;
   }
   if (categories.length === 0) {
-    return <p className="text-center py-8 text-muted-foreground" data-unique-id="591362b5-e511-4fb3-a513-6f5da5a9dfc0" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
-        <span className="editable-text" data-unique-id="c5cba4a4-996d-4892-bf79-b1bec8e7e931" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">Tidak ada audio cloud yang tersedia.</span>
+    return <p className="text-center py-8 text-muted-foreground" data-unique-id="6b8de18c-907f-442b-b03a-16d1462a16e7" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
+        <span className="editable-text" data-unique-id="b1959fb5-00d5-4d1b-8bca-f7c963485a20" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">Tidak ada audio cloud yang tersedia.</span>
       </p>;
   }
-  return <Card data-unique-id="396e2377-860f-4cd1-bec6-1ee869a0b9ea" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
-      <CardContent className="p-6" data-unique-id="c9e7ad8f-c04d-4ad8-a1c6-b24744d2e0d4" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
-        <div className="space-y-6" data-unique-id="2639c3ba-b47a-4fa5-a33f-8a6918abd23f" data-file-name="components/preview/cloud/AudioCloudPreview.tsx" data-dynamic-text="true">
+  return <Card data-unique-id="36c62893-107e-4418-91b5-ea5a498b0e1e" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
+      <CardContent className="p-6" data-unique-id="d0ba141c-7bb6-4af5-8341-639c39cfc041" data-file-name="components/preview/cloud/AudioCloudPreview.tsx">
+        <div className="space-y-6" data-unique-id="1b7df079-78a7-42c4-b990-0317d8a5f5a3" data-file-name="components/preview/cloud/AudioCloudPreview.tsx" data-dynamic-text="true">
           {categories.map(category => <AudioCloudCategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} toggleCategory={toggleCategory} />)}
         </div>
       </CardContent>

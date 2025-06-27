@@ -6,29 +6,29 @@ import AudioCloudPreview from './preview/cloud/AudioCloudPreview';
 import PDFCloudPreview from './preview/cloud/PDFCloudPreview';
 import FileCloudPreview from './preview/cloud/FileCloudPreview';
 export default function CloudPreview() {
-  return <div className="space-y-6" data-unique-id="9cbc0162-4862-4c7a-b472-876553efdaf4" data-file-name="components/CloudPreview.tsx">
-      <Card data-unique-id="16242847-52fb-4c1c-ac9c-e5cdedcb5a8f" data-file-name="components/CloudPreview.tsx">
-        <CardHeader data-unique-id="13e9d074-d6cd-4581-aef6-0b8fe37dfb6c" data-file-name="components/CloudPreview.tsx">
-          <CardTitle data-unique-id="112fc86f-0a0b-47bb-aecc-53fb805aed38" data-file-name="components/CloudPreview.tsx">
-            <span className="editable-text" data-unique-id="b3c92319-1acb-431b-976a-4e8cc4dc778b" data-file-name="components/CloudPreview.tsx">Preview Konten Cloud</span>
+  return <div className="space-y-6" data-unique-id="5d8a2334-2405-4ceb-a39a-66df70d33b95" data-file-name="components/CloudPreview.tsx">
+      <Card data-unique-id="f2c3922e-d031-4a4a-986e-38a8976451fb" data-file-name="components/CloudPreview.tsx">
+        <CardHeader data-unique-id="b0d3061a-a273-43c6-a50e-c429986cb3d6" data-file-name="components/CloudPreview.tsx">
+          <CardTitle data-unique-id="9dcfcd51-da2d-4735-8c0a-712a3f61173b" data-file-name="components/CloudPreview.tsx">
+            <span className="editable-text" data-unique-id="acbfcb28-4796-40bc-a3f7-5e1c3cfa65e3" data-file-name="components/CloudPreview.tsx">Preview Konten Cloud</span>
           </CardTitle>
           <CardDescription>
-            <span className="editable-text" data-unique-id="d5340226-eb94-42b6-84a8-e6ff1ac8a026" data-file-name="components/CloudPreview.tsx">
+            <span className="editable-text" data-unique-id="df67b3ac-7333-48eb-8b34-994f511f12ee" data-file-name="components/CloudPreview.tsx">
               Preview dan akses file audio, PDF, dan dokumen dari cloud storage
             </span>
           </CardDescription>
         </CardHeader>
-        <CardContent data-unique-id="a897a100-6878-40ee-aae4-6fe432e89b68" data-file-name="components/CloudPreview.tsx">
-          <Tabs defaultValue="audio" className="w-full" data-unique-id="f8bfdf1f-bfaf-49f4-b982-2f53ffdb9a6f" data-file-name="components/CloudPreview.tsx">
+        <CardContent data-unique-id="a121612e-c1dd-4d27-8ee2-c536d75dc41a" data-file-name="components/CloudPreview.tsx">
+          <Tabs defaultValue="audio" className="w-full" data-unique-id="e791248c-2c47-4c16-823c-974f3746f3e8" data-file-name="components/CloudPreview.tsx">
             <TabsList className="mb-6 w-full">
               <TabsTrigger value="audio" className="flex-1">
-                <span className="editable-text" data-unique-id="826ecb05-a1b4-4ac2-bcf7-df366a367f7d" data-file-name="components/CloudPreview.tsx">Audio Cloud</span>
+                <span className="editable-text" data-unique-id="c127e185-d685-40d1-9905-6832ceac38c2" data-file-name="components/CloudPreview.tsx">Audio Cloud</span>
               </TabsTrigger>
               <TabsTrigger value="pdf" className="flex-1">
-                <span className="editable-text" data-unique-id="d14d718b-d1ac-4388-8763-115808db11b5" data-file-name="components/CloudPreview.tsx">PDF Cloud</span>
+                <span className="editable-text" data-unique-id="d30ac339-aac0-48fb-a835-8a73f385a1a8" data-file-name="components/CloudPreview.tsx">PDF Cloud</span>
               </TabsTrigger>
               <TabsTrigger value="files" className="flex-1">
-                <span className="editable-text" data-unique-id="894b7c89-df34-4112-8b59-1194c72d2c75" data-file-name="components/CloudPreview.tsx">File Cloud</span>
+                <span className="editable-text" data-unique-id="9903e889-f189-4f8e-9705-afdbc39f0293" data-file-name="components/CloudPreview.tsx">File Cloud</span>
               </TabsTrigger>
             </TabsList>
             
