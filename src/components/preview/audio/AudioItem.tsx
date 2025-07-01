@@ -49,60 +49,60 @@ export function AudioItem({
   downloadSuccess
 }: AudioItemProps) {
   const [showSpeedDropdown, setShowSpeedDropdown] = useState(false);
-  return <div className="py-2 sm:py-3" data-unique-id="52ea6298-2af8-4b5c-9eaf-bc9e821114a3" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
-      <div className="flex items-center justify-between" data-unique-id="44e88670-a2e4-426a-bdcd-1c10be4de27e" data-file-name="components/preview/audio/AudioItem.tsx">
-        <p className="font-medium text-sm sm:text-base line-clamp-2" data-unique-id="132d058a-15fa-4440-945f-bf2ebbfc626f" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">{audio.title}</p>
-        <div className="flex gap-1 sm:gap-2 ml-2 flex-shrink-0" data-unique-id="2b02e9dd-7c27-4034-89c1-a8d9ab559767" data-file-name="components/preview/audio/AudioItem.tsx">
-          <Button onClick={() => handlePlayAudio(audio)} variant="outline" size="sm" className={`flex items-center gap-1 h-8 px-2 text-xs sm:text-sm ${playingAudioId === audio.id ? 'border-red-500 bg-red-50 text-red-600 hover:bg-red-100' : 'border-green-500 bg-green-50 text-green-600 hover:bg-green-100'}`} data-unique-id="ecef9d5e-0cfb-441d-9011-91b59d8930f4" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+  return <div className="py-2 sm:py-3" data-unique-id="7508514e-d655-4a7a-9ad1-c5a382bd246b" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+      <div className="flex items-center justify-between" data-unique-id="5145a19f-82c4-4716-a7eb-272de72ae5e4" data-file-name="components/preview/audio/AudioItem.tsx">
+        <p className="font-medium text-sm sm:text-base line-clamp-2" data-unique-id="214121ba-4131-4168-b3ca-0bca53d92cf9" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">{audio.title}</p>
+        <div className="flex gap-1 sm:gap-2 ml-2 flex-shrink-0" data-unique-id="e63e3879-796e-4251-a9b0-3e5c803213db" data-file-name="components/preview/audio/AudioItem.tsx">
+          <Button onClick={() => handlePlayAudio(audio)} variant="outline" size="sm" className={`flex items-center gap-1 h-8 px-2 text-xs sm:text-sm ${playingAudioId === audio.id ? 'border-red-500 bg-red-50 text-red-600 hover:bg-red-100' : 'border-green-500 bg-green-50 text-green-600 hover:bg-green-100'}`} data-unique-id="e30e9fa1-8d7c-46a1-ac05-12b2d1d15dc2" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
             {playingAudioId === audio.id ? <>
                 <Pause className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline" data-unique-id="8103e3fa-ebe9-4372-ae43-722551538ee4" data-file-name="components/preview/audio/AudioItem.tsx"><span className="editable-text" data-unique-id="229e89a7-7245-4b9e-815b-b053643d6cf6" data-file-name="components/preview/audio/AudioItem.tsx">Pause</span></span>
+                <span className="hidden xs:inline" data-unique-id="8df95635-a175-4964-afe3-27df9c6f7f28" data-file-name="components/preview/audio/AudioItem.tsx"><span className="editable-text" data-unique-id="683fd4d0-7a41-4e83-a0cc-24fba17fb693" data-file-name="components/preview/audio/AudioItem.tsx">Pause</span></span>
               </> : <>
                 <Play className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden xs:inline" data-unique-id="297fb725-3d60-4eb1-9b5c-d1f4a71aee4c" data-file-name="components/preview/audio/AudioItem.tsx"><span className="editable-text" data-unique-id="0a82988b-1c4d-4601-a812-84b3cc3fb1de" data-file-name="components/preview/audio/AudioItem.tsx">Play</span></span>
+                <span className="hidden xs:inline" data-unique-id="58926cc4-28b9-4da3-a7b4-bba70c6ebce4" data-file-name="components/preview/audio/AudioItem.tsx"><span className="editable-text" data-unique-id="348ee9fe-b3c2-4c45-a0ea-4d806421154f" data-file-name="components/preview/audio/AudioItem.tsx">Play</span></span>
               </>}
           </Button>
-          <Button onClick={() => handleDownload(audio)} variant="outline" size="sm" className={`flex items-center gap-1 h-8 px-2 text-xs sm:text-sm ${downloading === audio.id ? 'border-green-500 bg-green-50 text-green-600' : downloadSuccess === audio.id ? 'border-green-500 bg-green-50 text-green-600' : 'border-blue-500 bg-blue-50 text-blue-600 hover:bg-blue-100'}`} disabled={downloading === audio.id} data-unique-id="7fa9f54f-edd4-48ff-b561-d920d6beecda" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+          <Button onClick={() => handleDownload(audio)} variant="outline" size="sm" className={`flex items-center gap-1 h-8 px-2 text-xs sm:text-sm ${downloading === audio.id ? 'border-green-500 bg-green-50 text-green-600' : downloadSuccess === audio.id ? 'border-green-500 bg-green-50 text-green-600' : 'border-blue-500 bg-blue-50 text-blue-600 hover:bg-blue-100'}`} disabled={downloading === audio.id} data-unique-id="c651d327-3ab6-48df-ab8f-40b24dfd58dc" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
             {downloading === audio.id ? <Loader className="h-3 w-3 sm:h-4 sm:w-4 animate-spin" /> : downloadSuccess === audio.id ? <Check className="h-3 w-3 sm:h-4 sm:w-4 text-green-500" /> : <Download className="h-3 w-3 sm:h-4 sm:w-4" />}
           </Button>
         </div>
       </div>
       
       {/* Expanded Audio Player */}
-      {expandedAudioId === audio.id && <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-muted bg-opacity-30 rounded-md" data-unique-id="2102f237-aa2c-4813-8c5c-0ad10e9c575d" data-file-name="components/preview/audio/AudioItem.tsx">
-          <div className="flex items-center gap-2 mb-2" data-unique-id="b15fdab0-9b43-4cf5-968c-7f6ecffeacc9" data-file-name="components/preview/audio/AudioItem.tsx">
-            <Button onClick={() => handlePlayAudio(audio)} variant="ghost" size="sm" className="h-7 w-7 p-0 rounded-full flex items-center justify-center" data-unique-id="af4f17e1-60cd-4b16-accd-ac476f460300" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+      {expandedAudioId === audio.id && <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-muted bg-opacity-30 rounded-md" data-unique-id="4f0c57e0-0310-4b0d-8b29-ca0b9bf003ee" data-file-name="components/preview/audio/AudioItem.tsx">
+          <div className="flex items-center gap-2 mb-2" data-unique-id="ffd5f96d-ad64-4b4c-a564-321f98499cbf" data-file-name="components/preview/audio/AudioItem.tsx">
+            <Button onClick={() => handlePlayAudio(audio)} variant="ghost" size="sm" className="h-7 w-7 p-0 rounded-full flex items-center justify-center" data-unique-id="8f2d0a49-c136-4886-bf35-f3d177174d9a" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
               {playingAudioId === audio.id ? <Pause className="h-3 w-3 sm:h-4 sm:w-4" /> : <Play className="h-3 w-3 sm:h-4 sm:w-4" />}
             </Button>
-            <span className="text-xs" data-unique-id="b869b5ea-0f28-457c-9ea6-1d432fb072ed" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">{formatTime(currentTime)}</span>
-            <input type="range" min={0} max={duration || 100} value={currentTime} onChange={handleSeek} className="flex-grow h-1.5 bg-gray-300 rounded-lg appearance-none cursor-pointer" data-unique-id="bf08da34-5ebf-4ece-a06b-5e689f8e3dc6" data-file-name="components/preview/audio/AudioItem.tsx" />
-            <span className="text-xs" data-unique-id="30ffb908-18ed-40a3-a20d-dca2384468f9" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">{formatTime(duration)}</span>
+            <span className="text-xs" data-unique-id="db64c338-0a90-4b4f-abc1-1b0c16f731eb" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">{formatTime(currentTime)}</span>
+            <input type="range" min={0} max={duration || 100} value={currentTime} onChange={handleSeek} className="flex-grow h-1.5 bg-gray-300 rounded-lg appearance-none cursor-pointer" data-unique-id="63120dc9-745c-4017-a28e-c4003df8ff3e" data-file-name="components/preview/audio/AudioItem.tsx" />
+            <span className="text-xs" data-unique-id="9cdf1b0c-e459-49b1-8497-7042ab0f102c" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">{formatTime(duration)}</span>
           </div>
           
-          <div className="flex justify-between items-center" data-unique-id="1e3fa09b-2a76-450e-9ae9-6bf31ffb3dff" data-file-name="components/preview/audio/AudioItem.tsx">
-            <div className="flex items-center gap-2" data-unique-id="4acd6b88-3e76-4067-a2e2-a9fdc86f7c80" data-file-name="components/preview/audio/AudioItem.tsx">
-              <Button onClick={toggleMute} variant="ghost" size="sm" className="h-7 w-7 p-0" data-unique-id="87b3bfb8-2ba8-43c5-b3ec-ff0033b0aa02" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+          <div className="flex justify-between items-center" data-unique-id="2005f201-5d77-4bed-8484-fe1c637f7dc8" data-file-name="components/preview/audio/AudioItem.tsx">
+            <div className="flex items-center gap-2" data-unique-id="9e09eefc-7650-43a1-b5fb-313a293be0b3" data-file-name="components/preview/audio/AudioItem.tsx">
+              <Button onClick={toggleMute} variant="ghost" size="sm" className="h-7 w-7 p-0" data-unique-id="37dd28ab-c47a-4a97-9173-dd4f6160f8a2" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
                 {isMuted ? <VolumeX className="h-3 w-3 sm:h-4 sm:w-4" /> : <Volume2 className="h-3 w-3 sm:h-4 sm:w-4" />}
               </Button>
-              <input type="range" min={0} max={1} step={0.1} value={volume} onChange={handleVolumeChange} className="w-16 sm:w-20 h-1.5 bg-gray-300 rounded-lg appearance-none cursor-pointer" data-unique-id="770abc8c-f10c-4e54-b3a6-68c303b7bfa7" data-file-name="components/preview/audio/AudioItem.tsx" />
+              <input type="range" min={0} max={1} step={0.1} value={volume} onChange={handleVolumeChange} className="w-16 sm:w-20 h-1.5 bg-gray-300 rounded-lg appearance-none cursor-pointer" data-unique-id="52695ab5-6f81-48eb-afa3-3caf6017b4e1" data-file-name="components/preview/audio/AudioItem.tsx" />
             </div>
             
-            <div className="relative" data-unique-id="34ee1ed1-05b1-4e66-9cd5-4207fa979077" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+            <div className="relative" data-unique-id="d691a968-e8e3-4b4e-aeae-a70f90399bdd" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
               <Button onClick={e => {
             e.stopPropagation();
             setShowSpeedDropdown(!showSpeedDropdown);
-          }} variant="outline" size="sm" className="h-7 px-2 text-xs flex items-center gap-1" data-unique-id="e1686ccf-a238-4174-b441-39ad528ecebb" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
-                {playbackRate}<span className="editable-text" data-unique-id="2a22317a-d5a9-446d-8320-628b5a5eb28b" data-file-name="components/preview/audio/AudioItem.tsx">x
+          }} variant="outline" size="sm" className="h-7 px-2 text-xs flex items-center gap-1" data-unique-id="55cc760e-e373-41b9-ad10-381f1fb700bd" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+                {playbackRate}<span className="editable-text" data-unique-id="4234100f-95e7-4d46-892f-71afd8648612" data-file-name="components/preview/audio/AudioItem.tsx">x
                 </span><ChevronDown className="h-3 w-3" />
               </Button>
               
-              {showSpeedDropdown && <div className="absolute right-0 top-full mt-1 bg-background border rounded-md shadow-lg z-10" data-unique-id="4af3ebb5-842d-4dcf-b48c-a7a15ed9e7b6" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+              {showSpeedDropdown && <div className="absolute right-0 top-full mt-1 bg-background border rounded-md shadow-lg z-10" data-unique-id="c22cee1c-8bcb-43f7-b111-e100c2bf677a" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
                   {[0.5, 1.0, 1.5, 2.0].map(speed => <button key={speed} onClick={e => {
               e.stopPropagation();
               changePlaybackRate(speed);
               setShowSpeedDropdown(false);
-            }} className={`w-full text-left px-3 py-1.5 text-xs hover:bg-muted ${playbackRate === speed ? 'bg-muted font-medium' : ''}`} data-is-mapped="true" data-unique-id="79eb2a76-5ec2-4218-b1d0-36528fb8eddd" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
-                      {speed}<span className="editable-text" data-unique-id="b7d9cdaf-ad7d-4f38-8372-f1118f43f8b6" data-file-name="components/preview/audio/AudioItem.tsx">x
+            }} className={`w-full text-left px-3 py-1.5 text-xs hover:bg-muted ${playbackRate === speed ? 'bg-muted font-medium' : ''}`} data-is-mapped="true" data-unique-id="1d152ce1-2945-45bf-a84e-b83c56906836" data-file-name="components/preview/audio/AudioItem.tsx" data-dynamic-text="true">
+                      {speed}<span className="editable-text" data-unique-id="5d5f3ef6-a1e6-4565-ad9e-14cda36cc1da" data-file-name="components/preview/audio/AudioItem.tsx">x
                     </span></button>)}
                 </div>}
             </div>
@@ -110,8 +110,8 @@ export function AudioItem({
         </div>}
       
       {/* Download Success Toast */}
-      {downloadSuccess === audio.id && <div className="mt-2 p-2 bg-green-50 text-green-800 text-xs sm:text-sm rounded flex items-center" data-unique-id="223a9078-82db-4d0a-b6c6-62666f0651bc" data-file-name="components/preview/audio/AudioItem.tsx">
-          <Check className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" /><span className="editable-text" data-unique-id="e7c5b879-af2e-44ac-a1bd-d503c51fe667" data-file-name="components/preview/audio/AudioItem.tsx">
+      {downloadSuccess === audio.id && <div className="mt-2 p-2 bg-green-50 text-green-800 text-xs sm:text-sm rounded flex items-center" data-unique-id="4f1bee6d-914f-45e9-82be-0321725f2bdf" data-file-name="components/preview/audio/AudioItem.tsx">
+          <Check className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" /><span className="editable-text" data-unique-id="50f5c53a-f2a4-4363-abd5-34b28b15fbf0" data-file-name="components/preview/audio/AudioItem.tsx">
           Audio selesai di download silahkan cek penyimpanan lokal HP atau PC anda
         </span></div>}
     </div>;

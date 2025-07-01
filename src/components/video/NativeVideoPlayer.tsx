@@ -67,5 +67,5 @@ export function NativeVideoPlayer({
       };
     }
   }, [videoRef, onProgress, onDuration, onPlay, onPause, onBuffer, onBufferEnd, onEnded]);
-  return <video ref={videoRef} src={videoUrl} className="w-full aspect-video" onClick={togglePlay} data-unique-id="7e2a6989-7f0e-41d7-826a-a969a7aa2b74" data-file-name="components/video/NativeVideoPlayer.tsx" />;
+  return <video ref={videoRef} src={videoUrl} className="w-full aspect-video" onClick={togglePlay} data-unique-id="a9129e5b-242c-4d52-91c4-3b0175d57cb9" data-file-name="components/video/NativeVideoPlayer.tsx" />;
 }

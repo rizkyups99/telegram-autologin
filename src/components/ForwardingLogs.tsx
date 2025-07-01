@@ -27,20 +27,20 @@ export default function ForwardingLogs({
       [id]: !prev[id]
     }));
   };
-  return <div className="overflow-x-auto" data-unique-id="329e31eb-e35d-4db2-b4ab-a4b1e5f852c3" data-file-name="components/ForwardingLogs.tsx">
-      <Table data-unique-id="24eb4d63-8e18-4092-a8d4-0aaf18478cc5" data-file-name="components/ForwardingLogs.tsx">
+  return <div className="overflow-x-auto" data-unique-id="0038e043-b4a7-4d90-996a-4cca6a0f751b" data-file-name="components/ForwardingLogs.tsx">
+      <Table data-unique-id="7e5ca448-5e58-457e-9541-801dcaa9238d" data-file-name="components/ForwardingLogs.tsx">
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[180px]"><span className="editable-text" data-unique-id="0248d32f-0616-4370-9377-1458105fe859" data-file-name="components/ForwardingLogs.tsx">Waktu</span></TableHead>
-            <TableHead><span className="editable-text" data-unique-id="ee50dbcb-f7b4-4d92-9d35-df9b9538b3b7" data-file-name="components/ForwardingLogs.tsx">Pesan</span></TableHead>
-            <TableHead><span className="editable-text" data-unique-id="eef23770-0734-409b-a877-8dc70408b9f8" data-file-name="components/ForwardingLogs.tsx">Kata Kunci</span></TableHead>
-            <TableHead className="w-[100px]"><span className="editable-text" data-unique-id="de72c303-8a85-414a-b929-9f2d627a8123" data-file-name="components/ForwardingLogs.tsx">Status</span></TableHead>
-            <TableHead className="w-[80px]"><span className="editable-text" data-unique-id="6474a95f-8df0-490d-98e3-c79cc6f8fb25" data-file-name="components/ForwardingLogs.tsx">Detail</span></TableHead>
+            <TableHead className="w-[180px]"><span className="editable-text" data-unique-id="5fcb10b5-c394-4ee8-a77d-9d892ff14fe8" data-file-name="components/ForwardingLogs.tsx">Waktu</span></TableHead>
+            <TableHead><span className="editable-text" data-unique-id="21abc0f2-da2d-4c30-9501-a2e479e209ed" data-file-name="components/ForwardingLogs.tsx">Pesan</span></TableHead>
+            <TableHead><span className="editable-text" data-unique-id="f9c98ddf-ea6c-49ab-b217-d11d52e885c1" data-file-name="components/ForwardingLogs.tsx">Kata Kunci</span></TableHead>
+            <TableHead className="w-[100px]"><span className="editable-text" data-unique-id="7e84d904-411a-4bdd-a328-e465a6ab8580" data-file-name="components/ForwardingLogs.tsx">Status</span></TableHead>
+            <TableHead className="w-[80px]"><span className="editable-text" data-unique-id="62443392-d891-4965-bebd-cf9aa34870fa" data-file-name="components/ForwardingLogs.tsx">Detail</span></TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {!logs || logs.length === 0 ? <TableRow>
-              <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="42795f37-77d4-432e-8efe-0e93530961cf" data-file-name="components/ForwardingLogs.tsx">
+              <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="ecc3b734-ac71-45e5-b84a-b1df437cd7d1" data-file-name="components/ForwardingLogs.tsx">
                 Belum ada log aktivitas. Log akan muncul saat pesan diterima dan diteruskan.
               </span></TableCell>
             </TableRow> : Array.isArray(logs) ? logs.map(log => <>
@@ -55,27 +55,27 @@ export default function ForwardingLogs({
                   </TableCell>
                   <TableCell>{log.keyword || "—"}</TableCell>
                   <TableCell>
-                    {log.forwarded ? <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800" data-is-mapped="true" data-unique-id="5716ad44-9a8c-49eb-b5d9-aea37c9febfa" data-file-name="components/ForwardingLogs.tsx">
-                        <CheckCircle className="h-3 w-3 mr-1" /><span className="editable-text" data-unique-id="48551b86-aee3-4750-a8c1-c10f96f3e676" data-file-name="components/ForwardingLogs.tsx">
+                    {log.forwarded ? <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800" data-is-mapped="true" data-unique-id="2b895f7f-31d5-4f37-928c-64a669a6eaef" data-file-name="components/ForwardingLogs.tsx">
+                        <CheckCircle className="h-3 w-3 mr-1" /><span className="editable-text" data-unique-id="aa423555-0bd0-48d8-a1fd-34fc76b600ff" data-file-name="components/ForwardingLogs.tsx">
                         Diteruskan
-                      </span></span> : <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800" data-is-mapped="true" data-unique-id="6a7ffd5b-ba61-4dbb-ac67-3baff2f786d4" data-file-name="components/ForwardingLogs.tsx">
-                        <XCircle className="h-3 w-3 mr-1" /><span className="editable-text" data-unique-id="53e9ab39-4b5d-475c-b341-e2897ff58214" data-file-name="components/ForwardingLogs.tsx">
+                      </span></span> : <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800" data-is-mapped="true" data-unique-id="18beda60-ad8d-463e-b637-152d773444b9" data-file-name="components/ForwardingLogs.tsx">
+                        <XCircle className="h-3 w-3 mr-1" /><span className="editable-text" data-unique-id="aefbf747-3c48-475c-9d75-c33a5fa75ba7" data-file-name="components/ForwardingLogs.tsx">
                         Difilter
                       </span></span>}
                   </TableCell>
                   <TableCell>
-                    <Button variant="ghost" size="sm" onClick={() => toggleExpand(log.id)} className="p-0 h-8 w-8" data-is-mapped="true" data-unique-id="44281c1c-0415-4313-8452-292e7d967b96" data-file-name="components/ForwardingLogs.tsx" data-dynamic-text="true">
+                    <Button variant="ghost" size="sm" onClick={() => toggleExpand(log.id)} className="p-0 h-8 w-8" data-is-mapped="true" data-unique-id="e5fd12c3-ceb5-4009-8495-2cd9a7c90bec" data-file-name="components/ForwardingLogs.tsx" data-dynamic-text="true">
                       {expandedLogs[log.id] ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                     </Button>
                   </TableCell>
                 </TableRow>
                 {expandedLogs[log.id] && log.error && <TableRow>
                     <TableCell colSpan={5} className="bg-red-50 text-red-800 p-2">
-                      <strong data-is-mapped="true" data-unique-id="0cb31ddd-6318-45c1-ad0b-3d1a1737c0c5" data-file-name="components/ForwardingLogs.tsx"><span className="editable-text" data-unique-id="49131596-2041-436d-bd21-e4b54e7c8f77" data-file-name="components/ForwardingLogs.tsx">Error:</span></strong> {log.error}
+                      <strong data-is-mapped="true" data-unique-id="ba8586fa-ed54-4276-aed9-2c885abe8c39" data-file-name="components/ForwardingLogs.tsx"><span className="editable-text" data-unique-id="efe5631e-6d06-479a-be8e-238ff732ad76" data-file-name="components/ForwardingLogs.tsx">Error:</span></strong> {log.error}
                     </TableCell>
                   </TableRow>}
               </>) : <TableRow>
-                <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="049f3c49-decf-4c2f-b9f5-f35ba5b3c65a" data-file-name="components/ForwardingLogs.tsx">
+                <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="1f0c4eac-73ca-4095-b307-64a70fbaf052" data-file-name="components/ForwardingLogs.tsx">
                   Error: Received invalid log data. Please refresh the page.
                 </span></TableCell>
               </TableRow>}

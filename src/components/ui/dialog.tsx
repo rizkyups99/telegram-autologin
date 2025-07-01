@@ -23,7 +23,7 @@ const DialogContent = React.forwardRef<React.ElementRef<typeof DialogPrimitive.C
       {children}
       <DialogPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
         <X className="h-4 w-4" />
-        <span className="sr-only" data-unique-id="a7e53cac-f95b-4422-99e2-088e8ebc46f2" data-file-name="components/ui/dialog.tsx"><span className="editable-text" data-unique-id="a84ed5f1-8c7f-4ff1-a2e2-4676d44450b3" data-file-name="components/ui/dialog.tsx">Close</span></span>
+        <span className="sr-only" data-unique-id="a7dd9799-b137-4bee-9c89-fd4fc01932ec" data-file-name="components/ui/dialog.tsx"><span className="editable-text" data-unique-id="f38a49dc-bca5-41b7-b017-4989541f2947" data-file-name="components/ui/dialog.tsx">Close</span></span>
       </DialogPrimitive.Close>
     </DialogPrimitive.Content>
   </DialogPortal>);
@@ -31,12 +31,12 @@ DialogContent.displayName = DialogPrimitive.Content.displayName;
 const DialogHeader = ({
   className,
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) => <div className={cn("flex flex-col space-y-1.5 text-center sm:text-left", className)} {...props} data-unique-id="84dee3eb-3899-485c-9eb4-20d184832946" data-file-name="components/ui/dialog.tsx" />;
+}: React.HTMLAttributes<HTMLDivElement>) => <div className={cn("flex flex-col space-y-1.5 text-center sm:text-left", className)} {...props} data-unique-id="ea3b9dd6-1534-40f1-9dcb-128d2824f78c" data-file-name="components/ui/dialog.tsx" />;
 DialogHeader.displayName = "DialogHeader";
 const DialogFooter = ({
   className,
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) => <div className={cn("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className)} {...props} data-unique-id="97e0c65b-a0c9-4f10-8be0-594407f7d69f" data-file-name="components/ui/dialog.tsx" />;
+}: React.HTMLAttributes<HTMLDivElement>) => <div className={cn("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className)} {...props} data-unique-id="cd367bb6-30e0-4013-81d2-728fdee0af43" data-file-name="components/ui/dialog.tsx" />;
 DialogFooter.displayName = "DialogFooter";
 const DialogTitle = React.forwardRef<React.ElementRef<typeof DialogPrimitive.Title>, React.ComponentPropsWithoutRef<typeof DialogPrimitive.Title>>(({
   className,

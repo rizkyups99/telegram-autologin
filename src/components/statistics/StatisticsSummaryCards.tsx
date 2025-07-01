@@ -31,52 +31,52 @@ export function StatisticsSummaryCards({
     growth = 100;
     isGrowthPositive = true;
   }
-  return <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-unique-id="38116555-2ebe-4b78-801b-053d6ac25ce8" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-      <Card data-unique-id="ff10b4bf-da38-439a-afd0-6cdf49510f58" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2" data-unique-id="2cf0f718-b2f7-4d03-a851-868d26112095" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-          <CardTitle className="text-sm font-medium" data-unique-id="c43ca100-868a-4034-9194-cb01df9b6b7a" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-            <span className="editable-text" data-unique-id="936eb529-1834-4f19-9134-9ea34f1c6803" data-file-name="components/statistics/StatisticsSummaryCards.tsx">Total Users</span>
+  return <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-unique-id="ac8b1c36-66b8-489c-ae09-241d12c1ecf4" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+      <Card data-unique-id="72b70898-704e-4a52-8730-e7f8f0471294" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2" data-unique-id="f6742bef-9f0c-498e-a108-5454719178a9" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+          <CardTitle className="text-sm font-medium" data-unique-id="b15982be-af08-467f-a456-c269b158c1ed" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+            <span className="editable-text" data-unique-id="39fc44b5-7e8d-4709-bc69-c93be87b4b0d" data-file-name="components/statistics/StatisticsSummaryCards.tsx">Total Users</span>
           </CardTitle>
           <Users className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
-        <CardContent data-unique-id="ce2166b4-1de3-47ed-81c5-5329ca12033c" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-          <div className="text-2xl font-bold" data-unique-id="3ea02a1c-1512-4087-9f34-9209a971ae1a" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">{totalUsers}</div>
-          <p className="text-xs text-muted-foreground" data-unique-id="6d73d087-b5b2-4dcc-bfa4-57f17731c0d6" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-            <span className="editable-text" data-unique-id="448944a5-a495-4ee1-b92a-3933faf7ddf7" data-file-name="components/statistics/StatisticsSummaryCards.tsx">All registered users</span>
+        <CardContent data-unique-id="393338d5-7c01-4e23-bfa7-2a52dc7ac05d" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+          <div className="text-2xl font-bold" data-unique-id="df030581-1e1b-498d-a757-3699e6fb1930" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">{totalUsers}</div>
+          <p className="text-xs text-muted-foreground" data-unique-id="a46a0fa9-26f1-49da-80d5-6f4f940a0ae3" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+            <span className="editable-text" data-unique-id="855f7356-9385-477e-8591-621e7789b383" data-file-name="components/statistics/StatisticsSummaryCards.tsx">All registered users</span>
           </p>
         </CardContent>
       </Card>
 
-      <Card data-unique-id="b50c153a-3da6-41dd-b31a-c982393300c8" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2" data-unique-id="5b20a7ab-c8ac-4047-97fd-6d594fc6a2f8" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-          <CardTitle className="text-sm font-medium" data-unique-id="ba0dae8d-ef0f-4998-aeda-bc7845f10e4e" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-            <span className="editable-text" data-unique-id="0626048b-7299-42b1-9568-1db8f2f915d8" data-file-name="components/statistics/StatisticsSummaryCards.tsx">This Month</span>
+      <Card data-unique-id="5308ea82-1247-4c99-aa86-ba1b3016862b" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2" data-unique-id="3595d82b-aa86-4ec6-9529-753ea72029dd" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+          <CardTitle className="text-sm font-medium" data-unique-id="bc648805-081b-4a3b-85a5-23fc8184b1f5" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+            <span className="editable-text" data-unique-id="fca83529-2094-45f0-ac3c-904ef740de3d" data-file-name="components/statistics/StatisticsSummaryCards.tsx">This Month</span>
           </CardTitle>
-          <Calendar className="h-4 w-4 text-muted-foreground" data-unique-id="5a7f8026-b5ca-4c26-b00b-d56c9cdd2019" data-file-name="components/statistics/StatisticsSummaryCards.tsx" />
+          <Calendar className="h-4 w-4 text-muted-foreground" data-unique-id="1450e9d3-416c-4217-a577-4d2018557247" data-file-name="components/statistics/StatisticsSummaryCards.tsx" />
         </CardHeader>
-        <CardContent data-unique-id="8a679481-f45b-47b8-99af-7e933dfb0634" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-          <div className="text-2xl font-bold" data-unique-id="b9e5fd85-dea7-41e7-8bb9-c8c5be4b0188" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">{currentMonthUsers}</div>
-          <p className="text-xs text-muted-foreground" data-unique-id="66790d9a-fcea-405c-b5e4-aad9c5b27e16" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-            <span className="editable-text" data-unique-id="393718be-3a56-4c79-818b-272bfb9047fa" data-file-name="components/statistics/StatisticsSummaryCards.tsx">New users this month</span>
+        <CardContent data-unique-id="d581ef3a-8020-466a-a1b9-a05c14150787" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+          <div className="text-2xl font-bold" data-unique-id="4895aa05-4207-4245-bff4-098b8334183c" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">{currentMonthUsers}</div>
+          <p className="text-xs text-muted-foreground" data-unique-id="996dc272-8cc3-4371-9692-3244f4900278" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+            <span className="editable-text" data-unique-id="34a7daac-89ec-4bd5-84e1-fbb0bf93171e" data-file-name="components/statistics/StatisticsSummaryCards.tsx">New users this month</span>
           </p>
         </CardContent>
       </Card>
 
-      <Card data-unique-id="51e0145a-0e55-44cd-bcf1-d47551ae94ae" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2" data-unique-id="bd93e18d-1f5d-4f37-b1eb-c6ff6083b5a4" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">
-          <CardTitle className="text-sm font-medium" data-unique-id="2acdcdf5-178d-4d67-86f8-0b2b289d93a3" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-            <span className="editable-text" data-unique-id="11f8485c-d9d7-45ae-b457-242f781f79c1" data-file-name="components/statistics/StatisticsSummaryCards.tsx">Growth</span>
+      <Card data-unique-id="2dfef564-13fe-4ff4-95ca-4910f38040e2" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2" data-unique-id="f4c5431d-e160-4286-95c7-33f7c559ab09" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">
+          <CardTitle className="text-sm font-medium" data-unique-id="31e5a19a-e7af-4403-93d4-8d52eb70471a" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+            <span className="editable-text" data-unique-id="cf37ccd4-aa8d-489b-98ee-1fed492d1ce1" data-file-name="components/statistics/StatisticsSummaryCards.tsx">Growth</span>
           </CardTitle>
           {isGrowthPositive ? <TrendingUp className="h-4 w-4 text-green-600" /> : <TrendingDown className="h-4 w-4 text-red-600" />}
         </CardHeader>
-        <CardContent data-unique-id="7498dd75-ea1a-4fb4-9220-8f761e3f473b" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-          <div className={`text-2xl font-bold flex items-center gap-1 ${isGrowthPositive ? 'text-green-600' : 'text-red-600'}`} data-unique-id="dbe58df2-1be2-41ba-ba8e-1e9500d4cf51" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">
+        <CardContent data-unique-id="289576f6-6391-471e-a4ff-dc28375cd767" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+          <div className={`text-2xl font-bold flex items-center gap-1 ${isGrowthPositive ? 'text-green-600' : 'text-red-600'}`} data-unique-id="62637a09-aa62-4064-84a9-fb017c367f37" data-file-name="components/statistics/StatisticsSummaryCards.tsx" data-dynamic-text="true">
             {isGrowthPositive ? <TrendingUp className="h-5 w-5" /> : <TrendingDown className="h-5 w-5" />}
             {Math.abs(growth).toFixed(1)}
-            <span className="editable-text" data-unique-id="efacbfa0-0247-4cad-bd23-04abc99332ac" data-file-name="components/statistics/StatisticsSummaryCards.tsx">%</span>
+            <span className="editable-text" data-unique-id="365bd3f3-0583-47a3-81b8-af9b3b205439" data-file-name="components/statistics/StatisticsSummaryCards.tsx">%</span>
           </div>
-          <p className="text-xs text-muted-foreground" data-unique-id="9ec07984-ec9f-4848-8ed7-907ce981ac6e" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
-            <span className="editable-text" data-unique-id="329eae62-b9fa-41dd-9557-8f9b7d81cbd4" data-file-name="components/statistics/StatisticsSummaryCards.tsx">From last month</span>
+          <p className="text-xs text-muted-foreground" data-unique-id="edbced7b-0fc1-4093-a0b5-18cd801c5b9f" data-file-name="components/statistics/StatisticsSummaryCards.tsx">
+            <span className="editable-text" data-unique-id="70a9197e-f4ca-4a79-80fe-fde0fa316609" data-file-name="components/statistics/StatisticsSummaryCards.tsx">From last month</span>
           </p>
         </CardContent>
       </Card>

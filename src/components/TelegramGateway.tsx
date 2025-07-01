@@ -210,54 +210,54 @@ export default function TelegramGateway() {
       setStatusMessage("Gagal memutuskan koneksi. Silakan coba lagi.");
     }
   };
-  return <div className="space-y-6" data-unique-id="e7728f03-353d-453b-8ef5-84379c9ce594" data-file-name="components/TelegramGateway.tsx">
-      <Card data-unique-id="ebdffa6a-d89a-47e8-8b12-1ef3728c90ae" data-file-name="components/TelegramGateway.tsx">
-        <CardHeader data-unique-id="03e8287a-afce-4706-9681-3b42ad4ebacd" data-file-name="components/TelegramGateway.tsx">
-          <CardTitle data-unique-id="ebfb509a-6842-454e-9df2-c31923e7c9b2" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="f265c586-6915-4496-925b-57477d2f52d6" data-file-name="components/TelegramGateway.tsx">Gateway Telegram</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="0f37668f-1166-4251-a410-fc9289fac615" data-file-name="components/TelegramGateway.tsx">
+  return <div className="space-y-6" data-unique-id="a5d969a8-1f4b-4d3a-a6f7-310463593911" data-file-name="components/TelegramGateway.tsx">
+      <Card data-unique-id="8c09260a-2052-4777-9f79-f5c585a16d3f" data-file-name="components/TelegramGateway.tsx">
+        <CardHeader data-unique-id="e3b72293-d4f2-4748-b451-e73579c1dbb6" data-file-name="components/TelegramGateway.tsx">
+          <CardTitle data-unique-id="b3949746-ebd2-42a6-a0c6-85a781f94848" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="5f9c33c5-2704-44b5-b530-4ac13a2ce96e" data-file-name="components/TelegramGateway.tsx">Gateway Telegram</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="d7b21121-3ff1-4e45-a62b-e30a9246e76a" data-file-name="components/TelegramGateway.tsx">
             Hubungkan perangkat desktop Anda dengan Telegram Web melalui QR code
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="2f2b2eb7-9e5c-43e8-98e4-8587c94bdcc6" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
-          <div className="flex flex-col items-center justify-center p-6 border rounded-lg bg-muted" data-unique-id="761ff32b-a948-48d0-b0da-d362e35b41ce" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
-            {connectionStatus === "connected" ? <div className="flex flex-col items-center space-y-4 py-8" data-unique-id="ebfc98a5-b0d3-4451-8168-d2e6f1cfef14" data-file-name="components/TelegramGateway.tsx">
-                <div className="h-16 w-16 rounded-full bg-green-100 flex items-center justify-center" data-unique-id="ab1e051a-9b11-4565-9a19-462aafe91605" data-file-name="components/TelegramGateway.tsx">
+        <CardContent className="space-y-6" data-unique-id="f228fd36-f4ce-4c21-b4d0-235cee0b70fd" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
+          <div className="flex flex-col items-center justify-center p-6 border rounded-lg bg-muted" data-unique-id="80d80661-f609-4bc6-8384-5fa93bb20404" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
+            {connectionStatus === "connected" ? <div className="flex flex-col items-center space-y-4 py-8" data-unique-id="ce2ac300-107d-4350-8976-5883d41c37fe" data-file-name="components/TelegramGateway.tsx">
+                <div className="h-16 w-16 rounded-full bg-green-100 flex items-center justify-center" data-unique-id="21462afa-0c4f-4685-bf43-57361d5ed985" data-file-name="components/TelegramGateway.tsx">
                   <CheckCircle2 className="h-10 w-10 text-green-600" />
                 </div>
-                <h3 className="text-xl font-medium text-green-700" data-unique-id="a4c75e55-c5ec-44c5-a457-5209bff88b42" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="5adf535f-3a9c-4f31-8d6f-253e1f7f7a35" data-file-name="components/TelegramGateway.tsx">Perangkat Terhubung</span></h3>
-                <p className="text-center text-muted-foreground" data-unique-id="5c3e84e1-7014-4df0-a01d-f0d8ca2d415d" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">{statusMessage}</p>
-                <Button variant="outline" className="mt-4" onClick={disconnectDevice} data-unique-id="9c6bf398-ec3a-40df-abda-5318976f785f" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="5adf3d7c-2dd8-47f1-bfc7-78b2e82b1f30" data-file-name="components/TelegramGateway.tsx">
+                <h3 className="text-xl font-medium text-green-700" data-unique-id="3d3ba35f-e24b-4304-aafb-99fe474a8024" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="18c1d3bc-1de9-4292-b210-f35908d76348" data-file-name="components/TelegramGateway.tsx">Perangkat Terhubung</span></h3>
+                <p className="text-center text-muted-foreground" data-unique-id="75e8b918-e79d-44cb-920a-08c720067901" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">{statusMessage}</p>
+                <Button variant="outline" className="mt-4" onClick={disconnectDevice} data-unique-id="9d255f9a-27af-45b5-af7c-58a9729adeb4" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="09ec2870-40f2-4021-a342-3e225a9794b6" data-file-name="components/TelegramGateway.tsx">
                   Putuskan Koneksi
                 </span></Button>
-              </div> : qrCodeUrl ? <div className="flex flex-col items-center space-y-4" data-unique-id="57c65187-9a97-4020-af4a-92032136c50c" data-file-name="components/TelegramGateway.tsx">
-                <div className="relative" ref={qrRef} data-unique-id="2fd6996f-b7e1-492f-9446-72145bacf200" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
+              </div> : qrCodeUrl ? <div className="flex flex-col items-center space-y-4" data-unique-id="14aca059-bdd1-434f-b9aa-b41739fdf779" data-file-name="components/TelegramGateway.tsx">
+                <div className="relative" ref={qrRef} data-unique-id="93245f4e-3889-4c35-9a00-c7ec45b69aaa" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
                   <QRCodeSVG value={qrCodeUrl} size={256} level="H" className="h-64 w-64 rounded-lg" includeMargin={true} />
-                  {countdown > 0 && <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-medium" data-unique-id="128e7b50-9643-4976-a727-d9b736d437cd" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
+                  {countdown > 0 && <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-medium" data-unique-id="016f9118-c26a-4ad4-9792-a93925a71261" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
                       {countdown}
                     </div>}
                 </div>
-                <p className="text-center text-muted-foreground max-w-md" data-unique-id="d00e0aed-71fd-4bf1-a1fe-a52b370cdb47" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
+                <p className="text-center text-muted-foreground max-w-md" data-unique-id="66d13737-b107-4a46-b866-ce1e5dd7bc0c" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
                   {statusMessage}
                 </p>
-                <div className="flex items-center space-x-2 text-sm text-muted-foreground" data-unique-id="6e112629-dffa-43bd-a0da-32ac7a44a3eb" data-file-name="components/TelegramGateway.tsx">
+                <div className="flex items-center space-x-2 text-sm text-muted-foreground" data-unique-id="868da866-61ee-4489-8a8a-1534b29536de" data-file-name="components/TelegramGateway.tsx">
                   <Smartphone className="h-4 w-4" />
-                  <span data-unique-id="68980ca0-17f9-44d6-acc4-3f3ad73d3467" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="259e4505-8805-4c5b-a007-82860c5d919a" data-file-name="components/TelegramGateway.tsx">Buka aplikasi Telegram di perangkat Anda dan scan QR code ini</span></span>
+                  <span data-unique-id="d5ecf033-ed59-4d69-83ab-ecbd93a83850" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="a1c2ca89-ad48-4cb2-aa8b-ed930a4aab56" data-file-name="components/TelegramGateway.tsx">Buka aplikasi Telegram di perangkat Anda dan scan QR code ini</span></span>
                 </div>
-                <Button variant="outline" className="mt-2" onClick={generateQrCode} disabled={isGenerating} data-unique-id="1a1bda36-1e07-45c8-af26-7b69f29b2b9c" data-file-name="components/TelegramGateway.tsx">
-                  <RefreshCw className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="8337cdaa-fa31-407e-af72-cf09ac140b29" data-file-name="components/TelegramGateway.tsx">
+                <Button variant="outline" className="mt-2" onClick={generateQrCode} disabled={isGenerating} data-unique-id="d9cb60c8-6691-42e6-ae7a-5c5b468f5bc3" data-file-name="components/TelegramGateway.tsx">
+                  <RefreshCw className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="1c24e560-79e4-4ec1-9812-fcdafbe93961" data-file-name="components/TelegramGateway.tsx">
                   Refresh QR Code
                 </span></Button>
-              </div> : <div className="flex flex-col items-center space-y-6 py-8" data-unique-id="1ffecb8e-6837-46ce-bdb8-eb8db1faa935" data-file-name="components/TelegramGateway.tsx">
-                <div className="h-16 w-16 rounded-full bg-muted-foreground bg-opacity-10 flex items-center justify-center" data-unique-id="9910a7e5-b263-44c2-9a2f-540b4551e7db" data-file-name="components/TelegramGateway.tsx">
+              </div> : <div className="flex flex-col items-center space-y-6 py-8" data-unique-id="7fd25415-3e09-425a-83ea-75fd181adf12" data-file-name="components/TelegramGateway.tsx">
+                <div className="h-16 w-16 rounded-full bg-muted-foreground bg-opacity-10 flex items-center justify-center" data-unique-id="630bbd7e-30ca-4c4c-b574-6c02511c0822" data-file-name="components/TelegramGateway.tsx">
                   <QrCode className="h-8 w-8 text-muted-foreground" />
                 </div>
-                <div className="text-center space-y-2" data-unique-id="e863aa41-4c10-4f07-a9b3-9e126e947e2d" data-file-name="components/TelegramGateway.tsx">
-                  <h3 className="text-lg font-medium" data-unique-id="6f779fc5-0273-40b3-b705-57f971298bb7" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="76d6afb7-8aae-418d-95d6-ca2d2ef5e47b" data-file-name="components/TelegramGateway.tsx">Hubungkan Perangkat Desktop</span></h3>
-                  <p className="text-muted-foreground max-w-md" data-unique-id="bac3c1c2-98f5-40f0-951b-8a6b3f271da8" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="1abf864f-c096-4c1c-ba52-b04902ceeb04" data-file-name="components/TelegramGateway.tsx">
+                <div className="text-center space-y-2" data-unique-id="c1d48db6-3234-4474-bea6-5228d76fd7ec" data-file-name="components/TelegramGateway.tsx">
+                  <h3 className="text-lg font-medium" data-unique-id="a522bbb0-12ee-4178-b8de-ba047bad694d" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="e90a475e-c19b-4b3f-bb2e-59820341b413" data-file-name="components/TelegramGateway.tsx">Hubungkan Perangkat Desktop</span></h3>
+                  <p className="text-muted-foreground max-w-md" data-unique-id="041f9391-02c9-47b8-b67e-bce9137fcd42" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="af09661e-48e7-41a3-9810-9035dbcbd967" data-file-name="components/TelegramGateway.tsx">
                     Scan QR code untuk menghubungkan perangkat desktop Anda dengan Telegram Web
                   </span></p>
                 </div>
-                <Button onClick={generateQrCode} disabled={isGenerating} className="mt-4" data-unique-id="6e4c16c8-330d-42e6-b5ed-a2da9efa6ba8" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
+                <Button onClick={generateQrCode} disabled={isGenerating} className="mt-4" data-unique-id="ca837d87-805e-4ee0-a9f1-12caefed69e2" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">
                   {isGenerating ? <>
                       <Loader2 className="h-4 w-4 mr-2 animate-spin" />
                       Generating QR Code...
@@ -269,31 +269,31 @@ export default function TelegramGateway() {
               </div>}
           </div>
 
-          <Card className="bg-muted" data-unique-id="bbd1eadb-3587-479c-a455-e3f94d27bf94" data-file-name="components/TelegramGateway.tsx">
-            <CardContent className="p-4" data-unique-id="8bd199db-5c69-4cda-bfd5-366fc37113be" data-file-name="components/TelegramGateway.tsx">
-              <div className="flex items-start space-x-2 mb-3" data-unique-id="be7cadc4-6008-46cb-a5c9-8f12415891f8" data-file-name="components/TelegramGateway.tsx">
+          <Card className="bg-muted" data-unique-id="e94cde9d-c9e6-4bfb-b413-0a7aabd40dde" data-file-name="components/TelegramGateway.tsx">
+            <CardContent className="p-4" data-unique-id="f190106c-7bfe-428c-8836-7efa544aaeaf" data-file-name="components/TelegramGateway.tsx">
+              <div className="flex items-start space-x-2 mb-3" data-unique-id="03f2e661-1c20-4e9d-a9cb-e691e94c6b38" data-file-name="components/TelegramGateway.tsx">
                 <Info className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-blue-700" data-unique-id="bfe90bff-1836-49a6-ae63-1023db088f71" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="e7e93a1d-9613-4c92-b0c7-4af20fec05ae" data-file-name="components/TelegramGateway.tsx">
+                <p className="text-sm text-blue-700" data-unique-id="2fd6a333-5dd0-4021-9ec0-7c081a226f32" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="49f2db44-dcfe-42fe-b1d3-c8bf0644ad3d" data-file-name="components/TelegramGateway.tsx">
                   Fitur ini menggunakan TDLib untuk menghubungkan aplikasi dengan akun Telegram Anda melalui QR code login.
                 </span></p>
               </div>
               
-              <h3 className="font-medium mb-2" data-unique-id="37590d49-82e2-4c17-b12b-d03cabd3b803" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="80aed374-1f2e-477d-9279-05bf65396e4d" data-file-name="components/TelegramGateway.tsx">Cara Menghubungkan Perangkat</span></h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm" data-unique-id="5f00379a-53b9-4055-b18d-e7610fb8eb90" data-file-name="components/TelegramGateway.tsx">
-                <li data-unique-id="4b46c2e8-1087-431d-8789-a23b71b12286" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="9328e474-984e-4c76-a0de-b87fc3f67395" data-file-name="components/TelegramGateway.tsx">Klik tombol "Generate QR Code" untuk membuat kode QR</span></li>
-                <li data-unique-id="f78d3d12-d58c-403b-8d29-0face4450d76" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="e10a9b10-cf25-4c45-8eec-c611a3185aae" data-file-name="components/TelegramGateway.tsx">Buka aplikasi Telegram di smartphone Anda</span></li>
-                <li data-unique-id="d547b1e6-42bb-4eb8-8ba0-ed1a2e8ea0fe" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="4a155e5a-aea1-46c8-ad21-f3e03e63af51" data-file-name="components/TelegramGateway.tsx">Ketuk ikon </span><strong data-unique-id="5d103d5e-a36c-45f3-b633-b6e27775820b" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="489207ac-1c08-460c-b222-a3679a7ae5ce" data-file-name="components/TelegramGateway.tsx">Pengaturan</span></strong><span className="editable-text" data-unique-id="7eecdb32-e265-458c-b6ba-32ee2bdc9616" data-file-name="components/TelegramGateway.tsx"> (⚙️) di pojok kanan bawah</span></li>
-                <li data-unique-id="ca315691-439a-49bd-b2c8-4e34cd32c050" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="b148e8b5-b3f3-4f23-9e16-3d1f16bb24fd" data-file-name="components/TelegramGateway.tsx">Pilih </span><strong data-unique-id="ff292189-db1c-48d7-bbe0-e81ac3aff17a" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="535a3807-2399-4f87-9eec-11add4513c32" data-file-name="components/TelegramGateway.tsx">Perangkat</span></strong><span className="editable-text" data-unique-id="69831926-c20a-440a-8a51-20f55d8f82d0" data-file-name="components/TelegramGateway.tsx"> atau </span><strong data-unique-id="6bdb11d2-5585-4c87-ade0-01cba9699949" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="966bd764-6bb4-480d-b8d6-e5eecca41674" data-file-name="components/TelegramGateway.tsx">Devices</span></strong></li>
-                <li data-unique-id="88ef0268-7d01-45c3-b756-19a2bf923f6a" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="9f6cd276-ab88-481d-90e4-d3105e8bbeca" data-file-name="components/TelegramGateway.tsx">Ketuk </span><strong data-unique-id="d21bfad1-6cdd-4c93-8268-bee5edf473e6" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="fca9ce5e-cd21-49cc-a822-4a45b38a1f03" data-file-name="components/TelegramGateway.tsx">Scan QR Code</span></strong><span className="editable-text" data-unique-id="9e41fb88-349f-4206-93fc-d89d923af4cf" data-file-name="components/TelegramGateway.tsx"> atau </span><strong data-unique-id="d4a743c1-3d2e-4e14-8e96-72b021e596c0" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="33ecc0fe-b954-4690-8d91-8829dcb85485" data-file-name="components/TelegramGateway.tsx">Link Desktop Device</span></strong></li>
-                <li data-unique-id="7dabdbba-a1cb-4d94-9f1e-1ae99e3d2f79" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="36572e71-f729-42ce-a0f2-302e4552b799" data-file-name="components/TelegramGateway.tsx">Arahkan kamera ke QR code yang ditampilkan di sini</span></li>
-                <li data-unique-id="758fcf6a-3c76-434c-ab34-1a64b55fa8ca" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="614c22e3-28a2-4058-8a0e-c3e155305753" data-file-name="components/TelegramGateway.tsx">Setelah terhubung, Anda dapat menggunakan Telegram Web melalui aplikasi ini</span></li>
+              <h3 className="font-medium mb-2" data-unique-id="3c55616c-dc28-4e1f-a188-b72a1b3b8218" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="fa7f71ba-562a-444d-888a-a143c10ad6ad" data-file-name="components/TelegramGateway.tsx">Cara Menghubungkan Perangkat</span></h3>
+              <ol className="list-decimal pl-5 space-y-2 text-sm" data-unique-id="a3bbaae2-754f-4970-9d30-437fc3cbe6be" data-file-name="components/TelegramGateway.tsx">
+                <li data-unique-id="6832205f-5195-4a92-9612-2840fd4ae5fe" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="a08bd9ef-14c9-47ba-ab98-8b365ed103aa" data-file-name="components/TelegramGateway.tsx">Klik tombol "Generate QR Code" untuk membuat kode QR</span></li>
+                <li data-unique-id="c09d6334-d9cb-428a-bdfb-b2ee4ad78345" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="c30df9e4-5c96-4fe6-ace7-7658db378efd" data-file-name="components/TelegramGateway.tsx">Buka aplikasi Telegram di smartphone Anda</span></li>
+                <li data-unique-id="00678402-8ef5-47d8-8957-c5497086b561" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="d75f6aeb-2a6b-4494-b177-6bcf42730285" data-file-name="components/TelegramGateway.tsx">Ketuk ikon </span><strong data-unique-id="378cacdf-80a2-4101-af09-0b2448ac715b" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="dd696c08-0e41-4411-923e-f219c9205005" data-file-name="components/TelegramGateway.tsx">Pengaturan</span></strong><span className="editable-text" data-unique-id="c4ecd6c4-da54-481e-b75b-0cb1eb821767" data-file-name="components/TelegramGateway.tsx"> (⚙️) di pojok kanan bawah</span></li>
+                <li data-unique-id="e9b88c0d-de50-45a9-b40a-4d3c386691d4" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="8efcf417-92e7-414f-8574-768dc096ef7e" data-file-name="components/TelegramGateway.tsx">Pilih </span><strong data-unique-id="2d67c827-0566-415a-9826-ec600b6229e1" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="7e7dc9f0-40df-422b-8b6d-b38d88d2bd9a" data-file-name="components/TelegramGateway.tsx">Perangkat</span></strong><span className="editable-text" data-unique-id="5157c0c5-204f-4539-ba57-063637970800" data-file-name="components/TelegramGateway.tsx"> atau </span><strong data-unique-id="f2d567b3-93dc-4ed9-bd7c-6d5792894c5e" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="43c14c7c-d653-410d-9dcd-4788f0e5a268" data-file-name="components/TelegramGateway.tsx">Devices</span></strong></li>
+                <li data-unique-id="ede927f9-e0d2-48e7-8574-0bdcae33477d" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="524d13a3-7be8-4e77-a8cb-afd867638c44" data-file-name="components/TelegramGateway.tsx">Ketuk </span><strong data-unique-id="f7e51deb-6b74-4d15-8edd-76a60469b0da" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="23bcded9-cd6f-43e9-953f-b83842b74b95" data-file-name="components/TelegramGateway.tsx">Scan QR Code</span></strong><span className="editable-text" data-unique-id="0f9887ae-0271-47ae-8404-ed0532c43f11" data-file-name="components/TelegramGateway.tsx"> atau </span><strong data-unique-id="a6a99544-95c5-4e3f-baee-bc8cecb57ec9" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="c906a975-6d4a-402f-9961-726f1dbe197a" data-file-name="components/TelegramGateway.tsx">Link Desktop Device</span></strong></li>
+                <li data-unique-id="9ebfcbcc-f695-4e82-9f1c-4e2c67bc354e" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="6fa32600-c066-4182-92d6-4b31c7fe0bfa" data-file-name="components/TelegramGateway.tsx">Arahkan kamera ke QR code yang ditampilkan di sini</span></li>
+                <li data-unique-id="6f8fcbef-3b25-45d1-968f-8027e69ed02f" data-file-name="components/TelegramGateway.tsx"><span className="editable-text" data-unique-id="50cb69d9-e24f-4d84-b836-70b57dd47b33" data-file-name="components/TelegramGateway.tsx">Setelah terhubung, Anda dapat menggunakan Telegram Web melalui aplikasi ini</span></li>
               </ol>
             </CardContent>
           </Card>
 
-          {connectionStatus === "error" && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="b08d0c73-f757-4978-b81c-9f1c6d6f4aea" data-file-name="components/TelegramGateway.tsx">
+          {connectionStatus === "error" && <div className="bg-red-50 text-red-800 p-3 rounded-md flex items-center" data-unique-id="a858ac0e-5f65-4ad5-840b-446ef90ad1cf" data-file-name="components/TelegramGateway.tsx">
               <XCircle className="h-5 w-5 mr-2" />
-              <span data-unique-id="777c4db4-e86d-477f-ab8d-eb91d3a307ef" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">{statusMessage}</span>
+              <span data-unique-id="d6ef6549-4628-476b-bbc8-b34c3e8aeb97" data-file-name="components/TelegramGateway.tsx" data-dynamic-text="true">{statusMessage}</span>
             </div>}
         </CardContent>
       </Card>

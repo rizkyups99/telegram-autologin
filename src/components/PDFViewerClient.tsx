@@ -78,31 +78,31 @@ export default function PDFViewerClient() {
     }
   };
   if (isLoading) {
-    return <div className="container mx-auto px-4 py-8 flex justify-center" data-unique-id="f94b0de6-8345-4b1d-86bb-12154b38a1e9" data-file-name="components/PDFViewerClient.tsx">
+    return <div className="container mx-auto px-4 py-8 flex justify-center" data-unique-id="60c84d33-afcc-4263-afda-6385c728d39b" data-file-name="components/PDFViewerClient.tsx">
         <Loader className="h-8 w-8 animate-spin" />
       </div>;
   }
   if (!pdfId && !pdfUrl) {
-    return <div className="container mx-auto px-4 py-8" data-unique-id="61533802-5f96-49e6-a9e4-2e73a527c319" data-file-name="components/PDFViewerClient.tsx">
-        <Card data-unique-id="6cd70a98-1f82-41ff-ae02-2f610917a473" data-file-name="components/PDFViewerClient.tsx">
-          <CardHeader data-unique-id="1ff37e90-04c0-45b2-81c7-ea641b758d81" data-file-name="components/PDFViewerClient.tsx">
-            <CardTitle data-unique-id="e9c35278-947c-4078-a1b1-0ae3d98eee5a" data-file-name="components/PDFViewerClient.tsx"><span className="editable-text" data-unique-id="19fb639b-156b-495f-a36a-cd77db152caa" data-file-name="components/PDFViewerClient.tsx">PDF Viewer</span></CardTitle>
-            <CardDescription><span className="editable-text" data-unique-id="07cf20d6-eed4-488d-8576-719522ab1940" data-file-name="components/PDFViewerClient.tsx">No PDF specified. Please provide a PDF ID or URL.</span></CardDescription>
+    return <div className="container mx-auto px-4 py-8" data-unique-id="434c335e-940a-4ac8-ba60-03c3c4332f08" data-file-name="components/PDFViewerClient.tsx">
+        <Card data-unique-id="b0e8c99a-d0ce-4b23-a4d0-2c0be8092de6" data-file-name="components/PDFViewerClient.tsx">
+          <CardHeader data-unique-id="c595e964-7e5d-4c35-9608-3ad2a7e807f9" data-file-name="components/PDFViewerClient.tsx">
+            <CardTitle data-unique-id="813c0b81-95fa-448b-89ec-a72d4a468c9b" data-file-name="components/PDFViewerClient.tsx"><span className="editable-text" data-unique-id="2f934235-fd6d-4c16-bf97-c22f1c337ad4" data-file-name="components/PDFViewerClient.tsx">PDF Viewer</span></CardTitle>
+            <CardDescription><span className="editable-text" data-unique-id="ba53b9ad-cab5-4416-aefc-e479da1b4fb7" data-file-name="components/PDFViewerClient.tsx">No PDF specified. Please provide a PDF ID or URL.</span></CardDescription>
           </CardHeader>
         </Card>
       </div>;
   }
   if (!pdfUrl) {
-    return <div className="container mx-auto px-4 py-8" data-unique-id="95ea67b1-c26e-4e04-be2b-196a879a447a" data-file-name="components/PDFViewerClient.tsx">
-        <Card data-unique-id="2f97a3f2-15da-4933-a20c-bd354ed4120e" data-file-name="components/PDFViewerClient.tsx">
-          <CardHeader data-unique-id="8bc070b5-cc3d-4de7-9e45-0e015790ce9b" data-file-name="components/PDFViewerClient.tsx">
-            <CardTitle data-unique-id="0b87127e-9292-4fb7-831c-150ab8009cf2" data-file-name="components/PDFViewerClient.tsx"><span className="editable-text" data-unique-id="90ccb184-cea7-47e7-931e-1cbda40c3bcb" data-file-name="components/PDFViewerClient.tsx">PDF Not Found</span></CardTitle>
-            <CardDescription><span className="editable-text" data-unique-id="7e240fad-c98e-4bfd-a94d-e148dbcad4c3" data-file-name="components/PDFViewerClient.tsx">The requested PDF could not be loaded.</span></CardDescription>
+    return <div className="container mx-auto px-4 py-8" data-unique-id="d2139506-9f9d-427b-b502-c2dac5188450" data-file-name="components/PDFViewerClient.tsx">
+        <Card data-unique-id="24d15f48-28cc-4454-852b-574505a1ec51" data-file-name="components/PDFViewerClient.tsx">
+          <CardHeader data-unique-id="69dfaa02-94d1-4c69-abdf-200926770b5d" data-file-name="components/PDFViewerClient.tsx">
+            <CardTitle data-unique-id="5c81944a-1555-4549-8d3c-832d27e8810e" data-file-name="components/PDFViewerClient.tsx"><span className="editable-text" data-unique-id="208d4952-4cae-41f2-8c06-0a3b6b8ded85" data-file-name="components/PDFViewerClient.tsx">PDF Not Found</span></CardTitle>
+            <CardDescription><span className="editable-text" data-unique-id="ff41853c-b78d-4d34-bb60-2a667fbfc66f" data-file-name="components/PDFViewerClient.tsx">The requested PDF could not be loaded.</span></CardDescription>
           </CardHeader>
         </Card>
       </div>;
   }
-  return <div className="container mx-auto px-4 py-8" data-unique-id="bc556322-adf9-47cd-8841-4199d40007c8" data-file-name="components/PDFViewerClient.tsx">
+  return <div className="container mx-auto px-4 py-8" data-unique-id="af8af296-2391-447a-b650-71d5188e9a80" data-file-name="components/PDFViewerClient.tsx">
       <UniversalPDFViewer pdfUrl={pdfUrl} title={title} onDownload={handleDownload} />
     </div>;
 }

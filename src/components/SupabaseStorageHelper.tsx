@@ -96,41 +96,41 @@ export default function SupabaseStorageHelper() {
     }
   };
   const allBucketsAccessible = Object.values(bucketStatus).every(Boolean);
-  return <Card className="mb-6" data-unique-id="ee4d15f6-afd4-4589-b7f6-bb24f3a33665" data-file-name="components/SupabaseStorageHelper.tsx">
-      <CardHeader data-unique-id="f510560a-80bc-4b35-9334-437776cb5ecf" data-file-name="components/SupabaseStorageHelper.tsx">
-        <div className="flex items-center justify-between" data-unique-id="a5a10503-1531-431e-8cef-89325b8257d6" data-file-name="components/SupabaseStorageHelper.tsx">
-          <CardTitle className="text-xl" data-unique-id="219f68b5-ff10-41ba-8dc6-d804e72f5e0f" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="0e9bd4aa-78c3-41fe-8eca-182bef499fc4" data-file-name="components/SupabaseStorageHelper.tsx">Supabase Storage Status</span></CardTitle>
-          <Button variant="outline" size="sm" onClick={checkBuckets} disabled={isChecking} data-unique-id="2b4b8f16-90f6-4863-ba16-8ae53f5873c3" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+  return <Card className="mb-6" data-unique-id="55a6662e-d8eb-4059-9670-91684152c9f7" data-file-name="components/SupabaseStorageHelper.tsx">
+      <CardHeader data-unique-id="4ed763ac-5654-4785-ad68-5a0aff744913" data-file-name="components/SupabaseStorageHelper.tsx">
+        <div className="flex items-center justify-between" data-unique-id="b7356586-40b3-4a48-afd9-73c72c4e6240" data-file-name="components/SupabaseStorageHelper.tsx">
+          <CardTitle className="text-xl" data-unique-id="6b9ca951-d9cb-4013-99c0-8c6e5d48bc06" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="42964f5f-e10c-4dcc-a1be-e48a427a0f3c" data-file-name="components/SupabaseStorageHelper.tsx">Supabase Storage Status</span></CardTitle>
+          <Button variant="outline" size="sm" onClick={checkBuckets} disabled={isChecking} data-unique-id="7cd92b12-0e9c-4528-abb2-9340a06350d7" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
             {isChecking ? 'Checking...' : 'Check Access'}
           </Button>
         </div>
-        <CardDescription><span className="editable-text" data-unique-id="b2fa444c-2cef-4638-892a-2eae3153a015" data-file-name="components/SupabaseStorageHelper.tsx">
+        <CardDescription><span className="editable-text" data-unique-id="e628403b-bc2b-4d8f-8921-8a8e65430623" data-file-name="components/SupabaseStorageHelper.tsx">
           Verify write access to your Supabase storage buckets
         </span></CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4" data-unique-id="dee5872a-f749-4424-8333-fb2a445a0755" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="f4379203-1641-44f8-bca1-da87ed3ee547" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
-          {Object.entries(bucketStatus).map(([bucket, isAccessible]) => <div key={bucket} className="p-3 bg-muted rounded-md" data-is-mapped="true" data-unique-id="8bf34409-373b-4e10-9cf0-c90ef75d8f0c" data-file-name="components/SupabaseStorageHelper.tsx">
-              <div className="flex items-center justify-between mb-1" data-is-mapped="true" data-unique-id="a7cd24a7-3d20-4c55-b0bc-368d41c2e4fa" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
-                <span className="font-medium" data-is-mapped="true" data-unique-id="adf7a491-18b7-4e5d-b347-dc02cb2cf5b3" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">{bucket}</span>
+      <CardContent className="space-y-4" data-unique-id="9906db3b-3448-41a3-98bd-94cfd0859639" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="716d60b9-413f-4b5f-bb24-77e6b4f7f214" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+          {Object.entries(bucketStatus).map(([bucket, isAccessible]) => <div key={bucket} className="p-3 bg-muted rounded-md" data-is-mapped="true" data-unique-id="cf4bbc9a-17d6-4d6f-bfa2-b2608994364b" data-file-name="components/SupabaseStorageHelper.tsx">
+              <div className="flex items-center justify-between mb-1" data-is-mapped="true" data-unique-id="8234be26-8e6b-4659-8405-ca227e35570a" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+                <span className="font-medium" data-is-mapped="true" data-unique-id="ad6a3b34-4635-4065-8875-ea62d10389fa" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">{bucket}</span>
                 {isAccessible ? <CheckCircle className="h-5 w-5 text-green-500" /> : <AlertCircle className="h-5 w-5 text-red-500" />}
               </div>
-              <p className="text-xs text-muted-foreground" data-is-mapped="true" data-unique-id="72ef8cec-4521-4450-b938-60fe43aa812a" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="5dab4065-e965-4303-b75d-6747d9431f7c" data-file-name="components/SupabaseStorageHelper.tsx">
+              <p className="text-xs text-muted-foreground" data-is-mapped="true" data-unique-id="0a183349-b1b3-43b8-9c71-a1bfb8caf544" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="a33f9920-19cf-4ab3-8510-a37fc5fc0b88" data-file-name="components/SupabaseStorageHelper.tsx">
                 Status: </span>{isAccessible ? 'Accessible' : 'Access Error'}
               </p>
             </div>)}
         </div>
 
-        {!allBucketsAccessible && <div className="bg-amber-50 border border-amber-200 p-4 rounded-md" data-unique-id="835bc929-12da-49bc-9c42-d6d33a638ddd" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
-            <div className="flex items-start gap-3" data-unique-id="56c30424-12ed-4eae-85f5-0b6a73fc64c3" data-file-name="components/SupabaseStorageHelper.tsx">
+        {!allBucketsAccessible && <div className="bg-amber-50 border border-amber-200 p-4 rounded-md" data-unique-id="7e788ee2-6c91-4384-ad6d-8c7cfdbd7c22" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+            <div className="flex items-start gap-3" data-unique-id="10cfb41e-eed1-4e6d-a62e-dce30b55b7bf" data-file-name="components/SupabaseStorageHelper.tsx">
               <Info className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
-              <div className="flex-1" data-unique-id="8ad8bf7a-a156-41e2-af30-3718de31ab88" data-file-name="components/SupabaseStorageHelper.tsx">
-                <h3 className="font-medium text-amber-800 mb-1" data-unique-id="5e649673-b9b4-49e4-b851-5174628bd34e" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="10c7f9b4-7402-4881-879e-4b85ee10776a" data-file-name="components/SupabaseStorageHelper.tsx">Storage Access Issue Detected</span></h3>
-                <p className="text-sm text-amber-700 mb-2" data-unique-id="5a86e707-1112-48d9-b652-84891069bf5c" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="4b03256b-00dc-4a7a-aea6-0681ab6119ec" data-file-name="components/SupabaseStorageHelper.tsx">
+              <div className="flex-1" data-unique-id="494cab77-5d53-40bc-b21c-efe3cdbfda9f" data-file-name="components/SupabaseStorageHelper.tsx">
+                <h3 className="font-medium text-amber-800 mb-1" data-unique-id="bdb46b39-c30d-4f38-8acf-0bb223d1f7b6" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="8e3b6982-03cb-486a-a883-f879145b0948" data-file-name="components/SupabaseStorageHelper.tsx">Storage Access Issue Detected</span></h3>
+                <p className="text-sm text-amber-700 mb-2" data-unique-id="f4ac4a62-c75b-4de7-9b77-b3e50c80bcb4" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="a8cff197-6bd1-477e-b379-f4b738dd54b5" data-file-name="components/SupabaseStorageHelper.tsx">
                   You need to apply Row Level Security (RLS) policies to allow file uploads to your Supabase storage buckets.
                 </span></p>
-                <div className="flex flex-col sm:flex-row items-center gap-2 mt-3" data-unique-id="df0999b2-237d-448c-97b2-626adf482aa1" data-file-name="components/SupabaseStorageHelper.tsx">
-                  <Button variant="default" size="sm" onClick={applyRLSPolicies} disabled={isApplyingPolicies} className="w-full sm:w-auto" data-unique-id="c9c5c51b-9cc3-471a-a779-af9bf8444903" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+                <div className="flex flex-col sm:flex-row items-center gap-2 mt-3" data-unique-id="fd1f5e98-837d-4026-99d8-1abad64e067e" data-file-name="components/SupabaseStorageHelper.tsx">
+                  <Button variant="default" size="sm" onClick={applyRLSPolicies} disabled={isApplyingPolicies} className="w-full sm:w-auto" data-unique-id="e44a30a8-2f6e-4bcf-9799-fbd1ef335dbb" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
                     {isApplyingPolicies ? <>
                         <Loader className="h-4 w-4 mr-2 animate-spin" />
                         Applying Policies...
@@ -139,15 +139,15 @@ export default function SupabaseStorageHelper() {
                         Apply RLS Policies Automatically
                       </>}
                   </Button>
-                  <Button variant="outline" size="sm" onClick={() => setShowInstructions(!showInstructions)} className="w-full sm:w-auto mt-2 sm:mt-0" data-unique-id="b52b6617-da48-43fe-90ec-b71722e76aaa" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => setShowInstructions(!showInstructions)} className="w-full sm:w-auto mt-2 sm:mt-0" data-unique-id="b0622b78-b8f3-432a-b218-d43dacc434a0" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
                     {showInstructions ? 'Hide Manual Instructions' : 'Show Manual Instructions'}
                   </Button>
                 </div>
 
-                <div className="mt-4 border-t border-amber-200 pt-4" data-unique-id="b906c48b-a1ab-4acd-b424-add05f898ee8" data-file-name="components/SupabaseStorageHelper.tsx">
-                  <h4 className="font-medium text-amber-800 mb-2" data-unique-id="603a4ac6-4ce2-4072-b715-90d305bb5640" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="63f17c4c-4c5d-4fc9-ae9a-b3dfd2d8c055" data-file-name="components/SupabaseStorageHelper.tsx">Emergency Fix</span></h4>
-                  <p className="text-sm text-amber-700 mb-3" data-unique-id="4dbe737c-e676-41cc-bb75-64406dd3bee0" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="9008c3d1-a56e-4010-addf-2ca310657820" data-file-name="components/SupabaseStorageHelper.tsx">
-                    If all else fails, you can temporarily disable RLS completely. </span><strong data-unique-id="6d2f46ec-5847-4703-8c57-876c4d8eb571" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="d03edf60-1330-409d-997b-e863704b2ef5" data-file-name="components/SupabaseStorageHelper.tsx">Use with caution</span></strong><span className="editable-text" data-unique-id="083083e1-c680-40d2-8128-3f0980a895bb" data-file-name="components/SupabaseStorageHelper.tsx"> as this removes all security restrictions.
+                <div className="mt-4 border-t border-amber-200 pt-4" data-unique-id="f4086e1b-9e68-4b2d-bbd7-afe2aaee45e0" data-file-name="components/SupabaseStorageHelper.tsx">
+                  <h4 className="font-medium text-amber-800 mb-2" data-unique-id="15f0cbba-873f-41e9-81e7-550394076ba4" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="26cc6664-7384-4498-afc5-4f9586b44306" data-file-name="components/SupabaseStorageHelper.tsx">Emergency Fix</span></h4>
+                  <p className="text-sm text-amber-700 mb-3" data-unique-id="cc5d36bf-43db-463b-9f96-dab94a554a9e" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="2fcb55eb-4a4d-491f-becd-5060558b0e73" data-file-name="components/SupabaseStorageHelper.tsx">
+                    If all else fails, you can temporarily disable RLS completely. </span><strong data-unique-id="548345e6-7524-4671-82a1-a399d05b39a8" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="0f98d459-fa8b-462c-9cb7-9fd20c77229e" data-file-name="components/SupabaseStorageHelper.tsx">Use with caution</span></strong><span className="editable-text" data-unique-id="2ac714d2-5dda-4e9c-bad7-acb6cc4f6921" data-file-name="components/SupabaseStorageHelper.tsx"> as this removes all security restrictions.
                   </span></p>
                   <Button variant="destructive" size="sm" onClick={async () => {
                 if (confirm("Are you sure? This will disable ALL security restrictions on storage.")) {
@@ -184,22 +184,22 @@ export default function SupabaseStorageHelper() {
                     }, 1000);
                   }
                 }
-              }} className="w-full sm:w-auto" data-unique-id="3411620a-5fd1-4b9b-b6c9-a42ca0086bd6" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="b634b681-d601-44bb-82a2-2348c6ac8ec8" data-file-name="components/SupabaseStorageHelper.tsx">
+              }} className="w-full sm:w-auto" data-unique-id="625a5ae2-ee5a-4a98-a5d4-d0e8f33bb9cc" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="2bcfdf8c-98fc-48d4-8ff3-5eda31e089f8" data-file-name="components/SupabaseStorageHelper.tsx">
                     Disable RLS Completely
                   </span></Button>
                 </div>
               </div>
             </div>
 
-            {policyResult && <div className={`mt-3 ${policyResult.success ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'} p-3 rounded-md flex items-center`} data-unique-id="54ef3b55-9bc1-4eff-922b-4bf5a63b88d1" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+            {policyResult && <div className={`mt-3 ${policyResult.success ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'} p-3 rounded-md flex items-center`} data-unique-id="b7e1f1cf-1d65-42d9-837e-c59cfdaa37ed" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
                 {policyResult.success ? <CheckCircle className="h-5 w-5 mr-2 flex-shrink-0" /> : <AlertCircle className="h-5 w-5 mr-2 flex-shrink-0" />}
-                <span data-unique-id="74f32754-6c94-43d0-8648-204443c42d2e" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">{policyResult.message}</span>
+                <span data-unique-id="68fb9b30-8c04-4ea2-8775-902ec1f767c0" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">{policyResult.message}</span>
               </div>}
 
-            {showInstructions && <div className="mt-4 bg-white p-3 rounded border border-amber-200" data-unique-id="76d41c03-4413-4154-9aa6-9d8f0aef40ad" data-file-name="components/SupabaseStorageHelper.tsx">
-                <div className="flex justify-between items-center mb-2" data-unique-id="f6ab2b9b-07e6-4f66-b4e8-e66fc618e2bb" data-file-name="components/SupabaseStorageHelper.tsx">
-                  <h4 className="font-medium text-amber-800" data-unique-id="ee89457c-d805-4f0e-9e34-1a56bd419595" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="62176584-c3af-4d8c-aea3-64c7e86c08de" data-file-name="components/SupabaseStorageHelper.tsx">RLS Policy Instructions</span></h4>
-                  <Button variant="ghost" size="sm" onClick={copyInstructions} className="h-8 text-xs" data-unique-id="5941363b-8f7c-4b4d-aa35-816bd268d062" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+            {showInstructions && <div className="mt-4 bg-white p-3 rounded border border-amber-200" data-unique-id="78f51489-5c5e-4305-bc3b-427b7aa73bbf" data-file-name="components/SupabaseStorageHelper.tsx">
+                <div className="flex justify-between items-center mb-2" data-unique-id="9d2e7933-4d0b-48d8-9a6e-4709b0161f4f" data-file-name="components/SupabaseStorageHelper.tsx">
+                  <h4 className="font-medium text-amber-800" data-unique-id="d27554b7-8329-478b-99a2-020ff8f4ce38" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="d4ff5265-e17f-4860-9943-92d641cee437" data-file-name="components/SupabaseStorageHelper.tsx">RLS Policy Instructions</span></h4>
+                  <Button variant="ghost" size="sm" onClick={copyInstructions} className="h-8 text-xs" data-unique-id="f2127c27-bb6f-4b20-92c2-9e79f7fe0cf9" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
                     {copied ? <>
                         <CheckCircle className="h-3.5 w-3.5 mr-1" />
                         Copied
@@ -209,19 +209,19 @@ export default function SupabaseStorageHelper() {
                       </>}
                   </Button>
                 </div>
-                <pre className="text-xs bg-gray-50 p-3 rounded overflow-auto max-h-64" data-unique-id="3baca14b-dfb4-489d-8076-ac9dbf1ba0a6" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
+                <pre className="text-xs bg-gray-50 p-3 rounded overflow-auto max-h-64" data-unique-id="758304b2-4684-496e-9e25-ba5b2b53c667" data-file-name="components/SupabaseStorageHelper.tsx" data-dynamic-text="true">
                   {getSupabaseRLSInstructions()}
                 </pre>
-                <Button variant="outline" size="sm" className="mt-2" onClick={() => window.open('https://supabase.com/dashboard', '_blank')} data-unique-id="2b343a67-a8cf-4684-a031-4b44177cec60" data-file-name="components/SupabaseStorageHelper.tsx">
-                  <ExternalLink className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="f33035af-274b-4809-81fb-8fead5f74e14" data-file-name="components/SupabaseStorageHelper.tsx">
+                <Button variant="outline" size="sm" className="mt-2" onClick={() => window.open('https://supabase.com/dashboard', '_blank')} data-unique-id="93f261d2-bb38-45e5-835e-fd94b6b402ef" data-file-name="components/SupabaseStorageHelper.tsx">
+                  <ExternalLink className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="9166b6d0-136e-48dc-8e0a-632f77784e95" data-file-name="components/SupabaseStorageHelper.tsx">
                   Open Supabase Dashboard
                 </span></Button>
               </div>}
           </div>}
 
-        {allBucketsAccessible && <div className="bg-green-50 border border-green-200 p-4 rounded-md flex items-center gap-3" data-unique-id="d9c60400-4263-4c26-9ae9-0e8040b961ee" data-file-name="components/SupabaseStorageHelper.tsx">
+        {allBucketsAccessible && <div className="bg-green-50 border border-green-200 p-4 rounded-md flex items-center gap-3" data-unique-id="431fe31a-168c-4b23-9a25-57b1679d2d29" data-file-name="components/SupabaseStorageHelper.tsx">
             <CheckCircle className="h-5 w-5 text-green-500" />
-            <p className="text-sm text-green-700" data-unique-id="d8c12708-6d65-4c91-aeb1-11ebb0e87568" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="0619cb7e-de4d-4c4c-89d1-8bac7e7561a7" data-file-name="components/SupabaseStorageHelper.tsx">
+            <p className="text-sm text-green-700" data-unique-id="4889d522-1d37-41de-9e84-a80d07b2b764" data-file-name="components/SupabaseStorageHelper.tsx"><span className="editable-text" data-unique-id="d22e9dc9-40c1-43a1-9ada-ab61e8236746" data-file-name="components/SupabaseStorageHelper.tsx">
               All storage buckets are accessible and properly configured!
             </span></p>
           </div>}

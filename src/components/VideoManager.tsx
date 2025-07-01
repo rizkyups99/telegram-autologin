@@ -299,82 +299,82 @@ export default function VideoManager() {
     setItemsPerPage(Number(e.target.value));
     setCurrentPage(1); // Reset to first page when changing items per page
   };
-  return <div className="space-y-6" data-unique-id="046b8494-c98f-465b-a3e1-9ab768ff242c" data-file-name="components/VideoManager.tsx">
-      <Card data-unique-id="57d01a53-8ef6-47d6-a0b8-5f9ed00d2730" data-file-name="components/VideoManager.tsx">
-        <CardHeader data-unique-id="e1db8b5b-6875-4743-86a8-b7385186039e" data-file-name="components/VideoManager.tsx">
-          <CardTitle data-unique-id="b5273de7-f0b4-4259-9750-d202a510e336" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="121b1c3b-f644-45ec-ae3f-a7125551d28d" data-file-name="components/VideoManager.tsx">Manajemen Video</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="f3a97827-8267-4985-87d6-d2acc104fcbb" data-file-name="components/VideoManager.tsx">
+  return <div className="space-y-6" data-unique-id="8d01deec-e1d9-43d9-93b0-786e8dcc9cc5" data-file-name="components/VideoManager.tsx">
+      <Card data-unique-id="783d539b-8049-45f3-910e-07047a3cd068" data-file-name="components/VideoManager.tsx">
+        <CardHeader data-unique-id="4e1f7c2d-58a2-4594-9779-6ea2f3f8511e" data-file-name="components/VideoManager.tsx">
+          <CardTitle data-unique-id="a34ac2f6-7178-47c8-9784-c4dc68967611" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="feb89b89-289d-4b51-8a3a-d0f1ce0577cb" data-file-name="components/VideoManager.tsx">Manajemen Video</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="25895425-ae2e-4651-9e9f-f6710ab59588" data-file-name="components/VideoManager.tsx">
             Kelola URL video YouTube untuk pengguna
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="41aa08a1-7110-40c6-bbe2-90ed8a604672" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="05f4ea3b-7f21-40c9-9ab5-f5d68ac718a1" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
           {/* Form for creating/editing videos */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="b3240b9e-1fab-4284-862a-1038a3ec7456" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="63a84d52-1c2c-4e7d-9f71-2d6afa329a5f" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="2945ad5c-d898-46a1-bfc0-6269f2d40abc" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="5737a20f-47d8-4012-a888-56834de1997f" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
               {isCreating ? "Tambah Video Baru" : "Tambah Video"}
             </h3>
-            <div className="space-y-4" data-unique-id="b5e343f7-a99a-4a48-af8b-e4f736c76716" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-              <div data-unique-id="ce7350b4-e6ed-473c-a35a-f5c927cd0fba" data-file-name="components/VideoManager.tsx">
-                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="a9101c87-04fe-4bc7-80cb-258ea6e02624" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="f5bda265-a8fc-44b9-8a2a-fa4e8dfe9391" data-file-name="components/VideoManager.tsx">Judul Video</span></Label>
-                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Masukkan judul video" className="w-full" data-unique-id="4707af2b-eb0a-4189-9505-56bc09b04a9b" data-file-name="components/VideoManager.tsx" />
+            <div className="space-y-4" data-unique-id="9a86bb2b-5c20-48aa-b782-4af58a9474ea" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="039619a2-1238-4fce-9090-6551671681c7" data-file-name="components/VideoManager.tsx">
+                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="a76d0dae-62e9-490b-8b59-01dfddec4f9e" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="42d23d8d-7aa3-4f62-8a4f-c8d9a2155bdf" data-file-name="components/VideoManager.tsx">Judul Video</span></Label>
+                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Masukkan judul video" className="w-full" data-unique-id="50eb3656-59a9-4e5c-8fa3-53e1d0d15580" data-file-name="components/VideoManager.tsx" />
               </div>
               
-              <div data-unique-id="25657500-6e22-49aa-9766-0cb2b24af216" data-file-name="components/VideoManager.tsx">
-                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="6e77a5a3-3bf6-4793-bda8-21b0649405e7" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="4fbf0e41-344e-4f7e-bd6b-96a41de1b721" data-file-name="components/VideoManager.tsx">Kategori</span></Label>
-                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="32f90e19-3a87-474a-8cb6-4e5a4fd87799" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="283e6a6e-ab16-4aa3-95c3-a3f33e18a835" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="ec734102-9dbe-46e2-bdaf-d2f27e6074f3" data-file-name="components/VideoManager.tsx">Pilih Kategori</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="f6332b14-803e-4424-935b-3079d62763fd" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="df6349b8-4093-4214-9064-041b859684f9" data-file-name="components/VideoManager.tsx">
+                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="1452fb10-7c37-4c44-b317-b4bb7ada6640" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="8981eaf4-f04a-44fa-886f-8c2e42b6c30f" data-file-name="components/VideoManager.tsx">Kategori</span></Label>
+                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="ca314edf-4aa6-4fc6-a577-58130e8f3a35" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="c516db6e-bf2b-4974-bb21-9e8f4a3aa37e" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="9daef79d-4dd1-4d34-b6d1-cb14108bce5c" data-file-name="components/VideoManager.tsx">Pilih Kategori</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="1b20e1bb-085c-47f8-90f2-0f322f675742" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
               
-              <div data-unique-id="d0d9d6ad-08ee-44ec-8611-ebaa19fb77a4" data-file-name="components/VideoManager.tsx">
-                <Label htmlFor="videoUrl" className="block text-sm font-medium mb-1" data-unique-id="003f70a7-d987-463b-bbf3-51bc94a7f0a1" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="a37e1609-fa8a-4ddc-aea6-fd2d51b25c9a" data-file-name="components/VideoManager.tsx">URL Video YouTube</span></Label>
-                <Input id="videoUrl" name="videoUrl" value={formData.videoUrl} onChange={handleInputChange} placeholder="https://www.youtube.com/watch?v=XXXXXXXXXXX" className="w-full" data-unique-id="7581bfc0-2ad7-4c64-8dee-4e4ca1a17462" data-file-name="components/VideoManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="613b986c-0cd4-4455-9f9c-33345d0eb636" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="165b718c-67b0-4921-acbb-2795ff96a70e" data-file-name="components/VideoManager.tsx">
+              <div data-unique-id="466daad2-d02a-4638-a294-773fc6ed47cb" data-file-name="components/VideoManager.tsx">
+                <Label htmlFor="videoUrl" className="block text-sm font-medium mb-1" data-unique-id="278df55b-18ef-4b39-8a5c-3eee92687823" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="91d11b03-5ff4-42d4-a30e-f7b543793f72" data-file-name="components/VideoManager.tsx">URL Video YouTube</span></Label>
+                <Input id="videoUrl" name="videoUrl" value={formData.videoUrl} onChange={handleInputChange} placeholder="https://www.youtube.com/watch?v=XXXXXXXXXXX" className="w-full" data-unique-id="6606dd09-5e67-42f6-9b82-10184fc2a755" data-file-name="components/VideoManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="cbda5d52-00fe-4156-8b16-692ae337d0d1" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="226496a6-8613-411a-977c-b2604729e9cd" data-file-name="components/VideoManager.tsx">
                   Masukkan URL video YouTube (contoh: https://www.youtube.com/watch?v=abcdef123456)
                 </span></p>
               </div>
               
-              <div className="flex justify-end space-x-2" data-unique-id="60b0cc7d-e405-4c7d-bc69-430938a49fda" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                {editingVideo !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="f030996d-a263-4810-9fd1-77eea82a9706" data-file-name="components/VideoManager.tsx">
+              <div className="flex justify-end space-x-2" data-unique-id="6d0d3aef-0978-4f77-910f-feaea828d8f9" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                {editingVideo !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="e90a9111-168f-47cc-97cf-e97d4045ad27" data-file-name="components/VideoManager.tsx">
                     <X className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="2d7ec5c1-1b23-4482-b618-33bf1feb2721" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="94668010-9c4e-4220-9ffe-94fd673a086b" data-file-name="components/VideoManager.tsx">Batal</span></span>
+                    <span className="hidden sm:inline" data-unique-id="8591046e-2fe5-41ba-a0c7-fe59a5544096" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="416da606-f297-4283-890e-b7be8c11afff" data-file-name="components/VideoManager.tsx">Batal</span></span>
                   </Button>}
-                <Button onClick={editingVideo !== null ? () => updateVideo(editingVideo) : createVideo} disabled={isLoading || !formData.title || !formData.categoryId || !formData.videoUrl} className="flex items-center gap-1" data-unique-id="5d6f1158-c8cb-4120-b9b6-445a2468295b" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                  {isLoading ? <span className="flex items-center" data-unique-id="a957e482-4725-4371-9dfd-44919f2b6784" data-file-name="components/VideoManager.tsx">
-                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="5b9582bf-55fb-4b68-af7c-5ad242602eb1" data-file-name="components/VideoManager.tsx">
+                <Button onClick={editingVideo !== null ? () => updateVideo(editingVideo) : createVideo} disabled={isLoading || !formData.title || !formData.categoryId || !formData.videoUrl} className="flex items-center gap-1" data-unique-id="ccc96cae-ab13-4bb1-baef-144d51fc1882" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  {isLoading ? <span className="flex items-center" data-unique-id="13409aad-c8d0-42eb-a1b0-9c265fe7b82b" data-file-name="components/VideoManager.tsx">
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="a59cc0df-6ff3-4524-9ff6-0ed46ee3b6cc" data-file-name="components/VideoManager.tsx">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span className="hidden sm:inline" data-unique-id="503231e1-e8f8-4056-a7bf-7536a9ad38c8" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="2bb94e35-e5bb-4579-9c24-3df358f02561" data-file-name="components/VideoManager.tsx">Menyimpan...</span></span>
+                      <span className="hidden sm:inline" data-unique-id="b2ebb3d3-e6b0-4aa3-a036-7c37a997d34a" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="3b3ddd94-e86d-47cc-9ba5-0f2a0f212548" data-file-name="components/VideoManager.tsx">Menyimpan...</span></span>
                     </span> : <>
                       {editingVideo !== null ? <>
                           <Save className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="2d658a99-7888-424b-bb10-0859ffc6db1e" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="fcd726a1-8063-44f1-b03c-16bdd3cea7b1" data-file-name="components/VideoManager.tsx">Perbarui Video</span></span>
+                          <span className="hidden sm:inline" data-unique-id="aa445f58-9e37-433b-9b24-eaa24ef2d61a" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="a4c530ea-94a0-40d0-aba8-0c008a91cd85" data-file-name="components/VideoManager.tsx">Perbarui Video</span></span>
                         </> : <>
                           <Plus className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="36ade914-f696-42ca-9704-648a211295b5" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="612d90a7-6587-4525-9a4a-c7fb76371aaa" data-file-name="components/VideoManager.tsx">Tambah Video</span></span>
+                          <span className="hidden sm:inline" data-unique-id="27f17f3d-0ada-4f4c-8476-3d1c94adc13f" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="fdecf9e6-f28e-427b-9a10-0719df15fe9e" data-file-name="components/VideoManager.tsx">Tambah Video</span></span>
                         </>}
                     </>}
                 </Button>
               </div>
       
               {/* Pagination controls */}
-              {totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="2468b6b6-9342-48ea-8cab-ded0c2379756" data-file-name="components/VideoManager.tsx">
-                  <div className="flex items-center space-x-2" data-unique-id="da6ecc2c-c91f-4679-8164-d35dc30dea09" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                    <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="de2d41f5-1118-4ce9-9468-1b0ceb3a6c30" data-file-name="components/VideoManager.tsx">
+              {totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="83c2a47c-e909-402c-bb04-37147cf565ea" data-file-name="components/VideoManager.tsx">
+                  <div className="flex items-center space-x-2" data-unique-id="e4ad99d3-934c-494e-85e7-fb651a34f4b7" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                    <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="d8daf6f8-b1a3-4a6f-98fa-79da52acdad3" data-file-name="components/VideoManager.tsx">
                       <ChevronLeft className="h-4 w-4" />
-                      <span data-unique-id="7734d737-df7d-414f-b08b-d7d36ea7343f" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="9b2e88c9-0d5c-459c-bbba-7b65041f2b61" data-file-name="components/VideoManager.tsx">Previous</span></span>
+                      <span data-unique-id="fc323111-3d60-4671-86fc-fa4c1a049a91" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="7dd562f0-0b43-4a02-a1fb-2b7eb8d7c24a" data-file-name="components/VideoManager.tsx">Previous</span></span>
                     </Button>
             
-                    {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="b13ca450-a319-41f6-999b-b77b5062075b" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                    {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="ca8ae090-b023-457e-bbd5-b40cc75482e5" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                         {number}
                       </Button>)}
             
-                    <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="01a33461-8a68-48a0-8db4-5f7d7d86c873" data-file-name="components/VideoManager.tsx">
-                      <span data-unique-id="2cd2feb5-9228-4f0f-b6e2-8d3ae459aac0" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="354e1490-76cf-4909-99ba-3c8fc0f536ac" data-file-name="components/VideoManager.tsx">Next</span></span>
+                    <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="a2a0de53-5b11-4cae-88ad-5a342c20a5ec" data-file-name="components/VideoManager.tsx">
+                      <span data-unique-id="63c86277-4d52-4484-ba4e-a25afc3233a1" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="a3fb7c02-1465-4c17-8df7-8b01ae76e358" data-file-name="components/VideoManager.tsx">Next</span></span>
                       <ChevronRight className="h-4 w-4" />
                     </Button>
                   </div>
@@ -382,19 +382,19 @@ export default function VideoManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="33e7dd22-745e-4bf0-8970-7eebd90e1079" data-file-name="components/VideoManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="be738b89-fc84-43a1-b35a-1332bf2345b9" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="5375c91d-97a4-493b-b49c-ea5f677ed2b6" data-file-name="components/VideoManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="863f1560-7937-4fbf-99e3-137ada9fc856" data-file-name="components/VideoManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="5242f278-ee57-4b8d-9f93-ddf0042437e0" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="79d03ab4-8c58-48a9-bebb-bc022ea5a9bb" data-file-name="components/VideoManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="1bc5b519-8b80-4757-9f7e-4d335bd48e5a" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="a4210221-0cb4-41c0-8f24-e1c0665d37d0" data-file-name="components/VideoManager.tsx">Previous</span></span>
+                    <span data-unique-id="c72f9bdf-aa9d-4e0e-8f31-e9d123c37f56" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="f9f2a74d-e702-400f-88e0-ee783cc948a9" data-file-name="components/VideoManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="2434a57e-b1d2-4b96-97ed-ee07624667f0" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="0ed81f48-90b6-438e-8a97-281e278172bb" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="d6e4afde-6c8b-4821-b183-4e4052b4894f" data-file-name="components/VideoManager.tsx">
-                    <span data-unique-id="434b4efe-cb84-4b3e-9530-b597aa4c7279" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="bd526bf1-30c5-4a7b-b7db-0b30cba52f40" data-file-name="components/VideoManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="a756a1c8-6f7a-4003-afa5-d8c3d400380c" data-file-name="components/VideoManager.tsx">
+                    <span data-unique-id="314f244b-5292-4c2d-9c0a-51b5eefdb1a8" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="89ba8bea-fc70-4980-a39d-1865d87fe69d" data-file-name="components/VideoManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>
@@ -402,53 +402,53 @@ export default function VideoManager() {
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="a8620971-9766-43aa-9c9d-81e85edc1e49" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="8ce055aa-2d88-46e4-b908-afca741949a2" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="c3e056d4-581a-4c73-9ebf-94324530b91d" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="8fba77b5-1d0e-41ba-8747-0a6d408e6e31" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
           {/* Search filters */}
-          <div className="bg-muted p-4 rounded-md" data-unique-id="78ecdf93-38ff-4743-93d4-464eefefd6ac" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="7a009eaf-68d0-4c35-be0e-588e3d362f47" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="9346e91b-cf72-436e-b34d-aa96efca03c1" data-file-name="components/VideoManager.tsx">Filter Pencarian</span></h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="5562c214-1a10-410d-9c01-35e9f1e6227b" data-file-name="components/VideoManager.tsx">
-              <div data-unique-id="eafcb31e-1304-4682-b386-233ede869ea5" data-file-name="components/VideoManager.tsx">
-                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="de21b799-f0ba-4862-abd7-215956228ba5" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="ddc24bd2-9f61-4304-a871-80ba245a2881" data-file-name="components/VideoManager.tsx">Judul Video</span></Label>
-                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Cari berdasarkan judul" data-unique-id="8a740936-2d70-42d9-94e5-29359b434651" data-file-name="components/VideoManager.tsx" />
+          <div className="bg-muted p-4 rounded-md" data-unique-id="08963879-4e92-4440-978c-3b1c192b6480" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="c9d6a17d-0189-4780-843c-e102856116c3" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="cf278383-17ab-4b67-92dc-21fc00065515" data-file-name="components/VideoManager.tsx">Filter Pencarian</span></h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="b1d5e2a3-056a-40d6-af47-bf7a3d93d3d0" data-file-name="components/VideoManager.tsx">
+              <div data-unique-id="11ca1b0d-9937-46e3-b89b-c4abfb77df9f" data-file-name="components/VideoManager.tsx">
+                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="559631e8-d32e-478d-964a-72823219f09f" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="a69268ed-0734-4922-87f9-6d048f728b1c" data-file-name="components/VideoManager.tsx">Judul Video</span></Label>
+                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Cari berdasarkan judul" data-unique-id="86a4e563-356b-4e64-ac62-2b366a7cc7dd" data-file-name="components/VideoManager.tsx" />
               </div>
-              <div data-unique-id="431c346f-dca2-48f3-bbc7-e2a593d69ac1" data-file-name="components/VideoManager.tsx">
-                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="889d5f8a-7e43-4f70-80e8-390297faab39" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="d85bb077-619c-4394-a385-6078ee2d43ed" data-file-name="components/VideoManager.tsx">Kategori</span></Label>
-                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="a3596d09-1432-4ee3-9640-4b8a82b4324d" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="3f0ecab2-d901-4271-b72d-9650090a5971" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="140ae334-165b-45fd-bf60-8056ae12b856" data-file-name="components/VideoManager.tsx">Semua Kategori</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="82fc2faf-e85e-4df0-b423-bc99530bb77d" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="841ba8e9-2f4d-4cb0-abec-12575a0ebbee" data-file-name="components/VideoManager.tsx">
+                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="a567b12b-64eb-4f44-8993-1201cf200a57" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="85b746ef-fc2b-49d8-8e27-e35455c9259a" data-file-name="components/VideoManager.tsx">Kategori</span></Label>
+                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="ad0216d6-564c-4936-a966-f281aa2dd2c5" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="240170ce-f676-44b9-b489-2b1d2b42a078" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="d096acba-1f6f-4056-8804-1052d53d134d" data-file-name="components/VideoManager.tsx">Semua Kategori</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="4122d8b9-e491-4671-8beb-c195752d63b1" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
-              <div className="flex items-end space-x-2" data-unique-id="5333b370-3fa6-4ab4-9714-a0f5f04466b1" data-file-name="components/VideoManager.tsx">
-                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="941ae0cf-5332-4f9f-b737-da7dfae7929a" data-file-name="components/VideoManager.tsx">
-                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="1ac51ddf-7a5f-4be8-b1c5-b9b286eaa261" data-file-name="components/VideoManager.tsx">
+              <div className="flex items-end space-x-2" data-unique-id="37329157-af90-403e-b109-0acde57852b8" data-file-name="components/VideoManager.tsx">
+                <Button onClick={handleSearch} className="flex-1 flex items-center gap-2" data-unique-id="ab13c07d-f742-4662-9c7d-7b3fa9f8fa01" data-file-name="components/VideoManager.tsx">
+                  <Search className="h-4 w-4" /><span className="editable-text" data-unique-id="6838323f-6cb6-48ee-9ea2-c96761ecba9c" data-file-name="components/VideoManager.tsx">
                   Cari
                 </span></Button>
-                <Button variant="outline" onClick={resetSearch} data-unique-id="06ba4424-6ae2-4038-a77e-fb390212b803" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="fee3400f-0714-41bd-8195-e58c1fa8573f" data-file-name="components/VideoManager.tsx">
+                <Button variant="outline" onClick={resetSearch} data-unique-id="c9dab636-9f06-42df-9731-9bc89d241fba" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="2a3eac49-9aed-47ec-a42c-f4f30cf645a2" data-file-name="components/VideoManager.tsx">
                   Reset
                 </span></Button>
               </div>
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="34559ef4-287c-4d92-82be-b62ccd1719f1" data-file-name="components/VideoManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="85181251-3903-4696-8393-6a1f80ce6e33" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="230f2452-c0f7-464f-b20a-8763e310aeb0" data-file-name="components/VideoManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="b2138786-5da8-481f-ab2b-4b071b0e2857" data-file-name="components/VideoManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="5cf86a0e-85e4-44d1-804e-174849f16295" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="a140442d-9bb7-4e68-af21-69c0fc923709" data-file-name="components/VideoManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="65700f60-62d6-440a-93d5-56d5ae880ad0" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="943dde1b-f04a-4470-81e6-ea0d3183c85a" data-file-name="components/VideoManager.tsx">Previous</span></span>
+                    <span data-unique-id="f4145909-2b60-4607-86b1-ed774c8261c4" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="f825a130-0611-4889-b5af-34deb3f04c0b" data-file-name="components/VideoManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="3d4ca298-bfca-45cd-b225-9e940b6d77e3" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="83bc4bf9-c2e1-445d-a891-8c6587ecabc8" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="e52229a0-58a7-4b32-a44b-9a19306c93f8" data-file-name="components/VideoManager.tsx">
-                    <span data-unique-id="c442cdfb-c473-4937-89ef-95f74d2f2853" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="f87297f9-737c-4fb0-8921-e90179695ce0" data-file-name="components/VideoManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="e51ecd2f-0839-4a8e-8dd1-e30f25c71978" data-file-name="components/VideoManager.tsx">
+                    <span data-unique-id="191a39b1-49f3-4265-beac-cf60989c4738" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="a1a53166-a7bd-4509-ba30-6f7dc90cf84c" data-file-name="components/VideoManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>
@@ -456,40 +456,40 @@ export default function VideoManager() {
           </div>
 
           {/* Videos list */}
-          <div data-unique-id="8b8106ea-c194-48d9-b669-e421cc4194f8" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-            <div className="flex items-center justify-between mb-4" data-unique-id="d3acfc0a-4e7b-445e-adb0-e9c901d6233c" data-file-name="components/VideoManager.tsx">
-              <h3 className="text-lg font-medium" data-unique-id="78d87c58-4d7d-4178-9177-636149c1155a" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="2dfa9740-77ad-4918-9979-1a2059f46400" data-file-name="components/VideoManager.tsx">
+          <div data-unique-id="abf2a12e-c09b-4f7f-9e6c-60962d0f8d62" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+            <div className="flex items-center justify-between mb-4" data-unique-id="c8fec705-d3a4-4c72-8349-780073e6bfd2" data-file-name="components/VideoManager.tsx">
+              <h3 className="text-lg font-medium" data-unique-id="a70a3787-b677-45cc-8de7-c57cccbd01b0" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="909e09f8-214f-4e74-97b2-7ccc650db7df" data-file-name="components/VideoManager.tsx">
                 Daftar Video
-                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="61e6f40f-5d6c-4462-a901-f1aa2e72be79" data-file-name="components/VideoManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="dac1787d-7912-488d-9af0-1685bac0f5e2" data-file-name="components/VideoManager.tsx">
-                  (</span>{totalItems}<span className="editable-text" data-unique-id="2175e761-0481-4ab8-be1a-5ee7c903325d" data-file-name="components/VideoManager.tsx"> file)
+                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="d9d24a85-72e2-484d-b36d-0c8479b2e9b4" data-file-name="components/VideoManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="680e16ed-33a7-4531-bacf-9e264643ab26" data-file-name="components/VideoManager.tsx">
+                  (</span>{totalItems}<span className="editable-text" data-unique-id="f2ae0d18-3bca-4269-b587-35439c7de1a9" data-file-name="components/VideoManager.tsx"> file)
                 </span></span>
               </h3>
-              <div className="flex items-center gap-2" data-unique-id="a5e481d1-dd2d-4f6a-aa86-2677a1339de7" data-file-name="components/VideoManager.tsx">
-                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="25948a39-3fec-4c13-a4c7-40b7c4812a8b" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="3ffde2d5-118b-4a1b-bd63-b904014d041a" data-file-name="components/VideoManager.tsx">Tampilkan:</span></Label>
-                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="5d78ce50-de8e-41f0-925b-f896717b1d09" data-file-name="components/VideoManager.tsx">
-                  <option value={10} data-unique-id="f7ad7a47-d459-483e-ada8-dfe00b14af04" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="5cda4626-e783-463c-b6f4-1eba4cdd1d13" data-file-name="components/VideoManager.tsx">10</span></option>
-                  <option value={50} data-unique-id="2a4bdd57-6ba5-4946-a4dc-0507088d2ee6" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="77834abc-dd67-4a77-823e-5ef669afc616" data-file-name="components/VideoManager.tsx">50</span></option>
-                  <option value={100} data-unique-id="4a824a23-76c5-4aa4-9625-c17afe86f9a4" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="5bff8c44-6e3e-4a93-b588-2d7b23f436fb" data-file-name="components/VideoManager.tsx">100</span></option>
+              <div className="flex items-center gap-2" data-unique-id="1e5ba9cd-9a5c-446c-936b-277741ec98bd" data-file-name="components/VideoManager.tsx">
+                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="a282262a-34d8-48e3-bbe6-d0ba3f491c74" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="cc347da7-1c68-4fda-919b-a529c16b0794" data-file-name="components/VideoManager.tsx">Tampilkan:</span></Label>
+                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="fb03ffdc-d3e2-4649-a01d-6ad1900ccaef" data-file-name="components/VideoManager.tsx">
+                  <option value={10} data-unique-id="8a41f385-05ce-48ba-9540-91295c611b70" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="3f6bff8f-35b0-4369-b026-48771a308e0b" data-file-name="components/VideoManager.tsx">10</span></option>
+                  <option value={50} data-unique-id="6ab34572-6cf1-4dfc-8cce-86093e3f627c" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="add8c1f1-7c83-4c0e-a98c-0d573e5c91ae" data-file-name="components/VideoManager.tsx">50</span></option>
+                  <option value={100} data-unique-id="130b6fa9-5672-4b2b-961c-714575015a67" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="201048df-6419-4f30-a761-616aabbb1efe" data-file-name="components/VideoManager.tsx">100</span></option>
                 </select>
               </div>
             </div>
             
-            <div className="overflow-x-auto" data-unique-id="f58975c6-e4de-4eac-8bfc-42599308dba5" data-file-name="components/VideoManager.tsx">
-              <Table data-unique-id="26f98b28-8465-41fc-aa44-d1182fc34324" data-file-name="components/VideoManager.tsx">
+            <div className="overflow-x-auto" data-unique-id="4cf5693f-7a6f-4caa-b25a-174ebc72f77f" data-file-name="components/VideoManager.tsx">
+              <Table data-unique-id="493f994b-d3cd-4e97-9081-10c4d6c05f79" data-file-name="components/VideoManager.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="4e5852ed-8f2c-4983-a751-16bf9e18f784" data-file-name="components/VideoManager.tsx">No.</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="5c3846a2-06a8-4912-87cd-b8e17a40c7c6" data-file-name="components/VideoManager.tsx">Judul Video</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="b1786268-6a21-4bc0-ba01-a7176ffc6276" data-file-name="components/VideoManager.tsx">URL Video</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="6c402a10-fe84-4880-bde2-e5092d36a3b4" data-file-name="components/VideoManager.tsx">Kategori</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="aa27ed37-a7ff-4ffc-b3eb-97323a029551" data-file-name="components/VideoManager.tsx">Aksi</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="ad8b5253-c3af-4a1a-abdf-e6f39e4386ae" data-file-name="components/VideoManager.tsx">No.</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="9090dad5-22ce-4770-882e-13d788f292af" data-file-name="components/VideoManager.tsx">Judul Video</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="036de6cd-d074-41b7-8054-c30c41896a89" data-file-name="components/VideoManager.tsx">URL Video</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="1f6a5790-4ddb-4510-a6ac-590240029649" data-file-name="components/VideoManager.tsx">Kategori</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="e94d137e-af40-4647-81a9-3b3a11edb2ea" data-file-name="components/VideoManager.tsx">Aksi</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={5} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="b1f5cbfd-a895-4f50-8c9f-1b7da1e24486" data-file-name="components/VideoManager.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="5e5ddbc6-543f-43d9-8b82-ea9fea3593f3" data-file-name="components/VideoManager.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="18885c42-8d1c-4a54-a8a2-de103d190fc0" data-file-name="components/VideoManager.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="124f925c-43d9-4b2f-a295-4fc5e0cd4a53" data-file-name="components/VideoManager.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -497,32 +497,32 @@ export default function VideoManager() {
                         {error}
                       </TableCell>
                     </TableRow> : videos.length === 0 ? <TableRow>
-                      <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="ac1a3749-b61d-487e-8588-705eace3b7d2" data-file-name="components/VideoManager.tsx">
+                      <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="bf4c26eb-9e8c-4d9b-84b6-379f2352eb15" data-file-name="components/VideoManager.tsx">
                         Belum ada video. Silakan tambahkan video baru.
                       </span></TableCell>
-                    </TableRow> : Array.isArray(videos) && videos.map((video, index) => <TableRow key={video.id} data-unique-id="156f1ce4-f7bb-419f-bf6f-d0ff71e07e3f" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="a8401a59-8ae0-4bf2-ba47-7dfc4480a4aa" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{(currentPage - 1) * itemsPerPage + index + 1}</TableCell>
-                        <TableCell className="font-medium" data-unique-id="976260e4-b93a-4279-97ba-0f6ed197b723" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{video.title}</TableCell>
-                        <TableCell data-unique-id="4da1a291-c0d2-41db-9b5d-883dcaf790b9" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                          <div className="flex items-center gap-2" data-is-mapped="true" data-unique-id="f9000033-6da9-4a00-a86a-5689ec18e40c" data-file-name="components/VideoManager.tsx">
-                            <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="2cca698e-ebfb-4f1a-b413-e33592981329" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                    </TableRow> : Array.isArray(videos) && videos.map((video, index) => <TableRow key={video.id} data-unique-id="1bfbfe7e-bc23-40f9-9ba4-b18ad57012c5" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="426aab22-bf3a-411d-89b8-5713a33c8349" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{(currentPage - 1) * itemsPerPage + index + 1}</TableCell>
+                        <TableCell className="font-medium" data-unique-id="9e2b6d01-1f9b-4411-b419-c40aa966f578" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{video.title}</TableCell>
+                        <TableCell data-unique-id="1bc441d1-c884-4526-891b-8ca26ac6540c" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                          <div className="flex items-center gap-2" data-is-mapped="true" data-unique-id="909786ee-a951-4768-b7aa-12c30407128a" data-file-name="components/VideoManager.tsx">
+                            <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="a4d69915-8e01-43e6-9456-f7a82900edaf" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                               {video.videoUrl}
                             </div>
-                            <Button variant="outline" size="icon" className="h-6 w-6" onClick={() => window.open(video.videoUrl, '_blank')} data-is-mapped="true" data-unique-id="e4b42c4c-222a-4ebd-84a6-0cd6d06605ee" data-file-name="components/VideoManager.tsx">
-                              <ExternalLink className="h-3 w-3" data-unique-id="48402a0f-c52e-4a44-b6f4-ee01b024fd96" data-file-name="components/VideoManager.tsx" data-dynamic-text="true" />
+                            <Button variant="outline" size="icon" className="h-6 w-6" onClick={() => window.open(video.videoUrl, '_blank')} data-is-mapped="true" data-unique-id="bc430604-1195-46b4-b734-d8514f5bf042" data-file-name="components/VideoManager.tsx">
+                              <ExternalLink className="h-3 w-3" data-unique-id="56794fe4-cce3-4c5c-9485-1dec6cebe37b" data-file-name="components/VideoManager.tsx" data-dynamic-text="true" />
                             </Button>
                           </div>
                         </TableCell>
-                        <TableCell data-unique-id="29b08188-6d33-4e73-b4e4-b38090721719" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{video.categoryName}</TableCell>
-                        <TableCell className="text-right" data-unique-id="968aa334-e2a3-4b0e-8027-ac950fb23171" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="2036398c-116c-4ffc-88af-ff37354425b6" data-file-name="components/VideoManager.tsx">
-                            <Button variant="outline" size="sm" onClick={() => startEditing(video)} disabled={editingVideo !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="216e9571-2637-4934-b3dd-6bb51df81986" data-file-name="components/VideoManager.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="5986844e-416b-4c82-bdee-5f407f20b13e" data-file-name="components/VideoManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="2887643a-6054-4bba-a513-b6be06255385" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="4527ac8b-fed6-4dba-8843-b10b42da96da" data-file-name="components/VideoManager.tsx">Edit</span></span>
+                        <TableCell data-unique-id="f85ca5db-f68f-4d31-ba08-a55e36f47daa" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">{video.categoryName}</TableCell>
+                        <TableCell className="text-right" data-unique-id="ef6f802e-6a95-41f5-8463-1c8b0e603998" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="f14c3ad4-5f42-4439-98e0-01b67cca4621" data-file-name="components/VideoManager.tsx">
+                            <Button variant="outline" size="sm" onClick={() => startEditing(video)} disabled={editingVideo !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="e959d70d-37a6-463c-b4ad-19b109448e44" data-file-name="components/VideoManager.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="780f3cce-7a08-4fdc-9d06-bb8ecf5f6794" data-file-name="components/VideoManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="8dc42aed-e09e-405b-906f-11d03ef1f1b0" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="498d2138-39bc-45f3-9f47-970e725b7681" data-file-name="components/VideoManager.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deleteVideo(video.id)} disabled={editingVideo !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="0c2957ed-c342-43c0-ac45-e2c6f016cf3f" data-file-name="components/VideoManager.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="b7b07d40-2ce0-4b96-8648-474941292cb4" data-file-name="components/VideoManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="c0ebbe2c-c5bc-4282-aa78-0c4c4bf6ebc1" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="0c2b1e6b-36cc-45b4-943f-ff2098884d89" data-file-name="components/VideoManager.tsx">Hapus</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deleteVideo(video.id)} disabled={editingVideo !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="cfdef0bb-0573-430b-b127-eb25e60f0dfb" data-file-name="components/VideoManager.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="44cc30e3-b0f1-420d-8216-15973a3d4ca6" data-file-name="components/VideoManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="af056be6-4f28-4374-8b87-3cd8d37a0d43" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="0fd9caf9-8194-41f0-b312-a2ae85e58f19" data-file-name="components/VideoManager.tsx">Hapus</span></span>
                             </Button>
                           </div>
                         </TableCell>
@@ -532,19 +532,19 @@ export default function VideoManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="43392728-8aed-48e5-9078-708298ac140c" data-file-name="components/VideoManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="6057ab67-0434-4939-a269-a59924a4b698" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="56abd93c-a9c9-4987-9ecf-a0f4c6115c5d" data-file-name="components/VideoManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="2b7760b0-de8e-4630-9593-ab71284f559f" data-file-name="components/VideoManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="c9353773-02f3-46cb-bcc0-d3934fdc9c20" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="2e7f8eab-3d38-4231-8b2f-48cf36a9b051" data-file-name="components/VideoManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="c192e7af-db07-42ae-a362-a06bb5b6a061" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="95031b23-de32-437f-b729-a67f77a82472" data-file-name="components/VideoManager.tsx">Previous</span></span>
+                    <span data-unique-id="fbb1d6b0-2a17-4611-9c04-85d4887ebb7e" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="87371beb-c4b2-4b7c-8582-e01d0ed96cae" data-file-name="components/VideoManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="02fdaecf-6ac0-4c42-abc8-db5029de9ab7" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="62d38949-9d05-4461-a79d-9828249205e6" data-file-name="components/VideoManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="ff0c5ebc-4f29-43c7-94e2-3cf98a756aa5" data-file-name="components/VideoManager.tsx">
-                    <span data-unique-id="a6588c95-2ba3-4918-b8d6-a76f088adc74" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="ad14c99a-6312-4f2c-8916-ef7c2086172c" data-file-name="components/VideoManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="0b328edd-df2d-4a03-981d-9f5c006dbfb7" data-file-name="components/VideoManager.tsx">
+                    <span data-unique-id="9d6fb045-5475-44e7-84f7-e5e8490ce716" data-file-name="components/VideoManager.tsx"><span className="editable-text" data-unique-id="b4f13b63-c315-4119-b0dd-b723f69d8cc4" data-file-name="components/VideoManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>

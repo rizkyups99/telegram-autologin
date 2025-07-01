@@ -3,11 +3,11 @@
 import { Button } from '../ui/button';
 import { Play } from 'lucide-react';
 export function NoVideoSelected() {
-  return <div className="text-center py-16" data-unique-id="0ab06914-b5e5-4a4b-b9c8-008ed8944c3a" data-file-name="components/video/NoVideoSelected.tsx">
-      <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-muted flex items-center justify-center" data-unique-id="92aa98eb-30da-4302-a296-a5ad5035a374" data-file-name="components/video/NoVideoSelected.tsx">
+  return <div className="text-center py-16" data-unique-id="1d235f8b-ab7f-4749-a656-82a4c0cd1028" data-file-name="components/video/NoVideoSelected.tsx">
+      <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-muted flex items-center justify-center" data-unique-id="22901ece-ffe2-470c-8ffa-4831619720ed" data-file-name="components/video/NoVideoSelected.tsx">
         <Play className="h-8 w-8 text-muted-foreground" />
       </div>
-      <p className="text-muted-foreground text-lg" data-unique-id="a1bfef68-f2ab-4c65-b6d5-395dc7bdc1ee" data-file-name="components/video/NoVideoSelected.tsx"><span className="editable-text" data-unique-id="2c3adbae-2b57-4eec-a17f-aa71b05cc400" data-file-name="components/video/NoVideoSelected.tsx">
+      <p className="text-muted-foreground text-lg" data-unique-id="96d5e06b-d1e3-4473-8c22-75e346864a47" data-file-name="components/video/NoVideoSelected.tsx"><span className="editable-text" data-unique-id="fb2b20a7-576e-47db-a53d-42924d28e7be" data-file-name="components/video/NoVideoSelected.tsx">
         Silakan pilih video dari daftar untuk memutarnya di sini.
       </span></p>
       <Button onClick={() => {
@@ -16,7 +16,7 @@ export function NoVideoSelected() {
       if (listTab instanceof HTMLElement) {
         listTab.click();
       }
-    }} className="mt-4" data-unique-id="8770549c-7df7-4a09-8295-84176a250fa2" data-file-name="components/video/NoVideoSelected.tsx"><span className="editable-text" data-unique-id="06a817a9-e3a1-441d-b3c2-c8664199d8db" data-file-name="components/video/NoVideoSelected.tsx">
+    }} className="mt-4" data-unique-id="323cf64b-d6e4-4f68-a3f2-ff8462f8bcd0" data-file-name="components/video/NoVideoSelected.tsx"><span className="editable-text" data-unique-id="04db6202-c662-4027-ae17-cd17ac8927ba" data-file-name="components/video/NoVideoSelected.tsx">
         Lihat Daftar Video
       </span></Button>
     </div>;

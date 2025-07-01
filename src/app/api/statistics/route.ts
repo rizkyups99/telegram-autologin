@@ -1,6 +1,19 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { users, admins, categories, userAudioAccess, userPdfAccess, userVideoAccess } from "@/db/schema";
+import { 
+  users, 
+  admins, 
+  categories, 
+  userAudioAccess, 
+  userPdfAccess, 
+  userVideoAccess,
+  userAudioCloudAccess,
+  userPdfCloudAccess,
+  userFileCloudAccess,
+  audioCloudFiles,
+  pdfCloudFiles,
+  fileCloudFiles
+} from "@/db/schema";
 import { sql } from "drizzle-orm";
 
 export async function GET(request: Request) {
@@ -14,12 +27,14 @@ export async function GET(request: Request) {
     // Query actual user data from the database
     const monthlyData = await getMonthlyUserCounts(year);
     const categorySummary = await getCategoryStatistics(year, month);
+    const cloudCategorySummary = await getCloudCategoryStatistics();
     const availableMonths = await getAvailableMonths();
     const categoryDistribution = await getUserCategoryDistribution(year, month);
 
     return NextResponse.json({
       monthlyData,
       categorySummary,
+      cloudCategorySummary: cloudCategorySummary,
       availableMonths,
       categoryDistribution,
     });
@@ -200,6 +215,76 @@ async function getUserCategoryDistribution(year: number, month: number) {
   } catch (error) {
     console.error("Error getting user category distribution:", error);
     return [{ categories: 0, users: 0 }];
+  }
+}
+
+/**
+ * Get cloud category statistics
+ */
+async function getCloudCategoryStatistics() {
+  try {
+    console.log('Getting cloud category statistics...');
+    
+    // Get audio cloud statistics
+    const audioCloudStats = await db.execute(sql`
+      SELECT 
+        'audio_cloud' as type,
+        'Audio Cloud' as name,
+        COUNT(DISTINCT acf.id) as file_count,
+        COUNT(DISTINCT uaca.user_id) as user_count,
+        COUNT(DISTINCT uaca.category_id) as category_count
+      FROM audio_cloud_files acf
+      LEFT JOIN user_audio_cloud_access uaca ON acf.category_id = uaca.category_id
+    `);
+
+    // Get PDF cloud statistics  
+    const pdfCloudStats = await db.execute(sql`
+      SELECT 
+        'pdf_cloud' as type,
+        'PDF Cloud' as name,
+        COUNT(DISTINCT pcf.id) as file_count,
+        COUNT(DISTINCT upca.user_id) as user_count,
+        COUNT(DISTINCT upca.category_id) as category_count
+      FROM pdf_cloud_files pcf
+      LEFT JOIN user_pdf_cloud_access upca ON pcf.category_id = upca.category_id
+    `);
+
+    // Get file cloud statistics
+    const fileCloudStats = await db.execute(sql`
+      SELECT 
+        'file_cloud' as type,
+        'File Cloud' as name,
+        COUNT(DISTINCT fcf.id) as file_count,
+        COUNT(DISTINCT ufca.user_id) as user_count,
+        COUNT(DISTINCT ufca.category_id) as category_count
+      FROM file_cloud_files fcf
+      LEFT JOIN user_file_cloud_access ufca ON fcf.category_id = ufca.category_id
+    `);
+
+    // Combine results
+    const allStats = [
+      ...audioCloudStats,
+      ...pdfCloudStats, 
+      ...fileCloudStats
+    ];
+
+    console.log('Cloud statistics raw data:', allStats);
+
+    return allStats.map((row: any) => ({
+      type: row.type,
+      name: row.name,
+      fileCount: parseInt(String(row.file_count || 0)),
+      userCount: parseInt(String(row.user_count || 0)),
+      categoryCount: parseInt(String(row.category_count || 0))
+    }));
+  } catch (error) {
+    console.error("Error getting cloud category statistics:", error);
+    // Return empty data in case of error
+    return [
+      { type: 'audio_cloud', name: 'Audio Cloud', fileCount: 0, userCount: 0, categoryCount: 0 },
+      { type: 'pdf_cloud', name: 'PDF Cloud', fileCount: 0, userCount: 0, categoryCount: 0 },
+      { type: 'file_cloud', name: 'File Cloud', fileCount: 0, userCount: 0, categoryCount: 0 }
+    ];
   }
 }
 

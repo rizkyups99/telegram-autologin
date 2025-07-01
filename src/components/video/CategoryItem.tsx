@@ -20,18 +20,18 @@ export function CategoryItem({
   onInlineVideoPlay,
   inlineVideoPlaying
 }: CategoryItemProps) {
-  return <div className="border rounded-lg overflow-hidden" data-unique-id="4cb9a6b3-f803-49c0-ab93-6f609f05d6df" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
-      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={onToggleExpand} data-unique-id="f0025bfc-a483-4908-9450-53a33f63feaf" data-file-name="components/video/CategoryItem.tsx">
-        <div data-unique-id="9e6255df-086e-4509-8ab4-48f37cc30b77" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
-          <h3 className="font-semibold text-lg" data-unique-id="8d7d9172-6384-4cc3-bbad-28d26b91c782" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
-          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="e6256060-ae36-4e2e-874f-3c689214a4e0" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
+  return <div className="border rounded-lg overflow-hidden" data-unique-id="eb1a1010-1fb0-4405-b342-60180d955a47" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
+      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={onToggleExpand} data-unique-id="2cebb2fd-3ca9-4e0f-8c75-e6e3666d4736" data-file-name="components/video/CategoryItem.tsx">
+        <div data-unique-id="854ff022-dff1-4604-bffc-b01c3bdf9c00" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
+          <h3 className="font-semibold text-lg" data-unique-id="cb2b05b2-43f2-458f-8340-63def090d17a" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
+          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="56e49bea-14e7-4aa6-b621-1902ee5186d0" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
         </div>
-        <Button variant="ghost" size="sm" data-unique-id="07ca1113-9ac2-40e8-9b39-9b3d7eb62efb" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
+        <Button variant="ghost" size="sm" data-unique-id="b0bf75bd-535c-4192-a19f-c8a20d651310" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
           {isExpanded ? <ChevronDown className="h-5 w-5" /> : <ChevronRight className="h-5 w-5" />}
         </Button>
       </div>
       
-      {isExpanded && <div className="p-4 space-y-4" data-unique-id="ddaa2ea5-8f47-43f8-b993-cf2b50c5ce6b" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
+      {isExpanded && <div className="p-4 space-y-4" data-unique-id="684e288a-077f-4a2c-af81-f65186386c80" data-file-name="components/video/CategoryItem.tsx" data-dynamic-text="true">
           {category.videos.map(video => <VideoItem key={video.id} video={video} onSelect={onSelectVideo} onInlinePlay={onInlineVideoPlay} isPlaying={inlineVideoPlaying?.id === video.id} />)}
         </div>}
     </div>;

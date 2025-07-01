@@ -41,11 +41,12 @@ export async function POST(request: Request) {
       );
     }
     
-    // Return user data (excluding sensitive information)
+    // Return user data (including createdAt for expiry calculation)
     const userData = {
       id: user[0].id,
       username: user[0].username,
       name: user[0].name,
+      createdAt: user[0].createdAt,
     };
     
     return NextResponse.json({

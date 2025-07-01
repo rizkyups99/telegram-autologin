@@ -28,19 +28,19 @@ export function FileCloudCategoryItem({
   isExpanded,
   toggleCategory
 }: FileCloudCategoryItemProps) {
-  return <div className="border rounded-lg overflow-hidden" data-unique-id="af275cdf-8491-4c8c-8d3c-504926c2d563" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
-      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="3982f0ce-20fc-4566-b15e-061cfce9ee3f" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx">
-        <div data-unique-id="177b1a19-d005-438e-9252-b7f8151aaeb1" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
-          <h3 className="font-semibold text-lg" data-unique-id="82bc05ed-4b2a-4112-9b74-9e1251fc42e5" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
-          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="b5820f84-ca22-4d4d-a631-e44cab8ba45d" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
-          <p className="text-sm text-blue-600" data-unique-id="96c1a745-d4fa-4cb5-b19a-b7316b28e1cd" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">{category.files.length}<span className="editable-text" data-unique-id="1595b53a-221d-41bb-af29-37332c720cec" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx"> files</span></p>
+  return <div className="border rounded-lg overflow-hidden" data-unique-id="a3450b71-d950-4c1f-81be-671cea66b07a" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
+      <div className="bg-muted p-4 flex items-center justify-between cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="7e9ab989-e59a-4596-873d-d2bf4bf0b09d" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx">
+        <div data-unique-id="4bf65f3c-e440-4cba-8c09-9954178de5b8" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
+          <h3 className="font-semibold text-lg" data-unique-id="aea7c82a-4436-46c9-a1b2-d10662b4c1f3" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
+          {category.description && <p className="text-sm text-muted-foreground" data-unique-id="33ec1494-27a8-4d7b-bbaa-0ca3b1334249" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
+          <p className="text-sm text-blue-600" data-unique-id="1abe6b18-4bfc-4ff7-bae5-fdb31c63bfe1" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">{category.files.length}<span className="editable-text" data-unique-id="36ab8643-ebcb-4013-bf59-a2e9a3ae6a52" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx"> files</span></p>
         </div>
-        <Button variant="ghost" size="sm" data-unique-id="0145118c-3638-4c40-8281-a6a183b9d6c1" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
+        <Button variant="ghost" size="sm" data-unique-id="80131d62-e6da-420a-888a-bf23d600864e" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
           {isExpanded ? <ChevronDown className="h-5 w-5" /> : <ChevronRight className="h-5 w-5" />}
         </Button>
       </div>
       
-      {isExpanded && <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-unique-id="9311aee3-0fa1-4414-8787-345a93fde5e1" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
+      {isExpanded && <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-unique-id="8ec3b2be-e601-4f5b-b4dc-729b3a727c42" data-file-name="components/preview/cloud/FileCloudCategoryItem.tsx" data-dynamic-text="true">
           {category.files.map(file => <FileCloudItem key={file.id} file={file} />)}
         </div>}
     </div>;

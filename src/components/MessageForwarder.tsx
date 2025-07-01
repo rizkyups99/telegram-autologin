@@ -265,103 +265,103 @@ Kode Akses: {phone}`);
       setStatusMessage('Error: Gagal meneruskan pesan');
     }
   };
-  return <div className="space-y-6" data-unique-id="a30ddff2-749c-4a44-ab40-7311e68a6ddd" data-file-name="components/MessageForwarder.tsx">
-      <div className="flex items-center gap-2 mb-6" data-unique-id="0262631c-b3a5-4e24-8cb5-fcd58a5bee77" data-file-name="components/MessageForwarder.tsx">
-        <div className={`h-3 w-3 rounded-full ${isActive ? 'bg-green-500' : 'bg-gray-400'}`} data-unique-id="227434c0-bf7b-44de-826d-e4cdff5ad739" data-file-name="components/MessageForwarder.tsx"></div>
-        <span className="text-sm font-medium" data-unique-id="ebdac4dc-c41f-4860-a118-a714df88d55d" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+  return <div className="space-y-6" data-unique-id="d21f77c2-18b7-4b91-a1bb-8384578c04f7" data-file-name="components/MessageForwarder.tsx">
+      <div className="flex items-center gap-2 mb-6" data-unique-id="29b659a9-956f-4977-95ae-a9acae43889b" data-file-name="components/MessageForwarder.tsx">
+        <div className={`h-3 w-3 rounded-full ${isActive ? 'bg-green-500' : 'bg-gray-400'}`} data-unique-id="b868381a-f2a4-4529-ac6e-565a86623587" data-file-name="components/MessageForwarder.tsx"></div>
+        <span className="text-sm font-medium" data-unique-id="46a0481a-162a-4581-befb-07d6aef75315" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
           {isActive ? 'Auto-forward Aktif' : 'Auto-forward Tidak Aktif'}
         </span>
-        <Button variant="outline" size="sm" onClick={toggleActive} className={isActive ? 'border-green-500 text-green-500' : ''} data-unique-id="20544d48-225a-425b-b375-227740a394cd" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+        <Button variant="outline" size="sm" onClick={toggleActive} className={isActive ? 'border-green-500 text-green-500' : ''} data-unique-id="ab3dd2ac-f787-4246-915c-2cc1432f75a5" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
           <ToggleRight className="h-4 w-4 mr-1" />
           {isActive ? 'Nonaktifkan' : 'Aktifkan'}
         </Button>
       </div>
 
-      <Tabs defaultValue="setup" className="w-full" data-unique-id="59246023-408b-4fb2-b18e-b3a7f3c42d28" data-file-name="components/MessageForwarder.tsx">
+      <Tabs defaultValue="setup" className="w-full" data-unique-id="188adda8-c7fd-495b-af5d-e5f8ee61a887" data-file-name="components/MessageForwarder.tsx">
         <TabsList className="grid grid-cols-2 mb-4">
-          <TabsTrigger value="setup"><span className="editable-text" data-unique-id="3a70229a-4593-46a5-8cde-35b6963f2483" data-file-name="components/MessageForwarder.tsx">Konfigurasi</span></TabsTrigger>
-          <TabsTrigger value="preview"><span className="editable-text" data-unique-id="38dc9382-696e-4a85-8652-d9749ef251c5" data-file-name="components/MessageForwarder.tsx">Preview & Uji</span></TabsTrigger>
+          <TabsTrigger value="setup"><span className="editable-text" data-unique-id="72c6ab04-8757-42aa-a562-ea5e20a75219" data-file-name="components/MessageForwarder.tsx">Konfigurasi</span></TabsTrigger>
+          <TabsTrigger value="preview"><span className="editable-text" data-unique-id="b40e803d-6f30-434d-b493-1669aaaffa1c" data-file-name="components/MessageForwarder.tsx">Preview & Uji</span></TabsTrigger>
         </TabsList>
         
         <TabsContent value="setup">
-          <Card data-unique-id="ec82aed2-b0f1-4fcf-a963-730dd05dc833" data-file-name="components/MessageForwarder.tsx">
-            <CardContent className="space-y-6 pt-6" data-unique-id="f1bc2295-ce7e-43d1-a355-99e4cefa86f7" data-file-name="components/MessageForwarder.tsx">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-unique-id="47afd305-e3c4-429e-9cce-3ca63a5de534" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+          <Card data-unique-id="0b3ac98e-ba90-4404-a073-285a98fa0d6c" data-file-name="components/MessageForwarder.tsx">
+            <CardContent className="space-y-6 pt-6" data-unique-id="e988ad1e-b3fb-429b-bc8c-14b1408423cc" data-file-name="components/MessageForwarder.tsx">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-unique-id="9eb6f197-cff0-42e3-8202-1212dab68cb1" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
                 {/* Source Filter */}
-                <div className="space-y-2" data-unique-id="72682168-c3f1-455d-b873-d420b3d5dd18" data-file-name="components/MessageForwarder.tsx">
-                  <Label htmlFor="source-filter" className="font-medium" data-unique-id="425e52a3-c0e7-4449-9ed9-771d7a6a3c1f" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="bfeaf76f-c41e-47bc-aefa-42783694f8c7" data-file-name="components/MessageForwarder.tsx">
+                <div className="space-y-2" data-unique-id="e090b86f-7161-474b-a74c-1620d05e83a0" data-file-name="components/MessageForwarder.tsx">
+                  <Label htmlFor="source-filter" className="font-medium" data-unique-id="852b9ae9-1baf-4e2b-921e-1d008d13fa38" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="731f9f55-4d4c-4d9b-864e-435c3cd0599e" data-file-name="components/MessageForwarder.tsx">
                     Username/Nomor Sumber
                   </span></Label>
-                  <div className="flex gap-2 items-center" data-unique-id="3bc06caf-36ca-4f9e-89bf-4df4221dd4ad" data-file-name="components/MessageForwarder.tsx">
+                  <div className="flex gap-2 items-center" data-unique-id="85a170ca-695c-4654-ac7f-57f23d1a7754" data-file-name="components/MessageForwarder.tsx">
                     <Search className="h-4 w-4 text-muted-foreground" />
-                    <Input id="source-filter" placeholder="628567899393 atau @username" value={sourceFilter} onChange={e => setSourceFilter(e.target.value)} className="flex-1" data-unique-id="14d2958e-b14f-4771-8327-c3c9d54272ad" data-file-name="components/MessageForwarder.tsx" />
+                    <Input id="source-filter" placeholder="628567899393 atau @username" value={sourceFilter} onChange={e => setSourceFilter(e.target.value)} className="flex-1" data-unique-id="4a9d5162-ad13-4c4f-a781-3f18a71a116f" data-file-name="components/MessageForwarder.tsx" />
                   </div>
-                  <p className="text-sm text-muted-foreground" data-unique-id="5a03b347-2867-4cd9-a959-2e6bb4bf3317" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="c8116533-3b5c-4e34-96ff-8a53f2bde4fd" data-file-name="components/MessageForwarder.tsx">
+                  <p className="text-sm text-muted-foreground" data-unique-id="32033334-9988-419a-b202-c2330422afeb" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="70418d3a-4453-4a45-a383-efb12def6744" data-file-name="components/MessageForwarder.tsx">
                     Pesan dari username/nomor ini akan diproses dan diteruskan otomatis
                   </span></p>
                 </div>
 
                 {/* Target Bot */}
-                <div className="space-y-2" data-unique-id="86366d16-b001-4c95-9d8d-e8172e6b6646" data-file-name="components/MessageForwarder.tsx">
-                  <Label htmlFor="target-bot" className="font-medium" data-unique-id="68909851-5fa2-4795-9802-e3d0c77d9539" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="2a5fe337-ded5-4a12-871a-bde1a109213b" data-file-name="components/MessageForwarder.tsx">
+                <div className="space-y-2" data-unique-id="1c6c1ad1-71fc-41ff-bcc8-c7f9e6d0c43c" data-file-name="components/MessageForwarder.tsx">
+                  <Label htmlFor="target-bot" className="font-medium" data-unique-id="761582b6-667f-42c8-be81-465c85e447b8" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="54981272-dd2a-427c-bdfb-b9778aae2445" data-file-name="components/MessageForwarder.tsx">
                     Username Bot Tujuan
                   </span></Label>
-                  <div className="flex gap-2 items-center" data-unique-id="e1525829-c28e-4a8c-883b-82b983e0ae52" data-file-name="components/MessageForwarder.tsx">
+                  <div className="flex gap-2 items-center" data-unique-id="832f4aef-ee24-498f-9dab-5de78bddaa3d" data-file-name="components/MessageForwarder.tsx">
                     <Bot className="h-4 w-4 text-muted-foreground" />
-                    <Input id="target-bot" placeholder="@iky2025bot" value={targetBotUsername} onChange={e => setTargetBotUsername(e.target.value)} className="flex-1" data-unique-id="34034a8e-90ea-4112-8e0b-455f21e688b6" data-file-name="components/MessageForwarder.tsx" />
+                    <Input id="target-bot" placeholder="@iky2025bot" value={targetBotUsername} onChange={e => setTargetBotUsername(e.target.value)} className="flex-1" data-unique-id="105bc8f5-0949-4ebc-9d7a-e6606784e654" data-file-name="components/MessageForwarder.tsx" />
                   </div>
-                  <p className="text-sm text-muted-foreground" data-unique-id="8f71ff3a-b6c3-4ee2-a065-78da9c824007" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="f068b7b4-7d23-4dc2-b7ff-a92d599c9645" data-file-name="components/MessageForwarder.tsx">
+                  <p className="text-sm text-muted-foreground" data-unique-id="c81f4682-2bf8-47d5-b229-d113ac79a76e" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="bdbd192f-e2cb-411e-b07a-3490b855705e" data-file-name="components/MessageForwarder.tsx">
                     Pesan akan diteruskan ke bot ini setelah diformat ulang
                   </span></p>
                 </div>
               </div>
 
-              <div className="border-t border-slate-100 pt-6" data-unique-id="5c9737ec-0d31-4774-823a-041c374f8ea0" data-file-name="components/MessageForwarder.tsx">
-                <h3 className="text-lg font-medium mb-4" data-unique-id="84fa7ea5-c242-4f42-8196-ec841a06f87f" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="7e3ccf90-c2f8-4fd1-8b7b-8e30ce98b146" data-file-name="components/MessageForwarder.tsx">Pola Ekstraksi Data</span></h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="fcb66c44-ef0f-4af7-b4ef-2c56f71ac921" data-file-name="components/MessageForwarder.tsx">
-                  <div className="space-y-2" data-unique-id="6e79dcb9-df32-4115-8aca-c0771e767c02" data-file-name="components/MessageForwarder.tsx">
-                    <Label htmlFor="extract-product" className="font-medium" data-unique-id="abc04e70-7a33-4ba1-a8e5-24ab19d2cde5" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="7be7b63f-c28e-4191-a121-2837828bb90a" data-file-name="components/MessageForwarder.tsx">Pola Produk</span></Label>
+              <div className="border-t border-slate-100 pt-6" data-unique-id="1db84db8-f3cf-47dc-a621-dc61ab0eaaee" data-file-name="components/MessageForwarder.tsx">
+                <h3 className="text-lg font-medium mb-4" data-unique-id="abae0ecb-97f8-4be2-8e7c-c4a8ba5d64d2" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="b32d1351-88c4-46e8-9e52-8c0c33c16018" data-file-name="components/MessageForwarder.tsx">Pola Ekstraksi Data</span></h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="93273034-4b67-4b41-a434-71aea9291cef" data-file-name="components/MessageForwarder.tsx">
+                  <div className="space-y-2" data-unique-id="07e66728-d113-4b40-a401-cf08100aee8b" data-file-name="components/MessageForwarder.tsx">
+                    <Label htmlFor="extract-product" className="font-medium" data-unique-id="75d518db-38bc-4d35-b2ea-14b20157abcd" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="c9af9db8-5883-4785-93fb-790fcf6561ec" data-file-name="components/MessageForwarder.tsx">Pola Produk</span></Label>
                     <Input id="extract-product" value={messageExtractRules.product} onChange={e => setMessageExtractRules(prev => ({
                     ...prev,
                     product: e.target.value
-                  }))} placeholder="Produk:" data-unique-id="f6fa8086-c699-4d72-8466-f5c12062f17f" data-file-name="components/MessageForwarder.tsx" />
+                  }))} placeholder="Produk:" data-unique-id="5c45f8ab-e944-46a2-977c-70bd883a82c8" data-file-name="components/MessageForwarder.tsx" />
                   </div>
-                  <div className="space-y-2" data-unique-id="76701c3f-0084-437e-8c21-d932831e91af" data-file-name="components/MessageForwarder.tsx">
-                    <Label htmlFor="extract-name" className="font-medium" data-unique-id="509a4da9-5e90-4b89-b65f-750caab744c0" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="bb28066f-648e-452d-9c08-4c2b7a73033e" data-file-name="components/MessageForwarder.tsx">Pola Nama</span></Label>
+                  <div className="space-y-2" data-unique-id="6e5ef894-6bac-471f-8442-f37f54bd37fd" data-file-name="components/MessageForwarder.tsx">
+                    <Label htmlFor="extract-name" className="font-medium" data-unique-id="c27af55a-83b0-43cb-a98c-f43a894e41c8" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="aced2a49-f4c6-4b39-9be6-8fd75fe8aa2c" data-file-name="components/MessageForwarder.tsx">Pola Nama</span></Label>
                     <Input id="extract-name" value={messageExtractRules.name} onChange={e => setMessageExtractRules(prev => ({
                     ...prev,
                     name: e.target.value
-                  }))} placeholder="Nama:" data-unique-id="00b10202-d011-42bb-869d-adc8afbdbdf8" data-file-name="components/MessageForwarder.tsx" />
+                  }))} placeholder="Nama:" data-unique-id="d46f19ae-843b-4806-9d9d-991d593dec0c" data-file-name="components/MessageForwarder.tsx" />
                   </div>
-                  <div className="space-y-2" data-unique-id="2c456940-4e35-41a3-ad79-48f5a1fce1fd" data-file-name="components/MessageForwarder.tsx">
-                    <Label htmlFor="extract-phone" className="font-medium" data-unique-id="300e45e5-ed4c-4402-aafc-44b5eeba246f" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="f6da05d1-3ee0-4688-b4e8-8ee4d892d5a9" data-file-name="components/MessageForwarder.tsx">Pola Nomor HP</span></Label>
+                  <div className="space-y-2" data-unique-id="5fc0caa3-9f2a-4dfe-bd12-0b7aa83881ce" data-file-name="components/MessageForwarder.tsx">
+                    <Label htmlFor="extract-phone" className="font-medium" data-unique-id="c88e8e55-f628-49cc-9423-7d4fdecdd6cc" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="05b13d2a-6aa9-4abd-b82f-f845f760a28b" data-file-name="components/MessageForwarder.tsx">Pola Nomor HP</span></Label>
                     <Input id="extract-phone" value={messageExtractRules.phone} onChange={e => setMessageExtractRules(prev => ({
                     ...prev,
                     phone: e.target.value
-                  }))} placeholder="No HP:" data-unique-id="8f46e39d-70d3-4890-8c5f-a803ec5c9e2e" data-file-name="components/MessageForwarder.tsx" />
+                  }))} placeholder="No HP:" data-unique-id="872769df-b17a-44dc-b009-8aa07d04e19f" data-file-name="components/MessageForwarder.tsx" />
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground mt-2" data-unique-id="e8503553-d92b-4cce-bc07-22806b96b3ad" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="91d41689-2a6f-40c9-b69b-c73b57c9b4dd" data-file-name="components/MessageForwarder.tsx">
+                <p className="text-sm text-muted-foreground mt-2" data-unique-id="c9f5be02-ae3c-475c-9d14-5314cb541c5f" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="8d898d7a-655e-4cd6-9012-a84b72085049" data-file-name="components/MessageForwarder.tsx">
                   Pola ini digunakan untuk mengekstrak informasi dari pesan masuk
                 </span></p>
               </div>
 
-              <div className="border-t border-slate-100 pt-6" data-unique-id="d9073a14-3f32-47e8-aeb0-a1904bc5231a" data-file-name="components/MessageForwarder.tsx">
-                <h3 className="text-lg font-medium mb-4" data-unique-id="8d4fad22-430e-41b2-b5c8-06f97b1fa2b2" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="c7a47c89-ab00-424f-ae1d-684f84f0cd7b" data-file-name="components/MessageForwarder.tsx">Format Output</span></h3>
-                <div className="space-y-4" data-unique-id="adf03c91-4ff5-4184-aeb4-69cc808cfc09" data-file-name="components/MessageForwarder.tsx">
-                  <div className="space-y-2" data-unique-id="b7cc908d-b612-4f0c-89cf-300ee4997e1b" data-file-name="components/MessageForwarder.tsx">
-                    <Label htmlFor="output-format" className="font-medium" data-unique-id="b78f79df-05f1-47e3-94e3-0dd89b45ecc1" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="a1e18cbb-2cb9-417d-a6de-f1ee79f75175" data-file-name="components/MessageForwarder.tsx">Format Pesan Output</span></Label>
-                    <textarea id="output-format" className="w-full min-h-[120px] p-3 rounded-md border border-slate-200 bg-white" value={outputFormat} onChange={e => setOutputFormat(e.target.value)} placeholder="PEMBAYARAN&#10;Kategori : {product}&#10;Nama: {name}&#10;No HP: {phone}&#10;Kode Akses: {phone}" data-unique-id="c0b5928e-c2b0-497a-8999-5dc7a0b8cc90" data-file-name="components/MessageForwarder.tsx" />
-                    <p className="text-sm text-muted-foreground" data-unique-id="463e96fd-d32d-494d-bead-f6af7cf8baab" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="5e94f59a-7e16-4652-8722-949cdb1f68aa" data-file-name="components/MessageForwarder.tsx">
-                      Gunakan </span>{'{product}'}<span className="editable-text" data-unique-id="b3ed9b85-1f3b-4fa0-bbff-2e50f44df429" data-file-name="components/MessageForwarder.tsx">, </span>{'{name}'}<span className="editable-text" data-unique-id="47921a0a-4808-46d0-a8f1-a19642a3d3c0" data-file-name="components/MessageForwarder.tsx">, dan </span>{'{phone}'}<span className="editable-text" data-unique-id="b1dd927b-4949-4a66-bbc2-f26d46393723" data-file-name="components/MessageForwarder.tsx"> sebagai placeholder untuk data yang diekstrak
+              <div className="border-t border-slate-100 pt-6" data-unique-id="3af19d29-ce71-4685-b8e6-544357a379e2" data-file-name="components/MessageForwarder.tsx">
+                <h3 className="text-lg font-medium mb-4" data-unique-id="20d5edc2-e8b5-44f8-b300-ab0c5db890d4" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="e7805c1c-95c4-4475-867d-eee993f4e884" data-file-name="components/MessageForwarder.tsx">Format Output</span></h3>
+                <div className="space-y-4" data-unique-id="2c34637f-de5f-4477-abb5-e9b07b4091cb" data-file-name="components/MessageForwarder.tsx">
+                  <div className="space-y-2" data-unique-id="e9684fa3-5f24-4544-a42a-212ca3907d7b" data-file-name="components/MessageForwarder.tsx">
+                    <Label htmlFor="output-format" className="font-medium" data-unique-id="e209cae0-1430-4b02-9a90-ba7bafca0408" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="369399a1-f868-4135-839a-1629ccf93ddd" data-file-name="components/MessageForwarder.tsx">Format Pesan Output</span></Label>
+                    <textarea id="output-format" className="w-full min-h-[120px] p-3 rounded-md border border-slate-200 bg-white" value={outputFormat} onChange={e => setOutputFormat(e.target.value)} placeholder="PEMBAYARAN&#10;Kategori : {product}&#10;Nama: {name}&#10;No HP: {phone}&#10;Kode Akses: {phone}" data-unique-id="a27497ab-ec7e-4f5b-b28e-54661bd8efc7" data-file-name="components/MessageForwarder.tsx" />
+                    <p className="text-sm text-muted-foreground" data-unique-id="7842f6f7-7222-41b8-b061-8dd7ed1aaa47" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="f8a36db5-1de6-431d-8b72-9bfaf14f00c1" data-file-name="components/MessageForwarder.tsx">
+                      Gunakan </span>{'{product}'}<span className="editable-text" data-unique-id="8528eaa3-fb27-4102-9574-a2bb95353bee" data-file-name="components/MessageForwarder.tsx">, </span>{'{name}'}<span className="editable-text" data-unique-id="e0955a7a-2c61-441c-9d00-7ac55d91434c" data-file-name="components/MessageForwarder.tsx">, dan </span>{'{phone}'}<span className="editable-text" data-unique-id="70b0c5d7-e88c-4f3e-a5c8-afd262684e0a" data-file-name="components/MessageForwarder.tsx"> sebagai placeholder untuk data yang diekstrak
                     </span></p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex justify-end gap-2 pt-4" data-unique-id="c9b0dc15-0ef4-4403-a3a6-6f3666a59665" data-file-name="components/MessageForwarder.tsx">
-                <Button variant="default" onClick={saveRule} className="bg-primary text-primary-foreground" data-unique-id="0b1bc23b-0d73-462a-be6a-7aca91d8f782" data-file-name="components/MessageForwarder.tsx">
-                  <Settings className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="90d3e5ba-fd7e-431e-97c3-0bd18c4194ef" data-file-name="components/MessageForwarder.tsx">
+              <div className="flex justify-end gap-2 pt-4" data-unique-id="0af2ff48-3edc-4ee9-9ccb-bd08d2371d25" data-file-name="components/MessageForwarder.tsx">
+                <Button variant="default" onClick={saveRule} className="bg-primary text-primary-foreground" data-unique-id="13d6ca45-60ef-43df-a29b-0c8c97f181b1" data-file-name="components/MessageForwarder.tsx">
+                  <Settings className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="d7fdf521-1b00-4979-9cda-ca5d0104cac2" data-file-name="components/MessageForwarder.tsx">
                   Simpan Konfigurasi
                 </span></Button>
               </div>
@@ -370,97 +370,97 @@ Kode Akses: {phone}`);
         </TabsContent>
         
         <TabsContent value="preview">
-          <Card data-unique-id="9adb3442-4acf-4d7a-bad8-8983944fc210" data-file-name="components/MessageForwarder.tsx">
-            <CardContent className="space-y-6 pt-6" data-unique-id="a6698eb3-2de2-4b5e-ac30-a5223f1c59f8" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-unique-id="60b6b851-1f99-45df-abfb-c02bcd7c87aa" data-file-name="components/MessageForwarder.tsx">
-                <div className="space-y-4" data-unique-id="cc9b6075-6022-4326-9a83-222db53975e7" data-file-name="components/MessageForwarder.tsx">
-                  <h3 className="text-lg font-medium" data-unique-id="10b8fc8b-7b50-415d-a5b5-a7e195cd7c7a" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="7d43fdc8-9f88-477b-813e-5a77f16c3514" data-file-name="components/MessageForwarder.tsx">Pesan Asli (Contoh)</span></h3>
-                  <div className="border rounded-md bg-slate-50" data-unique-id="f9297b1d-219a-4535-8d58-4c50659555fe" data-file-name="components/MessageForwarder.tsx">
-                    <div className="bg-slate-100 p-2 border-b rounded-t-md" data-unique-id="1384d781-be8b-4ad3-90b8-edde3d443e33" data-file-name="components/MessageForwarder.tsx">
-                      <div className="flex items-center gap-2" data-unique-id="f56b96d6-80da-4c16-bb5d-556b09fa622b" data-file-name="components/MessageForwarder.tsx">
+          <Card data-unique-id="631d5564-d12f-4ae3-aad9-8b432948988c" data-file-name="components/MessageForwarder.tsx">
+            <CardContent className="space-y-6 pt-6" data-unique-id="61fb177e-7274-44f6-82a2-6452f73b93ac" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-unique-id="753383fc-7183-4e7b-9ecb-2be971901305" data-file-name="components/MessageForwarder.tsx">
+                <div className="space-y-4" data-unique-id="ce01c129-0b64-4f7b-ad0b-e23ec7458baa" data-file-name="components/MessageForwarder.tsx">
+                  <h3 className="text-lg font-medium" data-unique-id="d588fb82-a95b-42cd-af97-d972cd42002a" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="a1f5bd2c-7861-414e-b2e7-9cfc95a8aacd" data-file-name="components/MessageForwarder.tsx">Pesan Asli (Contoh)</span></h3>
+                  <div className="border rounded-md bg-slate-50" data-unique-id="5d05b871-fc8d-4b72-83d4-bbd329c3f33d" data-file-name="components/MessageForwarder.tsx">
+                    <div className="bg-slate-100 p-2 border-b rounded-t-md" data-unique-id="d942181b-2fbc-46ed-a064-9c77d12feb27" data-file-name="components/MessageForwarder.tsx">
+                      <div className="flex items-center gap-2" data-unique-id="2cccaa1a-12e2-4a52-a223-3a6069012088" data-file-name="components/MessageForwarder.tsx">
                         <MessageCircle className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm font-medium" data-unique-id="8f9abc9a-b3c1-4b25-9b31-c457cc9f906e" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="1824c671-d0fc-4d49-8691-a680a7d46b27" data-file-name="components/MessageForwarder.tsx">Pesan dari </span>{sourceFilter || "628567899393"}</span>
+                        <span className="text-sm font-medium" data-unique-id="91b0d08c-882e-41ab-a4a0-a32dc8805f49" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="18b3eaa8-2d5b-41df-926a-caef53fcacba" data-file-name="components/MessageForwarder.tsx">Pesan dari </span>{sourceFilter || "628567899393"}</span>
                       </div>
                     </div>
-                    <div className="p-4" data-unique-id="86f279ce-d504-485f-856c-f0080beae9fd" data-file-name="components/MessageForwarder.tsx">
-                      <textarea className="w-full min-h-[200px] p-2 bg-slate-50 border-0 focus:ring-0" value={inputFormat} onChange={e => setInputFormat(e.target.value)} data-unique-id="65c8df81-cbc7-422b-94bb-b0e16c781b86" data-file-name="components/MessageForwarder.tsx" />
+                    <div className="p-4" data-unique-id="c4a0e41c-440b-48a8-8c63-3780a20dc7c8" data-file-name="components/MessageForwarder.tsx">
+                      <textarea className="w-full min-h-[200px] p-2 bg-slate-50 border-0 focus:ring-0" value={inputFormat} onChange={e => setInputFormat(e.target.value)} data-unique-id="9ac0d2b4-e1f5-4321-9998-f9c76ebf64ac" data-file-name="components/MessageForwarder.tsx" />
                     </div>
                   </div>
 
-                  <Button variant="outline" onClick={previewTransformation} className="w-full" data-unique-id="a21e2aca-addb-44c6-bd6e-da34479eb7fc" data-file-name="components/MessageForwarder.tsx">
-                    <FileText className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="ca9fcbb1-6782-4f40-a0cc-b8419328c937" data-file-name="components/MessageForwarder.tsx">
+                  <Button variant="outline" onClick={previewTransformation} className="w-full" data-unique-id="d7867435-029e-4241-9d1b-fc751f19201f" data-file-name="components/MessageForwarder.tsx">
+                    <FileText className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="f020becf-80ee-4349-a767-874e1294f664" data-file-name="components/MessageForwarder.tsx">
                     Lihat Preview Transformasi
                   </span></Button>
                 </div>
 
-                <div className="space-y-4" data-unique-id="1f6471a1-c7bd-4e32-a7f9-2800b12be0ea" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
-                  <h3 className="text-lg font-medium" data-unique-id="faf3e9fb-24f1-4dc6-9944-68f6684bf967" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="885d53af-0cf1-402e-afc3-a68f0a9d346d" data-file-name="components/MessageForwarder.tsx">Hasil Transformasi</span></h3>
-                  <div className={`border rounded-md ${processingStatus === 'success' ? 'bg-green-50' : processingStatus === 'error' ? 'bg-red-50' : 'bg-slate-50'}`} data-unique-id="30cf13b4-851d-4dfb-938b-07017011485d" data-file-name="components/MessageForwarder.tsx">
-                    <div className={`p-2 border-b rounded-t-md ${processingStatus === 'success' ? 'bg-green-100' : processingStatus === 'error' ? 'bg-red-100' : 'bg-slate-100'}`} data-unique-id="ad8f98f7-8f99-4ff0-b112-39dc95ea5433" data-file-name="components/MessageForwarder.tsx">
-                      <div className="flex items-center gap-2" data-unique-id="a7758c52-b8b8-4b93-9718-925e521b90b6" data-file-name="components/MessageForwarder.tsx">
+                <div className="space-y-4" data-unique-id="39285492-8983-4731-b08a-77d9c1919c25" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                  <h3 className="text-lg font-medium" data-unique-id="25eb761a-0a1c-4173-9a56-61b1fe9b5863" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="8c9265ea-06a3-40b7-8f39-3185b16adcda" data-file-name="components/MessageForwarder.tsx">Hasil Transformasi</span></h3>
+                  <div className={`border rounded-md ${processingStatus === 'success' ? 'bg-green-50' : processingStatus === 'error' ? 'bg-red-50' : 'bg-slate-50'}`} data-unique-id="385ef296-a037-4fe5-b7a1-c95205c6a9eb" data-file-name="components/MessageForwarder.tsx">
+                    <div className={`p-2 border-b rounded-t-md ${processingStatus === 'success' ? 'bg-green-100' : processingStatus === 'error' ? 'bg-red-100' : 'bg-slate-100'}`} data-unique-id="2beec06e-3413-4fd6-b289-bf20b163a98e" data-file-name="components/MessageForwarder.tsx">
+                      <div className="flex items-center gap-2" data-unique-id="481de1f5-f6f0-4b76-af1e-feb8173195d9" data-file-name="components/MessageForwarder.tsx">
                         <Bot className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm font-medium" data-unique-id="979f3fe6-82fc-41aa-8a90-2328da978363" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="ab12879c-cd2a-43c9-92a0-28535622a20b" data-file-name="components/MessageForwarder.tsx">
+                        <span className="text-sm font-medium" data-unique-id="54604a3e-b5c7-4096-98b9-3cfc40ce35cf" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="621b0320-0676-4256-9cea-4e4a2057bb42" data-file-name="components/MessageForwarder.tsx">
                           Pesan ke </span>{targetBotUsername || "@iky2025bot"}
                         </span>
                       </div>
                     </div>
-                    <div className="p-4 whitespace-pre-wrap" data-unique-id="ba5dcc4d-585e-450e-9dd0-ac05ccc15c52" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                    <div className="p-4 whitespace-pre-wrap" data-unique-id="45dbd2e6-0d93-4430-b413-2f0fee40b55e" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
                       {previewResult || "Hasil transformasi akan muncul di sini"}
                     </div>
                   </div>
 
-                  {processingStatus === 'success' && extractedData && Object.keys(extractedData).length > 0 && <div className="mt-4" data-unique-id="59284ee9-577a-4116-b312-ce7fc2d886cd" data-file-name="components/MessageForwarder.tsx">
-                      <h4 className="text-sm font-medium mb-2" data-unique-id="9ac290fa-cd42-436e-8122-3cf56e13ee92" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="6f200555-4718-461e-89c4-22b926952559" data-file-name="components/MessageForwarder.tsx">Data yang Berhasil Diekstrak:</span></h4>
-                      <div className="bg-slate-50 border rounded-md p-3 text-sm" data-unique-id="ede540a5-2a6c-4e80-94b0-10940cebd89a" data-file-name="components/MessageForwarder.tsx">
-                        <div className="grid grid-cols-2 gap-2" data-unique-id="c88cdc15-e2ed-4094-a17d-72fbc271f507" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
-                          {Object.entries(extractedData).map(([key, value]) => <div key={key} className="flex items-center gap-1" data-unique-id="ff75a7de-3152-485b-aa93-e25bbb323164" data-file-name="components/MessageForwarder.tsx">
-                              <span className="font-medium" data-unique-id="a908dd10-32f9-49c0-afe6-9c426e6118d1" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">{key}<span className="editable-text" data-unique-id="59a4356e-f8cb-48aa-9dc2-b725015734b1" data-file-name="components/MessageForwarder.tsx">:</span></span>
-                              <span className="truncate" data-unique-id="918ed137-0c5b-4ab5-a2f5-48924bb18036" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">{value}</span>
+                  {processingStatus === 'success' && extractedData && Object.keys(extractedData).length > 0 && <div className="mt-4" data-unique-id="31809d65-9248-4408-988d-0714f0b1b38b" data-file-name="components/MessageForwarder.tsx">
+                      <h4 className="text-sm font-medium mb-2" data-unique-id="549e3b76-ac1c-412d-baa1-f9c3cfb0217c" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="7a5feb3c-e8ef-4863-b5ff-823cf0da8284" data-file-name="components/MessageForwarder.tsx">Data yang Berhasil Diekstrak:</span></h4>
+                      <div className="bg-slate-50 border rounded-md p-3 text-sm" data-unique-id="017cbdab-b063-4572-834c-b24f67a08d45" data-file-name="components/MessageForwarder.tsx">
+                        <div className="grid grid-cols-2 gap-2" data-unique-id="125d43a2-faa7-405e-b391-55931ec8581c" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                          {Object.entries(extractedData).map(([key, value]) => <div key={key} className="flex items-center gap-1" data-unique-id="44b05b7c-a1f3-4327-bcdc-c8963e3486a9" data-file-name="components/MessageForwarder.tsx">
+                              <span className="font-medium" data-unique-id="569dde2c-0422-41da-9e44-16a0f3303458" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">{key}<span className="editable-text" data-unique-id="c72432dc-375d-4b2c-a44c-a4151ed9d58a" data-file-name="components/MessageForwarder.tsx">:</span></span>
+                              <span className="truncate" data-unique-id="f234f4da-17ec-4726-bee0-c4f9aebc91d6" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">{value}</span>
                             </div>)}
                         </div>
                       </div>
                     </div>}
 
-                  <Button variant="default" onClick={forwardMessage} className="w-full bg-primary hover:bg-primary/90" data-unique-id="545c93ce-3791-4b06-b9a8-519fad25b48a" data-file-name="components/MessageForwarder.tsx">
-                    <Send className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="d7a678b0-961f-4eca-9ed9-855821085626" data-file-name="components/MessageForwarder.tsx">
+                  <Button variant="default" onClick={forwardMessage} className="w-full bg-primary hover:bg-primary/90" data-unique-id="54a8d80b-e78e-45b8-b278-4099b2b1e2bb" data-file-name="components/MessageForwarder.tsx">
+                    <Send className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="27af576c-d350-4048-8e25-33b36d6204b6" data-file-name="components/MessageForwarder.tsx">
                     Uji Kirim Pesan
                   </span></Button>
                 </div>
               </div>
 
-              {processingStatus !== 'idle' && <div className={`mt-4 p-3 rounded-md flex items-center ${processingStatus === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`} data-unique-id="ab68dd4c-f8fb-4a7e-91b0-d74f0cf99ed3" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+              {processingStatus !== 'idle' && <div className={`mt-4 p-3 rounded-md flex items-center ${processingStatus === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`} data-unique-id="31804d09-f8f3-4a12-92cc-a844dd8d4da5" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
                   {processingStatus === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertTriangle className="h-5 w-5 mr-2" />}
-                  <span data-unique-id="dc1f6628-08a6-4b0a-9a25-d301c4497a15" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">{statusMessage}</span>
+                  <span data-unique-id="c877d1c5-2274-4e83-a75b-9a1d6a505867" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">{statusMessage}</span>
                 </div>}
 
-              <div className="border-t border-slate-100 pt-6" data-unique-id="5a7d6e69-7d06-4792-af07-5eed1166166d" data-file-name="components/MessageForwarder.tsx">
-                <div className="flex items-center justify-between mb-4" data-unique-id="64cf782d-96a4-4eb7-afcb-d66307bd650d" data-file-name="components/MessageForwarder.tsx">
-                  <h3 className="text-lg font-medium" data-unique-id="fb5d0198-3671-402d-b3f7-54b70d840d07" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="4c053935-621d-4d13-98f2-a61f09cb6158" data-file-name="components/MessageForwarder.tsx">Aktivitas Terbaru</span></h3>
-                  <span className="text-sm text-muted-foreground" data-unique-id="b7e07b99-30b4-442d-9a90-5dad06209b3b" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+              <div className="border-t border-slate-100 pt-6" data-unique-id="6016846d-8532-4254-894b-9f6f997165d3" data-file-name="components/MessageForwarder.tsx">
+                <div className="flex items-center justify-between mb-4" data-unique-id="dc767c9a-34ac-4fa2-8f43-3250a40da257" data-file-name="components/MessageForwarder.tsx">
+                  <h3 className="text-lg font-medium" data-unique-id="e3f26f5f-97aa-4233-9d93-7de6783fdb0d" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="5e09a64c-b456-45ab-b57d-08aa4b056fcd" data-file-name="components/MessageForwarder.tsx">Aktivitas Terbaru</span></h3>
+                  <span className="text-sm text-muted-foreground" data-unique-id="a1ce0e9c-9d94-4f01-a180-2e30ea27b043" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
                     <Clock className="h-4 w-4 inline mr-1" />
-                    {logs.length}<span className="editable-text" data-unique-id="47e75f9c-5623-4ae7-a055-b72875b2f60a" data-file-name="components/MessageForwarder.tsx"> catatan
+                    {logs.length}<span className="editable-text" data-unique-id="6dfda01b-1503-4ffb-9b1e-c11cd20f7e95" data-file-name="components/MessageForwarder.tsx"> catatan
                   </span></span>
                 </div>
                 
-                <div className="space-y-2 max-h-[300px] overflow-y-auto" data-unique-id="3d390940-c060-45dd-8a21-e163db82dc03" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
-                  {logs.slice(0, 5).map(log => <div key={log.id} className={`p-3 rounded-md border ${log.status === 'success' ? 'border-green-200 bg-green-50' : 'border-red-200 bg-red-50'}`} data-unique-id="a0864acb-6b2f-4bfd-b587-93048b1fa7de" data-file-name="components/MessageForwarder.tsx">
-                      <div className="flex items-center justify-between mb-1" data-unique-id="29643224-d0e8-445f-a055-28abc63232d2" data-file-name="components/MessageForwarder.tsx">
-                        <div className="flex items-center gap-2" data-unique-id="4ddca5f8-2466-4c8f-a0c6-d34a0e92cb50" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                <div className="space-y-2 max-h-[300px] overflow-y-auto" data-unique-id="9c51a1e6-36d2-433e-9b93-13d7df21f5f5" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                  {logs.slice(0, 5).map(log => <div key={log.id} className={`p-3 rounded-md border ${log.status === 'success' ? 'border-green-200 bg-green-50' : 'border-red-200 bg-red-50'}`} data-unique-id="f96ded39-85d3-4965-8d5e-7065afcbd074" data-file-name="components/MessageForwarder.tsx">
+                      <div className="flex items-center justify-between mb-1" data-unique-id="11299a8e-ac02-48b4-9e2a-05c3d915aa09" data-file-name="components/MessageForwarder.tsx">
+                        <div className="flex items-center gap-2" data-unique-id="5dd96ef7-be7e-4ffc-9c42-e52da8bc0efb" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
                           {log.status === 'success' ? <CheckCircle className="h-4 w-4 text-green-500" /> : <AlertTriangle className="h-4 w-4 text-red-500" />}
-                          <span className="font-medium" data-unique-id="5fd2ff0c-aaad-4550-a959-6c5fd453593f" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
-                            {log.status === 'success' ? 'Berhasil' : 'Gagal'}<span className="editable-text" data-unique-id="0b22c40b-6954-416c-80ba-941bbc1ea395" data-file-name="components/MessageForwarder.tsx"> meneruskan pesan
+                          <span className="font-medium" data-unique-id="9f92ecfd-1089-4210-b7fd-80182f90e64f" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                            {log.status === 'success' ? 'Berhasil' : 'Gagal'}<span className="editable-text" data-unique-id="db4f4555-2a89-47d5-babf-0269d6a47280" data-file-name="components/MessageForwarder.tsx"> meneruskan pesan
                           </span></span>
                         </div>
-                        <span className="text-xs text-muted-foreground" data-unique-id="794c77b4-58eb-43cf-95dc-ed2f06012616" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
+                        <span className="text-xs text-muted-foreground" data-unique-id="a2926048-8670-4ad5-95aa-b3b19e89073d" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true">
                           {new Date(log.timestamp).toLocaleString()}
                         </span>
                       </div>
-                      <p className="text-sm text-muted-foreground truncate" data-unique-id="dc08b215-2d8f-4cdb-a463-74f9e17fd7e7" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="81b6a420-173a-41f7-949e-94e2c985d10e" data-file-name="components/MessageForwarder.tsx">
-                        Dari: </span>{log.source}<span className="editable-text" data-unique-id="1c7030de-7308-4188-90e7-ad7955d948d8" data-file-name="components/MessageForwarder.tsx">, Ke: </span>{targetBotUsername}
+                      <p className="text-sm text-muted-foreground truncate" data-unique-id="a28bc266-f70f-4a5f-9ec9-bfeaa2ae54d2" data-file-name="components/MessageForwarder.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="da22cdaf-f2c1-4006-9e16-35e4eb89de6f" data-file-name="components/MessageForwarder.tsx">
+                        Dari: </span>{log.source}<span className="editable-text" data-unique-id="24e946bc-1ae8-4f64-9ce0-16c82efbb3b3" data-file-name="components/MessageForwarder.tsx">, Ke: </span>{targetBotUsername}
                       </p>
                     </div>)}
 
-                  {logs.length === 0 && <p className="text-sm text-center text-muted-foreground py-4" data-unique-id="d4ea1853-e1e1-4b2a-878a-d37319a112f5" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="72f32e7a-6bf1-4882-a73f-688ac8b6621c" data-file-name="components/MessageForwarder.tsx">
+                  {logs.length === 0 && <p className="text-sm text-center text-muted-foreground py-4" data-unique-id="afc4d00b-63d3-4712-851c-3c62c2a6a263" data-file-name="components/MessageForwarder.tsx"><span className="editable-text" data-unique-id="6883b292-d817-44c1-9be2-b5297148d36c" data-file-name="components/MessageForwarder.tsx">
                       Belum ada aktivitas pencatatan
                     </span></p>}
                 </div>

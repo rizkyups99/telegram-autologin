@@ -253,6 +253,69 @@
       "when": 1750574924649,
       "tag": "0035_steady_landau",
       "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "7",
+      "when": 1751272275035,
+      "tag": "0036_useful_lifeguard",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "7",
+      "when": 1751272402612,
+      "tag": "0037_serious_skullbuster",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "7",
+      "when": 1751272466332,
+      "tag": "0038_dapper_psynapse",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "7",
+      "when": 1751272564381,
+      "tag": "0039_glamorous_giant_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "7",
+      "when": 1751272654344,
+      "tag": "0040_closed_mystique",
+      "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "7",
+      "when": 1751348017431,
+      "tag": "0041_dark_unus",
+      "breakpoints": true
+    },
+    {
+      "idx": 42,
+      "version": "7",
+      "when": 1751356203377,
+      "tag": "0042_new_morlun",
+      "breakpoints": true
+    },
+    {
+      "idx": 43,
+      "version": "7",
+      "when": 1751356285633,
+      "tag": "0043_acoustic_jetstream",
+      "breakpoints": true
+    },
+    {
+      "idx": 44,
+      "version": "7",
+      "when": 1751357685723,
+      "tag": "0044_majestic_the_stranger",
+      "breakpoints": true
     }
   ]
 }

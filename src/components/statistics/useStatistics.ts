@@ -28,7 +28,8 @@ export function useStatistics() {
       // Combine both data sets
       const combinedData: StatisticsData = {
         ...statisticsData,
-        categoryDistribution: distributionData
+        categoryDistribution: distributionData,
+        cloudCategorySummary: statisticsData.cloudCategorySummary || []
       };
       
       setData(combinedData);

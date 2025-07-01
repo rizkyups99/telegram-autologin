@@ -24,7 +24,7 @@ export function VideoList({
   const handleInlineVideoPlay = (video: Video) => {
     setInlineVideoPlaying(video === inlineVideoPlaying ? null : video);
   };
-  return <div className="space-y-6" data-unique-id="a8720280-d44c-4809-b971-b74e37208c8e" data-file-name="components/video/VideoList.tsx" data-dynamic-text="true">
+  return <div className="space-y-6" data-unique-id="defe1cac-42ce-4e1b-841b-c321bd53d3d4" data-file-name="components/video/VideoList.tsx" data-dynamic-text="true">
       {categories.map(category => <CategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} onToggleExpand={() => toggleCategory(category.id)} onSelectVideo={onSelectVideo} onInlineVideoPlay={handleInlineVideoPlay} inlineVideoPlaying={inlineVideoPlaying} />)}
     </div>;
 }

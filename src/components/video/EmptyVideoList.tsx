@@ -1,7 +1,7 @@
 'use client';
 
 export function EmptyVideoList() {
-  return <p className="text-center py-8 text-muted-foreground" data-unique-id="7f5ef811-a04f-4e69-bd86-0d3557c73d58" data-file-name="components/video/EmptyVideoList.tsx"><span className="editable-text" data-unique-id="e1880e01-d6a3-478f-9ecf-c321ac2a9890" data-file-name="components/video/EmptyVideoList.tsx">
+  return <p className="text-center py-8 text-muted-foreground" data-unique-id="7b7e0d99-2851-4c74-82f2-1d76c7977372" data-file-name="components/video/EmptyVideoList.tsx"><span className="editable-text" data-unique-id="7c26b8e9-919b-4e3c-b827-b10426e2a40f" data-file-name="components/video/EmptyVideoList.tsx">
       Tidak ada video yang tersedia.
     </span></p>;
 }

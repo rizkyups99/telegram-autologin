@@ -59,22 +59,22 @@ export default function FallbackPDFViewer({
   };
   const renderPDFContent = () => {
     if (renderMethod === 'download') {
-      return <div className="flex flex-col items-center justify-center h-96 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300" data-unique-id="6ebabe5c-dbe6-4827-9a66-584b76fc9c22" data-file-name="components/FallbackPDFViewer.tsx">
-          <div className="text-center max-w-md" data-unique-id="e23ab405-f290-44bf-924e-b14730946c26" data-file-name="components/FallbackPDFViewer.tsx">
+      return <div className="flex flex-col items-center justify-center h-96 bg-blue-50 rounded-lg border-2 border-dashed border-blue-300" data-unique-id="64de268b-b9ed-43f4-a7ff-b4ee499ab490" data-file-name="components/FallbackPDFViewer.tsx">
+          <div className="text-center max-w-md" data-unique-id="64e6ff69-d8cc-4451-83c3-eadb43cdcaa1" data-file-name="components/FallbackPDFViewer.tsx">
             <FileText className="h-16 w-16 text-blue-500 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-blue-900 mb-2" data-unique-id="f5672e02-bdcb-4f6a-8935-334d7a1f6d31" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="2d7065a7-6343-4f02-bab3-b27b595b8b92" data-file-name="components/FallbackPDFViewer.tsx">
+            <h3 className="text-lg font-semibold text-blue-900 mb-2" data-unique-id="94d6f4f2-0f5e-444b-ad5a-adf05c430277" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="c93e582f-9a41-4930-bc11-817f310de803" data-file-name="components/FallbackPDFViewer.tsx">
               PDF Ready for Download
             </span></h3>
-            <p className="text-blue-700 mb-6" data-unique-id="a1e1067b-1960-425e-81e5-d0429acdafcd" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="aa9a28dd-8db1-4de8-a62c-26cbc10a6071" data-file-name="components/FallbackPDFViewer.tsx">
+            <p className="text-blue-700 mb-6" data-unique-id="6dd15c56-a15a-4058-9cc0-35e7ed39d069" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="a1167f3f-61d0-4652-8f7c-c6e2f657995f" data-file-name="components/FallbackPDFViewer.tsx">
               Your browser doesn't support inline PDF viewing. Download the file to view it with your device's PDF reader.
             </span></p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center" data-unique-id="58ed6091-ab1b-442f-8b91-84e0b681f3ac" data-file-name="components/FallbackPDFViewer.tsx">
-              <Button onClick={handleDownload} className="flex items-center gap-2" data-unique-id="a0cd7d67-6ca7-497d-aa8c-1724284ba6c5" data-file-name="components/FallbackPDFViewer.tsx">
-                <Download className="h-4 w-4" /><span className="editable-text" data-unique-id="ef337915-46a2-4dbf-80a8-9754ca7a9a61" data-file-name="components/FallbackPDFViewer.tsx">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center" data-unique-id="344ecd21-89c0-4a19-a0e3-fed73a3dc7fd" data-file-name="components/FallbackPDFViewer.tsx">
+              <Button onClick={handleDownload} className="flex items-center gap-2" data-unique-id="fc7c467e-be73-48d3-88c0-7ea78c736d06" data-file-name="components/FallbackPDFViewer.tsx">
+                <Download className="h-4 w-4" /><span className="editable-text" data-unique-id="783b82ea-ab2d-41e4-95b5-5073d0e94ef1" data-file-name="components/FallbackPDFViewer.tsx">
                 Download PDF
               </span></Button>
-              <Button variant="outline" onClick={openInNewTab} className="flex items-center gap-2" data-unique-id="4dfd72ee-117f-4e00-bc81-ceb498c19aa8" data-file-name="components/FallbackPDFViewer.tsx">
-                <ExternalLink className="h-4 w-4" /><span className="editable-text" data-unique-id="e8cb8751-33d3-4407-81a5-38ddc5f556fd" data-file-name="components/FallbackPDFViewer.tsx">
+              <Button variant="outline" onClick={openInNewTab} className="flex items-center gap-2" data-unique-id="8c8b92fc-060b-4677-a9af-eae60d4eedf3" data-file-name="components/FallbackPDFViewer.tsx">
+                <ExternalLink className="h-4 w-4" /><span className="editable-text" data-unique-id="170f9a7a-be84-4147-8c33-79cefd810b52" data-file-name="components/FallbackPDFViewer.tsx">
                 Open in New Tab
               </span></Button>
             </div>
@@ -82,15 +82,15 @@ export default function FallbackPDFViewer({
         </div>;
     }
     if (renderMethod === 'iframe') {
-      return <div className="relative" data-unique-id="befd918e-673d-4ac2-b1d0-61cd3de7c443" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
-          <iframe src={`${pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`} className="w-full h-96 border rounded-lg" title={title || 'PDF Document'} onError={() => setHasError(true)} onLoad={() => setHasError(false)} data-unique-id="74aee43b-233d-4fae-86cf-aed630698d58" data-file-name="components/FallbackPDFViewer.tsx" />
+      return <div className="relative" data-unique-id="0b181703-7305-4128-afaf-1085a1d67d88" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
+          <iframe src={`${pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`} className="w-full h-96 border rounded-lg" title={title || 'PDF Document'} onError={() => setHasError(true)} onLoad={() => setHasError(false)} data-unique-id="1853c3fb-fa2b-4443-9cd2-d28b21b7494b" data-file-name="components/FallbackPDFViewer.tsx" />
           
           {/* Overlay controls for mobile */}
-          <div className="absolute top-2 right-2 flex gap-2" data-unique-id="8a678221-3718-42f6-a879-b7b3a69f1418" data-file-name="components/FallbackPDFViewer.tsx">
-            <Button size="sm" variant="outline" onClick={handleDownload} className="bg-white/90 backdrop-blur-sm" data-unique-id="71ee56d4-37f9-478f-bc2a-0c428a7a92f9" data-file-name="components/FallbackPDFViewer.tsx">
+          <div className="absolute top-2 right-2 flex gap-2" data-unique-id="370f912d-0ed1-412b-b5fe-73b0fb095e1f" data-file-name="components/FallbackPDFViewer.tsx">
+            <Button size="sm" variant="outline" onClick={handleDownload} className="bg-white/90 backdrop-blur-sm" data-unique-id="6ff73fe7-67d2-4883-922f-2604a4f57c09" data-file-name="components/FallbackPDFViewer.tsx">
               <Download className="h-4 w-4" />
             </Button>
-            <Button size="sm" variant="outline" onClick={openInNewTab} className="bg-white/90 backdrop-blur-sm" data-unique-id="2d0aeacd-2d0a-4440-bf01-8931e2568441" data-file-name="components/FallbackPDFViewer.tsx">
+            <Button size="sm" variant="outline" onClick={openInNewTab} className="bg-white/90 backdrop-blur-sm" data-unique-id="1b59d974-cc3c-4de8-a844-76d210ec7530" data-file-name="components/FallbackPDFViewer.tsx">
               <ExternalLink className="h-4 w-4" />
             </Button>
           </div>
@@ -98,23 +98,23 @@ export default function FallbackPDFViewer({
     }
 
     // Default embed method
-    return <div className="relative" data-unique-id="7b231c68-13dc-48e2-8fd7-0f87afc1b761" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
-        <embed src={`${pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`} type="application/pdf" className="w-full h-96 border rounded-lg" onError={() => setHasError(true)} data-unique-id="4efa2c65-5941-47ea-aa8b-1a50faf48281" data-file-name="components/FallbackPDFViewer.tsx" />
+    return <div className="relative" data-unique-id="f6847974-87e9-4d63-af59-ca2236d3bc6b" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
+        <embed src={`${pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`} type="application/pdf" className="w-full h-96 border rounded-lg" onError={() => setHasError(true)} data-unique-id="1201dfee-675e-419d-b080-2010b013661f" data-file-name="components/FallbackPDFViewer.tsx" />
         
         {/* Fallback for when embed fails */}
-        {hasError && <div className="absolute inset-0 flex items-center justify-center bg-gray-50 border rounded-lg" data-unique-id="a0e36d76-6f8f-426a-a6a0-6f1b1afacfe1" data-file-name="components/FallbackPDFViewer.tsx">
-            <div className="text-center" data-unique-id="29385e3c-bb2a-4069-8f71-acb6e8cf1744" data-file-name="components/FallbackPDFViewer.tsx">
+        {hasError && <div className="absolute inset-0 flex items-center justify-center bg-gray-50 border rounded-lg" data-unique-id="8f9a1604-c8ea-4070-9069-d2330914cbeb" data-file-name="components/FallbackPDFViewer.tsx">
+            <div className="text-center" data-unique-id="289a4ca5-bffc-4fc0-a073-6537adea10aa" data-file-name="components/FallbackPDFViewer.tsx">
               <AlertCircle className="h-12 w-12 text-orange-500 mx-auto mb-4" />
-              <p className="text-gray-600 mb-4" data-unique-id="024ac8e0-0977-49e6-b309-0ec1e8c2ca2d" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="2b5bb9df-fbea-4e32-9eba-61340a15847a" data-file-name="components/FallbackPDFViewer.tsx">
+              <p className="text-gray-600 mb-4" data-unique-id="515ec58c-cf4c-4875-802c-fde17ddffb05" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="32b8a6e3-90a3-46c4-9666-4057da747c8d" data-file-name="components/FallbackPDFViewer.tsx">
                 Unable to display PDF in browser
               </span></p>
-              <div className="flex gap-2 justify-center" data-unique-id="05ac7cc7-55e8-4f83-8216-5b2f98da1c98" data-file-name="components/FallbackPDFViewer.tsx">
-                <Button onClick={handleDownload} data-unique-id="75902b2a-5045-4784-9905-02850e393107" data-file-name="components/FallbackPDFViewer.tsx">
-                  <Download className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="e25e0763-19f5-4b5b-8e4b-4ba340490503" data-file-name="components/FallbackPDFViewer.tsx">
+              <div className="flex gap-2 justify-center" data-unique-id="928066d3-324c-45dc-ba5b-d1728926e942" data-file-name="components/FallbackPDFViewer.tsx">
+                <Button onClick={handleDownload} data-unique-id="0b6dd688-f0b3-4aa7-9605-c0bc698680ff" data-file-name="components/FallbackPDFViewer.tsx">
+                  <Download className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="4b70bd92-2053-44a6-8bf6-c47594c89d7c" data-file-name="components/FallbackPDFViewer.tsx">
                   Download PDF
                 </span></Button>
-                <Button variant="outline" onClick={openInNewTab} data-unique-id="db2d2f56-7a51-4c1a-aa83-e5c435ed9d43" data-file-name="components/FallbackPDFViewer.tsx">
-                  <ExternalLink className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="4873eee6-9b27-403d-b73d-7f6185da2249" data-file-name="components/FallbackPDFViewer.tsx">
+                <Button variant="outline" onClick={openInNewTab} data-unique-id="b16c9b7a-5f1d-4131-9aa7-cbcee75f38b2" data-file-name="components/FallbackPDFViewer.tsx">
+                  <ExternalLink className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="11d423f4-5233-4f5f-b3a9-7ec721392b40" data-file-name="components/FallbackPDFViewer.tsx">
                   Open in New Tab
                 </span></Button>
               </div>
@@ -123,25 +123,25 @@ export default function FallbackPDFViewer({
       </div>;
   };
   if (isLoading) {
-    return <div className="flex items-center justify-center h-96 bg-gray-50 rounded-lg" data-unique-id="554eb214-87a7-48d0-ba76-08457f92d7e0" data-file-name="components/FallbackPDFViewer.tsx">
-        <div className="text-center" data-unique-id="47db5f85-9d6c-43b1-947f-3f02415b4001" data-file-name="components/FallbackPDFViewer.tsx">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4" data-unique-id="f3723509-0cae-4eac-a6a5-3649ec35b61e" data-file-name="components/FallbackPDFViewer.tsx"></div>
-          <p className="text-gray-600" data-unique-id="bcac967c-ebb9-4a2a-a9dc-5b879490349b" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="880d96a6-471c-4a1a-8be7-532f606d9222" data-file-name="components/FallbackPDFViewer.tsx">Preparing PDF viewer...</span></p>
+    return <div className="flex items-center justify-center h-96 bg-gray-50 rounded-lg" data-unique-id="8d856a7c-53c5-48d4-9a14-4357525a03c4" data-file-name="components/FallbackPDFViewer.tsx">
+        <div className="text-center" data-unique-id="3ea0cae2-3a44-49d5-b810-eb7ac03e211a" data-file-name="components/FallbackPDFViewer.tsx">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4" data-unique-id="49a70ceb-854c-472f-af57-9b375fa11fcc" data-file-name="components/FallbackPDFViewer.tsx"></div>
+          <p className="text-gray-600" data-unique-id="2b4369fd-b93b-45da-b315-f1baaed32a7b" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="e427cf33-9c12-4aa9-939d-57cee93d0d4f" data-file-name="components/FallbackPDFViewer.tsx">Preparing PDF viewer...</span></p>
         </div>
       </div>;
   }
-  return <div className="bg-white" data-unique-id="413b5a68-2485-4a58-9612-d9880ebc33b9" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
+  return <div className="bg-white" data-unique-id="72d5c515-9230-4531-b1c3-e31c195d9b7b" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
       {/* Header with title and actions */}
-      {title && <div className="border-b bg-gray-50 px-4 py-3 rounded-t-lg" data-unique-id="6243f445-e0df-4664-9572-19db2c94433d" data-file-name="components/FallbackPDFViewer.tsx">
-          <div className="flex items-center justify-between" data-unique-id="4972f828-7899-442e-8ea6-acd731b7c015" data-file-name="components/FallbackPDFViewer.tsx">
-            <h3 className="font-medium text-gray-900" data-unique-id="b6fb5d49-86cd-43e5-8822-b66931243413" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">{title}</h3>
-            <div className="flex gap-2" data-unique-id="d0527057-abef-40f9-9e3d-c78811acbe67" data-file-name="components/FallbackPDFViewer.tsx">
-              <Button size="sm" variant="outline" onClick={handleDownload} data-unique-id="5d348439-2cfe-42e0-be70-75a6de50e5e0" data-file-name="components/FallbackPDFViewer.tsx">
-                <Download className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="f0c0e21a-be59-4793-9baa-354c9e59db69" data-file-name="components/FallbackPDFViewer.tsx">
+      {title && <div className="border-b bg-gray-50 px-4 py-3 rounded-t-lg" data-unique-id="ff27d136-dfd2-43fa-b0cf-c9250959a4e4" data-file-name="components/FallbackPDFViewer.tsx">
+          <div className="flex items-center justify-between" data-unique-id="53d7e5ea-801f-49f2-9525-87bdf3394e9d" data-file-name="components/FallbackPDFViewer.tsx">
+            <h3 className="font-medium text-gray-900" data-unique-id="68f22fd8-8e00-4012-86bb-b89c64edd66e" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">{title}</h3>
+            <div className="flex gap-2" data-unique-id="8c993497-c2dc-44e4-aeb1-399a682d4a17" data-file-name="components/FallbackPDFViewer.tsx">
+              <Button size="sm" variant="outline" onClick={handleDownload} data-unique-id="a83c49ba-c7ba-4e5a-8643-c7956f92b06d" data-file-name="components/FallbackPDFViewer.tsx">
+                <Download className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="8ca85f12-7f48-4761-8d38-815e64f99c5e" data-file-name="components/FallbackPDFViewer.tsx">
                 Download
               </span></Button>
-              <Button size="sm" variant="outline" onClick={openInNewTab} data-unique-id="2f797e33-d04b-49c7-9e60-ed57553cfe2f" data-file-name="components/FallbackPDFViewer.tsx">
-                <ExternalLink className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="1375569e-db94-428c-9bfd-b534d997ba05" data-file-name="components/FallbackPDFViewer.tsx">
+              <Button size="sm" variant="outline" onClick={openInNewTab} data-unique-id="47753a3c-2b6c-44a7-be40-63b32325b946" data-file-name="components/FallbackPDFViewer.tsx">
+                <ExternalLink className="h-4 w-4 mr-2" /><span className="editable-text" data-unique-id="e6626728-9dfb-4493-9f94-17a543d41957" data-file-name="components/FallbackPDFViewer.tsx">
                 Open in Tab
               </span></Button>
             </div>
@@ -149,22 +149,22 @@ export default function FallbackPDFViewer({
         </div>}
 
       {/* PDF Content */}
-      <div className="p-4" data-unique-id="b8ad28c1-5f2f-4478-8c94-863c0ded3a41" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
+      <div className="p-4" data-unique-id="0e94203d-8aa7-493d-87cc-74d344a6d082" data-file-name="components/FallbackPDFViewer.tsx" data-dynamic-text="true">
         {renderPDFContent()}
       </div>
 
       {/* Browser compatibility info */}
-      <div className="px-4 pb-4" data-unique-id="72c3fb57-a63d-49f4-b721-84c0383b09d2" data-file-name="components/FallbackPDFViewer.tsx">
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3" data-unique-id="65c3b5d2-fca7-4c68-8c46-d5d032f8d573" data-file-name="components/FallbackPDFViewer.tsx">
-          <div className="flex items-start gap-2" data-unique-id="caa3ba38-8b1a-4f31-9b27-6929c16a4635" data-file-name="components/FallbackPDFViewer.tsx">
-            <div className="flex-shrink-0 mt-0.5" data-unique-id="a4155d00-a0f3-462e-8ebf-5e3add34b5ff" data-file-name="components/FallbackPDFViewer.tsx">
-              <svg className="h-4 w-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-unique-id="022a5407-587a-492f-9bd7-83c4c385a0a6" data-file-name="components/FallbackPDFViewer.tsx">
+      <div className="px-4 pb-4" data-unique-id="315aadd4-862e-4796-8c2f-ae39431861c0" data-file-name="components/FallbackPDFViewer.tsx">
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3" data-unique-id="d57a501b-bd99-48d8-bb79-8184d84035fd" data-file-name="components/FallbackPDFViewer.tsx">
+          <div className="flex items-start gap-2" data-unique-id="2d68fe4b-d6ff-4bb2-9601-e0544006e8b7" data-file-name="components/FallbackPDFViewer.tsx">
+            <div className="flex-shrink-0 mt-0.5" data-unique-id="41162aae-ff6d-47b8-a9a5-87d61fc354ff" data-file-name="components/FallbackPDFViewer.tsx">
+              <svg className="h-4 w-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-unique-id="0036376c-1ee6-41b2-bef2-2fb9c7812a8e" data-file-name="components/FallbackPDFViewer.tsx">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <div className="text-sm text-blue-800" data-unique-id="92b728fc-8928-4d54-be4d-7a24506ee44b" data-file-name="components/FallbackPDFViewer.tsx">
-              <p className="font-medium" data-unique-id="99b8c96d-c5a3-4a26-b3da-ff2f221ebdc5" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="561a0b6e-4015-4b19-8d44-5e21b515b239" data-file-name="components/FallbackPDFViewer.tsx">Browser Compatibility Notice</span></p>
-              <p className="mt-1" data-unique-id="cee6ec98-a57a-4527-98d9-3e5aa9fda174" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="264ed6f4-2cfc-4b75-a055-21955f2340e7" data-file-name="components/FallbackPDFViewer.tsx">
+            <div className="text-sm text-blue-800" data-unique-id="d45c771e-c495-4d89-8ea5-ebdf65da0621" data-file-name="components/FallbackPDFViewer.tsx">
+              <p className="font-medium" data-unique-id="bbd82b38-1e5a-4287-84ac-31a939a658a5" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="cab6ffb9-d9eb-4ed9-ae51-be57271fcae8" data-file-name="components/FallbackPDFViewer.tsx">Browser Compatibility Notice</span></p>
+              <p className="mt-1" data-unique-id="a2bf4e78-89f7-4e2a-8ce8-12a0bf00822a" data-file-name="components/FallbackPDFViewer.tsx"><span className="editable-text" data-unique-id="6b7c514a-beae-44fa-adaf-3620db858266" data-file-name="components/FallbackPDFViewer.tsx">
                 This is a fallback PDF viewer. For the best experience, consider downloading the PDF or opening it in a new tab.
               </span></p>
             </div>

@@ -16,23 +16,23 @@ export default function StatisticsPanel() {
     setSelectedMonth
   } = useStatistics();
   if (isLoading) {
-    return <div className="flex justify-center items-center h-64" data-unique-id="7b6a213e-7eb8-4f7c-804b-93b0f44acd5a" data-file-name="components/StatisticsPanel.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="bbe494de-6893-4f94-a2a9-a942166fb3e7" data-file-name="components/StatisticsPanel.tsx"></div>
+    return <div className="flex justify-center items-center h-64" data-unique-id="0cfb35e1-ee19-4418-b104-abcdd4c70e7b" data-file-name="components/StatisticsPanel.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="e8e4ce44-1031-4a24-88bc-17b4673e2af3" data-file-name="components/StatisticsPanel.tsx"></div>
       </div>;
   }
   if (error || !data) {
-    return <div className="text-center py-8" data-unique-id="8bf4820f-8d0b-4e93-a190-dcc79ffa5b70" data-file-name="components/StatisticsPanel.tsx">
-        <p className="text-muted-foreground" data-unique-id="4b24a22b-71bb-420b-af1e-7994005c2e01" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{error || 'Failed to load statistics data'}</p>
+    return <div className="text-center py-8" data-unique-id="00611987-1253-46a3-a1fe-7eeeeed4108f" data-file-name="components/StatisticsPanel.tsx">
+        <p className="text-muted-foreground" data-unique-id="4e4d09d8-95de-453a-8e67-3a6fb9da3861" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">{error || 'Failed to load statistics data'}</p>
       </div>;
   }
-  return <div className="space-y-6" data-unique-id="0148a97b-024b-440a-b6d4-1618d5a8bc5f" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
+  return <div className="space-y-6" data-unique-id="7556415e-a315-4d5a-998b-8e661a1bfb06" data-file-name="components/StatisticsPanel.tsx" data-dynamic-text="true">
       {/* Summary Cards */}
       <StatisticsSummaryCards monthlyData={data.monthlyData} />
 
       {/* Charts */}
       <StatisticsCharts monthlyData={data.monthlyData} />
 
-      {/* Category Statistics */}
+      {/* Category Statistics (Regular + Cloud) */}
       <StatisticsCategoryList categorySummary={data.categorySummary} selectedYear={selectedYear} selectedMonth={selectedMonth} onYearChange={setSelectedYear} onMonthChange={setSelectedMonth} />
 
       {/* User Category Distribution */}

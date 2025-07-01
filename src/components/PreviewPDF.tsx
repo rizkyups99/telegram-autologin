@@ -126,19 +126,19 @@ export default function PreviewPDF({
     }));
   };
   if (isLoading) {
-    return <div className="flex justify-center py-8" data-unique-id="feb174bf-b405-492e-97e2-04272427d9a6" data-file-name="components/PreviewPDF.tsx">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="c4eb6201-72eb-4f17-8339-ede1ff963bb1" data-file-name="components/PreviewPDF.tsx"></div>
+    return <div className="flex justify-center py-8" data-unique-id="68a7da55-ea40-4185-9c25-0f7a614903aa" data-file-name="components/PreviewPDF.tsx">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="451d8d64-69fa-4fa8-9b20-fe48db6b40c7" data-file-name="components/PreviewPDF.tsx"></div>
       </div>;
   }
   if (pdfsByCategory.length === 0) {
-    return <p className="text-center py-8 text-muted-foreground" data-unique-id="68999626-357a-4b62-bd0a-91c02de55483" data-file-name="components/PreviewPDF.tsx"><span className="editable-text" data-unique-id="50c70258-bd76-421e-b961-4b6d321e52fd" data-file-name="components/PreviewPDF.tsx">
+    return <p className="text-center py-8 text-muted-foreground" data-unique-id="a0844f6f-6a11-4223-852e-f14c52dbb194" data-file-name="components/PreviewPDF.tsx"><span className="editable-text" data-unique-id="badf6d27-b72b-464c-95b3-b9aec23c89e4" data-file-name="components/PreviewPDF.tsx">
         Tidak ada PDF yang tersedia.
       </span></p>;
   }
   if (selectedPDF) {
-    return <div className="space-y-4" data-unique-id="3403c69a-746b-4320-b412-2f3853941b07" data-file-name="components/PreviewPDF.tsx">
-        <div className="flex items-center justify-between" data-unique-id="21064722-e142-4551-befd-86eaad1c3ba4" data-file-name="components/PreviewPDF.tsx">
-          <button onClick={() => setSelectedPDF(null)} className="text-blue-600 hover:text-blue-800 text-sm font-medium" data-unique-id="fc50eb0b-f05f-409a-9630-85ac51ec5f23" data-file-name="components/PreviewPDF.tsx"><span className="editable-text" data-unique-id="51b405a0-349c-4528-bd6b-6b191529f869" data-file-name="components/PreviewPDF.tsx">
+    return <div className="space-y-4" data-unique-id="61eb4c0c-77e6-4b5c-bf3e-ffe87e56b6cc" data-file-name="components/PreviewPDF.tsx">
+        <div className="flex items-center justify-between" data-unique-id="82857b05-6dac-412a-94b7-a37496d8cf69" data-file-name="components/PreviewPDF.tsx">
+          <button onClick={() => setSelectedPDF(null)} className="text-blue-600 hover:text-blue-800 text-sm font-medium" data-unique-id="ec0595ba-f651-4317-943f-247b71e56166" data-file-name="components/PreviewPDF.tsx"><span className="editable-text" data-unique-id="3a7afa1c-0e03-4883-8b11-7f8694f465da" data-file-name="components/PreviewPDF.tsx">
             ← Kembali ke daftar PDF
           </span></button>
         </div>
@@ -146,8 +146,8 @@ export default function PreviewPDF({
         <UniversalPDFViewerWrapper pdfUrl={selectedPDF.fileUrl} title={selectedPDF.title} onDownload={() => handleDownloadPDF(selectedPDF)} />
       </div>;
   }
-  return <div className="border rounded-lg p-6" data-unique-id="000b2b4c-4cd0-4b01-95fe-a79db8944051" data-file-name="components/PreviewPDF.tsx">
-      <div className="space-y-8" data-unique-id="a46031b0-14b4-417c-8c5d-14309b6a2515" data-file-name="components/PreviewPDF.tsx" data-dynamic-text="true">
+  return <div className="border rounded-lg p-6" data-unique-id="f9871b01-8cf6-42ac-999e-5548bdf3d536" data-file-name="components/PreviewPDF.tsx">
+      <div className="space-y-8" data-unique-id="f88eae39-ff74-4be1-8916-c9a18e129569" data-file-name="components/PreviewPDF.tsx" data-dynamic-text="true">
         {pdfsByCategory.map(category => <PDFCategoryItem key={category.id} category={category} isExpanded={!!expandedCategories[category.id]} toggleCategory={toggleCategory} onDownloadPDF={handleDownloadPDF} onReadPDF={handleReadPDF} downloadStatus={downloadStatus} currentReadingPDF={selectedPDF} />)}
       </div>
     </div>;

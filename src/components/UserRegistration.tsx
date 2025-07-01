@@ -4,10 +4,15 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import UserTable from './UserTable';
 import { User } from '@/db/schema';
-interface UserWithAccess extends User {
+interface UserWithAccess extends Omit<User, 'createdAt'> {
   audioCategoryIds?: number[];
   pdfCategoryIds?: number[];
   videoCategoryIds?: number[];
+  audioCloudCategoryIds?: number[];
+  pdfCloudCategoryIds?: number[];
+  fileCloudCategoryIds?: number[];
+  createdAt?: string;
+  created_at?: string;
 }
 export default function UserRegistration() {
   const [users, setUsers] = useState<UserWithAccess[]>([]);
@@ -30,18 +35,18 @@ export default function UserRegistration() {
       setIsLoading(false);
     }
   };
-  return <div className="space-y-6" data-unique-id="48c41bc2-7f95-4b04-8c94-f0c9fdc37314" data-file-name="components/UserRegistration.tsx">
-      <Card data-unique-id="c5c7b145-5eaf-4ee5-93d7-ca15e305a9dd" data-file-name="components/UserRegistration.tsx">
-        <CardHeader data-unique-id="64dc9c0b-9f13-4a04-aece-dbf51783fecf" data-file-name="components/UserRegistration.tsx">
-          <CardTitle data-unique-id="15d558f8-1169-4263-bbbb-86cf6ddf8a26" data-file-name="components/UserRegistration.tsx"><span className="editable-text" data-unique-id="1bef2070-9448-4d45-8c5c-cde40a0e8772" data-file-name="components/UserRegistration.tsx">Manajemen User</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="6cf4c406-9a9c-46b8-afbf-eb4f0ee9ff52" data-file-name="components/UserRegistration.tsx">
+  return <div className="space-y-6" data-unique-id="70f36a29-2d38-4c94-8c27-d5e36096d762" data-file-name="components/UserRegistration.tsx">
+      <Card data-unique-id="e1202db4-ea48-4752-b9e2-3a2bf8875ba3" data-file-name="components/UserRegistration.tsx">
+        <CardHeader data-unique-id="f95a9aca-c5f8-4618-bd7f-d0f677eb4e90" data-file-name="components/UserRegistration.tsx">
+          <CardTitle data-unique-id="495343a6-c35f-4820-9486-c0bb37233718" data-file-name="components/UserRegistration.tsx"><span className="editable-text" data-unique-id="2d278b82-026e-4cba-aa2b-135cd3803bd5" data-file-name="components/UserRegistration.tsx">Manajemen User</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="79b3ae56-5350-4dc2-abae-04d0cf79a73a" data-file-name="components/UserRegistration.tsx">
             Tambah, edit, dan kelola akun pengguna dengan akses ke kategori konten
           </span></CardDescription>
         </CardHeader>
-        <CardContent data-unique-id="6352b0ae-60e3-4e2e-ba3d-5ba7d0bbeac4" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
-          {isLoading && users.length === 0 ? <div className="flex justify-center py-8" data-unique-id="e97e26f2-1443-4957-984b-6cac146e684b" data-file-name="components/UserRegistration.tsx">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="d019d446-f498-4f06-b960-3e78928df511" data-file-name="components/UserRegistration.tsx"></div>
-            </div> : error ? <div className="bg-red-50 text-red-800 p-4 rounded-md" data-unique-id="dea57e9d-95da-449e-805a-04ed1e4b7d78" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
+        <CardContent data-unique-id="a65c9649-3350-4b51-ab60-9c0423074418" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
+          {isLoading && users.length === 0 ? <div className="flex justify-center py-8" data-unique-id="1c5a7c36-3e9e-4838-aef0-064c21f1d08f" data-file-name="components/UserRegistration.tsx">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="7ea759a3-4718-427d-a659-30efe72917f6" data-file-name="components/UserRegistration.tsx"></div>
+            </div> : error ? <div className="bg-red-50 text-red-800 p-4 rounded-md" data-unique-id="45b10651-eae5-4348-8c18-ec0857c2c62b" data-file-name="components/UserRegistration.tsx" data-dynamic-text="true">
               {error}
             </div> : <UserTable users={users} />}
         </CardContent>

@@ -487,101 +487,101 @@ export default function PDFManager() {
       setIsLoading(false);
     }
   };
-  return <div className="space-y-6" data-unique-id="c4fdaffa-80a7-4ef7-93c1-9a642a6b1f76" data-file-name="components/PDFManager.tsx">
-      <Card data-unique-id="2dcb59d8-b0dd-4147-963c-a2b53d372036" data-file-name="components/PDFManager.tsx">
-        <CardHeader data-unique-id="2fc5de4d-0ca2-407a-95a5-1f079934af82" data-file-name="components/PDFManager.tsx">
-          <CardTitle data-unique-id="e21a0c11-2957-4656-981b-a3dd5e85563e" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="e9bf86ca-90f3-4e64-a7a9-556e010e15bd" data-file-name="components/PDFManager.tsx">Manajemen Ebook PDF</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="4751d11f-8c64-4492-9165-f57a9c02e009" data-file-name="components/PDFManager.tsx">
+  return <div className="space-y-6" data-unique-id="f3195199-9b6e-4c97-ba74-79cab97a7278" data-file-name="components/PDFManager.tsx">
+      <Card data-unique-id="9a56b403-8041-43ad-9300-b1e93edc4c41" data-file-name="components/PDFManager.tsx">
+        <CardHeader data-unique-id="801b5027-fc83-46cc-8159-18a5e08bb9ad" data-file-name="components/PDFManager.tsx">
+          <CardTitle data-unique-id="ac8e0f02-1da1-41ba-89cd-91a3cac31573" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="71574382-3af5-4f34-bb48-472d36581b03" data-file-name="components/PDFManager.tsx">Manajemen Ebook PDF</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="c6241241-3eae-416b-8af9-ce1990fa98ce" data-file-name="components/PDFManager.tsx">
             Upload dan kelola ebook PDF untuk pengguna
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="ef61063a-2032-444b-a59b-88f9d52a1555" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="97ec34b4-e213-4a1f-b4ba-3ee97e7629f0" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
           {/* PDF Recovery Tool */}
           <PDFRecoveryTool />
           
           {/* Form for creating/editing PDFs */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="d967ac5d-0011-4302-b6fa-ad9869c38241" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="d84bb5b9-de9c-4ac6-826b-fccda79d7842" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="9885db68-52a2-45ca-8f83-dd5c67790cb3" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="9810c411-6bbb-4c13-b321-105fd03f45c7" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
               {isCreating ? "Upload PDF Baru" : "Upload PDF"}
             </h3>
-            <div className="space-y-4" data-unique-id="72222ca5-d82c-4af1-96f1-081a9931a251" data-file-name="components/PDFManager.tsx">
-              <div data-unique-id="e683c728-8723-4b2a-9063-0cd7f7add99a" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="45f89b02-26eb-48bd-9378-19fe31d8e8d8" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="e68c54d8-f7ef-416c-b849-963e5435ad44" data-file-name="components/PDFManager.tsx">Judul PDF</span></Label>
-                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Masukkan judul PDF" className="w-full" data-unique-id="cc5fc9cc-df82-4b52-ad2b-a1e13a141fa2" data-file-name="components/PDFManager.tsx" />
+            <div className="space-y-4" data-unique-id="b50dd55c-8b47-4178-ac5c-f268f7569551" data-file-name="components/PDFManager.tsx">
+              <div data-unique-id="5594ec0c-7e3a-4a21-a204-9c32069e3370" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="title" className="block text-sm font-medium mb-1" data-unique-id="e74afd7a-c7e8-4139-903a-8601229330ff" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="94377ec3-8fc0-41e4-b991-70a34d6831bd" data-file-name="components/PDFManager.tsx">Judul PDF</span></Label>
+                <Input id="title" name="title" value={formData.title} onChange={handleInputChange} placeholder="Masukkan judul PDF" className="w-full" data-unique-id="11c2f605-2d2e-45c3-a808-37b7448c6433" data-file-name="components/PDFManager.tsx" />
               </div>
               
-              <div data-unique-id="bef73fce-5b49-444d-9064-9a5fb661be12" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="5523068a-9ef0-4437-acd1-aa7619b85442" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="40b6c46f-aebe-4e0e-bab2-dbdab2ed1de9" data-file-name="components/PDFManager.tsx">Kategori</span></Label>
-                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="8eda8523-43fe-4bbb-a946-d0a214f4772b" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="9147f9fa-f861-4acb-a8eb-db859269b226" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="6559442e-b082-4e14-ac40-f0041782b8e6" data-file-name="components/PDFManager.tsx">Pilih Kategori</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="b9201373-f901-428e-bad5-14c7a869af8e" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="ecdcd9ae-9f74-4f49-8dc6-438366f14a64" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="categoryId" className="block text-sm font-medium mb-1" data-unique-id="8ac5d539-492d-407c-ba44-b83aa9db79d5" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="0ac8c78f-3a2b-48f0-be94-cb643f345aed" data-file-name="components/PDFManager.tsx">Kategori</span></Label>
+                <select id="categoryId" name="categoryId" value={formData.categoryId} onChange={handleInputChange} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="ce30a492-4d5f-4a7b-bf0d-0cf61a09f14f" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="9024e419-9a46-4953-8bca-498191273f60" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="121c713c-acdc-4525-afde-c1ebfde1aa92" data-file-name="components/PDFManager.tsx">Pilih Kategori</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="7a1a92c6-20e3-41a4-9c19-e58346e75ed3" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
               
-              <div data-unique-id="b9d2a066-3089-43db-be92-7a01afde740c" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="coverFile" className="block text-sm font-medium mb-1" data-unique-id="d2044203-6c1b-47c9-bd79-f7d41a009b92" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="f6efad4a-15f4-40c0-bade-6ff48209e1b6" data-file-name="components/PDFManager.tsx">Cover PDF</span></Label>
-                <div className="flex items-center space-x-2" data-unique-id="77f9f68a-904b-4eb8-a687-e1f43a1e02bd" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  <Button type="button" variant="outline" onClick={() => coverInputRef.current?.click()} className="flex items-center" data-unique-id="9347c09b-d000-4a23-bd33-d5fc057dce1d" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                    <Image className="h-4 w-4 mr-2" data-unique-id="89704bd3-d690-4045-abd1-28a8fe96376a" data-file-name="components/PDFManager.tsx" />
+              <div data-unique-id="9a2e6f71-cc76-4ee8-85b6-61c7b455ab57" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="coverFile" className="block text-sm font-medium mb-1" data-unique-id="8e5f89e7-4092-4c8a-94fe-a6987d58035a" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="13fda580-77bb-4ff9-90ce-66006f45c04c" data-file-name="components/PDFManager.tsx">Cover PDF</span></Label>
+                <div className="flex items-center space-x-2" data-unique-id="fab38bf0-d772-4bcb-a871-b856a8d13e0b" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  <Button type="button" variant="outline" onClick={() => coverInputRef.current?.click()} className="flex items-center" data-unique-id="2c24463e-7698-4206-8b1d-050affc7e35f" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                    <Image className="h-4 w-4 mr-2" data-unique-id="7bd122a7-6824-4f29-a7d6-4e4464a2c6a5" data-file-name="components/PDFManager.tsx" />
                     {formData.coverFile ? 'Ganti Cover' : 'Pilih Cover'}
                   </Button>
-                  {formData.coverFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="f20aa2a1-c269-4a32-8e17-e2256bfccf5f" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  {formData.coverFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="09691382-73e4-485e-a710-901fd4adc91b" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                       {formData.coverFile.name}
-                      <span className="text-xs ml-1 text-green-600" data-unique-id="35f960c9-8e55-40eb-8f32-25750fd1c5c2" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="328fbe97-c943-437c-9107-9228c7e47669" data-file-name="components/PDFManager.tsx">(Akan diupload dengan nama unik)</span></span>
+                      <span className="text-xs ml-1 text-green-600" data-unique-id="fbe0ba09-035a-4683-a8c5-166e10cffb98" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="8a7908d6-e21f-4c2d-bc1d-b60ceb18625a" data-file-name="components/PDFManager.tsx">(Akan diupload dengan nama unik)</span></span>
                     </span>}
-                  {!formData.coverFile && formData.coverUrl && <div className="flex items-center" data-unique-id="5a4c1665-b78c-4087-9c72-c092a9c9aaf6" data-file-name="components/PDFManager.tsx">
-                      <span className="text-sm text-muted-foreground mr-2" data-unique-id="93590833-8ac3-4c52-a8f7-ad67ade136c0" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="f4163fa0-3fcc-459f-9fe6-c1c5af063ca1" data-file-name="components/PDFManager.tsx">Cover sudah ada</span></span>
-                      <img src={formData.coverUrl} alt="Cover" className="h-8 w-8 object-cover rounded" data-unique-id="5dfb3db9-44fb-40c6-9aac-91978be14f0b" data-file-name="components/PDFManager.tsx" />
+                  {!formData.coverFile && formData.coverUrl && <div className="flex items-center" data-unique-id="c1f2e09d-6ba1-4b17-8b92-f6793e3f2ede" data-file-name="components/PDFManager.tsx">
+                      <span className="text-sm text-muted-foreground mr-2" data-unique-id="437e6937-b83c-463b-a080-7387538da0ae" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="3a4b8d78-20a2-4f89-961c-63fa6958f745" data-file-name="components/PDFManager.tsx">Cover sudah ada</span></span>
+                      <img src={formData.coverUrl} alt="Cover" className="h-8 w-8 object-cover rounded" data-unique-id="fccd9bab-e17a-4869-b31b-f1be3dcc7c0c" data-file-name="components/PDFManager.tsx" />
                     </div>}
                 </div>
-                <input ref={coverInputRef} id="coverFile" name="coverFile" type="file" accept="image/*" onChange={e => handleFileChange(e, 'coverFile')} className="hidden" data-unique-id="2b6e7da3-10af-4a98-9f2b-dbdddbb6a1fb" data-file-name="components/PDFManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="7e928dc3-9c22-4a3b-bb7b-ed8cb7ab256b" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="74af9d5e-a80d-49dd-955f-e448b9e06cb7" data-file-name="components/PDFManager.tsx">
+                <input ref={coverInputRef} id="coverFile" name="coverFile" type="file" accept="image/*" onChange={e => handleFileChange(e, 'coverFile')} className="hidden" data-unique-id="b43821c4-e1d8-42f1-9e49-1169eeee53a7" data-file-name="components/PDFManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="d00403ba-068a-4d11-9619-2424d5e9b5e4" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="2d772c9a-0f7d-47e3-bf8a-05d9c82bde55" data-file-name="components/PDFManager.tsx">
                   Format gambar: JPG, PNG, atau GIF
                 </span></p>
               </div>
               
-              <div data-unique-id="3fd940a5-7996-4f09-a646-52f421d836e1" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="pdfFile" className="block text-sm font-medium mb-1" data-unique-id="c6dd2f81-c1cb-43e6-a033-c30e9be89673" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="daa271b8-71f6-46be-b96b-934de4d5e95e" data-file-name="components/PDFManager.tsx">File PDF</span></Label>
-                <div className="flex items-center space-x-2" data-unique-id="b3c7c938-58e8-49a4-8651-a68e73a60739" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  <Button type="button" variant="outline" onClick={() => pdfInputRef.current?.click()} className="flex items-center" data-unique-id="938c709f-57de-4ce5-856b-6d67ab62dbc0" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="ecd74131-d59a-42a3-87c0-f6f635299835" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="pdfFile" className="block text-sm font-medium mb-1" data-unique-id="e405f9a0-11a0-4dfc-a05e-bd57bd50aba9" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="f871f069-e1b1-4764-9e1e-0f9eb2a7ed95" data-file-name="components/PDFManager.tsx">File PDF</span></Label>
+                <div className="flex items-center space-x-2" data-unique-id="eb55e164-dd52-4642-a76e-2a015ffe16df" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  <Button type="button" variant="outline" onClick={() => pdfInputRef.current?.click()} className="flex items-center" data-unique-id="4682069b-2496-4a00-85c5-aff2ced8b4d3" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                     <FileText className="h-4 w-4 mr-2" />
                     {formData.pdfFile ? 'Ganti PDF' : 'Pilih PDF'}
                   </Button>
-                  {formData.pdfFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="d8a1d133-e2bf-4c53-8b00-f7634e95b4ac" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  {formData.pdfFile && <span className="text-sm text-muted-foreground font-medium" data-unique-id="6908a265-3ca4-4223-b5d5-8fb3e19c8dba" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                       {formData.pdfFile.name}
-                      <span className="text-xs ml-1 text-green-600" data-unique-id="10aa1b96-8166-4d62-a923-28ec261786dd" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="90f25af2-e1d2-4c23-8ebe-e3942f34e90d" data-file-name="components/PDFManager.tsx">(Akan diupload dengan nama unik)</span></span>
+                      <span className="text-xs ml-1 text-green-600" data-unique-id="56643116-3f5e-4d39-a2b3-84194af81e87" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="a2b3cb1c-74d6-4f08-a914-274aecb403a6" data-file-name="components/PDFManager.tsx">(Akan diupload dengan nama unik)</span></span>
                     </span>}
-                  {!formData.pdfFile && formData.fileUrl && <span className="text-sm text-muted-foreground" data-unique-id="d671c8ed-bcde-4a37-8bbd-af87fb508190" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="dfca2e23-2d09-4d7c-a610-1c1aa5f29d1b" data-file-name="components/PDFManager.tsx">
+                  {!formData.pdfFile && formData.fileUrl && <span className="text-sm text-muted-foreground" data-unique-id="e60f975e-00d5-4f32-9d4a-bdac04306810" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="553f1aa5-8943-4507-aee3-7dbc49391630" data-file-name="components/PDFManager.tsx">
                       File PDF sudah ada
                     </span></span>}
                 </div>
-                <input ref={pdfInputRef} id="pdfFile" name="pdfFile" type="file" accept="application/pdf" onChange={e => handleFileChange(e, 'pdfFile')} className="hidden" data-unique-id="041cd5b2-a384-440f-b780-321b1c0d8c42" data-file-name="components/PDFManager.tsx" />
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="bbb2ca1b-9b9f-49bc-8476-8f500de1fdcc" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="9eda217a-ad69-4be3-af92-beeb84f2da7b" data-file-name="components/PDFManager.tsx">
+                <input ref={pdfInputRef} id="pdfFile" name="pdfFile" type="file" accept="application/pdf" onChange={e => handleFileChange(e, 'pdfFile')} className="hidden" data-unique-id="c259c8bd-9846-4a52-a142-5cbddc4f0fc0" data-file-name="components/PDFManager.tsx" />
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="9a3a1b02-bdd7-4113-a42d-c46fe279c409" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="4c6e3789-2fda-41af-b19d-f4b7b824bd2c" data-file-name="components/PDFManager.tsx">
                   Format file: PDF
                 </span></p>
               </div>
               
-              <div className="flex justify-end space-x-2" data-unique-id="6529941d-eb35-4f56-a066-5271070aefca" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                {editingPDF !== null && <Button variant="outline" onClick={cancelEditing} disabled={isUploading} className="flex items-center gap-1" data-unique-id="782198b1-51f8-4461-8a83-8c1f7184e1eb" data-file-name="components/PDFManager.tsx">
+              <div className="flex justify-end space-x-2" data-unique-id="30163a00-b47a-417a-bd33-1bcd6497073f" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                {editingPDF !== null && <Button variant="outline" onClick={cancelEditing} disabled={isUploading} className="flex items-center gap-1" data-unique-id="763b2bd7-353b-4532-a1b7-6091447b8695" data-file-name="components/PDFManager.tsx">
                     <X className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="f21a4fa7-3267-4cad-9518-1f73786bc909" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="9ee37b37-8a77-46e5-b892-ad809c658e8f" data-file-name="components/PDFManager.tsx">Batal</span></span>
+                    <span className="hidden sm:inline" data-unique-id="c0a6331f-4870-4a13-939c-071b32cadabb" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="249e5415-14c5-42a3-a430-023e41f75dd8" data-file-name="components/PDFManager.tsx">Batal</span></span>
                   </Button>}
-                <Button onClick={editingPDF !== null ? () => updatePDF(editingPDF) : createPDF} disabled={isUploading || !formData.title || !formData.categoryId} className="flex items-center gap-1" data-unique-id="784959ab-a4ce-4bda-9d7c-91c21e79dad5" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  {isUploading ? <span className="flex items-center" data-unique-id="87647212-6455-4d28-ac43-5c53713d7d74" data-file-name="components/PDFManager.tsx">
-                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="88902097-b57c-4c04-a219-a505e1162519" data-file-name="components/PDFManager.tsx">
+                <Button onClick={editingPDF !== null ? () => updatePDF(editingPDF) : createPDF} disabled={isUploading || !formData.title || !formData.categoryId} className="flex items-center gap-1" data-unique-id="bddf9665-da47-46f3-8d5b-a247ad319199" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  {isUploading ? <span className="flex items-center" data-unique-id="26699eaf-a7f1-409e-9c61-209dd2126699" data-file-name="components/PDFManager.tsx">
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="3b751edd-fa7a-4765-bdd0-72e6c9e3bc30" data-file-name="components/PDFManager.tsx">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span className="hidden sm:inline" data-unique-id="bc34f4aa-e3db-4970-990e-c3f13da452a3" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="a03e79fc-148f-4493-8cc6-713d9902de98" data-file-name="components/PDFManager.tsx">Mengupload...</span></span>
+                      <span className="hidden sm:inline" data-unique-id="c031535c-9842-4624-98bd-528eb2a9898f" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="53781825-f12f-4d74-96da-8cea9a35b609" data-file-name="components/PDFManager.tsx">Mengupload...</span></span>
                     </span> : <>
                       {editingPDF !== null ? <>
                           <Save className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="d1a4cd09-09bc-40f3-a366-b3743f791a95" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="87b08185-4d8a-4746-b04f-20c2bdee1bbd" data-file-name="components/PDFManager.tsx">Perbarui PDF</span></span>
+                          <span className="hidden sm:inline" data-unique-id="2bf3753e-d84d-49d0-8c9a-b02bf30fef41" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="310724de-1fee-4e13-bb38-093d9b6f423f" data-file-name="components/PDFManager.tsx">Perbarui PDF</span></span>
                         </> : <>
                           <Upload className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="00b05173-aaa9-4f42-a6df-025b26fa73fb" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="3f60d8f1-6c37-49b7-930d-ef0487273447" data-file-name="components/PDFManager.tsx">Upload PDF</span></span>
+                          <span className="hidden sm:inline" data-unique-id="6b74c9b7-79f8-4e38-aa4e-cc43624481ae" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="b72a4984-0ad5-4d08-a1da-2ff6fc2531de" data-file-name="components/PDFManager.tsx">Upload PDF</span></span>
                         </>}
                     </>}
                 </Button>
@@ -589,19 +589,19 @@ export default function PDFManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="5f3d6519-4947-4bab-93fb-0188cb5322f0" data-file-name="components/PDFManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="dfab8304-7806-4c54-bfd5-b9bfd256f8f9" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="3ee93697-ea2e-44a0-b4e7-d96d8d32db0e" data-file-name="components/PDFManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="03c7cad0-7b3b-4052-9208-8d8f45bb31ee" data-file-name="components/PDFManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="93465478-0a06-4835-a2da-516819e4cde3" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="8399e073-4995-4609-9c76-6d3332ffe4b0" data-file-name="components/PDFManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="5c945bcc-dd3e-4437-9755-e8ee50cce8b8" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="a873c366-a83d-4d17-adc8-03ba7f36d12e" data-file-name="components/PDFManager.tsx">Previous</span></span>
+                    <span data-unique-id="14c32aee-d658-499b-b67a-e57d4210ba0a" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="2d28aa8d-e58e-414a-abeb-c3c9b265f7b9" data-file-name="components/PDFManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="6db963f5-a546-4417-93ed-c828170d6e57" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="481ac171-4d3c-4bb6-a3f6-2e8be8195d4a" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="dd2fae51-d46e-46d9-91d3-013d8b667bea" data-file-name="components/PDFManager.tsx">
-                    <span data-unique-id="64ff2f27-2d74-4339-8b7f-fae04bf05d70" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="7e43d9bf-e8d3-4635-bb63-eb445051c628" data-file-name="components/PDFManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="fb57fd91-d6b6-476c-af5a-dfdf8820bf47" data-file-name="components/PDFManager.tsx">
+                    <span data-unique-id="516da63a-453b-497a-a01b-aaf96f0d3344" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="40351a9e-4862-423d-9941-2af473b931c2" data-file-name="components/PDFManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>
@@ -609,33 +609,33 @@ export default function PDFManager() {
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="fa0eed3d-616e-412a-b1b3-e42fa06b0cab" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="ddf6d0b2-2398-45c9-9d69-d432767a519e" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="cf31c89f-62f2-4347-a176-0995df4b64c4" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="eb2eb1b5-abf2-46e1-852c-adb2bf7b8ce6" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
           {/* Search filters */}
-          <div className="bg-muted p-4 rounded-md" data-unique-id="a4a07da8-cbb2-4f00-82ce-1ae3391ac6ce" data-file-name="components/PDFManager.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="c645ffc1-88c4-457e-8c99-e3d9513eb195" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="73e80ceb-9a1d-42cc-b73c-2bbfe991790f" data-file-name="components/PDFManager.tsx">Filter Pencarian</span></h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="969d20ea-2372-4f41-b39d-4dcdd659e560" data-file-name="components/PDFManager.tsx">
-              <div data-unique-id="53cccfc5-9c71-4ca5-9379-295dcad6c3f8" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="0935ace0-6933-4a2e-b07d-3d0c69abc6a4" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="51dfb8fb-9f35-41bb-b595-c9038b6d66ac" data-file-name="components/PDFManager.tsx">Judul PDF</span></Label>
-                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Cari berdasarkan judul" data-unique-id="b1741323-4cde-4790-b200-643f785b7f62" data-file-name="components/PDFManager.tsx" />
+          <div className="bg-muted p-4 rounded-md" data-unique-id="c0f70625-b36a-4904-984d-a79c4289a9bb" data-file-name="components/PDFManager.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="db319041-6f3b-49d3-97b4-7c2ad3251eba" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="72c0f01a-0195-4dc2-baa0-4e93bed211f3" data-file-name="components/PDFManager.tsx">Filter Pencarian</span></h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-unique-id="1c93711e-52f3-4466-b576-3ec07a67c5fb" data-file-name="components/PDFManager.tsx">
+              <div data-unique-id="ed4e7f45-1e9d-49a6-be29-a88d82f7a458" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="searchTitle" className="block text-sm font-medium mb-1" data-unique-id="12a7e333-4011-48fd-9601-14e498aab578" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="c300bc2f-286d-462c-a3e3-092afa404804" data-file-name="components/PDFManager.tsx">Judul PDF</span></Label>
+                <Input id="searchTitle" value={searchTitle} onChange={e => setSearchTitle(e.target.value)} placeholder="Cari berdasarkan judul" data-unique-id="ddf9c6c2-07cf-49c3-bba4-d80ea72310d2" data-file-name="components/PDFManager.tsx" />
               </div>
-              <div data-unique-id="1bb0ad38-f933-4492-82e5-05773374930e" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="0dd5c047-5550-426c-91ff-5f08ceb2653b" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="e1adbde7-982d-408b-a89d-a3eb5d003c3c" data-file-name="components/PDFManager.tsx">Kategori</span></Label>
-                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="da9848ff-53e6-4d47-8b93-2f02393fd377" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  <option value="" data-unique-id="77b32b8a-80ec-4994-b339-fda6c9bb3332" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="65976857-e896-4a85-ba3a-66c954ed8daf" data-file-name="components/PDFManager.tsx">Semua Kategori</span></option>
-                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="dc307291-35a7-44c3-adb9-6f7144463c01" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+              <div data-unique-id="a84da2b6-0602-49c2-8c4d-83abd7d7cfe2" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="searchCategory" className="block text-sm font-medium mb-1" data-unique-id="9b6bab0d-d7e6-4750-88c0-bc0b8008b3ee" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="f155b1a6-63ed-4539-9c24-107d103fd135" data-file-name="components/PDFManager.tsx">Kategori</span></Label>
+                <select id="searchCategory" value={searchCategory} onChange={e => setSearchCategory(e.target.value)} className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="ccbe05c1-e4dd-4c27-bfdd-2384bc66af11" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  <option value="" data-unique-id="5f27c2da-6456-490c-9607-b80ed828e884" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="4d1c1f23-ee86-47cb-addf-1a303549acd8" data-file-name="components/PDFManager.tsx">Semua Kategori</span></option>
+                  {categories.map(category => <option key={category.id} value={category.id} data-is-mapped="true" data-unique-id="29501c34-e2cd-4955-ba16-457789f4c9c7" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                       {category.name}
                     </option>)}
                 </select>
               </div>
-              <div className="flex items-end space-x-2" data-unique-id="d2e43704-4344-43fd-9fdb-da4c7e91b88d" data-file-name="components/PDFManager.tsx">
-                <Button onClick={handleSearch} className="flex-1" data-unique-id="bb0cb90b-dd30-4cc2-817a-b05f1c2862a4" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="82ab56c1-3632-4989-bf2a-03d3eeee6f6b" data-file-name="components/PDFManager.tsx">
+              <div className="flex items-end space-x-2" data-unique-id="34b152a9-9c1a-4a92-ba01-f706c7a1c52c" data-file-name="components/PDFManager.tsx">
+                <Button onClick={handleSearch} className="flex-1" data-unique-id="8ddc497f-d466-47b3-aadb-a0f26ab70e35" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="908598b8-15ee-4b65-bf87-3fac3b3c3da0" data-file-name="components/PDFManager.tsx">
                   Cari
                 </span></Button>
-                <Button variant="outline" onClick={resetSearch} data-unique-id="30529e23-be38-480a-8f6b-ddc7e8e82881" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="d9fa2dc6-91ca-49a2-bb29-45fdee00d892" data-file-name="components/PDFManager.tsx">
+                <Button variant="outline" onClick={resetSearch} data-unique-id="8dd2bc72-698c-436f-95a8-b3decf2cb69e" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="a42dda49-38e2-4ec2-ab82-fa6e93dbb3d4" data-file-name="components/PDFManager.tsx">
                   Reset
                 </span></Button>
               </div>
@@ -643,41 +643,41 @@ export default function PDFManager() {
           </div>
 
           {/* PDFs list */}
-          <div data-unique-id="79c0ff3b-64e6-4562-9535-117a260b1b22" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-            <div className="flex items-center justify-between mb-4" data-unique-id="1a2818e7-3dbd-4236-85bd-5fafe6d2ea82" data-file-name="components/PDFManager.tsx">
-              <h3 className="text-lg font-medium" data-unique-id="37245358-d9ef-439e-bed9-a6a5e9dedb23" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="19803ced-d31c-4abd-8fae-675ea3cfdc55" data-file-name="components/PDFManager.tsx">
+          <div data-unique-id="e23b6523-17c0-45be-a155-26df365c6613" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+            <div className="flex items-center justify-between mb-4" data-unique-id="39b5aca2-1ab2-4200-b0e6-2b89a66daf46" data-file-name="components/PDFManager.tsx">
+              <h3 className="text-lg font-medium" data-unique-id="8bda9f12-a82e-4e72-b5a9-8e20178f7831" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="97e2e3fc-2e67-483a-90be-a75fe1a9c7db" data-file-name="components/PDFManager.tsx">
                 Daftar Ebook PDF
-                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="c74e8641-fbb1-4a1a-be63-75ed4aa85be9" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="2f4f3d53-4492-4a1f-b095-4f3e1da4dc9e" data-file-name="components/PDFManager.tsx">
-                  (</span>{pdfs.length}<span className="editable-text" data-unique-id="673a78da-d72f-4869-9651-396546ccfa11" data-file-name="components/PDFManager.tsx"> file)
+                </span><span className="ml-2 text-sm font-normal text-muted-foreground" data-unique-id="e9430ded-f8b3-4d4c-a1d2-df2a243ac236" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"><span className="editable-text" data-unique-id="9306ea26-01fb-4e6c-b1c7-e9e74cf90d45" data-file-name="components/PDFManager.tsx">
+                  (</span>{pdfs.length}<span className="editable-text" data-unique-id="04bea8ac-20c5-43f0-85bd-4647f27b562e" data-file-name="components/PDFManager.tsx"> file)
                 </span></span>
               </h3>
-              <div className="flex items-center gap-2" data-unique-id="0b17f6ba-3a04-43c5-95b9-bad8a0c33a58" data-file-name="components/PDFManager.tsx">
-                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="e1f762be-9c51-4193-8cfb-72ffef7652e7" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="13a06d96-7bfe-4f9f-be16-e082d9ab7ad5" data-file-name="components/PDFManager.tsx">Tampilkan:</span></Label>
-                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="2ad9cd6e-2397-43bf-a02b-2b371999f1f7" data-file-name="components/PDFManager.tsx">
-                  <option value={10} data-unique-id="dfddab24-ca0a-4e75-94ab-ebfdac53835a" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="4b2728b5-d9c2-41a7-b234-1c9d401d76f9" data-file-name="components/PDFManager.tsx">10</span></option>
-                  <option value={50} data-unique-id="26c74ada-d0ff-4ee9-a255-ab5b2f8d370c" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="e086b913-70cf-4808-a65e-2ef1ddaf1e1d" data-file-name="components/PDFManager.tsx">50</span></option>
-                  <option value={100} data-unique-id="4358da7a-2cb5-4940-bba0-4f8b9841e2bd" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="3716e9dd-c543-491d-bf72-89e6b8642ba6" data-file-name="components/PDFManager.tsx">100</span></option>
+              <div className="flex items-center gap-2" data-unique-id="bf04a43e-d914-43e4-812c-cb3e146d5e75" data-file-name="components/PDFManager.tsx">
+                <Label htmlFor="itemsPerPage" className="text-sm" data-unique-id="7324e5ea-9b5e-450c-bcc4-8132694ed87f" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="deb3715a-3bb4-43d6-8e8e-626086c084f9" data-file-name="components/PDFManager.tsx">Tampilkan:</span></Label>
+                <select id="itemsPerPage" value={itemsPerPage} onChange={handleItemsPerPageChange} className="h-8 rounded-md border border-input bg-background px-2 py-1 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-unique-id="f7134a30-50bf-4306-be01-075ad1963b64" data-file-name="components/PDFManager.tsx">
+                  <option value={10} data-unique-id="b11026ca-5f08-475a-9707-e239a25da55b" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="850bfac2-fad1-4433-93e0-fd4cbb05024a" data-file-name="components/PDFManager.tsx">10</span></option>
+                  <option value={50} data-unique-id="5580184c-ecbf-48ee-ac9a-baa5039695e6" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="027e5cff-742e-4f38-b951-7304de52a804" data-file-name="components/PDFManager.tsx">50</span></option>
+                  <option value={100} data-unique-id="1e3f9475-400b-434c-87d3-6b98e528dd12" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="84854c82-56ed-4ab7-ba1a-60034ba0fb83" data-file-name="components/PDFManager.tsx">100</span></option>
                 </select>
               </div>
             </div>
-            <div className="overflow-x-auto" data-unique-id="cd0495af-b055-47bc-ac3d-c7cda69312df" data-file-name="components/PDFManager.tsx">
-              <Table data-unique-id="4400acc3-dca8-49df-b269-019fb31653d1" data-file-name="components/PDFManager.tsx">
+            <div className="overflow-x-auto" data-unique-id="de06fddc-1517-41cd-ba27-f2135e9179df" data-file-name="components/PDFManager.tsx">
+              <Table data-unique-id="d96ca894-37eb-4055-a4a1-a9aaa57e123e" data-file-name="components/PDFManager.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="77736f03-c8fa-45e5-a945-5f3ed1332564" data-file-name="components/PDFManager.tsx">No.</span></TableHead>
-                    <TableHead className="w-[100px]"><span className="editable-text" data-unique-id="92f4364a-4499-4cb2-af92-a96998b344ab" data-file-name="components/PDFManager.tsx">Cover PDF</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="25e8e9a3-cb65-4dfd-b235-0318c9d38cb8" data-file-name="components/PDFManager.tsx">Judul PDF</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="9322a3ee-baf7-4c87-b52b-26ed7414d337" data-file-name="components/PDFManager.tsx">URL Cover</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="e86edbc0-b103-47b7-95b3-c88d9d5d7e49" data-file-name="components/PDFManager.tsx">URL File</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="54a15564-becc-4a18-bc39-f77533b3672c" data-file-name="components/PDFManager.tsx">Kategori</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="409b28ba-7736-4b22-9d53-122e699848db" data-file-name="components/PDFManager.tsx">Aksi</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="b0cf96f8-18e4-4dd9-b866-01b1d6f2bc60" data-file-name="components/PDFManager.tsx">No.</span></TableHead>
+                    <TableHead className="w-[100px]"><span className="editable-text" data-unique-id="e3e8c0a9-f7fc-4c36-8abe-ac596120716f" data-file-name="components/PDFManager.tsx">Cover PDF</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="0fa03254-836f-4ff9-8589-04d5bf10c9cf" data-file-name="components/PDFManager.tsx">Judul PDF</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="23318feb-e845-4446-839a-99633a8b5f55" data-file-name="components/PDFManager.tsx">URL Cover</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="9cd1661e-6b00-4270-bb1d-7dd993833632" data-file-name="components/PDFManager.tsx">URL File</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="8e2e41ea-0fcd-4eb6-a5cf-c857881fcc6c" data-file-name="components/PDFManager.tsx">Kategori</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="8ce416ae-fdb9-4675-9be8-520ca63c6447" data-file-name="components/PDFManager.tsx">Aksi</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={7} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="fa60f2e5-b2e0-4110-9e78-3fc1c697b451" data-file-name="components/PDFManager.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="d1980153-4632-4c46-8b5e-ff29e66b870d" data-file-name="components/PDFManager.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="f90dfb09-32f7-4cae-8445-e43c9d76016d" data-file-name="components/PDFManager.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="01d2f693-f290-4124-9c45-5a7fa78b4541" data-file-name="components/PDFManager.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -685,46 +685,46 @@ export default function PDFManager() {
                         {error}
                       </TableCell>
                     </TableRow> : pdfs.length === 0 ? <TableRow>
-                      <TableCell colSpan={7} className="text-center py-8"><span className="editable-text" data-unique-id="e21a42a4-b687-4e3d-aca2-78bb746884c9" data-file-name="components/PDFManager.tsx">
+                      <TableCell colSpan={7} className="text-center py-8"><span className="editable-text" data-unique-id="8ce4a26b-c8e9-416b-b626-f4a985788bf9" data-file-name="components/PDFManager.tsx">
                         Belum ada PDF. Silakan tambahkan PDF baru.
                       </span></TableCell>
-                    </TableRow> : Array.isArray(pdfs) && pdfs.map((pdf, index) => <TableRow key={pdf.id} data-unique-id="27f795c9-14a4-4122-8588-9695053981a5" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="471b6df3-d5a1-4690-91dc-13465c1e0097" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{index + 1}</TableCell>
-                        <TableCell data-unique-id="f73a72c6-c182-451a-8ff8-d0a0fa26bec6" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                          <img src={pdf.coverUrl} alt={pdf.title} className="h-16 w-12 object-cover rounded" data-is-mapped="true" data-unique-id="715eff41-8d0b-47ff-a5a1-81c70e7f2ab1" data-file-name="components/PDFManager.tsx" />
+                    </TableRow> : Array.isArray(pdfs) && pdfs.map((pdf, index) => <TableRow key={pdf.id} data-unique-id="2d9f1b9e-2cca-46c6-a84f-f9fe9afb0f1d" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="22bb4577-041d-4eb9-8e12-5cfe114743e6" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{index + 1}</TableCell>
+                        <TableCell data-unique-id="d54e5176-e22f-440e-9c9d-14435450936a" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                          <img src={pdf.coverUrl} alt={pdf.title} className="h-16 w-12 object-cover rounded" data-is-mapped="true" data-unique-id="5a354d28-a594-4547-a47b-ae692a7ae961" data-file-name="components/PDFManager.tsx" />
                         </TableCell>
-                        <TableCell className="font-medium" data-unique-id="27a8f5d4-93d8-4712-bfd9-bbcc1fd1235b" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{pdf.title}</TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="dd8158f1-54bb-4057-9921-e09e9bb677a1" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                          <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="8b31cad2-6971-4e95-96b6-fde39fd6e64b" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                        <TableCell className="font-medium" data-unique-id="139d8137-7622-4225-946c-9df9b765c12b" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{pdf.title}</TableCell>
+                        <TableCell className="hidden md:table-cell" data-unique-id="a45830f2-4937-48f9-a005-9627a84e25ca" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                          <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="8f4d6694-1a54-47a2-8a0e-b1c7f093b725" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                             {pdf.coverUrl}
                           </div>
                         </TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="7e9889fd-9f79-4b57-a286-ea8fa96dec2a" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                          <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="fee3e5f6-7fe5-4746-a6df-2763b7d99f0c" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                        <TableCell className="hidden md:table-cell" data-unique-id="f611fa6d-0f8b-4e39-867f-d2f8ec0922c5" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                          <div className="max-w-[200px] truncate" data-is-mapped="true" data-unique-id="9f453779-45c3-4b27-b9b7-5d614f6efb29" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                             {pdf.fileUrl}
                           </div>
                         </TableCell>
-                        <TableCell data-unique-id="9ffcb79a-a5bf-4a89-9bd8-70bd6d05c4fd" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{pdf.categoryName}</TableCell>
-                        <TableCell className="text-right" data-unique-id="e9540bbc-18e5-44be-b19a-c097824c8691" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="ad08528a-3d59-4e59-a61b-4d2329077210" data-file-name="components/PDFManager.tsx">
+                        <TableCell data-unique-id="42874df8-2106-49be-9405-214ee0036ecd" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">{pdf.categoryName}</TableCell>
+                        <TableCell className="text-right" data-unique-id="3b9a0170-b631-4863-8ea4-855a20c4c233" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="feb3d1f8-9f87-496c-a755-1e385dc7d0a4" data-file-name="components/PDFManager.tsx">
                             <Button variant="outline" size="sm" onClick={() => {
                         // Open in a new tab with a timestamp parameter to avoid caching issues
                         window.open(`/pdf-viewer?id=${pdf.id}&t=${Date.now()}`, '_blank');
-                      }} className="flex items-center" title="View PDF" data-is-mapped="true" data-unique-id="359787fb-a095-4a65-966f-a3f7b9864f90" data-file-name="components/PDFManager.tsx">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-is-mapped="true" data-unique-id="ff7c2ba4-972d-44f2-a5a1-31e7fa7b1f7f" data-file-name="components/PDFManager.tsx">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-unique-id="97536c14-66b7-496e-a494-05458babd0ff" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"></path>
-                                <polyline points="15 3 21 3 21 9" data-unique-id="d85e557b-4bf3-4f67-9fb5-8f3359a8f5ee" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3" data-unique-id="1eacfaed-fe05-4751-8d94-6c156f0cb6f2" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"></line>
+                      }} className="flex items-center" title="View PDF" data-is-mapped="true" data-unique-id="adee1d7d-3dfc-464b-ac07-6fcd42965464" data-file-name="components/PDFManager.tsx">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" data-is-mapped="true" data-unique-id="5c350c9d-bc39-40f8-abd5-2381ed9ad595" data-file-name="components/PDFManager.tsx">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" data-unique-id="95fbcf4e-4735-4dd9-b8b3-edbbea4edf26" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"></path>
+                                <polyline points="15 3 21 3 21 9" data-unique-id="2d531563-d193-4d05-b905-bc5b6c7ae701" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3" data-unique-id="76a9dbcb-09ce-43f7-a28e-0052226a42ff" data-file-name="components/PDFManager.tsx" data-dynamic-text="true"></line>
                               </svg>
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="89ead006-e791-4c5b-9917-308cea43eaa6" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="8774ad1c-a4b7-4ef2-86c8-a70f16a18359" data-file-name="components/PDFManager.tsx">View</span></span>
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="aa986dd4-0a0b-4554-bbfc-52c6ad431a2c" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="40c4e869-e53a-42c5-93ea-c907a45d78bf" data-file-name="components/PDFManager.tsx">View</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => startEditing(pdf)} disabled={editingPDF !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="ab5593c3-5b88-4256-9bbe-82b0cd2f4503" data-file-name="components/PDFManager.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="94a25fdc-af95-4f55-b02e-dcaada1949e3" data-file-name="components/PDFManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="86c39c02-8eff-48cf-b5ba-d687016053f8" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="43d97a0b-d63f-4d5b-a94f-33e6de637566" data-file-name="components/PDFManager.tsx">Edit</span></span>
+                            <Button variant="outline" size="sm" onClick={() => startEditing(pdf)} disabled={editingPDF !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="eba616ca-5e53-40f9-b27f-0f0fba46be11" data-file-name="components/PDFManager.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="f8ee3541-c208-426d-ba37-b97b0a4823bd" data-file-name="components/PDFManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="6b52aa3b-a1f8-4bf4-a408-7348cbbb5c73" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="d13a6217-bce5-4c7e-b677-3a650b57f49f" data-file-name="components/PDFManager.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deletePDF(pdf.id)} disabled={editingPDF !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="f43b27ef-e01b-4d04-8708-ea4afc672ef8" data-file-name="components/PDFManager.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="b6c13690-7ca0-4781-aae2-426acdce4813" data-file-name="components/PDFManager.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="0f0fdcec-b077-4754-8590-905db59ff22d" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="b8effc9c-effd-4168-894d-60c342357859" data-file-name="components/PDFManager.tsx">Hapus</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deletePDF(pdf.id)} disabled={editingPDF !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="59ba8f1d-2910-4e70-8d0d-b7d38a933f30" data-file-name="components/PDFManager.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="ea3317d6-73b6-49fc-bce2-2fd113bba360" data-file-name="components/PDFManager.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="e560e6e3-f7f8-49f2-8e35-cba9e63a3112" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="c2616226-4968-426c-b291-550d4407d11d" data-file-name="components/PDFManager.tsx">Hapus</span></span>
                             </Button>
                           </div>
                         </TableCell>
@@ -734,19 +734,19 @@ export default function PDFManager() {
             </div>
             
             {/* Pagination controls */}
-            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="4446c8fe-baf0-4e44-8291-c8e4c5205295" data-file-name="components/PDFManager.tsx">
-                <div className="flex items-center space-x-2" data-unique-id="b7138efe-967b-40dd-92bc-85cdef0ddc7c" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="6d24b4ca-37fe-4f1c-9e62-49c0de357b86" data-file-name="components/PDFManager.tsx">
+            {!isLoading && totalPages > 1 && <div className="flex justify-center mt-6" data-unique-id="1a26c17d-a6d2-4079-9183-6810b53300f4" data-file-name="components/PDFManager.tsx">
+                <div className="flex items-center space-x-2" data-unique-id="ae4539a3-1318-46a6-b879-d480ec1bb930" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="flex items-center gap-1" data-unique-id="8b2f2184-399c-472c-a9b1-df054450ed73" data-file-name="components/PDFManager.tsx">
                     <ChevronLeft className="h-4 w-4" />
-                    <span data-unique-id="a7abb3e8-51c9-426f-9a8b-367455188bac" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="6439f8e2-8044-4273-aa5c-e2400e21096a" data-file-name="components/PDFManager.tsx">Previous</span></span>
+                    <span data-unique-id="dd1b0a67-6cf8-4275-962a-8f1aa7e7b471" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="d3ef2bff-4867-4bf6-b6f5-bec37369cf9c" data-file-name="components/PDFManager.tsx">Previous</span></span>
                   </Button>
                   
-                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="cc70750a-cb91-4150-971e-1ffbe315ae94" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
+                  {pageNumbers.map(number => <Button key={number} variant={currentPage === number ? "default" : "outline"} size="sm" onClick={() => handlePageChange(number)} data-is-mapped="true" data-unique-id="86beb61c-4d25-449b-a2fb-4b66d4e35257" data-file-name="components/PDFManager.tsx" data-dynamic-text="true">
                       {number}
                     </Button>)}
                   
-                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="1b4003a2-0fdc-4bbf-be92-a05d48728ea5" data-file-name="components/PDFManager.tsx">
-                    <span data-unique-id="fbf994b2-36be-413e-a009-483523933b6e" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="c756ba2b-a442-4c0b-8c67-ebeacbdada6e" data-file-name="components/PDFManager.tsx">Next</span></span>
+                  <Button variant="outline" size="sm" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="flex items-center gap-1" data-unique-id="1077bcac-51ed-4da5-b103-8b88237d4c15" data-file-name="components/PDFManager.tsx">
+                    <span data-unique-id="85a9b17f-3219-4970-b4df-56fe2e6f61f6" data-file-name="components/PDFManager.tsx"><span className="editable-text" data-unique-id="f5f83b11-b856-4842-8a41-4d5dced337d3" data-file-name="components/PDFManager.tsx">Next</span></span>
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>

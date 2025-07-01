@@ -60,17 +60,17 @@ export function AudioCategoryItem({
   downloading,
   downloadSuccess
 }: AudioCategoryItemProps) {
-  return <Card key={category.id} className="overflow-hidden" data-unique-id="bff69203-1323-4b50-a18b-a71c21da7b3c" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
-      <div className="bg-muted p-2 sm:p-4 flex justify-between items-center cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="469763d9-a8de-4a99-bd53-488e032ab93f" data-file-name="components/preview/audio/AudioCategoryItem.tsx">
-        <div className="flex-1 min-w-0" data-unique-id="dba5c8a1-5115-46e9-a0ef-d7311cc255f5" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
-          <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight" data-unique-id="85135f0d-fdc3-4dfd-bf78-99cfe77a324e" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
-          {category.description && <p className="text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed" data-unique-id="4ef0e098-751f-4421-9067-8a17b3424031" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
+  return <Card key={category.id} className="overflow-hidden" data-unique-id="c6047358-2705-43d1-b6b7-e628a05c9f91" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
+      <div className="bg-muted p-2 sm:p-4 flex justify-between items-center cursor-pointer" onClick={() => toggleCategory(category.id)} data-unique-id="89f51619-7fb9-44be-bc3b-31dae78adcbe" data-file-name="components/preview/audio/AudioCategoryItem.tsx">
+        <div className="flex-1 min-w-0" data-unique-id="e644dec5-ba11-4375-b7cf-0e1cdfcd896a" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
+          <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight" data-unique-id="ea0b3569-8386-4530-b196-e720c27b1dfc" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">{category.name}</h3>
+          {category.description && <p className="text-xs sm:text-sm text-muted-foreground mt-1 leading-relaxed" data-unique-id="f629baf1-e05c-47f8-9089-ed233a7c0d30" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">{category.description}</p>}
         </div>
-        <Button variant="ghost" size="sm" className="ml-2 flex-shrink-0" data-unique-id="67387529-4620-4bee-a027-c95e56fc0e75" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
+        <Button variant="ghost" size="sm" className="ml-2 flex-shrink-0" data-unique-id="398bd31c-bcfa-4eea-ab98-32904e2a2778" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
           {isExpanded ? <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5" /> : <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />}
         </Button>
       </div>
-      {isExpanded && <div className="p-1 sm:p-3 md:p-4 divide-y" data-unique-id="fa2ac3dc-38c8-49de-911f-951ed1bac053" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
+      {isExpanded && <div className="p-1 sm:p-3 md:p-4 divide-y" data-unique-id="c4270181-2fe4-4a75-aba8-548c28a20477" data-file-name="components/preview/audio/AudioCategoryItem.tsx" data-dynamic-text="true">
           {category.audios.map(audio => <AudioItem key={audio.id} audio={audio} playingAudioId={playingAudioId} expandedAudioId={expandedAudioId} handlePlayAudio={handlePlayAudio} handleDownload={handleDownload} formatTime={formatTime} currentTime={currentTime} duration={duration} handleSeek={handleSeek} toggleMute={toggleMute} isMuted={isMuted} volume={volume} handleVolumeChange={handleVolumeChange} changePlaybackRate={changePlaybackRate} playbackRate={playbackRate} downloading={downloading} downloadSuccess={downloadSuccess} />)}
         </div>}
     </Card>;

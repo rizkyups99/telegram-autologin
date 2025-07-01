@@ -225,56 +225,56 @@ export default function AdminRegistration() {
       setIsLoading(false);
     }
   };
-  return <div className="space-y-6" data-unique-id="46b3ce17-f0ca-42e7-9fd2-8151fd90635a" data-file-name="components/AdminRegistration.tsx">
-      <Card data-unique-id="6ec15545-ce26-43e0-a571-7cfb85eecb3c" data-file-name="components/AdminRegistration.tsx">
-        <CardHeader data-unique-id="2b58b2a0-b78a-4f12-9515-34a48924e19c" data-file-name="components/AdminRegistration.tsx">
-          <CardTitle data-unique-id="405eafbe-6ba2-4e8b-b218-20a69c820698" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="ff22819c-5e2b-47ce-a136-56379ad610da" data-file-name="components/AdminRegistration.tsx">Pendaftaran Admin</span></CardTitle>
-          <CardDescription><span className="editable-text" data-unique-id="9778e63f-7a1c-421e-ad45-f280fcee88d1" data-file-name="components/AdminRegistration.tsx">
+  return <div className="space-y-6" data-unique-id="d54001fb-72ae-4413-a164-cf18e400e188" data-file-name="components/AdminRegistration.tsx">
+      <Card data-unique-id="63895fd7-1263-48eb-9708-703e19dec17f" data-file-name="components/AdminRegistration.tsx">
+        <CardHeader data-unique-id="273bd9d4-df5d-49fe-9ca3-6d717c8d371f" data-file-name="components/AdminRegistration.tsx">
+          <CardTitle data-unique-id="30e6a961-00f7-4eec-9bf9-ebf52ce0ae0d" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="8461b715-c886-4685-8d23-788ec503fe50" data-file-name="components/AdminRegistration.tsx">Pendaftaran Admin</span></CardTitle>
+          <CardDescription><span className="editable-text" data-unique-id="b70a3504-7744-4c40-856a-0bff3a7953b0" data-file-name="components/AdminRegistration.tsx">
             Tambah, edit, dan kelola akun admin untuk aplikasi
           </span></CardDescription>
         </CardHeader>
-        <CardContent className="space-y-6" data-unique-id="a9a9eeec-917e-46ad-b0ad-264084ae048d" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+        <CardContent className="space-y-6" data-unique-id="8144c9bd-bea9-48ed-b4de-10ad2603ccaa" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
           {/* Form for creating/editing admin accounts */}
-          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="410092a5-6525-4acb-8b17-7d13e89c79c3" data-file-name="components/AdminRegistration.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="4ed7d29c-164f-40ac-addb-c64dfb3fbfb0" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+          <div className="bg-muted p-4 rounded-md mb-4" data-unique-id="cea9553c-45ee-4899-98d1-6311a0872600" data-file-name="components/AdminRegistration.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="c341a0a7-dd27-41f1-9d31-589068dd7674" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
               {isCreating ? "Tambah Admin Baru" : "Tambah Admin"}
             </h3>
-            <div className="space-y-4" data-unique-id="251595de-2f87-49ce-9218-1a02a4d148ac" data-file-name="components/AdminRegistration.tsx">
-              <div data-unique-id="a54e65de-795e-480e-8492-6006fe6f6611" data-file-name="components/AdminRegistration.tsx">
-                <Label htmlFor="email" className="block text-sm font-medium mb-1" data-unique-id="f4c0b47c-98e7-45cb-9289-f76ccabfb666" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="fb4e3c07-aac8-4338-a27a-130fcec6d12f" data-file-name="components/AdminRegistration.tsx">Email Admin</span></Label>
-                <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="Masukkan email admin" className="w-full" data-unique-id="a191944a-7b42-45c2-ac0e-a21cbe69d269" data-file-name="components/AdminRegistration.tsx" />
+            <div className="space-y-4" data-unique-id="e87f5ac1-c91b-4190-bd89-01ae09e6ce8f" data-file-name="components/AdminRegistration.tsx">
+              <div data-unique-id="e655ac6d-4fbb-4b3d-b0df-0cad0c19164a" data-file-name="components/AdminRegistration.tsx">
+                <Label htmlFor="email" className="block text-sm font-medium mb-1" data-unique-id="3ed91bf4-bdd1-42b7-b3c5-3a3812fafcd7" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="f57605a3-efb8-44b9-8fda-370073e6b14c" data-file-name="components/AdminRegistration.tsx">Email Admin</span></Label>
+                <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="Masukkan email admin" className="w-full" data-unique-id="4143805d-682b-4f00-92ba-f635eef88462" data-file-name="components/AdminRegistration.tsx" />
               </div>
-              <div data-unique-id="7f62932f-9a7a-46a4-8238-dfb6ef11a61d" data-file-name="components/AdminRegistration.tsx">
-                <Label htmlFor="accessCode" className="block text-sm font-medium mb-1" data-unique-id="8fba896c-802e-4cc9-96a2-87fb219cb459" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="ec96c3f3-2a47-4b04-abdf-d527697780aa" data-file-name="components/AdminRegistration.tsx">Kode Akses</span></Label>
-                <div className="flex gap-2" data-unique-id="521bbfc1-9b94-473d-8c5d-f238bae172c3" data-file-name="components/AdminRegistration.tsx">
-                  <Input id="accessCode" name="accessCode" value={formData.accessCode} onChange={handleInputChange} placeholder="Kode akses akan digenerate otomatis" className="w-full" data-unique-id="76bdb1ef-281f-4392-9bbd-d6aa70f33fda" data-file-name="components/AdminRegistration.tsx" />
-                  <Button type="button" variant="outline" onClick={generateRandomAccessCode} data-unique-id="bd9aa661-c1aa-447b-961e-4a6ce21b856b" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="de0379ee-d338-4300-8bd0-a1f76d2aaf36" data-file-name="components/AdminRegistration.tsx">
+              <div data-unique-id="a7cf7afd-c535-45c7-9131-8cb738369a07" data-file-name="components/AdminRegistration.tsx">
+                <Label htmlFor="accessCode" className="block text-sm font-medium mb-1" data-unique-id="5441ab3e-d7cf-4709-b227-25856083b243" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="10734a36-0fdb-4f7e-842a-36e155ef3566" data-file-name="components/AdminRegistration.tsx">Kode Akses</span></Label>
+                <div className="flex gap-2" data-unique-id="d58c9eb2-abca-46f9-8c1d-59115c1f1366" data-file-name="components/AdminRegistration.tsx">
+                  <Input id="accessCode" name="accessCode" value={formData.accessCode} onChange={handleInputChange} placeholder="Kode akses akan digenerate otomatis" className="w-full" data-unique-id="2bde3250-da6c-460d-bec7-db07a7c1925a" data-file-name="components/AdminRegistration.tsx" />
+                  <Button type="button" variant="outline" onClick={generateRandomAccessCode} data-unique-id="06a4b709-ed67-41c4-996e-98c71749f2ca" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="d0492098-62bc-49b8-9d2f-da87105def79" data-file-name="components/AdminRegistration.tsx">
                     Generate
                   </span></Button>
                 </div>
-                <p className="text-xs text-muted-foreground mt-1" data-unique-id="eb15a4a0-eedf-4a7a-9d20-9bd55eeed282" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="c1b3f440-ba8c-4bc6-809a-5c6ab6a671fa" data-file-name="components/AdminRegistration.tsx">
+                <p className="text-xs text-muted-foreground mt-1" data-unique-id="031621bc-6bfa-497d-9e52-9a555057e3c3" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="81cf8b23-f306-41a3-b04c-28dfb573b8c2" data-file-name="components/AdminRegistration.tsx">
                   Biarkan kosong untuk membuat kode akses secara otomatis
                 </span></p>
               </div>
-              <div className="flex justify-end space-x-2" data-unique-id="31e52e38-6727-4b1c-9f95-1d433bd6bbb8" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
-                {editingAdmin !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="c7aff2d6-a500-4176-825f-ab3ec9da2d91" data-file-name="components/AdminRegistration.tsx">
+              <div className="flex justify-end space-x-2" data-unique-id="5eb6a931-93f0-4d18-be72-fc02285bd2d4" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+                {editingAdmin !== null && <Button variant="outline" onClick={cancelEditing} disabled={isLoading} className="flex items-center gap-1" data-unique-id="9e7fb830-8e41-4b28-b6c2-7ae998ef3da4" data-file-name="components/AdminRegistration.tsx">
                     <X className="h-4 w-4" />
-                    <span className="hidden sm:inline" data-unique-id="29eed71d-9211-4780-86c9-f95e8f716934" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="bf76f96f-11c1-43d5-9b01-734ecc712a39" data-file-name="components/AdminRegistration.tsx">Batal</span></span>
+                    <span className="hidden sm:inline" data-unique-id="df02a3cd-078d-4b4b-86b4-eafbc6e6213d" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="214f6480-2a32-4205-a502-ef5522f30ee7" data-file-name="components/AdminRegistration.tsx">Batal</span></span>
                   </Button>}
-                <Button onClick={editingAdmin !== null ? () => updateAdmin(editingAdmin) : createAdmin} disabled={isLoading} className="flex items-center gap-1" data-unique-id="77dcc498-e20f-4a11-b4ba-a2c9e2bf541a" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
-                  {isLoading ? <span className="flex items-center" data-unique-id="5c2d2dbe-46b4-43a3-9104-6042de9d66ae" data-file-name="components/AdminRegistration.tsx">
-                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="2a8e39df-e44a-4090-a290-6115d32a8cd7" data-file-name="components/AdminRegistration.tsx">
+                <Button onClick={editingAdmin !== null ? () => updateAdmin(editingAdmin) : createAdmin} disabled={isLoading} className="flex items-center gap-1" data-unique-id="73a1ae3e-465c-47c6-8a7e-b4c127020f5f" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+                  {isLoading ? <span className="flex items-center" data-unique-id="7f1690f1-3b8e-46ca-894f-cb0b663a828f" data-file-name="components/AdminRegistration.tsx">
+                      <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-unique-id="87abb5dd-fa1e-4a9b-bb7e-e5c177217e93" data-file-name="components/AdminRegistration.tsx">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      <span className="hidden sm:inline" data-unique-id="9484e5d2-58ec-4203-be84-596ce1880a23" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="ca8aa6af-d72c-439d-b4c1-612388814093" data-file-name="components/AdminRegistration.tsx">Menyimpan...</span></span>
+                      <span className="hidden sm:inline" data-unique-id="54cef77e-c8a3-466c-adff-4ba6e2d0c30a" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="6fd1473d-a28b-48d8-bfb2-40ad2a531341" data-file-name="components/AdminRegistration.tsx">Menyimpan...</span></span>
                     </span> : <>
                       {editingAdmin !== null ? <>
                           <Save className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="ba5a9ccb-206b-48c7-8189-566b86f92c81" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="819692ca-2b93-4660-a74e-1f112fc1cdc6" data-file-name="components/AdminRegistration.tsx">Perbarui Admin</span></span>
+                          <span className="hidden sm:inline" data-unique-id="6ea49ccf-3641-4666-a445-52727c377d3e" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="440c6d11-9b20-416b-b288-61f1331c9c1d" data-file-name="components/AdminRegistration.tsx">Perbarui Admin</span></span>
                         </> : <>
                           <Plus className="h-4 w-4" />
-                          <span className="hidden sm:inline" data-unique-id="9cf06c62-d8bb-4620-be58-88c32f5686b7" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="e6dff266-6322-4e88-8e4d-3c8b2c908200" data-file-name="components/AdminRegistration.tsx">Tambah Admin</span></span>
+                          <span className="hidden sm:inline" data-unique-id="82b59159-3fc5-4d5a-bf40-beaabc7e91e7" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="52b1cb52-1d28-4849-834a-7ddae7b46f68" data-file-name="components/AdminRegistration.tsx">Tambah Admin</span></span>
                         </>}
                     </>}
                 </Button>
@@ -283,30 +283,30 @@ export default function AdminRegistration() {
           </div>
 
           {/* Status messages */}
-          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="db03ed95-5e84-469f-afb7-43dfee033001" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+          {statusMessage && <div className={`${statusMessage.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'} p-3 rounded-md flex items-center`} data-unique-id="b424b65f-7c84-440d-9e41-dfc30ba325c0" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
               {statusMessage.type === 'success' ? <CheckCircle className="h-5 w-5 mr-2" /> : <AlertCircle className="h-5 w-5 mr-2" />}
-              <span data-unique-id="3fe19704-fe1a-4c26-bca6-7dbfe86d435b" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{statusMessage.message}</span>
+              <span data-unique-id="1a406b1e-2060-46cd-989f-498d0d2de160" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{statusMessage.message}</span>
             </div>}
 
           {/* Admins list */}
-          <div data-unique-id="8f0f1bd7-ef99-4bc1-be0a-2ac45d495e5e" data-file-name="components/AdminRegistration.tsx">
-            <h3 className="text-lg font-medium mb-4" data-unique-id="293db090-7945-406d-9e8c-32a379099492" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="06210930-c105-4d3c-99bf-575f3a7aaef7" data-file-name="components/AdminRegistration.tsx">Daftar Admin</span></h3>
-            <div className="overflow-x-auto" data-unique-id="0c66cc8c-6ab3-4cae-9a5e-0945da917f79" data-file-name="components/AdminRegistration.tsx">
-              <Table data-unique-id="c4d3ad45-c24f-49c7-a7c8-f5bb5d1f0f1b" data-file-name="components/AdminRegistration.tsx">
+          <div data-unique-id="ffaa97e6-998f-4f27-8861-49c1da11a35d" data-file-name="components/AdminRegistration.tsx">
+            <h3 className="text-lg font-medium mb-4" data-unique-id="1ba42151-bd82-4d70-b722-0fd4ffb1b65d" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="04f97726-39c4-4a6a-8326-aa9098fc2632" data-file-name="components/AdminRegistration.tsx">Daftar Admin</span></h3>
+            <div className="overflow-x-auto" data-unique-id="e2013296-b979-4735-bb1d-792188e277a4" data-file-name="components/AdminRegistration.tsx">
+              <Table data-unique-id="44de974c-a71b-4038-8452-f8b42db46d09" data-file-name="components/AdminRegistration.tsx">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="7506af31-bd70-4e2c-83e3-2721c511cb0c" data-file-name="components/AdminRegistration.tsx">No.</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="68ca0f6f-9302-443d-85b1-016a0589d9b4" data-file-name="components/AdminRegistration.tsx">Email</span></TableHead>
-                    <TableHead><span className="editable-text" data-unique-id="42561235-ce03-456f-904b-cb97406c8ae6" data-file-name="components/AdminRegistration.tsx">Kode Akses</span></TableHead>
-                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="1970c8d2-a82e-4321-b26a-351bc711bec2" data-file-name="components/AdminRegistration.tsx">Tanggal Dibuat</span></TableHead>
-                    <TableHead className="text-right"><span className="editable-text" data-unique-id="efd2161e-1c60-4b1f-9a48-507a0c5a45d1" data-file-name="components/AdminRegistration.tsx">Aksi</span></TableHead>
+                    <TableHead className="w-[50px]"><span className="editable-text" data-unique-id="07729b0d-b8f3-4b91-b997-b4c75474844d" data-file-name="components/AdminRegistration.tsx">No.</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="173b3f18-3d4f-40ea-9dea-ed9ddbc7bb2f" data-file-name="components/AdminRegistration.tsx">Email</span></TableHead>
+                    <TableHead><span className="editable-text" data-unique-id="41acbef1-09cb-4a1e-8396-ef3ff3922e4f" data-file-name="components/AdminRegistration.tsx">Kode Akses</span></TableHead>
+                    <TableHead className="hidden md:table-cell"><span className="editable-text" data-unique-id="01f9ebd9-6f7c-40c9-ad11-123fb7ec0efb" data-file-name="components/AdminRegistration.tsx">Tanggal Dibuat</span></TableHead>
+                    <TableHead className="text-right"><span className="editable-text" data-unique-id="2b8916dc-a9b9-4d01-bcb7-cad67b551f50" data-file-name="components/AdminRegistration.tsx">Aksi</span></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {isLoading ? <TableRow>
                       <TableCell colSpan={5} className="text-center py-8">
-                        <div className="flex justify-center" data-unique-id="f2851725-69ae-46c5-a694-b2063071a95e" data-file-name="components/AdminRegistration.tsx">
-                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="106ee7cb-f687-4007-a33b-44036fd59042" data-file-name="components/AdminRegistration.tsx"></div>
+                        <div className="flex justify-center" data-unique-id="d7bcd557-c9fe-46c1-92bb-422a41948e9e" data-file-name="components/AdminRegistration.tsx">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" data-unique-id="15ca9467-3fc5-4b2b-a4d4-68f19a808dfb" data-file-name="components/AdminRegistration.tsx"></div>
                         </div>
                       </TableCell>
                     </TableRow> : error ? <TableRow>
@@ -314,27 +314,27 @@ export default function AdminRegistration() {
                         {error}
                       </TableCell>
                     </TableRow> : admins.length === 0 ? <TableRow>
-                      <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="4fef2a28-79da-4033-bbe7-e8f6709bb7b0" data-file-name="components/AdminRegistration.tsx">
+                      <TableCell colSpan={5} className="text-center py-8"><span className="editable-text" data-unique-id="2dd5c2f9-c9b0-41bd-bee4-b7f682c43b74" data-file-name="components/AdminRegistration.tsx">
                         Belum ada admin. Silakan tambahkan admin baru.
                       </span></TableCell>
-                    </TableRow> : Array.isArray(admins) && admins.map((admin, index) => <TableRow key={admin.id} data-unique-id="dfabfd72-4c76-4bfa-b1d3-ec73e49507aa" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
-                        <TableCell data-unique-id="84ae9fc0-80ad-46c8-be32-bcaf9a30c458" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{index + 1}</TableCell>
-                        <TableCell className="font-medium" data-unique-id="362a8845-b0ca-4fe2-b3f3-8781454ed09f" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{admin.email}</TableCell>
-                        <TableCell data-unique-id="fa4f9d76-9781-4eb0-8131-95fe101ecb53" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{admin.accessCode}</TableCell>
-                        <TableCell className="hidden md:table-cell" data-unique-id="f3c5d8c3-e528-4011-b51b-a579ba4bd2b1" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+                    </TableRow> : Array.isArray(admins) && admins.map((admin, index) => <TableRow key={admin.id} data-unique-id="bc353eae-9812-475f-adac-e0c6a9abb6e4" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+                        <TableCell data-unique-id="7dc661b5-d668-4b14-8e2f-d140f64c011d" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{index + 1}</TableCell>
+                        <TableCell className="font-medium" data-unique-id="f8af7351-023e-492e-80ce-ac1e346a217d" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{admin.email}</TableCell>
+                        <TableCell data-unique-id="9958b305-d483-4bef-b354-dadcfaeb83cb" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">{admin.accessCode}</TableCell>
+                        <TableCell className="hidden md:table-cell" data-unique-id="8dffd882-af6e-449f-9b3e-8d87ddc0a240" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
                           {admin.createdAt ? formatDistanceToNow(new Date(admin.createdAt), {
                       addSuffix: true
                     }) : "-"}
                         </TableCell>
-                        <TableCell className="text-right" data-unique-id="23cc249e-bca0-448d-bd63-deaa34e3ff21" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
-                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="2b660a95-b196-46a8-ae26-f517f85a15f4" data-file-name="components/AdminRegistration.tsx">
-                            <Button variant="outline" size="sm" onClick={() => startEditing(admin)} disabled={editingAdmin !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="e0cf1e51-ef33-4829-9a0e-0fae6c964bf7" data-file-name="components/AdminRegistration.tsx">
-                              <Pencil className="h-4 w-4" data-unique-id="8d1fad0c-181e-47b5-bcca-76e09173abbc" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="8c9b7921-bfb5-462c-a093-6f998fc60dc5" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="9b957cf9-d5d9-4e74-bc00-b9ca57bf7a17" data-file-name="components/AdminRegistration.tsx">Edit</span></span>
+                        <TableCell className="text-right" data-unique-id="43e5a310-3ccd-42c8-a4d3-821cea1f248a" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true">
+                          <div className="flex justify-end space-x-2" data-is-mapped="true" data-unique-id="99eb4079-6431-4067-bdfa-c32f512ba163" data-file-name="components/AdminRegistration.tsx">
+                            <Button variant="outline" size="sm" onClick={() => startEditing(admin)} disabled={editingAdmin !== null} className="flex items-center" title="Edit" data-is-mapped="true" data-unique-id="e814a08f-8b9e-4a61-a543-11c6e4310515" data-file-name="components/AdminRegistration.tsx">
+                              <Pencil className="h-4 w-4" data-unique-id="e7ae411e-5197-47bc-8b6d-428aca54d108" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="9e1a4380-e35e-42d0-94f1-4bff7985ccde" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="1f6f0d0f-e76c-4683-b715-8d48e3afd6a8" data-file-name="components/AdminRegistration.tsx">Edit</span></span>
                             </Button>
-                            <Button variant="outline" size="sm" onClick={() => deleteAdmin(admin.id)} disabled={editingAdmin !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="abb55045-5e9f-4907-992e-1f9b8b0525c8" data-file-name="components/AdminRegistration.tsx">
-                              <Trash2 className="h-4 w-4" data-unique-id="ff0dbc15-fba9-4c55-b101-424b92321cbd" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true" />
-                              <span className="sr-only" data-is-mapped="true" data-unique-id="0645672c-bf0f-4aa8-b3a9-1d69da7d7ea2" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="976de6f0-9de9-4c3d-ae27-1d49a12b4297" data-file-name="components/AdminRegistration.tsx">Hapus</span></span>
+                            <Button variant="outline" size="sm" onClick={() => deleteAdmin(admin.id)} disabled={editingAdmin !== null || isLoading} className="text-red-500 hover:text-red-700 flex items-center" title="Hapus" data-is-mapped="true" data-unique-id="146bcb4c-b991-41d7-857a-c39df18d6ff8" data-file-name="components/AdminRegistration.tsx">
+                              <Trash2 className="h-4 w-4" data-unique-id="c247ebf4-f6ef-446b-a37a-8c7b4b5811f6" data-file-name="components/AdminRegistration.tsx" data-dynamic-text="true" />
+                              <span className="sr-only" data-is-mapped="true" data-unique-id="4cc72d95-4617-45cd-8c2f-62ad41fe669d" data-file-name="components/AdminRegistration.tsx"><span className="editable-text" data-unique-id="42877a23-1431-423a-85b8-f94aa2a574d3" data-file-name="components/AdminRegistration.tsx">Hapus</span></span>
                             </Button>
                           </div>
                         </TableCell>

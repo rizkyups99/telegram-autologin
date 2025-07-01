@@ -236,7 +236,7 @@ export function VideoPlayer({
       setIsSimulatedFullscreen(!isSimulatedFullscreen);
     }
   };
-  return <div data-unique-id="6b8aa871-0391-41d0-80c9-19b8603979c9" data-file-name="components/video/VideoPlayer.tsx">
+  return <div data-unique-id="43856cb0-3d74-44a3-bd94-2fa25ae78607" data-file-name="components/video/VideoPlayer.tsx">
       <div className={`relative bg-black rounded-lg overflow-hidden video-container ${isSimulatedFullscreen ? 'simulated-fullscreen' : ''}`} ref={videoContainerRef} onContextMenu={preventRightClick} onClick={handleContainerClick} style={{
       /* Base styles */
       transformOrigin: 'center center',
@@ -259,7 +259,7 @@ export function VideoPlayer({
         /* Ensure video doesn't exceed screen size */
         overflow: 'hidden'
       } : {} : {})
-    }} data-unique-id="243be413-d239-424a-b3c2-dad86fadc8f2" data-file-name="components/video/VideoPlayer.tsx" data-dynamic-text="true">
+    }} data-unique-id="15a2618b-0c67-4cb2-90e6-dc5e8a49d967" data-file-name="components/video/VideoPlayer.tsx" data-dynamic-text="true">
         {isYouTubeVideo ? <YouTubePlayer videoUrl={video.videoUrl} onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)} onBuffer={() => setIsBuffering(true)} onBufferEnd={() => setIsBuffering(false)} onProgress={setVideoProgress} onDuration={setVideoDuration} onEnded={() => {
         setIsPlaying(false);
         setVideoProgress(0);
@@ -268,7 +268,7 @@ export function VideoPlayer({
         setVideoProgress(0);
       }} />}
         
-        {isBuffering && <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30" data-unique-id="607f52a1-73c6-4565-b346-48d1270df112" data-file-name="components/video/VideoPlayer.tsx">
+        {isBuffering && <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30" data-unique-id="e9052dd2-06bd-433e-9c5c-ebb54e8007a6" data-file-name="components/video/VideoPlayer.tsx">
             <Loader className="h-12 w-12 text-white animate-spin" />
           </div>}
         

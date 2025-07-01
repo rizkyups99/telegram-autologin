@@ -258,6 +258,58 @@ export type NewUserFileCloudAccess = InferInsertModel<typeof userFileCloudAccess
 export type Video = InferSelectModel<typeof videos>;
 export type NewVideo = InferInsertModel<typeof videos>;
 
+// Storefront Products - Produk yang dijual di etalase
+export const storefrontProducts = pgTable('storefront_products', {
+  id: serial('id').primaryKey(),
+  name: text('name').notNull(),
+  description: text('description'),
+  price: text('price').notNull(), // Using text to avoid decimal precision issues
+  imageUrl: text('image_url').notNull(),
+  isActive: boolean('is_active').default(true),
+  
+  // Produk bisa dari kategori regular atau cloud
+  sourceType: text('source_type').notNull(), // 'regular' atau 'cloud'
+  sourceCategoryIds: text('source_category_ids').notNull(), // JSON string of category IDs
+  
+  // Jenis pembayaran yang diterima
+  paymentMethods: text('payment_methods').notNull().default('["transfer","virtual_account"]'), // JSON string
+  
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+// Shopping Cart Items
+export const cartItems = pgTable('cart_items', {
+  id: serial('id').primaryKey(),
+  sessionId: text('session_id').notNull(), // For guest users
+  productId: integer('product_id').notNull().references(() => storefrontProducts.id),
+  quantity: integer('quantity').default(1).notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+// Orders - Pesanan pembeli
+export const orders = pgTable('orders', {
+  id: serial('id').primaryKey(),
+  sessionId: text('session_id').notNull(),
+  
+  // Data pembeli
+  customerName: text('customer_name').notNull(),
+  customerPhone: text('customer_phone').notNull(),
+  customerEmail: text('customer_email').notNull(),
+  
+  // Order details
+  totalAmount: text('total_amount').notNull(), // Using text to avoid decimal precision issues
+  paymentMethod: text('payment_method').notNull(),
+  status: text('status').default('pending').notNull(), // pending, paid, failed
+  
+  // Order items
+  items: text('items').notNull(), // JSON string of order items
+  
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
 // Define types for cloud files
 export type AudioCloudFile = InferSelectModel<typeof audioCloudFiles>;
 export type NewAudioCloudFile = InferInsertModel<typeof audioCloudFiles>;
@@ -267,6 +319,14 @@ export type NewPDFCloudFile = InferInsertModel<typeof pdfCloudFiles>;
 
 export type FileCloudFile = InferSelectModel<typeof fileCloudFiles>;
 export type NewFileCloudFile = InferInsertModel<typeof fileCloudFiles>;
+
+// Storefront types
+export type StorefrontProduct = InferSelectModel<typeof storefrontProducts>;
+export type NewStorefrontProduct = InferInsertModel<typeof storefrontProducts>;
+export type CartItem = InferSelectModel<typeof cartItems>;
+export type NewCartItem = InferInsertModel<typeof cartItems>;
+export type Order = InferSelectModel<typeof orders>;
+export type NewOrder = InferInsertModel<typeof orders>;
 
 // Cloud files relations
 export const audioCloudFilesRelations = relations(audioCloudFiles, ({ one }) => ({
@@ -287,5 +347,17 @@ export const fileCloudFilesRelations = relations(fileCloudFiles, ({ one }) => ({
   category: one(categories, {
     fields: [fileCloudFiles.categoryId],
     references: [categories.id],
+  }),
+}));
+
+// Storefront relations
+export const storefrontProductsRelations = relations(storefrontProducts, ({ many }) => ({
+  cartItems: many(cartItems),
+}));
+
+export const cartItemsRelations = relations(cartItems, ({ one }) => ({
+  product: one(storefrontProducts, {
+    fields: [cartItems.productId],
+    references: [storefrontProducts.id],
   }),
 }));
