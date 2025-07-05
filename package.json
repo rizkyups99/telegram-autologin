@@ -79,8 +79,5 @@
     "ts-jest": "^29.2.5",
     "typescript": "^5.5.3",
     "zustand": "^5.0.2"
-  },
-  "overrides": {
-    "drizzle-orm": "0.41.0-29155cc"
   }
 }
